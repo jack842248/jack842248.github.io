@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>markdown on Jack Huang Blog</title>
+    <link>https://jack842248.github.io/tags/markdown/</link>
+    <description>Recent content in markdown on Jack Huang Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
+    <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
+    <lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的第一篇文章</title>
+      <link>https://jack842248.github.io/post/2021-01-23-my-first-post/</link>
+      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-23-my-first-post/</guid>
+      <description>文章崁入圖片範例:
+       Sphere
+      Triangle
+    撰寫數學文章範例:
+$$ \phi = \frac{(1+\sqrt{5})}{2} = 1.6180339887\cdots $$
+撰寫程式語法範例:
+var num1, num2, sum num1 = prompt(&amp;quot;Enter first number&amp;quot;) num2 = prompt(&amp;quot;Enter second number&amp;quot;) sum = parseInt(num1) + parseInt(num2) // &amp;quot;+&amp;quot; means &amp;quot;add&amp;quot; alert(&amp;quot;Sum = &amp;quot; + sum) // &amp;quot;+&amp;quot; means combine into a string  撰寫markdown表格範例:
+   Number Next number Previous number     Five Six Four   Ten Eleven Nine   Seven Eight Six   Two Three One    </description>
+    </item>
+    
+  </channel>
+</rss>

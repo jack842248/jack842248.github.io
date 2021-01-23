@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Jack Huang Blog</title>
+    <link>https://jack842248.github.io/page/</link>
+    <description>Recent content in Pages on Jack Huang Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
+    <webMaster>jack842248@gmail.com (JackHuang)</webMaster><atom:link href="https://jack842248.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>關於我(主標題)</title>
+      <link>https://jack842248.github.io/page/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/page/about/</guid>
+      <description>以下內文區</description>
+    </item>
+    
+  </channel>
+</rss>
