@@ -1,7 +1,7 @@
 /* --- General --- */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Noto Sans TC', sans-serif;;
   font-size: 18px;
   color: #404040;
   position: relative;
@@ -523,7 +523,7 @@ footer .theme-by {
 .intro-header .tags-heading h1,
 .intro-header .categories-heading h1 {
   margin-top: 0;
-  font-size: 50px;
+  font-size: 30px;
 }
 .intro-header .post-heading h1 {
   margin-top: 0;
