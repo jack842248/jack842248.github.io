@@ -7,21 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>我的第一篇文章</title>
-      <link>https://jack842248.github.io/post/2021-01-23-my-first-post/</link>
-      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
+      <title>Hugo Blog建立成功</title>
+      <link>https://jack842248.github.io/post/2021-01-22-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-23-my-first-post/</guid>
-      <description>文章崁入圖片範例:
-       Sphere
+      <guid>https://jack842248.github.io/post/2021-01-22-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</guid>
+      <description>我所使用的Hugo主題是beautiful hugo
+ 崁入圖片範例:        Sphere
       Triangle
-    撰寫數學文章範例:
-$$ \phi = \frac{(1+\sqrt{5})}{2} = 1.6180339887\cdots $$
-撰寫程式語法範例:
-var num1, num2, sum num1 = prompt(&amp;quot;Enter first number&amp;quot;) num2 = prompt(&amp;quot;Enter second number&amp;quot;) sum = parseInt(num1) + parseInt(num2) // &amp;quot;+&amp;quot; means &amp;quot;add&amp;quot; alert(&amp;quot;Sum = &amp;quot; + sum) // &amp;quot;+&amp;quot; means combine into a string  撰寫markdown表格範例:
-   Number Next number Previous number     Five Six Four   Ten Eleven Nine   Seven Eight Six   Two Three One    </description>
+     撰寫數學公式範例: $$ \phi = \frac{(1+\sqrt{5})}{2} = 1.6180339887\cdots $$
+ 撰寫程式語言範例:
+1 2 3 4 5  var num1, num2, sum num1 = prompt(&amp;#34;Enter first number&amp;#34;) num2 = prompt(&amp;#34;Enter second number&amp;#34;) sum = parseInt(num1) + parseInt(num2) // &amp;#34;+&amp;#34; means &amp;#34;add&amp;#34;  alert(&amp;#34;Sum = &amp;#34; + sum) // &amp;#34;+&amp;#34; means combine into a string    撰寫表格範例:</description>
     </item>
     
   </channel>

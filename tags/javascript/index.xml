@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Jack Huang Blog</title>
-    <link>https://jack842248.github.io/post/</link>
-    <description>Recent content in Posts on Jack Huang Blog</description>
+    <title>javascript on Jack Huang Blog</title>
+    <link>https://jack842248.github.io/tags/javascript/</link>
+    <description>Recent content in javascript on Jack Huang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Javascript小知識2</title>
       <link>https://jack842248.github.io/post/2021-01-25-javascript%E5%B0%8F%E7%9F%A5%E8%AD%982/</link>
@@ -26,34 +26,6 @@
       <description>程式語言可以分為兩種:
 編譯式語言(Compiled Language)    例如 Java、C、C#、C++、Pascal     流程 原始碼 → 預處理器 → 代碼生成 → 執行   特性 效能比較好、除錯比較快、程式碼可獨立執行。    直譯式語言(Interpreted Language)    例如 JavaScript、Python、PHP、Ruby、BASIC、LISP、Perl、R     流程 原始碼 → 直譯器 → 代碼生成 → 執行   特性 程式碼由上到下執行，效能比較差、除錯比較慢、需要依賴執行環境。     作用域可分為兩種:
 動態作用域(Dynamic Scope)  特性 : 作用域在函式調用時才決定。  靜態作用域(Lexical Scope)  又稱 : 語法作用域。 特性 : 語法在解析時就決定作用域，而且不再改變。  1 2 3 4 5 6 7  function fn1(){ var a = 1; } fn1(); console.</description>
-    </item>
-    
-    <item>
-      <title>Markdown基本撰寫</title>
-      <link>https://jack842248.github.io/post/2021-01-23-markdown%E5%9F%BA%E6%9C%AC%E6%92%B0%E5%AF%AB/</link>
-      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-23-markdown%E5%9F%BA%E6%9C%AC%E6%92%B0%E5%AF%AB/</guid>
-      <description>一級標題 # 一級標題  二級標題 ## 二級標題  三級標題 ### 三級標題  四級標題 #### 四級標題  五級標題 ##### 五級標題  六級標題 ###### 六級標題  斜體
-*斜體*  粗體
-**粗體**  粗斜體
-***粗斜體***   有序序列 有序序列 有序序列  1. 有序序列 2. 有序序列 3. 有序序列   無序序列  無序序列  無序序列     無序序列  * 無序序列 * 無序序列 * 無序序列 * 無序序列 要往內縮，前面空四格
-  引用
- &amp;gt; 引用  Google連結</description>
-    </item>
-    
-    <item>
-      <title>Hugo Blog建立成功</title>
-      <link>https://jack842248.github.io/post/2021-01-22-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</link>
-      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-22-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</guid>
-      <description>我所使用的Hugo主題是beautiful hugo
- 崁入圖片範例:        Sphere
-      Triangle
-     撰寫數學公式範例: $$ \phi = \frac{(1+\sqrt{5})}{2} = 1.6180339887\cdots $$
- 撰寫程式語言範例:
-1 2 3 4 5  var num1, num2, sum num1 = prompt(&amp;#34;Enter first number&amp;#34;) num2 = prompt(&amp;#34;Enter second number&amp;#34;) sum = parseInt(num1) + parseInt(num2) // &amp;#34;+&amp;#34; means &amp;#34;add&amp;#34;  alert(&amp;#34;Sum = &amp;#34; + sum) // &amp;#34;+&amp;#34; means combine into a string    撰寫表格範例:</description>
     </item>
     
   </channel>

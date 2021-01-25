@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go on Jack Huang Blog</title>
+    <link>https://jack842248.github.io/tags/go/</link>
+    <description>Recent content in go on Jack Huang Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
+    <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
+    <lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown基本撰寫</title>
+      <link>https://jack842248.github.io/post/2021-01-23-markdown%E5%9F%BA%E6%9C%AC%E6%92%B0%E5%AF%AB/</link>
+      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-23-markdown%E5%9F%BA%E6%9C%AC%E6%92%B0%E5%AF%AB/</guid>
+      <description>一級標題 # 一級標題  二級標題 ## 二級標題  三級標題 ### 三級標題  四級標題 #### 四級標題  五級標題 ##### 五級標題  六級標題 ###### 六級標題  斜體
+*斜體*  粗體
+**粗體**  粗斜體
+***粗斜體***   有序序列 有序序列 有序序列  1. 有序序列 2. 有序序列 3. 有序序列   無序序列  無序序列  無序序列     無序序列  * 無序序列 * 無序序列 * 無序序列 * 無序序列 要往內縮，前面空四格
+  引用
+ &amp;gt; 引用  Google連結</description>
+    </item>
+    
+  </channel>
+</rss>
