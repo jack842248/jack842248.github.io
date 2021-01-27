@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>markdown on Jack Huang Blog</title>
+    <title>Markdown on Jack Huang Blog</title>
     <link>https://jack842248.github.io/tags/markdown/</link>
-    <description>Recent content in markdown on Jack Huang Blog</description>
+    <description>Recent content in Markdown on Jack Huang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo Blog建立成功</title>
-      <link>https://jack842248.github.io/post/2021-01-22-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</link>
-      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <title>Markdown撰寫語法</title>
+      <link>https://jack842248.github.io/post/2021-01-23-markdown%E5%9F%BA%E6%9C%AC%E6%92%B0%E5%AF%AB/</link>
+      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-22-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</guid>
-      <description>我所使用的Hugo主題是beautiful hugo
- 崁入圖片範例:        Sphere
-      Triangle
-     撰寫數學公式範例: $$ \phi = \frac{(1+\sqrt{5})}{2} = 1.6180339887\cdots $$
- 撰寫程式語言範例:
-1 2 3 4 5  var num1, num2, sum num1 = prompt(&amp;#34;Enter first number&amp;#34;) num2 = prompt(&amp;#34;Enter second number&amp;#34;) sum = parseInt(num1) + parseInt(num2) // &amp;#34;+&amp;#34; means &amp;#34;add&amp;#34;  alert(&amp;#34;Sum = &amp;#34; + sum) // &amp;#34;+&amp;#34; means combine into a string    撰寫表格範例:</description>
+      <guid>https://jack842248.github.io/post/2021-01-23-markdown%E5%9F%BA%E6%9C%AC%E6%92%B0%E5%AF%AB/</guid>
+      <description>一級標題 # 一級標題    二級標題  ## 二級標題    三級標題  ### 三級標題    四級標題  #### 四級標題    五級標題  ##### 五級標題    六級標題  ###### 六級標題    斜體
+ *斜體*    粗體
+ **粗體**    粗斜體
+ ***粗斜體***    文字刪除線
+ ~~文字刪除線~~     有序序列 有序序列 有序序列   1.</description>
     </item>
     
   </channel>

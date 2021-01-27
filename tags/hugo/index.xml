@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on Jack Huang Blog</title>
+    <title>Hugo on Jack Huang Blog</title>
     <link>https://jack842248.github.io/tags/hugo/</link>
-    <description>Recent content in hugo on Jack Huang Blog</description>
+    <description>Recent content in Hugo on Jack Huang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>我的第一篇文章</title>
-      <link>https://jack842248.github.io/post/2021-01-23-my-first-post/</link>
-      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
+      <title>Hugo Blog建立成功</title>
+      <link>https://jack842248.github.io/post/2021-01-22-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-23-my-first-post/</guid>
-      <description>文章崁入圖片範例:
-       Sphere
-      Triangle
-    撰寫數學文章範例:
-$$ \phi = \frac{(1+\sqrt{5})}{2} = 1.6180339887\cdots $$
-撰寫程式語法範例:
-var num1, num2, sum num1 = prompt(&amp;quot;Enter first number&amp;quot;) num2 = prompt(&amp;quot;Enter second number&amp;quot;) sum = parseInt(num1) + parseInt(num2) // &amp;quot;+&amp;quot; means &amp;quot;add&amp;quot; alert(&amp;quot;Sum = &amp;quot; + sum) // &amp;quot;+&amp;quot; means combine into a string  撰寫markdown表格範例:
-   Number Next number Previous number     Five Six Four   Ten Eleven Nine   Seven Eight Six   Two Three One    </description>
+      <guid>https://jack842248.github.io/post/2021-01-22-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</guid>
+      <description>前言
+  我所使用的Hugo主題是beautiful hugo，
+ 當初在建立時，是搭配古君葳老師在hahow所開設的課程，
+ Github 免費架站術！輕鬆打造個人品牌
+ 這堂課非常適合像我這樣的初心者，有興趣的人也可以去上上看。
+    分享設定
+  其中對於Hugo主題裡的config.toml不知道要怎麼設定&amp;hellip;
+ 不論你選擇的主題是否跟我一樣，在設定上還是有一些相似的地方。
+ 在此你可以參考我的主題設定來完成它 :
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81  #此網站的連結網址 baseurl = &amp;#34;https://jack842248.</description>
     </item>
     
   </channel>
