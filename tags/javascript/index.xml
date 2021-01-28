@@ -7,7 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript小知識5</title>
+      <link>https://jack842248.github.io/post/2021-01-28-javascript%E5%B0%8F%E7%9F%A5%E8%AD%985/</link>
+      <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-28-javascript%E5%B0%8F%E7%9F%A5%E8%AD%985/</guid>
+      <description>原型(Prototype)   純值可用 建構式 繼承在原型底下。    原型可以新增屬性，並且被物件共用。(範例一)    最頂層是 物件(Object) 原型，在這新增的屬性，所有物件都可以使用。    原型鍊:      建構物件 原型(上層) 原型(上上層)     純值 &amp;mdash; &amp;mdash;   {物件實體} &amp;mdash; Object   [陣列實體] Array Object   new Object() &amp;mdash; Object   new Array() Array Object   new Number() Number Object   new String() String Object   new Boolean() Boolean Object     1 2 3 4 5 6 7 8 9 10  /** 範例一 **/ var a = [1 , 2 , 3]; a.</description>
+    </item>
+    
+    <item>
+      <title>Javascript小知識4</title>
+      <link>https://jack842248.github.io/post/2021-01-27-javascript%E5%B0%8F%E7%9F%A5%E8%AD%984/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-27-javascript%E5%B0%8F%E7%9F%A5%E8%AD%984/</guid>
+      <description>函式(Function)   擁有被呼叫、回傳的功能。    包含程式碼片段。     函式可細分以下幾種 :
+  陳述式
+ 具名函式。(範例一)    表達式
+  匿名函式。(範例二)
+  具名函式。(範例三)
+       具名的函式能夠在函式中呼叫
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48  /** 範例一 **/ function fn1(){ console.</description>
+    </item>
+    
     <item>
       <title>Javascript小知識3</title>
       <link>https://jack842248.github.io/post/2021-01-26-javascript%E5%B0%8F%E7%9F%A5%E8%AD%983/</link>
@@ -15,21 +39,6 @@
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-01-26-javascript%E5%B0%8F%E7%9F%A5%E8%AD%983/</guid>
       <description>物件實字(Object Literals)   直接撰寫 {} 物件。(範例一)   建構物件(Constructor Object)   使用 new Object() 包裹方式建立。(範例二)   1 2 3 4 5 6 7 8 9 10 11 12 13  /** 範例一 **/ var a = { name:&amp;#34;蘋果&amp;#34;, amount: 100 } /** 範例二 **/ var b = new Object(); b.name = &amp;#34;蘋果&amp;#34;; b.amount = 100; //兩者一樣內容一模一樣 //但console.log(a==b); //false      物件的基本應用方法 :   取值。(範例一)    新增屬性。(範例二)    刪除屬性。(範例三)    新增物件。(範例四)   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41  var fruit = { name:&amp;#34;蘋果&amp;#34;, amount: 100 } /** 範例一 **/ console.</description>
-    </item>
-    
-    <item>
-      <title>Javascript小知識4</title>
-      <link>https://jack842248.github.io/post/2021-01-26-javascript%E5%B0%8F%E7%9F%A5%E8%AD%984/</link>
-      <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-26-javascript%E5%B0%8F%E7%9F%A5%E8%AD%984/</guid>
-      <description>函式(Function)   擁有被呼叫、回傳的功能。    包含程式碼片段。     函式可細分以下幾種 :
-  陳述式
- 具名函式。(範例一)    表達式
-  匿名函式。(範例二)
-  具名函式。(範例三)
-       具名的函式只能夠在函式呼叫
- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46  /** 範例一 **/ function fn1(){ console.</description>
     </item>
     
     <item>

@@ -15,10 +15,11 @@
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-01-22-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</guid>
       <description>前言
-  我所使用的Hugo主題是beautiful hugo，
- 當初在建立時，是搭配古君葳老師在hahow所開設的課程，
- Github 免費架站術！輕鬆打造個人品牌
- 這堂課非常適合像我這樣的初心者，有興趣的人也可以去上上看。
+  我所使用的Hugo主題是beautiful hugo。
+ 當初在建立時，是觀看Github 免費架站術！輕鬆打造個人品牌這堂課程，才完成它的。
+ 這堂課非常適合初心者學習，
+ 裡面包含Github、Hugo、Markdown的介紹與使用，
+ 有興趣的可以參考看看。
     分享設定
   其中對於Hugo主題裡的config.toml不知道要怎麼設定&amp;hellip;
  不論你選擇的主題是否跟我一樣，在設定上還是有一些相似的地方。
