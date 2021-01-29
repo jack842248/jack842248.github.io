@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>Javascript小知識5 - Jack Huang Blog</title>
-  <meta name="description" content="原型">
+  <meta name="description" content="繼承與原型鍊">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -59,7 +59,7 @@
   "headline": "Javascript小知識5",
   "description" : "原型(Prototype)   純值可用 建構式 繼承在原型底下。    原型可以新增屬性，並且被物件共用。(範例一)    最頂層是 物件(Object) 原型，在這新增的屬性，所有物件都可以使用。    原型鍊:      建構物件 原型(上層) 原型(上上層)     純值 \u0026mdash; \u0026mdash;   {物件實體} \u0026mdash; Object   [陣列實體] Array Object   new Object() \u0026mdash; Object   new Array() Array Object   new Number() Number Object   new String() String Object   new Boolean() Boolean Object     1 2 3 4 5 6 7 8 9 10  \/** 範例一 **\/ var a = [1 , 2 , 3]; a.",
   "inLanguage" : "zh-tw",
-  "wordCount":  344 ,
+  "wordCount":  370 ,
   "datePublished" : "2021-01-28T00:00:00",
   "dateModified" : "2021-01-28T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -79,13 +79,13 @@
 </script>
 
 <meta property="og:title" content="Javascript小知識5" />
-<meta property="og:description" content="原型">
+<meta property="og:description" content="繼承與原型鍊">
 <meta property="og:url" content="https://jack842248.github.io/post/2021-01-28-javascript%E5%B0%8F%E7%9F%A5%E8%AD%985/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
   <meta name="twitter:title" content="Javascript小知識5" />
-  <meta name="twitter:description" content="原型">
+  <meta name="twitter:description" content="繼承與原型鍊">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.80.0" />
@@ -247,7 +247,7 @@ if (!doNotTrack) {
                 <h1>Javascript小知識5</h1>
                   
                     
-                      <h2 class="post-subheading">原型</h2>
+                      <h2 class="post-subheading">繼承與原型鍊</h2>
                     
                   
                   
@@ -260,7 +260,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;344&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;370&nbsp;個字
   
   
   
@@ -286,7 +286,7 @@ if (!doNotTrack) {
               
               
                 
-                  <h2 class="post-subheading">原型</h2>
+                  <h2 class="post-subheading">繼承與原型鍊</h2>
                 
               
               
@@ -299,7 +299,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;344&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;370&nbsp;個字
   
   
   
@@ -471,8 +471,6 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#a6e22e">name</span>,<span style="color:#a6e22e">color</span>,<span style="color:#a6e22e">size</span>){
@@ -481,8 +479,6 @@ if (!doNotTrack) {
   <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">size</span>;
 }
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">bibi</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Dog</span>();
-
-
 
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fruit</span>(<span style="color:#a6e22e">name</span>,<span style="color:#a6e22e">amount</span>){
 <span style="color:#75715e">//建構函式
@@ -703,6 +699,22 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
+<h1 id="heading-20"></h1>
+<blockquote>
+<p>以下驗證結果:</p>
+<ul>
+<li>Bibi.<strong>proto</strong> === Dog.prototype</li>
+<li>Bibi.<strong>proto</strong>.<strong>proto</strong> === Animal.prototype</li>
+<li>Bibi.<strong>proto</strong>.<strong>proto</strong>.<strong>proto</strong> === Object.prototype</li>
+<li>Bibi.<strong>proto</strong>.<strong>proto</strong>.<strong>proto</strong>.<strong>proto</strong> === null</li>
+<li>Object.prototype.constructor === Object</li>
+<li>Animal.prototype.constructor === Animal</li>
+<li>Dog.prototype.constructor === Dog</li>
+<li>Dog.prototype.bark === Bibi.bark</li>
+<li>Animal.prototype.move === Bibi.move</li>
+</ul>
+</blockquote>
+<h1 id="heading-21"></h1>
 
 
         
@@ -780,13 +792,15 @@ if (!doNotTrack) {
                   <ul>
                 
                 
+                    <li><a href="/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/">Javascript小知識6</a></li>
+                
+                    <li><a href="/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/">Javascript小知識7</a></li>
+                
                     <li><a href="/post/2021-01-27-javascript%E5%B0%8F%E7%9F%A5%E8%AD%984/">Javascript小知識4</a></li>
                 
                     <li><a href="/post/2021-01-26-javascript%E5%B0%8F%E7%9F%A5%E8%AD%983/">Javascript小知識3</a></li>
                 
                     <li><a href="/post/2021-01-25-javascript%E5%B0%8F%E7%9F%A5%E8%AD%982/">Javascript小知識2</a></li>
-                
-                    <li><a href="/post/2021-01-24-javascript%E5%B0%8F%E7%9F%A5%E8%AD%981/">Javascript小知識1</a></li>
                 
               </ul>
 
@@ -801,6 +815,10 @@ if (!doNotTrack) {
               <a href="https://jack842248.github.io/post/2021-01-27-javascript%E5%B0%8F%E7%9F%A5%E8%AD%984/" data-toggle="tooltip" data-placement="top" title="Javascript小知識4">&larr; 上一篇</a>
             </li>
           
+          
+            <li class="next">
+              <a href="https://jack842248.github.io/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/" data-toggle="tooltip" data-placement="top" title="Javascript小知識7">下一篇 &rarr;</a>
+            </li>
           
         </ul>
       
