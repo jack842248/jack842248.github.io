@@ -57,11 +57,11 @@
     "name" : "JackHuang"
   },
   "headline": "Javascript小知識7",
-  "description" : "var、let、const   宣告變數用。      名稱 var let const     作用域 在function裡 在{}裡 在{}裡   宣告的變數 可以賦予新的值 可以賦予新的值 不能賦予新的值   重複宣告同個變數時 會直接覆蓋 會出現錯誤 會出現錯誤   從創造到執行階段會 提升(Hoisting) 暫時性死區(TDZ) 會出現錯誤      當使用 for迴圈 時:   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  \/** for迴圈 \u002b var **\/ for(var i=0; i\u0026lt;3 ; i\u002b\u002b){ setTimeout(function(){ console.",
+  "description" : "var、let、const   宣告變數用。      名稱 var let const     作用域 在函式裡 在block{}裡 在block{}裡   宣告的變數 可以賦予新的值 可以賦予新的值 不能賦予新的值   重複宣告變數時 不會出錯 會出錯 會出錯   從創造到執行階段會 提升(Hoisting) 暫時性死區(TDZ) 會出現錯誤      當使用 for迴圈 時:   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  \/** for迴圈(var) **\/ for(var i=0 ; i\u0026lt;3 ; i\u002b\u002b){ setTimeout(function(){ console.",
   "inLanguage" : "zh-tw",
-  "wordCount":  443 ,
-  "datePublished" : "2021-01-29T00:00:00",
-  "dateModified" : "2021-01-29T00:00:00",
+  "wordCount":  427 ,
+  "datePublished" : "2021-01-30T00:00:00",
+  "dateModified" : "2021-01-30T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
   "keywords" : [ "javascript" ],
   "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987\/",
@@ -254,13 +254,13 @@ if (!doNotTrack) {
                     <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-01-29
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-01-30
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;443&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;427&nbsp;個字
   
   
   
@@ -293,13 +293,13 @@ if (!doNotTrack) {
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-01-29
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-01-30
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;443&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;427&nbsp;個字
   
   
   
@@ -340,9 +340,9 @@ if (!doNotTrack) {
 <tbody>
 <tr>
 <td>作用域</td>
-<td>在function裡</td>
-<td>在{}裡</td>
-<td>在{}裡</td>
+<td>在函式裡</td>
+<td>在block{}裡</td>
+<td>在block{}裡</td>
 </tr>
 <tr>
 <td>宣告的變數</td>
@@ -351,10 +351,10 @@ if (!doNotTrack) {
 <td>不能賦予新的值</td>
 </tr>
 <tr>
-<td>重複宣告同個變數時</td>
-<td>會直接覆蓋</td>
-<td>會出現錯誤</td>
-<td>會出現錯誤</td>
+<td>重複宣告變數時</td>
+<td>不會出錯</td>
+<td>會出錯</td>
+<td>會出錯</td>
 </tr>
 <tr>
 <td>從創造到執行階段會</td>
@@ -388,16 +388,16 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** for迴圈 + var **/</span>
-<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** for迴圈(var) **/</span>
+<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
   <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){
     <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);  <span style="color:#75715e">//3  //3  //3
 </span><span style="color:#75715e"></span>  },<span style="color:#ae81ff">1000</span>);
 }
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);  <span style="color:#75715e">//3
 </span><span style="color:#75715e"></span>
-<span style="color:#75715e">/** for迴圈 + let **/</span>
-<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+<span style="color:#75715e">/** for迴圈(let)) **/</span>
+<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
   <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){
     <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);  <span style="color:#75715e">//0  //1  //2
 </span><span style="color:#75715e"></span>  },<span style="color:#ae81ff">1000</span>);
@@ -435,48 +435,34 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 函式表達式 **/</span>
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fn1</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">par1</span>){
-  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">par1</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fn1</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>){
+  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;蘋果&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">par1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">par2</span>;
 }
-<span style="color:#a6e22e">fn1</span>();  <span style="color:#75715e">//執行
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">/** 箭頭函式 **/</span>
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fn1</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">par1</span>)=&gt;{
-  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;蘋果&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">par1</span>;
-}
+<span style="color:#a6e22e">fn1</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>);
 
-<span style="color:#75715e">//如果程式碼只有return
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fn1</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">par1</span>) =&gt; <span style="color:#e6db74">&#34;蘋果&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">par1</span>;
-<span style="color:#75715e">//=&gt;後面的東西會直接回傳
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">//如果有兩個參數
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fn1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span> =&gt; <span style="color:#e6db74">&#34;蘋果&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">par1</span> <span style="color:#f92672">+</span><span style="color:#a6e22e">par2</span>;
-<span style="color:#75715e">//()可以去掉
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">//如果有一個參數
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fn1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">par1</span> =&gt; <span style="color:#e6db74">&#34;蘋果&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">par1</span>;
-<span style="color:#75715e">//()可以去掉
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">//如果沒有參數
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fn1</span> <span style="color:#f92672">=</span> () =&gt; <span style="color:#e6db74">&#34;蘋果&#34;</span>;
-<span style="color:#75715e">//()不能省略
-</span></code></pre></td></tr></table>
+<span style="color:#75715e">/** 箭頭函式 **/</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fn1</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>) =&gt; {
+  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;蘋果&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">par1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">par2</span>;
+}
+<span style="color:#a6e22e">fn1</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>);
+
+<span style="color:#75715e">/** 如果只有return **/</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fn1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span> =&gt; <span style="color:#e6db74">&#34;蘋果&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">par1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">par2</span>;
+<span style="color:#a6e22e">fn1</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>);
+
+<span style="color:#75715e">/** 如果沒有參數 **/</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fn1</span> <span style="color:#f92672">=</span> () =&gt; <span style="color:#e6db74">&#34;蘋果&#34;</span>;
+<span style="color:#a6e22e">fn1</span>();
+</code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-9"></h1>
 <hr>
 <h1 id="heading-10"></h1>
 <ul>
-<li><strong>argument</strong> 須改用 <strong>其餘參數</strong> 。</li>
+<li><strong>arguments</strong> 須改用 <strong>其餘參數</strong> 。</li>
 </ul>
 <h1 id="heading-11"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -495,16 +481,16 @@ if (!doNotTrack) {
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** argument **/</span>
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">num</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fn1</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
   <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arguments</span>);  <span style="color:#75715e">//[1,2,3]
 </span><span style="color:#75715e"></span>}
-<span style="color:#a6e22e">num</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>);
+<span style="color:#a6e22e">fn1</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>);
 
 <span style="color:#75715e">/** 其餘參數 **/</span>
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">num</span> <span style="color:#f92672">=</span> (...<span style="color:#a6e22e">arg</span>) =&gt; {
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fn1</span> <span style="color:#f92672">=</span> (...<span style="color:#a6e22e">arg</span>) =&gt; {
   <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arg</span>);  <span style="color:#75715e">//[1,2,3]
 </span><span style="color:#75715e"></span>}
-<span style="color:#a6e22e">num</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>);
+<span style="color:#a6e22e">fn1</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>);
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-12"></h1>
@@ -518,7 +504,7 @@ if (!doNotTrack) {
 <p><strong>addEventListener</strong> ，無法找到 <strong>this</strong> 。</p>
 </li>
 <li>
-<p>call、apply、bind，傳入的都是 <strong>window</strong> ‧</p>
+<p><strong>call()</strong>、<strong>apply()</strong>、<strong>bind()</strong>，傳入的都是 <strong>window</strong> 。</p>
 </li>
 <li>
 <p>不能拿來 <strong>建構函式</strong> 。</p>
@@ -556,7 +542,7 @@ if (!doNotTrack) {
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 一般函式 **/</span>
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span>{
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">obj1</span> <span style="color:#f92672">=</span>{
   <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>,
   <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
     <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){
@@ -564,11 +550,11 @@ if (!doNotTrack) {
 </span><span style="color:#75715e"></span>    },<span style="color:#ae81ff">1000</span>); 
   }
 }
-<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">amount</span>();
+<span style="color:#a6e22e">obj1</span>.<span style="color:#a6e22e">amount</span>();
 
 <span style="color:#75715e">/** 箭頭函式 **/</span>
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span>{
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">obj1</span> <span style="color:#f92672">=</span>{
   <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>,
   <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
     <span style="color:#a6e22e">setTimeout</span>(()=&gt;{
@@ -576,7 +562,7 @@ if (!doNotTrack) {
 </span><span style="color:#75715e"></span>    },<span style="color:#ae81ff">1000</span>); 
   }
 }
-<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">amount</span>();
+<span style="color:#a6e22e">obj1</span>.<span style="color:#a6e22e">amount</span>();
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-15"></h1>
@@ -783,13 +769,9 @@ if (!doNotTrack) {
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2021-01-28-javascript%E5%B0%8F%E7%9F%A5%E8%AD%985/" data-toggle="tooltip" data-placement="top" title="Javascript小知識5">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/" data-toggle="tooltip" data-placement="top" title="Javascript小知識6">&larr; 上一篇</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://jack842248.github.io/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/" data-toggle="tooltip" data-placement="top" title="Javascript小知識6">下一篇 &rarr;</a>
-            </li>
           
         </ul>
       

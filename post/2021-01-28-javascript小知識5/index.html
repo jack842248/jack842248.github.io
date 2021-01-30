@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "Javascript小知識5",
-  "description" : "原型(Prototype)   純值可用 建構式 繼承在原型底下。    原型可以新增屬性，並且被物件共用。(範例一)    最頂層是 物件(Object) 原型，在這新增的屬性，所有物件都可以使用。    原型鍊:      建構物件 原型(上層) 原型(上上層)     純值 \u0026mdash; \u0026mdash;   {物件實體} \u0026mdash; Object   [陣列實體] Array Object   new Object() \u0026mdash; Object   new Array() Array Object   new Number() Number Object   new String() String Object   new Boolean() Boolean Object     1 2 3 4 5 6 7 8 9 10  \/** 範例一 **\/ var a = [1 , 2 , 3]; a.",
+  "description" : "原型(Prototype)   純值可用建構式繼承在原型下。    原型可利用建構函式新增屬性。    原型有向上查找屬性的功能，而且屬性是共用的。    原型鍊:      建構式 原型(上層) 原型(上上層)     new Object() \u0026mdash; Object   new Array() Array Object   new Number() Number Object   new String() String Object   new Boolean() Boolean Object     1 2 3 4 5 6 7 8 9  var a = [1 , 2 , 3]; var b = [4 , 5 , 6]; a.",
   "inLanguage" : "zh-tw",
-  "wordCount":  370 ,
+  "wordCount":  337 ,
   "datePublished" : "2021-01-28T00:00:00",
   "dateModified" : "2021-01-28T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;370&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;337&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;370&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;337&nbsp;個字
   
   
   
@@ -325,15 +325,15 @@ if (!doNotTrack) {
 <h2 id="原型prototype">原型(Prototype)</h2>
 <h1 id="heading-1"></h1>
 <ul>
-<li>純值可用 <strong>建構式</strong> 繼承在原型底下。</li>
+<li>純值可用<strong>建構式</strong>繼承在原型下。</li>
 </ul>
 <h1 id="heading-2"></h1>
 <ul>
-<li>原型可以新增屬性，並且被物件<strong>共用</strong>。(範例一)</li>
+<li>原型可利用<strong>建構函式</strong>新增屬性。</li>
 </ul>
 <h1 id="heading-3"></h1>
 <ul>
-<li>最頂層是 <strong>物件(Object)</strong> 原型，在這新增的屬性，所有物件都可以使用。</li>
+<li>原型有向上查找屬性的功能，而且屬性是<strong>共用</strong>的。</li>
 </ul>
 <h1 id="heading-4"></h1>
 <ul>
@@ -343,27 +343,12 @@ if (!doNotTrack) {
 <table>
 <thead>
 <tr>
-<th>建構物件</th>
+<th>建構式</th>
 <th>原型(上層)</th>
 <th>原型(上上層)</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>純值</td>
-<td>&mdash;</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td>{物件實體}</td>
-<td>&mdash;</td>
-<td>Object</td>
-</tr>
-<tr>
-<td>[陣列實體]</td>
-<td>Array</td>
-<td>Object</td>
-</tr>
 <tr>
 <td>new Object()</td>
 <td>&mdash;</td>
@@ -394,28 +379,26 @@ if (!doNotTrack) {
 <h1 id="heading-6"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 範例一 **/</span>
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span> , <span style="color:#ae81ff">2</span> , <span style="color:#ae81ff">3</span>];
-<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">__proto__</span>.<span style="color:#a6e22e">getLast</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  <span style="color:#75715e">//在陣列原型下，新增一個getLast的屬性
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>[<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
-  <span style="color:#75715e">//回傳(3 - 1) = 2 等於[最後一項]陣列
-</span><span style="color:#75715e"></span>}
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span> , <span style="color:#ae81ff">2</span> , <span style="color:#ae81ff">3</span>];
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">4</span> , <span style="color:#ae81ff">5</span> , <span style="color:#ae81ff">6</span>];
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">__proto__</span>.<span style="color:#a6e22e">getLast</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+  <span style="color:#75715e">//在上層[Array]原型上，新增[getLast]屬性
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>[<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
+  <span style="color:#75715e">//回傳[最後一項]陣列
+</span><span style="color:#75715e"></span>}
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">getLast</span>());  <span style="color:#75715e">//6
-</span><span style="color:#75715e">//因為b也是陣列，所以也可以使用getLast屬性
+</span><span style="color:#75715e">//因為a、b都是在[Array]原型底下，所有都可以使用[getLast]屬性
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-7"></h1>
@@ -424,11 +407,11 @@ if (!doNotTrack) {
 <h3 id="自訂義原型物件-">自訂義原型物件 :</h3>
 <h1 id="heading-9"></h1>
 <ul>
-<li>__proto__ : 是原型上的屬性(函式)。</li>
+<li>__proto__ : 是原型的上層。</li>
 </ul>
 <h1 id="heading-10"></h1>
 <ul>
-<li>prototype : 是函式裡面的屬性(函式)。</li>
+<li>prototype : 是原型裡的函式。</li>
 </ul>
 <h1 id="heading-11"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -465,38 +448,26 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#a6e22e">name</span>,<span style="color:#a6e22e">color</span>,<span style="color:#a6e22e">size</span>){
-  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>;
-  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">color</span>;
-  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">size</span>;
-}
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">bibi</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Dog</span>();
-
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fruit</span>(<span style="color:#a6e22e">name</span>,<span style="color:#a6e22e">amount</span>){
-<span style="color:#75715e">//建構函式
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 建構[狗]原型 **/</span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#a6e22e">name</span>,<span style="color:#a6e22e">color</span>,<span style="color:#a6e22e">size</span>){
+  <span style="color:#75715e">//使用建構函式，建構[Dog]原型
 </span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>;
-  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">amount</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">amount</span>;
-};
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">apple</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">fruit</span>(<span style="color:#e6db74">&#34;蘋果&#34;</span>,<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">20</span>);
-<span style="color:#75715e">//new XXX()可以把函式變成物件
-</span><span style="color:#75715e">//XXX 是一個函式
-</span><span style="color:#75715e">//XXX的protorype = 純值的__proto__
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">color</span>;
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">size</span>;
+}
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">Bibi</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#e6db74">&#34;比比&#34;</span>,<span style="color:#e6db74">&#34;棕色&#34;</span>,<span style="color:#e6db74">&#34;小型&#34;</span>);
+<span style="color:#75715e">//純值[Bibi]使用建構式，繼承在[Dog]原型底下，並帶入屬性的值
 </span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">fruit</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">price</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">price</span>){
-  <span style="color:#75715e">//在函式裡新增屬性price
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;價錢:&#34;</span> <span style="color:#f92672">+</span> (<span style="color:#a6e22e">price</span><span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>)
-};
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">apple</span>.<span style="color:#a6e22e">price</span>(<span style="color:#ae81ff">50</span>));  <span style="color:#75715e">//45
+<span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">bark</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+  <span style="color:#75715e">//在[Dog]原型函式裡，新增[bark]屬性
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;吠叫&#34;</span>;
+}
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">name</span>,<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">color</span>,<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">size</span>);  <span style="color:#75715e">//&#34;比比&#34;  //&#34;棕色&#34;  //&#34;小型&#34;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">bark</span>());  <span style="color:#75715e">//&#34;比比吠叫&#34;
 </span><span style="color:#75715e"></span>
-<span style="color:#75715e">/** 進階範例 **/</span>
+<span style="color:#75715e">/** 自定義日期 **/</span>
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">date</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date();
 <span style="color:#75715e">//date本身是一個函數
 </span><span style="color:#75715e">//所以date有許多prototype(函式)可以使用
@@ -519,11 +490,11 @@ if (!doNotTrack) {
 <h3 id="自訂義原型層-">自訂義原型層 :</h3>
 <h1 id="heading-14"></h1>
 <ul>
-<li>使用Object.create()，物件能夠繼承到原型下，但會覆蓋掉函式裡的constructor。</li>
+<li>使用<strong>Object.create()</strong>，讓物件繼承到原型下，覆蓋 <em><strong>constructor</strong></em> 。</li>
 </ul>
 <h1 id="heading-15"></h1>
 <ul>
-<li>需要在用call()來把整個建構函式帶入。</li>
+<li>使用 <strong>call()</strong> 將原型帶入另一個<strong>函式建構式</strong>。</li>
 </ul>
 <h1 id="heading-16"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -555,39 +526,35 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Animal</span>(<span style="color:#a6e22e">kingdom</span>,<span style="color:#a6e22e">family</span>){
-  <span style="color:#75715e">//建構[動物]原型
+  <span style="color:#75715e">//使用建構函式建立[Animal]原型
 </span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">kingdom</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">kingdom</span>;
-  <span style="color:#75715e">//在[動物]原型裡增加屬性(界種)
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">family</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">family</span>;
-  <span style="color:#75715e">//在[動物]原型裡增加屬性(科種)
-</span><span style="color:#75715e"></span>}
-<span style="color:#a6e22e">Animal</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">move</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  <span style="color:#75715e">//在[動物]的函式裡增加(移動)屬性
-</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;移動&#34;</span>);
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">family</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">family</span>;
 }
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#a6e22e">name</span>,<span style="color:#a6e22e">color</span>,<span style="color:#a6e22e">size</span>){
-  <span style="color:#75715e">//建構[狗]原型
-</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">Animal</span>.<span style="color:#a6e22e">call</span>(<span style="color:#66d9ef">this</span>,<span style="color:#e6db74">&#34;動物界&#34;</span>,<span style="color:#e6db74">&#34;犬科&#34;</span>);
-  <span style="color:#75715e">//將[動物]原型帶入[狗]原型
+  <span style="color:#a6e22e">Animal</span>.<span style="color:#a6e22e">call</span>(<span style="color:#66d9ef">this</span>,<span style="color:#e6db74">&#34;動物界&#34;</span>,<span style="color:#e6db74">&#34;犬科&#34;</span>);
+  <span style="color:#75715e">//讓[Dog]原型物件，傳入[Animal]原型裡，並帶兩個值到[Animal]參數裡
 </span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>;
   <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">color</span>;
   <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">size</span>;
 }
 <span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">create</span>(<span style="color:#a6e22e">Animal</span>.<span style="color:#a6e22e">prototype</span>);
-<span style="color:#75715e">//將[狗]的函式賦予到[動物]的函式裡
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">constructor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Dog</span>;
-<span style="color:#75715e">//將原本[狗]的函式加回到[狗]原型
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">bark</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  <span style="color:#75715e">//在[狗]的函式裡增加(吠叫)屬性
-</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;吠叫&#34;</span>);
+<span style="color:#75715e">//讓[Dog]原型，繼承在[Animal]原型下
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">Animal</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">move</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+  <span style="color:#75715e">//在[Animal]原型裡函式，新增[move]屬性
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;移動&#34;</span>;
 }
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">Bibi</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#e6db74">&#34;比比&#34;</span>,<span style="color:#e6db74">&#34;棕色&#34;</span>,<span style="color:#e6db74">&#34;小型&#34;</span>);
-<span style="color:#75715e">//建立[比比]繼承到[狗]原型裡
+<span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">bark</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;吠叫&#34;</span>;
+}
+<span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">constructor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Dog</span>;
+<span style="color:#75715e">//將原本[狗]的函式加回到[狗]原型
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">kingdom</span>,<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">family</span>);  <span style="color:#75715e">//&#34;動物界&#34;  //&#34;犬科&#34;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">move</span>());  <span style="color:#75715e">//比比移動
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-17"></h1>
@@ -714,7 +681,6 @@ if (!doNotTrack) {
 <li>Animal.prototype.move === Bibi.move</li>
 </ul>
 </blockquote>
-<h1 id="heading-21"></h1>
 
 
         
@@ -792,9 +758,9 @@ if (!doNotTrack) {
                   <ul>
                 
                 
-                    <li><a href="/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/">Javascript小知識6</a></li>
-                
                     <li><a href="/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/">Javascript小知識7</a></li>
+                
+                    <li><a href="/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/">Javascript小知識6</a></li>
                 
                     <li><a href="/post/2021-01-27-javascript%E5%B0%8F%E7%9F%A5%E8%AD%984/">Javascript小知識4</a></li>
                 
@@ -817,7 +783,7 @@ if (!doNotTrack) {
           
           
             <li class="next">
-              <a href="https://jack842248.github.io/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/" data-toggle="tooltip" data-placement="top" title="Javascript小知識7">下一篇 &rarr;</a>
+              <a href="https://jack842248.github.io/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/" data-toggle="tooltip" data-placement="top" title="Javascript小知識6">下一篇 &rarr;</a>
             </li>
           
         </ul>
