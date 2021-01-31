@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>Javascript小知識7 - Jack Huang Blog</title>
-  <meta name="description" content="Let 及 Const">
+  <meta name="description" content="Let、Const、箭頭函式、其餘參數、樣板字面值、標籤樣板字面值">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -59,7 +59,7 @@
   "headline": "Javascript小知識7",
   "description" : "var、let、const   宣告變數用。      名稱 var let const     作用域 在函式裡 在block{}裡 在block{}裡   宣告的變數 可以賦予新的值 可以賦予新的值 不能賦予新的值   重複宣告變數時 不會出錯 會出錯 會出錯   從創造到執行階段會 提升(Hoisting) 暫時性死區(TDZ) 會出現錯誤      當使用 for迴圈 時:   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  \/** for迴圈(var) **\/ for(var i=0 ; i\u0026lt;3 ; i\u002b\u002b){ setTimeout(function(){ console.",
   "inLanguage" : "zh-tw",
-  "wordCount":  427 ,
+  "wordCount":  716 ,
   "datePublished" : "2021-01-30T00:00:00",
   "dateModified" : "2021-01-30T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -79,13 +79,13 @@
 </script>
 
 <meta property="og:title" content="Javascript小知識7" />
-<meta property="og:description" content="Let 及 Const">
+<meta property="og:description" content="Let、Const、箭頭函式、其餘參數、樣板字面值、標籤樣板字面值">
 <meta property="og:url" content="https://jack842248.github.io/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
   <meta name="twitter:title" content="Javascript小知識7" />
-  <meta name="twitter:description" content="Let 及 Const">
+  <meta name="twitter:description" content="Let、Const、箭頭函式、其餘參數、樣板字面值、標籤樣板字面值">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.80.0" />
@@ -247,7 +247,7 @@ if (!doNotTrack) {
                 <h1>Javascript小知識7</h1>
                   
                     
-                      <h2 class="post-subheading">Let 及 Const</h2>
+                      <h2 class="post-subheading">Let、Const、箭頭函式、其餘參數、樣板字面值、標籤樣板字面值</h2>
                     
                   
                   
@@ -257,10 +257,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-01-30
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;427&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;716&nbsp;個字
   
   
   
@@ -286,7 +286,7 @@ if (!doNotTrack) {
               
               
                 
-                  <h2 class="post-subheading">Let 及 Const</h2>
+                  <h2 class="post-subheading">Let、Const、箭頭函式、其餘參數、樣板字面值、標籤樣板字面值</h2>
                 
               
               
@@ -296,10 +296,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-01-30
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;427&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;716&nbsp;個字
   
   
   
@@ -622,7 +622,7 @@ if (!doNotTrack) {
 </div><h1 id="heading-21"></h1>
 <hr>
 <h1 id="heading-22"></h1>
-<h3 id="箭頭函式--使陣列所有值x2">箭頭函式 + 使陣列所有值X2</h3>
+<h3 id="箭頭函式mapreduceajax">箭頭函式+map()、reduce()、$.ajax()</h3>
 <h1 id="heading-23"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -647,6 +647,46 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 範例一 **/</span>
@@ -656,6 +696,7 @@ if (!doNotTrack) {
 })
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>);  <span style="color:#75715e">//[2,4,6]
 </span><span style="color:#75715e"></span>
+<span style="color:#75715e">/** 範例一(ES6) **/</span>
 <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>];
 <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">par1</span> =&gt; <span style="color:#a6e22e">par1</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>);
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>);  <span style="color:#75715e">//[2,4,6]
@@ -663,13 +704,179 @@ if (!doNotTrack) {
 <span style="color:#75715e">/** 範例二 **/</span>
 <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
   <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">nums</span> <span style="color:#f92672">=</span> Array.<span style="color:#a6e22e">from</span>(<span style="color:#a6e22e">arguments</span>);
-  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nums</span>.<span style="color:#a6e22e">reduce</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>){
-    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">par1</span><span style="color:#f92672">+</span><span style="color:#a6e22e">par2</span>;
+  <span style="color:#75715e">//Array.from()能將[類陣列]轉為[陣列]
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nums</span>.<span style="color:#a6e22e">reduce</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>){
+  <span style="color:#75715e">//第一個參數會帶0，第二個參數會帶入當前的值
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">par1</span><span style="color:#f92672">+</span><span style="color:#a6e22e">par2</span>;
   },<span style="color:#ae81ff">0</span>);
-  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">nums</span>.<span style="color:#a6e22e">length</span>;
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>);  <span style="color:#75715e">//15
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">nums</span>.<span style="color:#a6e22e">length</span>;
 }
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>));
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>));  <span style="color:#75715e">//3
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/** 範例二(ES6) **/</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> (...<span style="color:#a6e22e">arg</span>) =&gt; <span style="color:#a6e22e">arg</span>.<span style="color:#a6e22e">reduce</span>((<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>) =&gt; <span style="color:#a6e22e">par1</span><span style="color:#f92672">+</span><span style="color:#a6e22e">par2</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">arg</span>.<span style="color:#a6e22e">length</span>,<span style="color:#ae81ff">0</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>));  <span style="color:#75715e">//3
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/** 範例三 **/</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">person</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{},
+  <span style="color:#a6e22e">detData</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">vm</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>;
+    <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+      <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://randomuser.me/api/&#34;</span>,
+      <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;json&#34;</span>,
+      <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">data</span>){
+        <span style="color:#a6e22e">vm</span>.<span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>];
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;person.data&#34;</span>,<span style="color:#a6e22e">person</span>.<span style="color:#a6e22e">data</span>);
+      }
+    });
+  }
+}
+<span style="color:#a6e22e">person</span>.<span style="color:#a6e22e">getData</span>();
 
+<span style="color:#75715e">/** 範例三(ES6) **/</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">person</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{},
+  <span style="color:#a6e22e">detData</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
+    <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+      <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://randomuser.me/api/&#34;</span>,
+      <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;json&#34;</span>,
+      <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">data</span>)=&gt;{
+        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>];
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;person.data&#34;</span>,<span style="color:#a6e22e">person</span>.<span style="color:#a6e22e">data</span>);
+      }
+    });
+  }
+}
+<span style="color:#a6e22e">person</span>.<span style="color:#a6e22e">getData</span>();
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-24"></h1>
+<hr>
+<h1 id="heading-25"></h1>
+<h3 id="樣板字面值template-literals">樣板字面值(Template Literals)</h3>
+<h1 id="heading-26"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 範例一 **/</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果售價:&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">a</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;元&#34;</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>);  <span style="color:#75715e">//蘋果售價:25元
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/** 範例一(ES6) **/</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`蘋果售價:</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">a</span><span style="color:#e6db74">}</span><span style="color:#e6db74">元`</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>);  <span style="color:#75715e">//蘋果售價:25元
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/** 範例一(ES6) **/</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`蘋果售價:</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">a</span><span style="color:#f92672">||</span><span style="color:#ae81ff">50</span><span style="color:#e6db74">}</span><span style="color:#e6db74">元`</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>);  <span style="color:#75715e">//蘋果售價:50元
+</span><span style="color:#75715e">//如果a沒有值的話，就會顯示預設50
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/** 範例二 **/</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruit</span> <span style="color:#f92672">=</span> [
+  {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;蘋果&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>},
+  {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;香蕉&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">300</span>},
+  {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;鳳梨&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">500</span>}
+]
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">list</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;list&#34;</span>);
+<span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">innerHTML</span><span style="color:#f92672">=</span> <span style="color:#e6db74">`
+</span><span style="color:#e6db74">&lt;li&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruit</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">總共有</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruit</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">amount</span><span style="color:#e6db74">}</span><span style="color:#e6db74">個&lt;/li&gt;
+</span><span style="color:#e6db74">&lt;li&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruit</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">總共有</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruit</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">amount</span><span style="color:#e6db74">}</span><span style="color:#e6db74">個&lt;/li&gt;
+</span><span style="color:#e6db74">&lt;li&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruit</span>[<span style="color:#ae81ff">2</span>].<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">總共有</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruit</span>[<span style="color:#ae81ff">2</span>].<span style="color:#a6e22e">amount</span><span style="color:#e6db74">}</span><span style="color:#e6db74">個&lt;/li&gt;
+</span><span style="color:#e6db74">`</span>
+
+<span style="color:#75715e">/** 範例二(ES6) **/</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruit</span> <span style="color:#f92672">=</span> [
+  {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;蘋果&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>},
+  {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;香蕉&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">300</span>},
+  {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;鳳梨&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">500</span>}
+]
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">list</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;list&#34;</span>);
+<span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">innerHTML</span><span style="color:#f92672">=</span> <span style="color:#e6db74">`
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">${</span> <span style="color:#a6e22e">fruit</span>.<span style="color:#a6e22e">map</span>( <span style="color:#a6e22e">par1</span> =&gt; <span style="color:#e6db74">`&lt;li&gt;</span><span style="color:#e6db74">${</span> <span style="color:#a6e22e">par1</span>.<span style="color:#a6e22e">name</span> <span style="color:#e6db74">}</span><span style="color:#e6db74">總共有</span><span style="color:#e6db74">${</span> <span style="color:#a6e22e">par1</span>.<span style="color:#a6e22e">amount</span> <span style="color:#e6db74">}</span><span style="color:#e6db74">個&lt;/li&gt;`</span> ).<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;&#34;</span>) <span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">`</span>
+<span style="color:#960050;background-color:#1e0010">#</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<h1 id="heading-27"></h1>
+<h2 id="標籤樣板字面值">標籤樣板字面值</h2>
+<h1 id="heading-28"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 範例一(ES6) **/</span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#a6e22e">str</span>,<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>){
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>,<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>);
+}
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
+<span style="color:#a6e22e">fn1</span><span style="color:#e6db74">`總共有</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">a</span><span style="color:#e6db74">}</span><span style="color:#e6db74">個蘋果`</span>;
+
+<span style="color:#75715e">/** 範例一(ES6) **/</span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#a6e22e">str</span>,...<span style="color:#a6e22e">arg</span>){
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>,<span style="color:#a6e22e">arg</span>);  <span style="color:#75715e">//[總共有,個,&#34;&#34;]  //[100,&#34;蘋果&#34;]
+</span><span style="color:#75715e"></span>}
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
+<span style="color:#a6e22e">fn1</span><span style="color:#e6db74">`總共有</span><span style="color:#e6db74">${</span><span style="color:#ae81ff">100</span><span style="color:#e6db74">}</span><span style="color:#e6db74">個</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">a</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -772,6 +979,10 @@ if (!doNotTrack) {
               <a href="https://jack842248.github.io/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/" data-toggle="tooltip" data-placement="top" title="Javascript小知識6">&larr; 上一篇</a>
             </li>
           
+          
+            <li class="next">
+              <a href="https://jack842248.github.io/post/2021-01-31-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61/" data-toggle="tooltip" data-placement="top" title="學習Vue前端框架1">下一篇 &rarr;</a>
+            </li>
           
         </ul>
       

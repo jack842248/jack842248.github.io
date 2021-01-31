@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue.js on Jack Huang Blog</title>
+    <link>https://jack842248.github.io/tags/vue.js/</link>
+    <description>Recent content in Vue.js on Jack Huang Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
+    <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
+    <lastBuildDate>Sun, 31 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>學習Vue前端框架1</title>
+      <link>https://jack842248.github.io/post/2021-01-31-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61/</link>
+      <pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-31-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61/</guid>
+      <description>軟體設計模式有幾好幾種，Vue.js是以資料狀態操作畫面，偏向MVVC概念。
+ MVC(Model View Controller)     英文 Model View Controller Database     中文 模型 視圖 控制器 資料庫      視圖→發送請求→控制器→模型→資料庫→回傳資料→模型→控制器→渲染→視圖     MVVM(Model View Viewmodel)     英文 Model View Viewmodel     中文 模型 視圖 資料聯繫器      視圖←Binding→資料聯繫器→←模型     開始使用Vue.js   #app裡不能再建立#app。    多個.</description>
+    </item>
+    
+  </channel>
+</rss>
