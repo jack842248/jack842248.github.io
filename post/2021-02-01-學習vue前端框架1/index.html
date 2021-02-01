@@ -59,7 +59,7 @@
   "headline": "學習Vue前端框架1",
   "description" : "Vue.js是以資料狀態操作畫面，偏向MVVM軟體設計模式。\n MVVM(Model View Viewmodel)     英文 Model View Viewmodel     中文 模型 視圖 資料聯繫器      視圖←Binding→資料聯繫器→←模型     MVC(Model View Controller)     英文 Model View Controller Database     中文 模型 視圖 控制器 資料庫      視圖→發送請求→控制器→模型→資料庫→回傳資料→模型→控制器→渲染→視圖     開始使用Vue.js   #app裡不能再建立#app。    若有多個.",
   "inLanguage" : "zh-tw",
-  "wordCount":  545 ,
+  "wordCount":  649 ,
   "datePublished" : "2021-02-01T00:00:00",
   "dateModified" : "2021-02-01T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -257,10 +257,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-01
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;545&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;649&nbsp;個字
   
   
   
@@ -296,10 +296,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-01
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;545&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;649&nbsp;個字
   
   
   
@@ -561,7 +561,7 @@ if (!doNotTrack) {
 <h2 id="v-bind">v-bind</h2>
 <h1 id="heading-28"></h1>
 <ul>
-<li>使用<strong>v-bind</strong>可以綁定&lt;標籤&gt;上的屬性。</li>
+<li>使用<strong>v-bind</strong>是用來綁定動態資料，可以綁定&lt;標籤&gt;上的屬性。</li>
 </ul>
 <h1 id="heading-29"></h1>
 <ul>
@@ -734,7 +734,7 @@ if (!doNotTrack) {
 <h2 id="v-on">v-on</h2>
 <h1 id="heading-41"></h1>
 <ul>
-<li>使用<strong>v-on</strong>可以綁定&lt;標籤&gt;，觸發時執行methods裡的方法。</li>
+<li>使用<strong>v-on</strong>是用來綁定事件可以綁定&lt;標籤&gt;，觸發時執行methods裡的方法。</li>
 </ul>
 <h1 id="heading-42"></h1>
 <ul>
@@ -888,8 +888,10 @@ if (!doNotTrack) {
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-52"></h1>
-<h2 id="v-class動態切換效果">v-class動態切換效果</h2>
+<hr>
 <h1 id="heading-53"></h1>
+<h2 id="v-class動態切換效果">v-class動態切換效果</h2>
+<h1 id="heading-54"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -948,6 +950,112 @@ if (!doNotTrack) {
 <span style="color:#75715e">// &lt;-----結果-----&gt;
 </span><span style="color:#75715e">//當點擊的時候&#34;按鈕&#34;時
 </span><span style="color:#75715e">//[.box]會套用rotate效果 
+</span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h1 id="heading-55"></h1>
+<h2 id="元件化">元件化</h2>
+<h1 id="heading-56"></h1>
+<ul>
+<li>將資料的屬性獨立出來。</li>
+</ul>
+<h1 id="heading-57"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
+  <span style="color:#a6e22e">button</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">on</span><span style="color:#f92672">:</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;price+=1&#34;</span>) {{<span style="color:#a6e22e">price</span>}}
+  <span style="color:#a6e22e">button</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">on</span><span style="color:#f92672">:</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;price+=1&#34;</span>) {{<span style="color:#a6e22e">price</span>}}
+
+<span style="color:#75715e">// &lt;-----js-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">vm</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
+  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;#app&#34;</span>,
+  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{
+    <span style="color:#a6e22e">price</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">25</span>,
+  }
+})
+
+<span style="color:#75715e">// &lt;-----結果-----&gt;
+</span><span style="color:#75715e">//當點擊&lt;button&gt;時，兩個button的數字都會一起增加
+</span><span style="color:#75715e">//若要分開不影響的話，就必須元件化
+</span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
+  <span style="color:#a6e22e">price</span><span style="color:#f92672">-</span><span style="color:#a6e22e">btn</span>
+  <span style="color:#a6e22e">price</span><span style="color:#f92672">-</span><span style="color:#a6e22e">btn</span>
+
+<span style="color:#75715e">// &lt;-----js-----&gt;
+</span><span style="color:#75715e">//Vue.component(&#34;&#34;,{});
+</span><span style="color:#75715e">//新增一個Vue.元件(&#34;&lt;自訂標籤名稱&gt;&#34;,{data:函式回傳{屬性:值}},template:&lt;標籤&gt;內容物)
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">component</span>(<span style="color:#e6db74">&#34;price-btn&#34;</span>,{
+  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span><span style="color:#66d9ef">function</span>(){
+    <span style="color:#66d9ef">return</span>{
+      <span style="color:#a6e22e">price</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">25</span>
+    }
+  },
+  <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span>
+  <span style="color:#e6db74">`
+</span><span style="color:#e6db74">  &lt;div&gt;
+</span><span style="color:#e6db74">    &lt;button v-on:click=&#34;price+=1&#34;&gt; {{price}}
+</span><span style="color:#e6db74">  &lt;/div&gt;
+</span><span style="color:#e6db74">  `</span>
+});
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">vm</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
+  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;#app&#34;</span>,
+})
+
+<span style="color:#75715e">// &lt;-----結果-----&gt;
+</span><span style="color:#75715e">//當點擊&lt;button&gt;時，兩者不會互相影響
 </span></code></pre></td></tr></table>
 </div>
 </div>
@@ -1027,7 +1135,7 @@ if (!doNotTrack) {
                   <ul>
                 
                 
-                    <li><a href="/post/2021-02-01-vue.js-devtools%E5%AE%89%E8%A3%9D/">Vue.js devtools安裝</a></li>
+                    <li><a href="/post/2021-01-31-vue.js-devtools%E5%AE%89%E8%A3%9D/">Vue.js devtools安裝</a></li>
                 
               </ul>
 
@@ -1039,7 +1147,7 @@ if (!doNotTrack) {
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2021-02-01-vue.js-devtools%E5%AE%89%E8%A3%9D/" data-toggle="tooltip" data-placement="top" title="Vue.js devtools安裝">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2021-01-31-vue.js-devtools%E5%AE%89%E8%A3%9D/" data-toggle="tooltip" data-placement="top" title="Vue.js devtools安裝">&larr; 上一篇</a>
             </li>
           
           
