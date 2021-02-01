@@ -4,27 +4,32 @@
   
   <url>
     <loc>https://jack842248.github.io/</loc>
-    <lastmod>2021-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-02-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jack842248.github.io/post/</loc>
-    <lastmod>2021-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://jack842248.github.io/tags/</loc>
-    <lastmod>2021-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://jack842248.github.io/tags/vue.js/</loc>
-    <lastmod>2021-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jack842248.github.io/post/2021-01-31-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61/</loc>
+    <loc>https://jack842248.github.io/post/2021-02-01-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61/</loc>
+    <lastmod>2021-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jack842248.github.io/post/2021-02-01-vue.js-devtools%E5%AE%89%E8%A3%9D/</loc>
     <lastmod>2021-01-31T00:00:00+00:00</lastmod>
   </url>
   
