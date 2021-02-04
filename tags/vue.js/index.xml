@@ -7,7 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>學習Vue前端框架4</title>
+      <link>https://jack842248.github.io/post/2021-02-04-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B64/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-04-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B64/</guid>
+      <description>基礎模板語法   可以插入運算子來呈現結果。(範例一)    可以插入HTML標籤。(範例二) 不建議在網頁上任意使用v-html，因為容易遭受XSS攻擊    使用v-once可單向綁定，只會顯示網頁載入時，之後更改就不會受到影響。(範例三)    可以直接撰寫javascript。(範例四)   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  // &amp;lt;-----html-----&amp;gt; #app //** 範例一 **//  p {{ a + b }} //100300  p {{ a * b }} //30000  p {{ a == b }} //false  //** 範例二 **//  p(v-text=&amp;#34;c&amp;#34;) //&amp;lt;span&amp;gt;蘋果&amp;lt;/span&amp;gt;  p(v-html=&amp;#34;c&amp;#34;) //蘋果  //** 範例三 **//  p(v-text=&amp;#34;c&amp;#34; v-once) //&amp;lt;span&amp;gt;蘋果&amp;lt;/span&amp;gt;  //** 範例三 **//  p {{ b.</description>
+    </item>
+    
+    <item>
+      <title>學習Vue前端框架5</title>
+      <link>https://jack842248.github.io/post/2021-02-05-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B65/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-05-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B65/</guid>
+      <description>模板判斷顯示   兩者切換   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // &amp;lt;-----html-----&amp;gt; #app input(type=&amp;#34;checkbox&amp;#34; v-model=&amp;#34;a&amp;#34;) p(v-if=&amp;#34;a==true&amp;#34;) 蘋果 p(v-if=&amp;#34;a==false&amp;#34;) 香蕉 p(v-if=&amp;#34;a&amp;#34;) 蘋果 p(v-if=&amp;#34;!a&amp;#34;) 香蕉 p(v-if=&amp;#34;a&amp;#34;) 蘋果 p(v-else) 香蕉 // &amp;lt;-----js-----&amp;gt; var app = new Vue({ el: &amp;#34;#app&amp;#34;, data:{ a: true } });     三者切換   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  // &amp;lt;-----html-----&amp;gt; #app button(@click=&amp;#34;a=&amp;#39;A&amp;#39;&amp;#34;) 按鈕1 button(@click=&amp;#34;a=&amp;#39;B&amp;#39;&amp;#34;) 按鈕2 button(@click=&amp;#34;a=&amp;#39;C&amp;#39;&amp;#34;) 按鈕3 p(v-if=&amp;#34; a==&amp;#39;A&amp;#39; &amp;#34;) 蘋果 p(v-else-if=&amp;#34; a==&amp;#39;B&amp;#39; &amp;#34;) 香蕉 p(v-else-if=&amp;#34; a==&amp;#39;C&amp;#39; &amp;#34;) 鳳梨 // &amp;lt;-----js-----&amp;gt; var app = new Vue({ el: &amp;#34;#app&amp;#34;, data:{ a: &amp;#34;A&amp;#34; } });     加入:key是&amp;quot;真&amp;quot;切換   1 2 3 4 5 6 7 8 9 10 11 12 13  // &amp;lt;-----html-----&amp;gt; #app input(v-if=&amp;#34;a&amp;#34; type=&amp;#34;text&amp;#34; placeholder=&amp;#34;蘋果&amp;#34; :key=&amp;#34;a&amp;#34;) input(v-if=&amp;#34;!</description>
+    </item>
+    
+    <item>
+      <title>學習Vue前端框架3</title>
+      <link>https://jack842248.github.io/post/2021-02-03-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B63/</link>
+      <pubDate>Wed, 03 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-03-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B63/</guid>
+      <description>建立完成的Bootstrap4初始版型  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  #app.container.my-3 .input-group.mb-3 .input-group-prepend span.input-group-text 待辦事項 input.form-control(type=&amp;#39;text&amp;#39; placeholder=&amp;#39;準備要做的任務&amp;#39;) .input-group-append button.btn.btn-primary(type=&amp;#39;button&amp;#39;) 新增 .card.text-center .card-header ul.nav.nav-tabs.card-header-tabs li.nav-item a.nav-link.active(href=&amp;#39;#&amp;#39;) 全部 li.nav-item a.nav-link(href=&amp;#39;#&amp;#39;) 進行中 li.nav-item a.nav-link(href=&amp;#39;#&amp;#39;) 已完成 ul.list-group.list-group-flush.text-left li.list-group-item(v-for=&amp;#34;item in filterTodo&amp;#34;) .d-flex .form-check input.form-check-input(type=&amp;#39;checkbox&amp;#39; id=&amp;#34;a1&amp;#34;) label.form-check-label(:for=&amp;#39;item.id&amp;#39;) 待辦事項一 button.close.ml-auto(type=&amp;#39;button&amp;#39;) span &amp;amp;times; input.form-control(type=&amp;#39;text&amp;#39;) .card-footer.d-flex.justify-content-between span 還有X筆任務未完成 a(href=&amp;#39;#&amp;#39;) 清除所有任務      撰寫Vue.</description>
+    </item>
+    
+    <item>
+      <title>學習Vue前端框架2</title>
+      <link>https://jack842248.github.io/post/2021-02-02-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B62/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-02-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B62/</guid>
+      <description>取得輸入框裡的值，點擊按鈕，新增到清單上。   在 data 新增[newTodo]=&amp;ldquo;空字串&amp;rdquo;，用 v-model 與 輸入框 綁定。   在 新增按鈕 上綁定 @click 事件[addTodo]，在 methods 新增[addTodo]方法。   在 data 新增[todos]=[空陣列]。   使用 Date.now() 取得現在時間作為編號 (id) ，並賦予到[id]變數上。   將[newTodo]，賦予到[title]變數上。   將[id]、[title]和[checkbox]:false組成{物件}，使用 push() 將組成的{物件}傳入[todos]。   在 &amp;lt;li&amp;gt; 使用 v-for 列印出[todos]的所有{物件}，並且將{物件}命名為 (item) (item in todos)。   將 (item) 的[id]用 :for綁定在 &amp;lt;label&amp;gt; 上。   將 (item) 的[id]用 :id綁定在 checkbox 上。   將 (item) 的[title]用 {{}} 顯示在 &amp;lt;label&amp;gt;文字上 。   將 (item) 的[checkbox]用 v-model 綁定在 checkbox 上。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52  // &amp;lt;-----html-----&amp;gt; #app //1.</description>
+    </item>
+    
     <item>
       <title>學習Vue前端框架1</title>
       <link>https://jack842248.github.io/post/2021-02-01-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61/</link>
