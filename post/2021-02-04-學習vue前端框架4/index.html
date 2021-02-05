@@ -57,13 +57,13 @@
     "name" : "JackHuang"
   },
   "headline": "學習Vue前端框架4",
-  "description" : "基礎模板語法   可以插入運算子來呈現結果。(範例一)    可以插入HTML標籤。(範例二) 不建議在網頁上任意使用v-html，因為容易遭受XSS攻擊    使用v-once可單向綁定，只會顯示網頁載入時，之後更改就不會受到影響。(範例三)    可以直接撰寫javascript。(範例四)   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  \/\/ \u0026lt;-----html-----\u0026gt; #app \/\/** 範例一 **\/\/  p {{ a \u002b b }} \/\/100300  p {{ a * b }} \/\/30000  p {{ a == b }} \/\/false  \/\/** 範例二 **\/\/  p(v-text=\u0026#34;c\u0026#34;) \/\/\u0026lt;span\u0026gt;蘋果\u0026lt;\/span\u0026gt;  p(v-html=\u0026#34;c\u0026#34;) \/\/蘋果  \/\/** 範例三 **\/\/  p(v-text=\u0026#34;c\u0026#34; v-once) \/\/\u0026lt;span\u0026gt;蘋果\u0026lt;\/span\u0026gt;  \/\/** 範例三 **\/\/  p {{ b.",
+  "description" : "基礎模板語法   可以插入 運算子 來呈現結果。(範例一)    使用 v-html 可直接顯示tag標籤。(範例二)    使用 v-once 可單向綁定，只會顯示網頁載入時，之後更改就不會受到影響。(範例三)    可以直接撰寫 javascript 。(範例四)   不建議在網頁上任意使用v-html，因為會容易遭受XSS攻擊，例如:輸入框\n 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  \/\/ \u0026lt;-----html-----\u0026gt; #app \/\/** 範例一 **\/\/  p {{ a \u002b b }} \/\/100300  p {{ a * b }} \/\/30000  p {{ a == b }} \/\/false  \/\/** 範例二 **\/\/  p(v-text=\u0026#34;c\u0026#34;) \/\/\u0026lt;span\u0026gt;蘋果\u0026lt;\/span\u0026gt;  p(v-html=\u0026#34;c\u0026#34;) \/\/蘋果  \/\/** 範例三 **\/\/  p(v-text=\u0026#34;c\u0026#34; v-once) \/\/\u0026lt;span\u0026gt;蘋果\u0026lt;\/span\u0026gt;  \/\/** 範例三 **\/\/  p {{ b.",
   "inLanguage" : "zh-tw",
-  "wordCount":  704 ,
+  "wordCount":  740 ,
   "datePublished" : "2021-02-04T00:00:00",
   "dateModified" : "2021-02-04T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
-  "keywords" : [ "Vue.js" ],
+  "keywords" : [ "Vue" ],
   "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2021-02-04-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B64\/",
   "publisher" : {
     "@type": "Organization",
@@ -260,7 +260,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;704&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;740&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;704&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;740&nbsp;個字
   
   
   
@@ -325,21 +325,23 @@ if (!doNotTrack) {
 <h3 id="基礎模板語法">基礎模板語法</h3>
 <h1 id="heading-1"></h1>
 <ul>
-<li>可以插入運算子來呈現結果。(範例一)</li>
+<li>可以插入 <strong>運算子</strong> 來呈現結果。(範例一)</li>
 </ul>
 <h1 id="heading-2"></h1>
 <ul>
-<li>可以插入HTML標籤。(範例二) <code>不建議在網頁上任意使用v-html，因為容易遭受XSS攻擊</code></li>
+<li>使用 <strong>v-html</strong> 可直接顯示tag標籤。(範例二)</li>
 </ul>
 <h1 id="heading-3"></h1>
 <ul>
-<li>使用v-once可單向綁定，只會顯示網頁載入時，之後更改就不會受到影響。(範例三)</li>
+<li>使用 <strong>v-once</strong> 可單向綁定，只會顯示網頁載入時，之後更改就不會受到影響。(範例三)</li>
 </ul>
 <h1 id="heading-4"></h1>
 <ul>
-<li>可以直接撰寫javascript。(範例四)</li>
+<li>可以直接撰寫 <strong>javascript</strong> 。(範例四)</li>
 </ul>
 <h1 id="heading-5"></h1>
+<p><code>不建議在網頁上任意使用v-html，因為會容易遭受XSS攻擊，例如:輸入框</code></p>
+<h1 id="heading-6"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -400,37 +402,37 @@ if (!doNotTrack) {
 });
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-6"></h1>
+</div><h1 id="heading-7"></h1>
 <hr>
-<h1 id="heading-7"></h1>
-<h3 id="動態切換樣式">動態切換樣式</h3>
 <h1 id="heading-8"></h1>
-<ul>
-<li>使用判斷來決定是否套用樣式。(範例一)</li>
-</ul>
+<h3 id="class動態切換樣式">:class動態切換樣式</h3>
 <h1 id="heading-9"></h1>
 <ul>
-<li>以物件方式套用樣式。(範例二)</li>
+<li>使用 <strong>判斷式</strong> 來決定是否套用樣式。(範例一)</li>
 </ul>
 <h1 id="heading-10"></h1>
 <ul>
-<li>以陣列方式套用樣式。(範例三)</li>
+<li>以{物件}方式套用樣式。(範例二)</li>
 </ul>
 <h1 id="heading-11"></h1>
 <ul>
-<li>將切換綁定在checkbox上。(範例四)</li>
+<li>以[陣列]方式套用樣式。(範例三)</li>
 </ul>
 <h1 id="heading-12"></h1>
 <ul>
-<li>將切換綁定在button上。(範例五)</li>
+<li>將切換綁定在 <strong>button</strong> 上。(範例四)</li>
 </ul>
 <h1 id="heading-13"></h1>
 <ul>
-<li>直接寫入行內樣式。(範例六)</li>
+<li>將切換綁定在 <strong>checkbox</strong> 上。(範例五)</li>
 </ul>
 <h1 id="heading-14"></h1>
-<p><code>屬性名稱不能有『-』，如果有的話，第二個單字的第一個字母改大寫，例如:backgroundColor</code></p>
+<ul>
+<li>直接寫入行內 <strong>style</strong> 樣式。(範例六)</li>
+</ul>
 <h1 id="heading-15"></h1>
+<p><code>屬性名稱不能有『-』，如果有的話，第二個單字的第一個字母改大寫，例如:backgroundColor</code></p>
+<h1 id="heading-16"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -531,15 +533,15 @@ if (!doNotTrack) {
 });
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-16"></h1>
+</div><h1 id="heading-17"></h1>
 <hr>
-<h1 id="heading-17"></h1>
-<h3 id="陣列與物件的迴圈">陣列與物件的迴圈</h3>
 <h1 id="heading-18"></h1>
-<ul>
-<li>兩者都可以使用v-for列印，陣列的[i]是索引位置，物件的[i]是名稱。</li>
-</ul>
+<h3 id="v-for陣列與物件的迴圈">v-for陣列與物件的迴圈</h3>
 <h1 id="heading-19"></h1>
+<ul>
+<li>兩者的 <strong>v-for</strong> 引索不同，陣列的[key]是 <strong>索引位置</strong> ，物件的[key]是 <strong>名稱</strong> 。</li>
+</ul>
+<h1 id="heading-20"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -604,11 +606,9 @@ if (!doNotTrack) {
 });
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-20"></h1>
-<h3 id="key">:key</h3>
-<h1 id="heading-21"></h1>
+</div><h1 id="heading-21"></h1>
 <ul>
-<li>使用:key能讓動元素一起套用效果。</li>
+<li>使用 <strong>:key</strong> 能讓動元素一起套用效果。</li>
 </ul>
 <h1 id="heading-22"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -662,12 +662,10 @@ if (!doNotTrack) {
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-23"></h1>
-<h3 id="filter">filter</h3>
-<h1 id="heading-24"></h1>
 <ul>
-<li>使用filter()來過濾v-for的顯示結果。</li>
+<li>使用 <strong>filter()</strong> 可以過濾 <strong>v-for</strong> 的顯示結果。</li>
 </ul>
-<h1 id="heading-25"></h1>
+<h1 id="heading-24"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -730,17 +728,11 @@ if (!doNotTrack) {
 });
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-26"></h1>
-<h3 id="vueset">Vue.set</h3>
-<h1 id="heading-27"></h1>
+</div><h1 id="heading-25"></h1>
 <ul>
-<li>v-for資料是固定的，無法利用引索修改資料或長度。</li>
+<li><strong>v-for</strong> 資料是固定的，無法利用引索[key]修改資料或長度，若要傳入資料，則需要用 <strong>Vue.set</strong>  ( 傳入的目標 , key , 傳入的東西 )。</li>
 </ul>
-<h1 id="heading-28"></h1>
-<ul>
-<li>Vue.set(傳入的目標,key,傳入的東西)</li>
-</ul>
-<h1 id="heading-29"></h1>
+<h1 id="heading-26"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -789,13 +781,11 @@ if (!doNotTrack) {
 });
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-30"></h1>
-<h3 id="純數字的迴圈">純數字的迴圈</h3>
-<h1 id="heading-31"></h1>
+</div><h1 id="heading-27"></h1>
 <ul>
-<li>v-for資料是固定的，無法利用引索修改資料或長度。</li>
+<li>可以單純列印出數字。</li>
 </ul>
-<h1 id="heading-32"></h1>
+<h1 id="heading-28"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -810,21 +800,19 @@ if (!doNotTrack) {
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">ul</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">li</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#66d9ef">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;item in 10&#34;</span>) {{ <span style="color:#a6e22e">item</span> }}
-
+  <span style="color:#a6e22e">li</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#66d9ef">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;item in 3&#34;</span>) {{ <span style="color:#a6e22e">item</span> }}  <span style="color:#75715e">//1  //2  //3
+</span><span style="color:#75715e"></span>
 <span style="color:#75715e">// &lt;-----js-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
   <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>
 });
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-33"></h1>
-<h3 id="template">template</h3>
-<h1 id="heading-34"></h1>
+</div><h1 id="heading-29"></h1>
 <ul>
-<li>template本身不會被輸出，可以一次複製所有結果。</li>
+<li><strong>&lt;template&gt;</strong> 樣板本身不會被輸出，可以一次複製所有結果。</li>
 </ul>
-<h1 id="heading-35"></h1>
+<h1 id="heading-30"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -861,13 +849,11 @@ if (!doNotTrack) {
 });
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-36"></h1>
-<h3 id="v-for與v-if">v-for與v-if</h3>
-<h1 id="heading-37"></h1>
+</div><h1 id="heading-31"></h1>
 <ul>
-<li>先執行v-for在執行v-if，可用v-if直接篩選v-for。</li>
+<li>執行 <strong>v-for</strong> 後可再用<strong>v-if</strong>來篩選結果。</li>
 </ul>
-<h1 id="heading-38"></h1>
+<h1 id="heading-32"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -909,7 +895,7 @@ if (!doNotTrack) {
         
           <div class="blog-tags">
             
-              <a href="https://jack842248.github.io/tags/vue.js/">Vue.js</a>&nbsp;
+              <a href="https://jack842248.github.io/tags/vue/">Vue</a>&nbsp;
             
           </div>
         
@@ -1001,9 +987,13 @@ if (!doNotTrack) {
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2021-02-05-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B65/" data-toggle="tooltip" data-placement="top" title="學習Vue前端框架5">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2021-02-03-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B63/" data-toggle="tooltip" data-placement="top" title="學習Vue前端框架3">&larr; 上一篇</a>
             </li>
           
+          
+            <li class="next">
+              <a href="https://jack842248.github.io/post/2021-02-05-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B65/" data-toggle="tooltip" data-placement="top" title="學習Vue前端框架5">下一篇 &rarr;</a>
+            </li>
           
         </ul>
       
