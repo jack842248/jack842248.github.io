@@ -7,14 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>學習Vue前端框架6</title>
+      <link>https://jack842248.github.io/post/2021-02-06-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B66/</link>
+      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-06-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B66/</guid>
+      <description>事件修飾符     修飾符 說明 如同     無使用 先觸發自己，再觸發外層    .capture 先觸發外層，再觸發自己    .stop 只觸發自己 event.stopPropagation()   .self 只觸發自己    .once 只觸發一次    .prevent 取消預設事件 event.preventDefault()     1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  // &amp;lt;-----html-----&amp;gt; ul#app //** 無使用 **//  li(@click=&amp;#34;alert(&amp;#39;外層&amp;#39;)&amp;#34;) a(href=&amp;#34;#&amp;#34; @click=&amp;#34;alert(&amp;#39;內層&amp;#39;)&amp;#34;) 連結 //** .</description>
+    </item>
+    
     <item>
       <title>學習Vue前端框架5</title>
       <link>https://jack842248.github.io/post/2021-02-05-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B65/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-02-05-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B65/</guid>
-      <description>v-if模板判斷顯示   兩者切換。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  // &amp;lt;-----html-----&amp;gt; #app input(type=&amp;#34;checkbox&amp;#34; v-model=&amp;#34;a&amp;#34;) //** 範例一 **//  p(v-if=&amp;#34;a==true&amp;#34;) 蘋果 p(v-if=&amp;#34;a==false&amp;#34;) 香蕉 //** 範例二 **//  p(v-if=&amp;#34;a&amp;#34;) 蘋果 p(v-if=&amp;#34;!a&amp;#34;) 香蕉 //** 範例三 **//  p(v-if=&amp;#34;a&amp;#34;) 蘋果 p(v-else) 香蕉 // &amp;lt;-----js-----&amp;gt; var app = new Vue({ el: &amp;#34;#app&amp;#34;, data:{ a: true } });     三者切換   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  // &amp;lt;-----html-----&amp;gt; #app button(@click=&amp;#34;a=&amp;#39;A&amp;#39;&amp;#34;) 按鈕1 button(@click=&amp;#34;a=&amp;#39;B&amp;#39;&amp;#34;) 按鈕2 button(@click=&amp;#34;a=&amp;#39;C&amp;#39;&amp;#34;) 按鈕3 p(v-if=&amp;#34; a==&amp;#39;A&amp;#39; &amp;#34;) 蘋果 p(v-else-if=&amp;#34; a==&amp;#39;B&amp;#39; &amp;#34;) 香蕉 p(v-else-if=&amp;#34; a==&amp;#39;C&amp;#39; &amp;#34;) 鳳梨 // &amp;lt;-----js-----&amp;gt; var app = new Vue({ el: &amp;#34;#app&amp;#34;, data:{ a: &amp;#34;A&amp;#34; } });     加入:key是&amp;quot;真&amp;quot;切換   1 2 3 4 5 6 7 8 9 10 11 12 13  // &amp;lt;-----html-----&amp;gt; #app input(v-if=&amp;#34;a&amp;#34; type=&amp;#34;text&amp;#34; placeholder=&amp;#34;蘋果&amp;#34; :key=&amp;#34;a&amp;#34;) input(v-if=&amp;#34;!</description>
+      <description>radio(三項切換)   v-on + v-if 方法。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  // &amp;lt;-----html-----&amp;gt; #app input(type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;a=&amp;#39;A&amp;#39;&amp;#34;) input(type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;a=&amp;#39;B&amp;#39;&amp;#34;) input(type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;a=&amp;#39;C&amp;#39;&amp;#34;) p(v-if=&amp;#34; a==&amp;#39;A&amp;#39; &amp;#34;) 蘋果 p(v-else-if=&amp;#34; a==&amp;#39;B&amp;#39; &amp;#34;) 香蕉 p(v-else-if=&amp;#34; a==&amp;#39;C&amp;#39; &amp;#34;) 鳳梨 // &amp;lt;-----js-----&amp;gt; var app = new Vue({ el: &amp;#34;#app&amp;#34;, data:{ a: &amp;#34;A&amp;#34; } });     v-on + {{}} 方法。   1 2 3 4 5 6 7 8 9 10 11 12 13 14  // &amp;lt;-----html-----&amp;gt; #app input(type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;a=&amp;#39;蘋果&amp;#39;&amp;#34;) input(type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;a=&amp;#39;香蕉&amp;#39;&amp;#34;) input(type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;a=&amp;#39;鳳梨&amp;#39;&amp;#34;) p {{a}} // &amp;lt;-----js-----&amp;gt; var app = new Vue({ el: &amp;#34;#app&amp;#34;, data:{ a: &amp;#34;蘋果&amp;#34; } });     v-for + v-on + {{}} 方法。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  // &amp;lt;-----html-----&amp;gt; #app input(v-for=&amp;#34;item in b&amp;#34; type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;change(item)&amp;#34;) p {{a}} // &amp;lt;-----js-----&amp;gt; var app = new Vue({ el: &amp;#34;#app&amp;#34;, data:{ a: &amp;#34;&amp;#34;, b:[ {name: &amp;#34;蘋果&amp;#34;, amount: 100}, {name: &amp;#34;香蕉&amp;#34;, amount: 300}, {name: &amp;#34;鳳梨&amp;#34;, amount: 500} ], }, methods:{ change: function(item){ switch(item.</description>
     </item>
     
     <item>
@@ -23,8 +32,7 @@
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-02-04-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B64/</guid>
-      <description>基礎模板語法   可以插入 運算子 來呈現結果。(範例一)    使用 v-html 可直接顯示tag標籤。(範例二)    使用 v-once 可單向綁定，只會顯示網頁載入時，之後更改就不會受到影響。(範例三)    可以直接撰寫 javascript 。(範例四)   不建議在網頁上任意使用v-html，因為會容易遭受XSS攻擊，例如:輸入框
- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  // &amp;lt;-----html-----&amp;gt; #app //** 範例一 **//  p {{ a + b }} //100300  p {{ a * b }} //30000  p {{ a == b }} //false  //** 範例二 **//  p(v-text=&amp;#34;c&amp;#34;) //&amp;lt;span&amp;gt;蘋果&amp;lt;/span&amp;gt;  p(v-html=&amp;#34;c&amp;#34;) //蘋果  //** 範例三 **//  p(v-text=&amp;#34;c&amp;#34; v-once) //&amp;lt;span&amp;gt;蘋果&amp;lt;/span&amp;gt;  //** 範例三 **//  p {{ b.</description>
+      <description>v-text模板語法   可以插入 運算子 來呈現結果。(範例一)    使用 v-once 可以只綁定一次，之後在修改不會變更。(範例二)    可以直接撰寫 javascript 。(範例三)   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  // &amp;lt;-----html-----&amp;gt; #app //** 範例一 **//  p {{ a + b }} //100300  p {{ a * b }} //30000  p {{ a == b }} //false  //** 範例二 **//  p(v-text=&amp;#34;b&amp;#34; v-once) //300  //** 範例三 **//  p {{ b.</description>
     </item>
     
     <item>
@@ -52,7 +60,7 @@
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-02-01-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61/</guid>
       <description>Vue.js是以資料狀態操作畫面，偏向MVVM軟體設計模式。
- MVVM(Model View Viewmodel)     英文 Model View Viewmodel     中文 模型 視圖 資料聯繫器      視圖←Binding→資料聯繫器→←模型     MVC(Model View Controller)     英文 Model View Controller Database     中文 模型 視圖 控制器 資料庫      視圖→發送請求→控制器→模型→資料庫→回傳資料→模型→控制器→渲染→視圖     開始使用Vue.js   #app裡不能再建立#app。    若有多個.</description>
+ MVVM(Model View Viewmodel)     英文 Model View Viewmodel     中文 模型 視圖 資料聯繫器      [視圖]←綁定→[資料聯繫器]→←[模型]     MVC(Model View Controller)     英文 Model View Controller Database     中文 模型 視圖 控制器 資料庫      [視圖]→發送請求→[控制器]→[模型]→[資料庫]→回傳資料→[模型]→[控制器]→渲染→[視圖]     開始使用Vue.js   使用 element (簡化:el)綁定HTML上的DOM元素。    #app裡不能再建立#app。    若有多個.</description>
     </item>
     
     <item>
