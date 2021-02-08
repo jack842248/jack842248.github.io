@@ -59,7 +59,7 @@
   "headline": "學習Vue前端框架1",
   "description" : "Vue.js是以資料狀態操作畫面，偏向MVVM軟體設計模式。\n MVVM(Model View Viewmodel)     英文 Model View Viewmodel     中文 模型 視圖 資料聯繫器      [視圖]←綁定→[資料聯繫器]→←[模型]     MVC(Model View Controller)     英文 Model View Controller Database     中文 模型 視圖 控制器 資料庫      [視圖]→發送請求→[控制器]→[模型]→[資料庫]→回傳資料→[模型]→[控制器]→渲染→[視圖]     開始使用Vue.js   使用 element (簡化:el)綁定HTML上的DOM元素。    #app裡不能再建立#app。    若有多個.",
   "inLanguage" : "zh-tw",
-  "wordCount":  586 ,
+  "wordCount":  482 ,
   "datePublished" : "2021-02-01T00:00:00",
   "dateModified" : "2021-02-01T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;586&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;482&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;586&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;482&nbsp;個字
   
   
   
@@ -863,113 +863,6 @@ if (!doNotTrack) {
 </span><span style="color:#75715e">//當點擊的時候&#34;按鈕&#34;時會變紅色
 </span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-52"></h1>
-<hr>
-<h1 id="heading-53"></h1>
-<h2 id="元件化">元件化</h2>
-<h1 id="heading-54"></h1>
-<ul>
-<li>將資料的屬性獨立出來。</li>
-</ul>
-<h1 id="heading-55"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">button</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">on</span><span style="color:#f92672">:</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;price+=1&#34;</span>) {{<span style="color:#a6e22e">price</span>}}
-  <span style="color:#a6e22e">button</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">on</span><span style="color:#f92672">:</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;price+=1&#34;</span>) {{<span style="color:#a6e22e">price</span>}}
-
-<span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">vm</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
-  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;#app&#34;</span>,
-  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{
-    <span style="color:#a6e22e">price</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">25</span>,
-  }
-})
-
-<span style="color:#75715e">// &lt;-----結果-----&gt;
-</span><span style="color:#75715e">//當點擊&lt;button&gt;時，兩個button的數字都會一起增加
-</span><span style="color:#75715e">//若要分開不影響的話，就必須元件化
-</span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">price</span><span style="color:#f92672">-</span><span style="color:#a6e22e">btn</span>
-  <span style="color:#a6e22e">price</span><span style="color:#f92672">-</span><span style="color:#a6e22e">btn</span>
-
-<span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e">//Vue.component(&#34;&#34;,{});
-</span><span style="color:#75715e">//新增一個Vue.元件(&#34;&lt;自訂標籤名稱&gt;&#34;,{data:函式回傳{屬性:值}},template:&lt;標籤&gt;內容物)
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">component</span>(<span style="color:#e6db74">&#34;price-btn&#34;</span>,{
-  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span><span style="color:#66d9ef">function</span>(){
-    <span style="color:#66d9ef">return</span>{
-      <span style="color:#a6e22e">price</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">25</span>
-    }
-  },
-  <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span>
-  <span style="color:#e6db74">`
-</span><span style="color:#e6db74">  &lt;div&gt;
-</span><span style="color:#e6db74">    &lt;button v-on:click=&#34;price+=1&#34;&gt; {{price}}
-</span><span style="color:#e6db74">  &lt;/div&gt;
-</span><span style="color:#e6db74">  `</span>
-});
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">vm</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
-  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;#app&#34;</span>,
-})
-
-<span style="color:#75715e">// &lt;-----結果-----&gt;
-</span><span style="color:#75715e">//當點擊&lt;button&gt;時，兩者不會互相影響
-</span></code></pre></td></tr></table>
-</div>
 </div>
 
         
@@ -1049,13 +942,13 @@ if (!doNotTrack) {
                 
                     <li><a href="/post/2021-02-07-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B67/">學習Vue前端框架7</a></li>
                 
-                    <li><a href="/post/2021-02-08-%E8%AA%8D%E8%AD%98vue%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F8/">認識Vue生命週期8</a></li>
+                    <li><a href="/post/2021-02-08-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B68/">學習Vue前端框架8</a></li>
+                
+                    <li><a href="/post/2021-02-08-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69/">學習Vue前端框架9</a></li>
                 
                     <li><a href="/post/2021-02-06-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B66/">學習Vue前端框架6</a></li>
                 
                     <li><a href="/post/2021-02-05-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B65/">學習Vue前端框架5</a></li>
-                
-                    <li><a href="/post/2021-02-04-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B64/">學習Vue前端框架4</a></li>
                 
               </ul>
 

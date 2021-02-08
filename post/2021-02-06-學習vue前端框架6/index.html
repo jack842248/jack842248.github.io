@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>學習Vue前端框架6 - Jack Huang Blog</title>
-  <meta name="description" content="事件修飾符、按鍵修飾符、滑鼠修飾符、表單修飾符">
+  <meta name="description" content="修飾符modifiers">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "學習Vue前端框架6",
-  "description" : "事件修飾符     修飾符 說明 如同     無使用 先觸發自己，再觸發外層    .capture 先觸發外層，再觸發自己    .stop 只觸發自己 event.stopPropagation()   .self 只觸發自己    .once 只觸發一次    .prevent 取消預設事件 event.preventDefault()     1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  \/\/ \u0026lt;-----html-----\u0026gt; ul#app \/\/** 無使用 **\/\/  li(@click=\u0026#34;alert(\u0026#39;外層\u0026#39;)\u0026#34;) a(href=\u0026#34;#\u0026#34; @click=\u0026#34;alert(\u0026#39;內層\u0026#39;)\u0026#34;) 連結 \/\/** .",
+  "description" : "修飾符(Modifiers)   在v-on和v-model上使用。     事件修飾符     修飾符 說明 如同     無使用 先觸發自己，再觸發外層    .capture 先觸發外層，再觸發自己    .stop 只觸發自己 event.stopPropagation()   .self 只觸發自己    .once 只觸發一次    .prevent 取消預設事件 event.preventDefault()     1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  \/\/ \u0026lt;-----html-----\u0026gt; ul#app \/\/** 無使用 **\/\/  li(@click=\u0026#34;alert(\u0026#39;外層\u0026#39;)\u0026#34;) a(href=\u0026#34;#\u0026#34; @click=\u0026#34;alert(\u0026#39;內層\u0026#39;)\u0026#34;) 連結 \/\/** .",
   "inLanguage" : "zh-tw",
-  "wordCount":  330 ,
+  "wordCount":  332 ,
   "datePublished" : "2021-02-06T00:00:00",
   "dateModified" : "2021-02-06T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -79,13 +79,13 @@
 </script>
 
 <meta property="og:title" content="學習Vue前端框架6" />
-<meta property="og:description" content="事件修飾符、按鍵修飾符、滑鼠修飾符、表單修飾符">
+<meta property="og:description" content="修飾符modifiers">
 <meta property="og:url" content="https://jack842248.github.io/post/2021-02-06-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B66/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
   <meta name="twitter:title" content="學習Vue前端框架6" />
-  <meta name="twitter:description" content="事件修飾符、按鍵修飾符、滑鼠修飾符、表單修飾符">
+  <meta name="twitter:description" content="修飾符modifiers">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.80.0" />
@@ -247,7 +247,7 @@ if (!doNotTrack) {
                 <h1>學習Vue前端框架6</h1>
                   
                     
-                      <h2 class="post-subheading">事件修飾符、按鍵修飾符、滑鼠修飾符、表單修飾符</h2>
+                      <h2 class="post-subheading">修飾符modifiers</h2>
                     
                   
                   
@@ -260,7 +260,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;330&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;332&nbsp;個字
   
   
   
@@ -286,7 +286,7 @@ if (!doNotTrack) {
               
               
                 
-                  <h2 class="post-subheading">事件修飾符、按鍵修飾符、滑鼠修飾符、表單修飾符</h2>
+                  <h2 class="post-subheading">修飾符modifiers</h2>
                 
               
               
@@ -299,7 +299,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;330&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;332&nbsp;個字
   
   
   
@@ -322,8 +322,16 @@ if (!doNotTrack) {
       <article role="main" class="blog-post">
         <hr>
 <h1 id="heading"></h1>
-<h3 id="事件修飾符">事件修飾符</h3>
+<h2 id="修飾符modifiers">修飾符(Modifiers)</h2>
 <h1 id="heading-1"></h1>
+<ul>
+<li>在v-on和v-model上使用。</li>
+</ul>
+<h1 id="heading-2"></h1>
+<hr>
+<h1 id="heading-3"></h1>
+<h3 id="事件修飾符">事件修飾符</h3>
+<h1 id="heading-4"></h1>
 <table>
 <thead>
 <tr>
@@ -365,7 +373,7 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<h1 id="heading-2"></h1>
+<h1 id="heading-5"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -434,11 +442,11 @@ if (!doNotTrack) {
 });
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-3"></h1>
+</div><h1 id="heading-6"></h1>
 <hr>
-<h1 id="heading-4"></h1>
+<h1 id="heading-7"></h1>
 <h3 id="按鍵修飾符">按鍵修飾符</h3>
-<h1 id="heading-5"></h1>
+<h1 id="heading-8"></h1>
 <table>
 <thead>
 <tr>
@@ -493,9 +501,9 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<h1 id="heading-6"></h1>
+<h1 id="heading-9"></h1>
 <p><code>.meta : 在window系統是:Win鍵(⊞) ; 在Mac系統上是command鍵(⌘)。</code></p>
-<h1 id="heading-7"></h1>
+<h1 id="heading-10"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -542,11 +550,11 @@ if (!doNotTrack) {
 });
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-8"></h1>
+</div><h1 id="heading-11"></h1>
 <hr>
-<h1 id="heading-9"></h1>
+<h1 id="heading-12"></h1>
 <h3 id="滑鼠修飾符">滑鼠修飾符</h3>
-<h1 id="heading-10"></h1>
+<h1 id="heading-13"></h1>
 <table>
 <thead>
 <tr>
@@ -569,7 +577,7 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<h1 id="heading-11"></h1>
+<h1 id="heading-14"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -616,11 +624,11 @@ if (!doNotTrack) {
 });
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-12"></h1>
+</div><h1 id="heading-15"></h1>
 <hr>
-<h1 id="heading-13"></h1>
+<h1 id="heading-16"></h1>
 <h3 id="表單修飾符">表單修飾符</h3>
-<h1 id="heading-14"></h1>
+<h1 id="heading-17"></h1>
 <table>
 <thead>
 <tr>
@@ -643,9 +651,9 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<h1 id="heading-15"></h1>
+<h1 id="heading-18"></h1>
 <p><code>.meta : 在window是:Win鍵(⊞) ; 在Mac上是command鍵(⌘)。</code></p>
-<h1 id="heading-16"></h1>
+<h1 id="heading-19"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -777,13 +785,13 @@ if (!doNotTrack) {
                 
                     <li><a href="/post/2021-02-07-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B67/">學習Vue前端框架7</a></li>
                 
-                    <li><a href="/post/2021-02-08-%E8%AA%8D%E8%AD%98vue%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F8/">認識Vue生命週期8</a></li>
+                    <li><a href="/post/2021-02-08-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B68/">學習Vue前端框架8</a></li>
+                
+                    <li><a href="/post/2021-02-08-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69/">學習Vue前端框架9</a></li>
                 
                     <li><a href="/post/2021-02-05-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B65/">學習Vue前端框架5</a></li>
                 
                     <li><a href="/post/2021-02-04-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B64/">學習Vue前端框架4</a></li>
-                
-                    <li><a href="/post/2021-02-03-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B63/">學習Vue前端框架3</a></li>
                 
               </ul>
 
@@ -800,7 +808,7 @@ if (!doNotTrack) {
           
           
             <li class="next">
-              <a href="https://jack842248.github.io/post/2021-02-08-%E8%AA%8D%E8%AD%98vue%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F8/" data-toggle="tooltip" data-placement="top" title="認識Vue生命週期8">下一篇 &rarr;</a>
+              <a href="https://jack842248.github.io/post/2021-02-08-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69/" data-toggle="tooltip" data-placement="top" title="學習Vue前端框架9">下一篇 &rarr;</a>
             </li>
           
         </ul>
