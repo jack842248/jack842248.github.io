@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>學習Vue前端框架1 - Jack Huang Blog</title>
-  <meta name="description" content="初階應用介紹">
+  <title>學習Vue前端框架9 - Jack Huang Blog</title>
+  <meta name="description" content="Component元件">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -44,8 +44,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/jack842248.github.io\/post\/2021-02-01-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61\/",
-          "name": "學習 vue前端框架1"
+          "@id": "https:\/\/jack842248.github.io\/post\/2021-02-09-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69\/",
+          "name": "學習 vue前端框架9"
         }
     }]
 }
@@ -56,15 +56,15 @@
   "author": {
     "name" : "JackHuang"
   },
-  "headline": "學習Vue前端框架1",
-  "description" : "Vue.js是以資料狀態操作畫面，偏向MVVM軟體設計模式。\n MVVM(Model View Viewmodel)     英文 Model View Viewmodel     中文 模型 視圖 資料聯繫器      [視圖]←綁定→[資料聯繫器]→←[模型]     MVC(Model View Controller)     英文 Model View Controller Database     中文 模型 視圖 控制器 資料庫      [視圖]→發送請求→[控制器]→[模型]→[資料庫]→回傳資料→[模型]→[控制器]→渲染→[視圖]     開始使用Vue.js   使用 element (簡化:el)綁定HTML上的DOM元素。    #app裡不能再建立#app。    若有多個.",
+  "headline": "學習Vue前端框架9",
+  "description" : "元件(Component)   元件資料是獨立運作，也可以重複使用。    元件裡面可以再包元件。    外層傳遞資料到內層可以使用 props ，即時的。    內層傳遞資料到外層可以使用 $emit ，需要被觸發。    使用 components 建立元件:   可以使用data function(){return}來增加資料\n 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22  \/\/ \u0026lt;-----html-----\u0026gt; #app button-com button-com \/\/ \u0026lt;-----js-----\u0026gt; var vm = new Vue({ el:\u0026#34;#app\u0026#34;, components:{ \u0026#34;button-com\u0026#34;:{ data: function(){ return{ a:50 } }, template: ` \u0026lt;button @click=\u0026#34;a \u002b= 1\u0026#34;\u0026gt;{{a}}\u0026lt;\/button\u0026gt; ` } } });     使用x-template建立元件:   建立\\\u0026lt;script\u0026gt;後使用id去對應",
   "inLanguage" : "zh-tw",
-  "wordCount":  482 ,
-  "datePublished" : "2021-02-01T00:00:00",
-  "dateModified" : "2021-02-01T00:00:00",
+  "wordCount":  474 ,
+  "datePublished" : "2021-02-09T00:00:00",
+  "dateModified" : "2021-02-09T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
   "keywords" : [ "Vue" ],
-  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2021-02-01-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61\/",
+  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2021-02-09-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/jack842248.github.io",
@@ -78,14 +78,14 @@
 }
 </script>
 
-<meta property="og:title" content="學習Vue前端框架1" />
-<meta property="og:description" content="初階應用介紹">
-<meta property="og:url" content="https://jack842248.github.io/post/2021-02-01-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61/" />
+<meta property="og:title" content="學習Vue前端框架9" />
+<meta property="og:description" content="Component元件">
+<meta property="og:url" content="https://jack842248.github.io/post/2021-02-09-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
-  <meta name="twitter:title" content="學習Vue前端框架1" />
-  <meta name="twitter:description" content="初階應用介紹">
+  <meta name="twitter:title" content="學習Vue前端框架9" />
+  <meta name="twitter:description" content="Component元件">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.80.0" />
@@ -244,23 +244,23 @@ if (!doNotTrack) {
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="post-heading">
-                <h1>學習Vue前端框架1</h1>
+                <h1>學習Vue前端框架9</h1>
                   
                     
-                      <h2 class="post-subheading">初階應用介紹</h2>
+                      <h2 class="post-subheading">Component元件</h2>
                     
                   
                   
                     <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-01
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-09
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;482&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;474&nbsp;個字
   
   
   
@@ -281,25 +281,25 @@ if (!doNotTrack) {
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>學習Vue前端框架1</h1>
+                <h1>學習Vue前端框架9</h1>
               
               
               
                 
-                  <h2 class="post-subheading">初階應用介紹</h2>
+                  <h2 class="post-subheading">Component元件</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-01
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-09
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;482&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;474&nbsp;個字
   
   
   
@@ -322,301 +322,30 @@ if (!doNotTrack) {
       <article role="main" class="blog-post">
         <hr>
 <h1 id="heading"></h1>
-<p>Vue.js是以資料狀態操作畫面，偏向MVVM軟體設計模式。</p>
+<h2 id="元件component">元件(Component)</h2>
 <h1 id="heading-1"></h1>
-<h2 id="mvvmmodel-view-viewmodel">MVVM(Model View Viewmodel)</h2>
+<ul>
+<li>元件資料是獨立運作，也可以重複使用。</li>
+</ul>
 <h1 id="heading-2"></h1>
-<table>
-<thead>
-<tr>
-<th>英文</th>
-<th>Model</th>
-<th>View</th>
-<th>Viewmodel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>中文</td>
-<td>模型</td>
-<td>視圖</td>
-<td>資料聯繫器</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>元件裡面可以再包元件。</li>
+</ul>
 <h1 id="heading-3"></h1>
 <ul>
-<li>[視圖]←綁定→[資料聯繫器]→←[模型]</li>
+<li>外層傳遞資料到內層可以使用 <strong>props</strong> ，即時的。</li>
 </ul>
 <h1 id="heading-4"></h1>
-<hr>
+<ul>
+<li>內層傳遞資料到外層可以使用 <strong>$emit</strong> ，需要被觸發。</li>
+</ul>
 <h1 id="heading-5"></h1>
-<h2 id="mvcmodel-view-controller">MVC(Model View Controller)</h2>
+<ul>
+<li>使用 <strong>components</strong> 建立元件:</li>
+</ul>
 <h1 id="heading-6"></h1>
-<table>
-<thead>
-<tr>
-<th>英文</th>
-<th>Model</th>
-<th>View</th>
-<th>Controller</th>
-<th>Database</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>中文</td>
-<td>模型</td>
-<td>視圖</td>
-<td>控制器</td>
-<td>資料庫</td>
-</tr>
-</tbody>
-</table>
+<p><code>可以使用data function(){return}來增加資料</code></p>
 <h1 id="heading-7"></h1>
-<ul>
-<li>[視圖]→發送請求→[控制器]→[模型]→[資料庫]→回傳資料→[模型]→[控制器]→渲染→[視圖]</li>
-</ul>
-<h1 id="heading-8"></h1>
-<hr>
-<h1 id="heading-9"></h1>
-<h2 id="開始使用vuejs">開始使用Vue.js</h2>
-<h1 id="heading-10"></h1>
-<ul>
-<li>使用 <strong>element</strong> (簡化:el)綁定HTML上的DOM元素。</li>
-</ul>
-<h1 id="heading-11"></h1>
-<ul>
-<li>#app裡不能再建立#app。</li>
-</ul>
-<h1 id="heading-12"></h1>
-<ul>
-<li>若有多個.app只會綁定一個。</li>
-</ul>
-<h1 id="heading-13"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
-  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>
-});
-</code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-14"></h1>
-<hr>
-<h1 id="heading-15"></h1>
-<h2 id="v-text">v-text</h2>
-<h1 id="heading-16"></h1>
-<ul>
-<li>使用 <strong>v-text</strong> 可將資料裡的&quot;文字&quot;帶入&lt;標籤&gt;。</li>
-</ul>
-<h1 id="heading-17"></h1>
-<ul>
-<li>簡化寫法 <em><strong>{{}}</strong></em>。</li>
-</ul>
-<h1 id="heading-18"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">p</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;a&#34;</span>)
-  <span style="color:#75715e">//簡化:p {{a}}
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
-  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>,
-  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{
-    <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>
-  }
-});
-
-<span style="color:#75715e">// &lt;-----結果-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">p</span> <span style="color:#a6e22e">蘋果</span>
-</code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-19"></h1>
-<hr>
-<h1 id="heading-20"></h1>
-<h2 id="v-html">v-html</h2>
-<h1 id="heading-21"></h1>
-<ul>
-<li>使用 <strong>v-html</strong> 可將資料裡的HTML帶入&lt;標籤&gt;。</li>
-</ul>
-<h1 id="heading-22"></h1>
-<p><code>不建議在網頁上任意使用v-html，因為會容易遭受XSS攻擊，例如:輸入框</code></p>
-<h1 id="heading-23"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">ul</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">html</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;a&#34;</span>)
-
-<span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
-  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;#app&#34;</span>,
-  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{
-    <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;&lt;li&gt;蘋果&lt;/li&gt;&#34;</span>
-  }
-});
-<span style="color:#75715e">// &lt;-----結果-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">ul</span>
-    <span style="color:#a6e22e">li</span> <span style="color:#a6e22e">蘋果</span>
-</code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-24"></h1>
-<hr>
-<h1 id="heading-25"></h1>
-<h2 id="v-model">v-model</h2>
-<h1 id="heading-26"></h1>
-<ul>
-<li>使用<strong>v-model</strong>可以產生雙向綁定，在修改值時會同時改變。</li>
-</ul>
-<h1 id="heading-27"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">model</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;a&#34;</span>)
-  <span style="color:#a6e22e">p</span> {{<span style="color:#a6e22e">a</span>}}
-
-<span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
-  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;#app&#34;</span>,
-  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{
-    <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;蘋果&#34;</span>
-  }
-});
-
-<span style="color:#75715e">// &lt;-----結果-----&gt;
-</span><span style="color:#75715e">//&lt;input&gt;一開始會顯示&#34;蘋果&#34;
-</span><span style="color:#75715e">//&lt;p&gt;一開始會顯示&#34;蘋果&#34;
-</span><span style="color:#75715e">//當&lt;input&gt;裡的文字被更動了，，&lt;p&gt;也會跟著改變
-</span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-28"></h1>
-<hr>
-<h1 id="heading-29"></h1>
-<h2 id="v-bind">v-bind</h2>
-<h1 id="heading-30"></h1>
-<ul>
-<li>使用 <strong>v-bind</strong> 是用來綁定&lt;標籤&gt;上的屬性。</li>
-</ul>
-<h1 id="heading-31"></h1>
-<ul>
-<li>簡化寫法 <em><strong>:</strong></em>。</li>
-</ul>
-<h1 id="heading-32"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">img</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">bind</span><span style="color:#f92672">:</span><span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;a&#34;</span> <span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">bind</span><span style="color:#f92672">:</span><span style="color:#66d9ef">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;b&#34;</span>)
-  <span style="color:#75715e">//簡化:img(:src=&#34;a&#34; v-bind:class=&#34;b&#34;)
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
-  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;#app&#34;</span>,
-  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{
-    <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;images/picture.png&#34;</span>,
-    <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;img-fluid&#34;</span>
-    <span style="color:#75715e">//Bootstrap的語法
-</span><span style="color:#75715e"></span>  }
-});
-
-<span style="color:#75715e">// &lt;-----結果-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">img</span>(<span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/picture.png&#34;</span> <span style="color:#66d9ef">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;img-fluid&#34;</span>)
-</code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-33"></h1>
-<hr>
-<h1 id="heading-34"></h1>
-<h2 id="v-for">v-for</h2>
-<h1 id="heading-35"></h1>
-<ul>
-<li>使用 <strong>v-for</strong> 會以迴圈的方式列印出資料。</li>
-</ul>
-<h1 id="heading-36"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -645,58 +374,35 @@ if (!doNotTrack) {
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">ul</span>
-    <span style="color:#a6e22e">li</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#66d9ef">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;(item,key) in a&#34;</span>) {{<span style="color:#a6e22e">key</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>}}{{<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">name</span>}}
-    <span style="color:#75715e">//key等於陣列[第幾項]
-</span><span style="color:#75715e"></span>
+  <span style="color:#a6e22e">button</span><span style="color:#f92672">-</span><span style="color:#a6e22e">com</span>
+  <span style="color:#a6e22e">button</span><span style="color:#f92672">-</span><span style="color:#a6e22e">com</span>
+
 <span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">vm</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
   <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;#app&#34;</span>,
-  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{
-    <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span>[
-      {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>, <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>},
-      {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>, <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>}
-    ]
+  <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span>{
+    <span style="color:#e6db74">&#34;button-com&#34;</span><span style="color:#f92672">:</span>{  
+      <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
+        <span style="color:#66d9ef">return</span>{
+          <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span><span style="color:#ae81ff">50</span>
+        }
+      },
+      <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span>
+      <span style="color:#e6db74">`
+</span><span style="color:#e6db74">      &lt;button @click=&#34;a += 1&#34;&gt;{{a}}&lt;/button&gt; 
+</span><span style="color:#e6db74">      `</span>
+    }
   }
 });
-
-<span style="color:#75715e">// &lt;-----結果-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">ul</span>
-    <span style="color:#a6e22e">li</span> <span style="color:#ae81ff">1</span><span style="color:#a6e22e">蘋果</span>
-    <span style="color:#a6e22e">li</span> <span style="color:#ae81ff">2</span><span style="color:#a6e22e">香蕉</span>
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-37"></h1>
-<hr>
-<h1 id="heading-38"></h1>
-<h2 id="v-if">v-if</h2>
-<h1 id="heading-39"></h1>
+</div><h1 id="heading-8"></h1>
 <ul>
-<li>使用 <strong>v-if</strong> 可判斷該&lt;標籤&gt;是否顯示。</li>
+<li>使用<strong>x-template</strong>建立元件:</li>
 </ul>
-<h1 id="heading-40"></h1>
-<ul>
-<li><strong>v-if</strong> 與 <strong>v-show</strong> 的差異 :</li>
-</ul>
-<h1 id="heading-41"></h1>
-<table>
-<thead>
-<tr>
-<th>名稱</th>
-<th>v-if</th>
-<th>v-show</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>效果</td>
-<td>DOM元素消失</td>
-<td>display:none</td>
-</tr>
-</tbody>
-</table>
-<h1 id="heading-42"></h1>
+<h1 id="heading-9"></h1>
+<p><code>建立\&lt;script&gt;後使用id去對應</code></p>
+<h1 id="heading-10"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -720,44 +426,34 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">ul</span>
-    <span style="color:#a6e22e">li</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#66d9ef">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;item in a&#34;</span> <span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#66d9ef">if</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;item.amount &gt; 200&#34;</span>) {{<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">name</span>}}
-    <span style="color:#75715e">//判斷陣列裡的[amount]大於200的才顯示
-</span><span style="color:#75715e"></span>
+  <span style="color:#a6e22e">button</span><span style="color:#f92672">-</span><span style="color:#a6e22e">com</span>
+  <span style="color:#a6e22e">button</span><span style="color:#f92672">-</span><span style="color:#a6e22e">com</span>
+
+<span style="color:#a6e22e">script</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/template&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;buttonId&#34;</span>)
+  <span style="color:#a6e22e">button</span>(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;a += 1&#34;</span>) {{<span style="color:#a6e22e">a</span>}}
+
 <span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
-  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>,
-  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{
-    <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span>[
-      {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>, <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>},
-      {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>, <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>}
-    ]
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">vm</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
+  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;#app&#34;</span>,
+  <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span>{
+    <span style="color:#e6db74">&#34;button-com&#34;</span><span style="color:#f92672">:</span>{  
+      <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
+        <span style="color:#66d9ef">return</span>{
+          <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span><span style="color:#ae81ff">50</span>
+        }
+      },
+      <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#buttonId&#34;</span>
+    }
   }
 });
-
-<span style="color:#75715e">// &lt;-----結果-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">ul</span>
-    <span style="color:#a6e22e">li</span> <span style="color:#a6e22e">香蕉</span>
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-43"></h1>
-<hr>
-<h1 id="heading-44"></h1>
-<h2 id="v-on">v-on</h2>
-<h1 id="heading-45"></h1>
-<ul>
-<li>使用 <strong>v-on</strong> 可增加使用者事件，例如滑鼠點擊、按下鍵盤等。</li>
-</ul>
-<h1 id="heading-46"></h1>
-<ul>
-<li>簡化寫法 <em><strong>@</strong></em> 。</li>
-</ul>
-<h1 id="heading-47"></h1>
+</div><h1 id="heading-11"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -783,42 +479,62 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">button</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">on</span><span style="color:#f92672">:</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;add&#34;</span>) <span style="color:#a6e22e">按鈕</span>
-  <span style="color:#75715e">//簡化寫法
-</span><span style="color:#75715e"></span>  <span style="color:#75715e">//button(@click=&#34;add&#34;) 按鈕
-</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">p</span> {{<span style="color:#a6e22e">price</span>}}
+  <span style="color:#a6e22e">table</span>.<span style="color:#a6e22e">table</span>
+    <span style="color:#a6e22e">tr</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#66d9ef">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;item in a&#34;</span> <span style="color:#a6e22e">is</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tr-component&#34;</span> <span style="color:#f92672">:</span><span style="color:#a6e22e">item</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;item&#34;</span>)
 
 <span style="color:#75715e">// &lt;-----js-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
-  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;#app&#34;</span>,
+  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>,
   <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{
-    <span style="color:#a6e22e">price</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">25</span>
+    <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span>[
+      {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;蘋果&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>},
+      {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;香蕉&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">300</span>},
+      {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;鳳梨&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">500</span>}
+    ]
   },
-  <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span>{
-    <span style="color:#a6e22e">add</span><span style="color:#f92672">:</span><span style="color:#66d9ef">function</span>(){
-      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">price</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">price</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>;
+  <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span>{
+    <span style="color:#e6db74">&#34;tr-component&#34;</span><span style="color:#f92672">:</span>{  <span style="color:#75715e">//1.
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){  <span style="color:#75715e">//2.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">return</span>{
+        <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span>[
+          {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;蘋果&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>},
+          {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;香蕉&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">300</span>},
+          {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;鳳梨&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">500</span>}
+        ]
+        }
+      },
+      <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span>
+      <span style="color:#e6db74">`
+</span><span style="color:#e6db74">      &lt;tr&gt;
+</span><span style="color:#e6db74">        &lt;td&gt;{{item.name}}&lt;/td&gt;
+</span><span style="color:#e6db74">        &lt;td&gt;{{item.name}}&lt;/td&gt;
+</span><span style="color:#e6db74">      &lt;/tr&gt;
+</span><span style="color:#e6db74">      `</span>,
+      <span style="color:#a6e22e">props</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#34;item&#34;</span>]
     }
   }
 });
-
-<span style="color:#75715e">// &lt;-----結果-----&gt;
-</span><span style="color:#75715e">//&lt;p&gt;一開始顯示25
-</span><span style="color:#75715e">//每次點擊&#34;按鈕&#34;時，25都+5
-</span></code></pre></td></tr></table>
+</code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-48"></h1>
-<hr>
-<h1 id="heading-49"></h1>
-<h2 id="v-class動態切換效果">v-class動態切換效果</h2>
-<h1 id="heading-50"></h1>
-<ul>
-<li>使用 <strong>:class</strong> 可綁定&lt;標籤&gt;，判斷是否套用CSS樣式。</li>
-</ul>
-<h1 id="heading-51"></h1>
+</div><h1 id="heading-12"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -840,30 +556,229 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
-  <span style="color:#a6e22e">button</span>(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;a=!a&#34;</span> <span style="color:#f92672">:</span><span style="color:#66d9ef">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{&#39;red&#39;:a}&#34;</span>) <span style="color:#a6e22e">按鈕</span>
-  <span style="color:#75715e">//:class=&#34;{&#39;css樣式名稱&#39;:判斷式}&#34;
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">// &lt;-----css-----&gt;
-</span><span style="color:#75715e"></span>.<span style="color:#a6e22e">red</span>
-  <span style="color:#a6e22e">background</span><span style="color:#f92672">-</span><span style="color:#a6e22e">color</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">red</span>
-  
+  <span style="color:#a6e22e">table</span>.<span style="color:#a6e22e">table</span>
+    <span style="color:#a6e22e">tr</span>(<span style="color:#a6e22e">is</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tr-component&#34;</span> <span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#66d9ef">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;item in a&#34;</span> <span style="color:#f92672">:</span><span style="color:#a6e22e">item</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;item&#34;</span>)
+
+<span style="color:#a6e22e">script</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/x-template&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;trId&#34;</span>)  
+  <span style="color:#a6e22e">tr</span>
+    <span style="color:#a6e22e">td</span> {{<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">name</span>}}
+    <span style="color:#a6e22e">td</span> {{<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">amount</span>}}
+
 <span style="color:#75715e">// &lt;-----js-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
-  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;#app&#34;</span>,
+  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>,
   <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{
-    <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
+    <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span>[
+      {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;蘋果&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>},
+      {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;香蕉&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">300</span>},
+      {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;鳳梨&#34;</span>,<span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span><span style="color:#ae81ff">500</span>}
+    ]
+  },
+  <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span>{
+    <span style="color:#e6db74">&#34;tr-component&#34;</span><span style="color:#f92672">:</span>{
+      <span style="color:#a6e22e">props</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#34;item&#34;</span>],
+      <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#trId&#34;</span>
+    }
   }
 });
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-13"></h1>
+<hr>
+<h1 id="heading-14"></h1>
+<ul>
+<li>可以給傳入 <strong>props</strong> 的屬性定義型別(type)、預設值(default)。</li>
+</ul>
+<h1 id="heading-15"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
+  <span style="color:#a6e22e">div</span><span style="color:#f92672">-</span><span style="color:#a6e22e">component</span>
+  <span style="color:#75715e">//預設值是500
+</span><span style="color:#75715e"></span>
+  <span style="color:#a6e22e">div</span><span style="color:#f92672">-</span><span style="color:#a6e22e">component</span>(<span style="color:#f92672">:</span><span style="color:#a6e22e">a</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;a&#34;</span>)
+  <span style="color:#75715e">//型別是Number
+</span><span style="color:#75715e"></span>
+  <span style="color:#a6e22e">div</span><span style="color:#f92672">-</span><span style="color:#a6e22e">component</span>(<span style="color:#a6e22e">a</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;a&#34;</span>)
+  <span style="color:#75715e">//型別是String
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">script</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/x-template&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;div-template&#34;</span>)
+  <span style="color:#a6e22e">div</span>
+    <span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;number&#34;</span> <span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">model</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;c&#34;</span>)
+    <span style="color:#a6e22e">p</span> {{<span style="color:#66d9ef">typeof</span>(<span style="color:#a6e22e">a</span>)}}
 
-<span style="color:#75715e">// &lt;-----結果-----&gt;
-</span><span style="color:#75715e">//當點擊的時候&#34;按鈕&#34;時會變紅色
-</span></code></pre></td></tr></table>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
+  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>,
+  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{
+    <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>
+  },
+  <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span>{
+    <span style="color:#e6db74">&#34;div-component&#34;</span><span style="color:#f92672">:</span>{
+      <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
+        <span style="color:#66d9ef">return</span> {
+          <span style="color:#a6e22e">c</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">a</span>
+        }
+      },
+      <span style="color:#a6e22e">props</span><span style="color:#f92672">:</span>{
+        <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span>{
+          <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> Number,
+          <span style="color:#75715e">//屬性的型別
+</span><span style="color:#75715e"></span>          <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>
+          <span style="color:#75715e">//屬性的預設值
+</span><span style="color:#75715e"></span>        }
+      },
+      <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#div-template&#34;</span>
+    }
+  }
+});
+</code></pre></td></tr></table>
 </div>
+</div><h1 id="heading-16"></h1>
+<hr>
+<h1 id="heading-17"></h1>
+<ul>
+<li>emit 將資料由內傳到外</li>
+</ul>
+<h1 id="heading-18"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
+  <span style="color:#a6e22e">button</span>(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;incrementTotal&#34;</span>) <span style="color:#a6e22e">按鈕</span>
+  <span style="color:#a6e22e">p</span> {{<span style="color:#a6e22e">cash</span>}} 
+  <span style="color:#a6e22e">button</span><span style="color:#f92672">-</span><span style="color:#a6e22e">counter</span>(<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">on</span><span style="color:#f92672">:</span><span style="color:#a6e22e">increment</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;incrementTotal&#34;</span>)
+
+<span style="color:#75715e">// &lt;-----js-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
+  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>,
+  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span>{
+    <span style="color:#a6e22e">cash</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>
+  },
+  <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span>{
+    <span style="color:#a6e22e">incrementTotal</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">newNumber</span>){
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">cash</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">cash</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">newNumber</span>;
+    }
+  },
+  <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span>{
+    <span style="color:#e6db74">&#34;buttonCounter&#34;</span><span style="color:#f92672">:</span>{
+      <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
+        <span style="color:#66d9ef">return</span> {
+          <span style="color:#a6e22e">counter</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>
+        }
+      },
+      <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span>
+      <span style="color:#e6db74">`
+</span><span style="color:#e6db74">      &lt;div&gt;
+</span><span style="color:#e6db74">        &lt;button @click=&#34;incrementCounter&#34;&gt;增加 {{ counter }}&lt;/button&gt;
+</span><span style="color:#e6db74">        &lt;input type=&#34;number&#34; v-model=&#34;counter&#34;&gt;&lt;/input&gt;
+</span><span style="color:#e6db74">      &lt;/div&gt;
+</span><span style="color:#e6db74">      `</span>,
+      <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span>{
+        <span style="color:#a6e22e">incrementCounter</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(){
+          <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">$emit</span>(<span style="color:#e6db74">&#39;increment&#39;</span>, Number(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">counter</span>))
+        }
+      }
+    }
+  }
+});
+</code></pre></td></tr></table>
 </div>
+</div><h1 id="heading-19"></h1>
+
 
         
           <div class="blog-tags">
@@ -883,42 +798,42 @@ if (!doNotTrack) {
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-01-%25E5%25AD%25B8%25E7%25BF%2592vue%25E5%2589%258D%25E7%25AB%25AF%25E6%25A1%2586%25E6%259E%25B61%2f&amp;text=%e5%ad%b8%e7%bf%92Vue%e5%89%8d%e7%ab%af%e6%a1%86%e6%9e%b61&amp;via=" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-09-%25E5%25AD%25B8%25E7%25BF%2592vue%25E5%2589%258D%25E7%25AB%25AF%25E6%25A1%2586%25E6%259E%25B69%2f&amp;text=%e5%ad%b8%e7%bf%92Vue%e5%89%8d%e7%ab%af%e6%a1%86%e6%9e%b69&amp;via=" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-01-%25E5%25AD%25B8%25E7%25BF%2592vue%25E5%2589%258D%25E7%25AB%25AF%25E6%25A1%2586%25E6%259E%25B61%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-09-%25E5%25AD%25B8%25E7%25BF%2592vue%25E5%2589%258D%25E7%25AB%25AF%25E6%25A1%2586%25E6%259E%25B69%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-01-%25E5%25AD%25B8%25E7%25BF%2592vue%25E5%2589%258D%25E7%25AB%25AF%25E6%25A1%2586%25E6%259E%25B61%2f&amp;title=%e5%ad%b8%e7%bf%92Vue%e5%89%8d%e7%ab%af%e6%a1%86%e6%9e%b61" target="_blank" title="Share on Reddit">
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-09-%25E5%25AD%25B8%25E7%25BF%2592vue%25E5%2589%258D%25E7%25AB%25AF%25E6%25A1%2586%25E6%259E%25B69%2f&amp;title=%e5%ad%b8%e7%bf%92Vue%e5%89%8d%e7%ab%af%e6%a1%86%e6%9e%b69" target="_blank" title="Share on Reddit">
           <i class="fab fa-reddit"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-01-%25E5%25AD%25B8%25E7%25BF%2592vue%25E5%2589%258D%25E7%25AB%25AF%25E6%25A1%2586%25E6%259E%25B61%2f&amp;title=%e5%ad%b8%e7%bf%92Vue%e5%89%8d%e7%ab%af%e6%a1%86%e6%9e%b61" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-09-%25E5%25AD%25B8%25E7%25BF%2592vue%25E5%2589%258D%25E7%25AB%25AF%25E6%25A1%2586%25E6%259E%25B69%2f&amp;title=%e5%ad%b8%e7%bf%92Vue%e5%89%8d%e7%ab%af%e6%a1%86%e6%9e%b69" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-01-%25E5%25AD%25B8%25E7%25BF%2592vue%25E5%2589%258D%25E7%25AB%25AF%25E6%25A1%2586%25E6%259E%25B61%2f&amp;title=%e5%ad%b8%e7%bf%92Vue%e5%89%8d%e7%ab%af%e6%a1%86%e6%9e%b61" target="_blank" title="Share on StumbleUpon">
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-09-%25E5%25AD%25B8%25E7%25BF%2592vue%25E5%2589%258D%25E7%25AB%25AF%25E6%25A1%2586%25E6%259E%25B69%2f&amp;title=%e5%ad%b8%e7%bf%92Vue%e5%89%8d%e7%ab%af%e6%a1%86%e6%9e%b69" target="_blank" title="Share on StumbleUpon">
           <i class="fab fa-stumbleupon"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-01-%25E5%25AD%25B8%25E7%25BF%2592vue%25E5%2589%258D%25E7%25AB%25AF%25E6%25A1%2586%25E6%259E%25B61%2f&amp;description=%e5%ad%b8%e7%bf%92Vue%e5%89%8d%e7%ab%af%e6%a1%86%e6%9e%b61" target="_blank" title="Share on Pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-09-%25E5%25AD%25B8%25E7%25BF%2592vue%25E5%2589%258D%25E7%25AB%25AF%25E6%25A1%2586%25E6%259E%25B69%2f&amp;description=%e5%ad%b8%e7%bf%92Vue%e5%89%8d%e7%ab%af%e6%a1%86%e6%9e%b69" target="_blank" title="Share on Pinterest">
           <i class="fab fa-pinterest"></i>
         </a>
       </li>
@@ -940,8 +855,6 @@ if (!doNotTrack) {
                   <ul>
                 
                 
-                    <li><a href="/post/2021-02-09-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69/">學習Vue前端框架9</a></li>
-                
                     <li><a href="/post/2021-02-08-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B68/">學習Vue前端框架8</a></li>
                 
                     <li><a href="/post/2021-02-07-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B67/">學習Vue前端框架7</a></li>
@@ -949,6 +862,8 @@ if (!doNotTrack) {
                     <li><a href="/post/2021-02-06-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B66/">學習Vue前端框架6</a></li>
                 
                     <li><a href="/post/2021-02-05-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B65/">學習Vue前端框架5</a></li>
+                
+                    <li><a href="/post/2021-02-04-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B64/">學習Vue前端框架4</a></li>
                 
               </ul>
 
@@ -960,13 +875,9 @@ if (!doNotTrack) {
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2021-01-31-vue.js-devtools%E5%AE%89%E8%A3%9D/" data-toggle="tooltip" data-placement="top" title="Vue.js devtools安裝">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2021-02-08-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B68/" data-toggle="tooltip" data-placement="top" title="學習Vue前端框架8">&larr; 上一篇</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://jack842248.github.io/post/2021-02-02-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B62/" data-toggle="tooltip" data-placement="top" title="學習Vue前端框架2">下一篇 &rarr;</a>
-            </li>
           
         </ul>
       
@@ -976,12 +887,12 @@ if (!doNotTrack) {
         
           
           <div class="disqus-comments">                  
-            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2021-02-01-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61">則評論</span></button>
+            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2021-02-09-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69">則評論</span></button>
             <div id="disqus_thread"></div>
 
             <script type="text/javascript">
               var disqus_config = function () {
-              this.page.url = 'https:\/\/jack842248.github.io\/post\/2021-02-01-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61';
+              this.page.url = 'https:\/\/jack842248.github.io\/post\/2021-02-09-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69';
             };
 
           </script>

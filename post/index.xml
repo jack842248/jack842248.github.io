@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>學習Vue前端框架9</title>
+      <link>https://jack842248.github.io/post/2021-02-09-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-09-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69/</guid>
+      <description>元件(Component)   元件資料是獨立運作，也可以重複使用。    元件裡面可以再包元件。    外層傳遞資料到內層可以使用 props ，即時的。    內層傳遞資料到外層可以使用 $emit ，需要被觸發。    使用 components 建立元件:   可以使用data function(){return}來增加資料
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22  // &amp;lt;-----html-----&amp;gt; #app button-com button-com // &amp;lt;-----js-----&amp;gt; var vm = new Vue({ el:&amp;#34;#app&amp;#34;, components:{ &amp;#34;button-com&amp;#34;:{ data: function(){ return{ a:50 } }, template: ` &amp;lt;button @click=&amp;#34;a += 1&amp;#34;&amp;gt;{{a}}&amp;lt;/button&amp;gt; ` } } });     使用x-template建立元件:   建立\&amp;lt;script&amp;gt;後使用id去對應</description>
+    </item>
+    
+    <item>
+      <title>學習Vue前端框架8</title>
+      <link>https://jack842248.github.io/post/2021-02-08-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B68/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-08-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B68/</guid>
+      <description>  生命週期     英文 中文 說明      開始創建    beforeCreate 準備載入資料     數據觀測建立    created 載入資料 要載入ajax要在這階段之後    編譯模板    beforeMount 準備繪製元件     模板建立完成    mounted 繪製元件 要操作DOM元素要在這階段之後    資料變動    updated 更新資料時觸發    activated  有&amp;lt;keep-alive&amp;gt;時才會觸發   deactivated  有&amp;lt;keep-alive&amp;gt;時才會觸發   beforeDestroy 準備移除資料     移除觀測、子元件、監聽事件    destroyed 移除資料          </description>
+    </item>
+    
     <item>
       <title>學習Vue前端框架7</title>
       <link>https://jack842248.github.io/post/2021-02-07-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B67/</link>
@@ -15,24 +34,6 @@
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-02-07-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B67/</guid>
       <description>methods版   在&amp;lt;tr&amp;gt;使用 v-for 將[a]資料列印出來。   在&amp;lt;th&amp;gt;&amp;ldquo;價格&amp;quot;上增加 @click 事件[sortPrice]，並在 methods 新增[sortPrice]方法。   [sortPrice]:判斷現在[b]的值是(true/false)，決定要排序大到小，還是小到大。   並且在排序完之後，改變[b]的值。   在&amp;lt;th&amp;gt;&amp;ldquo;到期日&amp;quot;上增加 @click 事件[sortDate]，並在 methods 新增[sortDate]方法。   [sortDate]:判斷現在[c]的值是(true/false)，決定要排序大到小，還是小到大。   並且在排序完之後，改變[c]的值。   在&amp;lt;th&amp;gt;&amp;ldquo;價格&amp;quot;裡的&amp;lt;span&amp;gt;上綁定 :class 判斷式，判斷[b]的值是(true/false)決定是否套用[rotate]樣式。   在&amp;lt;th&amp;gt;&amp;ldquo;到期日&amp;quot;裡的&amp;lt;span&amp;gt;上綁定 :class 判斷式，判斷[c]的值(true/false)決定是否套用[rotate]樣式。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82  // &amp;lt;-----html-----&amp;gt; #app table.</description>
-    </item>
-    
-    <item>
-      <title>學習Vue前端框架8</title>
-      <link>https://jack842248.github.io/post/2021-02-08-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B68/</link>
-      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-02-08-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B68/</guid>
-      <description>  生命週期     英文 中文 說明      開始創建    beforeCreate 準備載入資料     數據觀測建立    created 載入資料 要載入ajax要在這階段之後    編譯模板    beforeMount 準備繪製元件     模板建立完成    mounted 繪製元件 要操作DOM元素要在這階段之後    資料變動    updated 更新資料時觸發    activated  有&amp;lt;keep-alive&amp;gt;時才會觸發   deactivated  有&amp;lt;keep-alive&amp;gt;時才會觸發   beforeDestroy 準備移除資料     移除觀測、子元件、監聽事件    destroyed 移除資料       </description>
-    </item>
-    
-    <item>
-      <title>學習Vue前端框架9</title>
-      <link>https://jack842248.github.io/post/2021-02-08-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69/</link>
-      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-02-08-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69/</guid>
-      <description>元件(Component)   元件的資料都是獨立的，可以重複使用，也可以用元件包元件。    外層使用 props 綁定資料到內層，會即時更新資料。    內層資料有更動時才會觸發 emit event 將傳資料到外層。     template直接建立在app裡面。   使用 components 建構元件，先自訂&amp;quot;標籤名稱&amp;quot;。   使用[data] function(){return} 方式傳入資料。   使用[props]，以[陣列]方式傳入屬性值。   使用[template]直接建立元件架構。   在HTML使用&amp;quot;標籤名稱&amp;quot;將元件渲染出來。   並帶入相對應的值。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  // &amp;lt;-----html-----&amp;gt; #app button-component button-component // &amp;lt;-----js-----&amp;gt; var vm = new Vue({ el:&amp;#34;#app&amp;#34;, data:{ a: 50 }, components:{ &amp;#34;button-component&amp;#34;:{ data: function(){ return{ a:50 } }, template: ` &amp;lt;button @click=&amp;#34;a += 1&amp;#34;&amp;gt;{{a}}&amp;lt;/button&amp;gt; ` } } });    1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37  // &amp;lt;-----html-----&amp;gt; #app table.</description>
     </item>
     
     <item>
