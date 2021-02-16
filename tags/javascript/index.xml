@@ -7,14 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript小知識8</title>
+      <link>https://jack842248.github.io/post/2021-02-15-javascript%E5%B0%8F%E7%9F%A5%E8%AD%988/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-15-javascript%E5%B0%8F%E7%9F%A5%E8%AD%988/</guid>
+      <description>簡化賦值運算子  1 2 3 4 5 6 7 8 9 10 11 12 13  let a = 1; a = a + 1; console.log(a); //2  /** 簡化 **/ let a = 1; a += 1; console.log(a); //2  /** 再簡化 **/ let a = 1; a++; console.log(a); //2      數字與字串的應用   使用 parseInt() 可將字串轉數字。(範例一)    使用 .toString 可轉數字轉字串。(範例二)    使用 .</description>
+    </item>
+    
     <item>
       <title>Javascript小知識7</title>
       <link>https://jack842248.github.io/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/</guid>
-      <description>var、let、const   宣告變數用。      名稱 var let const     作用域 在函式裡 在block{}裡 在block{}裡   宣告的變數 可以賦予新的值 可以賦予新的值 不能賦予新的值   重複宣告變數時 不會出錯 會出錯 會出錯   從創造到執行階段會 提升(Hoisting) 暫時性死區(TDZ) 會出現錯誤      當使用 for迴圈 時:   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  /** for迴圈(var) **/ for(var i=0 ; i&amp;lt;3 ; i++){ setTimeout(function(){ console.</description>
+      <description>var、let、const   皆為宣告變數用。      名稱 var let const     作用域 在函式裡 在block{}裡 在block{}裡   宣告的變數 可以賦予新的值 可以賦予新的值 不能賦予新的值   重複宣告變數時 不會出錯 會出錯 會出錯   從創造到執行階段會 提升(Hoisting) 暫時性死區(TDZ) 會出現錯誤      當使用 for迴圈 時:   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  /** for迴圈(var) **/ for(var i=0 ; i&amp;lt;3 ; i++){ setTimeout(function(){ console.</description>
     </item>
     
     <item>
@@ -65,7 +74,7 @@
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-01-25-javascript%E5%B0%8F%E7%9F%A5%E8%AD%982/</guid>
-      <description>陳述式(Statement)   不會回傳結果，不能賦值(=)到變數上。      陳述式 例如     判斷式 if、else if、else、switch、break   宣告變數 var、let、const   函式陳述式 function fn1(){&amp;hellip;}   block區塊 {}     1 2 3 4 5 6 7 8 9 10 11 12 13  //判斷式 if(){...}else{} //宣告變數 var a; //函式陳述式 function fn1(){...} //block區塊 { let a = 1; }      判斷式(if&amp;hellip;else)   判斷式裡如果是 真值(Truthy) ，就會成立。    判斷式裡如果是 假值(Falsy) ，就會不成立。      判斷值 例如     真值 true 、 1 、 &amp;ldquo;1&amp;rdquo; 、 [] 、 {}   假值 false 、 0 、 &amp;quot;&amp;quot; 、 NaN 、 null 、 undefined     1 2 3 4 5 6 7 8 9 10 11 12 13  /** 範例一 **/ if([]){ console.</description>
+      <description>陳述式(Statement)   不會回傳結果，不能賦值(=)到變數上。      陳述式 例如     判斷式 if、else if、else、switch、break   宣告變數 var、let、const   函式陳述式 function fn1(){&amp;hellip;}   Block區塊 {}     1 2 3 4 5 6 7 8 9 10 11 12 13  /** 判斷式 **/ if(){...}else{} /** 宣告變數 **/ var a; /** 函式陳述式 **/ function fn1(){...} /** Block區塊 **/ { let a = 1; }      判斷式(if&amp;hellip;else)   判斷式裡如果是 真值(Truthy) ，就會成立。    判斷式裡如果是 假值(Falsy) ，就會不成立。      判斷值 例如     真值 true 、 1 、 &amp;ldquo;1&amp;rdquo; 、 [] 、 {}   假值 false 、 0 、 &amp;quot;&amp;quot; 、 NaN 、 null 、 undefined     1 2 3 4 5 6 7 8 9 10 11 12 13  /** 範例一 **/ if([]){ console.</description>
     </item>
     
     <item>

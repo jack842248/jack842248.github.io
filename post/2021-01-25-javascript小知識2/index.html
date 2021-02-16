@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "Javascript小知識2",
-  "description" : "陳述式(Statement)   不會回傳結果，不能賦值(=)到變數上。      陳述式 例如     判斷式 if、else if、else、switch、break   宣告變數 var、let、const   函式陳述式 function fn1(){\u0026hellip;}   block區塊 {}     1 2 3 4 5 6 7 8 9 10 11 12 13  \/\/判斷式 if(){...}else{} \/\/宣告變數 var a; \/\/函式陳述式 function fn1(){...} \/\/block區塊 { let a = 1; }      判斷式(if\u0026hellip;else)   判斷式裡如果是 真值(Truthy) ，就會成立。    判斷式裡如果是 假值(Falsy) ，就會不成立。      判斷值 例如     真值 true 、 1 、 \u0026ldquo;1\u0026rdquo; 、 [] 、 {}   假值 false 、 0 、 \u0026quot;\u0026quot; 、 NaN 、 null 、 undefined     1 2 3 4 5 6 7 8 9 10 11 12 13  \/** 範例一 **\/ if([]){ console.",
+  "description" : "陳述式(Statement)   不會回傳結果，不能賦值(=)到變數上。      陳述式 例如     判斷式 if、else if、else、switch、break   宣告變數 var、let、const   函式陳述式 function fn1(){\u0026hellip;}   Block區塊 {}     1 2 3 4 5 6 7 8 9 10 11 12 13  \/** 判斷式 **\/ if(){...}else{} \/** 宣告變數 **\/ var a; \/** 函式陳述式 **\/ function fn1(){...} \/** Block區塊 **\/ { let a = 1; }      判斷式(if\u0026hellip;else)   判斷式裡如果是 真值(Truthy) ，就會成立。    判斷式裡如果是 假值(Falsy) ，就會不成立。      判斷值 例如     真值 true 、 1 、 \u0026ldquo;1\u0026rdquo; 、 [] 、 {}   假值 false 、 0 、 \u0026quot;\u0026quot; 、 NaN 、 null 、 undefined     1 2 3 4 5 6 7 8 9 10 11 12 13  \/** 範例一 **\/ if([]){ console.",
   "inLanguage" : "zh-tw",
-  "wordCount":  993 ,
+  "wordCount":  1016 ,
   "datePublished" : "2021-01-25T00:00:00",
   "dateModified" : "2021-01-25T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;5&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;993&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1016&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;5&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;993&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1016&nbsp;個字
   
   
   
@@ -348,7 +348,7 @@ if (!doNotTrack) {
 <td>function fn1(){&hellip;}</td>
 </tr>
 <tr>
-<td>block區塊</td>
+<td>Block區塊</td>
 <td>{}</td>
 </tr>
 </tbody>
@@ -371,17 +371,17 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//判斷式
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span>(){...}<span style="color:#66d9ef">else</span>{}
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 判斷式 **/</span>
+<span style="color:#66d9ef">if</span>(){...}<span style="color:#66d9ef">else</span>{}
 
-<span style="color:#75715e">//宣告變數
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span>;
+<span style="color:#75715e">/** 宣告變數 **/</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span>;
 
-<span style="color:#75715e">//函式陳述式
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(){...}
+<span style="color:#75715e">/** 函式陳述式  **/</span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(){...}
 
-<span style="color:#75715e">//block區塊
-</span><span style="color:#75715e"></span>{
+<span style="color:#75715e">/** Block區塊 **/</span>
+{
   <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
 }
 </code></pre></td></tr></table>
@@ -441,7 +441,7 @@ if (!doNotTrack) {
 </span><span style="color:#75715e"></span>}<span style="color:#66d9ef">else</span>{
   <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;香蕉&#34;</span>);
 }
-<span style="color:#960050;background-color:#1e0010">#</span>
+
 <span style="color:#75715e">/** 範例二 **/</span>
 <span style="color:#66d9ef">if</span>(<span style="color:#e6db74">&#34;&#34;</span>){
   <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;蘋果&#34;</span>);  
@@ -747,12 +747,6 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 範例一 **/</span>
@@ -762,39 +756,33 @@ if (!doNotTrack) {
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">/** 範例二 **/</span>
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>);  <span style="color:#75715e">//true
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>);  <span style="color:#75715e">//false
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">/** 範例三 **/</span>
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">true</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>);  <span style="color:#75715e">//true
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">false</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">//true
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">true</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>);  <span style="color:#75715e">//false
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">/** 範例四 **/</span>
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>);  <span style="color:#75715e">//true
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;1&#34;</span>);  <span style="color:#75715e">//true
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span>);  <span style="color:#75715e">//true
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span>);  <span style="color:#75715e">//true
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>);  <span style="color:#75715e">//false
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;1&#34;</span>);  <span style="color:#75715e">//false
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">/** 範例五 **/</span>
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>);  <span style="color:#75715e">//true
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;1&#34;</span>);  <span style="color:#75715e">//true
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> [<span style="color:#e6db74">&#34;1&#34;</span>]);  <span style="color:#75715e">//true
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#f92672">==</span> [<span style="color:#ae81ff">1</span>]);  <span style="color:#75715e">//true
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span>);  <span style="color:#75715e">//true
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([<span style="color:#e6db74">&#34;1&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>);  <span style="color:#75715e">//true
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([<span style="color:#e6db74">&#34;1&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;1&#34;</span>);  <span style="color:#75715e">//true
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([<span style="color:#e6db74">&#34;1&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;true&#34;</span>);  <span style="color:#75715e">//false
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">/** 範例六 **/</span>
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([]<span style="color:#f92672">==</span>[]); <span style="color:#75715e">//false
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([] <span style="color:#f92672">==</span> []); <span style="color:#75715e">//false
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>({} <span style="color:#f92672">==</span> {});  <span style="color:#75715e">//false
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">/** 例外案 **/</span>
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">null</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>);  <span style="color:#75715e">//false
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">undefined</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)  <span style="color:#75715e">//false
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">null</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">undefined</span>);  <span style="color:#75715e">//true
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">NaN</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">NaN</span>);  <span style="color:#75715e">//false
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#f92672">+</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">===</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">0</span>);  <span style="color:#75715e">//true
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">NaN</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">NaN</span>);  <span style="color:#75715e">//false
 </span><span style="color:#75715e"></span>
-<span style="color:#75715e">/** 進階範例二 **/</span>
+<span style="color:#75715e">/** 進階範例 **/</span>
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">1</span>);  <span style="color:#75715e">//false
 </span><span style="color:#75715e">//1 + 1 = 2;
 </span><span style="color:#75715e">//2 === 1 = false;
@@ -906,68 +894,43 @@ if (!doNotTrack) {
 <h1 id="heading-40"></h1>
 <h2 id="原始型別primitive-data-type">原始型別(Primitive Data Type)</h2>
 <h1 id="heading-41"></h1>
-<ul>
-<li>是一個純值，沒有屬性。</li>
-</ul>
-<h1 id="heading-42"></h1>
 <table>
 <thead>
 <tr>
-<th>型別</th>
-<th>字串</th>
-<th>數字</th>
-<th>布林值</th>
-<th>未定義</th>
-<th>空值</th>
+<th>typeof</th>
+<th>中文</th>
+<th>說明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>typeof</td>
 <td>String</td>
+<td>字串</td>
+<td>&ldquo;&ldquo;內的值</td>
+</tr>
+<tr>
 <td>Number</td>
+<td>數字</td>
+<td>1234567890、NaN、Infinity</td>
+</tr>
+<tr>
 <td>Boolean</td>
+<td>布林值</td>
+<td>true、flase</td>
+</tr>
+<tr>
 <td>Undefined</td>
+<td>未定義</td>
+<td>尚未被賦予值</td>
+</tr>
+<tr>
 <td>Null</td>
+<td>空值</td>
+<td>曾經被賦予值，但是沒有值</td>
 </tr>
 </tbody>
 </table>
-<h1 id="heading-43"></h1>
-<h2 id="物件型別object-type">物件型別(Object Type)</h2>
-<h1 id="heading-44"></h1>
-<ul>
-<li>以包裹方式建立的型別。</li>
-</ul>
-<h1 id="heading-45"></h1>
-<ul>
-<li>函式是包裹物件裡的子型別。</li>
-</ul>
-<h1 id="heading-46"></h1>
-<table>
-<thead>
-<tr>
-<th>型別</th>
-<th>物件</th>
-<th>陣列</th>
-<th>函式</th>
-<th>new String()</th>
-<th>new Number()</th>
-<th>new Boolean()</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>typeof</td>
-<td>Object</td>
-<td>Object</td>
-<td>function</td>
-<td>Object</td>
-<td>Object</td>
-<td>Object</td>
-</tr>
-</tbody>
-</table>
-<h1 id="heading-47"></h1>
+<h1 id="heading-42"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -992,49 +955,118 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 字串 **/</span>
-<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">a</span>;  <span style="color:#75715e">//String
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> <span style="color:#e6db74">&#34;undefined&#34;</span>;  <span style="color:#75715e">//String
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">a</span>;  
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//string
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">/** 數字 **/</span>
-<span style="color:#66d9ef">typeof</span> <span style="color:#ae81ff">0</span>;  <span style="color:#75715e">//Number
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> <span style="color:#ae81ff">1</span>;  <span style="color:#75715e">//Number
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> <span style="color:#ae81ff">3.14</span>;  <span style="color:#75715e">//Number
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">NaN</span>;  <span style="color:#75715e">//Number
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">Infinity</span>;  <span style="color:#75715e">//Number
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.1415</span>;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">a</span>;  
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//number
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">/** 布林值 **/</span>
-<span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">true</span>;  <span style="color:#75715e">//Boolean
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">false</span>;  <span style="color:#75715e">//Boolean
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">/** 物件 **/</span>
-<span style="color:#66d9ef">typeof</span> {};  <span style="color:#75715e">//Object
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> {<span style="color:#a6e22e">a</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>};  <span style="color:#75715e">//Object
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> [];  <span style="color:#75715e">//Object
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> [<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>];  <span style="color:#75715e">//Object
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">null</span>;  <span style="color:#75715e">//Object(這是javascript錯誤)
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">a</span>;  
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//boolean
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">/** 未定義 **/</span>
-<span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">undefined</span>;  <span style="color:#75715e">//undefined
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//undefined
 </span><span style="color:#75715e"></span>
-<span style="color:#75715e">/** 函式 **/</span>
-<span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">function</span>(){};  <span style="color:#75715e">//function
+<span style="color:#75715e">/** 空值 **/</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//null
 </span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-48"></h1>
+</div><h1 id="heading-43"></h1>
+<h2 id="物件型別object-type">物件型別(Object Type)</h2>
+<h1 id="heading-44"></h1>
+<table>
+<thead>
+<tr>
+<th>typeof</th>
+<th>中文</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Object</td>
+<td>物件</td>
+<td>{}內的值</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>陣列</td>
+<td>[]內的值</td>
+</tr>
+<tr>
+<td>function</td>
+<td>函式</td>
+<td>物件裡的子型別</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>new String()</td>
+<td>包裹方式建立的型別</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>new Number()</td>
+<td>包裹方式建立的型別</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>new Boolean()</td>
+<td>包裹方式建立的型別</td>
+</tr>
+</tbody>
+</table>
+<h1 id="heading-45"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 物件 **/</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;蘋果&#34;</span>};
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">typeof</span>(<span style="color:#a6e22e">a</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//object
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/** 陣列 **/</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;蘋果&#34;</span>];
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">typeof</span>(<span style="color:#a6e22e">a</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//object
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/** 函式 **/</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){};
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">typeof</span>(<span style="color:#a6e22e">a</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//function
+</span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-46"></h1>
 <hr>
-<h1 id="heading-49"></h1>
+<h1 id="heading-47"></h1>
 <p>當變數在執行階段被賦予值時，可能會轉換型別。而轉換分為以下兩種:</p>
-<h1 id="heading-50"></h1>
+<h1 id="heading-48"></h1>
 <h2 id="顯性轉換explicit-conversion">顯性轉換(Explicit Conversion)</h2>
-<h1 id="heading-51"></h1>
+<h1 id="heading-49"></h1>
 <ul>
 <li>
 <p>直接賦予值</p>
@@ -1048,7 +1080,7 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<h1 id="heading-52"></h1>
+<h1 id="heading-50"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1073,23 +1105,23 @@ if (!doNotTrack) {
 <span style="color:#75715e">//console.log(typeof a);  string
 </span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-53"></h1>
+</div><h1 id="heading-51"></h1>
 <h2 id="隱性轉換implicit-conversion">隱性轉換(Implicit Conversion)</h2>
-<h1 id="heading-54"></h1>
+<h1 id="heading-52"></h1>
 <ul>
 <li>
 <p>透過運算子來轉換型別</p>
 <ul>
 <li>
-<p>字串 * 數字 = 數字(範例一)</p>
+<p>字串 * 數字 =&gt; 數字(範例一)</p>
 </li>
 <li>
-<p>數字 + 字串 = 字串(範例二)</p>
+<p>數字 + 字串 =&gt; 字串(範例二)</p>
 </li>
 </ul>
 </li>
 </ul>
-<h1 id="heading-55"></h1>
+<h1 id="heading-53"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -1195,6 +1227,8 @@ if (!doNotTrack) {
                   <ul>
                 
                 
+                    <li><a href="/post/2021-02-15-javascript%E5%B0%8F%E7%9F%A5%E8%AD%988/">Javascript小知識8</a></li>
+                
                     <li><a href="/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/">Javascript小知識7</a></li>
                 
                     <li><a href="/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/">Javascript小知識6</a></li>
@@ -1202,8 +1236,6 @@ if (!doNotTrack) {
                     <li><a href="/post/2021-01-28-javascript%E5%B0%8F%E7%9F%A5%E8%AD%985/">Javascript小知識5</a></li>
                 
                     <li><a href="/post/2021-01-27-javascript%E5%B0%8F%E7%9F%A5%E8%AD%984/">Javascript小知識4</a></li>
-                
-                    <li><a href="/post/2021-01-26-javascript%E5%B0%8F%E7%9F%A5%E8%AD%983/">Javascript小知識3</a></li>
                 
               </ul>
 

@@ -198,6 +198,281 @@ if (!doNotTrack) {
         <div class="posts-list">
           
             <article class="post-preview">
+    <a href="https://jack842248.github.io/post/2021-02-11-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B611/">
+        <h2 class="post-title">學習Vue前端框架11</h2>
+        
+        <h3 class="post-subtitle">
+            Slot
+        </h3>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-11
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;162&nbsp;個字
+  
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <hr>
+<h1 id="heading"></h1>
+<h3 id="插槽slot">插槽(Slot)</h3>
+<h1 id="heading-1"></h1>
+<ul>
+<li>沒有使用&lt;slot&gt;標籤無法替換內容。</li>
+</ul>
+<h1 id="heading-2"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
+  <span style="color:#a6e22e">p</span><span style="color:#f92672">-</span><span style="color:#a6e22e">cp</span> 
+    <span style="color:#a6e22e">li</span> <span style="color:#a6e22e">香蕉</span>
+  
+<span style="color:#75715e">//．蘋果
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// &lt;-----js-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
+  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>,
+  <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span>{
+    <span style="color:#e6db74">&#34;p-cp&#34;</span><span style="color:#f92672">:</span>{
+      <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> 
+      <span style="color:#e6db74">`
+</span><span style="color:#e6db74">      &lt;ul&gt;
+</span><span style="color:#e6db74">        &lt;li&gt;蘋果&lt;/li&gt;
+</span><span style="color:#e6db74">      &lt;/ul&gt;
+</span><span style="color:#e6db74">      `</span>
+    }
+  }
+});
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-3"></h1>
+<hr>
+<h1 id="heading-4"></h1>
+<ul>
+<li>使用&lt;template&gt;自己標籤不被輸出，所以不會覆蓋<!-- raw HTML omitted -->標籤。</li>
+</ul>
+<h1 id="heading-5"></h1>
+<ul>
+<li>&lt;slot&gt;可以讓&quot;蘋果&quot;被替換，若沒有被替換，&ldquo;蘋果&quot;也會變成預設值而顯示出來。</li>
+</ul>
+<h1 id="heading-6"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
+  <span style="color:#a6e22e">p</span><span style="color:#f92672">-</span><span style="color:#a6e22e">cp</span> 
+    <span style="color:#a6e22e">template</span> <span style="color:#a6e22e">香蕉</span>
+
+<span style="color:#75715e">//．香蕉
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// &lt;-----js-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
+  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>,
+  <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span>{
+    <span style="color:#e6db74">&#34;p-cp&#34;</span><span style="color:#f92672">:</span>{
+      <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> 
+      <span style="color:#e6db74">`
+</span><span style="color:#e6db74">      &lt;ul&gt;
+</span><span style="color:#e6db74">        &lt;li&gt;
+</span><span style="color:#e6db74">          &lt;slot&gt;蘋果&lt;/slot&gt;
+</span><span style="color:#e6db74">        &lt;/li&gt;
+</span><span style="color:#e6db74">      &lt;/ul&gt;
+</span><span style="color:#e6db74">      `</span>
+    }
+  }
+});
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-7"></h1>
+<hr>
+<h1 id="heading-8"></h1>
+<ul>
+<li>使用name=&ldquo;自訂名稱&rdquo;，可對應solt=&ldquo;自訂名稱&rdquo;。</li>
+</ul>
+<h1 id="heading-9"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">app</span>
+  <span style="color:#a6e22e">p</span><span style="color:#f92672">-</span><span style="color:#a6e22e">cp</span>
+    <span style="color:#a6e22e">li</span>(<span style="color:#a6e22e">slot</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;a&#34;</span>) <span style="color:#a6e22e">香蕉</span>
+
+<span style="color:#75715e">//．蘋果
+</span><span style="color:#75715e">//．香蕉
+</span><span style="color:#75715e">//．蘋果
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// &lt;-----js-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
+  <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>,
+  <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span>{
+    <span style="color:#e6db74">&#34;p-cp&#34;</span><span style="color:#f92672">:</span>{
+      <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> 
+      <span style="color:#e6db74">`
+</span><span style="color:#e6db74">      &lt;ul&gt;
+</span><span style="color:#e6db74">        &lt;li&gt;蘋果&lt;/li&gt;
+</span><span style="color:#e6db74">        &lt;slot name=&#34;a&#34;&gt;蘋果&lt;/slot&gt;
+</span><span style="color:#e6db74">        &lt;li&gt;蘋果&lt;/li&gt;
+</span><span style="color:#e6db74">      &lt;/ul&gt;
+</span><span style="color:#e6db74">      `</span>
+    }
+  }
+});
+</code></pre></td></tr></table>
+</div>
+</div>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+        <a href="https://jack842248.github.io/tags/vue/">Vue</a>&nbsp;
+        
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://jack842248.github.io/post/2021-02-10-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B610/">
+        <h2 class="post-title">學習Vue前端框架10</h2>
+        
+        <h3 class="post-subtitle">
+            Props、Emit
+        </h3>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-10
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;380&nbsp;個字
+  
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        
+        <a href="https://jack842248.github.io/post/2021-02-10-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B610/" class="post-read-more">[閱讀全文]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+        <a href="https://jack842248.github.io/tags/vue/">Vue</a>&nbsp;
+        
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
     <a href="https://jack842248.github.io/post/2021-02-09-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B69/">
         <h2 class="post-title">學習Vue前端框架9</h2>
         
@@ -667,101 +942,16 @@ if (!doNotTrack) {
 
 </article>
           
-            <article class="post-preview">
-    <a href="https://jack842248.github.io/post/2021-02-01-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61/">
-        <h2 class="post-title">學習Vue前端框架1</h2>
-        
-        <h3 class="post-subtitle">
-            初階應用介紹
-        </h3>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-01
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;482&nbsp;個字
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        
-        <a href="https://jack842248.github.io/post/2021-02-01-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B61/" class="post-read-more">[閱讀全文]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://jack842248.github.io/tags/vue/">Vue</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://jack842248.github.io/post/2021-01-31-vue.js-devtools%E5%AE%89%E8%A3%9D/">
-        <h2 class="post-title">Vue.js devtools安裝</h2>
-        
-        <h3 class="post-subtitle">
-            Vue.js的輔助工具
-        </h3>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-01-31
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;12&nbsp;個字
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        
-        <a href="https://jack842248.github.io/post/2021-01-31-vue.js-devtools%E5%AE%89%E8%A3%9D/" class="post-read-more">[閱讀全文]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://jack842248.github.io/tags/vue/">Vue</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
         </div>
+        
+          <ul class="pager main-pager">
+            
+            
+              <li class="next">
+                <a href="https://jack842248.github.io/tags/vue/page/2/">更舊的文章 &rarr;</a>
+              </li>
+            
+          </ul>
         
       </div>
     </div>
