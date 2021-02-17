@@ -7,14 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript小知識10</title>
+      <link>https://jack842248.github.io/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/</link>
+      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Javascript小知識9</title>
+      <link>https://jack842248.github.io/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/</guid>
+      <description>取得DOM元素方法     方法 取得目標 得到結果     .getElementById() id 只能取得一個   .getElementsByName() name 以陣列形式呈現   .getElementsByTagName() &amp;lt;標籤&amp;gt; 以陣列形式呈現   .querySelector() class 只能取得一個   .querySelectorAll() class 以陣列形式呈現        .getElementById()   1 2 3 4 5 6 7  // &amp;lt;-----html-----&amp;gt; #a 蘋果 #a 香蕉 // &amp;lt;-----js-----&amp;gt; let a = document.getElementById(&amp;#34;a&amp;#34;); console.log(a); //&amp;lt;div id=&amp;#39;a&amp;#39;&amp;gt;蘋果&amp;lt;/div&amp;gt;       .</description>
+    </item>
+    
     <item>
       <title>Javascript小知識8</title>
       <link>https://jack842248.github.io/post/2021-02-15-javascript%E5%B0%8F%E7%9F%A5%E8%AD%988/</link>
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-02-15-javascript%E5%B0%8F%E7%9F%A5%E8%AD%988/</guid>
-      <description>簡化賦值運算子  1 2 3 4 5 6 7 8 9 10 11 12 13  let a = 1; a = a + 1; console.log(a); //2  /** 簡化 **/ let a = 1; a += 1; console.log(a); //2  /** 再簡化 **/ let a = 1; a++; console.log(a); //2      數字與字串的應用   使用 parseInt() 可將字串轉數字。(範例一)    使用 .toString 可轉數字轉字串。(範例二)    使用 .</description>
+      <description>全域變數(Global Variable)   在function裡的變數稱為，區域變數。(範例一)   區域變數(Area Variable)   在function外的變數稱為，全域變數。(範例二)   1 2 3 4 5 6 7 8 9 10 11 12 13 14  /** 範例一 **/ function fn1(){ let a = &amp;#34;蘋果&amp;#34;; console.log(a); //蘋果 } fn1(); /** 範例二 **/ let a; function fn1(){ a = &amp;#34;蘋果&amp;#34;; } fn1(); console.log(a); //蘋果      if、else if、else   適合判斷式數值，限制範圍。    一律使用 if 開頭，若不成立，則往下執行。    可以使用多個 else if ，若不成立，則往下執行。    若以上都不成立則執行 else 。   1 2 3 4 5 6 7 8 9 10 11 12 13 14  let hungry = 5; //飢餓程度1~10 function eat(fruit){ console.</description>
     </item>
     
     <item>
@@ -23,7 +41,7 @@
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/</guid>
-      <description>var、let、const   皆為宣告變數用。      名稱 var let const     作用域 在函式裡 在block{}裡 在block{}裡   宣告的變數 可以賦予新的值 可以賦予新的值 不能賦予新的值   重複宣告變數時 不會出錯 會出錯 會出錯   從創造到執行階段會 提升(Hoisting) 暫時性死區(TDZ) 會出現錯誤      當使用 for迴圈 時:   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  /** for迴圈(var) **/ for(var i=0 ; i&amp;lt;3 ; i++){ setTimeout(function(){ console.</description>
+      <description>var、let、const   皆為宣告變數用。      名稱 var let const     作用域 在函式裡 在block{}裡 在block{}裡   宣告的變數 可以賦予新的值 可以賦予新的值 不能賦予新的值   重複宣告變數時 不會出錯 會出錯 會出錯   從創造到執行階段會 提升(Hoisting) 暫時性死區(TDZ) 會出現錯誤     1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29  /** 變數賦予新的值 **/ var a = 1; a = 2; console.</description>
     </item>
     
     <item>
@@ -65,7 +83,7 @@
       <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-01-26-javascript%E5%B0%8F%E7%9F%A5%E8%AD%983/</guid>
-      <description>物件實字(Object Literals)   直接撰寫 var obj1 = {&amp;hellip;} 物件。(範例一)   建構物件(Constructor Object)   使用 new Object() 包裹方式建立。(範例二)   1 2 3 4 5 6 7 8 9 10  /** 範例一 **/ var obj1 = { name:&amp;#34;蘋果&amp;#34;, amount: 100 } /** 範例二 **/ var obj1 = new Object(); obj1.name = &amp;#34;蘋果&amp;#34;; obj1.amount = 100;      物件的基本應用方法 :   使用 .</description>
+      <description>物件實字(Object Literals)   直接撰寫 var obj1 = {&amp;hellip;} 物件。(範例一)   建構物件(Constructor Object)   使用 new Object() 包裹方式建立。(範例二)   1 2 3 4 5 6 7 8 9 10  /** 範例一 **/ var obj1 = { name:&amp;#34;蘋果&amp;#34;, amount: 100 } /** 範例二 **/ var obj1 = new Object(); obj1.name = &amp;#34;蘋果&amp;#34;; obj1.amount = 100;      物件的基本應用方法 :   取值。(範例一)    新增屬性。(範例二)    刪除屬性。(範例三)    新增物件。(範例四)   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  var fruit = { name:&amp;#34;蘋果&amp;#34;, amount: 100 } /** 範例一 **/ console.</description>
     </item>
     
     <item>
@@ -74,7 +92,7 @@
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-01-25-javascript%E5%B0%8F%E7%9F%A5%E8%AD%982/</guid>
-      <description>陳述式(Statement)   不會回傳結果，不能賦值(=)到變數上。      陳述式 例如     判斷式 if、else if、else、switch、break   宣告變數 var、let、const   函式陳述式 function fn1(){&amp;hellip;}   Block區塊 {}     1 2 3 4 5 6 7 8 9 10 11 12 13  /** 判斷式 **/ if(){...}else{} /** 宣告變數 **/ var a; /** 函式陳述式 **/ function fn1(){...} /** Block區塊 **/ { let a = 1; }      判斷式(if&amp;hellip;else)   判斷式裡如果是 真值(Truthy) ，就會成立。    判斷式裡如果是 假值(Falsy) ，就會不成立。      判斷值 例如     真值 true 、 1 、 &amp;ldquo;1&amp;rdquo; 、 [] 、 {}   假值 false 、 0 、 &amp;quot;&amp;quot; 、 NaN 、 null 、 undefined     1 2 3 4 5 6 7 8 9 10 11 12 13  /** 範例一 **/ if([]){ console.</description>
+      <description>陳述式(Statement)   不會回傳結果，不能賦值(=)到變數上。      陳述式 例如     判斷式 if、else if、else、switch、break   宣告變數 var、let、const   函式陳述式 function fn1(){&amp;hellip;}   Block區塊 {}     1 2 3 4 5 6 7 8 9 10 11 12 13  /** 判斷式 **/ if(...){...}else{...} /** 宣告變數 **/ var a; /** 函式陳述式 **/ function fn1(){...} /** Block區塊 **/ { let a = 1; }      判斷式(if&amp;hellip;else)   判斷式裡如果是 真值(Truthy) ，就會成立。(範例一)    判斷式裡如果是 假值(Falsy) ，就會不成立。(範例二)      判斷值 例如     真值 true 、 1 、 &amp;ldquo;1&amp;rdquo; 、 [] 、 {}   假值 false 、 0 、 &amp;quot;&amp;quot; 、 NaN 、 null 、 undefined     1 2 3 4 5 6 7 8 9 10 11 12 13  /** 範例一 **/ if([]){ console.</description>
     </item>
     
     <item>
@@ -83,9 +101,7 @@
       <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-01-24-javascript%E5%B0%8F%E7%9F%A5%E8%AD%981/</guid>
-      <description>程式語言可以分為兩種 : javascript屬於直譯式語言。
- 直譯式語言(Interpreted Language)     例如 JavaScript、Python、PHP、Ruby、BASIC、LISP、Perl、R     流程 原始碼 → 直譯器 → 代碼生成 → 執行   特性 程式碼由上到下執行，效能比較差、除錯比較慢、需要依賴執行環境。     編譯式語言(Compiled Language)     例如 Java、C、C#、C++、Pascal     流程 原始碼 → 預處理器 → 代碼生成 → 執行   特性 效能比較好、除錯比較快、程式碼可獨立執行。       程式語言的作用域可以分為兩種 : javascript屬於靜態作用域。
- 靜態作用域(Lexical Scope)   又稱 : 語法作用域。    語法在解析時就決定作用域，而且不再改變。   1 2 3 4 5 6 7  function fn1(){ var a = 1; } fn1(); console.</description>
+      <description>程式語言可以分為兩種 : javascript屬於直譯式語言。  直譯式語言(Interpreted Language)     例如 JavaScript、Python、PHP、Ruby、BASIC、LISP、Perl、R     流程 原始碼 → 直譯器 → 代碼生成 → 執行   特性 程式碼由上到下執行，效能比較差、除錯比較慢、需要依賴執行環境。     編譯式語言(Compiled Language)     例如 Java、C、C#、C++、Pascal     流程 原始碼 → 預處理器 → 代碼生成 → 執行   特性 效能比較好、除錯比較快、程式碼可獨立執行。       程式語言的作用域可以分為兩種 : javascript屬於靜態作用域。  靜態作用域(Lexical Scope)   又稱 : 語法作用域。    語法在解析時就決定作用域，且不再改變。   1 2 3 4 5 6  function fn1(){ var a = 1; } fn1(); console.</description>
     </item>
     
   </channel>

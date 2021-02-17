@@ -59,7 +59,7 @@
   "headline": "Javascript小知識4",
   "description" : "函式(Function)   是包含{程式碼片段}的物件。    擁有被呼叫、回傳的功能。     函式可細分以下幾種 :\n  函式陳述式\n 具名函式。(範例一)    函式表達式\n  匿名函式。(範例二)\n  具名函式。(範例三)\n       具名的函式能夠在函式中被呼叫使用\n 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47  \/** 範例一 **\/ function fn1(){ console.",
   "inLanguage" : "zh-tw",
-  "wordCount":  1069 ,
+  "wordCount":  1064 ,
   "datePublished" : "2021-01-27T00:00:00",
   "dateModified" : "2021-01-27T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -257,10 +257,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-01-27
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;5&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1069&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1064&nbsp;個字
   
   
   
@@ -296,10 +296,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-01-27
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;5&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1069&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1064&nbsp;個字
   
   
   
@@ -513,18 +513,18 @@ if (!doNotTrack) {
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">obj1</span> <span style="color:#f92672">=</span> {};
 (<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">par1</span>){
   <span style="color:#a6e22e">par1</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
-  <span style="color:#75715e">//{ name:&#34;蘋果&#34; }
+  <span style="color:#75715e">//{name: &#34;蘋果&#34;}
 </span><span style="color:#75715e"></span>})(<span style="color:#a6e22e">obj1</span>);
-<span style="color:#75715e">//obj1 = { name:&#34;蘋果&#34; }
+<span style="color:#75715e">//obj1 = {name: &#34;蘋果&#34;}
 </span><span style="color:#75715e"></span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">par2</span>){
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">par2</span>);  <span style="color:#75715e">//{ name:&#34;蘋果&#34; }
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">par2</span>);  <span style="color:#75715e">//{name: &#34;蘋果&#34;}
 </span><span style="color:#75715e"></span>})(<span style="color:#a6e22e">obj1</span>);
 
 <span style="color:#75715e">/** 範例三 **/</span>
 (<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">par1</span>){
   <span style="color:#a6e22e">par1</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
 })(window);
-<span style="color:#75715e">//window = { name:&#34;蘋果&#34; }
+<span style="color:#75715e">//window = {name: &#34;蘋果&#34;}
 </span><span style="color:#75715e"></span>(<span style="color:#66d9ef">function</span>(){
   <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span>);  <span style="color:#75715e">//蘋果
 </span><span style="color:#75715e"></span>})();
@@ -540,7 +540,7 @@ if (!doNotTrack) {
 </ul>
 <h1 id="heading-15"></h1>
 <ul>
-<li>當傳入的值不足時，參數會呈現undefined。(範例二)</li>
+<li>當傳入的值不足時，參數會呈現 <strong>undefined</strong> 。(範例二)</li>
 </ul>
 <h1 id="heading-16"></h1>
 <ul>
@@ -548,7 +548,7 @@ if (!doNotTrack) {
 </ul>
 <h1 id="heading-17"></h1>
 <ul>
-<li>使用<em><strong>arguments</strong></em>，可以一次取得所有傳入的值。(範例四)</li>
+<li>使用 <strong>arguments</strong> ，可以一次取得所有傳入的值。(範例四)</li>
 </ul>
 <h1 id="heading-18"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -623,7 +623,7 @@ if (!doNotTrack) {
 };
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#a6e22e">par1</span>){
   <span style="color:#a6e22e">par1</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>;
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">obj1</span>);  <span style="color:#75715e">//{name : &#34;香蕉&#34;}
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">obj1</span>);  <span style="color:#75715e">//{name: &#34;香蕉&#34;}
 </span><span style="color:#75715e"></span>}
 <span style="color:#a6e22e">fn1</span>(<span style="color:#a6e22e">a</span>);
 <span style="color:#75715e">//參數若是傳物件的話，參數指向物件
@@ -631,7 +631,7 @@ if (!doNotTrack) {
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">/** 範例四 **/</span>
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(){
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arguments</span>);  <span style="color:#75715e">//[&#34;蘋果&#34; , &#34;香蕉&#34; , &#34;鳳梨&#34;]
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arguments</span>);  <span style="color:#75715e">//[&#34;蘋果&#34;,&#34;香蕉&#34;,&#34;鳳梨&#34;]
 </span><span style="color:#75715e"></span>}
 <span style="color:#a6e22e">fn1</span>(<span style="color:#e6db74">&#34;蘋果&#34;</span>,<span style="color:#e6db74">&#34;香蕉&#34;</span>,<span style="color:#e6db74">&#34;鳳梨&#34;</span>);
 
@@ -1288,15 +1288,15 @@ if (!doNotTrack) {
                   <ul>
                 
                 
+                    <li><a href="/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/">Javascript小知識10</a></li>
+                
+                    <li><a href="/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/">Javascript小知識9</a></li>
+                
                     <li><a href="/post/2021-02-15-javascript%E5%B0%8F%E7%9F%A5%E8%AD%988/">Javascript小知識8</a></li>
                 
                     <li><a href="/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/">Javascript小知識7</a></li>
                 
                     <li><a href="/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/">Javascript小知識6</a></li>
-                
-                    <li><a href="/post/2021-01-28-javascript%E5%B0%8F%E7%9F%A5%E8%AD%985/">Javascript小知識5</a></li>
-                
-                    <li><a href="/post/2021-01-26-javascript%E5%B0%8F%E7%9F%A5%E8%AD%983/">Javascript小知識3</a></li>
                 
               </ul>
 

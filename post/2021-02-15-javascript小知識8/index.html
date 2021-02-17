@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>Javascript小知識8 - Jack Huang Blog</title>
-  <meta name="description" content="宣告變數">
+  <meta name="description" content="全域變數、區域變數、if、else if、else、switch、for、array、object、JSON">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "Javascript小知識8",
-  "description" : "簡化賦值運算子  1 2 3 4 5 6 7 8 9 10 11 12 13  let a = 1; a = a \u002b 1; console.log(a); \/\/2  \/** 簡化 **\/ let a = 1; a \u002b= 1; console.log(a); \/\/2  \/** 再簡化 **\/ let a = 1; a\u002b\u002b; console.log(a); \/\/2      數字與字串的應用   使用 parseInt() 可將字串轉數字。(範例一)    使用 .toString 可轉數字轉字串。(範例二)    使用 .",
+  "description" : "全域變數(Global Variable)   在function裡的變數稱為，區域變數。(範例一)   區域變數(Area Variable)   在function外的變數稱為，全域變數。(範例二)   1 2 3 4 5 6 7 8 9 10 11 12 13 14  \/** 範例一 **\/ function fn1(){ let a = \u0026#34;蘋果\u0026#34;; console.log(a); \/\/蘋果 } fn1(); \/** 範例二 **\/ let a; function fn1(){ a = \u0026#34;蘋果\u0026#34;; } fn1(); console.log(a); \/\/蘋果      if、else if、else   適合判斷式數值，限制範圍。    一律使用 if 開頭，若不成立，則往下執行。    可以使用多個 else if ，若不成立，則往下執行。    若以上都不成立則執行 else 。   1 2 3 4 5 6 7 8 9 10 11 12 13 14  let hungry = 5; \/\/飢餓程度1~10 function eat(fruit){ console.",
   "inLanguage" : "zh-tw",
-  "wordCount":  148 ,
+  "wordCount":  349 ,
   "datePublished" : "2021-02-15T00:00:00",
   "dateModified" : "2021-02-15T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -79,13 +79,13 @@
 </script>
 
 <meta property="og:title" content="Javascript小知識8" />
-<meta property="og:description" content="宣告變數">
+<meta property="og:description" content="全域變數、區域變數、if、else if、else、switch、for、array、object、JSON">
 <meta property="og:url" content="https://jack842248.github.io/post/2021-02-15-javascript%E5%B0%8F%E7%9F%A5%E8%AD%988/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
   <meta name="twitter:title" content="Javascript小知識8" />
-  <meta name="twitter:description" content="宣告變數">
+  <meta name="twitter:description" content="全域變數、區域變數、if、else if、else、switch、for、array、object、JSON">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.80.0" />
@@ -247,7 +247,7 @@ if (!doNotTrack) {
                 <h1>Javascript小知識8</h1>
                   
                     
-                      <h2 class="post-subheading">宣告變數</h2>
+                      <h2 class="post-subheading">全域變數、區域變數、if、else if、else、switch、for、array、object、JSON</h2>
                     
                   
                   
@@ -257,10 +257,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-15
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;148&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;349&nbsp;個字
   
   
   
@@ -286,7 +286,7 @@ if (!doNotTrack) {
               
               
                 
-                  <h2 class="post-subheading">宣告變數</h2>
+                  <h2 class="post-subheading">全域變數、區域變數、if、else if、else、switch、for、array、object、JSON</h2>
                 
               
               
@@ -296,10 +296,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-15
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;148&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;349&nbsp;個字
   
   
   
@@ -322,8 +322,18 @@ if (!doNotTrack) {
       <article role="main" class="blog-post">
         <hr>
 <h1 id="heading"></h1>
-<h2 id="簡化賦值運算子">簡化賦值運算子</h2>
+<h2 id="全域變數global-variable">全域變數(Global Variable)</h2>
 <h1 id="heading-1"></h1>
+<ul>
+<li>在function裡的變數稱為，區域變數。(範例一)</li>
+</ul>
+<h1 id="heading-2"></h1>
+<h2 id="區域變數area-variable">區域變數(Area Variable)</h2>
+<h1 id="heading-3"></h1>
+<ul>
+<li>在function外的變數稱為，全域變數。(範例二)</li>
+</ul>
+<h1 id="heading-4"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -339,44 +349,101 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
-<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//2
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">/** 簡化 **/</span>
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
-<span style="color:#a6e22e">a</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//2
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">/** 再簡化 **/</span>
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
-<span style="color:#a6e22e">a</span><span style="color:#f92672">++</span>;
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//2
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 範例一 **/</span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(){
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//蘋果
+</span><span style="color:#75715e"></span>}
+<span style="color:#a6e22e">fn1</span>();
+
+<span style="color:#75715e">/** 範例二 **/</span>
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span>;
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(){
+    <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
+}
+<span style="color:#a6e22e">fn1</span>();
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//蘋果
 </span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-2"></h1>
+</div><h1 id="heading-5"></h1>
 <hr>
-<h1 id="heading-3"></h1>
-<h2 id="數字與字串的應用">數字與字串的應用</h2>
-<h1 id="heading-4"></h1>
-<ul>
-<li>使用 <strong>parseInt()</strong> 可將字串轉數字。(範例一)</li>
-</ul>
-<h1 id="heading-5"></h1>
-<ul>
-<li>使用 <strong>.toString</strong> 可轉數字轉字串。(範例二)</li>
-</ul>
 <h1 id="heading-6"></h1>
-<ul>
-<li>使用 <strong>.length</strong> 可取得字數(空白也算)。(範例三)</li>
-</ul>
+<h2 id="ifelse-ifelse">if、else if、else</h2>
 <h1 id="heading-7"></h1>
 <ul>
-<li>使用 <strong>.trim()</strong> 可以濾掉空白。(範例四)</li>
+<li>適合判斷式數值，限制範圍。</li>
 </ul>
 <h1 id="heading-8"></h1>
+<ul>
+<li>一律使用 <strong>if</strong> 開頭，若不成立，則往下執行。</li>
+</ul>
+<h1 id="heading-9"></h1>
+<ul>
+<li>可以使用多個 <strong>else if</strong> ，若不成立，則往下執行。</li>
+</ul>
+<h1 id="heading-10"></h1>
+<ul>
+<li>若以上都不成立則執行 <strong>else</strong> 。</li>
+</ul>
+<h1 id="heading-11"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hungry</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+<span style="color:#75715e">//飢餓程度1~10
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">eat</span>(<span style="color:#a6e22e">fruit</span>){
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我想要吃&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">fruit</span>);
+}
+<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">hungry</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">3</span>){
+    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;蘋果&#34;</span>);
+}<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">hungry</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">hungry</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">5</span>){
+    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;香蕉&#34;</span>);  <span style="color:#75715e">//我現在要吃香蕉
+</span><span style="color:#75715e"></span>}<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">hungry</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">8</span>){
+    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;鳳梨&#34;</span>);
+}<span style="color:#66d9ef">else</span>{
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我不想吃東西&#34;</span>);
+}
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-12"></h1>
+<hr>
+<h1 id="heading-13"></h1>
+<h2 id="switch">switch</h2>
+<h1 id="heading-14"></h1>
+<ul>
+<li>效能比 <strong>if&hellip;else</strong> 好，適合判斷已知的結果。</li>
+</ul>
+<h1 id="heading-15"></h1>
+<ul>
+<li><strong>switch</strong> 一定要帶參數才能判斷。</li>
+</ul>
+<h1 id="heading-16"></h1>
+<ul>
+<li><strong>break</strong> 可阻止往下執行。</li>
+</ul>
+<h1 id="heading-17"></h1>
+<ul>
+<li>若都不成立則執行 <strong>default</strong> 。</li>
+</ul>
+<h1 id="heading-18"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -397,46 +464,191 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 範例一 **/</span>
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;100&#34;</span>;
-<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">a</span>);
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//number
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hungry</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+<span style="color:#75715e">//飢餓程度1~10
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">eat</span>(<span style="color:#a6e22e">fruit</span>){
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我想要吃&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">fruit</span>);
+}
+<span style="color:#66d9ef">switch</span>(<span style="color:#a6e22e">hungry</span>){
+  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span>
+    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;蘋果&#34;</span>);
+    <span style="color:#66d9ef">break</span>;
+  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span>
+    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;香蕉&#34;</span>);
+    <span style="color:#66d9ef">break</span>;
+  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span>
+    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;鳳梨&#34;</span>);
+    <span style="color:#66d9ef">break</span>;
+  <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我不想吃東西&#34;</span>);
+    <span style="color:#66d9ef">break</span>;
+}
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-19"></h1>
+<hr>
+<h1 id="heading-20"></h1>
+<h2 id="forarrayobject">for、array、object</h2>
+<h1 id="heading-21"></h1>
+<ul>
+<li>for取值方法。(範例一)</li>
+</ul>
+<h1 id="heading-22"></h1>
+<ul>
+<li>for + array。(範例二)</li>
+</ul>
+<h1 id="heading-23"></h1>
+<ul>
+<li>for + if&hellip;else。(範例三)</li>
+</ul>
+<h1 id="heading-24"></h1>
+<ul>
+<li>for加總方法。(範例四)</li>
+</ul>
+<h1 id="heading-25"></h1>
+<ul>
+<li>for + break。(範例五)</li>
+</ul>
+<h1 id="heading-26"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fruits</span><span style="color:#f92672">=</span>[
+  {
+    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>,
+    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>,
+    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;美國&#34;</span>,<span style="color:#e6db74">&#34;日本&#34;</span>] 
+  },
+  {
+    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>,
+    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>,
+    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;台灣&#34;</span>,<span style="color:#e6db74">&#34;泰國&#34;</span>] 
+  },
+  {
+    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;鳳梨&#34;</span>,
+    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>,
+    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;夏威夷&#34;</span>,<span style="color:#e6db74">&#34;新加玻&#34;</span>] 
+  },
+]
+
+<span style="color:#75715e">/** 範例一 **/</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">prod</span>[<span style="color:#ae81ff">0</span>]);  <span style="color:#75715e">//台灣
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">/** 範例二 **/</span>
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
-<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">toString</span>();
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//string
-</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span>);  <span style="color:#75715e">//蘋果  //香蕉  //鳳梨
+</span><span style="color:#75715e"></span>}
+
 <span style="color:#75715e">/** 範例三 **/</span>
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; 蘋果&#34;</span>;
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">length</span>);  <span style="color:#75715e">//3
-</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">amount</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">300</span>){
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span>);  <span style="color:#75715e">//鳳梨
+</span><span style="color:#75715e"></span>  }
+}
+
 <span style="color:#75715e">/** 範例四 **/</span>
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; 蘋果&#34;</span>;
-<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">trim</span>();
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//蘋果
-</span></code></pre></td></tr></table>
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+  <span style="color:#a6e22e">total</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">amount</span>;
+}
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>);  <span style="color:#75715e">//900
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/** 範例五 **/</span>
+<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">amount</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">50</span>){
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span>);  <span style="color:#75715e">//蘋果
+</span><span style="color:#75715e"></span>  }
+  <span style="color:#66d9ef">break</span>;
+}
+</code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-9"></h1>
+</div><h1 id="heading-27"></h1>
 <hr>
-<h1 id="heading-10"></h1>
-<h3 id="牛奶一瓶30元若要買6瓶總共多少元">牛奶一瓶30元，若要買6瓶，總共多少元?</h3>
-<h1 id="heading-11"></h1>
+<h1 id="heading-28"></h1>
+<h2 id="靜態載入json資料">靜態載入JSON資料</h2>
+<h1 id="heading-29"></h1>
+<ol>
+<li>先安裝Chrome擴充工具，JSONView。</li>
+</ol>
+<h1 id="heading-30"></h1>
+<ol start="2">
+<li>到政府資料開放平台，OpenData。</li>
+</ol>
+<h1 id="heading-31"></h1>
+<ol start="3">
+<li>將資料複製到js。</li>
+</ol>
+<h1 id="heading-32"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">milkPrice</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>;
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">buyNum</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>;
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">totalPrice</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">milkPrice</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">buyNum</span>;
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>);  <span style="color:#75715e">//180
-</span></code></pre></td></tr></table>
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> [<span style="color:#a6e22e">貼上JSON資料</span>];
+
+<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+  <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">data</span>[<span style="color:#a6e22e">i</span>][<span style="color:#e6db74">&#34;行政區&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;岡山區&#34;</span> ){
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>( <span style="color:#a6e22e">data</span>[<span style="color:#a6e22e">i</span>][<span style="color:#e6db74">&#34;臨時停車處所&#34;</span>] );
+  }
+}
+</code></pre></td></tr></table>
 </div>
 </div>
 
@@ -515,15 +727,15 @@ if (!doNotTrack) {
                   <ul>
                 
                 
+                    <li><a href="/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/">Javascript小知識10</a></li>
+                
+                    <li><a href="/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/">Javascript小知識9</a></li>
+                
                     <li><a href="/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/">Javascript小知識7</a></li>
                 
                     <li><a href="/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/">Javascript小知識6</a></li>
                 
                     <li><a href="/post/2021-01-28-javascript%E5%B0%8F%E7%9F%A5%E8%AD%985/">Javascript小知識5</a></li>
-                
-                    <li><a href="/post/2021-01-27-javascript%E5%B0%8F%E7%9F%A5%E8%AD%984/">Javascript小知識4</a></li>
-                
-                    <li><a href="/post/2021-01-26-javascript%E5%B0%8F%E7%9F%A5%E8%AD%983/">Javascript小知識3</a></li>
                 
               </ul>
 
@@ -538,6 +750,10 @@ if (!doNotTrack) {
               <a href="https://jack842248.github.io/post/2021-02-11-%E5%AD%B8%E7%BF%92vue%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B611/" data-toggle="tooltip" data-placement="top" title="學習Vue前端框架11">&larr; 上一篇</a>
             </li>
           
+          
+            <li class="next">
+              <a href="https://jack842248.github.io/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/" data-toggle="tooltip" data-placement="top" title="Javascript小知識9">下一篇 &rarr;</a>
+            </li>
           
         </ul>
       
