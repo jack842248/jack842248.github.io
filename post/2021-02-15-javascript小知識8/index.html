@@ -59,7 +59,7 @@
   "headline": "Javascript小知識8",
   "description" : "全域變數(Global Variable)   在function裡的變數稱為，區域變數。(範例一)   區域變數(Area Variable)   在function外的變數稱為，全域變數。(範例二)   1 2 3 4 5 6 7 8 9 10 11 12 13 14  \/** 範例一 **\/ function fn1(){ let a = \u0026#34;蘋果\u0026#34;; console.log(a); \/\/蘋果 } fn1(); \/** 範例二 **\/ let a; function fn1(){ a = \u0026#34;蘋果\u0026#34;; } fn1(); console.log(a); \/\/蘋果      if、else if、else   適合判斷式數值，限制範圍。    一律使用 if 開頭，若不成立，則往下執行。    可以使用多個 else if ，若不成立，則往下執行。    若以上都不成立則執行 else 。   1 2 3 4 5 6 7 8 9 10 11 12 13 14  let hungry = 5; \/\/飢餓程度1~10 function eat(fruit){ console.",
   "inLanguage" : "zh-tw",
-  "wordCount":  349 ,
+  "wordCount":  649 ,
   "datePublished" : "2021-02-15T00:00:00",
   "dateModified" : "2021-02-15T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -257,10 +257,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-15
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;349&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;649&nbsp;個字
   
   
   
@@ -296,10 +296,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-15
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;349&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;649&nbsp;個字
   
   
   
@@ -650,7 +650,234 @@ if (!doNotTrack) {
 }
 </code></pre></td></tr></table>
 </div>
+</div><h1 id="heading-33"></h1>
+<hr>
+<h1 id="heading-34"></h1>
+<blockquote>
+<p>情境題:</p>
+<p>服務員:請問您是VIP會員嗎?帳單有滿千元嗎?兩者達到可送贈品喔。</p>
+<p>顧客: 我沒有。</p>
+<p>服務員:抱歉，我記錯了，只要有達成一項就有送贈品，你有嗎?</p>
+<p>顧客: 我有。</p>
+</blockquote>
+<h1 id="heading-35"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">isVIP</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+<span style="color:#75715e">//是否為VIP會員
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myBill</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1200</span>;
+<span style="color:#75715e">//消費帳單金額
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">checkAll</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">isVIP</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">myBill</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">1000</span>;
+<span style="color:#75715e">//檢查兩樣是否都符合
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkAll</span>);  <span style="color:#75715e">//false
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">checkAllagain</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">isVIP</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">myBill</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">1000</span>;
+<span style="color:#75715e">//檢查兩樣是否其中一項符合
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkAllagain</span>);  <span style="color:#75715e">//true
+</span></code></pre></td></tr></table>
 </div>
+</div><h1 id="heading-36"></h1>
+<hr>
+<h1 id="heading-37"></h1>
+<blockquote>
+<p>情境題:</p>
+<p>服務生:請問您是本月壽星嗎?</p>
+<p>顧客:不是。</p>
+<p>服務生:請問人數是不是還沒有到齊?</p>
+<p>顧客:是。</p>
+</blockquote>
+<h1 id="heading-38"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myMonth</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+<span style="color:#75715e">//顧客的生日月份
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nowMonth</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+<span style="color:#75715e">//現在的月份
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">checkBirthday</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">myMonth</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">nowMonth</span>;
+<span style="color:#75715e">//檢查月份是否相符
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkBirthday</span>);  <span style="color:#75715e">//false
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nowPeople</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+<span style="color:#75715e">//目前人數
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span>  <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+<span style="color:#75715e">//預定人數
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">checkPeople</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nowPeople</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">totalPeople</span> 
+<span style="color:#75715e">//目前人數是不是不等於預定人數
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkPeople</span>);  <span style="color:#75715e">//true
+</span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-39"></h1>
+<hr>
+<h1 id="heading-40"></h1>
+<blockquote>
+<p>情境題:</p>
+<p>漢堡一個50元，可樂一杯20元，</p>
+<p>若要5個漢堡，3杯可樂，請問總共要多少元?</p>
+</blockquote>
+<h1 id="heading-41"></h1>
+<ul>
+<li>變數寫法。(範例一)</li>
+</ul>
+<h1 id="heading-42"></h1>
+<ul>
+<li>函式寫法。(範例二)</li>
+</ul>
+<h1 id="heading-43"></h1>
+<ul>
+<li>函式寫法 + return。(範例三)</li>
+</ul>
+<h1 id="heading-44"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 範例一 **/</span>
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">humPrice</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>;
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">cokePrice</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">humPrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">+</span> (<span style="color:#a6e22e">cokePrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>);  <span style="color:#75715e">//310
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/** 範例二 **/</span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#a6e22e">humPrice</span>,<span style="color:#a6e22e">cokePrice</span>){
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">humPrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">+</span> (<span style="color:#a6e22e">cokePrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>);
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>);  <span style="color:#75715e">//310
+</span><span style="color:#75715e"></span>}
+<span style="color:#a6e22e">fn1</span>(<span style="color:#ae81ff">50</span>,<span style="color:#ae81ff">20</span>);
+
+<span style="color:#75715e">/** 範例三 **/</span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#a6e22e">humPrice</span>,<span style="color:#a6e22e">cokePrice</span>){
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">humPrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">+</span> (<span style="color:#a6e22e">cokePrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>);
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">total</span>;  
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#ae81ff">50</span>,<span style="color:#ae81ff">20</span>);  
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//310
+</span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-45"></h1>
+<ul>
+<li>
+<p>取得input裡的值做計算。(範例三)</p>
+<ul>
+<li>
+<p>使用 <strong>.onclick</strong> 新增點擊事件。</p>
+</li>
+<li>
+<p>使用 <strong>.value</strong> 取得 <strong>&lt;input&gt;</strong> 的值。</p>
+</li>
+<li>
+<p>使用 <strong>parseInt()</strong> 將字串轉為數字。</p>
+</li>
+<li>
+<p>使用 <strong>textContent</strong> 將結果顯示在
+<strong>&lt;span&gt;</strong> 。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="heading-46"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">span</span> <span style="color:#a6e22e">漢堡</span>
+  <span style="color:#a6e22e">input</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">hamNum</span>(<span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:30px&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>)
+<span style="color:#a6e22e">span</span> <span style="color:#a6e22e">個</span><span style="color:#960050;background-color:#1e0010">，</span>
+<span style="color:#a6e22e">span</span> <span style="color:#a6e22e">可樂</span>
+  <span style="color:#a6e22e">input</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">cokeNum</span>(<span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:30px&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>)
+<span style="color:#a6e22e">span</span> <span style="color:#a6e22e">個</span><span style="color:#960050;background-color:#1e0010">，</span>
+<span style="color:#a6e22e">input</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">calBtn</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;計算&#34;</span>)
+<span style="color:#a6e22e">span</span> <span style="color:#a6e22e">總共是</span><span style="color:#f92672">:</span>
+  <span style="color:#a6e22e">span</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">total</span>
+<span style="color:#a6e22e">span</span> <span style="color:#a6e22e">元</span>
+
+<span style="color:#75715e">// &lt;-----js-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">calBtn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;calBtn&#34;</span>);
+<span style="color:#a6e22e">calBtn</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hamNum</span> <span style="color:#f92672">=</span> parseInt(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;hamNum&#34;</span>).<span style="color:#a6e22e">value</span>);
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">cokeNum</span> <span style="color:#f92672">=</span> parseInt(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;cokeNum&#34;</span>).<span style="color:#a6e22e">value</span>);
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">totalPrice</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">hamNum</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">50</span>) <span style="color:#f92672">+</span> (<span style="color:#a6e22e">cokeNum</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">20</span>);
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;total&#34;</span>);
+  <span style="color:#a6e22e">total</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">totalPrice</span>;
+}
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-47"></h1>
+<blockquote>
+<p>從input裡取出的value型別都是string</p>
+</blockquote>
+
 
         
           <div class="blog-tags">
@@ -727,6 +954,8 @@ if (!doNotTrack) {
                   <ul>
                 
                 
+                    <li><a href="/post/2021-02-18-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9811/">Javascript小知識11</a></li>
+                
                     <li><a href="/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/">Javascript小知識10</a></li>
                 
                     <li><a href="/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/">Javascript小知識9</a></li>
@@ -734,8 +963,6 @@ if (!doNotTrack) {
                     <li><a href="/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/">Javascript小知識7</a></li>
                 
                     <li><a href="/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/">Javascript小知識6</a></li>
-                
-                    <li><a href="/post/2021-01-28-javascript%E5%B0%8F%E7%9F%A5%E8%AD%985/">Javascript小知識5</a></li>
                 
               </ul>
 

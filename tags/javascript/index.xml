@@ -7,14 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript小知識11</title>
+      <link>https://jack842248.github.io/post/2021-02-18-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9811/</link>
+      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-18-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9811/</guid>
+      <description>localStorage   可以將&amp;quot;字串&amp;quot;資料儲存在 Chrome → Application → LocalStorage 裡。      Key Value     &amp;mdash; &amp;mdash;      使用 .setItem 、 .getItem 來存取資料。   1 2 3 4 5 6  /** 存入資料 **/ localStorage.setItem(&amp;#34;a&amp;#34;,&amp;#34;蘋果&amp;#34;); /** 取出資料 **/ let a = localStorage.getItem(&amp;#34;a&amp;#34;); console.log(a); //蘋果       Key Value     a 蘋果       localStorage + input   將輸入框裡的值存入後再取出。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  // &amp;lt;-----html-----&amp;gt; input(type=&amp;#34;text&amp;#34;) button.</description>
+    </item>
+    
     <item>
       <title>Javascript小知識10</title>
       <link>https://jack842248.github.io/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/</link>
       <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/</guid>
-      <description> </description>
+      <description>點擊事件(Click Event)   .onclick = function(){&amp;hellip;} 。    直接在DOM元素上 onclick=&amp;quot;&amp;hellip;&amp;quot; (不建議使用)。    .addEventListener(&amp;ldquo;click&amp;rdquo;,function(){&amp;hellip;}) 。   .onclick只能綁定最後一次事件，.addEventListener可以綁定多次事件，
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  // &amp;lt;-----html-----&amp;gt; button.btn1 按鈕1 button.btn2(onclick=&amp;#34;console.log(&amp;#39;您點擊了，按鈕2&amp;#39;)&amp;#34;) 按鈕2 button.btn3 按鈕3 // &amp;lt;-----js-----&amp;gt; let btn1 = document.querySelector(&amp;#34;.btn1&amp;#34;); let btn3 = document.querySelector(&amp;#34;.btn3&amp;#34;); btn1.onclick = function(){ console.log(&amp;#34;您點擊了，按鈕1&amp;#34;); } btn3.addEventListener(&amp;#34;click&amp;#34;,function(){ console.log(&amp;#34;您點擊了，按鈕3&amp;#34;); });      監聽事件(Listener Event)   .</description>
     </item>
     
     <item>
@@ -23,7 +33,7 @@
       <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/</guid>
-      <description>取得DOM元素方法     方法 取得目標 得到結果     .getElementById() id 只能取得一個   .getElementsByName() name 以陣列形式呈現   .getElementsByTagName() &amp;lt;標籤&amp;gt; 以陣列形式呈現   .querySelector() class 只能取得一個   .querySelectorAll() class 以陣列形式呈現        .getElementById()   1 2 3 4 5 6 7  // &amp;lt;-----html-----&amp;gt; #a 蘋果 #a 香蕉 // &amp;lt;-----js-----&amp;gt; let a = document.getElementById(&amp;#34;a&amp;#34;); console.log(a); //&amp;lt;div id=&amp;#39;a&amp;#39;&amp;gt;蘋果&amp;lt;/div&amp;gt;       .</description>
+      <description>取得DOM元素方法     方法 取得目標 得到結果     .getElementById() id 只能取得一個   .getElementsByName() name 以陣列形式呈現   .getElementsByTagName() &amp;lt;標籤&amp;gt; 以陣列形式呈現   .querySelector() id、class、&amp;lt;標籤&amp;gt; 只能取得一個   .querySelectorAll() id、class 以陣列形式呈現       .getElementById()  1 2 3 4 5 6 7  // &amp;lt;-----html-----&amp;gt; #a 蘋果 #a 香蕉 // &amp;lt;-----js-----&amp;gt; let a = document.getElementById(&amp;#34;a&amp;#34;); console.log(a); //&amp;lt;div id=&amp;#39;a&amp;#39;&amp;gt;蘋果&amp;lt;/div&amp;gt;      .</description>
     </item>
     
     <item>
