@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>Javascript小知識11 - Jack Huang Blog</title>
-  <meta name="description" content="localStorage、JSON">
+  <meta name="description" content="localStorage、data、todolist(javascript版)">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -59,7 +59,7 @@
   "headline": "Javascript小知識11",
   "description" : "localStorage   可以將\u0026quot;字串\u0026quot;資料儲存在 Chrome → Application → LocalStorage 裡。      Key Value     \u0026mdash; \u0026mdash;      使用 .setItem 、 .getItem 來存取資料。   1 2 3 4 5 6  \/** 存入資料 **\/ localStorage.setItem(\u0026#34;a\u0026#34;,\u0026#34;蘋果\u0026#34;); \/** 取出資料 **\/ let a = localStorage.getItem(\u0026#34;a\u0026#34;); console.log(a); \/\/蘋果       Key Value     a 蘋果       localStorage \u002b input   將輸入框裡的值存入後再取出。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  \/\/ \u0026lt;-----html-----\u0026gt; input(type=\u0026#34;text\u0026#34;) button.",
   "inLanguage" : "zh-tw",
-  "wordCount":  335 ,
+  "wordCount":  553 ,
   "datePublished" : "2021-02-18T00:00:00",
   "dateModified" : "2021-02-18T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -79,13 +79,13 @@
 </script>
 
 <meta property="og:title" content="Javascript小知識11" />
-<meta property="og:description" content="localStorage、JSON">
+<meta property="og:description" content="localStorage、data、todolist(javascript版)">
 <meta property="og:url" content="https://jack842248.github.io/post/2021-02-18-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9811/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
   <meta name="twitter:title" content="Javascript小知識11" />
-  <meta name="twitter:description" content="localStorage、JSON">
+  <meta name="twitter:description" content="localStorage、data、todolist(javascript版)">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.80.0" />
@@ -247,7 +247,7 @@ if (!doNotTrack) {
                 <h1>Javascript小知識11</h1>
                   
                     
-                      <h2 class="post-subheading">localStorage、JSON</h2>
+                      <h2 class="post-subheading">localStorage、data、todolist(javascript版)</h2>
                     
                   
                   
@@ -257,10 +257,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-18
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;335&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;553&nbsp;個字
   
   
   
@@ -286,7 +286,7 @@ if (!doNotTrack) {
               
               
                 
-                  <h2 class="post-subheading">localStorage、JSON</h2>
+                  <h2 class="post-subheading">localStorage、data、todolist(javascript版)</h2>
                 
               
               
@@ -296,10 +296,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-18
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;335&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;553&nbsp;個字
   
   
   
@@ -664,8 +664,156 @@ if (!doNotTrack) {
 </span><span style="color:#75715e">//點擊&lt;li&gt;可以顯示對應的資料名稱
 </span></code></pre></td></tr></table>
 </div>
-</div><p>#</p>
+</div><h1 id="heading-23"></h1>
+<hr>
+<h1 id="heading-24"></h1>
+<h2 id="todolist">todolist</h2>
+<h1 id="heading-25"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>)
+<span style="color:#a6e22e">button</span> <span style="color:#a6e22e">送出</span>
+<span style="color:#a6e22e">ul</span>
 
+<span style="color:#75715e">// &lt;-----js-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">todolist</span> <span style="color:#f92672">=</span> [];
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;input&#34;</span>);
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">button</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;button&#34;</span>);
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">ul</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;ul&#34;</span>);
+
+<span style="color:#75715e">/** 載入頁面時，顯示資料 **/</span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">initTodo</span>() {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">getData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#e6db74">&#34;todoData&#34;</span>);
+  <span style="color:#a6e22e">todolist</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">getData</span>) <span style="color:#f92672">||</span> [];
+  <span style="color:#75715e">//將[陣列]賦予localStorage上的資料
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">//若沒資料就賦予空[陣列]
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">showTodo</span>();
+}
+<span style="color:#a6e22e">initTodo</span>();
+
+<span style="color:#75715e">/** 顯示資料 **/</span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">showTodo</span>() {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">todolist</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#a6e22e">str</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`&lt;li&gt;&lt;a href=&#34;#&#34; data-num=&#34;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">i</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;&gt;刪除&lt;/a&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">todolist</span>[<span style="color:#a6e22e">i</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/li&gt;`</span>;
+    <span style="color:#75715e">//將取得的資料，帶入編號、&#34;刪除&#34;
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">ul</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>;
+    <span style="color:#75715e">//顯示在清單上
+</span><span style="color:#75715e"></span>  }
+}
+
+<span style="color:#75715e">/** 點擊按鈕，新增資料 **/</span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">addTodo</span>() {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">inputValue</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">value</span>;
+  <span style="color:#75715e">//取得輸入框的值
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">inputValue</span>) {
+    <span style="color:#a6e22e">todolist</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">inputValue</span>);
+    <span style="color:#75715e">//將取得的值，新增到[陣列]
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">todoStr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">todolist</span>);
+    <span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">setItem</span>(<span style="color:#e6db74">&#34;todoData&#34;</span>, <span style="color:#a6e22e">todoStr</span>);
+    <span style="color:#75715e">//將新增後的[陣列]上傳localStorage
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">showTodo</span>();
+    <span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+    <span style="color:#75715e">//清空輸入框
+</span><span style="color:#75715e"></span>  }
+
+}
+<span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#a6e22e">addTodo</span>);
+
+<span style="color:#75715e">/** 刪除資料 **/</span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">removeTodo</span>(<span style="color:#a6e22e">event</span>) {
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">targetTag</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">tagName</span>;
+  <span style="color:#75715e">//取得點擊的目標
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">targetTag</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;A&#34;</span>) {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">targetNum</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">num</span>;
+    <span style="color:#75715e">//取得目標的編號
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">todolist</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#a6e22e">targetNum</span>, <span style="color:#ae81ff">1</span>);
+    <span style="color:#75715e">//將該項目清除
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">todoStr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">todolist</span>);
+    <span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">setItem</span>(<span style="color:#e6db74">&#34;todoData&#34;</span>, <span style="color:#a6e22e">todoStr</span>);
+    <span style="color:#75715e">//將清除後的[陣列]，上傳localStorage
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">ul</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+    <span style="color:#75715e">//因為刪除後資料的編號會與localStorage上的編號不同
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//所以必須清除掉所有清單上的內容全部重新渲染過
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">showTodo</span>();
+  }
+}
+<span style="color:#a6e22e">ul</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#a6e22e">removeTodo</span>);
+</code></pre></td></tr></table>
+</div>
+</div>
 
         
           <div class="blog-tags">
@@ -742,15 +890,15 @@ if (!doNotTrack) {
                   <ul>
                 
                 
+                    <li><a href="/post/2021-02-19-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9812/">Javascript小知識12</a></li>
+                
+                    <li><a href="/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9813/">Javascript小知識13</a></li>
+                
                     <li><a href="/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/">Javascript小知識10</a></li>
                 
                     <li><a href="/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/">Javascript小知識9</a></li>
                 
                     <li><a href="/post/2021-02-15-javascript%E5%B0%8F%E7%9F%A5%E8%AD%988/">Javascript小知識8</a></li>
-                
-                    <li><a href="/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/">Javascript小知識7</a></li>
-                
-                    <li><a href="/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/">Javascript小知識6</a></li>
                 
               </ul>
 
@@ -765,6 +913,10 @@ if (!doNotTrack) {
               <a href="https://jack842248.github.io/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/" data-toggle="tooltip" data-placement="top" title="Javascript小知識10">&larr; 上一篇</a>
             </li>
           
+          
+            <li class="next">
+              <a href="https://jack842248.github.io/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9813/" data-toggle="tooltip" data-placement="top" title="Javascript小知識13">下一篇 &rarr;</a>
+            </li>
           
         </ul>
       

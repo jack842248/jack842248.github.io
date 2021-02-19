@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Thu, 18 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript小知識12</title>
+      <link>https://jack842248.github.io/post/2021-02-19-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9812/</link>
+      <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-19-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9812/</guid>
+      <description>BOM(Browser Object Model)   瀏覽器(window)提供的物件原型。      名稱 中文     history 瀏覽歷史紀錄   frames 框架   location 路徑位置   document DOM元素   screen 使用裝置資訊   navigator 版本資訊       回上頁   使用window.history.forward()，下一頁。    使用window.history.back()，回上頁。   回上頁前必須先下一頁
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14  // &amp;lt;-----html-----&amp;gt; button.</description>
+    </item>
+    
+    <item>
+      <title>Javascript小知識13</title>
+      <link>https://jack842248.github.io/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9813/</link>
+      <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9813/</guid>
+      <description>動態載入資料(AJAX)   使用 new XMLHttpRequest 原型，來向伺服器發送請求。    不用重新整理網頁就能取得資料庫資料，例如 : 加入購物車、表單驗證、搜尋提示字。    載入的資料必須支援跨網域(CORS)。     跨域資源共享(Cross-Origin Resource Sharing)   是否能跨網域取得資料，簡稱CORS。    出現 Access-Control-Allow-Origin 錯誤，代表不支援。    可以使用test-cors.org，status狀態顯示該網站是否支援跨網域。     .status   顯示http狀態碼:      值 說明     200 資料載入成功，用戶端要求成功   400 錯誤的要求   401 拒絕存取   403 禁止使用   404 資料載入失敗，找不到       .</description>
+    </item>
+    
     <item>
       <title>Javascript小知識11</title>
       <link>https://jack842248.github.io/post/2021-02-18-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9811/</link>
