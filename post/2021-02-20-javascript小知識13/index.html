@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>Javascript小知識13 - Jack Huang Blog</title>
-  <meta name="description" content="ajax">
+  <meta name="description" content="AJAX">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -57,11 +57,11 @@
     "name" : "JackHuang"
   },
   "headline": "Javascript小知識13",
-  "description" : "動態載入資料(AJAX)   使用 new XMLHttpRequest 原型，來向伺服器發送請求。    不用重新整理網頁就能取得資料庫資料，例如 : 加入購物車、表單驗證、搜尋提示字。    載入的資料必須支援跨網域(CORS)。     跨域資源共享(Cross-Origin Resource Sharing)   是否能跨網域取得資料，簡稱CORS。    出現 Access-Control-Allow-Origin 錯誤，代表不支援。    可以使用test-cors.org，status狀態顯示該網站是否支援跨網域。     .status   顯示http狀態碼:      值 說明     200 資料載入成功，用戶端要求成功   400 錯誤的要求   401 拒絕存取   403 禁止使用   404 資料載入失敗，找不到       .",
+  "description" : "動態載入資料(AJAX)   使用 new XMLHttpRequest 原型，來向伺服器發送請求。     不用重新整理網頁就能取得資料庫回傳的資料，例如 :\n  加入購物車，顯示商品數量。\n  註冊帳號時，顯示該帳號是否已使用。\n  搜尋時，顯示的關鍵提示字。\n      載入的資料必須支援跨網域(CORS)。     跨域資源共享(Cross-Origin Resource Sharing)   簡稱CORS。    若發送請求時出現 Access-Control-Allow-Origin 錯誤，代表不支援。     可以使用 test-cors.org 網站，顯示http狀態碼。\n  .status:200，資料載入成功，用戶端要求成功。\n  .status:404，資料載入失敗，找不到。\n       .open(\u0026ldquo;方法\u0026rdquo; , \u0026ldquo;網址\u0026rdquo; , frue\/false)。   向伺服器發送請求。    true(非同步)，不等資料載入完就會往下執行。(預設)    false(同步)，等待資料載入完後才往下執行。      方法 GET POST PUT DELETE     說明 取得資料 傳送資料 覆蓋資料 刪除資料       .",
   "inLanguage" : "zh-tw",
-  "wordCount":  420 ,
-  "datePublished" : "2021-02-19T00:00:00",
-  "dateModified" : "2021-02-19T00:00:00",
+  "wordCount":  434 ,
+  "datePublished" : "2021-02-20T00:00:00",
+  "dateModified" : "2021-02-20T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
   "keywords" : [ "javascript" ],
   "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9813\/",
@@ -79,13 +79,13 @@
 </script>
 
 <meta property="og:title" content="Javascript小知識13" />
-<meta property="og:description" content="ajax">
+<meta property="og:description" content="AJAX">
 <meta property="og:url" content="https://jack842248.github.io/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9813/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
   <meta name="twitter:title" content="Javascript小知識13" />
-  <meta name="twitter:description" content="ajax">
+  <meta name="twitter:description" content="AJAX">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.80.0" />
@@ -247,20 +247,20 @@ if (!doNotTrack) {
                 <h1>Javascript小知識13</h1>
                   
                     
-                      <h2 class="post-subheading">ajax</h2>
+                      <h2 class="post-subheading">AJAX</h2>
                     
                   
                   
                     <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-19
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-20
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;420&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;434&nbsp;個字
   
   
   
@@ -286,20 +286,20 @@ if (!doNotTrack) {
               
               
                 
-                  <h2 class="post-subheading">ajax</h2>
+                  <h2 class="post-subheading">AJAX</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-19
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-20
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;420&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;434&nbsp;個字
   
   
   
@@ -329,7 +329,20 @@ if (!doNotTrack) {
 </ul>
 <h1 id="heading-2"></h1>
 <ul>
-<li>不用重新整理網頁就能取得資料庫資料，例如 : 加入購物車、表單驗證、搜尋提示字。</li>
+<li>
+<p>不用重新整理網頁就能取得資料庫回傳的資料，例如 :</p>
+<ul>
+<li>
+<p>加入購物車，顯示商品數量。</p>
+</li>
+<li>
+<p>註冊帳號時，顯示該帳號是否已使用。</p>
+</li>
+<li>
+<p>搜尋時，顯示的關鍵提示字。</p>
+</li>
+</ul>
+</li>
 </ul>
 <h1 id="heading-3"></h1>
 <ul>
@@ -341,72 +354,43 @@ if (!doNotTrack) {
 <h3 id="跨域資源共享cross-origin-resource-sharing">跨域資源共享(Cross-Origin Resource Sharing)</h3>
 <h1 id="heading-6"></h1>
 <ul>
-<li>是否能跨網域取得資料，簡稱CORS。</li>
+<li>簡稱CORS。</li>
 </ul>
 <h1 id="heading-7"></h1>
 <ul>
-<li>出現 <strong>Access-Control-Allow-Origin</strong> 錯誤，代表不支援。</li>
+<li>若發送請求時出現 <strong>Access-Control-Allow-Origin</strong> 錯誤，代表不支援。</li>
 </ul>
 <h1 id="heading-8"></h1>
 <ul>
-<li>可以使用<a href="http://www.test-cors.org/">test-cors.org</a>，status狀態顯示該網站是否支援跨網域。</li>
+<li>
+<p>可以使用 <a href="http://www.test-cors.org/">test-cors.org</a> 網站，顯示http狀態碼。</p>
+<ul>
+<li>
+<p>.status:200，資料載入成功，用戶端要求成功。</p>
+</li>
+<li>
+<p>.status:404，資料載入失敗，找不到。</p>
+</li>
+</ul>
+</li>
 </ul>
 <h1 id="heading-9"></h1>
 <hr>
 <h1 id="heading-10"></h1>
-<h3 id="status">.status</h3>
-<h1 id="heading-11"></h1>
-<ul>
-<li>顯示http狀態碼:</li>
-</ul>
-<h1 id="heading-12"></h1>
-<table>
-<thead>
-<tr>
-<th>值</th>
-<th>說明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td>資料載入成功，用戶端要求成功</td>
-</tr>
-<tr>
-<td>400</td>
-<td>錯誤的要求</td>
-</tr>
-<tr>
-<td>401</td>
-<td>拒絕存取</td>
-</tr>
-<tr>
-<td>403</td>
-<td>禁止使用</td>
-</tr>
-<tr>
-<td>404</td>
-<td>資料載入失敗，找不到</td>
-</tr>
-</tbody>
-</table>
-<h1 id="heading-13"></h1>
-<hr>
-<h1 id="heading-14"></h1>
 <h3 id="open方法--網址--fruefalse">.open(&ldquo;方法&rdquo; , &ldquo;網址&rdquo; , frue/false)。</h3>
-<h1 id="heading-15"></h1>
+<h1 id="heading-11"></h1>
 <ul>
 <li>向伺服器發送請求。</li>
 </ul>
-<h1 id="heading-16"></h1>
+<h1 id="heading-12"></h1>
 <ul>
 <li>true(非同步)，不等資料載入完就會往下執行。(預設)</li>
 </ul>
-<h1 id="heading-17"></h1>
+<h1 id="heading-13"></h1>
 <ul>
 <li>false(同步)，等待資料載入完後才往下執行。</li>
 </ul>
-<h1 id="heading-18"></h1>
+<h1 id="heading-14"></h1>
 <table>
 <thead>
 <tr>
@@ -421,65 +405,65 @@ if (!doNotTrack) {
 <tr>
 <td>說明</td>
 <td>取得資料</td>
-<td>新增資料</td>
+<td>傳送資料</td>
 <td>覆蓋資料</td>
 <td>刪除資料</td>
 </tr>
 </tbody>
 </table>
-<h1 id="heading-19"></h1>
+<h1 id="heading-15"></h1>
 <hr>
-<h1 id="heading-20"></h1>
-<h2 id="setrequestheader">.setRequestHeader</h2>
-<h1 id="heading-21"></h1>
+<h1 id="heading-16"></h1>
+<h3 id="setrequestheader">.setRequestHeader</h3>
+<h1 id="heading-17"></h1>
 <ul>
 <li>決定傳送給伺服器的資料格式。</li>
 </ul>
-<h1 id="heading-22"></h1>
+<h1 id="heading-18"></h1>
 <ul>
 <li>.setRequestHeader(&ldquo;content-type&rdquo;,&ldquo;application/x-www-form-urlencoded&rdquo;)，傳送表單格式。</li>
 </ul>
-<h1 id="heading-23"></h1>
+<h1 id="heading-19"></h1>
 <ul>
 <li>.setRequestHeader(&ldquo;content-type&rdquo;,&ldquo;application/json&rdquo;)，傳送JSON格式。</li>
+</ul>
+<h1 id="heading-20"></h1>
+<hr>
+<h1 id="heading-21"></h1>
+<h3 id="send">.send</h3>
+<h1 id="heading-22"></h1>
+<ul>
+<li>傳送給伺服器&quot;字串&quot;格式的資料。</li>
+</ul>
+<h1 id="heading-23"></h1>
+<ul>
+<li>使用 <strong>JSON.stringify()</strong> ，將資料轉換成字串。</li>
 </ul>
 <h1 id="heading-24"></h1>
 <hr>
 <h1 id="heading-25"></h1>
-<h3 id="send">.send</h3>
+<h3 id="onload">.onload</h3>
 <h1 id="heading-26"></h1>
 <ul>
-<li>傳送給伺服器&quot;字串&quot;格式的資料。</li>
+<li>執行ajax完成後的動作。</li>
 </ul>
 <h1 id="heading-27"></h1>
-<ul>
-<li>使用 <strong>JSON.stringify()</strong> ，將資料轉換成字串。</li>
-</ul>
-<h1 id="heading-28"></h1>
 <hr>
+<h1 id="heading-28"></h1>
+<h3 id="responsetext">.responseText</h3>
 <h1 id="heading-29"></h1>
-<h3 id="onload">.onload</h3>
+<ul>
+<li>可以取得伺服器回傳的&quot;字串&quot;格式的資料。</li>
+</ul>
 <h1 id="heading-30"></h1>
 <ul>
-<li>執行載入完成後的動作。</li>
+<li>使用 <strong>JSON.parse()</strong> ，來解析回傳的資料。</li>
 </ul>
 <h1 id="heading-31"></h1>
 <hr>
 <h1 id="heading-32"></h1>
-<h3 id="responsetext">.responseText</h3>
-<h1 id="heading-33"></h1>
-<ul>
-<li>可以取得伺服器回傳的&quot;字串&quot;格式的資料。</li>
-</ul>
-<h1 id="heading-34"></h1>
-<ul>
-<li>使用 <strong>JSON.parse()</strong> ，來解析回傳的資料。</li>
-</ul>
-<h1 id="heading-35"></h1>
-<hr>
-<h1 id="heading-36"></h1>
 <h2 id="載入資料">載入資料</h2>
-<h1 id="heading-37"></h1>
+<h1 id="heading-33"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -494,31 +478,35 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">p</span>
 
 <span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">xhr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
-<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;GET&#34;</span>,<span style="color:#e6db74">&#34;https://hexschool.github.io/ajaxHomework/data.json&#34;</span>,<span style="color:#66d9ef">true</span>);
-<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">send</span>(<span style="color:#66d9ef">null</span>);
-<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">responseText</span>);
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">xhr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();  <span style="color:#75715e">//0
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;GET&#34;</span>,<span style="color:#e6db74">&#34;https://hexschool.github.io/ajaxHomework/data.json&#34;</span>,<span style="color:#66d9ef">true</span>);  <span style="color:#75715e">//1
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">send</span>(<span style="color:#66d9ef">null</span>);  <span style="color:#75715e">//2
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){  <span style="color:#75715e">//4
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">responseText</span>);
   <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
   <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">name</span>;
 }
-</code></pre></td></tr></table>
+<span style="color:#75715e">// &lt;-----結果-----&gt;
+</span><span style="color:#75715e">//文字&lt;p&gt;顯示  //王小名
+</span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-38"></h1>
+</div><h1 id="heading-34"></h1>
 <hr>
-<h1 id="heading-39"></h1>
+<h1 id="heading-35"></h1>
 <h3 id="readystate">.readyState</h3>
-<h1 id="heading-40"></h1>
+<h1 id="heading-36"></h1>
 <ul>
-<li>顯示載入的狀態。</li>
+<li>顯示ajax的狀態。</li>
 </ul>
-<h1 id="heading-41"></h1>
+<h1 id="heading-37"></h1>
 <table>
 <thead>
 <tr>
@@ -549,11 +537,11 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<h1 id="heading-42"></h1>
+<h1 id="heading-38"></h1>
 <hr>
-<h1 id="heading-43"></h1>
+<h1 id="heading-39"></h1>
 <h2 id="傳送表單">傳送表單</h2>
-<h1 id="heading-44"></h1>
+<h1 id="heading-40"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -578,23 +566,23 @@ if (!doNotTrack) {
 <span style="color:#75715e">// &lt;-----結果-----&gt;
 </span><span style="color:#75715e">//帳號輸入  //test123@gmail.com
 </span><span style="color:#75715e">//密碼輸入  //abc45678
-</span><span style="color:#75715e">//點擊&#34;按鈕&#34;時，
+</span><span style="color:#75715e">//點擊&#34;按鈕&#34;時，URL最後方出現...
 </span><span style="color:#75715e">//index.html?account=test123%40gmail.com&amp;password=abc45678
 </span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-45"></h1>
+</div><h1 id="heading-41"></h1>
 <blockquote>
 <p>『 ? 』後面接參數 、 『 &amp; 』連接內容</p>
 </blockquote>
-<h1 id="heading-46"></h1>
+<h1 id="heading-42"></h1>
 <hr>
-<h1 id="heading-47"></h1>
+<h1 id="heading-43"></h1>
 <h3 id="url編碼">URL編碼</h3>
-<h1 id="heading-48"></h1>
+<h1 id="heading-44"></h1>
 <ul>
-<li>網頁上的url路徑格式。</li>
+<li>網頁上的URL路徑格式。</li>
 </ul>
-<h1 id="heading-49"></h1>
+<h1 id="heading-45"></h1>
 <table>
 <thead>
 <tr>
@@ -608,145 +596,70 @@ if (!doNotTrack) {
 <tr>
 <td>空格</td>
 <td>%20</td>
-<td>:</td>
-<td>%3a</td>
-</tr>
-<tr>
-<td>!</td>
-<td>%21</td>
-<td>;</td>
-<td>%3b</td>
-</tr>
-<tr>
-<td>&quot;</td>
-<td>%22</td>
-<td>&lt;</td>
-<td>%3c</td>
-</tr>
-<tr>
-<td>#</td>
-<td>%23</td>
-<td>=</td>
-<td>%3d</td>
-</tr>
-<tr>
-<td>$</td>
-<td>%24</td>
-<td>&gt;</td>
-<td>%3e</td>
-</tr>
-<tr>
-<td>%</td>
-<td>%25</td>
-<td>?</td>
-<td>%3f</td>
-</tr>
-<tr>
-<td>&amp;</td>
-<td>%26</td>
 <td>@</td>
 <td>%40</td>
 </tr>
 <tr>
-<td>'</td>
-<td>%27</td>
+<td>!</td>
+<td>%21</td>
 <td>+</td>
 <td>%2b</td>
 </tr>
 <tr>
-<td>(</td>
-<td>%28</td>
+<td>&quot;</td>
+<td>%22</td>
 <td>-</td>
 <td>%2d</td>
 </tr>
 <tr>
-<td>)</td>
-<td>%29</td>
+<td>#</td>
+<td>%23</td>
 <td>/</td>
 <td>%2f</td>
 </tr>
+<tr>
+<td>$</td>
+<td>%24</td>
+<td>:</td>
+<td>%3a</td>
+</tr>
+<tr>
+<td>%</td>
+<td>%25</td>
+<td>;</td>
+<td>%3b</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>%26</td>
+<td>&lt;</td>
+<td>%3c</td>
+</tr>
+<tr>
+<td>'</td>
+<td>%27</td>
+<td>=</td>
+<td>%3d</td>
+</tr>
+<tr>
+<td>(</td>
+<td>%28</td>
+<td>&gt;</td>
+<td>%3e</td>
+</tr>
+<tr>
+<td>)</td>
+<td>%29</td>
+<td>?</td>
+<td>%3f</td>
+</tr>
 </tbody>
 </table>
-<h1 id="heading-50"></h1>
+<h1 id="heading-46"></h1>
 <hr>
-<h1 id="heading-51"></h1>
+<h1 id="heading-47"></h1>
 <h3 id="帳號註冊--傳送表單格式">帳號註冊 + 傳送表單格式</h3>
-<h1 id="heading-52"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">form</span>
-  <span style="color:#a6e22e">label</span> <span style="color:#a6e22e">帳號</span>
-  <span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;account&#34;</span>)
-  <span style="color:#a6e22e">br</span>
-  <span style="color:#a6e22e">label</span> <span style="color:#a6e22e">密碼</span>
-  <span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>)
-  <span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;註冊&#34;</span>)
-  <span style="color:#a6e22e">p</span> 
-
-<span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">account</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;input&#34;</span>)[<span style="color:#ae81ff">0</span>];
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">password</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;input&#34;</span>)[<span style="color:#ae81ff">1</span>];
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">submit</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;input&#34;</span>)[<span style="color:#ae81ff">2</span>];
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
-
-<span style="color:#a6e22e">submit</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
-  <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">preventDefault</span>();
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">accountValue</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">account</span>.<span style="color:#a6e22e">value</span>;
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">passwordValue</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">password</span>.<span style="color:#a6e22e">value</span>;
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">xhr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
-  <span style="color:#75715e">//建立XMLHttpRequest來向伺服器發送請求
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
-  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;POST&#34;</span>,<span style="color:#e6db74">&#34;https://hexschool-tutorial.herokuapp.com/api/signin&#34;</span>);
-  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">setRequestHeader</span>(<span style="color:#e6db74">&#34;content-type&#34;</span>,<span style="color:#e6db74">&#34;application/x-www-form-urlencoded&#34;</span>);
-  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`email=</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">accountValue</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&amp;password=</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">passwordValue</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
-  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">responseText</span>);
-    <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">message</span>);
-    <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">message</span>;
-  }
-});
-</code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-53"></h1>
-<hr>
-<h1 id="heading-54"></h1>
-<h3 id="帳號登入--傳送json格式">帳號登入 + 傳送JSON格式</h3>
-<h1 id="heading-55"></h1>
+<h1 id="heading-48"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -784,6 +697,94 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">form</span>
+  <span style="color:#a6e22e">label</span> <span style="color:#a6e22e">帳號</span>
+  <span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;account&#34;</span>)
+  <span style="color:#a6e22e">br</span>
+  <span style="color:#a6e22e">label</span> <span style="color:#a6e22e">密碼</span>
+  <span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>)
+  <span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;註冊&#34;</span>)
+  <span style="color:#a6e22e">p</span> 
+
+<span style="color:#75715e">// &lt;-----js-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">account</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;input&#34;</span>)[<span style="color:#ae81ff">0</span>];
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">password</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;input&#34;</span>)[<span style="color:#ae81ff">1</span>];
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">submit</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;input&#34;</span>)[<span style="color:#ae81ff">2</span>];
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
+
+<span style="color:#a6e22e">submit</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
+  <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">preventDefault</span>();
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">xhr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
+  <span style="color:#75715e">//建立XMLHttpRequest來向伺服器發送請求
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;POST&#34;</span>,<span style="color:#e6db74">&#34;https://hexschool-tutorial.herokuapp.com/api/signup&#34;</span>);
+  <span style="color:#75715e">//向該網址傳送POST請求
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">setRequestHeader</span>(<span style="color:#e6db74">&#34;content-type&#34;</span>,<span style="color:#e6db74">&#34;application/x-www-form-urlencoded&#34;</span>);
+  <span style="color:#75715e">//傳送JSON格式
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">accountVal</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">account</span>.<span style="color:#a6e22e">value</span>;
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">passwordVal</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">password</span>.<span style="color:#a6e22e">value</span>;
+  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`email=</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">accountVal</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&amp;password=</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">passwordVal</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+  <span style="color:#75715e">//將輸入框裡的值組成物件並轉成&#34;字串&#34;後傳送
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+    <span style="color:#75715e">//當ajax執行完成時
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">responseText</span>);
+    <span style="color:#75715e">//將回傳的&#34;字串&#34;解析
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">message</span>);
+    <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">message</span>;
+  }
+});
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-49"></h1>
+<hr>
+<h1 id="heading-50"></h1>
+<h3 id="帳號登入--傳送json格式">帳號登入 + 傳送JSON格式</h3>
+<h1 id="heading-51"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
@@ -804,20 +805,25 @@ if (!doNotTrack) {
 
 <span style="color:#a6e22e">submit</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
   <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">preventDefault</span>();
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">accountValue</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">account</span>.<span style="color:#a6e22e">value</span>;
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">passwordValue</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">password</span>.<span style="color:#a6e22e">value</span>;
   <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">xhr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
-  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;POST&#34;</span>,<span style="color:#e6db74">&#34;https://hexschool-tutorial.herokuapp.com/api/signin&#34;</span>,<span style="color:#66d9ef">true</span>);
-  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">setRequestHeader</span>(<span style="color:#e6db74">&#34;content-type&#34;</span>,<span style="color:#e6db74">&#34;application/json&#34;</span>);
+  <span style="color:#75715e">//建立XMLHttpRequest來向伺服器發送請求
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;POST&#34;</span>,<span style="color:#e6db74">&#34;https://hexschool-tutorial.herokuapp.com/api/signin&#34;</span>);
+  <span style="color:#75715e">//向該網址傳送POST請求
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">setRequestHeader</span>(<span style="color:#e6db74">&#34;content-type&#34;</span>,<span style="color:#e6db74">&#34;application/json&#34;</span>);
+  <span style="color:#75715e">//傳送JSON格式
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">accountValue</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">account</span>.<span style="color:#a6e22e">value</span>;
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">passwordValue</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">password</span>.<span style="color:#a6e22e">value</span>;
   <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> {
     <span style="color:#a6e22e">email</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">accountValue</span>,
     <span style="color:#a6e22e">password</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">passwordValue</span>
   }
   <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">send</span>(<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">data</span>));
-  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">responseText</span>);
-    <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">message</span>);
+  <span style="color:#75715e">//將輸入框裡的值組成物件並轉成&#34;字串&#34;後傳送
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+    <span style="color:#75715e">//當ajax執行完成時
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">responseText</span>);
+    <span style="color:#75715e">//將回傳的&#34;字串&#34;解析
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">message</span>);
     <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">message</span>;
   }
 });
@@ -920,13 +926,9 @@ if (!doNotTrack) {
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2021-02-18-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9811/" data-toggle="tooltip" data-placement="top" title="Javascript小知識11">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2021-02-19-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9812/" data-toggle="tooltip" data-placement="top" title="Javascript小知識12">&larr; 上一篇</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://jack842248.github.io/post/2021-02-19-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9812/" data-toggle="tooltip" data-placement="top" title="Javascript小知識12">下一篇 &rarr;</a>
-            </li>
           
         </ul>
       
