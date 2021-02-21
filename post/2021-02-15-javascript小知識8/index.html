@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "Javascript小知識8",
-  "description" : "全域變數(Global Variable)   在function裡的變數稱為，區域變數。(範例一)   區域變數(Area Variable)   在function外的變數稱為，全域變數。(範例二)   1 2 3 4 5 6 7 8 9 10 11 12 13 14  \/** 範例一 **\/ function fn1(){ let a = \u0026#34;蘋果\u0026#34;; console.log(a); \/\/蘋果 } fn1(); \/** 範例二 **\/ let a; function fn1(){ a = \u0026#34;蘋果\u0026#34;; } fn1(); console.log(a); \/\/蘋果      if、else if、else   適合判斷式數值，限制範圍。    一律使用 if 開頭，若不成立，則往下執行。    可以使用多個 else if ，若不成立，則往下執行。    若以上都不成立則執行 else 。   1 2 3 4 5 6 7 8 9 10 11 12 13 14  let hungry = 5; \/\/飢餓程度1~10 function eat(fruit){ console.",
+  "description" : "全域變數(Global Variable)   在function裡的變數稱為，區域變數。(範例一)   區域變數(Area Variable)   在function外的變數稱為，全域變數。(範例二)   1 2 3 4 5 6 7 8 9 10 11 12 13 14  \/** 範例一 **\/ function fn1(){ let a = \u0026#34;蘋果\u0026#34;; console.log(a); \/\/蘋果 } fn1(); \/** 範例二 **\/ let a; function fn1(){ a = \u0026#34;蘋果\u0026#34;; } fn1(); console.log(a); \/\/蘋果      if、else if、else   適合判斷式數值，限制範圍。    一律使用 if 開頭，若不成立，則往下執行。    可以使用多個 else if ，若不成立，則往下執行。    若以上都不成立則執行 else 。   1 2 3 4 5 6 7 8 9 10 11 12 13 14  let hungry = 5; \/\/飢餓程度1~10 function eat(food){ console.",
   "inLanguage" : "zh-tw",
-  "wordCount":  649 ,
+  "wordCount":  650 ,
   "datePublished" : "2021-02-15T00:00:00",
   "dateModified" : "2021-02-15T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;649&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;650&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;649&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;650&nbsp;個字
   
   
   
@@ -409,15 +409,15 @@ if (!doNotTrack) {
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hungry</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
 <span style="color:#75715e">//飢餓程度1~10
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">eat</span>(<span style="color:#a6e22e">fruit</span>){
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我想要吃&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">fruit</span>);
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">eat</span>(<span style="color:#a6e22e">food</span>){
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我想要吃&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">food</span>);
 }
 <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">hungry</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">3</span>){
-    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;蘋果&#34;</span>);
+    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;薯條&#34;</span>);
 }<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">hungry</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">hungry</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">5</span>){
-    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;香蕉&#34;</span>);  <span style="color:#75715e">//我現在要吃香蕉
+    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;漢堡&#34;</span>);  <span style="color:#75715e">//我現在要吃漢堡
 </span><span style="color:#75715e"></span>}<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">hungry</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">8</span>){
-    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;鳳梨&#34;</span>);
+    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;炸雞&#34;</span>);
 }<span style="color:#66d9ef">else</span>{
     <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我不想吃東西&#34;</span>);
 }
@@ -469,18 +469,18 @@ if (!doNotTrack) {
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hungry</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
 <span style="color:#75715e">//飢餓程度1~10
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">eat</span>(<span style="color:#a6e22e">fruit</span>){
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我想要吃&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">fruit</span>);
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">eat</span>(<span style="color:#a6e22e">food</span>){
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我想要吃&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">food</span>);
 }
 <span style="color:#66d9ef">switch</span>(<span style="color:#a6e22e">hungry</span>){
   <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span>
-    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;蘋果&#34;</span>);
+    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;薯條&#34;</span>);
     <span style="color:#66d9ef">break</span>;
   <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span>
-    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;香蕉&#34;</span>);
-    <span style="color:#66d9ef">break</span>;
+    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;漢堡&#34;</span>);  <span style="color:#75715e">//我想要吃漢堡
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">break</span>;
   <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span>
-    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;鳳梨&#34;</span>);
+    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;炸雞&#34;</span>);
     <span style="color:#66d9ef">break</span>;
   <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
     <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我不想吃東西&#34;</span>);
@@ -619,11 +619,11 @@ if (!doNotTrack) {
 <h2 id="靜態載入json資料">靜態載入JSON資料</h2>
 <h1 id="heading-29"></h1>
 <ol>
-<li>先安裝Chrome擴充工具，JSONView。</li>
+<li>先安裝Chrome擴充工具，<a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc">JSONView</a>可幫助檢視JSON檔案。</li>
 </ol>
 <h1 id="heading-30"></h1>
 <ol start="2">
-<li>到政府資料開放平台，OpenData。</li>
+<li>到政府資料開放平台(OpenData)。</li>
 </ol>
 <h1 id="heading-31"></h1>
 <ol start="3">
@@ -875,7 +875,7 @@ if (!doNotTrack) {
 </div>
 </div><h1 id="heading-47"></h1>
 <blockquote>
-<p>從input裡取出的value型別都是string</p>
+<p>從input裡取出的value值都是string型別</p>
 </blockquote>
 
 
@@ -954,6 +954,8 @@ if (!doNotTrack) {
                   <ul>
                 
                 
+                    <li><a href="/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9814/">Javascript小知識14</a></li>
+                
                     <li><a href="/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9813/">Javascript小知識13</a></li>
                 
                     <li><a href="/post/2021-02-19-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9812/">Javascript小知識12</a></li>
@@ -961,8 +963,6 @@ if (!doNotTrack) {
                     <li><a href="/post/2021-02-18-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9811/">Javascript小知識11</a></li>
                 
                     <li><a href="/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/">Javascript小知識10</a></li>
-                
-                    <li><a href="/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/">Javascript小知識9</a></li>
                 
               </ul>
 

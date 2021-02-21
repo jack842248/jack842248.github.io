@@ -59,7 +59,7 @@
   "headline": "Javascript小知識10",
   "description" : "點擊事件(Click Event)   .onclick = function(){\u0026hellip;} 。    直接在DOM元素上 onclick=\u0026quot;\u0026hellip;\u0026quot; (不建議使用)。    .addEventListener(\u0026ldquo;click\u0026rdquo;,function(){\u0026hellip;}) 。   .onclick只能綁定最後一次事件，.addEventListener可以綁定多次事件，\n 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  \/\/ \u0026lt;-----html-----\u0026gt; button.btn1 按鈕1 button.btn2(onclick=\u0026#34;console.log(\u0026#39;您點擊了，按鈕2\u0026#39;)\u0026#34;) 按鈕2 button.btn3 按鈕3 \/\/ \u0026lt;-----js-----\u0026gt; let btn1 = document.querySelector(\u0026#34;.btn1\u0026#34;); let btn3 = document.querySelector(\u0026#34;.btn3\u0026#34;); btn1.onclick = function(){ console.log(\u0026#34;您點擊了，按鈕1\u0026#34;); } btn3.addEventListener(\u0026#34;click\u0026#34;,function(){ console.log(\u0026#34;您點擊了，按鈕3\u0026#34;); });      監聽事件(Listener Event)   .",
   "inLanguage" : "zh-tw",
-  "wordCount":  802 ,
+  "wordCount":  800 ,
   "datePublished" : "2021-02-17T00:00:00",
   "dateModified" : "2021-02-17T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;802&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;800&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;802&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;800&nbsp;個字
   
   
   
@@ -673,8 +673,8 @@ if (!doNotTrack) {
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;a&#34;</span>);
 
 <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>;
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>);
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">target</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>;
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">target</span>);
 });
 
 <span style="color:#75715e">// &lt;-----結果-----&gt;
@@ -745,7 +745,6 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
@@ -772,6 +771,7 @@ if (!doNotTrack) {
 
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">ul</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;ul&#34;</span>);
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+
 <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
   <span style="color:#a6e22e">str</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`&lt;li&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/li&gt;`</span>;
   <span style="color:#a6e22e">ul</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>;
@@ -781,8 +781,6 @@ if (!doNotTrack) {
   <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">targetTag</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">tagName</span>;
   <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">targetText</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">textContent</span>;
   <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">targetTag</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;LI&#34;</span>){
-    <span style="color:#66d9ef">return</span>;
-  }<span style="color:#66d9ef">else</span>{
     <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">targetText</span>);
   }
 });
@@ -932,20 +930,20 @@ if (!doNotTrack) {
     <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#34;夏威夷&#34;</span>,<span style="color:#e6db74">&#34;新加玻&#34;</span>] 
   },
 ];
+
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">select</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;select&#34;</span>);
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
 
 <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
   <span style="color:#a6e22e">str</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`&lt;option value=&#34;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/option&gt;`</span>;
-  <span style="color:#a6e22e">select</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>;
+  <span style="color:#a6e22e">select</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`&lt;option hidden&gt;請選擇&lt;/option&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">str</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
 };
 
 <span style="color:#a6e22e">select</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;change&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">targetValue</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">value</span>;
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">targetValue</span>);
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">targetVal</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">value</span>;
   <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
-    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">targetValue</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span>){
+    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">targetVal</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span>){
       <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`數量:</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">amount</span><span style="color:#e6db74">}</span><span style="color:#e6db74">，產地:</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">prod</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
     }
   }
@@ -963,19 +961,21 @@ if (!doNotTrack) {
 <h1 id="heading-56"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----js-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">body</span>;
+
 <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;keydown&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
   <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">keyCode</span>;
   <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>);
@@ -1240,6 +1240,8 @@ if (!doNotTrack) {
                   <ul>
                 
                 
+                    <li><a href="/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9814/">Javascript小知識14</a></li>
+                
                     <li><a href="/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9813/">Javascript小知識13</a></li>
                 
                     <li><a href="/post/2021-02-19-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9812/">Javascript小知識12</a></li>
@@ -1247,8 +1249,6 @@ if (!doNotTrack) {
                     <li><a href="/post/2021-02-18-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9811/">Javascript小知識11</a></li>
                 
                     <li><a href="/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/">Javascript小知識9</a></li>
-                
-                    <li><a href="/post/2021-02-15-javascript%E5%B0%8F%E7%9F%A5%E8%AD%988/">Javascript小知識8</a></li>
                 
               </ul>
 

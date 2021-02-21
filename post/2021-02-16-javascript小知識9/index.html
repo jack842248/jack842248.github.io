@@ -59,7 +59,7 @@
   "headline": "Javascript小知識9",
   "description" : "取得DOM元素方法     方法 取得目標 得到結果     .getElementById() id 只能取得一個   .getElementsByName() name 以陣列形式呈現   .getElementsByTagName() \u0026lt;標籤\u0026gt; 以陣列形式呈現   .querySelector() id、class、\u0026lt;標籤\u0026gt; 只能取得一個   .querySelectorAll() id、class 以陣列形式呈現       .getElementById()  1 2 3 4 5 6 7  \/\/ \u0026lt;-----html-----\u0026gt; #a 蘋果 #a 香蕉 \/\/ \u0026lt;-----js-----\u0026gt; let a = document.getElementById(\u0026#34;a\u0026#34;); console.log(a); \/\/\u0026lt;div id=\u0026#39;a\u0026#39;\u0026gt;蘋果\u0026lt;\/div\u0026gt;      .",
   "inLanguage" : "zh-tw",
-  "wordCount":  529 ,
+  "wordCount":  549 ,
   "datePublished" : "2021-02-16T00:00:00",
   "dateModified" : "2021-02-16T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;529&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;549&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;529&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;549&nbsp;個字
   
   
   
@@ -550,15 +550,17 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span>.<span style="color:#a6e22e">box</span>(<span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>) <span style="color:#a6e22e">連結</span> 
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>(<span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>) <span style="color:#a6e22e">連結</span> 
 
 <span style="color:#75715e">// &lt;-----js-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;a&#34;</span>);
 <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;href&#34;</span>,<span style="color:#e6db74">&#34;https://www.google.com.tw/&#34;</span>);
-</code></pre></td></tr></table>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//&lt;a href=&#39;https://www.google.com.tw/&#39;&gt;連結&lt;/a&gt;
+</span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-25"></h1>
 <hr>
@@ -577,25 +579,23 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;蘋果&#34;</span>)
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>(<span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.google.com.tw/&#34;</span>) <span style="color:#a6e22e">連結</span>
 
 <span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;input&#34;</span>);
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">getAttribute</span>(<span style="color:#e6db74">&#34;value&#34;</span>);
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>);  <span style="color:#75715e">//蘋果
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;a&#34;</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">getAttribute</span>(<span style="color:#e6db74">&#34;href&#34;</span>));  <span style="color:#75715e">//https://www.google.com.tw/  
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-29"></h1>
 <hr>
 <h1 id="heading-30"></h1>
-<h3 id="value"><strong>.value</strong></h3>
+<h3 id="style"><strong>.style</strong></h3>
 <h1 id="heading-31"></h1>
 <ul>
-<li>取得DOM元素的值。</li>
+<li>改變DOM元素的樣式。</li>
 </ul>
 <h1 id="heading-32"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -610,21 +610,21 @@ if (!doNotTrack) {
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;蘋果&#34;</span>)
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>(<span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>) <span style="color:#a6e22e">連結</span> 
 
 <span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;input&#34;</span>);
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">value</span>;
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>);  <span style="color:#75715e">//蘋果
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;a&#34;</span>);
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">backgroundColor</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//&lt;a href=&#39;#&#39; style=&#39;background-color: red;&#39;&gt;連結&lt;/a&gt;
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-33"></h1>
 <hr>
 <h1 id="heading-34"></h1>
-<h3 id="type"><strong>.type</strong></h3>
+<h3 id="value"><strong>.value</strong></h3>
 <h1 id="heading-35"></h1>
 <ul>
-<li>取得DOM元素的類型。</li>
+<li>取得DOM元素的值。</li>
 </ul>
 <h1 id="heading-36"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -635,27 +635,52 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;蘋果&#34;</span>)
 
 <span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;input&#34;</span>);
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">type</span>;
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>);  <span style="color:#75715e">//text
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;input&#34;</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">value</span>);  <span style="color:#75715e">//蘋果
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-37"></h1>
 <hr>
 <h1 id="heading-38"></h1>
-<h3 id="innerhtml">.innerHTML</h3>
+<h3 id="type"><strong>.type</strong></h3>
 <h1 id="heading-39"></h1>
+<ul>
+<li>取得DOM元素的類型。</li>
+</ul>
+<h1 id="heading-40"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;蘋果&#34;</span>)
+
+<span style="color:#75715e">// &lt;-----js-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;input&#34;</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">type</span>);  <span style="color:#75715e">//text
+</span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-41"></h1>
+<hr>
+<h1 id="heading-42"></h1>
+<h3 id="innerhtml">.innerHTML</h3>
+<h1 id="heading-43"></h1>
 <ul>
 <li>在DOM元素裡增加&lt;標籤&gt;，會先清空。</li>
 </ul>
-<h1 id="heading-40"></h1>
+<h1 id="heading-44"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -671,20 +696,20 @@ if (!doNotTrack) {
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">ul</span> 
 
 <span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;ul&#34;</span>);
-<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`&lt;li&gt;香蕉&lt;/li&gt;`</span>;
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//&lt;ul&gt;&lt;li&gt;香蕉&lt;/li&gt;&lt;/ul&gt;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">ul</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;ul&#34;</span>);
+<span style="color:#a6e22e">ul</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`&lt;li&gt;蘋果&lt;/li&gt;`</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">ul</span>);  <span style="color:#75715e">//&lt;ul&gt;&lt;li&gt;蘋果&lt;/li&gt;&lt;/ul&gt;
 </span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-41"></h1>
+</div><h1 id="heading-45"></h1>
 <hr>
-<h1 id="heading-42"></h1>
+<h1 id="heading-46"></h1>
 <h3 id="createelement"><strong>.createElement</strong></h3>
-<h1 id="heading-43"></h1>
+<h1 id="heading-47"></h1>
 <ul>
 <li>創造HTML&lt;標籤&gt;。</li>
 </ul>
-<h1 id="heading-44"></h1>
+<h1 id="heading-48"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -697,15 +722,15 @@ if (!doNotTrack) {
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">li</span>);  <span style="color:#75715e">//&lt;li&gt;&lt;/li&gt;
 </span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-45"></h1>
+</div><h1 id="heading-49"></h1>
 <hr>
-<h1 id="heading-46"></h1>
+<h1 id="heading-50"></h1>
 <h3 id="appendchild"><strong>.appendChild</strong></h3>
-<h1 id="heading-47"></h1>
+<h1 id="heading-51"></h1>
 <ul>
 <li>在DOM子元素插入Node節點。</li>
 </ul>
-<h1 id="heading-48"></h1>
+<h1 id="heading-52"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -715,6 +740,8 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
@@ -722,15 +749,17 @@ if (!doNotTrack) {
 
 <span style="color:#75715e">// &lt;-----js-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">li</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;li&#34;</span>);
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;ul&#34;</span>).<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">li</span>);
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//&lt;li&gt;&lt;/li&gt;
-</span></code></pre></td></tr></table>
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">ul</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;ul&#34;</span>);
+<span style="color:#a6e22e">ul</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">li</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">ul</span>);  <span style="color:#75715e">//&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;
+</span><span style="color:#75715e"></span>
+</code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-49"></h1>
+</div><h1 id="heading-53"></h1>
 <hr>
-<h1 id="heading-50"></h1>
+<h1 id="heading-54"></h1>
 <h3 id="innerhtml--for">innerHTML + for</h3>
-<h1 id="heading-51"></h1>
+<h1 id="heading-55"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -785,19 +814,19 @@ if (!doNotTrack) {
   },
 ];
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;ul&#34;</span>);
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">ul</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;ul&#34;</span>);
 <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
   <span style="color:#a6e22e">str</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`&lt;li&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/li&gt;`</span>
-  <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>;
+  <span style="color:#a6e22e">ul</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>;
 }
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//&lt;ul&gt;&lt;li&gt;蘋果&lt;/li&gt;&lt;li&gt;香蕉&lt;/li&gt;&lt;li&gt;鳳梨&lt;/li&gt;&lt;/ul&gt;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">ul</span>);  <span style="color:#75715e">//&lt;ul&gt;&lt;li&gt;蘋果&lt;/li&gt;&lt;li&gt;香蕉&lt;/li&gt;&lt;li&gt;鳳梨&lt;/li&gt;&lt;/ul&gt;
 </span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-52"></h1>
+</div><h1 id="heading-56"></h1>
 <hr>
-<h1 id="heading-53"></h1>
+<h1 id="heading-57"></h1>
 <h3 id="createelement--appendchild--for">createElement + appendChild + for</h3>
-<h1 id="heading-54"></h1>
+<h1 id="heading-58"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -851,28 +880,32 @@ if (!doNotTrack) {
     <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#34;夏威夷&#34;</span>,<span style="color:#e6db74">&#34;新加玻&#34;</span>] 
   },
 ];
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;ul&#34;</span>);
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">ul</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;ul&#34;</span>);
 <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
   <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">li</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;li&#34;</span>);
   <span style="color:#a6e22e">li</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
-  <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">li</span>);
+  <span style="color:#a6e22e">ul</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">li</span>);
 }
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//&lt;ul&gt;&lt;li&gt;蘋果&lt;/li&gt;&lt;li&gt;香蕉&lt;/li&gt;&lt;li&gt;鳳梨&lt;/li&gt;&lt;/ul&gt;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">ul</span>);  <span style="color:#75715e">//&lt;ul&gt;&lt;li&gt;蘋果&lt;/li&gt;&lt;li&gt;香蕉&lt;/li&gt;&lt;li&gt;鳳梨&lt;/li&gt;&lt;/ul&gt;
 </span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-55"></h1>
+</div><h1 id="heading-59"></h1>
 <hr>
-<h1 id="heading-56"></h1>
-<h2 id="xss跨網站指令碼攻擊cross-site-scripting">XSS跨網站指令碼攻擊(Cross Site Scripting)</h2>
-<h1 id="heading-57"></h1>
+<h1 id="heading-60"></h1>
+<h2 id="xsscross-site-scripting">XSS(Cross Site Scripting)</h2>
+<h1 id="heading-61"></h1>
+<ul>
+<li>跨網站指令碼攻擊。</li>
+</ul>
+<h1 id="heading-62"></h1>
 <ul>
 <li>在 <strong>input</strong> 裡直接撰寫 <strong>&lt;script&gt;</strong> 腳本來進行攻擊。</li>
 </ul>
-<h1 id="heading-58"></h1>
+<h1 id="heading-63"></h1>
 <ul>
-<li>盡量避免使用 <strong>.onclick</strong> 、 <strong>.innerHTML</strong> 方法。</li>
+<li>盡量避免使用 <strong>.onclick</strong> + <strong>.innerHTML</strong> 方法。</li>
 </ul>
-<h1 id="heading-59"></h1>
+<h1 id="heading-64"></h1>
 <table>
 <thead>
 <tr>
@@ -976,6 +1009,8 @@ if (!doNotTrack) {
                   <ul>
                 
                 
+                    <li><a href="/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9814/">Javascript小知識14</a></li>
+                
                     <li><a href="/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9813/">Javascript小知識13</a></li>
                 
                     <li><a href="/post/2021-02-19-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9812/">Javascript小知識12</a></li>
@@ -983,8 +1018,6 @@ if (!doNotTrack) {
                     <li><a href="/post/2021-02-18-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9811/">Javascript小知識11</a></li>
                 
                     <li><a href="/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/">Javascript小知識10</a></li>
-                
-                    <li><a href="/post/2021-02-15-javascript%E5%B0%8F%E7%9F%A5%E8%AD%988/">Javascript小知識8</a></li>
                 
               </ul>
 

@@ -59,7 +59,7 @@
   "headline": "Javascript小知識13",
   "description" : "動態載入資料(AJAX)   使用 new XMLHttpRequest 原型，來向伺服器發送請求。     不用重新整理網頁就能取得資料庫回傳的資料，例如 :\n  加入購物車，顯示商品數量。\n  註冊帳號時，顯示該帳號是否已使用。\n  搜尋時，顯示的關鍵提示字。\n      載入的資料必須支援跨網域(CORS)。     跨域資源共享(Cross-Origin Resource Sharing)   簡稱CORS。    若發送請求時出現 Access-Control-Allow-Origin 錯誤，代表不支援。     可以使用 test-cors.org 網站，顯示http狀態碼。\n  .status:200，資料載入成功，用戶端要求成功。\n  .status:404，資料載入失敗，找不到。\n       .open(\u0026ldquo;方法\u0026rdquo; , \u0026ldquo;網址\u0026rdquo; , frue\/false)。   向伺服器發送請求。    true(非同步)，不等資料載入完就會往下執行。(預設)    false(同步)，等待資料載入完後才往下執行。      方法 GET POST PUT DELETE     說明 取得資料 傳送資料 覆蓋資料 刪除資料       .",
   "inLanguage" : "zh-tw",
-  "wordCount":  434 ,
+  "wordCount":  412 ,
   "datePublished" : "2021-02-20T00:00:00",
   "dateModified" : "2021-02-20T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -257,10 +257,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-20
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;434&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;412&nbsp;個字
   
   
   
@@ -296,10 +296,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-20
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;434&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;412&nbsp;個字
   
   
   
@@ -695,9 +695,6 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
@@ -708,13 +705,11 @@ if (!doNotTrack) {
   <span style="color:#a6e22e">label</span> <span style="color:#a6e22e">密碼</span>
   <span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>)
   <span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;註冊&#34;</span>)
-  <span style="color:#a6e22e">p</span> 
 
 <span style="color:#75715e">// &lt;-----js-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">account</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;input&#34;</span>)[<span style="color:#ae81ff">0</span>];
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">password</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;input&#34;</span>)[<span style="color:#ae81ff">1</span>];
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">submit</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;input&#34;</span>)[<span style="color:#ae81ff">2</span>];
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
 
 <span style="color:#a6e22e">submit</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
   <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">preventDefault</span>();
@@ -733,7 +728,6 @@ if (!doNotTrack) {
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">responseText</span>);
     <span style="color:#75715e">//將回傳的&#34;字串&#34;解析
 </span><span style="color:#75715e"></span>    <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">message</span>);
-    <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">message</span>;
   }
 });
 </code></pre></td></tr></table>
@@ -782,9 +776,6 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
@@ -795,13 +786,11 @@ if (!doNotTrack) {
   <span style="color:#a6e22e">label</span> <span style="color:#a6e22e">密碼</span>
   <span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;password&#34;</span>)
   <span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;登入&#34;</span>)
-  <span style="color:#a6e22e">p</span> 
 
 <span style="color:#75715e">// &lt;-----js-----&gt;
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">account</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;input&#34;</span>)[<span style="color:#ae81ff">0</span>];
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">password</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;input&#34;</span>)[<span style="color:#ae81ff">1</span>];
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">submit</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;input&#34;</span>)[<span style="color:#ae81ff">2</span>];
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
 
 <span style="color:#a6e22e">submit</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
   <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">preventDefault</span>();
@@ -824,7 +813,6 @@ if (!doNotTrack) {
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">responseText</span>);
     <span style="color:#75715e">//將回傳的&#34;字串&#34;解析
 </span><span style="color:#75715e"></span>    <span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">message</span>);
-    <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">message</span>;
   }
 });
 </code></pre></td></tr></table>
@@ -906,6 +894,8 @@ if (!doNotTrack) {
                   <ul>
                 
                 
+                    <li><a href="/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9814/">Javascript小知識14</a></li>
+                
                     <li><a href="/post/2021-02-19-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9812/">Javascript小知識12</a></li>
                 
                     <li><a href="/post/2021-02-18-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9811/">Javascript小知識11</a></li>
@@ -913,8 +903,6 @@ if (!doNotTrack) {
                     <li><a href="/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/">Javascript小知識10</a></li>
                 
                     <li><a href="/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/">Javascript小知識9</a></li>
-                
-                    <li><a href="/post/2021-02-15-javascript%E5%B0%8F%E7%9F%A5%E8%AD%988/">Javascript小知識8</a></li>
                 
               </ul>
 
@@ -929,6 +917,10 @@ if (!doNotTrack) {
               <a href="https://jack842248.github.io/post/2021-02-19-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9812/" data-toggle="tooltip" data-placement="top" title="Javascript小知識12">&larr; 上一篇</a>
             </li>
           
+          
+            <li class="next">
+              <a href="https://jack842248.github.io/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9814/" data-toggle="tooltip" data-placement="top" title="Javascript小知識14">下一篇 &rarr;</a>
+            </li>
           
         </ul>
       

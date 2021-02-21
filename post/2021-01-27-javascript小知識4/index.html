@@ -59,7 +59,7 @@
   "headline": "Javascript小知識4",
   "description" : "函式(Function)   是包含{程式碼片段}的物件。    擁有被呼叫、回傳的功能。     函式可細分以下幾種 :\n  函式陳述式\n 具名函式。(範例一)    函式表達式\n  匿名函式。(範例二)\n  具名函式。(範例三)\n       具名的函式能夠在函式中被呼叫使用\n 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47  \/** 範例一 **\/ function fn1(){ console.",
   "inLanguage" : "zh-tw",
-  "wordCount":  1060 ,
+  "wordCount":  1068 ,
   "datePublished" : "2021-01-27T00:00:00",
   "dateModified" : "2021-01-27T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -257,10 +257,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-01-27
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;5&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1060&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1068&nbsp;個字
   
   
   
@@ -296,10 +296,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2021-01-27
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;5&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1060&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1068&nbsp;個字
   
   
   
@@ -1069,20 +1069,20 @@ if (!doNotTrack) {
 
 <span style="color:#75715e">/** 範例一 **/</span>
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>){
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>,<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>);  <span style="color:#75715e">//Object{name:&#34;蘋果&#34;},1,2
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>,<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>);  <span style="color:#75715e">//{name: &#34;蘋果&#34;},1,2
 </span><span style="color:#75715e"></span>}
 <span style="color:#a6e22e">fn1</span>.<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">a</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>);
 
 <span style="color:#75715e">/** 範例二 **/</span>
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>){
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>,<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>);  <span style="color:#75715e">//Object{name:&#34;蘋果&#34;},1,2
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>,<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>);  <span style="color:#75715e">//{name: &#34;蘋果&#34;},1,2
 </span><span style="color:#75715e"></span>}
 <span style="color:#a6e22e">fn1</span>.<span style="color:#a6e22e">apply</span>(<span style="color:#a6e22e">a</span>,[<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>]);
 <span style="color:#75715e">//若傳陣列改數字，會undefined
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">/** 範例三 **/</span>
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>){
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>,<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>);  <span style="color:#75715e">//Object{name:&#34;蘋果&#34;},1,2 
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>,<span style="color:#a6e22e">par1</span>,<span style="color:#a6e22e">par2</span>);  <span style="color:#75715e">//{name: &#34;蘋果&#34;},1,2 
 </span><span style="color:#75715e"></span>}
 <span style="color:#a6e22e">fn1</span>.<span style="color:#a6e22e">bind</span>(<span style="color:#a6e22e">a</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>)();
 <span style="color:#75715e">//console.log不會執行
@@ -1182,27 +1182,35 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 範例一 **/</span>
 <span style="color:#a6e22e">button</span>(<span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;console.dir(this)&#34;</span>) <span style="color:#a6e22e">按鈕</span>
 
 <span style="color:#75715e">/** 進階範例二 **/</span>
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">colors</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;red&#34;</span>,<span style="color:#e6db74">&#34;yellow&#34;</span>,<span style="color:#e6db74">&#34;green&#34;</span>,<span style="color:#e6db74">&#34;blue&#34;</span>,<span style="color:#e6db74">&#34;purple&#34;</span>];
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ul</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;ul&#34;</span>);
+<span style="color:#75715e">// &lt;-----html-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">ul</span>
+
+<span style="color:#75715e">// &lt;-----js-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;蘋果&#34;</span>,<span style="color:#e6db74">&#34;香蕉&#34;</span>,<span style="color:#e6db74">&#34;鳳梨&#34;</span>];
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ul</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;ul&#34;</span>);
 <span style="color:#75715e">//宣告一個空字串
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
 <span style="color:#75715e">//用for迴圈印出所有陣列在ul裡
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">colors</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
-  <span style="color:#a6e22e">str</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`&lt;li&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">colors</span>[<span style="color:#a6e22e">i</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/li&gt;`</span>
-  <span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+  <span style="color:#a6e22e">str</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`&lt;li&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">a</span>[<span style="color:#a6e22e">i</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/li&gt;`</span>; 
+  <span style="color:#a6e22e">ul</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>;
 }
 <span style="color:#75715e">//抓取li
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">li</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;li&#34;</span>);
-<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">colors</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
   <span style="color:#75715e">//綁定(點擊)監聽事件在每一個(i)li上
 </span><span style="color:#75715e"></span>  <span style="color:#a6e22e">li</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(){
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">backgroundColor</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;orange&#34;</span>;
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">backgroundColor</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>;
   });
 }
 </code></pre></td></tr></table>
@@ -1284,6 +1292,8 @@ if (!doNotTrack) {
                   <ul>
                 
                 
+                    <li><a href="/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9814/">Javascript小知識14</a></li>
+                
                     <li><a href="/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9813/">Javascript小知識13</a></li>
                 
                     <li><a href="/post/2021-02-19-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9812/">Javascript小知識12</a></li>
@@ -1291,8 +1301,6 @@ if (!doNotTrack) {
                     <li><a href="/post/2021-02-18-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9811/">Javascript小知識11</a></li>
                 
                     <li><a href="/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/">Javascript小知識10</a></li>
-                
-                    <li><a href="/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/">Javascript小知識9</a></li>
                 
               </ul>
 
