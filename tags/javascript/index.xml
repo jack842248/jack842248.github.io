@@ -9,11 +9,11 @@
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
     <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Javascript小知識14</title>
-      <link>https://jack842248.github.io/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9814/</link>
+      <title>Google Maps API</title>
+      <link>https://jack842248.github.io/post/2021-02-20-google-maps-api/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9814/</guid>
+      <guid>https://jack842248.github.io/post/2021-02-20-google-maps-api/</guid>
       <description>應用程式介面(Application Programming Interface)   簡稱API。     應用程式提供的服務，用來接收或傳送資料給應用程式。例如 :
   Heroku，主機服務。
   GoogleMap，地圖導覽服務。
@@ -22,11 +22,11 @@
     </item>
     
     <item>
-      <title>Javascript小知識13</title>
-      <link>https://jack842248.github.io/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9813/</link>
+      <title>發送AJAX請求</title>
+      <link>https://jack842248.github.io/post/2021-02-20-%E7%99%BC%E9%80%81ajax%E8%AB%8B%E6%B1%82/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-02-20-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9813/</guid>
+      <guid>https://jack842248.github.io/post/2021-02-20-%E7%99%BC%E9%80%81ajax%E8%AB%8B%E6%B1%82/</guid>
       <description>動態載入資料(AJAX)   使用 new XMLHttpRequest 原型，來向伺服器發送請求。     不用重新整理網頁就能取得資料庫回傳的資料，例如 :
   加入購物車，顯示商品數量。
   註冊帳號時，顯示該帳號是否已使用。
@@ -38,85 +38,85 @@
     </item>
     
     <item>
-      <title>Javascript小知識12</title>
-      <link>https://jack842248.github.io/post/2021-02-19-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9812/</link>
+      <title>取得BOM原型</title>
+      <link>https://jack842248.github.io/post/2021-02-19-%E5%8F%96%E5%BE%97bom%E5%8E%9F%E5%9E%8B/</link>
       <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-02-19-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9812/</guid>
+      <guid>https://jack842248.github.io/post/2021-02-19-%E5%8F%96%E5%BE%97bom%E5%8E%9F%E5%9E%8B/</guid>
       <description>BOM(Browser Object Model)   瀏覽器(window)提供的物件原型。      名稱 中文     history 瀏覽歷史紀錄   frames 框架   location 路徑位置   document DOM元素   screen 使用裝置資訊   navigator 版本資訊       回上頁   使用window.history.forward()，下一頁。    使用window.history.back()，回上頁。   回上頁前必須先下一頁
  1 2 3 4 5 6 7 8 9 10 11 12 13 14  // &amp;lt;-----html-----&amp;gt; button.</description>
     </item>
     
     <item>
-      <title>Javascript小知識11</title>
-      <link>https://jack842248.github.io/post/2021-02-18-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9811/</link>
+      <title>localStorage與todolist</title>
+      <link>https://jack842248.github.io/post/2021-02-18-localstorage%E8%88%87todolist/</link>
       <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-02-18-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9811/</guid>
+      <guid>https://jack842248.github.io/post/2021-02-18-localstorage%E8%88%87todolist/</guid>
       <description>瀏覽器資料儲存(LocalStorage)   可以將&amp;quot;字串&amp;quot;資料儲存在 Chrome → Application → LocalStorage 裡。      Key Value     &amp;mdash; &amp;mdash;      使用 .setItem 、 .getItem 來存取資料。   1 2 3 4 5 6  /** 存入資料 **/ localStorage.setItem(&amp;#34;a&amp;#34;,&amp;#34;蘋果&amp;#34;); /** 取出資料 **/ let a = localStorage.getItem(&amp;#34;a&amp;#34;); console.log(a); //蘋果       Key Value     a 蘋果       localStorage + input   將輸入框裡的值存入後再取出。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // &amp;lt;-----html-----&amp;gt; input(type=&amp;#34;text&amp;#34;) button.</description>
     </item>
     
     <item>
-      <title>Javascript小知識10</title>
-      <link>https://jack842248.github.io/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/</link>
+      <title>取得EVENT事件</title>
+      <link>https://jack842248.github.io/post/2021-02-17-%E5%8F%96%E5%BE%97event%E4%BA%8B%E4%BB%B6/</link>
       <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-02-17-javascript%E5%B0%8F%E7%9F%A5%E8%AD%9810/</guid>
+      <guid>https://jack842248.github.io/post/2021-02-17-%E5%8F%96%E5%BE%97event%E4%BA%8B%E4%BB%B6/</guid>
       <description>點擊事件(Click Event)   .onclick = function(){&amp;hellip;} 。    直接在DOM元素上 onclick=&amp;quot;&amp;hellip;&amp;quot; (不建議使用)。    .addEventListener(&amp;ldquo;click&amp;rdquo;,function(){&amp;hellip;}) 。   .onclick只能綁定最後一次事件，.addEventListener可以綁定多次事件，
  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  // &amp;lt;-----html-----&amp;gt; button.btn1 按鈕1 button.btn2(onclick=&amp;#34;console.log(&amp;#39;您點擊了，按鈕2&amp;#39;)&amp;#34;) 按鈕2 button.btn3 按鈕3 // &amp;lt;-----js-----&amp;gt; let btn1 = document.querySelector(&amp;#34;.btn1&amp;#34;); let btn3 = document.querySelector(&amp;#34;.btn3&amp;#34;); btn1.onclick = function(){ console.log(&amp;#34;您點擊了，按鈕1&amp;#34;); } btn3.addEventListener(&amp;#34;click&amp;#34;,function(){ console.log(&amp;#34;您點擊了，按鈕3&amp;#34;); });      監聽事件(Listener Event)   .</description>
     </item>
     
     <item>
-      <title>Javascript小知識9</title>
-      <link>https://jack842248.github.io/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/</link>
+      <title>操作DOM元素</title>
+      <link>https://jack842248.github.io/post/2021-02-16-%E6%93%8D%E4%BD%9Cdom%E5%85%83%E7%B4%A0/</link>
       <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-02-16-javascript%E5%B0%8F%E7%9F%A5%E8%AD%989/</guid>
+      <guid>https://jack842248.github.io/post/2021-02-16-%E6%93%8D%E4%BD%9Cdom%E5%85%83%E7%B4%A0/</guid>
       <description>取得DOM元素方法     方法 取得目標 得到結果     .getElementById() id 只能取得一個   .getElementsByName() name 以陣列形式呈現   .getElementsByTagName() &amp;lt;標籤&amp;gt; 以陣列形式呈現   .querySelector() id、class、&amp;lt;標籤&amp;gt; 只能取得一個   .querySelectorAll() id、class 以陣列形式呈現       .getElementById()  1 2 3 4 5 6 7  // &amp;lt;-----html-----&amp;gt; #a 蘋果 #a 香蕉 // &amp;lt;-----js-----&amp;gt; let a = document.getElementById(&amp;#34;a&amp;#34;); console.log(a); //&amp;lt;div id=&amp;#39;a&amp;#39;&amp;gt;蘋果&amp;lt;/div&amp;gt;      .</description>
     </item>
     
     <item>
-      <title>Javascript小知識8</title>
-      <link>https://jack842248.github.io/post/2021-02-15-javascript%E5%B0%8F%E7%9F%A5%E8%AD%988/</link>
+      <title>變數與基本應用</title>
+      <link>https://jack842248.github.io/post/2021-02-15-%E8%AE%8A%E6%95%B8%E8%88%87%E5%9F%BA%E6%9C%AC%E6%87%89%E7%94%A8/</link>
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-02-15-javascript%E5%B0%8F%E7%9F%A5%E8%AD%988/</guid>
+      <guid>https://jack842248.github.io/post/2021-02-15-%E8%AE%8A%E6%95%B8%E8%88%87%E5%9F%BA%E6%9C%AC%E6%87%89%E7%94%A8/</guid>
       <description>全域變數(Global Variable)   在function裡的變數稱為，區域變數。(範例一)   區域變數(Area Variable)   在function外的變數稱為，全域變數。(範例二)   1 2 3 4 5 6 7 8 9 10 11 12 13 14  /** 範例一 **/ function fn1(){ let a = &amp;#34;蘋果&amp;#34;; console.log(a); //蘋果 } fn1(); /** 範例二 **/ let a; function fn1(){ a = &amp;#34;蘋果&amp;#34;; } fn1(); console.log(a); //蘋果      if、else if、else   適合判斷式數值，限制範圍。    一律使用 if 開頭，若不成立，則往下執行。    可以使用多個 else if ，若不成立，則往下執行。    若以上都不成立則執行 else 。   1 2 3 4 5 6 7 8 9 10 11 12 13 14  let hungry = 5; //飢餓程度1~10 function eat(food){ console.</description>
     </item>
     
     <item>
-      <title>Javascript小知識7</title>
-      <link>https://jack842248.github.io/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/</link>
+      <title>Javascript(ES6)</title>
+      <link>https://jack842248.github.io/post/2021-01-30-javascriptes6/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-30-javascript%E5%B0%8F%E7%9F%A5%E8%AD%987/</guid>
+      <guid>https://jack842248.github.io/post/2021-01-30-javascriptes6/</guid>
       <description>var、let、const   皆為宣告變數用。      名稱 var let const     作用域 在window、函式 在block{}裡 在block{}裡   宣告的變數 可以賦予新的值 可以賦予新的值 不能賦予新的值   重複宣告變數時 不會出錯 會出錯 會出錯   從創造到執行階段會 提升(Hoisting) 暫時性死區(TDZ) 會出現錯誤     1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35  /** 變數賦予新的值 **/ var a = 1; a = 2; console.</description>
     </item>
     
     <item>
-      <title>Javascript小知識6</title>
-      <link>https://jack842248.github.io/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/</link>
+      <title>屬性特徵與物件特性</title>
+      <link>https://jack842248.github.io/post/2021-01-29-%E5%B1%AC%E6%80%A7%E7%89%B9%E5%BE%B5%E8%88%87%E7%89%A9%E4%BB%B6%E7%89%B9%E6%80%A7/</link>
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-29-javascript%E5%B0%8F%E7%9F%A5%E8%AD%986/</guid>
+      <guid>https://jack842248.github.io/post/2021-01-29-%E5%B1%AC%E6%80%A7%E7%89%B9%E5%BE%B5%E8%88%87%E7%89%A9%E4%BB%B6%E7%89%B9%E6%80%A7/</guid>
       <description>Object.defineProperty()   可以調整物件裡的屬性特徵。      帶入的值 名稱 中文 預設值 例如     物件 Object  &amp;mdash;    屬性 &amp;quot;Attributes&amp;quot;  &amp;mdash;    參數a value 屬性的值 &amp;mdash;    參數b writable 可否寫入 true 賦予(=)   參數c configurable 可否被刪除 true delete   參數d enumerable 可否被列舉 true for&amp;hellip;in     1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  var obj1 = { name:&amp;#34;蘋果&amp;#34;, amount:100 } Object.</description>
     </item>
     
     <item>
-      <title>Javascript小知識5</title>
-      <link>https://jack842248.github.io/post/2021-01-28-javascript%E5%B0%8F%E7%9F%A5%E8%AD%985/</link>
+      <title>原型與建構函式</title>
+      <link>https://jack842248.github.io/post/2021-01-28-%E5%8E%9F%E5%9E%8B%E8%88%87%E5%BB%BA%E6%A7%8B%E5%87%BD%E5%BC%8F/</link>
       <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-28-javascript%E5%B0%8F%E7%9F%A5%E8%AD%985/</guid>
+      <guid>https://jack842248.github.io/post/2021-01-28-%E5%8E%9F%E5%9E%8B%E8%88%87%E5%BB%BA%E6%A7%8B%E5%87%BD%E5%BC%8F/</guid>
       <description>原型(Prototype)   純值可用建構式繼承在原型下。    原型可利用建構函式新增屬性。    原型有向上查找屬性的功能，而且屬性是共用的。    原型鍊:      建構式 原型(上層) 原型(上上層)     new Object() &amp;mdash; Object   new Array() Array Object   new Number() Number Object   new String() String Object   new Boolean() Boolean Object     1 2 3 4 5 6 7 8 9  var a = [1 , 2 , 3]; var b = [4 , 5 , 6]; a.</description>
     </item>
     
     <item>
-      <title>Javascript小知識4</title>
-      <link>https://jack842248.github.io/post/2021-01-27-javascript%E5%B0%8F%E7%9F%A5%E8%AD%984/</link>
+      <title>函式與this</title>
+      <link>https://jack842248.github.io/post/2021-01-27-%E5%87%BD%E5%BC%8F%E8%88%87this/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-27-javascript%E5%B0%8F%E7%9F%A5%E8%AD%984/</guid>
+      <guid>https://jack842248.github.io/post/2021-01-27-%E5%87%BD%E5%BC%8F%E8%88%87this/</guid>
       <description>函式(Function)   是包含{程式碼片段}的物件。    擁有被呼叫、回傳的功能。     函式可細分以下幾種 :
   函式陳述式
  具名函式。(範例一)    函式表達式
@@ -127,29 +127,29 @@
     </item>
     
     <item>
-      <title>Javascript小知識3</title>
-      <link>https://jack842248.github.io/post/2021-01-26-javascript%E5%B0%8F%E7%9F%A5%E8%AD%983/</link>
+      <title>物件與陣列</title>
+      <link>https://jack842248.github.io/post/2021-01-26-%E7%89%A9%E4%BB%B6%E8%88%87%E9%99%A3%E5%88%97/</link>
       <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-26-javascript%E5%B0%8F%E7%9F%A5%E8%AD%983/</guid>
+      <guid>https://jack842248.github.io/post/2021-01-26-%E7%89%A9%E4%BB%B6%E8%88%87%E9%99%A3%E5%88%97/</guid>
       <description>物件實字(Object Literals)   直接撰寫 var obj1 = {&amp;hellip;} 物件。(範例一)   建構物件(Constructor Object)   使用 new Object() 包裹方式建立。(範例二)   1 2 3 4 5 6 7 8 9 10  /** 範例一 **/ var obj1 = { name:&amp;#34;蘋果&amp;#34;, amount: 100 } /** 範例二 **/ var obj1 = new Object(); obj1.name = &amp;#34;蘋果&amp;#34;; obj1.amount = 100;      物件的基本應用方法 :   取值。(範例一)    新增屬性。(範例二)    刪除屬性。(範例三)    新增物件。(範例四)   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  var a ={ name:&amp;#34;蘋果&amp;#34;, amount: 100 } /** 範例一 **/ console.</description>
     </item>
     
     <item>
-      <title>Javascript小知識2</title>
-      <link>https://jack842248.github.io/post/2021-01-25-javascript%E5%B0%8F%E7%9F%A5%E8%AD%982/</link>
+      <title>陳述式與運算式</title>
+      <link>https://jack842248.github.io/post/2021-01-25-%E9%99%B3%E8%BF%B0%E5%BC%8F%E8%88%87%E9%81%8B%E7%AE%97%E5%BC%8F/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-25-javascript%E5%B0%8F%E7%9F%A5%E8%AD%982/</guid>
+      <guid>https://jack842248.github.io/post/2021-01-25-%E9%99%B3%E8%BF%B0%E5%BC%8F%E8%88%87%E9%81%8B%E7%AE%97%E5%BC%8F/</guid>
       <description>陳述式(Statement)   不會回傳結果，不能賦值(=)到變數上。      陳述式 例如     判斷式 if、else if、else、switch、break   宣告變數 var、let、const   函式陳述式 function fn1(){&amp;hellip;}   Block區塊 {}     1 2 3 4 5 6 7 8 9 10 11 12 13  /** 判斷式 **/ if(...){...}else{...} /** 宣告變數 **/ var a; /** 函式陳述式 **/ function fn1(){...} /** Block區塊 **/ { let a = 1; }      判斷式(if&amp;hellip;else)   判斷式裡如果是 真值(Truthy) ，就會成立。(範例一)    判斷式裡如果是 假值(Falsy) ，就會不成立。(範例二)      判斷值 例如     真值 true 、 1 、 &amp;ldquo;1&amp;rdquo; 、 [] 、 {}   假值 false 、 0 、 &amp;quot;&amp;quot; 、 NaN 、 null 、 undefined     1 2 3 4 5 6 7 8 9 10 11 12 13  /** 範例一 **/ if([]){ console.</description>
     </item>
     
     <item>
-      <title>Javascript小知識1</title>
-      <link>https://jack842248.github.io/post/2021-01-24-javascript%E5%B0%8F%E7%9F%A5%E8%AD%981/</link>
+      <title>認識Javascript</title>
+      <link>https://jack842248.github.io/post/2021-01-24-%E8%AA%8D%E8%AD%98javascript/</link>
       <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-24-javascript%E5%B0%8F%E7%9F%A5%E8%AD%981/</guid>
+      <guid>https://jack842248.github.io/post/2021-01-24-%E8%AA%8D%E8%AD%98javascript/</guid>
       <description>程式語言可以分為兩種 : javascript屬於直譯式語言。  直譯式語言(Interpreted Language)     例如 JavaScript、Python、PHP、Ruby、BASIC、LISP、Perl、R     流程 原始碼 → 直譯器 → 代碼生成 → 執行   特性 程式碼由上到下執行，效能比較差、除錯比較慢、需要依賴執行環境。     編譯式語言(Compiled Language)     例如 Java、C、C#、C++、Pascal     流程 原始碼 → 預處理器 → 代碼生成 → 執行   特性 效能比較好、除錯比較快、程式碼可獨立執行。       程式語言的作用域可以分為兩種 : javascript屬於靜態作用域。  靜態作用域(Lexical Scope)   又稱 : 語法作用域。    語法在解析時就決定作用域，且不再改變。   1 2 3 4 5 6  function fn1(){ var a = 1; } fn1(); console.</description>
     </item>
     
