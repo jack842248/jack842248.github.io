@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>取得BOM原型 - Jack Huang Blog</title>
-  <meta name="description" content="BOM">
+  <title>Chrome devtools除錯 - Jack Huang Blog</title>
+  <meta name="description" content="Chrome開發人員工具">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -44,8 +44,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/jack842248.github.io\/post\/2021-02-19-%E5%8F%96%E5%BE%97bom%E5%8E%9F%E5%9E%8B\/",
-          "name": "取得 b o m原型"
+          "@id": "https:\/\/jack842248.github.io\/post\/2021-02-22-chrome-devtools%E9%99%A4%E9%8C%AF\/",
+          "name": "Chrome devtools除錯"
         }
     }]
 }
@@ -56,15 +56,15 @@
   "author": {
     "name" : "JackHuang"
   },
-  "headline": "取得BOM原型",
-  "description" : "BOM(Browser Object Model)   瀏覽器(window)提供的物件原型。      名稱 中文     history 瀏覽歷史紀錄   frames 框架   location 路徑位置   document DOM元素   screen 使用裝置資訊   navigator 版本資訊       回上頁   使用window.history.forward()，下一頁。    使用window.history.back()，回上頁。   回上頁前必須先下一頁\n 1 2 3 4 5 6 7 8 9 10 11 12 13 14  \/\/ \u0026lt;-----html-----\u0026gt; button.",
+  "headline": "Chrome devtools除錯",
+  "description" : "對著圖片→\u0026quot;右鍵\u0026quot;→\u0026quot;複製圖片位置\u0026quot;。可複製該圖片的路徑，貼到src上。       對著連結→\u0026quot;右鍵\u0026quot;→\u0026quot;複製連結網址\u0026quot;。可複製該連結的路徑，貼到href上。       開啟Chrome開發者工具:打開Chrome瀏覽器→\u0026quot;右鍵\u0026quot;→\u0026quot;檢查\u0026quot;。       Dock side : 可以設定開發者人員工具的方向、或獨立式窗。       Toggle Device Toolbar : 切換手機或平板螢幕大小來瀏覽網頁。       Select an element in the page to inspect it : 可以尋找網頁上的元素。       在[Elements]使用ctrl\u002bF可搜尋HTML標籤、class名稱，找到的會被highlight。       在[Elements]使用styles的Fliter，可搜尋css屬性名稱。       在[Elements]使用styles的:hov，可查看元素在:hover時的狀態。       在[Elements]使用styles的視窗中，transform、animation可查看貝茲控制點的曲線。    1 2  \/\/ \u0026lt;-----css-----\u0026gt; transition: 1s cubic-bezier(.",
   "inLanguage" : "zh-tw",
-  "wordCount":  178 ,
-  "datePublished" : "2021-02-19T00:00:00",
-  "dateModified" : "2021-02-19T00:00:00",
+  "wordCount":  89 ,
+  "datePublished" : "2021-02-22T00:00:00",
+  "dateModified" : "2021-02-22T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
   "keywords" : [ "javascript" ],
-  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2021-02-19-%E5%8F%96%E5%BE%97bom%E5%8E%9F%E5%9E%8B\/",
+  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2021-02-22-chrome-devtools%E9%99%A4%E9%8C%AF\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/jack842248.github.io",
@@ -78,14 +78,14 @@
 }
 </script>
 
-<meta property="og:title" content="取得BOM原型" />
-<meta property="og:description" content="BOM">
-<meta property="og:url" content="https://jack842248.github.io/post/2021-02-19-%E5%8F%96%E5%BE%97bom%E5%8E%9F%E5%9E%8B/" />
+<meta property="og:title" content="Chrome devtools除錯" />
+<meta property="og:description" content="Chrome開發人員工具">
+<meta property="og:url" content="https://jack842248.github.io/post/2021-02-22-chrome-devtools%E9%99%A4%E9%8C%AF/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
-  <meta name="twitter:title" content="取得BOM原型" />
-  <meta name="twitter:description" content="BOM">
+  <meta name="twitter:title" content="Chrome devtools除錯" />
+  <meta name="twitter:description" content="Chrome開發人員工具">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.80.0" />
@@ -244,23 +244,23 @@ if (!doNotTrack) {
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="post-heading">
-                <h1>取得BOM原型</h1>
+                <h1>Chrome devtools除錯</h1>
                   
                     
-                      <h2 class="post-subheading">BOM</h2>
+                      <h2 class="post-subheading">Chrome開發人員工具</h2>
                     
                   
                   
                     <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-19
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-22
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;178&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;89&nbsp;個字
   
   
   
@@ -281,25 +281,25 @@ if (!doNotTrack) {
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>取得BOM原型</h1>
+                <h1>Chrome devtools除錯</h1>
               
               
               
                 
-                  <h2 class="post-subheading">BOM</h2>
+                  <h2 class="post-subheading">Chrome開發人員工具</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-19
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-22
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;178&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;89&nbsp;個字
   
   
   
@@ -322,100 +322,147 @@ if (!doNotTrack) {
       <article role="main" class="blog-post">
         <hr>
 <h1 id="heading"></h1>
-<h2 id="bombrowser-object-model">BOM(Browser Object Model)</h2>
-<h1 id="heading-1"></h1>
 <ul>
-<li>瀏覽器(window)提供的物件原型。</li>
+<li>對著圖片→&quot;右鍵&quot;→&quot;複製圖片位置&quot;。可複製該圖片的路徑，貼到src上。</li>
 </ul>
+<h1 id="heading-1"></h1>
+<p><img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-1.png" alt="圖片"></p>
 <h1 id="heading-2"></h1>
-<table>
-<thead>
-<tr>
-<th>名稱</th>
-<th>中文</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>history</td>
-<td>瀏覽歷史紀錄</td>
-</tr>
-<tr>
-<td>frames</td>
-<td>框架</td>
-</tr>
-<tr>
-<td>location</td>
-<td>路徑位置</td>
-</tr>
-<tr>
-<td>document</td>
-<td>DOM元素</td>
-</tr>
-<tr>
-<td>screen</td>
-<td>使用裝置資訊</td>
-</tr>
-<tr>
-<td>navigator</td>
-<td>版本資訊</td>
-</tr>
-</tbody>
-</table>
-<h1 id="heading-3"></h1>
 <hr>
+<h1 id="heading-3"></h1>
+<ul>
+<li>對著連結→&quot;右鍵&quot;→&quot;複製連結網址&quot;。可複製該連結的路徑，貼到href上。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-2.png" alt="圖片"></li>
+</ul>
 <h1 id="heading-4"></h1>
-<h3 id="回上頁">回上頁</h3>
+<hr>
 <h1 id="heading-5"></h1>
 <ul>
-<li>使用window.history.forward()，下一頁。</li>
+<li>開啟Chrome開發者工具:打開Chrome瀏覽器→&quot;右鍵&quot;→&quot;檢查&quot;。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-3.png" alt="圖片"></li>
 </ul>
 <h1 id="heading-6"></h1>
-<ul>
-<li>使用window.history.back()，回上頁。</li>
-</ul>
+<hr>
 <h1 id="heading-7"></h1>
-<p><code>回上頁前必須先下一頁</code></p>
+<ul>
+<li>Dock side : 可以設定開發者人員工具的方向、或獨立式窗。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-4.png" alt="圖片"></li>
+</ul>
 <h1 id="heading-8"></h1>
+<hr>
+<h1 id="heading-9"></h1>
+<ul>
+<li>Toggle Device Toolbar : 切換手機或平板螢幕大小來瀏覽網頁。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-5.png" alt="圖片"></li>
+</ul>
+<h1 id="heading-10"></h1>
+<hr>
+<h1 id="heading-11"></h1>
+<ul>
+<li>Select an element in the page to inspect it : 可以尋找網頁上的元素。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-6.png" alt="圖片"></li>
+</ul>
+<h1 id="heading-12"></h1>
+<hr>
+<h1 id="heading-13"></h1>
+<ul>
+<li>在[Elements]使用ctrl+F可搜尋HTML標籤、class名稱，找到的會被highlight。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-7.png" alt="圖片"></li>
+</ul>
+<h1 id="heading-14"></h1>
+<hr>
+<h1 id="heading-15"></h1>
+<ul>
+<li>在[Elements]使用styles的Fliter，可搜尋css屬性名稱。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-8.png" alt="圖片"></li>
+</ul>
+<h1 id="heading-16"></h1>
+<hr>
+<h1 id="heading-17"></h1>
+<ul>
+<li>在[Elements]使用styles的:hov，可查看元素在:hover時的狀態。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-9.png" alt="圖片"></li>
+</ul>
+<h1 id="heading-18"></h1>
+<hr>
+<h1 id="heading-19"></h1>
+<ul>
+<li>在[Elements]使用styles的視窗中，transform、animation可查看貝茲控制點的曲線。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-10.png" alt="圖片"></li>
+</ul>
+<h1 id="heading-20"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">nextBtn</span> <span style="color:#a6e22e">下一頁</span>
-<span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">backBtn</span> <span style="color:#a6e22e">回上頁</span>
-
-<span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nextBtn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.nextBtn&#34;</span>);
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">backBtn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.backBtn&#34;</span>);
-
-<span style="color:#a6e22e">nextBtn</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  window.<span style="color:#a6e22e">history</span>.<span style="color:#a6e22e">forward</span>();
-}
-<span style="color:#a6e22e">backBtn</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  window.<span style="color:#a6e22e">history</span>.<span style="color:#a6e22e">back</span>();
-}
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----css-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">transition</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span><span style="color:#a6e22e">s</span> <span style="color:#a6e22e">cubic</span><span style="color:#f92672">-</span><span style="color:#a6e22e">bezier</span>(<span style="color:#ae81ff">.17</span>,<span style="color:#ae81ff">.67</span>,<span style="color:#ae81ff">.83</span>,<span style="color:#ae81ff">.67</span>)
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-9"></h1>
+</div><h1 id="heading-21"></h1>
 <hr>
-<h1 id="heading-10"></h1>
-<h3 id="列印">列印</h3>
-<h1 id="heading-11"></h1>
+<h1 id="heading-22"></h1>
+<ul>
+<li>點擊&quot;&hellip;&ldquo;→&quot;Show console drawer&quot;→點擊裡面的&rdquo;&hellip;&ldquo;→&quot;Animations&quot;→點擊圖片:可以查看animation的時間軸，選擇10%可以觀看慢速。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-11.png" alt="圖片"></li>
+</ul>
+<h1 id="heading-23"></h1>
+<hr>
+<h1 id="heading-24"></h1>
+<ul>
+<li>
+<p>在[network]，重新整理頁面後，可在最底下查看狀態:</p>
+<ul>
+<li>
+<p>requests(請求): 請求回傳的檔案數量。</p>
+</li>
+<li>
+<p>transferred(轉移): 壓縮過後的流量。</p>
+</li>
+<li>
+<p>resources(資源): 未壓縮過的總資源。</p>
+</li>
+<li>
+<p>Finish(結束): 整體包含ajax動態載入的時間。</p>
+</li>
+<li>
+<p>Load(加載): 靜態檔案載入的時間。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-12.png" alt="圖片"></p>
+<h1 id="heading-25"></h1>
+<hr>
+<h1 id="heading-26"></h1>
+<ul>
+<li>在[network]，可按&quot;Throttling小箭頭&quot;按鈕 : 可以模擬其他頻寬的速度。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-13.png" alt="圖片"></li>
+</ul>
+<h1 id="heading-27"></h1>
+<hr>
+<h1 id="heading-28"></h1>
+<ul>
+<li>在[Console]，直接撰寫console.log() : 可以顯示結果。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-14.png" alt="圖片"></li>
+</ul>
+<h1 id="heading-29"></h1>
+<hr>
+<h1 id="heading-30"></h1>
+<ul>
+<li>在[Console]，直接撰寫console.table() : 放入物件或陣列，可以表格方式查看。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-15.png" alt="圖片"></li>
+</ul>
+<h1 id="heading-31"></h1>
+<hr>
+<h1 id="heading-32"></h1>
+<ul>
+<li>在[Console]，直接撰寫console.time()、console.timeEnd() : 可以計算時間。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-16.png" alt="圖片"></li>
+</ul>
+<h1 id="heading-33"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -426,123 +473,73 @@ if (!doNotTrack) {
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">printBtn</span> <span style="color:#a6e22e">列印</span>
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----js-----&gt;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">time</span>();
+<span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">timeEnd</span>(<span style="color:#e6db74">&#34;a&#34;</span>);
+},<span style="color:#ae81ff">5000</span>);
 
-<span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">printBtn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.printBtn&#34;</span>);
-
-<span style="color:#a6e22e">printBtn</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  window.<span style="color:#a6e22e">print</span>();
-}
-</code></pre></td></tr></table>
+<span style="color:#75715e">// &lt;-----結果-----&gt;
+</span><span style="color:#75715e">//經過5秒後顯示:&#34;a&#34;
+</span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-12"></h1>
+</div><h1 id="heading-34"></h1>
 <hr>
-<h1 id="heading-13"></h1>
-<h3 id="前往網址">前往網址</h3>
-<h1 id="heading-14"></h1>
+<h1 id="heading-35"></h1>
 <ul>
-<li>window.open(&ldquo;網址&rdquo;)，會另開新視窗。</li>
-</ul>
-<h1 id="heading-15"></h1>
+<li>在[Elements]對要查看的元素&quot;右鍵&quot;→&quot;Break on&rdquo;，可查看DOM元素的斷點。
 <ul>
-<li>location.href=&ldquo;網址&rdquo;，使用當前視窗。</li>
+<li></li>
+<li></li>
+<li><img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-17.png" alt="圖片"></li>
 </ul>
-<h1 id="heading-16"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">openBtn</span> <span style="color:#a6e22e">前往網址1</span>
-<span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">hrefBtn</span> <span style="color:#a6e22e">前往網址2</span>
-
-<span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">openBtn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.openBtn&#34;</span>);
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hrefBtn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.hrefBtn&#34;</span>);
-
-<span style="color:#a6e22e">openBtn</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  window.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;https://www.google.com.tw/&#34;</span>);
-}
-
-<span style="color:#a6e22e">hrefBtn</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  <span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">href</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://www.google.com.tw/&#34;</span>;
-}
-</code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-17"></h1>
+</li>
+</ul>
+<h1 id="heading-36"></h1>
 <hr>
-<h1 id="heading-18"></h1>
-<h3 id="瀏覽器高度">瀏覽器高度</h3>
-<h1 id="heading-19"></h1>
+<h1 id="heading-37"></h1>
+<p>在[Sources]中間部分先在程式碼編號上點擊新增斷點。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-18.png" alt="圖片"></p>
+<h1 id="heading-38"></h1>
+<hr>
+<h1 id="heading-39"></h1>
 <ul>
-<li>window.innerHeight，可以取得瀏覽器可視高度。</li>
+<li>在[Sources]右邊部分[Watch]可以手動新增要查看的變數。
+<img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-19.png" alt="圖片"></li>
 </ul>
-<h1 id="heading-20"></h1>
+<h1 id="heading-40"></h1>
+<hr>
+<h1 id="heading-41"></h1>
 <ul>
-<li>window.outerHeight，可以取得整個瀏覽器高度。</li>
-</ul>
-<h1 id="heading-21"></h1>
+<li>
+<p>在[Sources]右邊部分按鈕，可執行斷點，從左到右分別是:</p>
 <ul>
-<li>window.onresize，當拖動瀏覽器時觸發。</li>
+<li>
+<p>執行查看斷點。</p>
+</li>
+<li>
+<p>查看下一個斷點。</p>
+</li>
+<li>
+<p>進入斷點的function。</p>
+</li>
+<li>
+<p>離開斷點的function。</p>
+</li>
+<li>
+<p>將斷點都隱藏。</p>
+</li>
+<li>
+<p>若有錯誤則停止。</p>
+</li>
 </ul>
-<h1 id="heading-22"></h1>
-<p><code>可以使圖片滿版整個頁面</code></p>
-<h1 id="heading-23"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span>.<span style="color:#a6e22e">box</span>
+</li>
+</ul>
+<p><img src="/img/Chromedevtools%E9%99%A4%E9%8C%AF/Chromedevtools%E9%99%A4%E9%8C%AF-20.png" alt="圖片">
+#</p>
 
-<span style="color:#75715e">// &lt;-----css-----&gt;
-</span><span style="color:#75715e"></span>.<span style="color:#a6e22e">box</span>
-  <span style="color:#a6e22e">background</span><span style="color:#f92672">-</span><span style="color:#a6e22e">image</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">url</span>(...)
-  <span style="color:#a6e22e">background</span><span style="color:#f92672">-</span><span style="color:#a6e22e">size</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">cover</span>
-  <span style="color:#a6e22e">background</span><span style="color:#f92672">-</span><span style="color:#a6e22e">position</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">center</span> <span style="color:#a6e22e">center</span>
-
-<span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">box</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.box&#34;</span>);
-window.<span style="color:#a6e22e">onresize</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">functin</span>(){
-  <span style="color:#a6e22e">box</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">innerHeigth</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;px&#34;</span>;
-}
-</code></pre></td></tr></table>
-</div>
-</div>
 
         
           <div class="blog-tags">
@@ -562,42 +559,42 @@ window.<span style="color:#a6e22e">onresize</span> <span style="color:#f92672">=
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-19-%25E5%258F%2596%25E5%25BE%2597bom%25E5%258E%259F%25E5%259E%258B%2f&amp;text=%e5%8f%96%e5%be%97BOM%e5%8e%9f%e5%9e%8b&amp;via=" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-22-chrome-devtools%25E9%2599%25A4%25E9%258C%25AF%2f&amp;text=Chrome%20devtools%e9%99%a4%e9%8c%af&amp;via=" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-19-%25E5%258F%2596%25E5%25BE%2597bom%25E5%258E%259F%25E5%259E%258B%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-22-chrome-devtools%25E9%2599%25A4%25E9%258C%25AF%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-19-%25E5%258F%2596%25E5%25BE%2597bom%25E5%258E%259F%25E5%259E%258B%2f&amp;title=%e5%8f%96%e5%be%97BOM%e5%8e%9f%e5%9e%8b" target="_blank" title="Share on Reddit">
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-22-chrome-devtools%25E9%2599%25A4%25E9%258C%25AF%2f&amp;title=Chrome%20devtools%e9%99%a4%e9%8c%af" target="_blank" title="Share on Reddit">
           <i class="fab fa-reddit"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-19-%25E5%258F%2596%25E5%25BE%2597bom%25E5%258E%259F%25E5%259E%258B%2f&amp;title=%e5%8f%96%e5%be%97BOM%e5%8e%9f%e5%9e%8b" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-22-chrome-devtools%25E9%2599%25A4%25E9%258C%25AF%2f&amp;title=Chrome%20devtools%e9%99%a4%e9%8c%af" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-19-%25E5%258F%2596%25E5%25BE%2597bom%25E5%258E%259F%25E5%259E%258B%2f&amp;title=%e5%8f%96%e5%be%97BOM%e5%8e%9f%e5%9e%8b" target="_blank" title="Share on StumbleUpon">
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-22-chrome-devtools%25E9%2599%25A4%25E9%258C%25AF%2f&amp;title=Chrome%20devtools%e9%99%a4%e9%8c%af" target="_blank" title="Share on StumbleUpon">
           <i class="fab fa-stumbleupon"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-19-%25E5%258F%2596%25E5%25BE%2597bom%25E5%258E%259F%25E5%259E%258B%2f&amp;description=%e5%8f%96%e5%be%97BOM%e5%8e%9f%e5%9e%8b" target="_blank" title="Share on Pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-22-chrome-devtools%25E9%2599%25A4%25E9%258C%25AF%2f&amp;description=Chrome%20devtools%e9%99%a4%e9%8c%af" target="_blank" title="Share on Pinterest">
           <i class="fab fa-pinterest"></i>
         </a>
       </li>
@@ -621,11 +618,11 @@ window.<span style="color:#a6e22e">onresize</span> <span style="color:#f92672">=
                 
                     <li><a href="/post/2021-02-23-%E6%93%8D%E4%BD%9Carray%E6%96%B9%E6%B3%95/">操作Array方法</a></li>
                 
-                    <li><a href="/post/2021-02-22-chrome-devtools%E9%99%A4%E9%8C%AF/">Chrome devtools除錯</a></li>
-                
                     <li><a href="/post/2021-02-21-google-maps-api/">Google Maps API</a></li>
                 
                     <li><a href="/post/2021-02-20-%E7%99%BC%E9%80%81ajax%E8%AB%8B%E6%B1%82/">發送AJAX請求</a></li>
+                
+                    <li><a href="/post/2021-02-19-%E5%8F%96%E5%BE%97bom%E5%8E%9F%E5%9E%8B/">取得BOM原型</a></li>
                 
                     <li><a href="/post/2021-02-18-localstorage%E8%88%87todolist/">localStorage與todolist</a></li>
                 
@@ -639,12 +636,12 @@ window.<span style="color:#a6e22e">onresize</span> <span style="color:#f92672">=
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2021-02-18-localstorage%E8%88%87todolist/" data-toggle="tooltip" data-placement="top" title="localStorage與todolist">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2021-02-21-google-maps-api/" data-toggle="tooltip" data-placement="top" title="Google Maps API">&larr; 上一篇</a>
             </li>
           
           
             <li class="next">
-              <a href="https://jack842248.github.io/post/2021-02-20-%E7%99%BC%E9%80%81ajax%E8%AB%8B%E6%B1%82/" data-toggle="tooltip" data-placement="top" title="發送AJAX請求">下一篇 &rarr;</a>
+              <a href="https://jack842248.github.io/post/2021-02-23-%E6%93%8D%E4%BD%9Carray%E6%96%B9%E6%B3%95/" data-toggle="tooltip" data-placement="top" title="操作Array方法">下一篇 &rarr;</a>
             </li>
           
         </ul>
@@ -655,12 +652,12 @@ window.<span style="color:#a6e22e">onresize</span> <span style="color:#f92672">=
         
           
           <div class="disqus-comments">                  
-            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2021-02-19-%E5%8F%96%E5%BE%97bom%E5%8E%9F%E5%9E%8B">則評論</span></button>
+            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2021-02-22-chrome-devtools%E9%99%A4%E9%8C%AF">則評論</span></button>
             <div id="disqus_thread"></div>
 
             <script type="text/javascript">
               var disqus_config = function () {
-              this.page.url = 'https:\/\/jack842248.github.io\/post\/2021-02-19-%E5%8F%96%E5%BE%97bom%E5%8E%9F%E5%9E%8B';
+              this.page.url = 'https:\/\/jack842248.github.io\/post\/2021-02-22-chrome-devtools%E9%99%A4%E9%8C%AF';
             };
 
           </script>

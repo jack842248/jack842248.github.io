@@ -7,13 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>操作Array方法</title>
+      <link>https://jack842248.github.io/post/2021-02-23-%E6%93%8D%E4%BD%9Carray%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-23-%E6%93%8D%E4%BD%9Carray%E6%96%B9%E6%B3%95/</guid>
+      <description>新增陣列   .push (要新增的東西)，新增到陣列最後方。   1 2 3  let a = [&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;]; a.push(&amp;#34;芭樂&amp;#34;); console.log(a); //[&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;,&amp;#34;芭樂&amp;#34;]     .unshift (要新增的東西)，新增到陣列最前方。   1 2 3  let a = [&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;]; a.unshift(&amp;#34;芭樂&amp;#34;); console.log(a); //[&amp;#34;芭樂&amp;#34;,&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;]     .concat (要新增的東西)，新增到陣列最後方。   1 2 3  let a = [&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;]; let b = a.concat(&amp;#34;芭樂&amp;#34;); console.log(b); //[&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;,&amp;#34;芭樂&amp;#34;]      刪除陣列   .pop() ，刪除陣列最後一項。   1 2 3  let a = [&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;]; a.</description>
+    </item>
+    
+    <item>
+      <title>Chrome devtools除錯</title>
+      <link>https://jack842248.github.io/post/2021-02-22-chrome-devtools%E9%99%A4%E9%8C%AF/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-22-chrome-devtools%E9%99%A4%E9%8C%AF/</guid>
+      <description>對著圖片→&amp;quot;右鍵&amp;quot;→&amp;quot;複製圖片位置&amp;quot;。可複製該圖片的路徑，貼到src上。       對著連結→&amp;quot;右鍵&amp;quot;→&amp;quot;複製連結網址&amp;quot;。可複製該連結的路徑，貼到href上。       開啟Chrome開發者工具:打開Chrome瀏覽器→&amp;quot;右鍵&amp;quot;→&amp;quot;檢查&amp;quot;。       Dock side : 可以設定開發者人員工具的方向、或獨立式窗。       Toggle Device Toolbar : 切換手機或平板螢幕大小來瀏覽網頁。       Select an element in the page to inspect it : 可以尋找網頁上的元素。       在[Elements]使用ctrl+F可搜尋HTML標籤、class名稱，找到的會被highlight。       在[Elements]使用styles的Fliter，可搜尋css屬性名稱。       在[Elements]使用styles的:hov，可查看元素在:hover時的狀態。       在[Elements]使用styles的視窗中，transform、animation可查看貝茲控制點的曲線。    1 2  // &amp;lt;-----css-----&amp;gt; transition: 1s cubic-bezier(.</description>
+    </item>
+    
     <item>
       <title>Google Maps API</title>
-      <link>https://jack842248.github.io/post/2021-02-20-google-maps-api/</link>
+      <link>https://jack842248.github.io/post/2021-02-21-google-maps-api/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-02-20-google-maps-api/</guid>
+      <guid>https://jack842248.github.io/post/2021-02-21-google-maps-api/</guid>
       <description>應用程式介面(Application Programming Interface)   簡稱API。     應用程式提供的服務，用來接收或傳送資料給應用程式。例如 :
   Heroku，主機服務。
   GoogleMap，地圖導覽服務。
