@@ -45,7 +45,7 @@
         "position": 3,
         "item": {
           "@id": "https:\/\/jack842248.github.io\/post\/2021-02-24-javascript%E5%B0%81%E8%A3%9Dajax%E8%AB%8B%E6%B1%82\/",
-          "name": "Java script—封裝 a j a x請求"
+          "name": "Java script—封裝 ajax請求"
         }
     }]
 }
@@ -88,7 +88,7 @@
   <meta name="twitter:description" content="Promise、Random User API">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.95.0" />
   <link rel="alternate" href="https://jack842248.github.io/index.xml" type="application/rss+xml" title="Jack Huang Blog"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://jack842248.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -347,92 +347,92 @@ if (!doNotTrack) {
 </li>
 </ol>
 <h1 id="heading-2"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  <span style="color:#75715e">//1.
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  <span style="color:#75715e">//2.
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  <span style="color:#75715e">//3.
-</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
-        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
-      }<span style="color:#66d9ef">else</span>{
-        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
-      }
-    },<span style="color:#ae81ff">1000</span>)
-  })
-}
-<span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>)
-  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{  <span style="color:#75715e">//4.
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);
-  })
-  .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">rej</span>)=&gt;{  <span style="color:#75715e">//4.
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">rej</span>);
-  })
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  <span style="color:#75715e">//1.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  <span style="color:#75715e">//2.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  <span style="color:#75715e">//3.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
+</span></span><span style="display:flex;"><span>      }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },<span style="color:#ae81ff">1000</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{  <span style="color:#75715e">//4.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">rej</span>)=&gt;{  <span style="color:#75715e">//4.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">rej</span>);
+</span></span><span style="display:flex;"><span>  })
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-3"></h1>
 <ul>
 <li>用.then(第一個參數接收resolve,第二的參數接收reject)。</li>
 </ul>
 <h1 id="heading-4"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){
-  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{ 
-    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
-      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
-        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
-      }<span style="color:#66d9ef">else</span>{
-        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
-      }
-    },<span style="color:#ae81ff">1000</span>)
-  })
-}
-<span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>)
-  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{ 
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);
-  },(<span style="color:#a6e22e">rej</span>)=&gt;{ 
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">rej</span>);
-  })
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{ 
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
+</span></span><span style="display:flex;"><span>      }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },<span style="color:#ae81ff">1000</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{ 
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);
+</span></span><span style="display:flex;"><span>  },(<span style="color:#a6e22e">rej</span>)=&gt;{ 
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">rej</span>);
+</span></span><span style="display:flex;"><span>  })
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-5"></h1>
 <hr>
@@ -443,164 +443,164 @@ if (!doNotTrack) {
 <li>串聯多個 <strong>promise</strong> ，若有其中 <strong>.then()</strong> 不成立，則直接跳至 <strong>.catch()</strong> 。</li>
 </ul>
 <h1 id="heading-8"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  
-  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  
-    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
-      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
-        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
-      }<span style="color:#66d9ef">else</span>{
-        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
-      }
-    },<span style="color:#ae81ff">1000</span>)
-  })
-}
-<span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>)
-  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{  
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;一號成功&#34;</span>);  <span style="color:#75715e">//一號成功
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>)
-  })
-  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;二號成功&#34;</span>);  <span style="color:#75715e">//二號成功
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">3</span>)
-  })
-  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;三號成功&#34;</span>);  <span style="color:#75715e">//三號成功
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">0</span>);
-  })
-  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;四號成功&#34;</span>);
-  })
-  .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">rej</span>)=&gt;{  
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);  <span style="color:#75715e">//一號成功
-</span><span style="color:#75715e"></span>  })
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
+</span></span><span style="display:flex;"><span>      }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },<span style="color:#ae81ff">1000</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;一號成功&#34;</span>);  <span style="color:#75715e">//一號成功
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;二號成功&#34;</span>);  <span style="color:#75715e">//二號成功
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;三號成功&#34;</span>);  <span style="color:#75715e">//三號成功
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;四號成功&#34;</span>);
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">rej</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);  <span style="color:#75715e">//一號成功
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  })
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-9"></h1>
 <ul>
 <li>使用 <strong>.then()</strong> 來顯示，失敗或是成功的結果。</li>
 </ul>
 <h1 id="heading-10"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  
-  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  
-    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
-      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
-        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
-      }<span style="color:#66d9ef">else</span>{
-        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
-      }
-    },<span style="color:#ae81ff">1000</span>)
-  })
-}
-<span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>)
-  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{  
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;一號成功&#34;</span>);  <span style="color:#75715e">//一號成功
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>)
-  },(<span style="color:#a6e22e">rej</span>)=&gt;{  
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;一號失敗&#34;</span>);
-    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>)
-  })
-
-  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{  
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;二號成功&#34;</span>);  <span style="color:#75715e">//二號成功
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">3</span>)
-  },(<span style="color:#a6e22e">rej</span>)=&gt;{  
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;二號失敗&#34;</span>);
-    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">3</span>)
-  })
-
-  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{  
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;三號成功&#34;</span>);  <span style="color:#75715e">//三號成功
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">0</span>)
-  },(<span style="color:#a6e22e">rej</span>)=&gt;{  
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;三號失敗&#34;</span>);
-    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">0</span>)
-  })
-
-  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{  
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;四號成功&#34;</span>);  
-  },(<span style="color:#a6e22e">rej</span>)=&gt;{  
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;四號失敗&#34;</span>);  <span style="color:#75715e">//四號失敗
-</span><span style="color:#75715e"></span>  })
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
+</span></span><span style="display:flex;"><span>      }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },<span style="color:#ae81ff">1000</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;一號成功&#34;</span>);  <span style="color:#75715e">//一號成功
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>  },(<span style="color:#a6e22e">rej</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;一號失敗&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;二號成功&#34;</span>);  <span style="color:#75715e">//二號成功
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>  },(<span style="color:#a6e22e">rej</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;二號失敗&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;三號成功&#34;</span>);  <span style="color:#75715e">//三號成功
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>  },(<span style="color:#a6e22e">rej</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;三號失敗&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;四號成功&#34;</span>);  
+</span></span><span style="display:flex;"><span>  },(<span style="color:#a6e22e">rej</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;四號失敗&#34;</span>);  <span style="color:#75715e">//四號失敗
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  })
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-11"></h1>
 <hr>
@@ -611,108 +611,108 @@ if (!doNotTrack) {
 <li>將全部使用陣列方式帶入參數，如果全部都成功執行後，才會執行接下來要執行的的結果，</li>
 </ul>
 <h1 id="heading-14"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  
-  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  
-    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
-      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
-        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
-      }<span style="color:#66d9ef">else</span>{
-        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
-      }
-    },<span style="color:#ae81ff">1000</span>)
-  })
-}
-
-Promise.<span style="color:#a6e22e">all</span>([
-  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>),
-  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>),
-  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">3</span>)
-])
-.<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);  <span style="color:#75715e">//[&#34;成功&#34;,&#34;成功&#34;,&#34;成功&#34;]
-</span><span style="color:#75715e"></span>})
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
+</span></span><span style="display:flex;"><span>      }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },<span style="color:#ae81ff">1000</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Promise.<span style="color:#a6e22e">all</span>([
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>])
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);  <span style="color:#75715e">//[&#34;成功&#34;,&#34;成功&#34;,&#34;成功&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-15"></h1>
 <ul>
 <li>若其中有失敗的結果，則直接跳至.catch()。</li>
 </ul>
 <h1 id="heading-16"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  
-  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  
-    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
-      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
-        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
-      }<span style="color:#66d9ef">else</span>{
-        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
-      }
-    },<span style="color:#ae81ff">1000</span>)
-  })
-}
-
-Promise.<span style="color:#a6e22e">all</span>([
-  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>),
-  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>),
-  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">0</span>)
-])
-.<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);
-})
-.<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">rej</span>)=&gt;{
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">rej</span>);  <span style="color:#75715e">//失敗
-</span><span style="color:#75715e"></span>})
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
+</span></span><span style="display:flex;"><span>      }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },<span style="color:#ae81ff">1000</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Promise.<span style="color:#a6e22e">all</span>([
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>])
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>.<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">rej</span>)=&gt;{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">rej</span>);  <span style="color:#75715e">//失敗
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-17"></h1>
 <hr>
@@ -723,108 +723,108 @@ Promise.<span style="color:#a6e22e">all</span>([
 <li>將全部都成功執行後，才執行接下來要執行的的動作，但只執行最快完的成功。</li>
 </ul>
 <h1 id="heading-20"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  
-  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  
-    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
-      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
-        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
-      }<span style="color:#66d9ef">else</span>{
-        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
-      }
-    },<span style="color:#ae81ff">1000</span>)
-  })
-}
-
-Promise.<span style="color:#a6e22e">race</span>([
-  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>),
-  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>),
-  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">3</span>)
-])
-.<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);  <span style="color:#75715e">//成功
-</span><span style="color:#75715e"></span>})
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
+</span></span><span style="display:flex;"><span>      }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },<span style="color:#ae81ff">1000</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Promise.<span style="color:#a6e22e">race</span>([
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">1</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>])
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);  <span style="color:#75715e">//成功
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-21"></h1>
 <ul>
 <li>若最快完成的是失敗，則後續的成功不會顯示。</li>
 </ul>
 <h1 id="heading-22"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  
-  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  
-    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
-      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
-        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
-      }<span style="color:#66d9ef">else</span>{
-        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
-      }
-    },<span style="color:#ae81ff">1000</span>)
-  })
-}
-
-Promise.<span style="color:#a6e22e">race</span>([
-  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">0</span>),
-  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>),
-  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">3</span>)
-])
-.<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);  
-})
-.<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">rej</span>)=&gt;{
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">rej</span>);  <span style="color:#75715e">//失敗
-</span><span style="color:#75715e"></span>})
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">promiseFn</span>(<span style="color:#a6e22e">item</span>){  
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>,<span style="color:#a6e22e">reject</span>)=&gt;{  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{  
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">item</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#34;成功&#34;</span>);  
+</span></span><span style="display:flex;"><span>      }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">reject</span>(<span style="color:#e6db74">&#34;失敗&#34;</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },<span style="color:#ae81ff">1000</span>)
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Promise.<span style="color:#a6e22e">race</span>([
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">0</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">2</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">promiseFn</span>(<span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>])
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>)=&gt;{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);  
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>.<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">rej</span>)=&gt;{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">rej</span>);  <span style="color:#75715e">//失敗
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-23"></h1>
 <hr>
@@ -835,57 +835,57 @@ Promise.<span style="color:#a6e22e">race</span>([
 <li>取得資料<a href="https://randomuser.me/">假人頭資料</a>範例。</li>
 </ul>
 <h1 id="heading-26"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://randomuser.me/api/&#34;</span>;
-<span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
-  <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">url</span>,
-}).<span style="color:#a6e22e">done</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">data</span>){
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">name</span>.<span style="color:#a6e22e">title</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">name</span>.<span style="color:#a6e22e">first</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
-  <span style="color:#75715e">//名字
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">sex</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">gender</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
-  <span style="color:#75715e">//性別(male:男人、female:女人)
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">dob</span>.<span style="color:#a6e22e">age</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
-  <span style="color:#75715e">//年齡
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">born</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">dob</span>.<span style="color:#a6e22e">date</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
-  <span style="color:#75715e">//出生日期
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">telePhone</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">cell</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
-  <span style="color:#75715e">//電話號碼
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">cellPhone</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">phone</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
-  <span style="color:#75715e">//手機號碼
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">email</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">email</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
-  <span style="color:#75715e">//信箱
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">address</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">street</span>.<span style="color:#a6e22e">number</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">street</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">city</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">state</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">country</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
-  <span style="color:#75715e">//地址
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">picture</span>.<span style="color:#a6e22e">large</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
-  <span style="color:#75715e">//大頭貼
-</span><span style="color:#75715e"></span>})
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://randomuser.me/api/&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">url</span>,
+</span></span><span style="display:flex;"><span>}).<span style="color:#a6e22e">done</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">data</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">name</span>.<span style="color:#a6e22e">title</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">name</span>.<span style="color:#a6e22e">first</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//名字
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">sex</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">gender</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//性別(male:男人、female:女人)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">dob</span>.<span style="color:#a6e22e">age</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//年齡
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">born</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">dob</span>.<span style="color:#a6e22e">date</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//出生日期
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">telePhone</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">cell</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//電話號碼
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">cellPhone</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">phone</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//手機號碼
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">email</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">email</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//信箱
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">address</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">street</span>.<span style="color:#a6e22e">number</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">street</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">city</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">state</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">country</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//地址
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">results</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">picture</span>.<span style="color:#a6e22e">large</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//大頭貼
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-27"></h1>
 <hr>
@@ -904,65 +904,65 @@ Promise.<span style="color:#a6e22e">race</span>([
 </li>
 </ol>
 <h1 id="heading-30"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** jQuery方法 **/</span>
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://randomuser.me/api/&#34;</span>;
-<span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
-  <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">url</span>,
-}).<span style="color:#a6e22e">done</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">data</span>){
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">seed</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">info</span>.<span style="color:#a6e22e">seed</span>;
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">seed</span>);
-  <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
-    <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">url</span><span style="color:#e6db74">}</span><span style="color:#e6db74">?seed=</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">seed</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>,
-  }).<span style="color:#a6e22e">done</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">data</span>){
-    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">seed</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">info</span>.<span style="color:#a6e22e">seed</span>;
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">seed</span>);
-  })
-});
-
-<span style="color:#75715e">/** axios方法 **/</span>
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://randomuser.me/api/&#34;</span>;
-<span style="color:#a6e22e">axios</span>.<span style="color:#a6e22e">get</span>(<span style="color:#a6e22e">url</span>)
-  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">data1</span>)=&gt;{
-    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">seed1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data1</span>.<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">info</span>.<span style="color:#a6e22e">seed</span>;
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">seed1</span>);
-    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">axios</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">url</span><span style="color:#e6db74">}</span><span style="color:#e6db74">?seed=</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">seed1</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
-      .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">data2</span>)=&gt;{
-        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">seed2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data2</span>.<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">info</span>.<span style="color:#a6e22e">seed</span>;
-        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">seed2</span>);
-      })
-  })
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">/** jQuery方法 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://randomuser.me/api/&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">url</span>,
+</span></span><span style="display:flex;"><span>}).<span style="color:#a6e22e">done</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">data</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">seed</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">info</span>.<span style="color:#a6e22e">seed</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">seed</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">url</span><span style="color:#e6db74">}</span><span style="color:#e6db74">?seed=</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">seed</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>,
+</span></span><span style="display:flex;"><span>  }).<span style="color:#a6e22e">done</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">data</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">seed</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">info</span>.<span style="color:#a6e22e">seed</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">seed</span>);
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/** axios方法 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://randomuser.me/api/&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">axios</span>.<span style="color:#a6e22e">get</span>(<span style="color:#a6e22e">url</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">data1</span>)=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">seed1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data1</span>.<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">info</span>.<span style="color:#a6e22e">seed</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">seed1</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">axios</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">url</span><span style="color:#e6db74">}</span><span style="color:#e6db74">?seed=</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">seed1</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
+</span></span><span style="display:flex;"><span>      .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">data2</span>)=&gt;{
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">seed2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data2</span>.<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">info</span>.<span style="color:#a6e22e">seed</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">seed2</span>);
+</span></span><span style="display:flex;"><span>      })
+</span></span><span style="display:flex;"><span>  })
+</span></span></code></pre></td></tr></table>
 </div>
 </div>
 
@@ -1041,6 +1041,8 @@ Promise.<span style="color:#a6e22e">race</span>([
                   <ul>
                 
                 
+                    <li><a href="/post/2021-03-01-photoshop%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5/">PhotoShop—常用快捷鍵</a></li>
+                
                     <li><a href="/post/2021-02-23-javascript%E6%93%8D%E4%BD%9Carray%E6%96%B9%E6%B3%95/">JavaScript—操作Array方法</a></li>
                 
                     <li><a href="/post/2021-02-22-javascriptchrome-devtools/">Chrome devtools除錯</a></li>
@@ -1048,8 +1050,6 @@ Promise.<span style="color:#a6e22e">race</span>([
                     <li><a href="/post/2021-02-21-javascriptgoogle-maps-api/">JavaScript—Google Maps API</a></li>
                 
                     <li><a href="/post/2021-02-20-javascript%E7%99%BC%E9%80%81ajax%E8%AB%8B%E6%B1%82/">JavaScript—發送AJAX請求</a></li>
-                
-                    <li><a href="/post/2021-02-19-javascript%E7%80%8F%E8%A6%BD%E5%99%A8%E7%89%A9%E4%BB%B6%E6%A8%A1%E5%9E%8B/">JavaScript—瀏覽器物件模型</a></li>
                 
               </ul>
 
@@ -1061,7 +1061,7 @@ Promise.<span style="color:#a6e22e">race</span>([
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2021-02-23-javascript%E6%93%8D%E4%BD%9Carray%E6%96%B9%E6%B3%95/" data-toggle="tooltip" data-placement="top" title="JavaScript—操作Array方法">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2021-03-01-photoshop%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5/" data-toggle="tooltip" data-placement="top" title="PhotoShop—常用快捷鍵">&larr; 上一篇</a>
             </li>
           
           
@@ -1160,7 +1160,7 @@ Promise.<span style="color:#a6e22e">race</span>([
         </p>
         
         <p class="credits theme-by text-muted">
-          由 <a href="https://gohugo.io">Hugo v0.80.0</a> 提供 &nbsp;&bull;&nbsp; 主題 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 移植自 <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          由 <a href="https://gohugo.io">Hugo v0.95.0</a> 提供 &nbsp;&bull;&nbsp; 主題 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 移植自 <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>

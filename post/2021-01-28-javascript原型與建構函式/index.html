@@ -88,7 +88,7 @@
   <meta name="twitter:description" content="原型、建構式、建構函式、原型鍊、__proto__、prototype">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.95.0" />
   <link rel="alternate" href="https://jack842248.github.io/index.xml" type="application/rss+xml" title="Jack Huang Blog"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://jack842248.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -377,29 +377,29 @@ if (!doNotTrack) {
 </tbody>
 </table>
 <h1 id="heading-6"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span> , <span style="color:#ae81ff">2</span> , <span style="color:#ae81ff">3</span>];
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">4</span> , <span style="color:#ae81ff">5</span> , <span style="color:#ae81ff">6</span>];
-<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">__proto__</span>.<span style="color:#a6e22e">getLast</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  <span style="color:#75715e">//在上層[Array]原型上，新增[getLast]屬性
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>[<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
-  <span style="color:#75715e">//回傳[最後一項]陣列
-</span><span style="color:#75715e"></span>}
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">getLast</span>());  <span style="color:#75715e">//6
-</span><span style="color:#75715e">//因為a、b都是在[Array]原型底下，所有都可以使用[getLast]屬性
-</span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span> , <span style="color:#ae81ff">2</span> , <span style="color:#ae81ff">3</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">4</span> , <span style="color:#ae81ff">5</span> , <span style="color:#ae81ff">6</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">__proto__</span>.<span style="color:#a6e22e">getLast</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//在上層[Array]原型上，新增[getLast]屬性
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>[<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//回傳[最後一項]陣列
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">getLast</span>());  <span style="color:#75715e">//6
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//因為a、b都是在[Array]原型底下，所有都可以使用[getLast]屬性
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-7"></h1>
 <hr>
@@ -414,75 +414,75 @@ if (!doNotTrack) {
 <li>prototype : 是原型裡的函式。</li>
 </ul>
 <h1 id="heading-11"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 建構[狗]原型 **/</span>
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#a6e22e">name</span>,<span style="color:#a6e22e">color</span>,<span style="color:#a6e22e">size</span>){
-  <span style="color:#75715e">//使用建構函式，建構[Dog]原型
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>;
-  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">color</span>;
-  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">size</span>;
-}
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">Bibi</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#e6db74">&#34;比比&#34;</span>,<span style="color:#e6db74">&#34;棕色&#34;</span>,<span style="color:#e6db74">&#34;小型&#34;</span>);
-<span style="color:#75715e">//純值[Bibi]使用建構式，繼承在[Dog]原型底下，並帶入屬性的值
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">bark</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  <span style="color:#75715e">//在[Dog]原型函式裡，新增[bark]屬性
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;吠叫&#34;</span>;
-}
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">name</span>,<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">color</span>,<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">size</span>);  <span style="color:#75715e">//&#34;比比&#34;  //&#34;棕色&#34;  //&#34;小型&#34;
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">bark</span>());  <span style="color:#75715e">//&#34;比比吠叫&#34;
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">/** 自定義日期 **/</span>
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">date</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date();
-<span style="color:#75715e">//date本身是一個函數
-</span><span style="color:#75715e">//所以date有許多prototype(函式)可以使用
-</span><span style="color:#75715e"></span>Date.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">getToday</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  <span style="color:#75715e">//Date物件裡的函式中新增屬性
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">dd</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getDate</span>();
-  <span style="color:#75715e">//使用date裡的屬性getDate賦予到dd
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">mm</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getMonth</span>()<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>;
-  <span style="color:#75715e">//getMonth屬性，取道的值是從0開始所以要+1
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">yyyy</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getFullYear</span>();
-  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">yyyy</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">mm</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">dd</span>;
-  <span style="color:#75715e">//將結果組成想要的字串，然後回傳
-</span><span style="color:#75715e"></span>}
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">date</span>.<span style="color:#a6e22e">getToday</span>());  <span style="color:#75715e">//2021/1/28
-</span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">/** 建構[狗]原型 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#a6e22e">name</span>,<span style="color:#a6e22e">color</span>,<span style="color:#a6e22e">size</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//使用建構函式，建構[Dog]原型
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">color</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">size</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">Bibi</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#e6db74">&#34;比比&#34;</span>,<span style="color:#e6db74">&#34;棕色&#34;</span>,<span style="color:#e6db74">&#34;小型&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//純值[Bibi]使用建構式，繼承在[Dog]原型底下，並帶入屬性的值
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">bark</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//在[Dog]原型函式裡，新增[bark]屬性
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;吠叫&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">name</span>,<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">color</span>,<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">size</span>);  <span style="color:#75715e">//&#34;比比&#34;  //&#34;棕色&#34;  //&#34;小型&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">bark</span>());  <span style="color:#75715e">//&#34;比比吠叫&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/** 自定義日期 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">date</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date();
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//date本身是一個函數
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//所以date有許多prototype(函式)可以使用
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Date.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">getToday</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//Date物件裡的函式中新增屬性
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">dd</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getDate</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//使用date裡的屬性getDate賦予到dd
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">mm</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getMonth</span>()<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//getMonth屬性，取道的值是從0開始所以要+1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">yyyy</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">getFullYear</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">yyyy</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">mm</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">dd</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//將結果組成想要的字串，然後回傳
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">date</span>.<span style="color:#a6e22e">getToday</span>());  <span style="color:#75715e">//2021/1/28
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-12"></h1>
 <hr>
@@ -497,65 +497,65 @@ if (!doNotTrack) {
 <li>使用 <strong>call()</strong> 將原型帶入另一個<strong>函式建構式</strong>。</li>
 </ul>
 <h1 id="heading-16"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Animal</span>(<span style="color:#a6e22e">kingdom</span>,<span style="color:#a6e22e">family</span>){
-  <span style="color:#75715e">//使用建構函式建立[Animal]原型
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">kingdom</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">kingdom</span>;
-  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">family</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">family</span>;
-}
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#a6e22e">name</span>,<span style="color:#a6e22e">color</span>,<span style="color:#a6e22e">size</span>){
-  <span style="color:#a6e22e">Animal</span>.<span style="color:#a6e22e">call</span>(<span style="color:#66d9ef">this</span>,<span style="color:#e6db74">&#34;動物界&#34;</span>,<span style="color:#e6db74">&#34;犬科&#34;</span>);
-  <span style="color:#75715e">//讓[Dog]原型物件，傳入[Animal]原型裡，並帶兩個值到[Animal]參數裡
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>;
-  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">color</span>;
-  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">size</span>;
-}
-<span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">create</span>(<span style="color:#a6e22e">Animal</span>.<span style="color:#a6e22e">prototype</span>);
-<span style="color:#75715e">//讓[Dog]原型，繼承在[Animal]原型下
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">Animal</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">move</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  <span style="color:#75715e">//在[Animal]原型裡函式，新增[move]屬性
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;移動&#34;</span>;
-}
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">Bibi</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#e6db74">&#34;比比&#34;</span>,<span style="color:#e6db74">&#34;棕色&#34;</span>,<span style="color:#e6db74">&#34;小型&#34;</span>);
-<span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">bark</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;吠叫&#34;</span>;
-}
-<span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">constructor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Dog</span>;
-<span style="color:#75715e">//將原本[狗]的函式加回到[狗]原型
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">kingdom</span>,<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">family</span>);  <span style="color:#75715e">//&#34;動物界&#34;  //&#34;犬科&#34;
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">move</span>());  <span style="color:#75715e">//比比移動
-</span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Animal</span>(<span style="color:#a6e22e">kingdom</span>,<span style="color:#a6e22e">family</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//使用建構函式建立[Animal]原型
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">kingdom</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">kingdom</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">family</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">family</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#a6e22e">name</span>,<span style="color:#a6e22e">color</span>,<span style="color:#a6e22e">size</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">Animal</span>.<span style="color:#a6e22e">call</span>(<span style="color:#66d9ef">this</span>,<span style="color:#e6db74">&#34;動物界&#34;</span>,<span style="color:#e6db74">&#34;犬科&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//讓[Dog]原型物件，傳入[Animal]原型裡，並帶兩個值到[Animal]參數裡
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">color</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">size</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">create</span>(<span style="color:#a6e22e">Animal</span>.<span style="color:#a6e22e">prototype</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//讓[Dog]原型，繼承在[Animal]原型下
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">Animal</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">move</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//在[Animal]原型裡函式，新增[move]屬性
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;移動&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">Bibi</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Dog</span>(<span style="color:#e6db74">&#34;比比&#34;</span>,<span style="color:#e6db74">&#34;棕色&#34;</span>,<span style="color:#e6db74">&#34;小型&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">bark</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;吠叫&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Dog</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">constructor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Dog</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//將原本[狗]的函式加回到[狗]原型
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">kingdom</span>,<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">family</span>);  <span style="color:#75715e">//&#34;動物界&#34;  //&#34;犬科&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Bibi</span>.<span style="color:#a6e22e">move</span>());  <span style="color:#75715e">//比比移動
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-17"></h1>
 <hr>
@@ -760,13 +760,13 @@ if (!doNotTrack) {
                 
                     <li><a href="/post/2021-02-24-javascript%E5%B0%81%E8%A3%9Dajax%E8%AB%8B%E6%B1%82/">JavaScript—封裝AJAX請求</a></li>
                 
+                    <li><a href="/post/2021-03-01-photoshop%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5/">PhotoShop—常用快捷鍵</a></li>
+                
                     <li><a href="/post/2021-02-23-javascript%E6%93%8D%E4%BD%9Carray%E6%96%B9%E6%B3%95/">JavaScript—操作Array方法</a></li>
                 
                     <li><a href="/post/2021-02-22-javascriptchrome-devtools/">Chrome devtools除錯</a></li>
                 
                     <li><a href="/post/2021-02-21-javascriptgoogle-maps-api/">JavaScript—Google Maps API</a></li>
-                
-                    <li><a href="/post/2021-02-20-javascript%E7%99%BC%E9%80%81ajax%E8%AB%8B%E6%B1%82/">JavaScript—發送AJAX請求</a></li>
                 
               </ul>
 
@@ -881,7 +881,7 @@ if (!doNotTrack) {
         </p>
         
         <p class="credits theme-by text-muted">
-          由 <a href="https://gohugo.io">Hugo v0.80.0</a> 提供 &nbsp;&bull;&nbsp; 主題 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 移植自 <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          由 <a href="https://gohugo.io">Hugo v0.95.0</a> 提供 &nbsp;&bull;&nbsp; 主題 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 移植自 <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>

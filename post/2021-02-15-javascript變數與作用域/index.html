@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "JavaScript—變數與作用域",
-  "description" : "全域變數(Global Variable)   在function裡的變數稱為，區域變數。(範例一)   區域變數(Area Variable)   在function外的變數稱為，全域變數。(範例二)   1 2 3 4 5 6 7 8 9 10 11 12 13 14  \/** 範例一 **\/ function fn1(){ let a = \u0026#34;蘋果\u0026#34;; console.log(a); \/\/蘋果 } fn1(); \/** 範例二 **\/ let a; function fn1(){ a = \u0026#34;蘋果\u0026#34;; } fn1(); console.log(a); \/\/蘋果      if、else if、else   適合判斷式數值，限制範圍。    一律使用 if 開頭，若不成立，則往下執行。    可以使用多個 else if ，若不成立，則往下執行。    若以上都不成立則執行 else 。   1 2 3 4 5 6 7 8 9 10 11 12 13 14  let hungry = 5; \/\/飢餓程度1~10 function eat(food){ console.",
+  "description" : "全域變數(Global Variable)   在function裡的變數稱為，區域變數。(範例一)   區域變數(Area Variable)   在function外的變數稱為，全域變數。(範例二)   1 2 3 4 5 6 7 8 9 10 11 12 13 14  \/** 範例一 **\/ function fn1(){  let a = \u0026#34;蘋果\u0026#34;;  console.log(a); \/\/蘋果 } fn1();  \/** 範例二 **\/ let a; function fn1(){  a = \u0026#34;蘋果\u0026#34;; } fn1(); console.log(a); \/\/蘋果      if、else if、else   適合判斷式數值，限制範圍。    一律使用 if 開頭，若不成立，則往下執行。    可以使用多個 else if ，若不成立，則往下執行。    若以上都不成立則執行 else 。   1 2 3 4 5 6 7 8 9 10 11 12 13 14  let hungry = 5; \/\/飢餓程度1~10 function eat(food){  console.",
   "inLanguage" : "zh-tw",
   "wordCount":  650 ,
   "datePublished" : "2021-02-15T00:00:00",
@@ -88,7 +88,7 @@
   <meta name="twitter:description" content="全域變數、區域變數、if、else if、else、switch、for、array、object、JSON">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.95.0" />
   <link rel="alternate" href="https://jack842248.github.io/index.xml" type="application/rss+xml" title="Jack Huang Blog"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://jack842248.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -334,39 +334,39 @@ if (!doNotTrack) {
 <li>在function外的變數稱為，全域變數。(範例二)</li>
 </ul>
 <h1 id="heading-4"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 範例一 **/</span>
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(){
-    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//蘋果
-</span><span style="color:#75715e"></span>}
-<span style="color:#a6e22e">fn1</span>();
-
-<span style="color:#75715e">/** 範例二 **/</span>
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span>;
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(){
-    <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
-}
-<span style="color:#a6e22e">fn1</span>();
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//蘋果
-</span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">/** 範例一 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//蘋果
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fn1</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/** 範例二 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fn1</span>();
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//蘋果
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-5"></h1>
 <hr>
@@ -389,39 +389,39 @@ if (!doNotTrack) {
 <li>若以上都不成立則執行 <strong>else</strong> 。</li>
 </ul>
 <h1 id="heading-11"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hungry</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
-<span style="color:#75715e">//飢餓程度1~10
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">eat</span>(<span style="color:#a6e22e">food</span>){
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我想要吃&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">food</span>);
-}
-<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">hungry</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">3</span>){
-    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;薯條&#34;</span>);
-}<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">hungry</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">hungry</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">5</span>){
-    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;漢堡&#34;</span>);  <span style="color:#75715e">//我現在要吃漢堡
-</span><span style="color:#75715e"></span>}<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">hungry</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">8</span>){
-    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;炸雞&#34;</span>);
-}<span style="color:#66d9ef">else</span>{
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我不想吃東西&#34;</span>);
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hungry</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//飢餓程度1~10
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">eat</span>(<span style="color:#a6e22e">food</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我想要吃&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">food</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">hungry</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">3</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;薯條&#34;</span>);
+</span></span><span style="display:flex;"><span>}<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">hungry</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">hungry</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">5</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;漢堡&#34;</span>);  <span style="color:#75715e">//我現在要吃漢堡
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">hungry</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">8</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;炸雞&#34;</span>);
+</span></span><span style="display:flex;"><span>}<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我不想吃東西&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-12"></h1>
 <hr>
@@ -444,49 +444,49 @@ if (!doNotTrack) {
 <li>若都不成立則執行 <strong>default</strong> 。</li>
 </ul>
 <h1 id="heading-18"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hungry</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
-<span style="color:#75715e">//飢餓程度1~10
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">eat</span>(<span style="color:#a6e22e">food</span>){
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我想要吃&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">food</span>);
-}
-<span style="color:#66d9ef">switch</span>(<span style="color:#a6e22e">hungry</span>){
-  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span>
-    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;薯條&#34;</span>);
-    <span style="color:#66d9ef">break</span>;
-  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span>
-    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;漢堡&#34;</span>);  <span style="color:#75715e">//我想要吃漢堡
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">break</span>;
-  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span>
-    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;炸雞&#34;</span>);
-    <span style="color:#66d9ef">break</span>;
-  <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我不想吃東西&#34;</span>);
-    <span style="color:#66d9ef">break</span>;
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hungry</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//飢餓程度1~10
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">eat</span>(<span style="color:#a6e22e">food</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我想要吃&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">food</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">switch</span>(<span style="color:#a6e22e">hungry</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;薯條&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;漢堡&#34;</span>);  <span style="color:#75715e">//我想要吃漢堡
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">eat</span>(<span style="color:#e6db74">&#34;炸雞&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;我不想吃東西&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-19"></h1>
 <hr>
@@ -513,105 +513,105 @@ if (!doNotTrack) {
 <li>for + break。(範例五)</li>
 </ul>
 <h1 id="heading-26"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fruits</span><span style="color:#f92672">=</span>[
-  {
-    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>,
-    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>,
-    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;美國&#34;</span>,<span style="color:#e6db74">&#34;日本&#34;</span>] 
-  },
-  {
-    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>,
-    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>,
-    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;台灣&#34;</span>,<span style="color:#e6db74">&#34;泰國&#34;</span>] 
-  },
-  {
-    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;鳳梨&#34;</span>,
-    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>,
-    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;夏威夷&#34;</span>,<span style="color:#e6db74">&#34;新加玻&#34;</span>] 
-  },
-]
-
-<span style="color:#75715e">/** 範例一 **/</span>
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">prod</span>[<span style="color:#ae81ff">0</span>]);  <span style="color:#75715e">//台灣
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">/** 範例二 **/</span>
-<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span>);  <span style="color:#75715e">//蘋果  //香蕉  //鳳梨
-</span><span style="color:#75715e"></span>}
-
-<span style="color:#75715e">/** 範例三 **/</span>
-<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
-  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">amount</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">300</span>){
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span>);  <span style="color:#75715e">//鳳梨
-</span><span style="color:#75715e"></span>  }
-}
-
-<span style="color:#75715e">/** 範例四 **/</span>
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
-  <span style="color:#a6e22e">total</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">amount</span>;
-}
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>);  <span style="color:#75715e">//900
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">/** 範例五 **/</span>
-<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
-  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">amount</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">50</span>){
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span>);  <span style="color:#75715e">//蘋果
-</span><span style="color:#75715e"></span>  }
-  <span style="color:#66d9ef">break</span>;
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fruits</span><span style="color:#f92672">=</span>[
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;美國&#34;</span>,<span style="color:#e6db74">&#34;日本&#34;</span>] 
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;台灣&#34;</span>,<span style="color:#e6db74">&#34;泰國&#34;</span>] 
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;鳳梨&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;夏威夷&#34;</span>,<span style="color:#e6db74">&#34;新加玻&#34;</span>] 
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/** 範例一 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">prod</span>[<span style="color:#ae81ff">0</span>]);  <span style="color:#75715e">//台灣
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/** 範例二 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span>);  <span style="color:#75715e">//蘋果  //香蕉  //鳳梨
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/** 範例三 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">amount</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">300</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span>);  <span style="color:#75715e">//鳳梨
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/** 範例四 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">total</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">amount</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>);  <span style="color:#75715e">//900
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/** 範例五 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">amount</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">50</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span>);  <span style="color:#75715e">//蘋果
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-27"></h1>
 <hr>
@@ -630,25 +630,25 @@ if (!doNotTrack) {
 <li>將資料複製到js。</li>
 </ol>
 <h1 id="heading-32"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> [<span style="color:#a6e22e">貼上JSON資料</span>];
-
-<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
-  <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">data</span>[<span style="color:#a6e22e">i</span>][<span style="color:#e6db74">&#34;行政區&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;岡山區&#34;</span> ){
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>( <span style="color:#a6e22e">data</span>[<span style="color:#a6e22e">i</span>][<span style="color:#e6db74">&#34;臨時停車處所&#34;</span>] );
-  }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> [<span style="color:#a6e22e">貼上JSON資料</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>( <span style="color:#a6e22e">data</span>[<span style="color:#a6e22e">i</span>][<span style="color:#e6db74">&#34;行政區&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;岡山區&#34;</span> ){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>( <span style="color:#a6e22e">data</span>[<span style="color:#a6e22e">i</span>][<span style="color:#e6db74">&#34;臨時停車處所&#34;</span>] );
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-33"></h1>
 <hr>
@@ -661,33 +661,33 @@ if (!doNotTrack) {
 <p>顧客: 我有。</p>
 </blockquote>
 <h1 id="heading-35"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">isVIP</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
-<span style="color:#75715e">//是否為VIP會員
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myBill</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1200</span>;
-<span style="color:#75715e">//消費帳單金額
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">checkAll</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">isVIP</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">myBill</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">1000</span>;
-<span style="color:#75715e">//檢查兩樣是否都符合
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkAll</span>);  <span style="color:#75715e">//false
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">checkAllagain</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">isVIP</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">myBill</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">1000</span>;
-<span style="color:#75715e">//檢查兩樣是否其中一項符合
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkAllagain</span>);  <span style="color:#75715e">//true
-</span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">isVIP</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//是否為VIP會員
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myBill</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1200</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//消費帳單金額
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">checkAll</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">isVIP</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">myBill</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">1000</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//檢查兩樣是否都符合
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkAll</span>);  <span style="color:#75715e">//false
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">checkAllagain</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">isVIP</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">myBill</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">1000</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//檢查兩樣是否其中一項符合
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkAllagain</span>);  <span style="color:#75715e">//true
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-36"></h1>
 <hr>
@@ -700,41 +700,41 @@ if (!doNotTrack) {
 <p>顧客:是。</p>
 </blockquote>
 <h1 id="heading-38"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myMonth</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
-<span style="color:#75715e">//顧客的生日月份
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nowMonth</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
-<span style="color:#75715e">//現在的月份
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">checkBirthday</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">myMonth</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">nowMonth</span>;
-<span style="color:#75715e">//檢查月份是否相符
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkBirthday</span>);  <span style="color:#75715e">//false
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nowPeople</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
-<span style="color:#75715e">//目前人數
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span>  <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
-<span style="color:#75715e">//預定人數
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">checkPeople</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nowPeople</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">totalPeople</span> 
-<span style="color:#75715e">//目前人數是不是不等於預定人數
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkPeople</span>);  <span style="color:#75715e">//true
-</span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myMonth</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//顧客的生日月份
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nowMonth</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//現在的月份
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">checkBirthday</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">myMonth</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">nowMonth</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//檢查月份是否相符
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkBirthday</span>);  <span style="color:#75715e">//false
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nowPeople</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//目前人數
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span>  <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//預定人數
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">checkPeople</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nowPeople</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">totalPeople</span> 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//目前人數是不是不等於預定人數
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">checkPeople</span>);  <span style="color:#75715e">//true
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-39"></h1>
 <hr>
@@ -757,51 +757,51 @@ if (!doNotTrack) {
 <li>函式寫法 + return。(範例三)</li>
 </ul>
 <h1 id="heading-44"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/** 範例一 **/</span>
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">humPrice</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>;
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">cokePrice</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">humPrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">+</span> (<span style="color:#a6e22e">cokePrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>);
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>);  <span style="color:#75715e">//310
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">/** 範例二 **/</span>
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#a6e22e">humPrice</span>,<span style="color:#a6e22e">cokePrice</span>){
-    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">humPrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">+</span> (<span style="color:#a6e22e">cokePrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>);
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>);  <span style="color:#75715e">//310
-</span><span style="color:#75715e"></span>}
-<span style="color:#a6e22e">fn1</span>(<span style="color:#ae81ff">50</span>,<span style="color:#ae81ff">20</span>);
-
-<span style="color:#75715e">/** 範例三 **/</span>
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#a6e22e">humPrice</span>,<span style="color:#a6e22e">cokePrice</span>){
-    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">humPrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">+</span> (<span style="color:#a6e22e">cokePrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>);
-    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">total</span>;  
-}
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#ae81ff">50</span>,<span style="color:#ae81ff">20</span>);  
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//310
-</span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">/** 範例一 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">humPrice</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">cokePrice</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">humPrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">+</span> (<span style="color:#a6e22e">cokePrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>);  <span style="color:#75715e">//310
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/** 範例二 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#a6e22e">humPrice</span>,<span style="color:#a6e22e">cokePrice</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">humPrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">+</span> (<span style="color:#a6e22e">cokePrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>);  <span style="color:#75715e">//310
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fn1</span>(<span style="color:#ae81ff">50</span>,<span style="color:#ae81ff">20</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/** 範例三 **/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#a6e22e">humPrice</span>,<span style="color:#a6e22e">cokePrice</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">humPrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">+</span> (<span style="color:#a6e22e">cokePrice</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">total</span>;  
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fn1</span>(<span style="color:#ae81ff">50</span>,<span style="color:#ae81ff">20</span>);  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>);  <span style="color:#75715e">//310
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-45"></h1>
 <ul>
@@ -825,53 +825,53 @@ if (!doNotTrack) {
 </li>
 </ul>
 <h1 id="heading-46"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// &lt;-----html-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">span</span> <span style="color:#a6e22e">漢堡</span>
-  <span style="color:#a6e22e">input</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">hamNum</span>(<span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:30px&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>)
-<span style="color:#a6e22e">span</span> <span style="color:#a6e22e">個</span><span style="color:#960050;background-color:#1e0010">，</span>
-<span style="color:#a6e22e">span</span> <span style="color:#a6e22e">可樂</span>
-  <span style="color:#a6e22e">input</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">cokeNum</span>(<span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:30px&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>)
-<span style="color:#a6e22e">span</span> <span style="color:#a6e22e">個</span><span style="color:#960050;background-color:#1e0010">，</span>
-<span style="color:#a6e22e">input</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">calBtn</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;計算&#34;</span>)
-<span style="color:#a6e22e">span</span> <span style="color:#a6e22e">總共是</span><span style="color:#f92672">:</span>
-  <span style="color:#a6e22e">span</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">total</span>
-<span style="color:#a6e22e">span</span> <span style="color:#a6e22e">元</span>
-
-<span style="color:#75715e">// &lt;-----js-----&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">calBtn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;calBtn&#34;</span>);
-<span style="color:#a6e22e">calBtn</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hamNum</span> <span style="color:#f92672">=</span> parseInt(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;hamNum&#34;</span>).<span style="color:#a6e22e">value</span>);
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">cokeNum</span> <span style="color:#f92672">=</span> parseInt(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;cokeNum&#34;</span>).<span style="color:#a6e22e">value</span>);
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">totalPrice</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">hamNum</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">50</span>) <span style="color:#f92672">+</span> (<span style="color:#a6e22e">cokeNum</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">20</span>);
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;total&#34;</span>);
-  <span style="color:#a6e22e">total</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">totalPrice</span>;
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----html-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">span</span> <span style="color:#a6e22e">漢堡</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">input</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">hamNum</span>(<span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:30px&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">span</span> <span style="color:#a6e22e">個</span><span style="color:#960050;background-color:#1e0010">，</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">span</span> <span style="color:#a6e22e">可樂</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">input</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">cokeNum</span>(<span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:30px&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">span</span> <span style="color:#a6e22e">個</span><span style="color:#960050;background-color:#1e0010">，</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">input</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">calBtn</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;計算&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">span</span> <span style="color:#a6e22e">總共是</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">span</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">total</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">span</span> <span style="color:#a6e22e">元</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">calBtn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;calBtn&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">calBtn</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hamNum</span> <span style="color:#f92672">=</span> parseInt(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;hamNum&#34;</span>).<span style="color:#a6e22e">value</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">cokeNum</span> <span style="color:#f92672">=</span> parseInt(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;cokeNum&#34;</span>).<span style="color:#a6e22e">value</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">totalPrice</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">hamNum</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">50</span>) <span style="color:#f92672">+</span> (<span style="color:#a6e22e">cokeNum</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">20</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;total&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">total</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">totalPrice</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-47"></h1>
 <blockquote>
@@ -956,13 +956,13 @@ if (!doNotTrack) {
                 
                     <li><a href="/post/2021-02-24-javascript%E5%B0%81%E8%A3%9Dajax%E8%AB%8B%E6%B1%82/">JavaScript—封裝AJAX請求</a></li>
                 
+                    <li><a href="/post/2021-03-01-photoshop%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5/">PhotoShop—常用快捷鍵</a></li>
+                
                     <li><a href="/post/2021-02-23-javascript%E6%93%8D%E4%BD%9Carray%E6%96%B9%E6%B3%95/">JavaScript—操作Array方法</a></li>
                 
                     <li><a href="/post/2021-02-22-javascriptchrome-devtools/">Chrome devtools除錯</a></li>
                 
                     <li><a href="/post/2021-02-21-javascriptgoogle-maps-api/">JavaScript—Google Maps API</a></li>
-                
-                    <li><a href="/post/2021-02-20-javascript%E7%99%BC%E9%80%81ajax%E8%AB%8B%E6%B1%82/">JavaScript—發送AJAX請求</a></li>
                 
               </ul>
 
@@ -974,7 +974,7 @@ if (!doNotTrack) {
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2021-02-09-vue%E6%A8%A1%E6%9D%BF%E6%8F%92%E6%A7%BD/" data-toggle="tooltip" data-placement="top" title="模板插槽">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2021-02-09-vue%E5%85%83%E4%BB%B6%E7%9A%84%E5%88%87%E6%8F%9B%E8%88%87%E6%8F%92%E6%A7%BD/" data-toggle="tooltip" data-placement="top" title="Vue—元件的切換與插槽">&larr; 上一篇</a>
             </li>
           
           
@@ -1077,7 +1077,7 @@ if (!doNotTrack) {
         </p>
         
         <p class="credits theme-by text-muted">
-          由 <a href="https://gohugo.io">Hugo v0.80.0</a> 提供 &nbsp;&bull;&nbsp; 主題 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 移植自 <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          由 <a href="https://gohugo.io">Hugo v0.95.0</a> 提供 &nbsp;&bull;&nbsp; 主題 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 移植自 <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
