@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSS on Jack Huang Blog</title>
+    <link>https://jack842248.github.io/tags/css/</link>
+    <description>Recent content in CSS on Jack Huang Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
+    <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
+    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS—樣式大全</title>
+      <link>https://jack842248.github.io/post/2022-04-05-cssrwd%E9%9F%BF%E6%87%89%E5%BC%8F/</link>
+      <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-05-cssrwd%E9%9F%BF%E6%87%89%E5%BC%8F/</guid>
+      <description>  螢幕大小設定  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  /*設定當螢幕寬度在0px~600px時*/ @media screen and(max-width:600px){  body{  background-color:red;  } } /*設定當螢幕寬度在600px以上，1000px以下時*/ @media screen and (min-width:600px) and (max-width:1000px){  body{  background-color:green;  } } /*設定當螢幕寬度在1000px以上，1920px以下時*/ @media screen and (min-width:1000px) and (max-width:1920px){  body{  background-color:blue;  } }   </description>
+    </item>
+    
+    <item>
+      <title>CSS—樣式大全2</title>
+      <link>https://jack842248.github.io/post/2022-04-04-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A82/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-04-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A82/</guid>
+      <description>連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  /*設定尚未點擊的連結*/ } a:visited{  /*設定已經點擊過後的連結*/ } a:hover{  /*設定游標移入時的連結*/ } a:active{  /*設定游標點擊時的連結*/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29  li{  list-style-type:disc/circle/square/upper-latin/lower-latin/upper-roman/lower-roman/none;  /*黑圓點/黑圓圈/黑方塊/大寫英文/小寫英文/大寫羅馬文/小寫羅馬文/不顯示*/  list-style-image:url(&amp;#34;連結網址&amp;#34;); /*崁入清單樣式*/  list-style-position:outside/inside; /*圖樣在元素外/圖樣在元素內*/  list-style:circle inside; /*清單樣式/圖樣位置*/   &amp;amp;::before{ /*設定在元素之前*/  display:block/inline/inline-block;  content:&amp;#34;&amp;#34;; /*可輸入UTF-8字符或文字或留白*/  position:relative/absolute;  }   &amp;amp;::after{ /*設定在元素之後*/  display:block/inline/inline-block;  content:&amp;#34;&amp;#34;; /*可輸入UTF-8字符或文字或留白*/  position:relative/absolute;  }   /*載入Font Awesome icon*/  &amp;amp;::before{  font-family:&amp;#34;Font Awesome 5 Free&amp;#34;;  content:&amp;#34;\f0e0&amp;#34;;  font-weight:&amp;#34;900&amp;#34;;  font-size:24px;  position:relative/absolute;  z-index:20;  } }      表格  1 2 3 4 5 6  table{   border-collapse:separate/collapse; /*雙線條/單線條*/  border-spacing:20px; /*調整separate雙線條的間距*/  table-layout:fixed; }      按鈕  1 2 3 4 5  button{  cursor:default/pointer/text/progress/wait/cell/crosshair/grab/move/none;  /*預設游標/點擊手指/文字輸入/等待＋預設游標/等待/新增(+)/十字/手掌/方向/不顯示*/  pointer-events:none; 避免空選 }      圖片  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22  img{  width:50px; /*設定寬度*/  height:30px; /*設定高度*/  max-width:200px; /*設定最大寬度*/  max-height:100px; /*設定最大高度*/  min-width:50px; /*設定最小寬度*/  min-height:30px; /*設定最小高度*/   /*自適應圖片*/  width:100%;  height:auto;   /*圖片被文字圍繞*/  float:left/right; /*浮動位置*/  clear:left/right/both; /*左浮動取消/右浮動取消/左右都取消*/  /* 1.</description>
+    </item>
+    
+    <item>
+      <title>CSS—樣式大全</title>
+      <link>https://jack842248.github.io/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A8/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A8/</guid>
+      <description>樣式選擇器及規則  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  p{  /*選擇&amp;lt;p&amp;gt;標籤屬性*/ }  *{  /*對所有標籤進行樣式設定*/ }  .box{  /*選擇&amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt;標籤屬性*/ }  #box{  /*選擇&amp;lt;div id=&amp;#34;box&amp;#34;&amp;gt;標籤屬性*/ } /* 1.後面的樣式會覆蓋前面的樣式 2.加入『!important』樣式優先 */      文字  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  .</description>
+    </item>
+    
+  </channel>
+</rss>
