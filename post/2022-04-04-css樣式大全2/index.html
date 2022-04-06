@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>CSS—樣式大全2 - Jack Huang Blog</title>
-  <meta name="description" content="連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  /*設定尚未點擊的連結*/ } a:visited{  /*設定已經點擊過後的連結*/ } a:hover{  /*設定游標移入時的連結*/ } a:active{  /*設定游標點擊時的連結*/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29  li{  list-style-type:disc/circle/square/upper-latin/lower-latin/upper-roman/lower-roman/none;  /*黑圓點/黑圓圈/黑方塊/大寫英文/小寫英文/大寫羅馬文/小寫羅馬文/不顯示*/  list-style-image:url(&#34;連結網址&#34;); /*崁入清單樣式*/  list-style-position:outside/inside; /*圖樣在元素外/圖樣在元素內*/  list-style:circle inside; /*清單樣式/圖樣位置*/   &amp;::before{ /*設定在元素之前*/  display:block/inline/inline-block;  content:&#34;&#34;; /*可輸入UTF-8字符或文字或留白*/  position:relative/absolute;  }   &amp;::after{ /*設定在元素之後*/  display:block/inline/inline-block;  content:&#34;&#34;; /*可輸入UTF-8字符或文字或留白*/  position:relative/absolute;  }   /*載入Font Awesome icon*/  &amp;::before{  font-family:&#34;Font Awesome 5 Free&#34;;  content:&#34;\f0e0&#34;;  font-weight:&#34;900&#34;;  font-size:24px;  position:relative/absolute;  z-index:20;  } }      表格  1 2 3 4 5 6  table{   border-collapse:separate/collapse; /*雙線條/單線條*/  border-spacing:20px; /*調整separate雙線條的間距*/  table-layout:fixed; }      按鈕  1 2 3 4 5  button{  cursor:default/pointer/text/progress/wait/cell/crosshair/grab/move/none;  /*預設游標/點擊手指/文字輸入/等待＋預設游標/等待/新增(&#43;)/十字/手掌/方向/不顯示*/  pointer-events:none; 避免空選 }      圖片  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22  img{  width:50px; /*設定寬度*/  height:30px; /*設定高度*/  max-width:200px; /*設定最大寬度*/  max-height:100px; /*設定最大高度*/  min-width:50px; /*設定最小寬度*/  min-height:30px; /*設定最小高度*/   /*自適應圖片*/  width:100%;  height:auto;   /*圖片被文字圍繞*/  float:left/right; /*浮動位置*/  clear:left/right/both; /*左浮動取消/右浮動取消/左右都取消*/  /* 1.">
+  <meta name="description" content="連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  /*設定尚未點擊的連結*/ } a:visited{  /*設定已經點擊過後的連結*/ } a:hover{  /*設定游標移入時的連結*/ } a:active{  /*設定游標點擊時的連結*/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  li{  list-style-type:disc/circle/square/upper-latin/lower-latin/upper-roman/lower-roman/none;  /*黑圓點/黑圓圈/黑方塊/大寫英文/小寫英文/大寫羅馬文/小寫羅馬文/不顯示*/  list-style-image:url(&#34;連結網址&#34;); /*崁入清單樣式*/  list-style-position:outside/inside; /*圖樣在元素外/圖樣在元素內*/  list-style:circle inside; /*清單樣式/圖樣位置*/ }  /*UTF-8字符取代清單樣式*/ li{  list-style:none; } li::before{  display:inline-block;  content:&#34;⇦&#34;; }      表格  1 2 3 4 5  table{  border-collapse:separate/collapse; /*分開(雙線條)/合併(單線條)*/  border-spacing:20px; /*調整separate雙線條的間距*/  table-layout:auto/fixed; /*表格固定寬度/表格寬度隨內容改變*/ }      按鈕  1 2 3 4 5  button{  cursor:default/pointer/text/progress/wait/cell/crosshair/grab/move/none;  /*預設游標/點擊手指/文字輸入/等待＋預設游標/等待/新增(&#43;)/十字/手掌/方向/不顯示*/  pointer-events:none; 避免空選 }    搭配::hover來增加效果">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "CSS—樣式大全2",
-  "description" : "連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  \/*設定尚未點擊的連結*\/ } a:visited{  \/*設定已經點擊過後的連結*\/ } a:hover{  \/*設定游標移入時的連結*\/ } a:active{  \/*設定游標點擊時的連結*\/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29  li{  list-style-type:disc\/circle\/square\/upper-latin\/lower-latin\/upper-roman\/lower-roman\/none;  \/*黑圓點\/黑圓圈\/黑方塊\/大寫英文\/小寫英文\/大寫羅馬文\/小寫羅馬文\/不顯示*\/  list-style-image:url(\u0026#34;連結網址\u0026#34;); \/*崁入清單樣式*\/  list-style-position:outside\/inside; \/*圖樣在元素外\/圖樣在元素內*\/  list-style:circle inside; \/*清單樣式\/圖樣位置*\/   \u0026amp;::before{ \/*設定在元素之前*\/  display:block\/inline\/inline-block;  content:\u0026#34;\u0026#34;; \/*可輸入UTF-8字符或文字或留白*\/  position:relative\/absolute;  }   \u0026amp;::after{ \/*設定在元素之後*\/  display:block\/inline\/inline-block;  content:\u0026#34;\u0026#34;; \/*可輸入UTF-8字符或文字或留白*\/  position:relative\/absolute;  }   \/*載入Font Awesome icon*\/  \u0026amp;::before{  font-family:\u0026#34;Font Awesome 5 Free\u0026#34;;  content:\u0026#34;\\f0e0\u0026#34;;  font-weight:\u0026#34;900\u0026#34;;  font-size:24px;  position:relative\/absolute;  z-index:20;  } }      表格  1 2 3 4 5 6  table{   border-collapse:separate\/collapse; \/*雙線條\/單線條*\/  border-spacing:20px; \/*調整separate雙線條的間距*\/  table-layout:fixed; }      按鈕  1 2 3 4 5  button{  cursor:default\/pointer\/text\/progress\/wait\/cell\/crosshair\/grab\/move\/none;  \/*預設游標\/點擊手指\/文字輸入\/等待＋預設游標\/等待\/新增(\u002b)\/十字\/手掌\/方向\/不顯示*\/  pointer-events:none; 避免空選 }      圖片  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22  img{  width:50px; \/*設定寬度*\/  height:30px; \/*設定高度*\/  max-width:200px; \/*設定最大寬度*\/  max-height:100px; \/*設定最大高度*\/  min-width:50px; \/*設定最小寬度*\/  min-height:30px; \/*設定最小高度*\/   \/*自適應圖片*\/  width:100%;  height:auto;   \/*圖片被文字圍繞*\/  float:left\/right; \/*浮動位置*\/  clear:left\/right\/both; \/*左浮動取消\/右浮動取消\/左右都取消*\/  \/* 1.",
+  "description" : "連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  \/*設定尚未點擊的連結*\/ } a:visited{  \/*設定已經點擊過後的連結*\/ } a:hover{  \/*設定游標移入時的連結*\/ } a:active{  \/*設定游標點擊時的連結*\/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  li{  list-style-type:disc\/circle\/square\/upper-latin\/lower-latin\/upper-roman\/lower-roman\/none;  \/*黑圓點\/黑圓圈\/黑方塊\/大寫英文\/小寫英文\/大寫羅馬文\/小寫羅馬文\/不顯示*\/  list-style-image:url(\u0026#34;連結網址\u0026#34;); \/*崁入清單樣式*\/  list-style-position:outside\/inside; \/*圖樣在元素外\/圖樣在元素內*\/  list-style:circle inside; \/*清單樣式\/圖樣位置*\/ }  \/*UTF-8字符取代清單樣式*\/ li{  list-style:none; } li::before{  display:inline-block;  content:\u0026#34;⇦\u0026#34;; }      表格  1 2 3 4 5  table{  border-collapse:separate\/collapse; \/*分開(雙線條)\/合併(單線條)*\/  border-spacing:20px; \/*調整separate雙線條的間距*\/  table-layout:auto\/fixed; \/*表格固定寬度\/表格寬度隨內容改變*\/ }      按鈕  1 2 3 4 5  button{  cursor:default\/pointer\/text\/progress\/wait\/cell\/crosshair\/grab\/move\/none;  \/*預設游標\/點擊手指\/文字輸入\/等待＋預設游標\/等待\/新增(\u002b)\/十字\/手掌\/方向\/不顯示*\/  pointer-events:none; 避免空選 }    搭配::hover來增加效果",
   "inLanguage" : "zh-tw",
-  "wordCount":  246 ,
+  "wordCount":  269 ,
   "datePublished" : "2022-04-04T00:00:00",
   "dateModified" : "2022-04-04T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -79,13 +79,13 @@
 </script>
 
 <meta property="og:title" content="CSS—樣式大全2" />
-<meta property="og:description" content="連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  /*設定尚未點擊的連結*/ } a:visited{  /*設定已經點擊過後的連結*/ } a:hover{  /*設定游標移入時的連結*/ } a:active{  /*設定游標點擊時的連結*/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29  li{  list-style-type:disc/circle/square/upper-latin/lower-latin/upper-roman/lower-roman/none;  /*黑圓點/黑圓圈/黑方塊/大寫英文/小寫英文/大寫羅馬文/小寫羅馬文/不顯示*/  list-style-image:url(&#34;連結網址&#34;); /*崁入清單樣式*/  list-style-position:outside/inside; /*圖樣在元素外/圖樣在元素內*/  list-style:circle inside; /*清單樣式/圖樣位置*/   &amp;::before{ /*設定在元素之前*/  display:block/inline/inline-block;  content:&#34;&#34;; /*可輸入UTF-8字符或文字或留白*/  position:relative/absolute;  }   &amp;::after{ /*設定在元素之後*/  display:block/inline/inline-block;  content:&#34;&#34;; /*可輸入UTF-8字符或文字或留白*/  position:relative/absolute;  }   /*載入Font Awesome icon*/  &amp;::before{  font-family:&#34;Font Awesome 5 Free&#34;;  content:&#34;\f0e0&#34;;  font-weight:&#34;900&#34;;  font-size:24px;  position:relative/absolute;  z-index:20;  } }      表格  1 2 3 4 5 6  table{   border-collapse:separate/collapse; /*雙線條/單線條*/  border-spacing:20px; /*調整separate雙線條的間距*/  table-layout:fixed; }      按鈕  1 2 3 4 5  button{  cursor:default/pointer/text/progress/wait/cell/crosshair/grab/move/none;  /*預設游標/點擊手指/文字輸入/等待＋預設游標/等待/新增(&#43;)/十字/手掌/方向/不顯示*/  pointer-events:none; 避免空選 }      圖片  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22  img{  width:50px; /*設定寬度*/  height:30px; /*設定高度*/  max-width:200px; /*設定最大寬度*/  max-height:100px; /*設定最大高度*/  min-width:50px; /*設定最小寬度*/  min-height:30px; /*設定最小高度*/   /*自適應圖片*/  width:100%;  height:auto;   /*圖片被文字圍繞*/  float:left/right; /*浮動位置*/  clear:left/right/both; /*左浮動取消/右浮動取消/左右都取消*/  /* 1.">
+<meta property="og:description" content="連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  /*設定尚未點擊的連結*/ } a:visited{  /*設定已經點擊過後的連結*/ } a:hover{  /*設定游標移入時的連結*/ } a:active{  /*設定游標點擊時的連結*/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  li{  list-style-type:disc/circle/square/upper-latin/lower-latin/upper-roman/lower-roman/none;  /*黑圓點/黑圓圈/黑方塊/大寫英文/小寫英文/大寫羅馬文/小寫羅馬文/不顯示*/  list-style-image:url(&#34;連結網址&#34;); /*崁入清單樣式*/  list-style-position:outside/inside; /*圖樣在元素外/圖樣在元素內*/  list-style:circle inside; /*清單樣式/圖樣位置*/ }  /*UTF-8字符取代清單樣式*/ li{  list-style:none; } li::before{  display:inline-block;  content:&#34;⇦&#34;; }      表格  1 2 3 4 5  table{  border-collapse:separate/collapse; /*分開(雙線條)/合併(單線條)*/  border-spacing:20px; /*調整separate雙線條的間距*/  table-layout:auto/fixed; /*表格固定寬度/表格寬度隨內容改變*/ }      按鈕  1 2 3 4 5  button{  cursor:default/pointer/text/progress/wait/cell/crosshair/grab/move/none;  /*預設游標/點擊手指/文字輸入/等待＋預設游標/等待/新增(&#43;)/十字/手掌/方向/不顯示*/  pointer-events:none; 避免空選 }    搭配::hover來增加效果">
 <meta property="og:url" content="https://jack842248.github.io/post/2022-04-04-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A82/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
   <meta name="twitter:title" content="CSS—樣式大全2" />
-  <meta name="twitter:description" content="連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  /*設定尚未點擊的連結*/ } a:visited{  /*設定已經點擊過後的連結*/ } a:hover{  /*設定游標移入時的連結*/ } a:active{  /*設定游標點擊時的連結*/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 …">
+  <meta name="twitter:description" content="連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  /*設定尚未點擊的連結*/ } a:visited{  /*設定已經點擊過後的連結*/ } a:hover{  /*設定游標移入時的連結*/ } a:active{  /*設定游標點擊時的連結*/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  li{ …">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.95.0" />
@@ -256,7 +256,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;246&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;269&nbsp;個字
   
   
   
@@ -291,7 +291,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;246&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;269&nbsp;個字
   
   
   
@@ -369,19 +369,6 @@ if (!doNotTrack) {
 </span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
 </span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
 </span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">li</span>{
@@ -390,29 +377,16 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">list-style-image</span>:url(<span style="color:#e6db74">&#34;連結網址&#34;</span>); <span style="color:#75715e">/*崁入清單樣式*/</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">list-style-position</span>:<span style="color:#66d9ef">outside</span><span style="color:#f92672">/</span><span style="color:#66d9ef">inside</span>; <span style="color:#75715e">/*圖樣在元素外/圖樣在元素內*/</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">list-style</span>:<span style="color:#66d9ef">circle</span> <span style="color:#66d9ef">inside</span>; <span style="color:#75715e">/*清單樣式/圖樣位置*/</span>
+</span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">&amp;::before{</span> <span style="color:#75715e">/*設定在元素之前*/</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">block</span><span style="color:#f92672">/</span><span style="color:#66d9ef">inline</span><span style="color:#f92672">/</span><span style="color:#66d9ef">inline-block</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">content</span>:<span style="color:#e6db74">&#34;&#34;</span>; <span style="color:#75715e">/*可輸入UTF-8字符或文字或留白*/</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">relative</span><span style="color:#f92672">/</span><span style="color:#66d9ef">absolute</span>;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&amp;</span>::<span style="color:#a6e22e">after</span>{ <span style="color:#75715e">/*設定在元素之後*/</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">block</span><span style="color:#f92672">/</span><span style="color:#66d9ef">inline</span><span style="color:#f92672">/</span><span style="color:#66d9ef">inline-block</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">content</span>:<span style="color:#e6db74">&#34;&#34;</span>; <span style="color:#75715e">/*可輸入UTF-8字符或文字或留白*/</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">relative</span><span style="color:#f92672">/</span><span style="color:#66d9ef">absolute</span>;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*載入Font Awesome icon*/</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&amp;</span>::<span style="color:#a6e22e">before</span>{ 
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">font-family</span>:<span style="color:#e6db74">&#34;Font Awesome 5 Free&#34;</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">content</span>:<span style="color:#e6db74">&#34;\f0e0&#34;</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">font-weight</span>:<span style="color:#e6db74">&#34;900&#34;</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">font-size</span>:<span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">relative</span><span style="color:#f92672">/</span><span style="color:#66d9ef">absolute</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">z-index</span>:<span style="color:#ae81ff">20</span>;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/*UTF-8字符取代清單樣式*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">li</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">list-style</span>:<span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">li</span>::<span style="color:#a6e22e">before</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">inline-block</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">content</span>:<span style="color:#e6db74">&#34;⇦&#34;</span>;
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-5"></h1>
@@ -427,14 +401,12 @@ if (!doNotTrack) {
 </span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">table</span>{
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border-collapse</span>:<span style="color:#66d9ef">separate</span><span style="color:#f92672">/</span><span style="color:#66d9ef">collapse</span>; <span style="color:#75715e">/*雙線條/單線條*/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border-collapse</span>:<span style="color:#66d9ef">separate</span><span style="color:#f92672">/</span><span style="color:#66d9ef">collapse</span>; <span style="color:#75715e">/*分開(雙線條)/合併(單線條)*/</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border-spacing</span>:<span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/*調整separate雙線條的間距*/</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">table-layout</span>:<span style="color:#66d9ef">fixed</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">table-layout</span>:<span style="color:#66d9ef">auto</span><span style="color:#f92672">/</span><span style="color:#66d9ef">fixed</span>; <span style="color:#75715e">/*表格固定寬度/表格寬度隨內容改變*/</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
@@ -460,10 +432,12 @@ if (!doNotTrack) {
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-11"></h1>
-<hr>
+<p><code>搭配::hover來增加效果</code></p>
 <h1 id="heading-12"></h1>
-<h2 id="圖片">圖片</h2>
+<hr>
 <h1 id="heading-13"></h1>
+<h2 id="圖片">圖片</h2>
+<h1 id="heading-14"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -497,12 +471,6 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">max-height</span>:<span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/*設定最大高度*/</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-width</span>:<span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/*設定最小寬度*/</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-height</span>:<span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/*設定最小高度*/</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*自適應圖片*/</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>:<span style="color:#66d9ef">auto</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*圖片被文字圍繞*/</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span>:<span style="color:#66d9ef">left</span><span style="color:#f92672">/</span><span style="color:#66d9ef">right</span>; <span style="color:#75715e">/*浮動位置*/</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">clear</span>:<span style="color:#66d9ef">left</span><span style="color:#f92672">/</span><span style="color:#66d9ef">right</span><span style="color:#f92672">/</span><span style="color:#66d9ef">both</span>; <span style="color:#75715e">/*左浮動取消/右浮動取消/左右都取消*/</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*
@@ -512,13 +480,19 @@ if (!doNotTrack) {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">    4.若要取消浮動在浮動的最後元後後面加上.clearfix
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">    */</span>
 </span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/*自適應圖片*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">img</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>:<span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-14"></h1>
+</div><h1 id="heading-15"></h1>
 <hr>
-<h1 id="heading-15"></h1>
-<h2 id="輸入框">輸入框</h2>
 <h1 id="heading-16"></h1>
+<h2 id="輸入框">輸入框</h2>
+<h1 id="heading-17"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -528,10 +502,12 @@ if (!doNotTrack) {
 </span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
 </span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">input</span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">outline-style</span>:<span style="color:#66d9ef">solid</span><span style="color:#f92672">/</span><span style="color:#66d9ef">dashed</span><span style="color:#f92672">/</span><span style="color:#66d9ef">dotted</span><span style="color:#f92672">/</span><span style="color:#66d9ef">double</span><span style="color:#f92672">/</span><span style="color:#66d9ef">inset</span><span style="color:#f92672">/</span><span style="color:#66d9ef">outset</span>; <span style="color:#75715e">/*實線/長虛線/短虛線/雙實線/3D凹/3D凸*/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">outline-style</span>:<span style="color:#66d9ef">solid</span><span style="color:#f92672">/</span><span style="color:#66d9ef">dashed</span><span style="color:#f92672">/</span><span style="color:#66d9ef">dotted</span><span style="color:#f92672">/</span><span style="color:#66d9ef">double</span><span style="color:#f92672">/</span><span style="color:#66d9ef">inset</span><span style="color:#f92672">/</span><span style="color:#66d9ef">outset</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*實線/長虛線/短虛線/雙實線/3D凹/3D凸*/</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">outline-width</span>:<span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span><span style="color:#f92672">/</span><span style="color:#66d9ef">thin</span><span style="color:#f92672">/</span><span style="color:#66d9ef">medium</span><span style="color:#f92672">/</span><span style="color:#66d9ef">thick</span>; <span style="color:#75715e">/*線條寬度/薄/中/厚*/</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">outline-color</span>:<span style="color:#66d9ef">red</span><span style="color:#f92672">/</span><span style="color:#ae81ff">#333333</span><span style="color:#f92672">/</span>rgba(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">0</span>); <span style="color:#75715e">/*顏色名稱/色票/最後的值調整透明度*/</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">outline</span>:<span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">red</span>; <span style="color:#75715e">/*四邊框線樣式/框線寬度/框線顏色*/</span>
@@ -539,11 +515,44 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-17"></h1>
-<hr>
-<h1 id="heading-18"></h1>
-<h2 id="對齊">對齊</h2>
+</div><h1 id="heading-18"></h1>
+<p><code>搭配::focus來增加效果</code></p>
 <h1 id="heading-19"></h1>
+<hr>
+<h1 id="heading-20"></h1>
+<h2 id="區塊">區塊</h2>
+<h1 id="heading-21"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">box</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">user-select</span>:<span style="color:#66d9ef">auto</span><span style="color:#f92672">/</span><span style="color:#66d9ef">none</span>; <span style="color:#75715e">/*可以框選/不可框選*/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">overflow</span>:<span style="color:#66d9ef">visible</span><span style="color:#f92672">/</span><span style="color:#66d9ef">hidden</span><span style="color:#f92672">/</span><span style="color:#66d9ef">scroll</span><span style="color:#f92672">/</span><span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*讓內容超出範圍/讓內容超出範圍就隱藏/在超出的內容加上捲軸/在超出的內容的軸向加上捲軸*/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">overflow-x</span>:<span style="color:#66d9ef">hidden</span><span style="color:#f92672">/</span><span style="color:#66d9ef">scroll</span>; <span style="color:#75715e">/*只針對X軸向*/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">overflow-y</span>:<span style="color:#66d9ef">hidden</span><span style="color:#f92672">/</span><span style="color:#66d9ef">scroll</span>; <span style="color:#75715e">/*只針對Y軸向*/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">resize</span>:<span style="color:#66d9ef">none</span><span style="color:#f92672">/</span><span style="color:#66d9ef">both</span><span style="color:#f92672">/</span><span style="color:#66d9ef">horizontal</span><span style="color:#f92672">/</span><span style="color:#66d9ef">vertical</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*不增加窗角/可任意拉動/可水平拉動/水垂直拉動*/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">visibility</span>:<span style="color:#66d9ef">visible</span><span style="color:#f92672">/</span><span style="color:#66d9ef">hidden</span><span style="color:#f92672">/</span><span style="color:#66d9ef">collapse</span>; <span style="color:#75715e">/*正常顯示/隱藏(區塊保留)/不顯示*/</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-22"></h1>
+<hr>
+<h1 id="heading-23"></h1>
+<h2 id="對齊">對齊</h2>
+<h1 id="heading-24"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -573,38 +582,66 @@ if (!doNotTrack) {
 </span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
 </span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
 </span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">box</span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vertical-align</span>:<span style="color:#66d9ef">baseline</span><span style="color:#f92672">/</span><span style="color:#66d9ef">top</span><span style="color:#f92672">/</span><span style="color:#66d9ef">middle</span><span style="color:#f92672">/</span><span style="color:#66d9ef">bottom</span><span style="color:#f92672">/</span><span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span><span style="color:#f92672">/</span>sub<span style="color:#f92672">/</span><span style="color:#66d9ef">super</span> <span style="color:#75715e">/*預設值/切齊上方/切齊中線/切齊下方/偏移中線30px/偏移向下/偏移向上*/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vertical-align</span>:<span style="color:#66d9ef">baseline</span><span style="color:#f92672">/</span><span style="color:#66d9ef">top</span><span style="color:#f92672">/</span><span style="color:#66d9ef">middle</span><span style="color:#f92672">/</span><span style="color:#66d9ef">bottom</span><span style="color:#f92672">/</span><span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span><span style="color:#f92672">/</span>sub<span style="color:#f92672">/</span><span style="color:#66d9ef">super</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*預設值/切齊上方/切齊中線/切齊下方/偏移中線30px/偏移向下/偏移向上*/</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">    1.限用同行的display:inline/inline-block元素&lt;div&gt;&lt;span&gt;&lt;img&gt;
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">    2.同行的元素都要加上vertical-align才會對齊
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">    3.不適用position:relative/absolute元素
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">    */</span>
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*文字垂直水平置中*/</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">text</span><span style="color:#f92672">-</span>align<span style="color:#f92672">:</span><span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/*文字垂直水平置中*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">box</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">text-align</span>:<span style="color:#66d9ef">center</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">line-height</span>:<span style="color:#960050;background-color:#1e0010">設跟</span>height值一樣;
+</span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*元素水平置中*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/*元素水平置中*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">text</span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin</span>:<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*元素垂直水平置中*/</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">上層元素</span><span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">relative</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/*元素垂直水平置中*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">ul</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">relative</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">ul</span> <span style="color:#f92672">li</span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">absolute</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">left</span>:<span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">top</span>:<span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">transform</span>:translate(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>,<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
+</span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/*文字/元素垂直水平置中*/</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">上層元素</span><span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">flex</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/*文字/元素垂直水平置中*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">ul</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">flex</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">ul</span> <span style="color:#f92672">li</span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">justify-content</span>:<span style="color:#66d9ef">center</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">align-items</span>:<span style="color:#66d9ef">center</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-20"></h1>
+</div><h1 id="heading-25"></h1>
+<hr>
+<h1 id="heading-26"></h1>
 
 
         
@@ -686,7 +723,9 @@ if (!doNotTrack) {
                 
                     <li><a href="/post/2022-04-05-cssrwd%E9%9F%BF%E6%87%89%E5%BC%8F/">CSS—樣式大全</a></li>
                 
-                    <li><a href="/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A8/">CSS—樣式大全</a></li>
+                    <li><a href="/post/2022-04-05-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A83/">CSS—樣式大全3</a></li>
+                
+                    <li><a href="/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A81/">CSS—樣式大全</a></li>
                 
               </ul>
 
@@ -698,12 +737,12 @@ if (!doNotTrack) {
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A8/" data-toggle="tooltip" data-placement="top" title="CSS—樣式大全">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A81/" data-toggle="tooltip" data-placement="top" title="CSS—樣式大全">&larr; 上一篇</a>
             </li>
           
           
             <li class="next">
-              <a href="https://jack842248.github.io/post/2022-04-05-cssrwd%E9%9F%BF%E6%87%89%E5%BC%8F/" data-toggle="tooltip" data-placement="top" title="CSS—樣式大全">下一篇 &rarr;</a>
+              <a href="https://jack842248.github.io/post/2022-04-05-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A83/" data-toggle="tooltip" data-placement="top" title="CSS—樣式大全3">下一篇 &rarr;</a>
             </li>
           
         </ul>
