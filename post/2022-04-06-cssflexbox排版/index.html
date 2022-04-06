@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Posts - Jack Huang Blog</title>
+  <title>CSS—flexbox排版 - Jack Huang Blog</title>
+  <meta name="description" content="  flex  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  ul{  display:flex;  flex-direction:row/row-reverse/column/column-reverse;  /*左到右/右到左/上到下/下到上*/  justify-content:flex-start/flex-end/center/space-between/space-around;  /*從頭開始/從尾開始/置中/貼齊左右兩側/平均分散*/  align-items:flex-start/flex-end/center/stretch/baseline;  /*從頭開始/從尾開始/置中/延伸到底/對齊基線*/  flex-wrap:nowrap/wrap/wrap-reverse;  /*不換行/換行/換行相反*/ } li{  align-content:flex-start/flex-end/center/space-between/space-around/stretch;  /*對齊頭/對齊尾/對齊中線/第一行對齊頭，最後一行對齊尾/平均分配/延伸到底*/  flex-basis:200px; /*設定該元素大小*/  flex-shrink:0; /*設定該元素彈性*/  flex-grow:2; /*設定該元素佔比*/  flex:none/3; /*保持原尺寸/永遠佔30%*/  order:1/100; /*設定排序，數字小的先*/ }   ">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -28,13 +29,63 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/jack842248.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/jack842248.github.io\/post\/2022-04-06-cssflexbox%E6%8E%92%E7%89%88\/",
+          "name": "Css—flexbox排版"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "JackHuang"
+  },
+  "headline": "CSS—flexbox排版",
+  "description" : "  flex  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  ul{  display:flex;  flex-direction:row\/row-reverse\/column\/column-reverse;  \/*左到右\/右到左\/上到下\/下到上*\/  justify-content:flex-start\/flex-end\/center\/space-between\/space-around;  \/*從頭開始\/從尾開始\/置中\/貼齊左右兩側\/平均分散*\/  align-items:flex-start\/flex-end\/center\/stretch\/baseline;  \/*從頭開始\/從尾開始\/置中\/延伸到底\/對齊基線*\/  flex-wrap:nowrap\/wrap\/wrap-reverse;  \/*不換行\/換行\/換行相反*\/ } li{  align-content:flex-start\/flex-end\/center\/space-between\/space-around\/stretch;  \/*對齊頭\/對齊尾\/對齊中線\/第一行對齊頭，最後一行對齊尾\/平均分配\/延伸到底*\/  flex-basis:200px; \/*設定該元素大小*\/  flex-shrink:0; \/*設定該元素彈性*\/  flex-grow:2; \/*設定該元素佔比*\/  flex:none\/3; \/*保持原尺寸\/永遠佔30%*\/  order:1\/100; \/*設定排序，數字小的先*\/ }   ",
+  "inLanguage" : "zh-tw",
+  "wordCount":  46 ,
+  "datePublished" : "2022-04-06T00:00:00",
+  "dateModified" : "2022-04-06T00:00:00",
+  "image" : "https:\/\/jack842248.github.io",
+  "keywords" : [ "CSS" ],
+  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2022-04-06-cssflexbox%E6%8E%92%E7%89%88\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/jack842248.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/jack842248.github.io",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="Posts" />
-<meta property="og:url" content="https://jack842248.github.io/post/" />
+<meta property="og:title" content="CSS—flexbox排版" />
+<meta property="og:description" content="  flex  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  ul{  display:flex;  flex-direction:row/row-reverse/column/column-reverse;  /*左到右/右到左/上到下/下到上*/  justify-content:flex-start/flex-end/center/space-between/space-around;  /*從頭開始/從尾開始/置中/貼齊左右兩側/平均分散*/  align-items:flex-start/flex-end/center/stretch/baseline;  /*從頭開始/從尾開始/置中/延伸到底/對齊基線*/  flex-wrap:nowrap/wrap/wrap-reverse;  /*不換行/換行/換行相反*/ } li{  align-content:flex-start/flex-end/center/space-between/space-around/stretch;  /*對齊頭/對齊尾/對齊中線/第一行對齊頭，最後一行對齊尾/平均分配/延伸到底*/  flex-basis:200px; /*設定該元素大小*/  flex-shrink:0; /*設定該元素彈性*/  flex-grow:2; /*設定該元素佔比*/  flex:none/3; /*保持原尺寸/永遠佔30%*/  order:1/100; /*設定排序，數字小的先*/ }   ">
+<meta property="og:url" content="https://jack842248.github.io/post/2022-04-06-cssflexbox%E6%8E%92%E7%89%88/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
-  <meta name="twitter:title" content="Posts" />
+  <meta name="twitter:title" content="CSS—flexbox排版" />
+  <meta name="twitter:description" content="  flex  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  ul{  display:flex;  flex-direction:row/row-reverse/column/column-reverse;  /*左到右/右到左/上到下/下到上*/ …">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.95.0" />
@@ -166,8 +217,59 @@ if (!doNotTrack) {
 
 
   
+    <div id="header-big-imgs" data-num-img=3 
+      
+         
+          data-img-src-1="/img/triangle.jpg" 
+         
+         data-img-desc-1="Triangle"
+      
+         
+          data-img-src-2="/img/sphere.jpg" 
+         
+         data-img-desc-2="Sphere"
+      
+         
+          data-img-src-3="/img/hexagon.jpg" 
+         
+         data-img-desc-3="Hexagon"
+      ></div>
+  
 
-  <header class="header-section ">
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                <h1>CSS—flexbox排版</h1>
+                  
+                  
+                    <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2022-04-06
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;46&nbsp;個字
+  
+  
+  
+</span>
+
+
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
     
     <div class="intro-header no-img">
       <div class="container">
@@ -175,7 +277,7 @@ if (!doNotTrack) {
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Posts</h1>
+                <h1>CSS—flexbox排版</h1>
               
               
               
@@ -186,10 +288,10 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;發表於 2022-04-06
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;0&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;0&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;46&nbsp;個字
   
   
   
@@ -206,40 +308,10 @@ if (!doNotTrack) {
 
 
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="posts-list">
-          
-            <article class="post-preview">
-    <a href="https://jack842248.github.io/post/2022-04-06-cssflexbox%E6%8E%92%E7%89%88/">
-        <h2 class="post-title">CSS—flexbox排版</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2022-04-06
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;46&nbsp;個字
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
         <hr>
 <h1 id="heading"></h1>
 <h2 id="flex">flex</h2>
@@ -291,549 +363,128 @@ if (!doNotTrack) {
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://jack842248.github.io/tags/css/">CSS</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://jack842248.github.io/post/2022-04-05-cssrwd%E9%9F%BF%E6%87%89%E5%BC%8F/">
-        <h2 class="post-title">CSS—樣式大全</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2022-04-05
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;49&nbsp;個字
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <hr>
-<h1 id="heading"></h1>
-<h2 id="螢幕大小設定">螢幕大小設定</h2>
-<h1 id="heading-1"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/*設定當螢幕寬度在0px~600px時*/</span>
-</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">media</span> <span style="color:#f92672">screen</span> <span style="color:#f92672">and</span><span style="color:#f92672">(</span><span style="color:#f92672">max-width</span>:<span style="color:#a6e22e">600px</span><span style="color:#f92672">)</span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">body</span>{
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">background-color</span>:<span style="color:#66d9ef">red</span>;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#75715e">/*設定當螢幕寬度在600px以上，1000px以下時*/</span>
-</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">media</span> <span style="color:#f92672">screen</span> <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">min-width</span>:<span style="color:#a6e22e">600px</span><span style="color:#f92672">)</span> <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">max-width</span>:<span style="color:#a6e22e">1000px</span><span style="color:#f92672">)</span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">body</span>{
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">background-color</span>:<span style="color:#66d9ef">green</span>;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#75715e">/*設定當螢幕寬度在1000px以上，1920px以下時*/</span>
-</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">media</span> <span style="color:#f92672">screen</span> <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">min-width</span>:<span style="color:#a6e22e">1000px</span><span style="color:#f92672">)</span> <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">max-width</span>:<span style="color:#a6e22e">1920px</span><span style="color:#f92672">)</span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">body</span>{
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">background-color</span>:<span style="color:#66d9ef">blue</span>;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://jack842248.github.io/tags/css/">CSS</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://jack842248.github.io/post/2022-04-04-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A82/">
-        <h2 class="post-title">CSS—樣式大全2</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2022-04-04
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;246&nbsp;個字
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        
-        <a href="https://jack842248.github.io/post/2022-04-04-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A82/" class="post-read-more">[閱讀全文]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://jack842248.github.io/tags/css/">CSS</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://jack842248.github.io/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A8/">
-        <h2 class="post-title">CSS—樣式大全</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2022-04-03
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;548&nbsp;個字
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        
-        <a href="https://jack842248.github.io/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A8/" class="post-read-more">[閱讀全文]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://jack842248.github.io/tags/css/">CSS</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://jack842248.github.io/post/2022-03-24-html%E6%A8%99%E7%B1%A4%E5%A4%A7%E5%85%A8/">
-        <h2 class="post-title">HTML—標籤大全</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2022-03-24
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;745&nbsp;個字
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        
-        <a href="https://jack842248.github.io/post/2022-03-24-html%E6%A8%99%E7%B1%A4%E5%A4%A7%E5%85%A8/" class="post-read-more">[閱讀全文]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://jack842248.github.io/tags/html/">HTML</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://jack842248.github.io/post/2021-02-24-javascript%E5%B0%81%E8%A3%9Dajax%E8%AB%8B%E6%B1%82/">
-        <h2 class="post-title">JavaScript—封裝AJAX請求</h2>
-        
-        
-        <h3 class="post-subtitle">
-            Promise、Random User API
-        </h3>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-24
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;635&nbsp;個字
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        
-        <a href="https://jack842248.github.io/post/2021-02-24-javascript%E5%B0%81%E8%A3%9Dajax%E8%AB%8B%E6%B1%82/" class="post-read-more">[閱讀全文]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://jack842248.github.io/tags/javascript/">JavaScript</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://jack842248.github.io/post/2021-03-01-photoshop%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5/">
-        <h2 class="post-title">PhotoShop—常用快捷鍵</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-24
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;78&nbsp;個字
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <hr>
-<h1 id="heading"></h1>
-<h2 id="常用快捷鍵">常用快捷鍵</h2>
-<h1 id="heading-1"></h1>
-<h4 id="ctrl--w-關閉視窗"><code>Ctrl</code> + <code>W</code> 關閉視窗</h4>
-<h4 id="ctrl--z-還原"><code>Ctrl</code> + <code>Z</code> 還原</h4>
-<h4 id="ctrl--x-剪下圖層"><code>Ctrl</code> + <code>X</code> 剪下圖層</h4>
-<h4 id="ctrl--c-複製"><code>Ctrl</code> + <code>C</code> 複製</h4>
-<h4 id="ctrl--v-貼上"><code>Ctrl</code> + <code>V</code> 貼上</h4>
-<h4 id="ctrl--s-存檔"><code>Ctrl</code> + <code>S</code> 存檔</h4>
-<h4 id="ctrl--j-拷貝圖層"><code>Ctrl</code> + <code>J</code> 拷貝圖層</h4>
-<h4 id="ctrl--shift--s-另存新檔"><code>Ctrl</code> + <code>shift</code> + <code>S</code> 另存新檔</h4>
-<h4 id="ctrl--shift--i-反轉選取"><code>Ctrl</code> + <code>shift</code> + <code>I</code> 反轉選取</h4>
-<h4 id="z-放大鏡"><code>Z</code> 放大鏡</h4>
-<h4 id="x-前景色背景色"><code>X</code> 前景色/背景色</h4>
-<h4 id="c-裁切工具"><code>C</code> 裁切工具</h4>
-<h4 id="v-移動工具"><code>V</code> 移動工具</h4>
-<h4 id="b-筆刷工具"><code>B</code> 筆刷工具</h4>
-<h4 id="a-路徑選取工具"><code>A</code> 路徑選取工具</h4>
-<h4 id="s-仿製印章"><code>S</code> 仿製印章</h4>
-<h4 id="d-滴管工具"><code>D</code> 滴管工具</h4>
-<h4 id="f-快速選取工具"><code>F</code> 快速選取工具</h4>
-<h4 id="q-鋼筆工具"><code>Q</code> 鋼筆工具</h4>
-<h1 id="heading-2"></h1>
-<hr>
-<h1 id="heading-3"></h1>
-<h2 id="注意小細節">注意小細節</h2>
-<h1 id="heading-4"></h1>
-<ol>
-<li>使用濾鏡效果時，要將圖層先轉為智慧型物件。</li>
-<li>裁切工具→刪除裁切的像素(若沒勾選)→拖拉出新範圍，底層是透明格。</li>
-<li>使用橡皮擦工具，等於使用背景色上色。</li>
-<li>使用仿製印章，可以新增圖層，樣本選取&quot;目前及底下的圖層&quot;。</li>
-<li>選擇圖層，點選底下[fx]可以套用陰影、內外框等樣式。</li>
-<li>編輯→透視彎曲，可以設圖釘點彎曲物件，按住Alt點擊刪除圖釘。</li>
-<li>調整面板→色相/飽和度→點選手指再對圖片Ctrl+左鍵拖拉調整色相，左鍵拖拉調整飽和度。</li>
-<li>透視裁切工具→</li>
-</ol>
-<h1 id="heading-5"></h1>
-<hr>
-<h1 id="heading-6"></h1>
-<h2 id="刪除照片中不要的內容">刪除照片中不要的內容</h2>
-<h1 id="heading-7"></h1>
-<ol>
-<li>汙點修復工具(快速處理細小部分)</li>
-<li>填滿內容感知(快速處理大範圍)</li>
-<li>仿製印章(處理較複雜的部份)</li>
-</ol>
-<h1 id="heading-8"></h1>
-<hr>
-<h1 id="heading-9"></h1>
-<h2 id="其他選取方法">其他選取方法</h2>
-<h1 id="heading-10"></h1>
-<ol>
-<li>使用顏色選去使用顏色選去</li>
-</ol>
-<h1 id="heading-11"></h1>
-<hr>
-<h1 id="heading-12"></h1>
-<h2 id="延伸背景">延伸背景</h2>
-<h1 id="heading-13"></h1>
-<ol>
-<li>裁切工具→刪除裁切的像素(打勾)→拖拉範圍。</li>
-</ol>
-<h1 id="heading-14"></h1>
 
         
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://jack842248.github.io/tags/javascript/">JavaScript</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://jack842248.github.io/post/2021-02-23-javascript%E6%93%8D%E4%BD%9Carray%E6%96%B9%E6%B3%95/">
-        <h2 class="post-title">JavaScript—操作Array方法</h2>
-        
-        
-        <h3 class="post-subtitle">
-            新增陣列、刪除陣列、抓出陣列、複製陣列、替換陣列、合併陣列、尋找陣列、判斷陣列、加總陣列、展開陣列
-        </h3>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-23
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;839&nbsp;個字
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        
-        <a href="https://jack842248.github.io/post/2021-02-23-javascript%E6%93%8D%E4%BD%9Carray%E6%96%B9%E6%B3%95/" class="post-read-more">[閱讀全文]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://jack842248.github.io/tags/javascript/">JavaScript</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://jack842248.github.io/post/2021-02-22-javascriptchrome-devtools/">
-        <h2 class="post-title">Chrome devtools除錯</h2>
-        
-        
-        <h3 class="post-subtitle">
-            Chrome開發人員工具
-        </h3>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-22
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;88&nbsp;個字
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        
-        <a href="https://jack842248.github.io/post/2021-02-22-javascriptchrome-devtools/" class="post-read-more">[閱讀全文]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://jack842248.github.io/tags/javascript/">JavaScript</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://jack842248.github.io/post/2021-02-21-javascriptgoogle-maps-api/">
-        <h2 class="post-title">JavaScript—Google Maps API</h2>
-        
-        
-        <h3 class="post-subtitle">
-            API
-        </h3>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-21
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;607&nbsp;個字
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        
-        <a href="https://jack842248.github.io/post/2021-02-21-javascriptgoogle-maps-api/" class="post-read-more">[閱讀全文]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://jack842248.github.io/tags/javascript/">JavaScript</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-        </div>
-        
-          <ul class="pager main-pager">
+          <div class="blog-tags">
             
+              <a href="https://jack842248.github.io/tags/css/">CSS</a>&nbsp;
             
-              <li class="next">
-                <a href="https://jack842248.github.io/post/page/2/">更舊的文章 &rarr;</a>
-              </li>
-            
-          </ul>
+          </div>
         
-      </div>
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2022-04-06-cssflexbox%25E6%258E%2592%25E7%2589%2588%2f&amp;text=CSS%e2%80%94flexbox%e6%8e%92%e7%89%88&amp;via=" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2022-04-06-cssflexbox%25E6%258E%2592%25E7%2589%2588%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2022-04-06-cssflexbox%25E6%258E%2592%25E7%2589%2588%2f&amp;title=CSS%e2%80%94flexbox%e6%8e%92%e7%89%88" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2022-04-06-cssflexbox%25E6%258E%2592%25E7%2589%2588%2f&amp;title=CSS%e2%80%94flexbox%e6%8e%92%e7%89%88" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2022-04-06-cssflexbox%25E6%258E%2592%25E7%2589%2588%2f&amp;title=CSS%e2%80%94flexbox%e6%8e%92%e7%89%88" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2022-04-06-cssflexbox%25E6%258E%2592%25E7%2589%2588%2f&amp;description=CSS%e2%80%94flexbox%e6%8e%92%e7%89%88" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+            
+          
+
+          
+                  <h4 class="see-also">其他相關</h4>
+                  <ul>
+                
+                
+                    <li><a href="/post/2022-04-05-cssrwd%E9%9F%BF%E6%87%89%E5%BC%8F/">CSS—樣式大全</a></li>
+                
+                    <li><a href="/post/2022-04-04-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A82/">CSS—樣式大全2</a></li>
+                
+                    <li><a href="/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A8/">CSS—樣式大全</a></li>
+                
+              </ul>
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://jack842248.github.io/post/2022-04-05-cssrwd%E9%9F%BF%E6%87%89%E5%BC%8F/" data-toggle="tooltip" data-placement="top" title="CSS—樣式大全">&larr; 上一篇</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+          
+          <div class="disqus-comments">                  
+            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2022-04-06-cssflexbox%E6%8E%92%E7%89%88">則評論</span></button>
+            <div id="disqus_thread"></div>
+
+            <script type="text/javascript">
+              var disqus_config = function () {
+              this.page.url = 'https:\/\/jack842248.github.io\/post\/2022-04-06-cssflexbox%E6%8E%92%E7%89%88';
+            };
+
+          </script>
+          </div>
+          
+        
+        
+      
+
     </div>
   </div>
+</div>
 
       
 <footer>

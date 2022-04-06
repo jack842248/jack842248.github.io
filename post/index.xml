@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS—flexbox排版</title>
+      <link>https://jack842248.github.io/post/2022-04-06-cssflexbox%E6%8E%92%E7%89%88/</link>
+      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-06-cssflexbox%E6%8E%92%E7%89%88/</guid>
+      <description>  flex  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  ul{  display:flex;  flex-direction:row/row-reverse/column/column-reverse;  /*左到右/右到左/上到下/下到上*/  justify-content:flex-start/flex-end/center/space-between/space-around;  /*從頭開始/從尾開始/置中/貼齊左右兩側/平均分散*/  align-items:flex-start/flex-end/center/stretch/baseline;  /*從頭開始/從尾開始/置中/延伸到底/對齊基線*/  flex-wrap:nowrap/wrap/wrap-reverse;  /*不換行/換行/換行相反*/ } li{  align-content:flex-start/flex-end/center/space-between/space-around/stretch;  /*對齊頭/對齊尾/對齊中線/第一行對齊頭，最後一行對齊尾/平均分配/延伸到底*/  flex-basis:200px; /*設定該元素大小*/  flex-shrink:0; /*設定該元素彈性*/  flex-grow:2; /*設定該元素佔比*/  flex:none/3; /*保持原尺寸/永遠佔30%*/  order:1/100; /*設定排序，數字小的先*/ }   </description>
+    </item>
+    
     <item>
       <title>CSS—樣式大全</title>
       <link>https://jack842248.github.io/post/2022-04-05-cssrwd%E9%9F%BF%E6%87%89%E5%BC%8F/</link>
@@ -41,7 +50,7 @@
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2022-03-24-html%E6%A8%99%E7%B1%A4%E5%A4%A7%E5%85%A8/</guid>
-      <description>網頁初步結構  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;zh-tw&amp;#34;&amp;gt; &amp;lt;!--整份網頁文件，用來包&amp;lt;head&amp;gt;、&amp;lt;body&amp;gt;標籤--&amp;gt;  &amp;lt;head&amp;gt;  &amp;lt;title&amp;gt;網頁標題&amp;lt;/title&amp;gt;  &amp;lt;style&amp;gt;css樣式  &amp;lt;meta&amp;gt;提供搜尋引擎的重要資訊  &amp;lt;!-- charset=&amp;#34;UTF-8&amp;#34; 網頁編碼 http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34; 自動將IE瀏覽器升級 http-equiv=&amp;#34;refresh&amp;#34; content=&amp;#34;5; url=&amp;#34;轉跳網址&amp;#34; 進入該網站後5秒後，自動轉跳至其他網頁 name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.</description>
+      <description>網頁初步結構  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;zh-tw&amp;#34;&amp;gt; &amp;lt;!--整份網頁文件，用來包&amp;lt;head&amp;gt;、&amp;lt;body&amp;gt;標籤--&amp;gt;  &amp;lt;head&amp;gt;  &amp;lt;title&amp;gt;網頁標題&amp;lt;/title&amp;gt;   &amp;lt;style&amp;gt;css樣式&amp;lt;/style&amp;gt;   &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;!</description>
     </item>
     
     <item>

@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS—flexbox排版</title>
+      <link>https://jack842248.github.io/post/2022-04-06-cssflexbox%E6%8E%92%E7%89%88/</link>
+      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-06-cssflexbox%E6%8E%92%E7%89%88/</guid>
+      <description>  flex  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  ul{  display:flex;  flex-direction:row/row-reverse/column/column-reverse;  /*左到右/右到左/上到下/下到上*/  justify-content:flex-start/flex-end/center/space-between/space-around;  /*從頭開始/從尾開始/置中/貼齊左右兩側/平均分散*/  align-items:flex-start/flex-end/center/stretch/baseline;  /*從頭開始/從尾開始/置中/延伸到底/對齊基線*/  flex-wrap:nowrap/wrap/wrap-reverse;  /*不換行/換行/換行相反*/ } li{  align-content:flex-start/flex-end/center/space-between/space-around/stretch;  /*對齊頭/對齊尾/對齊中線/第一行對齊頭，最後一行對齊尾/平均分配/延伸到底*/  flex-basis:200px; /*設定該元素大小*/  flex-shrink:0; /*設定該元素彈性*/  flex-grow:2; /*設定該元素佔比*/  flex:none/3; /*保持原尺寸/永遠佔30%*/  order:1/100; /*設定排序，數字小的先*/ }   </description>
+    </item>
+    
     <item>
       <title>CSS—樣式大全</title>
       <link>https://jack842248.github.io/post/2022-04-05-cssrwd%E9%9F%BF%E6%87%89%E5%BC%8F/</link>
