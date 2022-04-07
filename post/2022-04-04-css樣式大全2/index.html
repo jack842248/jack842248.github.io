@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>CSS—樣式大全2 - Jack Huang Blog</title>
-  <meta name="description" content="連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  /*設定尚未點擊的連結*/ } a:visited{  /*設定已經點擊過後的連結*/ } a:hover{  /*設定游標移入時的連結*/ } a:active{  /*設定游標點擊時的連結*/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  li{  list-style-type:disc/circle/square/upper-latin/lower-latin/upper-roman/lower-roman/none;  /*黑圓點/黑圓圈/黑方塊/大寫英文/小寫英文/大寫羅馬文/小寫羅馬文/不顯示*/  list-style-image:url(&#34;連結網址&#34;); /*崁入清單樣式*/  list-style-position:outside/inside; /*圖樣在元素外/圖樣在元素內*/  list-style:circle inside; /*清單樣式/圖樣位置*/ }  /*UTF-8字符取代清單樣式*/ li{  list-style:none; } li::before{  display:inline-block;  content:&#34;⇦&#34;; }      表格  1 2 3 4 5  table{  border-collapse:separate/collapse; /*分開(雙線條)/合併(單線條)*/  border-spacing:20px; /*調整separate雙線條的間距*/  table-layout:auto/fixed; /*表格固定寬度/表格寬度隨內容改變*/ }      按鈕  1 2 3 4 5  button{  cursor:default/pointer/text/progress/wait/cell/crosshair/grab/move/none;  /*預設游標/點擊手指/文字輸入/等待＋預設游標/等待/新增(&#43;)/十字/手掌/方向/不顯示*/  pointer-events:none; 避免空選 }    搭配::hover來增加效果">
+  <meta name="description" content="連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  /*設定尚未點擊的連結*/ } a:visited{  /*設定已經點擊過後的連結*/ } a:hover{  /*設定游標移入時的連結*/ } a:active{  /*設定游標點擊時的連結*/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  li{  list-style-type:disc/circle/square/upper-latin/lower-latin/upper-roman/lower-roman/none;  /*黑圓點/黑圓圈/黑方塊/大寫英文/小寫英文/大寫羅馬文/小寫羅馬文/不顯示*/  list-style-image:url(&#34;連結網址&#34;); /*崁入清單樣式*/  list-style-position:outside/inside; /*圖樣在元素外/圖樣在元素內*/  list-style:circle inside; /*清單樣式/圖樣位置*/ }  /*UTF-8字符取代清單樣式*/ li{  list-style:none; } li::before{  display:inline-block;  content:&#34;⇦&#34;; }    ::before在元素之前、::after在元素之後">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "CSS—樣式大全2",
-  "description" : "連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  \/*設定尚未點擊的連結*\/ } a:visited{  \/*設定已經點擊過後的連結*\/ } a:hover{  \/*設定游標移入時的連結*\/ } a:active{  \/*設定游標點擊時的連結*\/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  li{  list-style-type:disc\/circle\/square\/upper-latin\/lower-latin\/upper-roman\/lower-roman\/none;  \/*黑圓點\/黑圓圈\/黑方塊\/大寫英文\/小寫英文\/大寫羅馬文\/小寫羅馬文\/不顯示*\/  list-style-image:url(\u0026#34;連結網址\u0026#34;); \/*崁入清單樣式*\/  list-style-position:outside\/inside; \/*圖樣在元素外\/圖樣在元素內*\/  list-style:circle inside; \/*清單樣式\/圖樣位置*\/ }  \/*UTF-8字符取代清單樣式*\/ li{  list-style:none; } li::before{  display:inline-block;  content:\u0026#34;⇦\u0026#34;; }      表格  1 2 3 4 5  table{  border-collapse:separate\/collapse; \/*分開(雙線條)\/合併(單線條)*\/  border-spacing:20px; \/*調整separate雙線條的間距*\/  table-layout:auto\/fixed; \/*表格固定寬度\/表格寬度隨內容改變*\/ }      按鈕  1 2 3 4 5  button{  cursor:default\/pointer\/text\/progress\/wait\/cell\/crosshair\/grab\/move\/none;  \/*預設游標\/點擊手指\/文字輸入\/等待＋預設游標\/等待\/新增(\u002b)\/十字\/手掌\/方向\/不顯示*\/  pointer-events:none; 避免空選 }    搭配::hover來增加效果",
+  "description" : "連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  \/*設定尚未點擊的連結*\/ } a:visited{  \/*設定已經點擊過後的連結*\/ } a:hover{  \/*設定游標移入時的連結*\/ } a:active{  \/*設定游標點擊時的連結*\/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  li{  list-style-type:disc\/circle\/square\/upper-latin\/lower-latin\/upper-roman\/lower-roman\/none;  \/*黑圓點\/黑圓圈\/黑方塊\/大寫英文\/小寫英文\/大寫羅馬文\/小寫羅馬文\/不顯示*\/  list-style-image:url(\u0026#34;連結網址\u0026#34;); \/*崁入清單樣式*\/  list-style-position:outside\/inside; \/*圖樣在元素外\/圖樣在元素內*\/  list-style:circle inside; \/*清單樣式\/圖樣位置*\/ }  \/*UTF-8字符取代清單樣式*\/ li{  list-style:none; } li::before{  display:inline-block;  content:\u0026#34;⇦\u0026#34;; }    ::before在元素之前、::after在元素之後",
   "inLanguage" : "zh-tw",
-  "wordCount":  269 ,
+  "wordCount":  270 ,
   "datePublished" : "2022-04-04T00:00:00",
   "dateModified" : "2022-04-04T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -79,7 +79,7 @@
 </script>
 
 <meta property="og:title" content="CSS—樣式大全2" />
-<meta property="og:description" content="連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  /*設定尚未點擊的連結*/ } a:visited{  /*設定已經點擊過後的連結*/ } a:hover{  /*設定游標移入時的連結*/ } a:active{  /*設定游標點擊時的連結*/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  li{  list-style-type:disc/circle/square/upper-latin/lower-latin/upper-roman/lower-roman/none;  /*黑圓點/黑圓圈/黑方塊/大寫英文/小寫英文/大寫羅馬文/小寫羅馬文/不顯示*/  list-style-image:url(&#34;連結網址&#34;); /*崁入清單樣式*/  list-style-position:outside/inside; /*圖樣在元素外/圖樣在元素內*/  list-style:circle inside; /*清單樣式/圖樣位置*/ }  /*UTF-8字符取代清單樣式*/ li{  list-style:none; } li::before{  display:inline-block;  content:&#34;⇦&#34;; }      表格  1 2 3 4 5  table{  border-collapse:separate/collapse; /*分開(雙線條)/合併(單線條)*/  border-spacing:20px; /*調整separate雙線條的間距*/  table-layout:auto/fixed; /*表格固定寬度/表格寬度隨內容改變*/ }      按鈕  1 2 3 4 5  button{  cursor:default/pointer/text/progress/wait/cell/crosshair/grab/move/none;  /*預設游標/點擊手指/文字輸入/等待＋預設游標/等待/新增(&#43;)/十字/手掌/方向/不顯示*/  pointer-events:none; 避免空選 }    搭配::hover來增加效果">
+<meta property="og:description" content="連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  /*設定尚未點擊的連結*/ } a:visited{  /*設定已經點擊過後的連結*/ } a:hover{  /*設定游標移入時的連結*/ } a:active{  /*設定游標點擊時的連結*/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  li{  list-style-type:disc/circle/square/upper-latin/lower-latin/upper-roman/lower-roman/none;  /*黑圓點/黑圓圈/黑方塊/大寫英文/小寫英文/大寫羅馬文/小寫羅馬文/不顯示*/  list-style-image:url(&#34;連結網址&#34;); /*崁入清單樣式*/  list-style-position:outside/inside; /*圖樣在元素外/圖樣在元素內*/  list-style:circle inside; /*清單樣式/圖樣位置*/ }  /*UTF-8字符取代清單樣式*/ li{  list-style:none; } li::before{  display:inline-block;  content:&#34;⇦&#34;; }    ::before在元素之前、::after在元素之後">
 <meta property="og:url" content="https://jack842248.github.io/post/2022-04-04-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A82/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
@@ -256,7 +256,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;269&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;270&nbsp;個字
   
   
   
@@ -291,7 +291,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;269&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;270&nbsp;個字
   
   
   
@@ -390,10 +390,12 @@ if (!doNotTrack) {
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-5"></h1>
-<hr>
+<p><code>::before在元素之前、::after在元素之後</code></p>
 <h1 id="heading-6"></h1>
-<h2 id="表格">表格</h2>
+<hr>
 <h1 id="heading-7"></h1>
+<h2 id="表格">表格</h2>
+<h1 id="heading-8"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -410,11 +412,11 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-8"></h1>
+</div><h1 id="heading-9"></h1>
 <hr>
-<h1 id="heading-9"></h1>
-<h2 id="按鈕">按鈕</h2>
 <h1 id="heading-10"></h1>
+<h2 id="按鈕">按鈕</h2>
+<h1 id="heading-11"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -431,13 +433,13 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-11"></h1>
+</div><h1 id="heading-12"></h1>
 <p><code>搭配::hover來增加效果</code></p>
-<h1 id="heading-12"></h1>
-<hr>
 <h1 id="heading-13"></h1>
-<h2 id="圖片">圖片</h2>
+<hr>
 <h1 id="heading-14"></h1>
+<h2 id="圖片">圖片</h2>
+<h1 id="heading-15"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -488,11 +490,11 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-15"></h1>
+</div><h1 id="heading-16"></h1>
 <hr>
-<h1 id="heading-16"></h1>
-<h2 id="輸入框">輸入框</h2>
 <h1 id="heading-17"></h1>
+<h2 id="輸入框">輸入框</h2>
+<h1 id="heading-18"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -515,13 +517,13 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-18"></h1>
+</div><h1 id="heading-19"></h1>
 <p><code>搭配::focus來增加效果</code></p>
-<h1 id="heading-19"></h1>
-<hr>
 <h1 id="heading-20"></h1>
-<h2 id="區塊">區塊</h2>
+<hr>
 <h1 id="heading-21"></h1>
+<h2 id="區塊">區塊</h2>
+<h1 id="heading-22"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -548,11 +550,11 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-22"></h1>
+</div><h1 id="heading-23"></h1>
 <hr>
-<h1 id="heading-23"></h1>
-<h2 id="對齊">對齊</h2>
 <h1 id="heading-24"></h1>
+<h2 id="對齊">對齊</h2>
+<h1 id="heading-25"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -608,13 +610,13 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">/*文字垂直水平置中*/</span>
-</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">box</span>{
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">text</span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">text-align</span>:<span style="color:#66d9ef">center</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">line-height</span>:<span style="color:#960050;background-color:#1e0010">設跟</span>height值一樣;
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">/*元素水平置中*/</span>
-</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">text</span>{
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">box</span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin</span>:<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">auto</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
@@ -629,7 +631,7 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">transform</span>:translate(<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>,<span style="color:#ae81ff">-50</span><span style="color:#66d9ef">%</span>);
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">/*文字/元素垂直水平置中*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/*文字或元素垂直水平置中*/</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">ul</span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">flex</span>;
 </span></span><span style="display:flex;"><span>}
@@ -639,9 +641,7 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-25"></h1>
-<hr>
-<h1 id="heading-26"></h1>
+</div><h1 id="heading-26"></h1>
 
 
         
@@ -719,13 +719,15 @@ if (!doNotTrack) {
                   <ul>
                 
                 
-                    <li><a href="/post/2022-04-06-cssflexbox%E6%8E%92%E7%89%88/">CSS—flexbox排版</a></li>
+                    <li><a href="/post/2022-04-08-csskeyframes%E5%8B%95%E7%95%AB/">CSS—keyframes動畫</a></li>
                 
-                    <li><a href="/post/2022-04-05-cssrwd%E9%9F%BF%E6%87%89%E5%BC%8F/">CSS—樣式大全</a></li>
+                    <li><a href="/post/2022-04-06-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A84/">CSS—樣式大全4</a></li>
+                
+                    <li><a href="/post/2022-04-07-cssrwd%E9%9F%BF%E6%87%89%E5%BC%8F%E6%8E%92%E7%89%88/">CSS—樣式大全</a></li>
                 
                     <li><a href="/post/2022-04-05-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A83/">CSS—樣式大全3</a></li>
                 
-                    <li><a href="/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A81/">CSS—樣式大全</a></li>
+                    <li><a href="/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A81/">CSS—樣式大全1</a></li>
                 
               </ul>
 
@@ -737,7 +739,7 @@ if (!doNotTrack) {
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A81/" data-toggle="tooltip" data-placement="top" title="CSS—樣式大全">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A81/" data-toggle="tooltip" data-placement="top" title="CSS—樣式大全1">&larr; 上一篇</a>
             </li>
           
           
