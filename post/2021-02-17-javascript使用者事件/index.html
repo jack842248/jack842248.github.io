@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="zh-tw" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>JavaScript—使用者事件 - Jack Huang Blog</title>
+  <meta name="description" content="event">
+  <meta name="author" content="JackHuang"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Jack Huang Blog",
+    
+    "url": "https:\/\/jack842248.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/jack842248.github.io"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/jack842248.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/jack842248.github.io\/post\/2021-02-17-javascript%E4%BD%BF%E7%94%A8%E8%80%85%E4%BA%8B%E4%BB%B6\/",
+          "name": "Java script—使用者事件"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "JackHuang"
+  },
+  "headline": "JavaScript—使用者事件",
+  "description" : "點擊事件(Click Event)   .onclick = function(){\u0026hellip;} 。    直接在DOM元素上 onclick=\u0026quot;\u0026hellip;\u0026quot; (不建議使用)。    .addEventListener(\u0026ldquo;click\u0026rdquo;,function(){\u0026hellip;}) 。   .onclick只能綁定最後一次事件，.addEventListener可以綁定多次事件，\n 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  \/\/ \u0026lt;-----html-----\u0026gt; button.btn1 按鈕1 button.btn2(onclick=\u0026#34;console.log(\u0026#39;您點擊了，按鈕2\u0026#39;)\u0026#34;) 按鈕2 button.btn3 按鈕3  \/\/ \u0026lt;-----js-----\u0026gt; let btn1 = document.querySelector(\u0026#34;.btn1\u0026#34;); let btn3 = document.querySelector(\u0026#34;.btn3\u0026#34;);  btn1.onclick = function(){  console.log(\u0026#34;您點擊了，按鈕1\u0026#34;); }  btn3.addEventListener(\u0026#34;click\u0026#34;,function(){  console.",
+  "inLanguage" : "zh-tw",
+  "wordCount":  800 ,
+  "datePublished" : "2021-02-17T00:00:00",
+  "dateModified" : "2021-02-17T00:00:00",
+  "image" : "https:\/\/jack842248.github.io",
+  "keywords" : [ "JavaScript" ],
+  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2021-02-17-javascript%E4%BD%BF%E7%94%A8%E8%80%85%E4%BA%8B%E4%BB%B6\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/jack842248.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/jack842248.github.io",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="JavaScript—使用者事件" />
+<meta property="og:description" content="event">
+<meta property="og:url" content="https://jack842248.github.io/post/2021-02-17-javascript%E4%BD%BF%E7%94%A8%E8%80%85%E4%BA%8B%E4%BB%B6/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Jack Huang Blog" />
+
+  <meta name="twitter:title" content="JavaScript—使用者事件" />
+  <meta name="twitter:description" content="event">
+  <meta name="twitter:card" content="summary" />
+  <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.95.0" />
+  <link rel="alternate" href="https://jack842248.github.io/index.xml" type="application/rss+xml" title="Jack Huang Blog"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://jack842248.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" /><link rel="stylesheet" href="https://jack842248.github.io/css/syntax.css" /><link rel="stylesheet" href="https://jack842248.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-186211544-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">開關導覽</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://jack842248.github.io">Jack Huang Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="部落格Blog" href="/">部落格Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="快速搜尋Tags" href="/tags">快速搜尋Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="關於我About" href="/page/about/">關於我About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=3 
+      
+         
+          data-img-src-1="/img/triangle.jpg" 
+         
+         data-img-desc-1="Triangle"
+      
+         
+          data-img-src-2="/img/sphere.jpg" 
+         
+         data-img-desc-2="Sphere"
+      
+         
+          data-img-src-3="/img/hexagon.jpg" 
+         
+         data-img-desc-3="Hexagon"
+      ></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                <h1>JavaScript—使用者事件</h1>
+                  
+                    
+                      <h2 class="post-subheading">event</h2>
+                    
+                  
+                  
+                    <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-17
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;800&nbsp;個字
+  
+  
+  
+</span>
+
+
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>JavaScript—使用者事件</h1>
+              
+              
+              
+                
+                  <h2 class="post-subheading">event</h2>
+                
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-17
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;800&nbsp;個字
+  
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <hr>
+<h1 id="heading"></h1>
+<h2 id="點擊事件click-event">點擊事件(Click Event)</h2>
+<h1 id="heading-1"></h1>
+<ul>
+<li><strong>.onclick = function(){&hellip;}</strong> 。</li>
+</ul>
+<h1 id="heading-2"></h1>
+<ul>
+<li>直接在DOM元素上 <strong>onclick=&quot;&hellip;&quot;</strong> (不建議使用)。</li>
+</ul>
+<h1 id="heading-3"></h1>
+<ul>
+<li><strong>.addEventListener(&ldquo;click&rdquo;,function(){&hellip;})</strong> 。</li>
+</ul>
+<h1 id="heading-4"></h1>
+<p><code>.onclick只能綁定最後一次事件，.addEventListener可以綁定多次事件，</code></p>
+<h1 id="heading-5"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----html-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">btn1</span> <span style="color:#a6e22e">按鈕1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">btn2</span>(<span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;console.log(&#39;您點擊了，按鈕2&#39;)&#34;</span>) <span style="color:#a6e22e">按鈕2</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">btn3</span> <span style="color:#a6e22e">按鈕3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">btn1</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.btn1&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">btn3</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.btn3&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">btn1</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;您點擊了，按鈕1&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">btn3</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;您點擊了，按鈕3&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-6"></h1>
+<hr>
+<h1 id="heading-7"></h1>
+<h2 id="監聽事件listener-event">監聽事件(Listener Event)</h2>
+<h1 id="heading-8"></h1>
+<ul>
+<li><strong>.addEventListener</strong> (&ldquo;事件&rdquo;,&ldquo;方法&rdquo;,false/true)。</li>
+</ul>
+<h1 id="heading-9"></h1>
+<table>
+<thead>
+<tr>
+<th>事件名稱</th>
+<th>監控</th>
+<th>例如</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>click</td>
+<td>滑鼠點擊時</td>
+<td></td>
+</tr>
+<tr>
+<td>change</td>
+<td>值被切換時</td>
+<td>下拉選單</td>
+</tr>
+<tr>
+<td>keydown</td>
+<td>按下鍵盤時</td>
+<td></td>
+</tr>
+<tr>
+<td>mousemove</td>
+<td>移動滑鼠時</td>
+<td></td>
+</tr>
+<tr>
+<td>focus</td>
+<td>進入焦點時</td>
+<td>輸入框</td>
+</tr>
+<tr>
+<td>blur</td>
+<td>離開焦點時</td>
+<td>輸入框</td>
+</tr>
+<tr>
+<td>mouseenter</td>
+<td>游標進入時</td>
+<td></td>
+</tr>
+<tr>
+<td>mouseleave</td>
+<td>游標離開時</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="heading-10"></h1>
+<hr>
+<h1 id="heading-11"></h1>
+<h3 id="事件冒泡event-bubbling">事件冒泡(Event Bubbling)</h3>
+<h1 id="heading-12"></h1>
+<ul>
+<li><strong>.addEventListener</strong> (&ldquo;事件&rdquo;,&ldquo;方法&rdquo;,false)。</li>
+</ul>
+<h1 id="heading-13"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----html-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">btn1</span> <span style="color:#a6e22e">按鈕</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">btn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.btn1&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;你點擊了，body&#34;</span>);
+</span></span><span style="display:flex;"><span>},<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;你點擊了，btn&#34;</span>);
+</span></span><span style="display:flex;"><span>},<span style="color:#66d9ef">false</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----結果-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//點擊&#34;按鈕&#34;時  //你點擊了，btn  //你點擊了，body
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-14"></h1>
+<blockquote>
+<p>從指定元素往外層找</p>
+</blockquote>
+<h1 id="heading-15"></h1>
+<hr>
+<h1 id="heading-16"></h1>
+<h3 id="事件捕捉event-capturing">事件捕捉(Event Capturing)</h3>
+<h1 id="heading-17"></h1>
+<ul>
+<li><strong>.addEventListener</strong> (&ldquo;事件&rdquo;,&ldquo;方法&rdquo;,true)。</li>
+</ul>
+<h1 id="heading-18"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----html-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">btn1</span> <span style="color:#a6e22e">按鈕</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">btn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.btn1&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;你點擊了，body&#34;</span>);
+</span></span><span style="display:flex;"><span>},<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;你點擊了，btn&#34;</span>);
+</span></span><span style="display:flex;"><span>},<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----結果-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//點擊&#34;按鈕&#34;時  //你點擊了，body  //你點擊了，btn
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-19"></h1>
+<blockquote>
+<p>從外層找到指定元素</p>
+</blockquote>
+<h1 id="heading-20"></h1>
+<hr>
+<h1 id="heading-21"></h1>
+<h3 id="阻止事件冒泡stoppropagation">阻止事件冒泡(stopPropagation)</h3>
+<h1 id="heading-22"></h1>
+<ul>
+<li>使用 <strong>.stopPropagation()</strong> 可阻止向外查找事件。</li>
+</ul>
+<h1 id="heading-23"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----html-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">body</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">btn1</span> <span style="color:#a6e22e">按鈕</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">btn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.btn1&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;你點擊了，body&#34;</span>);
+</span></span><span style="display:flex;"><span>},<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">stopPropagation</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;你點擊了，btn&#34;</span>);
+</span></span><span style="display:flex;"><span>},<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----結果-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//點擊&#34;按鈕&#34;時  //你點擊了，btn
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-24"></h1>
+<hr>
+<h1 id="heading-25"></h1>
+<h3 id="取消預設行為preventdefault">取消預設行為(preventDefault)</h3>
+<h1 id="heading-26"></h1>
+<ul>
+<li>使用 <strong>.preventDefault()</strong> 可阻止預設事件。</li>
+</ul>
+<h1 id="heading-27"></h1>
+<p><code>可阻止href連結、submit送出</code></p>
+<h1 id="heading-28"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----html-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>(<span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.google.com.tw/&#34;</span>) <span style="color:#a6e22e">連結</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;a&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">preventDefault</span>();
+</span></span><span style="display:flex;"><span>},<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----結果-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//點擊&#34;連結&#34;時  //不會跳轉到指定網頁
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-29"></h1>
+<hr>
+<h1 id="heading-30"></h1>
+<h3 id="click--target">click + target</h3>
+<h1 id="heading-31"></h1>
+<ul>
+<li>取得滑鼠的點擊的目標。</li>
+</ul>
+<h1 id="heading-32"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----html-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">ul</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">li</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">連結</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;a&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">target</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">target</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----結果-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//點擊&#34;連結&#34;時  //&lt;a&gt;連結&lt;/a&gt;
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-33"></h1>
+<hr>
+<h1 id="heading-34"></h1>
+<h3 id="click--target-進階範例">click + target 進階範例</h3>
+<h1 id="heading-35"></h1>
+<ol>
+<li>使用 <strong>for</strong> 迴圈將資料列印在清單上。</li>
+</ol>
+<h1 id="heading-36"></h1>
+<ol start="2">
+<li>在清單上監聽 <strong>click</strong> 事件。</li>
+</ol>
+<h1 id="heading-37"></h1>
+<ol start="3">
+<li>使用 <strong>event.target.tagName</strong> 取得點擊的目標。</li>
+</ol>
+<h1 id="heading-38"></h1>
+<ol start="4">
+<li>使用 <strong>if&hellip;else</strong> 判斷目標是否正確。</li>
+</ol>
+<h1 id="heading-39"></h1>
+<ol start="5">
+<li>使用 <strong>.textContent</strong> 將目標的文字顯示出來。</li>
+</ol>
+<h1 id="heading-40"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----html-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">ul</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fruits</span><span style="color:#f92672">=</span>[
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#34;美國&#34;</span>,<span style="color:#e6db74">&#34;日本&#34;</span>] 
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#34;台灣&#34;</span>,<span style="color:#e6db74">&#34;泰國&#34;</span>] 
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;鳳梨&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#34;夏威夷&#34;</span>,<span style="color:#e6db74">&#34;新加玻&#34;</span>] 
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">ul</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;ul&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">str</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`&lt;li&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/li&gt;`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ul</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ul</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">targetTag</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">tagName</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">targetText</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">textContent</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">targetTag</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;LI&#34;</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">targetText</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-41"></h1>
+<hr>
+<h1 id="heading-42"></h1>
+<h3 id="change--target">change + target</h3>
+<h1 id="heading-43"></h1>
+<ul>
+<li>顯示下單選單的裡值。</li>
+</ul>
+<h1 id="heading-44"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----html-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">select</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">option</span>(<span style="color:#a6e22e">hidden</span>) <span style="color:#a6e22e">請選擇</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">option</span>(<span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;蘋果&#34;</span>) <span style="color:#a6e22e">蘋果</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">option</span>(<span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;香蕉&#34;</span>) <span style="color:#a6e22e">香蕉</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">option</span>(<span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;鳳梨&#34;</span>) <span style="color:#a6e22e">鳳梨</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">p</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;select&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;change&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">targetValue</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">value</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">targetValue</span>;
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----結果-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//點擊&#34;連結&#34;時  //&lt;a&gt;連結&lt;/a&gt;
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-45"></h1>
+<hr>
+<h1 id="heading-46"></h1>
+<h3 id="change--target-進階範例">change + target 進階範例</h3>
+<h1 id="heading-47"></h1>
+<ol>
+<li>使用 <strong>for</strong> 迴圈將資料列印在選項上。</li>
+</ol>
+<h1 id="heading-48"></h1>
+<ol start="2">
+<li>在清單上監聽 <strong>change</strong> 事件。</li>
+</ol>
+<h1 id="heading-49"></h1>
+<ol start="3">
+<li>使用 <strong>event.target.value</strong> 取得點擊目標的值。</li>
+</ol>
+<h1 id="heading-50"></h1>
+<ol start="4">
+<li>使用 <strong>if&hellip;else</strong> 判斷目標得值是否正確。</li>
+</ol>
+<h1 id="heading-51"></h1>
+<ol start="5">
+<li>使用 <strong>.textContent</strong> 將目標的文字顯示出來。</li>
+</ol>
+<h1 id="heading-52"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----html-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">select</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">p</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fruits</span><span style="color:#f92672">=</span>[
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#34;美國&#34;</span>,<span style="color:#e6db74">&#34;日本&#34;</span>] 
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#34;台灣&#34;</span>,<span style="color:#e6db74">&#34;泰國&#34;</span>] 
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;鳳梨&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">amount</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">prod</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#34;夏威夷&#34;</span>,<span style="color:#e6db74">&#34;新加玻&#34;</span>] 
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">select</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;select&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">str</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">`&lt;option value=&#34;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/option&gt;`</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">select</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`&lt;option hidden&gt;請選擇&lt;/option&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">str</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">select</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;change&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">targetVal</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">value</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">length</span> ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">targetVal</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">name</span>){
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`數量:</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">amount</span><span style="color:#e6db74">}</span><span style="color:#e6db74">，產地:</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">fruits</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">prod</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-53"></h1>
+<hr>
+<h1 id="heading-54"></h1>
+<h3 id="keydown--keycode">keydown + keyCode</h3>
+<h1 id="heading-55"></h1>
+<ul>
+<li>可以取得當前按下的按鍵。</li>
+</ul>
+<h1 id="heading-56"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;keydown&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">keyCode</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----結果-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//按下&#34;enter&#34;鍵時  //13
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-57"></h1>
+<hr>
+<h1 id="heading-58"></h1>
+<h3 id="focus--blur">focus + blur</h3>
+<h1 id="heading-59"></h1>
+<ul>
+<li>可以監控使用者是否正在使用輸入框。</li>
+</ul>
+<h1 id="heading-60"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----html-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">input</span>(<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;input&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;focus&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;進入輸入框&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;blur&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;離開輸入框&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-61"></h1>
+<hr>
+<h1 id="heading-62"></h1>
+<h3 id="mouseentermouseleave">mouseenter、mouseleave</h3>
+<h1 id="heading-63"></h1>
+<ul>
+<li>可以監控滑鼠進入或離開該元素。</li>
+</ul>
+<h1 id="heading-64"></h1>
+<p><code>進入離開都觸發，可使用mousemove</code></p>
+<h1 id="heading-65"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----html-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">p</span> <span style="color:#a6e22e">蘋果</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;mouseenter&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;滑鼠觸碰蘋果了&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;mouseleave&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;滑鼠離開蘋果了&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-66"></h1>
+<hr>
+<h1 id="heading-67"></h1>
+<h3 id="mousemove--event">mousemove + event</h3>
+<h1 id="heading-68"></h1>
+<ul>
+<li>讓圖片取代滑鼠游標。</li>
+</ul>
+<h1 id="heading-69"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----html-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">body</span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">box</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----css-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">body</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">width</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">height</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1000</span><span style="color:#a6e22e">px</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">cursor</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">none</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">box</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">width</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span><span style="color:#a6e22e">px</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">height</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span><span style="color:#a6e22e">px</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">background</span><span style="color:#f92672">-</span><span style="color:#a6e22e">color</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">red</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">position</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">fixed</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;-----js-----&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.box&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;mousemove&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mouseX</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">clientX</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mouseY</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">clientY</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">mouseX</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;px&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">mouseY</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;px&#34;</span>;
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-70"></h1>
+<hr>
+<h1 id="heading-71"></h1>
+<h3 id="取得滑鼠座標">取得滑鼠座標</h3>
+<h1 id="heading-72"></h1>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>取得</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page(X/Y)</td>
+<td>滑鼠在整個網頁的座標</td>
+</tr>
+<tr>
+<td>client(X/Y)</td>
+<td>滑鼠在當前瀏覽器視窗的座標</td>
+</tr>
+<tr>
+<td>screen(X/Y)</td>
+<td>滑鼠在當前使用裝置的螢幕座標</td>
+</tr>
+</tbody>
+</table>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://jack842248.github.io/tags/javascript/">JavaScript</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-17-javascript%25E4%25BD%25BF%25E7%2594%25A8%25E8%2580%2585%25E4%25BA%258B%25E4%25BB%25B6%2f&amp;text=JavaScript%e2%80%94%e4%bd%bf%e7%94%a8%e8%80%85%e4%ba%8b%e4%bb%b6&amp;via=" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-17-javascript%25E4%25BD%25BF%25E7%2594%25A8%25E8%2580%2585%25E4%25BA%258B%25E4%25BB%25B6%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-17-javascript%25E4%25BD%25BF%25E7%2594%25A8%25E8%2580%2585%25E4%25BA%258B%25E4%25BB%25B6%2f&amp;title=JavaScript%e2%80%94%e4%bd%bf%e7%94%a8%e8%80%85%e4%ba%8b%e4%bb%b6" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-17-javascript%25E4%25BD%25BF%25E7%2594%25A8%25E8%2580%2585%25E4%25BA%258B%25E4%25BB%25B6%2f&amp;title=JavaScript%e2%80%94%e4%bd%bf%e7%94%a8%e8%80%85%e4%ba%8b%e4%bb%b6" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-17-javascript%25E4%25BD%25BF%25E7%2594%25A8%25E8%2580%2585%25E4%25BA%258B%25E4%25BB%25B6%2f&amp;title=JavaScript%e2%80%94%e4%bd%bf%e7%94%a8%e8%80%85%e4%ba%8b%e4%bb%b6" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-17-javascript%25E4%25BD%25BF%25E7%2594%25A8%25E8%2580%2585%25E4%25BA%258B%25E4%25BB%25B6%2f&amp;description=JavaScript%e2%80%94%e4%bd%bf%e7%94%a8%e8%80%85%e4%ba%8b%e4%bb%b6" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+            
+          
+
+          
+                  <h4 class="see-also">其他相關</h4>
+                  <ul>
+                
+                
+                    <li><a href="/post/2021-02-24-javascript%E5%B0%81%E8%A3%9Dajax%E8%AB%8B%E6%B1%82/">JavaScript—封裝AJAX請求</a></li>
+                
+                    <li><a href="/post/2021-03-01-photoshop%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5/">PhotoShop—常用快捷鍵</a></li>
+                
+                    <li><a href="/post/2021-02-23-javascript%E6%93%8D%E4%BD%9Carray%E6%96%B9%E6%B3%95/">JavaScript—操作Array方法</a></li>
+                
+                    <li><a href="/post/2021-02-22-javascriptchrome-devtools/">Chrome devtools除錯</a></li>
+                
+                    <li><a href="/post/2021-02-21-javascriptgoogle-maps-api/">JavaScript—Google Maps API</a></li>
+                
+              </ul>
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://jack842248.github.io/post/2021-02-16-javascript%E6%96%87%E4%BB%B6%E7%89%A9%E4%BB%B6%E6%A8%A1%E5%9E%8B/" data-toggle="tooltip" data-placement="top" title="JavaScript—文件物件模型">&larr; 上一篇</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://jack842248.github.io/post/2021-02-18-javascripttodolist/" data-toggle="tooltip" data-placement="top" title="localStorage與todolist">下一篇 &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+          
+          <div class="disqus-comments">                  
+            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2021-02-17-javascript%E4%BD%BF%E7%94%A8%E8%80%85%E4%BA%8B%E4%BB%B6">則評論</span></button>
+            <div id="disqus_thread"></div>
+
+            <script type="text/javascript">
+              var disqus_config = function () {
+              this.page.url = 'https:\/\/jack842248.github.io\/post\/2021-02-17-javascript%E4%BD%BF%E7%94%A8%E8%80%85%E4%BA%8B%E4%BB%B6';
+            };
+
+          </script>
+          </div>
+          
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:jack842248@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/jack842248" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/jack842248" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/jack842248" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://codepen.io/jack842248" title="CodePen">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-codepen fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://jack842248.github.io">JackHuang</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2022
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://jack842248.github.io">Jack Huang Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          由 <a href="https://gohugo.io">Hugo v0.95.0</a> 提供 &nbsp;&bull;&nbsp; 主題 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 移植自 <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://jack842248.github.io/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://jack842248.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+  $('#show-comments').on('click', function(){
+    var disqus_shortname = 'jack842248';
+      
+    (function() {
+      var disqus = document.createElement('script'); 
+      disqus.type = 'text/javascript'; 
+      disqus.async = true;
+      disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
+    })();
+      
+    $(this).hide(); 
+    });
+  });
+      
+</script>
+<script id="dsq-count-scr" src="//jack842248.disqus.com/count.js" async></script>
+
+
+
+
+    
+  </body>
+</html>
+

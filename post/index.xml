@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Jack Huang Blog</title>
+    <link>https://jack842248.github.io/post/</link>
+    <description>Recent content in Posts on Jack Huang Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
+    <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
+    <lastBuildDate>Thu, 07 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS—RWD響應式排版</title>
+      <link>https://jack842248.github.io/post/2022-04-07-%E5%85%B6%E4%BB%96%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-07-%E5%85%B6%E4%BB%96%E6%8A%80%E5%B7%A7/</guid>
+      <description>單位   px：絕對的文字大小 em：以目前文字大小為基準，會因外層的font-size大小影響 rem：以外層html為基準：會因html的font-size大小影響     路徑  1 2 3 4 5  .box{  background-image:url(/images); /*根目錄*/  background-image:url(./images); /*所在目錄*/  background-image:url(../images); /*上層目錄*/ }      字體  1 2 3 4 5 6 7 8 9 10  .box{  font-family:&amp;#34;Microsoft JhengHei&amp;#34;; /*window中文字體*/  font-family:&amp;#34;Segoe UI&amp;#34;; /*window英文字體*/   font-family:&amp;#34;Droidsanfallback&amp;#34;; /*Andriod中文字體*/  font-family:&amp;#34;Roboto&amp;#34;; /*Andriod英文字體*/   font-family:&amp;#34;Ping Fang HeitiTC&amp;#34;; /*ios中文字體*/  font-family:&amp;#34;Helvetica Neue&amp;#34;; /*ios英文字體*/ }      螢幕使用市占率2021.</description>
+    </item>
+    
+    <item>
+      <title>CSS—RWD響應式排版</title>
+      <link>https://jack842248.github.io/post/2022-04-06-cssrwd%E9%9F%BF%E6%87%89%E5%BC%8F%E6%8E%92%E7%89%88/</link>
+      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-06-cssrwd%E9%9F%BF%E6%87%89%E5%BC%8F%E6%8E%92%E7%89%88/</guid>
+      <description>螢幕大小設定  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  /*設定當螢幕寬度在0px~600px時*/ @media screen and(max-width:600px){  body{  background-color:red;  } } /*設定當螢幕寬度在600px以上，1000px以下時*/ @media screen and (min-width:600px) and (max-width:1000px){  body{  background-color:green;  } } /*設定當螢幕寬度在1000px以上，1920px以下時*/ @media screen and (min-width:1000px) and (max-width:1920px){  body{  background-color:blue;  } }      Bootstrap排版   在&amp;lt;head&amp;gt;的&amp;lt;mata&amp;gt;引入bootstrap.</description>
+    </item>
+    
+    <item>
+      <title>CSS—樣式大全3</title>
+      <link>https://jack842248.github.io/post/2022-04-05-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A83/</link>
+      <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-05-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A83/</guid>
+      <description>logo取代h1  1 2 3 4 5 6 7 8 9 10 11 12 13  .header h1{  float:left; } .header h1 a{  display:block; /*a預設是inline*/  width:圖片寬度;  height:圖片高度;  background-image:url(&amp;#34;連結網址&amp;#34;);  text-indent:101%; /*讓文字超出*/  overflow:hidden; /*超出範圍隱藏*/  white-space:nowrap; /*讓文字不換行*/  background:contain; /*若是svg圖則加*/ }      漢堡選單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  header{  height:80px;  border:solid 1px #333333; } .</description>
+    </item>
+    
+    <item>
+      <title>CSS—樣式大全2</title>
+      <link>https://jack842248.github.io/post/2022-04-04-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A82/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-04-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A82/</guid>
+      <description>連結  1 2 3 4 5 6 7 8 9 10 11 12  a:link{  /*設定尚未點擊的連結*/ } a:visited{  /*設定已經點擊過後的連結*/ } a:hover{  /*設定游標移入時的連結*/ } a:active{  /*設定游標點擊時的連結*/ }      清單  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  li{  list-style-type:disc; /*黑圓點*/  list-style-type:circle; /*黑圓圈*/  list-style-type:square; /*黑方塊*/  list-style-type:upper-latin; /*大寫英文*/  list-style-type:lower-latin; /*小寫英文*/  list-style-type:upper-roman; /*大寫羅馬文*/  list-style-type:lower-roman; /*小寫羅馬文*/  list-style-type:none; /*不顯示*/   list-style-image:url(&amp;#34;連結網址&amp;#34;); /*崁入清單樣式*/   list-style-position:outside; /*圖樣在元素外*/  list-style-position:inside; /*圖樣在元素內*/   list-style:circle inside; /*清單樣式，圖樣位置*/ }  /*UTF-8字符取代清單樣式*/ li{  list-style:none; } li::before{  display:inline-block;  content:&amp;#34;⇦&amp;#34;; }    ::before在元素之前、::after在元素之後</description>
+    </item>
+    
+    <item>
+      <title>CSS—樣式大全1</title>
+      <link>https://jack842248.github.io/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A81/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-03-css%E6%A8%A3%E5%BC%8F%E5%A4%A7%E5%85%A81/</guid>
+      <description>樣式選擇器及規則     名稱 HTML tag CSS選擇器. CSS選擇器# style= !important     權重 1分 10分 100分 1000分 10000分     1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  p{  /*選擇&amp;lt;p&amp;gt;標籤屬性*/ }  *{  /*對所有標籤進行樣式設定*/ }  .box{  /*選擇&amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt;標籤屬性*/ }  #box{  /*選擇&amp;lt;div id=&amp;#34;box&amp;#34;&amp;gt;標籤屬性*/ } /* 1.</description>
+    </item>
+    
+    <item>
+      <title>HTML—標籤大全</title>
+      <link>https://jack842248.github.io/post/2022-03-24-html%E6%A8%99%E7%B1%A4%E5%A4%A7%E5%85%A8/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-03-24-html%E6%A8%99%E7%B1%A4%E5%A4%A7%E5%85%A8/</guid>
+      <description>網頁初步結構  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;zh-tw&amp;#34;&amp;gt; &amp;lt;!--整份網頁文件，用來包&amp;lt;head&amp;gt;、&amp;lt;body&amp;gt;標籤--&amp;gt;  &amp;lt;head&amp;gt;  &amp;lt;title&amp;gt;網頁標題&amp;lt;/title&amp;gt;   &amp;lt;style&amp;gt;css樣式&amp;lt;/style&amp;gt;   &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>JavaScript—封裝AJAX請求</title>
+      <link>https://jack842248.github.io/post/2021-02-24-javascript%E5%B0%81%E8%A3%9Dajax%E8%AB%8B%E6%B1%82/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-24-javascript%E5%B0%81%E8%A3%9Dajax%E8%AB%8B%E6%B1%82/</guid>
+      <description>建立Promise    Promise 是一個函式物件，需要用函式來建構。
+  PromiseState : 狀態。
+  PromiseValue : 回傳的值。
+    需要帶入兩個參數 resolve : 成功， reject : 失敗。
+  在 *非同步事件 之後才會執行結果。
+  需要用 .then() : 顯示成功的結果， catch() : 顯示失敗的結果。
+   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  function promiseFn(item){ //1.  return new Promise((resolve,reject)=&amp;gt;{ //2.</description>
+    </item>
+    
+    <item>
+      <title>PhotoShop—常用快捷鍵</title>
+      <link>https://jack842248.github.io/post/2021-03-01-photoshop%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-03-01-photoshop%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5/</guid>
+      <description>  常用快捷鍵  Ctrl + W 關閉視窗 Ctrl + Z 還原 Ctrl + X 剪下圖層 Ctrl + C 複製 Ctrl + V 貼上 Ctrl + S 存檔 Ctrl + J 拷貝圖層 Ctrl + shift + S 另存新檔 Ctrl + shift + I 反轉選取 Z 放大鏡 X 前景色/背景色 C 裁切工具 V 移動工具 B 筆刷工具 A 路徑選取工具 S 仿製印章 D 滴管工具 F 快速選取工具 Q 鋼筆工具    注意小細節   使用濾鏡效果時，要將圖層先轉為智慧型物件。 裁切工具→刪除裁切的像素(若沒勾選)→拖拉出新範圍，底層是透明格。 使用橡皮擦工具，等於使用背景色上色。 使用仿製印章，可以新增圖層，樣本選取&amp;quot;目前及底下的圖層&amp;quot;。 選擇圖層，點選底下[fx]可以套用陰影、內外框等樣式。 編輯→透視彎曲，可以設圖釘點彎曲物件，按住Alt點擊刪除圖釘。 調整面板→色相/飽和度→點選手指再對圖片Ctrl+左鍵拖拉調整色相，左鍵拖拉調整飽和度。 透視裁切工具→     刪除照片中不要的內容   汙點修復工具(快速處理細小部分) 填滿內容感知(快速處理大範圍) 仿製印章(處理較複雜的部份)     其他選取方法   使用顏色選去使用顏色選去     延伸背景   裁切工具→刪除裁切的像素(打勾)→拖拉範圍。   </description>
+    </item>
+    
+    <item>
+      <title>JavaScript—操作Array方法</title>
+      <link>https://jack842248.github.io/post/2021-02-23-javascript%E6%93%8D%E4%BD%9Carray%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-23-javascript%E6%93%8D%E4%BD%9Carray%E6%96%B9%E6%B3%95/</guid>
+      <description>新增陣列   .push (要新增的東西)，新增到陣列最後方。   1 2 3  let a = [&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;]; a.push(&amp;#34;芭樂&amp;#34;); console.log(a); //[&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;,&amp;#34;芭樂&amp;#34;]     .unshift (要新增的東西)，新增到陣列最前方。   1 2 3  let a = [&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;]; a.unshift(&amp;#34;芭樂&amp;#34;); console.log(a); //[&amp;#34;芭樂&amp;#34;,&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;]     .concat (要新增的東西)，新增到陣列最後方。   1 2 3  let a = [&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;]; let b = a.concat(&amp;#34;芭樂&amp;#34;); console.log(b); //[&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;,&amp;#34;芭樂&amp;#34;]      刪除陣列   .pop() ，刪除陣列最後一項。   1 2 3  let a = [&amp;#34;蘋果&amp;#34;,&amp;#34;香蕉&amp;#34;,&amp;#34;鳳梨&amp;#34;]; a.</description>
+    </item>
+    
+    <item>
+      <title>Chrome devtools除錯</title>
+      <link>https://jack842248.github.io/post/2021-02-22-javascriptchrome-devtools/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-22-javascriptchrome-devtools/</guid>
+      <description>對著圖片→&amp;quot;右鍵&amp;quot;→&amp;quot;複製圖片位置&amp;quot;。可複製該圖片的路徑，貼到src上。       對著連結→&amp;quot;右鍵&amp;quot;→&amp;quot;複製連結網址&amp;quot;。可複製該連結的路徑，貼到href上。       開啟Chrome開發者工具:打開Chrome瀏覽器→&amp;quot;右鍵&amp;quot;→&amp;quot;檢查&amp;quot;。       Dock side : 可以設定開發者人員工具的方向、或獨立式窗。       Toggle Device Toolbar : 切換手機或平板螢幕大小來瀏覽網頁。       Select an element in the page to inspect it : 可以尋找網頁上的元素。       在[Elements]使用ctrl+F可搜尋HTML標籤、class名稱，找到的會被highlight。       在[Elements]使用styles的Fliter，可搜尋css屬性名稱。       在[Elements]使用styles的:hov，可查看元素在:hover時的狀態。       在[Elements]使用styles的視窗中，transform、animation可查看貝茲控制點的曲線。    1 2  // &amp;lt;-----css-----&amp;gt; transition: 1s cubic-bezier(.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript—Google Maps API</title>
+      <link>https://jack842248.github.io/post/2021-02-21-javascriptgoogle-maps-api/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-21-javascriptgoogle-maps-api/</guid>
+      <description>應用程式介面(Application Programming Interface)   簡稱API。     應用程式提供的服務，用來接收或傳送資料給應用程式。例如 :
+  Heroku，主機服務。
+  GoogleMap，地圖導覽服務。
+  Firebase，資料庫服務
+       Google Map API   在Google雲端平台創建一個帳戶(需綁定一張信用卡)。(不會自動收取費用，除非手動升級)   在雲端平台上建立一個專案。   點擊&amp;quot;地圖管理&amp;quot;→&amp;quot;CREATE NEW MAP ID&amp;quot;，新建一個ID。   點擊&amp;quot;地圖樣式&amp;quot;→&amp;quot;CREATE NEW MAP STYLE&amp;quot;，新建一個地圖樣式。   點擊&amp;quot;解決方案建構工具&amp;quot;→&amp;quot;將程式碼複製到剪貼簿&amp;quot;。   貼到編輯器上，開始建置地圖。     初始化地圖   以夢時代為顯示中心。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  // &amp;lt;-----html-----&amp;gt; div#map  script(src=&amp;#34;https://maps.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript—發送AJAX請求</title>
+      <link>https://jack842248.github.io/post/2021-02-20-javascript%E7%99%BC%E9%80%81ajax%E8%AB%8B%E6%B1%82/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-20-javascript%E7%99%BC%E9%80%81ajax%E8%AB%8B%E6%B1%82/</guid>
+      <description>動態載入資料(AJAX)   使用 new XMLHttpRequest 原型，來向伺服器發送請求。     不用重新整理網頁就能取得資料庫回傳的資料，例如 :
+  加入購物車，顯示商品數量。
+  註冊帳號時，顯示該帳號是否已使用。
+  搜尋時，顯示的關鍵提示字。
+      載入的資料必須支援跨網域(CORS)。     跨域資源共享(Cross-Origin Resource Sharing)   簡稱CORS。    若發送請求時出現 Access-Control-Allow-Origin 錯誤，代表不支援。     可以使用 test-cors.org 網站，顯示http狀態碼。
+  .status:200，資料載入成功，用戶端要求成功。
+  .status:404，資料載入失敗，找不到。
+       .open(&amp;ldquo;方法&amp;rdquo; , &amp;ldquo;網址&amp;rdquo; , frue/false)。   向伺服器發送請求。    true(非同步)，不等資料載入完就會往下執行。(預設)    false(同步)，等待資料載入完後才往下執行。      方法 GET POST PUT DELETE     說明 取得資料 傳送資料 覆蓋資料 刪除資料       .</description>
+    </item>
+    
+    <item>
+      <title>JavaScript—瀏覽器物件模型</title>
+      <link>https://jack842248.github.io/post/2021-02-19-javascript%E7%80%8F%E8%A6%BD%E5%99%A8%E7%89%A9%E4%BB%B6%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-19-javascript%E7%80%8F%E8%A6%BD%E5%99%A8%E7%89%A9%E4%BB%B6%E6%A8%A1%E5%9E%8B/</guid>
+      <description>BOM(Browser Object Model)   瀏覽器(window)提供的物件原型。      名稱 中文     history 瀏覽歷史紀錄   frames 框架   location 路徑位置   document DOM元素   screen 使用裝置資訊   navigator 版本資訊       回上頁   使用window.history.forward()，下一頁。    使用window.history.back()，回上頁。   回上頁前必須先下一頁
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14  // &amp;lt;-----html-----&amp;gt; button.</description>
+    </item>
+    
+    <item>
+      <title>localStorage與todolist</title>
+      <link>https://jack842248.github.io/post/2021-02-18-javascripttodolist/</link>
+      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-18-javascripttodolist/</guid>
+      <description>瀏覽器資料儲存(LocalStorage)   可以將&amp;quot;字串&amp;quot;資料儲存在 Chrome → Application → LocalStorage 裡。      Key Value     &amp;mdash; &amp;mdash;      使用 .setItem 、 .getItem 來存取資料。   1 2 3 4 5 6  /** 存入資料 **/ localStorage.setItem(&amp;#34;a&amp;#34;,&amp;#34;蘋果&amp;#34;);  /** 取出資料 **/ let a = localStorage.getItem(&amp;#34;a&amp;#34;); console.log(a); //蘋果       Key Value     a 蘋果       localStorage + input   將輸入框裡的值存入後再取出。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // &amp;lt;-----html-----&amp;gt; input(type=&amp;#34;text&amp;#34;) button.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript—使用者事件</title>
+      <link>https://jack842248.github.io/post/2021-02-17-javascript%E4%BD%BF%E7%94%A8%E8%80%85%E4%BA%8B%E4%BB%B6/</link>
+      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-17-javascript%E4%BD%BF%E7%94%A8%E8%80%85%E4%BA%8B%E4%BB%B6/</guid>
+      <description>點擊事件(Click Event)   .onclick = function(){&amp;hellip;} 。    直接在DOM元素上 onclick=&amp;quot;&amp;hellip;&amp;quot; (不建議使用)。    .addEventListener(&amp;ldquo;click&amp;rdquo;,function(){&amp;hellip;}) 。   .onclick只能綁定最後一次事件，.addEventListener可以綁定多次事件，
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  // &amp;lt;-----html-----&amp;gt; button.btn1 按鈕1 button.btn2(onclick=&amp;#34;console.log(&amp;#39;您點擊了，按鈕2&amp;#39;)&amp;#34;) 按鈕2 button.btn3 按鈕3  // &amp;lt;-----js-----&amp;gt; let btn1 = document.querySelector(&amp;#34;.btn1&amp;#34;); let btn3 = document.querySelector(&amp;#34;.btn3&amp;#34;);  btn1.onclick = function(){  console.log(&amp;#34;您點擊了，按鈕1&amp;#34;); }  btn3.addEventListener(&amp;#34;click&amp;#34;,function(){  console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript—文件物件模型</title>
+      <link>https://jack842248.github.io/post/2021-02-16-javascript%E6%96%87%E4%BB%B6%E7%89%A9%E4%BB%B6%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-16-javascript%E6%96%87%E4%BB%B6%E7%89%A9%E4%BB%B6%E6%A8%A1%E5%9E%8B/</guid>
+      <description>取得DOM元素方法     方法 取得目標 得到結果     .getElementById() id 只能取得一個   .getElementsByName() name 以陣列形式呈現   .getElementsByTagName() &amp;lt;標籤&amp;gt; 以陣列形式呈現   .querySelector() id、class、&amp;lt;標籤&amp;gt; 只能取得一個   .querySelectorAll() id、class 以陣列形式呈現       .getElementById()  1 2 3 4 5 6 7  // &amp;lt;-----html-----&amp;gt; #a 蘋果 #a 香蕉  // &amp;lt;-----js-----&amp;gt; let a = document.getElementById(&amp;#34;a&amp;#34;); console.log(a); //&amp;lt;div id=&amp;#39;a&amp;#39;&amp;gt;蘋果&amp;lt;/div&amp;gt;      .</description>
+    </item>
+    
+    <item>
+      <title>JavaScript—變數與作用域</title>
+      <link>https://jack842248.github.io/post/2021-02-15-javascript%E8%AE%8A%E6%95%B8%E8%88%87%E4%BD%9C%E7%94%A8%E5%9F%9F/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-15-javascript%E8%AE%8A%E6%95%B8%E8%88%87%E4%BD%9C%E7%94%A8%E5%9F%9F/</guid>
+      <description>全域變數(Global Variable)   在function裡的變數稱為，區域變數。(範例一)   區域變數(Area Variable)   在function外的變數稱為，全域變數。(範例二)   1 2 3 4 5 6 7 8 9 10 11 12 13 14  /** 範例一 **/ function fn1(){  let a = &amp;#34;蘋果&amp;#34;;  console.log(a); //蘋果 } fn1();  /** 範例二 **/ let a; function fn1(){  a = &amp;#34;蘋果&amp;#34;; } fn1(); console.log(a); //蘋果      if、else if、else   適合判斷式數值，限制範圍。    一律使用 if 開頭，若不成立，則往下執行。    可以使用多個 else if ，若不成立，則往下執行。    若以上都不成立則執行 else 。   1 2 3 4 5 6 7 8 9 10 11 12 13 14  let hungry = 5; //飢餓程度1~10 function eat(food){  console.</description>
+    </item>
+    
+    <item>
+      <title>Vue—元件的切換與插槽</title>
+      <link>https://jack842248.github.io/post/2021-02-09-vue%E5%85%83%E4%BB%B6%E7%9A%84%E5%88%87%E6%8F%9B%E8%88%87%E6%8F%92%E6%A7%BD/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-09-vue%E5%85%83%E4%BB%B6%E7%9A%84%E5%88%87%E6%8F%9B%E8%88%87%E6%8F%92%E6%A7%BD/</guid>
+      <description>動態切換元件   使用 v-if 判斷。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29  // &amp;lt;-----html-----&amp;gt; #app  button(@click=&amp;#34;a = &amp;#39;apple&amp;#39;&amp;#34; :key=&amp;#34;a&amp;#34;) 按鈕A  button(@click=&amp;#34;a = &amp;#39;banana&amp;#39;&amp;#34; :key=&amp;#34;a&amp;#34;) 按鈕B  hr  div(is=&amp;#34;apple&amp;#34; v-if=&amp;#34;a === &amp;#39;apple&amp;#39;&amp;#34;)  div(is=&amp;#34;banana&amp;#34; v-if=&amp;#34;a === &amp;#39;banana&amp;#39;&amp;#34;)  script(type=&amp;#34;text/x-template&amp;#34; id=&amp;#34;apple&amp;#34;)  p 蘋果  script(type=&amp;#34;text/x-template&amp;#34; id=&amp;#34;banana&amp;#34;)  p 香蕉  // &amp;lt;-----js-----&amp;gt; Vue.</description>
+    </item>
+    
+    <item>
+      <title>Vue—元件的建立與傳值</title>
+      <link>https://jack842248.github.io/post/2021-02-08-vue%E5%85%83%E4%BB%B6%E7%9A%84%E5%BB%BA%E7%AB%8B%E8%88%87%E5%82%B3%E5%80%BC/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-08-vue%E5%85%83%E4%BB%B6%E7%9A%84%E5%BB%BA%E7%AB%8B%E8%88%87%E5%82%B3%E5%80%BC/</guid>
+      <description>元件(Component)   元件資料是獨立運作，也可以重複使用。    元件裡面可以再包元件。     建立元件有兩種方式:
+  全域註冊 : 使用Vue.component()建立，其他app也可以使用。
+  局部註冊 : 在app裡使用components建立，只有app自己可以使用。
+      全域註冊元件   使用Vue.component()建立，第一個參數自訂[標籤名稱]。   在HTML建立一個類型為 text/x-template 的&amp;lt;script&amp;gt;，並賦予一個[id]名稱。   並在底下建立元件結構。   在 Vue.component() ，使用[template]對應&amp;lt;script&amp;gt;的[id]。   在HTML上使用自訂[標籤名稱]。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  // &amp;lt;-----html-----&amp;gt; #app  list-com //5.</description>
+    </item>
+    
+    <item>
+      <title>Vue—table排序(Bootstrap版)</title>
+      <link>https://jack842248.github.io/post/2021-02-07-vuetable%E6%8E%92%E5%BA%8Fbootstrap%E7%89%88/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-07-vuetable%E6%8E%92%E5%BA%8Fbootstrap%E7%89%88/</guid>
+      <description>methods版   在&amp;lt;tr&amp;gt;使用 v-for 將[a]資料列印出來。   在&amp;lt;th&amp;gt;&amp;ldquo;價格&amp;quot;上增加 @click 事件[sortPrice]，並在 methods 新增[sortPrice]方法。   [sortPrice]:判斷現在[b]的值是(true/false)，決定要排序大到小，還是小到大。   並且在排序完之後，改變[b]的值。   在&amp;lt;th&amp;gt;&amp;ldquo;到期日&amp;quot;上增加 @click 事件[sortDate]，並在 methods 新增[sortDate]方法。   [sortDate]:判斷現在[c]的值是(true/false)，決定要排序大到小，還是小到大。   並且在排序完之後，改變[c]的值。   在&amp;lt;th&amp;gt;&amp;ldquo;價格&amp;quot;裡的&amp;lt;span&amp;gt;上綁定 :class 判斷式，判斷[b]的值是(true/false)決定是否套用[rotate]樣式。   在&amp;lt;th&amp;gt;&amp;ldquo;到期日&amp;quot;裡的&amp;lt;span&amp;gt;上綁定 :class 判斷式，判斷[c]的值(true/false)決定是否套用[rotate]樣式。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82  // &amp;lt;-----html-----&amp;gt; #app  table.</description>
+    </item>
+    
+    <item>
+      <title>Vue—事件修飾符</title>
+      <link>https://jack842248.github.io/post/2021-02-06-vue%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A3%BE%E7%AC%A6/</link>
+      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-06-vue%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A3%BE%E7%AC%A6/</guid>
+      <description>修飾符(Modifiers)   在v-on和v-model上使用。     事件修飾符     修飾符 說明 如同     無使用 先觸發自己，再觸發外層    .capture 先觸發外層，再觸發自己    .stop 只觸發自己 event.stopPropagation()   .self 只觸發自己    .once 只觸發一次    .prevent 取消預設事件 event.preventDefault()     1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  // &amp;lt;-----html-----&amp;gt; ul#app  //** 無使用 **//  li(@click=&amp;#34;alert(&amp;#39;外層&amp;#39;)&amp;#34;)  a(href=&amp;#34;#&amp;#34; @click=&amp;#34;alert(&amp;#39;內層&amp;#39;)&amp;#34;) 連結   //** .</description>
+    </item>
+    
+    <item>
+      <title>Vue—切換應用方法</title>
+      <link>https://jack842248.github.io/post/2021-02-05-vue%E5%88%87%E6%8F%9B%E6%87%89%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-05-vue%E5%88%87%E6%8F%9B%E6%87%89%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>radio(三項切換)   v-on + v-if 方法。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  // &amp;lt;-----html-----&amp;gt; #app  input(type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;a=&amp;#39;A&amp;#39;&amp;#34;)  input(type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;a=&amp;#39;B&amp;#39;&amp;#34;)  input(type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;a=&amp;#39;C&amp;#39;&amp;#34;)  p(v-if=&amp;#34; a==&amp;#39;A&amp;#39; &amp;#34;) 蘋果  p(v-else-if=&amp;#34; a==&amp;#39;B&amp;#39; &amp;#34;) 香蕉  p(v-else-if=&amp;#34; a==&amp;#39;C&amp;#39; &amp;#34;) 鳳梨  // &amp;lt;-----js-----&amp;gt; var app = new Vue({  el: &amp;#34;#app&amp;#34;,  data:{  a: &amp;#34;A&amp;#34;  } });     v-on + {{}} 方法。   1 2 3 4 5 6 7 8 9 10 11 12 13 14  // &amp;lt;-----html-----&amp;gt; #app  input(type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;a=&amp;#39;蘋果&amp;#39;&amp;#34;)  input(type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;a=&amp;#39;香蕉&amp;#39;&amp;#34;)  input(type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;a=&amp;#39;鳳梨&amp;#39;&amp;#34;)  p {{a}}  // &amp;lt;-----js-----&amp;gt; var app = new Vue({  el: &amp;#34;#app&amp;#34;,  data:{  a: &amp;#34;蘋果&amp;#34;  } });     v-for + v-on + {{}} 方法。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  // &amp;lt;-----html-----&amp;gt; #app  input(v-for=&amp;#34;item in b&amp;#34; type=&amp;#34;radio&amp;#34; name=&amp;#34;a&amp;#34; @click=&amp;#34;change(item)&amp;#34;)  p {{a}}  // &amp;lt;-----js-----&amp;gt; var app = new Vue({  el: &amp;#34;#app&amp;#34;,  data:{  a: &amp;#34;&amp;#34;,  b:[  {name: &amp;#34;蘋果&amp;#34;, amount: 100},  {name: &amp;#34;香蕉&amp;#34;, amount: 300},  {name: &amp;#34;鳳梨&amp;#34;, amount: 500}  ],  },  methods:{  change: function(item){  switch(item.</description>
+    </item>
+    
+    <item>
+      <title>Vue—進階應用方法</title>
+      <link>https://jack842248.github.io/post/2021-02-04-vue%E9%80%B2%E9%9A%8E%E6%87%89%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-04-vue%E9%80%B2%E9%9A%8E%E6%87%89%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>v-text模板語法   可以插入 運算子 來呈現結果。(範例一)    使用 v-once 可以只綁定一次，之後在修改不會變更。(範例二)    可以直接撰寫 javascript 。(範例三)   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  // &amp;lt;-----html-----&amp;gt; #app  //** 範例一 **//  p {{ a + b }} //100300  p {{ a * b }} //30000  p {{ a == b }} //false   //** 範例二 **//  p(v-text=&amp;#34;b&amp;#34; v-once) //300   //** 範例三 **//  p {{ b.</description>
+    </item>
+    
+    <item>
+      <title>Vue—todolist(Bootstrap版)</title>
+      <link>https://jack842248.github.io/post/2021-02-03-vuetodolistbootstrap%E7%89%88/</link>
+      <pubDate>Wed, 03 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-03-vuetodolistbootstrap%E7%89%88/</guid>
+      <description>建立完成的Bootstrap4初始版型  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  #app.container.my-3  .input-group.mb-3  .input-group-prepend  span.input-group-text 待辦事項  input.form-control(type=&amp;#39;text&amp;#39; placeholder=&amp;#39;準備要做的任務&amp;#39;)  .input-group-append  button.btn.btn-primary(type=&amp;#39;button&amp;#39;) 新增  .card.text-center  .card-header  ul.nav.nav-tabs.card-header-tabs  li.nav-item  a.nav-link.active(href=&amp;#39;#&amp;#39;) 全部  li.nav-item  a.nav-link(href=&amp;#39;#&amp;#39;) 進行中  li.nav-item  a.nav-link(href=&amp;#39;#&amp;#39;) 已完成  ul.</description>
+    </item>
+    
+    <item>
+      <title>Vue—todolist(精簡版)</title>
+      <link>https://jack842248.github.io/post/2021-02-02-vuetodolist%E7%B2%BE%E7%B0%A1%E7%89%88/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-02-vuetodolist%E7%B2%BE%E7%B0%A1%E7%89%88/</guid>
+      <description>取得輸入框裡的值，點擊按鈕，新增到清單上。   在 data 新增[newTodo]=&amp;ldquo;空字串&amp;rdquo;，用 v-model 與 輸入框 綁定。   在 新增按鈕 上綁定 @click 事件[addTodo]，在 methods 新增[addTodo]方法。   在 data 新增[todos]=[空陣列]。   使用 Date.now() 取得現在時間作為編號 (id) ，並賦予到[id]變數上。   將[newTodo]，賦予到[title]變數上。   將[id]、[title]和[checkbox]:false組成{物件}，使用 push() 將組成的{物件}傳入[todos]。   在 &amp;lt;li&amp;gt; 使用 v-for 列印出[todos]的所有{物件}，並且將{物件}命名為 (item) (item in todos)。   將 (item) 的[id]用 :for綁定在 &amp;lt;label&amp;gt; 上。   將 (item) 的[id]用 :id綁定在 checkbox 上。   將 (item) 的[title]用 {{}} 顯示在 &amp;lt;label&amp;gt;文字上 。   將 (item) 的[checkbox]用 v-model 綁定在 checkbox 上。   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52  // &amp;lt;-----html-----&amp;gt; #app  //1.</description>
+    </item>
+    
+    <item>
+      <title>Vue—基本模板語法</title>
+      <link>https://jack842248.github.io/post/2021-02-01-vue%E5%9F%BA%E6%9C%AC%E6%A8%A1%E6%9D%BF%E8%AA%9E%E6%B3%95/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-02-01-vue%E5%9F%BA%E6%9C%AC%E6%A8%A1%E6%9D%BF%E8%AA%9E%E6%B3%95/</guid>
+      <description>Vue.js是以資料狀態操作畫面，偏向MVVM軟體設計模式。
+ MVVM(Model View Viewmodel)     英文 Model View Viewmodel     中文 模型 視圖 資料聯繫器      [視圖]←綁定→[資料聯繫器]→←[模型]     MVC(Model View Controller)     英文 Model View Controller Database     中文 模型 視圖 控制器 資料庫      [視圖]→發送請求→[控制器]→[模型]→[資料庫]→回傳資料→[模型]→[控制器]→渲染→[視圖]     生命週期     英文 中文 說明      開始創建    beforeCreate 準備載入資料     數據觀測建立    created 載入資料 要載入ajax要在這階段之後    編譯模板    beforeMount 準備繪製元件     模板建立完成    mounted 繪製元件 要操作DOM元素要在這階段之後    資料變動    updated 更新資料時觸發    activated  有&amp;lt;keep-alive&amp;gt;時才會觸發   deactivated  有&amp;lt;keep-alive&amp;gt;時才會觸發   beforeDestroy 準備移除資料     移除觀測、子元件、監聽事件    destroyed 移除資料        開始使用Vue.</description>
+    </item>
+    
+    <item>
+      <title>Vue—Devtools安裝</title>
+      <link>https://jack842248.github.io/post/2021-01-31-vuedevtools%E5%AE%89%E8%A3%9D/</link>
+      <pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-31-vuedevtools%E5%AE%89%E8%A3%9D/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;安裝vuejs-devtools開發者工具&#34;&gt;安裝Vue.js devtools開發者工具&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>JavaScript—ES6</title>
+      <link>https://jack842248.github.io/post/2021-01-30-javascriptecmascript6/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-30-javascriptecmascript6/</guid>
+      <description>var、let、const   皆為宣告變數用。      名稱 var let const     作用域 在window、函式 在block{}裡 在block{}裡   宣告的變數 可以賦予新的值 可以賦予新的值 不能賦予新的值   重複宣告變數時 不會出錯 會出錯 會出錯   從創造到執行階段會 提升(Hoisting) 暫時性死區(TDZ) 會出現錯誤     1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35  /** 變數賦予新的值 **/ var a = 1; a = 2; console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript—屬性特徵與特性</title>
+      <link>https://jack842248.github.io/post/2021-01-29-javascript%E5%B1%AC%E6%80%A7%E7%89%B9%E5%BE%B5%E8%88%87%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-29-javascript%E5%B1%AC%E6%80%A7%E7%89%B9%E5%BE%B5%E8%88%87%E7%89%B9%E6%80%A7/</guid>
+      <description>Object.defineProperty()   可以調整物件裡的屬性特徵。      帶入的值 名稱 中文 預設值 例如     物件 Object  &amp;mdash;    屬性 &amp;quot;Attributes&amp;quot;  &amp;mdash;    參數a value 屬性的值 &amp;mdash;    參數b writable 可否寫入 true 賦予(=)   參數c configurable 可否被刪除 true delete   參數d enumerable 可否被列舉 true for&amp;hellip;in     1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  var obj1 = {  name:&amp;#34;蘋果&amp;#34;,  amount:100 } Object.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript—原型與建構函式</title>
+      <link>https://jack842248.github.io/post/2021-01-28-javascript%E5%8E%9F%E5%9E%8B%E8%88%87%E5%BB%BA%E6%A7%8B%E5%87%BD%E5%BC%8F/</link>
+      <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-28-javascript%E5%8E%9F%E5%9E%8B%E8%88%87%E5%BB%BA%E6%A7%8B%E5%87%BD%E5%BC%8F/</guid>
+      <description>原型(Prototype)   純值可用建構式繼承在原型下。    原型可利用建構函式新增屬性。    原型有向上查找屬性的功能，而且屬性是共用的。    原型鍊:      建構式 原型(上層) 原型(上上層)     new Object() &amp;mdash; Object   new Array() Array Object   new Number() Number Object   new String() String Object   new Boolean() Boolean Object     1 2 3 4 5 6 7 8 9  var a = [1 , 2 , 3]; var b = [4 , 5 , 6]; a.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript—函式與參數</title>
+      <link>https://jack842248.github.io/post/2021-01-27-javascript%E5%87%BD%E5%BC%8F%E8%88%87%E5%8F%83%E6%95%B8/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-27-javascript%E5%87%BD%E5%BC%8F%E8%88%87%E5%8F%83%E6%95%B8/</guid>
+      <description>函式(Function)   是包含{程式碼片段}的物件。    擁有被呼叫、回傳的功能。     函式可細分以下幾種 :
+  函式陳述式
+ 具名函式。(範例一)    函式表達式
+  匿名函式。(範例二)
+  具名函式。(範例三)
+       具名的函式能夠在函式中被呼叫使用
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47  /** 範例一 **/ function fn1(){  console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript—物件與陣列</title>
+      <link>https://jack842248.github.io/post/2021-01-26-javascript%E7%89%A9%E4%BB%B6%E8%88%87%E9%99%A3%E5%88%97/</link>
+      <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-26-javascript%E7%89%A9%E4%BB%B6%E8%88%87%E9%99%A3%E5%88%97/</guid>
+      <description>物件實字(Object Literals)   直接撰寫 var obj1 = {&amp;hellip;} 物件。(範例一)   建構物件(Constructor Object)   使用 new Object() 包裹方式建立。(範例二)   1 2 3 4 5 6 7 8 9 10  /** 範例一 **/ var obj1 = {  name:&amp;#34;蘋果&amp;#34;,  amount: 100 }  /** 範例二 **/ var obj1 = new Object(); obj1.name = &amp;#34;蘋果&amp;#34;; obj1.amount = 100;      物件的基本應用方法 :   取值。(範例一)    新增屬性。(範例二)    刪除屬性。(範例三)    新增物件。(範例四)   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  var a ={  name:&amp;#34;蘋果&amp;#34;,  amount: 100 }  /** 範例一 **/ console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript—運算與型別</title>
+      <link>https://jack842248.github.io/post/2021-01-25-javascript%E9%81%8B%E7%AE%97%E8%88%87%E5%9E%8B%E5%88%A5/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-25-javascript%E9%81%8B%E7%AE%97%E8%88%87%E5%9E%8B%E5%88%A5/</guid>
+      <description>陳述式(Statement)   不會回傳結果，不能賦值(=)到變數上。      陳述式 例如     判斷式 if、else if、else、switch、break   宣告變數 var、let、const   函式陳述式 function fn1(){&amp;hellip;}   Block區塊 {}     1 2 3 4 5 6 7 8 9 10 11 12 13  /** 判斷式 **/ if(...){...}else{...}  /** 宣告變數 **/ var a;  /** 函式陳述式 **/ function fn1(){...}  /** Block區塊 **/ {  let a = 1; }      判斷式(if&amp;hellip;else)   判斷式裡如果是 真值(Truthy) ，就會成立。(範例一)    判斷式裡如果是 假值(Falsy) ，就會不成立。(範例二)      判斷值 例如     真值 true 、 1 、 &amp;ldquo;1&amp;rdquo; 、 [] 、 {}   假值 false 、 0 、 &amp;quot;&amp;quot; 、 NaN 、 null 、 undefined     1 2 3 4 5 6 7 8 9 10 11 12 13  /** 範例一 **/ if([]){  console.</description>
+    </item>
+    
+    <item>
+      <title>認識JavaScript</title>
+      <link>https://jack842248.github.io/post/2021-01-24-%E8%AA%8D%E8%AD%98javascript/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-24-%E8%AA%8D%E8%AD%98javascript/</guid>
+      <description>程式語言可以分為兩種 : javascript屬於直譯式語言。  直譯式語言(Interpreted Language)     例如 JavaScript、Python、PHP、Ruby、BASIC、LISP、Perl、R     流程 原始碼 → 直譯器 → 代碼生成 → 執行   特性 程式碼由上到下執行，效能比較差、除錯比較慢、需要依賴執行環境。     編譯式語言(Compiled Language)     例如 Java、C、C#、C++、Pascal     流程 原始碼 → 預處理器 → 代碼生成 → 執行   特性 效能比較好、除錯比較快、程式碼可獨立執行。       程式語言的作用域可以分為兩種 : javascript屬於靜態作用域。  靜態作用域(Lexical Scope)   又稱 : 語法作用域。    語法在解析時就決定作用域，且不再改變。   1 2 3 4 5 6  function fn1(){  var a = 1; } fn1(); console.</description>
+    </item>
+    
+    <item>
+      <title>Markdown語法撰寫</title>
+      <link>https://jack842248.github.io/post/2021-01-23-markdown%E8%AA%9E%E6%B3%95%E6%92%B0%E5%AF%AB/</link>
+      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-23-markdown%E8%AA%9E%E6%B3%95%E6%92%B0%E5%AF%AB/</guid>
+      <description>一級標題 # 一級標題    二級標題  ## 二級標題    三級標題  ### 三級標題    四級標題  #### 四級標題    五級標題  ##### 五級標題    六級標題  ###### 六級標題    斜體
+ *斜體*    粗體
+ **粗體**    粗斜體
+ ***粗斜體***    文字刪除線
+ ~~文字刪除線~~     有序序列 有序序列 有序序列   1.</description>
+    </item>
+    
+    <item>
+      <title>Hugo Blog建立成功</title>
+      <link>https://jack842248.github.io/post/2021-01-22-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-01-22-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</guid>
+      <description>前言
+  我所使用的Hugo主題是beautiful hugo。
+當初在建立時，是觀看hahow好學校的Github免費架站術!輕鬆打造個人品牌這堂課程來完成的，非常適合像我這樣的初心者，裏頭也包含了創建Github、Hugo主題設定、Markdown語法撰寫的介紹與使用，有興趣的人也可以點擊連結參考看看。
+一開始在創建部落格時，我完全不知道該怎麼去調整config.toml設定檔，搜尋網路上有相關的文章也不多，所以我最後只好一項一項的去測試摸索。雖然每個Hugo主題的設定檔，都可能會有些微不同，但是其中還是會有些相同的設定值可做參考，所以我這邊就來分享關於我的主題設定檔，希望能給也想建立Hugo網站的人一點幫助，省下再去一項一項慢慢測試的時間。
+以下是我的設定檔內容，若註解上有上有錯誤的地方，也可以告訴我來做修正。
+    分享設定
+  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80  #此網站的連結網址 baseurl = &amp;#34;https://jack842248.</description>
+    </item>
+    
+  </channel>
+</rss>
