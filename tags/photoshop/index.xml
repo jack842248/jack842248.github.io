@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PhotoShop on Jack Huang Blog</title>
+    <link>https://jack842248.github.io/tags/photoshop/</link>
+    <description>Recent content in PhotoShop on Jack Huang Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
+    <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
+    <lastBuildDate>Mon, 18 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/photoshop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>合成技巧</title>
+      <link>https://jack842248.github.io/post/2022-04-18-photoshop%E8%87%AA%E5%8B%95%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4/</link>
+      <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-18-photoshop%E8%87%AA%E5%8B%95%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4/</guid>
+      <description>  自動混合圖層   將兩張臉合成。      使用套索工具將五官框選起來並剪下。      貼到另一張臉的圖層上。      複製一張底下圖層。      框選上方的五官圖層，並使用選取-修改-縮減。      縮減值調整約10px。      點選下層複製出來的臉圖層，並剪去範圍。      選取兩個圖層，使用編輯-自動混合塗層。      勾選全景。      完成。    </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Thu, 07 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>合成技巧</title>
+      <link>https://jack842248.github.io/post/2022-04-18-photoshop%E8%87%AA%E5%8B%95%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4/</link>
+      <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-18-photoshop%E8%87%AA%E5%8B%95%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4/</guid>
+      <description>  自動混合圖層   將兩張臉合成。      使用套索工具將五官框選起來並剪下。      貼到另一張臉的圖層上。      複製一張底下圖層。      框選上方的五官圖層，並使用選取-修改-縮減。      縮減值調整約10px。      點選下層複製出來的臉圖層，並剪去範圍。      選取兩個圖層，使用編輯-自動混合塗層。      勾選全景。      完成。    </description>
+    </item>
+    
     <item>
       <title>網頁設計和插件</title>
       <link>https://jack842248.github.io/post/2022-04-07-web%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E5%92%8C%E6%8F%92%E4%BB%B6/</link>
