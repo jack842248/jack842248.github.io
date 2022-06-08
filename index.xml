@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Mon, 18 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解決無法存取隨身碟</title>
+      <link>https://jack842248.github.io/post/2022-06-08-mac%E8%A7%A3%E6%B1%BA%E7%84%A1%E6%B3%95%E5%AD%98%E5%8F%96%E9%9A%A8%E8%BA%AB%E7%A2%9F/</link>
+      <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-06-08-mac%E8%A7%A3%E6%B1%BA%E7%84%A1%E6%B3%95%E5%AD%98%E5%8F%96%E9%9A%A8%E8%BA%AB%E7%A2%9F/</guid>
+      <description>  解決無法存取隨身碟   插入隨身碟，電腦讀取得到，卻無法將檔案拉進去？      打開啟動台。      選擇磁碟工具程式。      此時外接硬碟的格式可能會是(NTFS)。      點選右上角清除。      輸入磁碟名稱(自訂)，並選擇格式。   32G以上請選擇ExFAT。 32G以下請選擇MS-DOS(FAT)。      按清除。【注意：格式化前請先將檔案進行備份】      完成後，會看到磁碟格式變成(FAT32)即完成。    </description>
+    </item>
+    
+    <item>
+      <title>符合顏色</title>
+      <link>https://jack842248.github.io/post/2022-04-19-photoshop%E7%AC%A6%E5%90%88%E9%A1%8F%E8%89%B2/</link>
+      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-19-photoshop%E7%AC%A6%E5%90%88%E9%A1%8F%E8%89%B2/</guid>
+      <description>  符合顏色   將人物符合背景顏色。      將人物丟入背景圖層(點陣圖)。      點選人物圖層使用影像-調整-符合顏色。      來源選擇此檔案。      圖層選擇背景。      調整明度、色彩強度、淡化。      完成。    </description>
+    </item>
+    
     <item>
       <title>合成技巧</title>
       <link>https://jack842248.github.io/post/2022-04-18-photoshop%E8%87%AA%E5%8B%95%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4/</link>
