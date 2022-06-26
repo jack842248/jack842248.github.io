@@ -9,30 +9,39 @@
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
     <lastBuildDate>Wed, 08 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>解決無法存取隨身碟</title>
-      <link>https://jack842248.github.io/post/2022-06-08-mac%E8%A7%A3%E6%B1%BA%E7%84%A1%E6%B3%95%E5%AD%98%E5%8F%96%E9%9A%A8%E8%BA%AB%E7%A2%9F/</link>
+      <title>解決MAC無法存取隨身碟</title>
+      <link>https://jack842248.github.io/post/2022-06-08-mac%E8%A7%A3%E6%B1%BAmac%E7%84%A1%E6%B3%95%E5%AD%98%E5%8F%96%E9%9A%A8%E8%BA%AB%E7%A2%9F/</link>
       <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2022-06-08-mac%E8%A7%A3%E6%B1%BA%E7%84%A1%E6%B3%95%E5%AD%98%E5%8F%96%E9%9A%A8%E8%BA%AB%E7%A2%9F/</guid>
-      <description>  解決無法存取隨身碟   插入隨身碟，電腦讀取得到，卻無法將檔案拉進去？      打開啟動台。      選擇磁碟工具程式。      此時外接硬碟的格式可能會是(NTFS)。      點選右上角清除。      輸入磁碟名稱(自訂)，並選擇格式。   32G以上請選擇ExFAT。 32G以下請選擇MS-DOS(FAT)。      按清除。【注意：格式化前請先將檔案進行備份】      完成後，會看到磁碟格式變成(FAT32)即完成。    </description>
+      <guid>https://jack842248.github.io/post/2022-06-08-mac%E8%A7%A3%E6%B1%BAmac%E7%84%A1%E6%B3%95%E5%AD%98%E5%8F%96%E9%9A%A8%E8%BA%AB%E7%A2%9F/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;解決mac無法存取隨身碟&#34;&gt;解決MAC無法存取隨身碟&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
     <item>
-      <title>符合顏色</title>
+      <title>PhotoShop符合顏色</title>
       <link>https://jack842248.github.io/post/2022-04-19-photoshop%E7%AC%A6%E5%90%88%E9%A1%8F%E8%89%B2/</link>
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2022-04-19-photoshop%E7%AC%A6%E5%90%88%E9%A1%8F%E8%89%B2/</guid>
-      <description>  符合顏色   將人物符合背景顏色。      將人物丟入背景圖層(點陣圖)。      點選人物圖層使用影像-調整-符合顏色。      來源選擇此檔案。      圖層選擇背景。      調整明度、色彩強度、淡化。      完成。    </description>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;符合顏色&#34;&gt;符合顏色&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
     <item>
-      <title>合成技巧</title>
+      <title>PhotoShop自動混合圖層</title>
       <link>https://jack842248.github.io/post/2022-04-18-photoshop%E8%87%AA%E5%8B%95%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4/</link>
       <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2022-04-18-photoshop%E8%87%AA%E5%8B%95%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4/</guid>
-      <description>  自動混合圖層   將兩張臉合成。      使用套索工具將五官框選起來並剪下。      貼到另一張臉的圖層上。      複製一張底下圖層。      框選上方的五官圖層，並使用選取-修改-縮減。      縮減值調整約10px。      點選下層複製出來的臉圖層，並剪去範圍。      選取兩個圖層，使用編輯-自動混合塗層。      勾選全景。      完成。    </description>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;自動混合圖層&#34;&gt;自動混合圖層&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
     <item>
@@ -111,7 +120,10 @@
       <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2021-03-01-photoshop%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5/</guid>
-      <description>  常用快捷鍵  Ctrl + W 關閉視窗 Ctrl + Z 還原 Ctrl + X 剪下圖層 Ctrl + C 複製 Ctrl + V 貼上 Ctrl + S 存檔 Ctrl + J 拷貝圖層 Ctrl + shift + S 另存新檔 Ctrl + shift + I 反轉選取 Z 放大鏡 X 前景色/背景色 C 裁切工具 V 移動工具 B 筆刷工具 A 路徑選取工具 S 仿製印章 D 滴管工具 F 快速選取工具 Q 鋼筆工具    注意小細節   使用濾鏡效果時，要將圖層先轉為智慧型物件。 裁切工具→刪除裁切的像素(若沒勾選)→拖拉出新範圍，底層是透明格。 使用橡皮擦工具，等於使用背景色上色。 使用仿製印章，可以新增圖層，樣本選取&amp;quot;目前及底下的圖層&amp;quot;。 選擇圖層，點選底下[fx]可以套用陰影、內外框等樣式。 編輯→透視彎曲，可以設圖釘點彎曲物件，按住Alt點擊刪除圖釘。 調整面板→色相/飽和度→點選手指再對圖片Ctrl+左鍵拖拉調整色相，左鍵拖拉調整飽和度。 透視裁切工具→     刪除照片中不要的內容   汙點修復工具(快速處理細小部分) 填滿內容感知(快速處理大範圍) 仿製印章(處理較複雜的部份)     其他選取方法   使用顏色選去使用顏色選去     延伸背景   裁切工具→刪除裁切的像素(打勾)→拖拉範圍。   </description>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;常用快捷鍵&#34;&gt;常用快捷鍵&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
     <item>

@@ -9,12 +9,15 @@
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
     <lastBuildDate>Wed, 08 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>解決無法存取隨身碟</title>
-      <link>https://jack842248.github.io/post/2022-06-08-mac%E8%A7%A3%E6%B1%BA%E7%84%A1%E6%B3%95%E5%AD%98%E5%8F%96%E9%9A%A8%E8%BA%AB%E7%A2%9F/</link>
+      <title>解決MAC無法存取隨身碟</title>
+      <link>https://jack842248.github.io/post/2022-06-08-mac%E8%A7%A3%E6%B1%BAmac%E7%84%A1%E6%B3%95%E5%AD%98%E5%8F%96%E9%9A%A8%E8%BA%AB%E7%A2%9F/</link>
       <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2022-06-08-mac%E8%A7%A3%E6%B1%BA%E7%84%A1%E6%B3%95%E5%AD%98%E5%8F%96%E9%9A%A8%E8%BA%AB%E7%A2%9F/</guid>
-      <description>  解決無法存取隨身碟   插入隨身碟，電腦讀取得到，卻無法將檔案拉進去？      打開啟動台。      選擇磁碟工具程式。      此時外接硬碟的格式可能會是(NTFS)。      點選右上角清除。      輸入磁碟名稱(自訂)，並選擇格式。   32G以上請選擇ExFAT。 32G以下請選擇MS-DOS(FAT)。      按清除。【注意：格式化前請先將檔案進行備份】      完成後，會看到磁碟格式變成(FAT32)即完成。    </description>
+      <guid>https://jack842248.github.io/post/2022-06-08-mac%E8%A7%A3%E6%B1%BAmac%E7%84%A1%E6%B3%95%E5%AD%98%E5%8F%96%E9%9A%A8%E8%BA%AB%E7%A2%9F/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;解決mac無法存取隨身碟&#34;&gt;解決MAC無法存取隨身碟&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
   </channel>
