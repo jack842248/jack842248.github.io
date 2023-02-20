@@ -7,17 +7,50 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Sun, 19 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>MAC的常用快捷鍵</title>
-      <link>https://jack842248.github.io/post/2023-02-19-macmac%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%8D%B5%E8%88%87%E7%9B%B8%E9%97%9C%E8%A8%AD%E5%AE%9A/</link>
-      <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
+      <title>印刷相關知識</title>
+      <link>https://jack842248.github.io/post/2023-02-18-design%E5%8D%B0%E5%88%B7%E7%9B%B8%E9%97%9C%E7%9F%A5%E8%AD%98/</link>
+      <pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-02-19-macmac%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%8D%B5%E8%88%87%E7%9B%B8%E9%97%9C%E8%A8%AD%E5%AE%9A/</guid>
+      <guid>https://jack842248.github.io/post/2023-02-18-design%E5%8D%B0%E5%88%B7%E7%9B%B8%E9%97%9C%E7%9F%A5%E8%AD%98/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;電腦一般操作&#34;&gt;電腦一般操作&lt;/h2&gt;
+&lt;h2 id=&#34;關於印刷&#34;&gt;關於印刷&lt;/h2&gt;
 &lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>MAC的常用快捷鍵</title>
+      <link>https://jack842248.github.io/post/2023-02-17-macmac%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%8D%B5/</link>
+      <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2023-02-17-macmac%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%8D%B5/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;關於mac輸入法&#34;&gt;關於mac輸入法&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;在英文輸入法只能打出&lt;code&gt;半形&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;按&lt;code&gt;fn&lt;/code&gt; 切換中文&lt;/li&gt;
+&lt;li&gt;短按&lt;code&gt;中/英&lt;/code&gt; 切換中文&lt;/li&gt;
+&lt;li&gt;長按&lt;code&gt;中/英&lt;/code&gt; 切換大寫&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;中文模式只能打出&lt;code&gt;全形&lt;/code&gt;(英文、數字、標點符號)
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;shift&lt;/code&gt;＋&lt;code&gt;英文&lt;/code&gt; 全形數字&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;option&lt;/code&gt;＋&lt;code&gt;數字&lt;/code&gt; 全形數字&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;control&lt;/code&gt;＋&lt;code&gt;符號鍵&lt;/code&gt; 全形符號&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;heading-2&#34;&gt;&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;heading-3&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;電腦一般操作&#34;&gt;電腦一般操作&lt;/h2&gt;
+&lt;h1 id=&#34;heading-4&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
     <item>
