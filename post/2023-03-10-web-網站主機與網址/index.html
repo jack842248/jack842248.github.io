@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-tw" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>網站主機與網址 - Jack Huang Blog</title>
+  <meta name="description" content="VPS、cloudways、HTTP、FTP、IMAP、SMTP、POP3">
+  <meta name="author" content="JackHuang"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Jack Huang Blog",
+    
+    "url": "https:\/\/jack842248.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/jack842248.github.io"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/jack842248.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/jack842248.github.io\/post\/2023-03-10-web-%E7%B6%B2%E7%AB%99%E4%B8%BB%E6%A9%9F%E8%88%87%E7%B6%B2%E5%9D%80\/",
+          "name": "網站主機與網址"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "JackHuang"
+  },
+  "headline": "網站主機與網址",
+  "description" : " 架設網站概念 ",
+  "inLanguage" : "zh-tw",
+  "wordCount":  67 ,
+  "datePublished" : "2023-03-10T00:00:00",
+  "dateModified" : "2023-03-10T00:00:00",
+  "image" : "https:\/\/jack842248.github.io",
+  "keywords" : [ "web" ],
+  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2023-03-10-web-%E7%B6%B2%E7%AB%99%E4%B8%BB%E6%A9%9F%E8%88%87%E7%B6%B2%E5%9D%80\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/jack842248.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/jack842248.github.io",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="網站主機與網址" />
+<meta property="og:description" content="VPS、cloudways、HTTP、FTP、IMAP、SMTP、POP3">
+<meta property="og:url" content="https://jack842248.github.io/post/2023-03-10-web-%E7%B6%B2%E7%AB%99%E4%B8%BB%E6%A9%9F%E8%88%87%E7%B6%B2%E5%9D%80/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Jack Huang Blog" />
+
+  <meta name="twitter:title" content="網站主機與網址" />
+  <meta name="twitter:description" content="VPS、cloudways、HTTP、FTP、IMAP、SMTP、POP3">
+  <meta name="twitter:card" content="summary" />
+  <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.111.3">
+  <link rel="alternate" href="https://jack842248.github.io/index.xml" type="application/rss+xml" title="Jack Huang Blog"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://jack842248.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" /><link rel="stylesheet" href="https://jack842248.github.io/css/syntax.css" /><link rel="stylesheet" href="https://jack842248.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-186211544-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">開關導覽</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://jack842248.github.io">Jack Huang Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="部落格Blog" href="/">部落格Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="快速搜尋Tags" href="/tags">快速搜尋Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="關於我About" href="/page/about/">關於我About</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent">作品集Portfolio</a>
+              <div class="navlinks-children">
+                
+                  <a href="/page/portfolio/">平面/影像合成</a>
+                
+                  <a href="/page/portfolio/">櫥窗/陳列/活動</a>
+                
+                  <a href="/page/portfolio/">網頁實作</a>
+                
+              </div>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=3 
+      
+         
+          data-img-src-1="/img/triangle.jpg" 
+         
+         data-img-desc-1="Triangle"
+      
+         
+          data-img-src-2="/img/sphere.jpg" 
+         
+         data-img-desc-2="Sphere"
+      
+         
+          data-img-src-3="/img/hexagon.jpg" 
+         
+         data-img-desc-3="Hexagon"
+      ></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                <h1>網站主機與網址</h1>
+                  
+                    
+                      <h2 class="post-subheading">VPS、cloudways、HTTP、FTP、IMAP、SMTP、POP3</h2>
+                    
+                  
+                  
+                    <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2023-03-10
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;67&nbsp;個字
+  
+  
+  
+</span>
+
+
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>網站主機與網址</h1>
+              
+              
+              
+                
+                  <h2 class="post-subheading">VPS、cloudways、HTTP、FTP、IMAP、SMTP、POP3</h2>
+                
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2023-03-10
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;67&nbsp;個字
+  
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <hr>
+<h1 id="heading"></h1>
+<h2 id="架設網站概念">架設網站概念</h2>
+<h1 id="heading-1"></h1>
+<ol>
+<li>網址(地址)</li>
+<li>網站(房子)</li>
+<li>主機(土地)</li>
+</ol>
+<h1 id="heading-2"></h1>
+<hr>
+<h1 id="heading-3"></h1>
+<h2 id="主機種類">主機種類</h2>
+<h1 id="heading-4"></h1>
+<ol>
+<li>實體主機(獨棟別墅)</li>
+<li>虛擬主機
+<ul>
+<li>共享主機(分租雅房)</li>
+<li>VPS主機(單層公寓)</li>
+</ul>
+</li>
+</ol>
+<h1 id="heading-5"></h1>
+<hr>
+<h1 id="heading-6"></h1>
+<h2 id="虛擬主機">虛擬主機</h2>
+<h1 id="heading-7"></h1>
+<ol>
+<li>共享主機(Shared Hosting)
+<ul>
+<li>價格低、速度不穩定(容易受到其他人影響)</li>
+<li>通常搭配cPanel管理介面</li>
+<li>會有CloudLinux系統來限制流量</li>
+<li>無法安裝後端框架</li>
+<li>例如：Godaddy、bluehost、A2 Hosting</li>
+</ul>
+</li>
+</ol>
+<h1 id="heading-8"></h1>
+<ol start="2">
+<li>VPS主機(Virtual Private Server)
+<ul>
+<li>價格較高、速度快</li>
+<li>安裝的是linux、window service</li>
+<li>安裝node、laravel模組</li>
+<li>有獨立IP不需要綁定網址</li>
+<li>例如：Linode、DigitalOcean、GoogleCloudPlafform</li>
+</ul>
+</li>
+</ol>
+<h1 id="heading-9"></h1>
+<ol start="3">
+<li>cloudways雲端管理主機(Managed cloud hosting)
+<ul>
+<li>整合VPS主機的一套平台</li>
+<li>採用流量計費方式</li>
+</ul>
+</li>
+</ol>
+<h1 id="heading-10"></h1>
+<hr>
+<h1 id="heading-11"></h1>
+<h2 id="http超文本傳輸協定hypertext-transfer-protocol">HTTP超文本傳輸協定(HyperText Transfer Protocol)</h2>
+<h1 id="heading-12"></h1>
+<ul>
+<li>客戶端與伺服器傳輸方式</li>
+<li>用來傳輸HTML的頁面及內容</li>
+<li>增加SSL安全憑證為HTTPS</li>
+<li>Chrome、Safari、Firefox、Edge為應用程式</li>
+</ul>
+<h1 id="heading-13"></h1>
+<hr>
+<h1 id="heading-14"></h1>
+<h2 id="ftp文件傳輸協議file-transfer-protocol">FTP文件傳輸協議(File Transfer Protocol)</h2>
+<h1 id="heading-15"></h1>
+<ul>
+<li>客戶端與遠端主機傳輸文件方式</li>
+<li>用來控制文件的雙向傳輸</li>
+<li>SSL安全的加密為SFTP</li>
+<li>Filezilla、WinSCP為應用程式</li>
+</ul>
+<h1 id="heading-16"></h1>
+<hr>
+<h1 id="heading-17"></h1>
+<h2 id="信件收發協定imapsmtppop3">信件收發協定IMAP/SMTP/POP3</h2>
+<h1 id="heading-18"></h1>
+<ul>
+<li>收信協定
+<ul>
+<li>POP3單向郵局協定第三版(Post Office Protocol Version3)</li>
+<li>IMAP互動郵件存取協定(Internet Message Access Protocol)</li>
+</ul>
+</li>
+<li>發信協定
+<ul>
+<li>SMTP簡單郵件傳輸協定(Simple Mail Transfer Protocol)</li>
+</ul>
+</li>
+</ul>
+<h1 id="heading-19"></h1>
+<hr>
+<ul>
+<li>WS/WSS 長連接專屬傳輸協定</li>
+<li>SSH 加密的連接通訊協定伺服器金鑰</li>
+<li>RTSP/RTMP 串流</li>
+</ul>
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://jack842248.github.io/tags/web/">web</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-03-10-web-%25E7%25B6%25B2%25E7%25AB%2599%25E4%25B8%25BB%25E6%25A9%259F%25E8%2588%2587%25E7%25B6%25B2%25E5%259D%2580%2f&amp;text=%e7%b6%b2%e7%ab%99%e4%b8%bb%e6%a9%9f%e8%88%87%e7%b6%b2%e5%9d%80&amp;via=" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-03-10-web-%25E7%25B6%25B2%25E7%25AB%2599%25E4%25B8%25BB%25E6%25A9%259F%25E8%2588%2587%25E7%25B6%25B2%25E5%259D%2580%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-03-10-web-%25E7%25B6%25B2%25E7%25AB%2599%25E4%25B8%25BB%25E6%25A9%259F%25E8%2588%2587%25E7%25B6%25B2%25E5%259D%2580%2f&amp;title=%e7%b6%b2%e7%ab%99%e4%b8%bb%e6%a9%9f%e8%88%87%e7%b6%b2%e5%9d%80" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-03-10-web-%25E7%25B6%25B2%25E7%25AB%2599%25E4%25B8%25BB%25E6%25A9%259F%25E8%2588%2587%25E7%25B6%25B2%25E5%259D%2580%2f&amp;title=%e7%b6%b2%e7%ab%99%e4%b8%bb%e6%a9%9f%e8%88%87%e7%b6%b2%e5%9d%80" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-03-10-web-%25E7%25B6%25B2%25E7%25AB%2599%25E4%25B8%25BB%25E6%25A9%259F%25E8%2588%2587%25E7%25B6%25B2%25E5%259D%2580%2f&amp;title=%e7%b6%b2%e7%ab%99%e4%b8%bb%e6%a9%9f%e8%88%87%e7%b6%b2%e5%9d%80" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-03-10-web-%25E7%25B6%25B2%25E7%25AB%2599%25E4%25B8%25BB%25E6%25A9%259F%25E8%2588%2587%25E7%25B6%25B2%25E5%259D%2580%2f&amp;description=%e7%b6%b2%e7%ab%99%e4%b8%bb%e6%a9%9f%e8%88%87%e7%b6%b2%e5%9d%80" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+            
+          
+
+          
+                  <h4 class="see-also">其他相關</h4>
+                  <ul>
+                
+                
+                    <li><a href="/post/2023-04-13-%EF%BD%97eb%E5%A5%BD%E7%94%A8%E7%9A%84chrome%E6%8F%92%E4%BB%B6/">好用的Chrome插件</a></li>
+                
+                    <li><a href="/post/2022-04-07-web-%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E5%92%8C%E6%8F%92%E4%BB%B6/">網頁設計和插件</a></li>
+                
+              </ul>
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://jack842248.github.io/post/2023-02-18-design-%E5%8D%B0%E5%88%B7%E7%9B%B8%E9%97%9C%E7%9F%A5%E8%AD%98/" data-toggle="tooltip" data-placement="top" title="印刷相關知識">&larr; 上一篇</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://jack842248.github.io/post/2023-04-10-hugo-%E8%AA%8D%E8%AD%98%E8%88%87%E5%89%B5%E5%BB%BAgithub/" data-toggle="tooltip" data-placement="top" title="認識與創建GitHub">下一篇 &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+          
+          <div class="disqus-comments">                  
+            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2023-03-10-web-%E7%B6%B2%E7%AB%99%E4%B8%BB%E6%A9%9F%E8%88%87%E7%B6%B2%E5%9D%80">則評論</span></button>
+            <div id="disqus_thread"></div>
+
+            <script type="text/javascript">
+              var disqus_config = function () {
+              this.page.url = 'https:\/\/jack842248.github.io\/post\/2023-03-10-web-%E7%B6%B2%E7%AB%99%E4%B8%BB%E6%A9%9F%E8%88%87%E7%B6%B2%E5%9D%80';
+            };
+
+          </script>
+          </div>
+          
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:jack842248@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/jack842248" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/jack842248" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/jack842248" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://codepen.io/jack842248" title="CodePen">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-codepen fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://jack842248.github.io">JackHuang</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2023
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://jack842248.github.io">Jack Huang Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          由 <a href="https://gohugo.io">Hugo v0.111.3</a> 提供 &nbsp;&bull;&nbsp; 主題 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 移植自 <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://jack842248.github.io/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://jack842248.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+  $('#show-comments').on('click', function(){
+    var disqus_shortname = 'jack842248';
+      
+    (function() {
+      var disqus = document.createElement('script'); 
+      disqus.type = 'text/javascript'; 
+      disqus.async = true;
+      disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
+    })();
+      
+    $(this).hide(); 
+    });
+  });
+      
+</script>
+<script id="dsq-count-scr" src="//jack842248.disqus.com/count.js" async></script>
+
+
+
+
+    
+  </body>
+</html>
+

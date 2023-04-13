@@ -1,19 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on Jack Huang Blog</title>
+    <title>hugo on Jack Huang Blog</title>
     <link>https://jack842248.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on Jack Huang Blog</description>
+    <description>Recent content in hugo on Jack Huang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>上傳Github Pages</title>
+      <link>https://jack842248.github.io/post/2023-04-12-hugo-%E4%B8%8A%E5%82%B3github-pages/</link>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2023-04-12-hugo-%E4%B8%8A%E5%82%B3github-pages/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;首先需要先安裝vscode&#34;&gt;首先需要先安裝VScode&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>安裝並運行Hugo</title>
+      <link>https://jack842248.github.io/post/2023-04-11-hugo-%E5%AE%89%E8%A3%9D%E4%B8%A6%E9%81%8B%E8%A1%8Chugo/</link>
+      <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2023-04-11-hugo-%E5%AE%89%E8%A3%9D%E4%B8%A6%E9%81%8B%E8%A1%8Chugo/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;首先需要先安裝homebrew&#34;&gt;首先需要先安裝Homebrew&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>認識與創建GitHub</title>
+      <link>https://jack842248.github.io/post/2023-04-10-hugo-%E8%AA%8D%E8%AD%98%E8%88%87%E5%89%B5%E5%BB%BAgithub/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2023-04-10-hugo-%E8%AA%8D%E8%AD%98%E8%88%87%E5%89%B5%E5%BB%BAgithub/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;什麼是github&#34;&gt;什麼是GitHub&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
     <item>
       <title>Hugo Blog建立成功</title>
-      <link>https://jack842248.github.io/post/2021-01-22-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</link>
+      <link>https://jack842248.github.io/post/2021-01-22-hugo-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-01-22-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</guid>
+      <guid>https://jack842248.github.io/post/2021-01-22-hugo-hugo-blog%E5%BB%BA%E7%AB%8B%E6%88%90%E5%8A%9F/</guid>
       <description>前言
 我所使用的Hugo主題是beautiful hugo。
 當初在建立時，是觀看hahow好學校的Github免費架站術!輕鬆打造個人品牌這堂課程來完成的，非常適合像我這樣的初心者，裏頭也包含了創建Github、Hugo主題設定、Markdown語法撰寫的介紹與使用，有興趣的人也可以點擊連結參考看看。
