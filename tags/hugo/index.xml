@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Wed, 12 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>上傳Github Pages</title>
-      <link>https://jack842248.github.io/post/2023-04-12-hugo-%E4%B8%8A%E5%82%B3github-pages/</link>
-      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      <link>https://jack842248.github.io/post/2023-04-03-hugo-%E4%B8%8A%E5%82%B3github-pages/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-04-12-hugo-%E4%B8%8A%E5%82%B3github-pages/</guid>
+      <guid>https://jack842248.github.io/post/2023-04-03-hugo-%E4%B8%8A%E5%82%B3github-pages/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;首先需要先安裝vscode&#34;&gt;首先需要先安裝VScode&lt;/h2&gt;
@@ -22,10 +22,10 @@
     
     <item>
       <title>安裝並運行Hugo</title>
-      <link>https://jack842248.github.io/post/2023-04-11-hugo-%E5%AE%89%E8%A3%9D%E4%B8%A6%E9%81%8B%E8%A1%8Chugo/</link>
-      <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
+      <link>https://jack842248.github.io/post/2023-04-02-hugo-%E5%AE%89%E8%A3%9D%E4%B8%A6%E9%81%8B%E8%A1%8Chugo/</link>
+      <pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-04-11-hugo-%E5%AE%89%E8%A3%9D%E4%B8%A6%E9%81%8B%E8%A1%8Chugo/</guid>
+      <guid>https://jack842248.github.io/post/2023-04-02-hugo-%E5%AE%89%E8%A3%9D%E4%B8%A6%E9%81%8B%E8%A1%8Chugo/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;首先需要先安裝homebrew&#34;&gt;首先需要先安裝Homebrew&lt;/h2&gt;
@@ -34,10 +34,10 @@
     
     <item>
       <title>認識與創建GitHub</title>
-      <link>https://jack842248.github.io/post/2023-04-10-hugo-%E8%AA%8D%E8%AD%98%E8%88%87%E5%89%B5%E5%BB%BAgithub/</link>
-      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <link>https://jack842248.github.io/post/2023-04-01-hugo-%E8%AA%8D%E8%AD%98%E8%88%87%E5%89%B5%E5%BB%BAgithub/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-04-10-hugo-%E8%AA%8D%E8%AD%98%E8%88%87%E5%89%B5%E5%BB%BAgithub/</guid>
+      <guid>https://jack842248.github.io/post/2023-04-01-hugo-%E8%AA%8D%E8%AD%98%E8%88%87%E5%89%B5%E5%BB%BAgithub/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;什麼是github&#34;&gt;什麼是GitHub&lt;/h2&gt;
