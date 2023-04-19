@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>photoShop on Jack Huang Blog</title>
+    <title>photoshop on Jack Huang Blog</title>
     <link>https://jack842248.github.io/tags/photoshop/</link>
-    <description>Recent content in photoShop on Jack Huang Blog</description>
+    <description>Recent content in photoshop on Jack Huang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Tue, 19 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/photoshop/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/photoshop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何把色版調整回來</title>
+      <link>https://jack842248.github.io/post/2023-04-11-photoshop-%E5%A6%82%E4%BD%95%E6%8A%8A%E8%89%B2%E7%89%88%E8%AA%BF%E6%95%B4%E5%9B%9E%E4%BE%86/</link>
+      <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2023-04-11-photoshop-%E5%A6%82%E4%BD%95%E6%8A%8A%E8%89%B2%E7%89%88%E8%AA%BF%E6%95%B4%E5%9B%9E%E4%BE%86/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;調整ps色版&#34;&gt;調整PS色版&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>PS去背玻璃物體</title>
+      <link>https://jack842248.github.io/post/2023-04-10-photoshop-%E5%8E%BB%E8%83%8C%E7%8E%BB%E7%92%83%E7%89%A9%E9%AB%94/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2023-04-10-photoshop-%E5%8E%BB%E8%83%8C%E7%8E%BB%E7%92%83%E7%89%A9%E9%AB%94/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;去背玻璃物體&#34;&gt;去背玻璃物體&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
     <item>
       <title>PS符合顏色</title>
       <link>https://jack842248.github.io/post/2022-04-19-photoshop-%E7%AC%A6%E5%90%88%E9%A1%8F%E8%89%B2/</link>
