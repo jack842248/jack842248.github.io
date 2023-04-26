@@ -7,7 +7,158 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PS混合圖層的應用</title>
+      <link>https://jack842248.github.io/post/2023-04-13-photoshop-ps%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4%E7%9A%84%E6%87%89%E7%94%A8/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2023-04-13-photoshop-ps%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4%E7%9A%84%E6%87%89%E7%94%A8/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;ps混合圖層效果&#34;&gt;PS混合圖層效果&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;模式&lt;/th&gt;
+&lt;th&gt;分類&lt;/th&gt;
+&lt;th&gt;應用&lt;/th&gt;
+&lt;th&gt;其他&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;變暗&lt;/td&gt;
+&lt;td&gt;去白留黑&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;色彩增值&lt;/td&gt;
+&lt;td&gt;去白留黑&lt;/td&gt;
+&lt;td&gt;疊加暗部&lt;/td&gt;
+&lt;td&gt;白底黑字簽名檔&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;加深顏色&lt;/td&gt;
+&lt;td&gt;去白留黑&lt;/td&gt;
+&lt;td&gt;增加對比&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;線性加深&lt;/td&gt;
+&lt;td&gt;去白留黑&lt;/td&gt;
+&lt;td&gt;減少對比&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;顏色變暗&lt;/td&gt;
+&lt;td&gt;去白留黑&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;變亮&lt;/td&gt;
+&lt;td&gt;去黑留白&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;濾色&lt;/td&gt;
+&lt;td&gt;去黑留白&lt;/td&gt;
+&lt;td&gt;疊加亮部&lt;/td&gt;
+&lt;td&gt;黑底雪花、燈光&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;加亮顏色&lt;/td&gt;
+&lt;td&gt;去黑留白&lt;/td&gt;
+&lt;td&gt;減少對比&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;線性加亮(增加)&lt;/td&gt;
+&lt;td&gt;去黑留白&lt;/td&gt;
+&lt;td&gt;增加對比&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;顏色變亮&lt;/td&gt;
+&lt;td&gt;去黑留白&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;覆蓋&lt;/td&gt;
+&lt;td&gt;去灰留黑白&lt;/td&gt;
+&lt;td&gt;疊加增加對比&lt;/td&gt;
+&lt;td&gt;聚光燈&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;柔光&lt;/td&gt;
+&lt;td&gt;去灰留黑白&lt;/td&gt;
+&lt;td&gt;微弱增加對比&lt;/td&gt;
+&lt;td&gt;柔和聚光燈&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;實光&lt;/td&gt;
+&lt;td&gt;去灰留黑白&lt;/td&gt;
+&lt;td&gt;強烈增加飽和&lt;/td&gt;
+&lt;td&gt;刺眼聚光燈&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;強烈光源&lt;/td&gt;
+&lt;td&gt;去灰留黑白&lt;/td&gt;
+&lt;td&gt;深灰減少對比，淺灰增加對比&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;線性光源&lt;/td&gt;
+&lt;td&gt;去灰留黑白&lt;/td&gt;
+&lt;td&gt;深灰減少暗度，淺灰增加亮度&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;小光源&lt;/td&gt;
+&lt;td&gt;去灰留黑白&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;實色疊印混合&lt;/td&gt;
+&lt;td&gt;去灰留黑白&lt;/td&gt;
+&lt;td&gt;數值不是0就是255&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;差異化&lt;/td&gt;
+&lt;td&gt;負片效果&lt;/td&gt;
+&lt;td&gt;RGB數值相減&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;排除&lt;/td&gt;
+&lt;td&gt;負片效果&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;減去&lt;/td&gt;
+&lt;td&gt;負片效果&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;分割&lt;/td&gt;
+&lt;td&gt;負片效果&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;heading-2&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
     <item>
       <title>如何把色版調整回來</title>
       <link>https://jack842248.github.io/post/2023-04-11-photoshop-%E5%A6%82%E4%BD%95%E6%8A%8A%E8%89%B2%E7%89%88%E8%AA%BF%E6%95%B4%E5%9B%9E%E4%BE%86/</link>
