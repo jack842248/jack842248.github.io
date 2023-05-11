@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "RWD響應式排版",
-  "description" : "響應式語法 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 \/*設定當螢幕寬度在0px~600px時*\/ @media screen and(max-width:600px){ body{ background-color:red; } } \/*設定當螢幕寬度在600px以上，1000px以下時*\/ @media screen and (min-width:600px) and (max-width:1000px){ body{ background-color:green; } } \/*設定當螢幕寬度在1000px以上，1920px以下時*\/ @media screen and (min-width:1000px) and (max-width:1920px){ body{ background-color:blue; } } Bootstrap排版 使用Bootstrap 下載並解壓 bootstrap.min.css放入css資料夾 bootstrap.min.js放入js資料夾 在\u0026lt;head\u0026gt;加入\u0026lt;link rel=\u0026quot;stylesheet\u0026quot; href=\u0026quot;bootstrap.min.css\u0026quot;\u0026gt; 在\u0026lt;body\u0026gt;加入\u0026lt;script src=\u0026quot;bootstrap.min.js\u0026quot;\u0026gt;\u0026lt;\/script\u0026gt; .container \u0026gt; .row \u0026gt; .col-* 0~576 576~768 768~992 992~1200 1200~ .",
+  "description" : "使用者裝置設定 1 \u0026lt;meta name=\u0026#34;viewport\u0026#34; content=\u0026#34;width=device-width, initial-scale=1.0\u0026#34;\u0026gt; 語法 說明 device-width 畫面寬度 device-height 畫面高度 initial-scale 初始縮放比 minimum-scale 最小可縮放比 maximum-scale 最大可縮放比 user-scalable 使用者是否可縮放 快速語法meta:vp\nCSS Reset重製樣式 CSS Normalize是另一種保留部分樣式 Pure.css是Yahoo開發的兼容性樣式 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: \u0026#39;\u0026#39;; content: none; } table { border-collapse: collapse; border-spacing: 0; } *,*:before,*:after{ box-sizing: border-box; } img{ max-width: 100%; height: auto; } 響應式設斷點語法 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 \/*設定當螢幕寬度在400px以上時*\/ @media screen and(min-width:400px){ body{ background-color:red; } } \/*設定當螢幕寬度在0px~600px時*\/ @media screen and(max-width:600px){ body{ background-color:red; } } \/*設定當螢幕寬度在600px以上，1000px以下時*\/ @media screen and (min-width:600px) and (max-width:1000px){ body{ background-color:green; } } \/*設定當螢幕寬度在1000px以上，1920px以下時*\/ @media screen and (min-width:1000px) and (max-width:1920px){ body{ background-color:blue; } } and前後一定要空格",
   "inLanguage" : "zh-tw",
-  "wordCount":  456 ,
+  "wordCount":  723 ,
   "datePublished" : "2022-04-06T00:00:00",
   "dateModified" : "2022-04-06T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -257,10 +257,10 @@
   <i class="fas fa-calendar"></i>&nbsp;發表於 2022-04-06
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;456&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;723&nbsp;個字
   
   
   
@@ -296,10 +296,10 @@
   <i class="fas fa-calendar"></i>&nbsp;發表於 2022-04-06
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;456&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;723&nbsp;個字
   
   
   
@@ -322,8 +322,63 @@
       <article role="main" class="blog-post">
         <hr>
 <h1 id="heading"></h1>
-<h2 id="響應式語法">響應式語法</h2>
+<h2 id="使用者裝置設定">使用者裝置設定</h2>
 <h1 id="heading-1"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-2"></h1>
+<table>
+<thead>
+<tr>
+<th>語法</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>device-width</td>
+<td>畫面寬度</td>
+</tr>
+<tr>
+<td>device-height</td>
+<td>畫面高度</td>
+</tr>
+<tr>
+<td>initial-scale</td>
+<td>初始縮放比</td>
+</tr>
+<tr>
+<td>minimum-scale</td>
+<td>最小可縮放比</td>
+</tr>
+<tr>
+<td>maximum-scale</td>
+<td>最大可縮放比</td>
+</tr>
+<tr>
+<td>user-scalable</td>
+<td>使用者是否可縮放</td>
+</tr>
+</tbody>
+</table>
+<h1 id="heading-3"></h1>
+<p><code>快速語法meta:vp</code></p>
+<h1 id="heading-4"></h1>
+<hr>
+<h1 id="heading-5"></h1>
+<h2 id="css-reset重製樣式">CSS Reset重製樣式</h2>
+<h1 id="heading-6"></h1>
+<ul>
+<li><a href="https://necolas.github.io/normalize.css/">CSS Normalize</a>是另一種保留部分樣式</li>
+<li><a href="https://purecss.io/">Pure.css</a>是Yahoo開發的兼容性樣式</li>
+</ul>
+<h1 id="heading-7"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -344,9 +399,130 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/*設定當螢幕寬度在0px~600px時*/</span>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">html</span><span style="color:#f92672">,</span> <span style="color:#f92672">body</span><span style="color:#f92672">,</span> <span style="color:#f92672">div</span><span style="color:#f92672">,</span> <span style="color:#f92672">span</span><span style="color:#f92672">,</span> <span style="color:#f92672">applet</span><span style="color:#f92672">,</span> <span style="color:#f92672">object</span><span style="color:#f92672">,</span> <span style="color:#f92672">iframe</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h1</span><span style="color:#f92672">,</span> <span style="color:#f92672">h2</span><span style="color:#f92672">,</span> <span style="color:#f92672">h3</span><span style="color:#f92672">,</span> <span style="color:#f92672">h4</span><span style="color:#f92672">,</span> <span style="color:#f92672">h5</span><span style="color:#f92672">,</span> <span style="color:#f92672">h6</span><span style="color:#f92672">,</span> <span style="color:#f92672">p</span><span style="color:#f92672">,</span> <span style="color:#f92672">blockquote</span><span style="color:#f92672">,</span> <span style="color:#f92672">pre</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">a</span><span style="color:#f92672">,</span> <span style="color:#f92672">abbr</span><span style="color:#f92672">,</span> <span style="color:#f92672">acronym</span><span style="color:#f92672">,</span> <span style="color:#f92672">address</span><span style="color:#f92672">,</span> <span style="color:#f92672">big</span><span style="color:#f92672">,</span> <span style="color:#f92672">cite</span><span style="color:#f92672">,</span> <span style="color:#f92672">code</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">del</span><span style="color:#f92672">,</span> <span style="color:#f92672">dfn</span><span style="color:#f92672">,</span> <span style="color:#f92672">em</span><span style="color:#f92672">,</span> <span style="color:#f92672">img</span><span style="color:#f92672">,</span> <span style="color:#f92672">ins</span><span style="color:#f92672">,</span> <span style="color:#f92672">kbd</span><span style="color:#f92672">,</span> <span style="color:#f92672">q</span><span style="color:#f92672">,</span> <span style="color:#f92672">s</span><span style="color:#f92672">,</span> <span style="color:#f92672">samp</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">small</span><span style="color:#f92672">,</span> <span style="color:#f92672">strike</span><span style="color:#f92672">,</span> <span style="color:#f92672">strong</span><span style="color:#f92672">,</span> <span style="color:#f92672">sub</span><span style="color:#f92672">,</span> <span style="color:#f92672">sup</span><span style="color:#f92672">,</span> <span style="color:#f92672">tt</span><span style="color:#f92672">,</span> <span style="color:#f92672">var</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">b</span><span style="color:#f92672">,</span> <span style="color:#f92672">u</span><span style="color:#f92672">,</span> <span style="color:#f92672">i</span><span style="color:#f92672">,</span> <span style="color:#f92672">center</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">dl</span><span style="color:#f92672">,</span> <span style="color:#f92672">dt</span><span style="color:#f92672">,</span> <span style="color:#f92672">dd</span><span style="color:#f92672">,</span> <span style="color:#f92672">ol</span><span style="color:#f92672">,</span> <span style="color:#f92672">ul</span><span style="color:#f92672">,</span> <span style="color:#f92672">li</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">fieldset</span><span style="color:#f92672">,</span> <span style="color:#f92672">form</span><span style="color:#f92672">,</span> <span style="color:#f92672">label</span><span style="color:#f92672">,</span> <span style="color:#f92672">legend</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">table</span><span style="color:#f92672">,</span> <span style="color:#f92672">caption</span><span style="color:#f92672">,</span> <span style="color:#f92672">tbody</span><span style="color:#f92672">,</span> <span style="color:#f92672">tfoot</span><span style="color:#f92672">,</span> <span style="color:#f92672">thead</span><span style="color:#f92672">,</span> <span style="color:#f92672">tr</span><span style="color:#f92672">,</span> <span style="color:#f92672">th</span><span style="color:#f92672">,</span> <span style="color:#f92672">td</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">article</span><span style="color:#f92672">,</span> <span style="color:#f92672">aside</span><span style="color:#f92672">,</span> <span style="color:#f92672">canvas</span><span style="color:#f92672">,</span> <span style="color:#f92672">details</span><span style="color:#f92672">,</span> <span style="color:#f92672">embed</span><span style="color:#f92672">,</span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">figure</span><span style="color:#f92672">,</span> <span style="color:#f92672">figcaption</span><span style="color:#f92672">,</span> <span style="color:#f92672">footer</span><span style="color:#f92672">,</span> <span style="color:#f92672">header</span><span style="color:#f92672">,</span> <span style="color:#f92672">hgroup</span><span style="color:#f92672">,</span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">menu</span><span style="color:#f92672">,</span> <span style="color:#f92672">nav</span><span style="color:#f92672">,</span> <span style="color:#f92672">output</span><span style="color:#f92672">,</span> <span style="color:#f92672">ruby</span><span style="color:#f92672">,</span> <span style="color:#f92672">section</span><span style="color:#f92672">,</span> <span style="color:#f92672">summary</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">time</span><span style="color:#f92672">,</span> <span style="color:#f92672">mark</span><span style="color:#f92672">,</span> <span style="color:#f92672">audio</span><span style="color:#f92672">,</span> <span style="color:#f92672">video</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">font</span>: <span style="color:#66d9ef">inherit</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">vertical-align</span>: <span style="color:#66d9ef">baseline</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">article</span><span style="color:#f92672">,</span> <span style="color:#f92672">aside</span><span style="color:#f92672">,</span> <span style="color:#f92672">details</span><span style="color:#f92672">,</span> <span style="color:#f92672">figcaption</span><span style="color:#f92672">,</span> <span style="color:#f92672">figure</span><span style="color:#f92672">,</span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">footer</span><span style="color:#f92672">,</span> <span style="color:#f92672">header</span><span style="color:#f92672">,</span> <span style="color:#f92672">hgroup</span><span style="color:#f92672">,</span> <span style="color:#f92672">menu</span><span style="color:#f92672">,</span> <span style="color:#f92672">nav</span><span style="color:#f92672">,</span> <span style="color:#f92672">section</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">body</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">ol</span><span style="color:#f92672">,</span> <span style="color:#f92672">ul</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">list-style</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">blockquote</span><span style="color:#f92672">,</span> <span style="color:#f92672">q</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">quotes</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">blockquote</span>:<span style="color:#a6e22e">before</span><span style="color:#f92672">,</span> <span style="color:#f92672">blockquote</span>:<span style="color:#a6e22e">after</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">q</span>:<span style="color:#a6e22e">before</span><span style="color:#f92672">,</span> <span style="color:#f92672">q</span>:<span style="color:#a6e22e">after</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">content</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">table</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border-collapse</span>: <span style="color:#66d9ef">collapse</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">border-spacing</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">*,*</span>:<span style="color:#a6e22e">before</span><span style="color:#f92672">,*</span>:<span style="color:#a6e22e">after</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">box-sizing</span>: <span style="color:#66d9ef">border-box</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">img</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">max-width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-8"></h1>
+<hr>
+<h1 id="heading-9"></h1>
+<h2 id="響應式設斷點語法">響應式設斷點語法</h2>
+<h1 id="heading-10"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/*設定當螢幕寬度在400px以上時*/</span>
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">media</span> <span style="color:#f92672">screen</span> <span style="color:#f92672">and</span><span style="color:#f92672">(</span><span style="color:#f92672">min-width</span>:<span style="color:#a6e22e">400px</span><span style="color:#f92672">)</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">body</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">background-color</span>:<span style="color:#66d9ef">red</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/*設定當螢幕寬度在0px~600px時*/</span>
 </span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">media</span> <span style="color:#f92672">screen</span> <span style="color:#f92672">and</span><span style="color:#f92672">(</span><span style="color:#f92672">max-width</span>:<span style="color:#a6e22e">600px</span><span style="color:#f92672">)</span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">body</span>{
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">background-color</span>:<span style="color:#66d9ef">red</span>;
@@ -366,39 +542,41 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-2"></h1>
+</div><h1 id="heading-11"></h1>
+<p><code>and前後一定要空格</code></p>
+<h1 id="heading-12"></h1>
 <hr>
-<h1 id="heading-3"></h1>
+<h1 id="heading-13"></h1>
 <h2 id="bootstrap排版">Bootstrap排版</h2>
-<h1 id="heading-4"></h1>
+<h1 id="heading-14"></h1>
 <ol>
 <li>使用<a href="https://getbootstrap.com/">Bootstrap</a></li>
 </ol>
-<h1 id="heading-5"></h1>
+<h1 id="heading-15"></h1>
 <ol start="2">
 <li>下載並解壓</li>
 </ol>
-<h1 id="heading-6"></h1>
+<h1 id="heading-16"></h1>
 <ol start="3">
 <li>bootstrap.min.css放入css資料夾</li>
 </ol>
-<h1 id="heading-7"></h1>
+<h1 id="heading-17"></h1>
 <ol start="4">
 <li>bootstrap.min.js放入js資料夾</li>
 </ol>
-<h1 id="heading-8"></h1>
+<h1 id="heading-18"></h1>
 <ol start="5">
 <li>在<code>&lt;head&gt;</code>加入<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;bootstrap.min.css&quot;&gt;</code></li>
 </ol>
-<h1 id="heading-9"></h1>
+<h1 id="heading-19"></h1>
 <ol start="6">
 <li>在<code>&lt;body&gt;</code>加入<code>&lt;script src=&quot;bootstrap.min.js&quot;&gt;&lt;/script&gt;</code></li>
 </ol>
-<h1 id="heading-10"></h1>
+<h1 id="heading-20"></h1>
 <ol start="7">
 <li><code>.container</code> &gt; <code>.row</code> &gt; <code>.col-*</code></li>
 </ol>
-<h1 id="heading-11"></h1>
+<h1 id="heading-21"></h1>
 <table>
 <thead>
 <tr>
@@ -433,9 +611,9 @@
 </tr>
 </tbody>
 </table>
-<h1 id="heading-12"></h1>
+<h1 id="heading-22"></h1>
 <p><code>Bootstrap是從手機版開始製作網頁版型，要超過斷點才會套用樣式</code></p>
-<h1 id="heading-13"></h1>
+<h1 id="heading-23"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -460,11 +638,11 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-14"></h1>
+</div><h1 id="heading-24"></h1>
 <hr>
-<h1 id="heading-15"></h1>
+<h1 id="heading-25"></h1>
 <h2 id="flexbox排版">flexbox排版</h2>
-<h1 id="heading-16"></h1>
+<h1 id="heading-26"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -557,15 +735,15 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-17"></h1>
+</div><h1 id="heading-27"></h1>
 <hr>
-<h1 id="heading-18"></h1>
+<h1 id="heading-28"></h1>
 <h2 id="bootstrapflex排版">Bootstrap+flex排版</h2>
-<h1 id="heading-19"></h1>
+<h1 id="heading-29"></h1>
 <ul>
 <li>第一種排版方式</li>
 </ul>
-<h1 id="heading-20"></h1>
+<h1 id="heading-30"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -586,7 +764,7 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-21"></h1>
+</div><h1 id="heading-31"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -605,11 +783,11 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-22"></h1>
+</div><h1 id="heading-32"></h1>
 <ul>
 <li>第二種排版方式</li>
 </ul>
-<h1 id="heading-23"></h1>
+<h1 id="heading-33"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -630,7 +808,7 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-24"></h1>
+</div><h1 id="heading-34"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -649,11 +827,11 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-25"></h1>
+</div><h1 id="heading-35"></h1>
 <hr>
-<h1 id="heading-26"></h1>
+<h1 id="heading-36"></h1>
 <h2 id="bootstrap屬性">Bootstrap屬性</h2>
-<h1 id="heading-27"></h1>
+<h1 id="heading-37"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -784,7 +962,47 @@
 </span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">transparent</span> <span style="color:#75715e">/*透明*/</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-28"></h1>
+</div><h1 id="heading-38"></h1>
+<hr>
+<h1 id="heading-39"></h1>
+<h2 id="其他">其他</h2>
+<h1 id="heading-40"></h1>
+<ul>
+<li>禁止X軸產生(除非特定區域或效果)</li>
+<li>圖片響應式
+<ul>
+<li>width:100%(填滿父容器寬度)</li>
+<li>max-width:100%(圖片本身大小顯示，跟著視窗縮小)</li>
+</ul>
+</li>
+<li>max-width:600px(原本600px，縮小會自適應)</li>
+<li>流體式佈局可利用width佔%數比
+<ol>
+<li>一欄100%</li>
+<li>二欄50%</li>
+<li>三欄33.33333%</li>
+</ol>
+</li>
+<li>左側選單固定寫法：
+<ol>
+<li>外層容器max-width</li>
+<li>選單width固定寬px</li>
+<li>右側內容width寬度%</li>
+<li>右側內容用margin-left向右推選單固定寬</li>
+</ol>
+</li>
+<li>從PC轉到手機版時，部份不必要內容可以適度刪減</li>
+<li>留意文章閱讀寬度、換行的頻率
+<ul>
+<li>中文內文單行字元30～40字</li>
+<li>英文內文單行字元32～80個字元數</li>
+</ul>
+</li>
+<li>手指點擊元件最小高度44px</li>
+<li>手機版沒有hover效果</li>
+<li>小圖放大jpg、png會模糊，svg向量圖放大不會失真</li>
+<li><!-- raw HTML omitted -->載入圖片可改成background-image:</li>
+</ul>
 
 
         
@@ -861,6 +1079,8 @@
                   <h4 class="see-also">其他相關</h4>
                   <ul>
                 
+                
+                    <li><a href="/post/2022-04-08-css-font-awesome-icon/">Font Awesome Icon</a></li>
                 
                     <li><a href="/post/2022-04-05-css-%E9%80%B2%E9%9A%8E%E6%A8%A3%E5%BC%8F/">CSS進階樣式</a></li>
                 

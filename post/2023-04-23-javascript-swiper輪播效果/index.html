@@ -59,7 +59,7 @@
   "headline": "swiper輪播效果",
   "description" : " swiper使用前準備 ",
   "inLanguage" : "zh-tw",
-  "wordCount":  109 ,
+  "wordCount":  135 ,
   "datePublished" : "2023-04-23T00:00:00",
   "dateModified" : "2023-04-23T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;109&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;135&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;109&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;135&nbsp;個字
   
   
   
@@ -335,6 +335,10 @@
 <ol start="2">
 <li>將.css和.js引入</li>
 </ol>
+<ul>
+<li>在<code>&lt;head&gt;</code>加入<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/swiper@8/swiper-bundle.min.css&quot;/&gt;</code></li>
+<li>在<code>&lt;body&gt;</code>加入<code>&lt;script src=&quot;https://unpkg.com/swiper@8/swiper-bundle.min.js&quot;&gt;&lt;/script&gt;</code></li>
+</ul>
 <h1 id="heading-5"></h1>
 <p><img src="/img/swiper%E8%BC%AA%E6%92%AD%E6%95%88%E6%9E%9C/swiper%E8%BC%AA%E6%92%AD%E6%95%88%E6%9E%9C-2.png" alt="圖片"></p>
 <h1 id="heading-6"></h1>
@@ -448,16 +452,30 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">swiper</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Swiper</span>(<span style="color:#e6db74">&#39;.swiper&#39;</span>, {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">direction</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;vertical&#39;</span>,<span style="color:#75715e">//horizontal水平
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">loop</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,<span style="color:#75715e">//false不循環
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">direction</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;vertical&#39;</span>,<span style="color:#75715e">//垂直方向播放
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">direction</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;horizontal&#39;</span>,<span style="color:#75715e">//水平方向播放
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">loop</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,<span style="color:#75715e">//循環播放
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">loop</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,<span style="color:#75715e">//不循環播放
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">autoplay</span><span style="color:#f92672">:</span> {<span style="color:#75715e">//自動輪播
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">delay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3000</span>,<span style="color:#75715e">//幻燈片停留時間
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">delay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3000</span>,<span style="color:#75715e">//幻燈片停留時間(毫秒)
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  },
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">speed</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;500&#34;</span>,<span style="color:#75715e">//幻燈片速度
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">effect</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;cards&#34;</span>,<span style="color:#75715e">//fade淡出、coverflow幻燈片、cube立體方塊、coverflow立體相片、flip翻轉、cards卡片
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">effect</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;cards&#34;</span>,<span style="color:#75715e">//卡片式效果
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">effect</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;fade&#34;</span>,<span style="color:#75715e">//淡出效果
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">effect</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;coverflow&#34;</span>,<span style="color:#75715e">//幻燈片效果
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">effect</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;cube&#34;</span>,<span style="color:#75715e">//立體方塊效果
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">effect</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;coverflow&#34;</span>,<span style="color:#75715e">//立體相片效果
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">effect</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;flip&#34;</span>,<span style="color:#75715e">//翻轉效果
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pagination</span><span style="color:#f92672">:</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;.swiper-pagination&#39;</span>,

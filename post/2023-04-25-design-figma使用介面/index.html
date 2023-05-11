@@ -59,7 +59,7 @@
   "headline": "figma使用介面",
   "description" : " 免費版figma ",
   "inLanguage" : "zh-tw",
-  "wordCount":  75 ,
+  "wordCount":  166 ,
   "datePublished" : "2023-04-25T00:00:00",
   "dateModified" : "2023-04-25T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;75&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;166&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;75&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;166&nbsp;個字
   
   
   
@@ -415,6 +415,10 @@
 <td><code>I</code></td>
 </tr>
 <tr>
+<td>打開格線系統</td>
+<td><code>control</code>+<code>G</code></td>
+</tr>
+<tr>
 <td>框架</td>
 <td><code>command</code>+<code>G</code></td>
 </tr>
@@ -459,6 +463,10 @@
 <td><code>command</code>+<code>option</code>+<code>V</code></td>
 </tr>
 <tr>
+<td>製作元件</td>
+<td><code>command</code>+<code>option</code>+<code>K</code></td>
+</tr>
+<tr>
 <td>查看邊距</td>
 <td><code>option</code>+游標移動</td>
 </tr>
@@ -497,6 +505,122 @@
 </tbody>
 </table>
 <h1 id="heading-11"></h1>
+<hr>
+<h1 id="heading-12"></h1>
+<h2 id="元件component">元件(Component)</h2>
+<h1 id="heading-13"></h1>
+<ul>
+<li>元件本體(main component)</li>
+<li>元件分身(instance)</li>
+<li>元件建立
+<ol>
+<li>繪製樣式</li>
+<li><code>shift</code>+<code>A</code> 建立Auto layout</li>
+<li><code>command</code>+<code>option</code>+<code>K</code> 製作元件</li>
+<li>給元件命名或賦予關鍵字</li>
+<li>在資源可用文字搜尋</li>
+<li>修改樣式時統一使用元件本體
+<code>若在instance上修改樣式，main component修改就不再同步</code></li>
+</ol>
+</li>
+</ul>
+<h1 id="heading-14"></h1>
+<hr>
+<h1 id="heading-15"></h1>
+<h2 id="變體variants">變體(Variants)</h2>
+<h1 id="heading-16"></h1>
+<ul>
+<li>將元件集合(component set)</li>
+<li>每個元件可以有多個屬性，每個屬性對應到一個值</li>
+<li>建立變體
+<ol>
+<li>繪製樣式</li>
+<li><code>command</code>+<code>option</code>+<code>K</code> 製作元件</li>
+<li>製作不同樣式(樣式名稱)</li>
+<li>進行群組命名(property)</li>
+<li>群組複製再次進行修改</li>
+<li>檢查元件是否可以用分類選擇到
+<code>只有元件才能進行變體</code></li>
+</ol>
+</li>
+</ul>
+<h1 id="heading-17"></h1>
+<hr>
+<h1 id="heading-18"></h1>
+<h2 id="格線系統grid-system">格線系統(grid system)</h2>
+<h1 id="heading-19"></h1>
+<ol>
+<li>建立frame</li>
+<li>啟用layout grid</li>
+<li>選擇columns，count：12</li>
+<li>決定主要內容寬度(自訂)</li>
+<li>margin：將裝置寬度-內容寬度/2</li>
+<li>gutter：16(自訂)</li>
+</ol>
+<ul>
+<li>8網格間距(8 point grids)能夠更有效率、達成一致性
+<ul>
+<li>4、8、12、16、20、24、28、32、40、48、56、64&hellip;</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<p><code>斷點(break point)建議參考主流框架</code></p>
+<h1 id="heading-20"></h1>
+<hr>
+<h1 id="heading-21"></h1>
+<h2 id="建立核心樣式">建立核心樣式</h2>
+<h1 id="heading-22"></h1>
+<ol>
+<li>顏色(預設/深色/淺色)
+<ul>
+<li>主要色(Primary)品牌色、重要文字、按鈕</li>
+<li>次要色(Secondary)提示訊息、次要文字按鈕</li>
+<li>警告色(Alert)錯誤訊息、警告</li>
+<li>輔助色(Complementary)其他更多輔助介面</li>
+<li>強調色(Accent)強調特定資訊</li>
+<li>灰階(Gray scale)分隔線、外框線、內容文字</li>
+</ul>
+</li>
+<li>文字
+<ul>
+<li>選定字型(1~2種)</li>
+<li>定義H1~H6、主標、副標、內容文字、輔助文字
+<ul>
+<li>H1(40px)(125%)</li>
+<li>H2(32px)(125%)</li>
+<li>H3(24px)(125%)</li>
+<li>H4(20px)(140%)</li>
+<li>H5(18px)(140%)</li>
+<li>Title(16px)(140%)</li>
+<li>P(12px)(140%)</li>
+<li>small(11px)(140%)</li>
+</ul>
+</li>
+<li>粗細度(2~3種)</li>
+<li>階層不同、深淺度可調整</li>
+<li>行高1.4%~1.6%，大於24px建議1.25%</li>
+</ul>
+</li>
+<li>間距(8 point grids)</li>
+</ol>
+<ul>
+<li>input 文字跟輸入框上下12px 左右16px</li>
+</ul>
+<h1 id="heading-23"></h1>
+<hr>
+<h1 id="heading-24"></h1>
+<h2 id="建立完整按鈕樣式">建立完整按鈕樣式</h2>
+<h1 id="heading-25"></h1>
+<ol>
+<li>元件名稱btn/form/nav</li>
+<li>狀態default/hover/foucs/disabled</li>
+<li>icon有無true/false</li>
+</ol>
+<ul>
+<li>name / state / icon</li>
+<li>btn / dafault / text</li>
+</ul>
 
         
           <div class="blog-tags">
