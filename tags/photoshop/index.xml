@@ -17,146 +17,7 @@
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;ps混合圖層效果&#34;&gt;PS混合圖層效果&lt;/h2&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;模式&lt;/th&gt;
-&lt;th&gt;分類&lt;/th&gt;
-&lt;th&gt;應用&lt;/th&gt;
-&lt;th&gt;其他&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;變暗&lt;/td&gt;
-&lt;td&gt;去白留黑&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;色彩增值&lt;/td&gt;
-&lt;td&gt;去白留黑&lt;/td&gt;
-&lt;td&gt;疊加暗部&lt;/td&gt;
-&lt;td&gt;白底黑字簽名檔&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;加深顏色&lt;/td&gt;
-&lt;td&gt;去白留黑&lt;/td&gt;
-&lt;td&gt;增加對比&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;線性加深&lt;/td&gt;
-&lt;td&gt;去白留黑&lt;/td&gt;
-&lt;td&gt;減少對比&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;顏色變暗&lt;/td&gt;
-&lt;td&gt;去白留黑&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;變亮&lt;/td&gt;
-&lt;td&gt;去黑留白&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;濾色&lt;/td&gt;
-&lt;td&gt;去黑留白&lt;/td&gt;
-&lt;td&gt;疊加亮部&lt;/td&gt;
-&lt;td&gt;黑底雪花、燈光&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;加亮顏色&lt;/td&gt;
-&lt;td&gt;去黑留白&lt;/td&gt;
-&lt;td&gt;減少對比&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;線性加亮(增加)&lt;/td&gt;
-&lt;td&gt;去黑留白&lt;/td&gt;
-&lt;td&gt;增加對比&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;顏色變亮&lt;/td&gt;
-&lt;td&gt;去黑留白&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;覆蓋&lt;/td&gt;
-&lt;td&gt;去灰留黑白&lt;/td&gt;
-&lt;td&gt;疊加增加對比&lt;/td&gt;
-&lt;td&gt;聚光燈&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;柔光&lt;/td&gt;
-&lt;td&gt;去灰留黑白&lt;/td&gt;
-&lt;td&gt;微弱增加對比&lt;/td&gt;
-&lt;td&gt;柔和聚光燈&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;實光&lt;/td&gt;
-&lt;td&gt;去灰留黑白&lt;/td&gt;
-&lt;td&gt;強烈增加飽和&lt;/td&gt;
-&lt;td&gt;刺眼聚光燈&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;強烈光源&lt;/td&gt;
-&lt;td&gt;去灰留黑白&lt;/td&gt;
-&lt;td&gt;深灰減少對比，淺灰增加對比&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;線性光源&lt;/td&gt;
-&lt;td&gt;去灰留黑白&lt;/td&gt;
-&lt;td&gt;深灰減少暗度，淺灰增加亮度&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;小光源&lt;/td&gt;
-&lt;td&gt;去灰留黑白&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;實色疊印混合&lt;/td&gt;
-&lt;td&gt;去灰留黑白&lt;/td&gt;
-&lt;td&gt;數值不是0就是255&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;差異化&lt;/td&gt;
-&lt;td&gt;負片效果&lt;/td&gt;
-&lt;td&gt;RGB數值相減&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;排除&lt;/td&gt;
-&lt;td&gt;負片效果&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;減去&lt;/td&gt;
-&lt;td&gt;負片效果&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;分割&lt;/td&gt;
-&lt;td&gt;負片效果&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1 id=&#34;heading-2&#34;&gt;&lt;/h1&gt;</description>
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
     <item>
@@ -184,11 +45,11 @@
     </item>
     
     <item>
-      <title>PS符合顏色</title>
-      <link>https://jack842248.github.io/post/2022-04-19-photoshop-%E7%AC%A6%E5%90%88%E9%A1%8F%E8%89%B2/</link>
+      <title>PS將物件融入到不同背景裡</title>
+      <link>https://jack842248.github.io/post/2022-04-19-photoshop-%E5%B0%87%E7%89%A9%E4%BB%B6%E8%9E%8D%E5%85%A5%E5%88%B0%E4%B8%8D%E5%90%8C%E8%83%8C%E6%99%AF%E8%A3%A1/</link>
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2022-04-19-photoshop-%E7%AC%A6%E5%90%88%E9%A1%8F%E8%89%B2/</guid>
+      <guid>https://jack842248.github.io/post/2022-04-19-photoshop-%E5%B0%87%E7%89%A9%E4%BB%B6%E8%9E%8D%E5%85%A5%E5%88%B0%E4%B8%8D%E5%90%8C%E8%83%8C%E6%99%AF%E8%A3%A1/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;符合顏色&#34;&gt;符合顏色&lt;/h2&gt;
@@ -196,11 +57,11 @@
     </item>
     
     <item>
-      <title>PS自動混合圖層</title>
-      <link>https://jack842248.github.io/post/2022-04-18-photoshop-%E8%87%AA%E5%8B%95%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4/</link>
+      <title>PS合成兩張不同的臉</title>
+      <link>https://jack842248.github.io/post/2022-04-18-photoshop-%E5%90%88%E6%88%90%E5%85%A9%E5%BC%B5%E4%B8%8D%E5%90%8C%E7%9A%84%E8%87%89/</link>
       <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2022-04-18-photoshop-%E8%87%AA%E5%8B%95%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4/</guid>
+      <guid>https://jack842248.github.io/post/2022-04-18-photoshop-%E5%90%88%E6%88%90%E5%85%A9%E5%BC%B5%E4%B8%8D%E5%90%8C%E7%9A%84%E8%87%89/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;自動混合圖層&#34;&gt;自動混合圖層&lt;/h2&gt;

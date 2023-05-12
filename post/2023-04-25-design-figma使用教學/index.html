@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="zh-tw" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Figma使用教學 - Jack Huang Blog</title>
+  <meta name="description" content="產品介面設計工具">
+  <meta name="author" content="JackHuang"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Jack Huang Blog",
+    
+    "url": "https:\/\/jack842248.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/jack842248.github.io"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/jack842248.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/jack842248.github.io\/post\/2023-04-25-design-figma%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8\/",
+          "name": "Figma使用教學"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "JackHuang"
+  },
+  "headline": "Figma使用教學",
+  "description" : " 免費版figma ",
+  "inLanguage" : "zh-tw",
+  "wordCount":  166 ,
+  "datePublished" : "2023-04-25T00:00:00",
+  "dateModified" : "2023-04-25T00:00:00",
+  "image" : "https:\/\/jack842248.github.io",
+  "keywords" : [ "design" ],
+  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2023-04-25-design-figma%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/jack842248.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/jack842248.github.io",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Figma使用教學" />
+<meta property="og:description" content="產品介面設計工具">
+<meta property="og:url" content="https://jack842248.github.io/post/2023-04-25-design-figma%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Jack Huang Blog" />
+
+  <meta name="twitter:title" content="Figma使用教學" />
+  <meta name="twitter:description" content="產品介面設計工具">
+  <meta name="twitter:card" content="summary" />
+  <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.111.3">
+  <link rel="alternate" href="https://jack842248.github.io/index.xml" type="application/rss+xml" title="Jack Huang Blog"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://jack842248.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" /><link rel="stylesheet" href="https://jack842248.github.io/css/syntax.css" /><link rel="stylesheet" href="https://jack842248.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78ER7G5KW8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-78ER7G5KW8');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1149736544292757"
+     crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">開關導覽</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://jack842248.github.io">Jack Huang Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="部落格Blog" href="/">部落格Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="快速搜尋Tags" href="/tags">快速搜尋Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="關於我About" href="/page/about/">關於我About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=3 
+      
+         
+          data-img-src-1="/img/triangle.jpg" 
+         
+         data-img-desc-1="Triangle"
+      
+         
+          data-img-src-2="/img/sphere.jpg" 
+         
+         data-img-desc-2="Sphere"
+      
+         
+          data-img-src-3="/img/hexagon.jpg" 
+         
+         data-img-desc-3="Hexagon"
+      ></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                <h1>Figma使用教學</h1>
+                  
+                    
+                      <h2 class="post-subheading">產品介面設計工具</h2>
+                    
+                  
+                  
+                    <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2023-04-25
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;166&nbsp;個字
+  
+  
+  
+</span>
+
+
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Figma使用教學</h1>
+              
+              
+              
+                
+                  <h2 class="post-subheading">產品介面設計工具</h2>
+                
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2023-04-25
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;166&nbsp;個字
+  
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <hr>
+<h1 id="heading"></h1>
+<h2 id="免費版figma">免費版figma</h2>
+<h1 id="heading-1"></h1>
+<ul>
+<li>團隊(不限)-專案(最多3個)-檔案(不限)</li>
+<li>免費版本控制只保留30天
+<ul>
+<li>方法一：匯出檔案再匯入
+<ul>
+<li>點選左上角-檔案-儲存並下載-儲存.fig檔在本地端</li>
+<li>回到控制台的專案，選擇匯入</li>
+</ul>
+</li>
+<li>方法二：儲存歷史並回朔紀錄(30天)
+<ul>
+<li>點選左上角-檔案-儲存版控</li>
+<li>點選左上角-檔案-顯示版控</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="heading-2"></h1>
+<hr>
+<h1 id="heading-3"></h1>
+<h2 id="工具">工具</h2>
+<h1 id="heading-4"></h1>
+<ul>
+<li>元件
+<ul>
+<li>群組(group)縮放內容變形</li>
+<li>框架(frame)縮放會被constraints固定
+<ul>
+<li>重疊時會自動包覆</li>
+<li>按著滑鼠移動frame+空白鍵不會被包覆</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="heading-5"></h1>
+<ul>
+<li>文字
+<ul>
+<li>行高建議1.4~1.6倍(140%~160%)</li>
+<li>點選文字控制區右上角(四個點)可建立文字樣版(命名：種類/樣式名稱)</li>
+<li>載入本地端字型：點擊頭像-setting-font</li>
+<li>文字底線可用陰影代替</li>
+</ul>
+</li>
+</ul>
+<h1 id="heading-6"></h1>
+<ul>
+<li>圖片
+<ul>
+<li>進行遮罩時，形狀需放在圖片下層，先群組再遮罩</li>
+</ul>
+</li>
+</ul>
+<h1 id="heading-7"></h1>
+<ul>
+<li>顏色
+<ul>
+<li>在滴管吸取時，滑鼠按著不放可瀏覽變色</li>
+<li>全選物件後，可在右邊顏色選擇器針對特定顏色選取</li>
+</ul>
+</li>
+</ul>
+<h1 id="heading-8"></h1>
+<hr>
+<h1 id="heading-9"></h1>
+<h2 id="常用快捷鍵">常用快捷鍵</h2>
+<h1 id="heading-10"></h1>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>快捷鍵</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>游標</td>
+<td><code>V</code></td>
+</tr>
+<tr>
+<td>文字</td>
+<td><code>T</code></td>
+</tr>
+<tr>
+<td>滴管</td>
+<td><code>I</code></td>
+</tr>
+<tr>
+<td>打開格線系統</td>
+<td><code>control</code>+<code>G</code></td>
+</tr>
+<tr>
+<td>框架</td>
+<td><code>command</code>+<code>G</code></td>
+</tr>
+<tr>
+<td>群組</td>
+<td><code>command</code>+<code>option</code>+<code>G</code></td>
+</tr>
+<tr>
+<td>解散框架/群組</td>
+<td><code>command</code>+<code>shift</code>+<code>G</code></td>
+</tr>
+<tr>
+<td>合併形狀</td>
+<td><code>command</code>+<code>E</code></td>
+</tr>
+<tr>
+<td>命名多個圖層</td>
+<td>左側選取圖層<code>command</code>+<code>R</code></td>
+</tr>
+<tr>
+<td>文字新增連結</td>
+<td><code>command</code>+<code>K</code></td>
+</tr>
+<tr>
+<td>簡報模式</td>
+<td><code>command</code>+<code>\</code></td>
+</tr>
+<tr>
+<td>插入圖片</td>
+<td><code>command</code>+<code>shift</code>+<code>K</code></td>
+</tr>
+<tr>
+<td>圖片遮罩</td>
+<td><code>command</code>+<code>control</code>+<code>M</code></td>
+</tr>
+<tr>
+<td>複製樣式</td>
+<td><code>command</code>+<code>option</code>+<code>C</code></td>
+</tr>
+<tr>
+<td>貼上樣式</td>
+<td><code>command</code>+<code>option</code>+<code>V</code></td>
+</tr>
+<tr>
+<td>製作元件</td>
+<td><code>command</code>+<code>option</code>+<code>K</code></td>
+</tr>
+<tr>
+<td>查看邊距</td>
+<td><code>option</code>+游標移動</td>
+</tr>
+<tr>
+<td>剪裁圖片</td>
+<td><code>option</code>+點兩下圖片</td>
+</tr>
+<tr>
+<td>完整顯示</td>
+<td><code>shift</code>+<code>1</code></td>
+</tr>
+<tr>
+<td>顯示尺標</td>
+<td><code>shift</code>+<code>R</code></td>
+</tr>
+<tr>
+<td>Auto Layout</td>
+<td><code>shift</code>+<code>A</code></td>
+</tr>
+<tr>
+<td>筆畫/填色反轉</td>
+<td><code>shift</code>+<code>X</code></td>
+</tr>
+<tr>
+<td>垂直/水平反轉</td>
+<td><code>shift</code>+<code>H</code>/<code>V</code></td>
+</tr>
+<tr>
+<td>調整透明度</td>
+<td>點一下圖形+<code>數字鍵</code></td>
+</tr>
+<tr>
+<td>調整尺寸</td>
+<td>點一下圖形+<code>方向鍵</code></td>
+</tr>
+</tbody>
+</table>
+<h1 id="heading-11"></h1>
+<hr>
+<h1 id="heading-12"></h1>
+<h2 id="元件component">元件(Component)</h2>
+<h1 id="heading-13"></h1>
+<ul>
+<li>元件本體(main component)</li>
+<li>元件分身(instance)</li>
+<li>元件建立
+<ol>
+<li>繪製樣式</li>
+<li><code>shift</code>+<code>A</code> 建立Auto layout</li>
+<li><code>command</code>+<code>option</code>+<code>K</code> 製作元件</li>
+<li>給元件命名或賦予關鍵字</li>
+<li>在資源可用文字搜尋</li>
+<li>修改樣式時統一使用元件本體
+<code>若在instance上修改樣式，main component修改就不再同步</code></li>
+</ol>
+</li>
+</ul>
+<h1 id="heading-14"></h1>
+<hr>
+<h1 id="heading-15"></h1>
+<h2 id="變體variants">變體(Variants)</h2>
+<h1 id="heading-16"></h1>
+<ul>
+<li>將元件集合(component set)</li>
+<li>每個元件可以有多個屬性，每個屬性對應到一個值</li>
+<li>建立變體
+<ol>
+<li>繪製樣式</li>
+<li><code>command</code>+<code>option</code>+<code>K</code> 製作元件</li>
+<li>製作不同樣式(樣式名稱)</li>
+<li>進行群組命名(property)</li>
+<li>群組複製再次進行修改</li>
+<li>檢查元件是否可以用分類選擇到
+<code>只有元件才能進行變體</code></li>
+</ol>
+</li>
+</ul>
+<h1 id="heading-17"></h1>
+<hr>
+<h1 id="heading-18"></h1>
+<h2 id="格線系統grid-system">格線系統(grid system)</h2>
+<h1 id="heading-19"></h1>
+<ol>
+<li>建立frame</li>
+<li>啟用layout grid</li>
+<li>選擇columns，count：12</li>
+<li>決定主要內容寬度(自訂)</li>
+<li>margin：將裝置寬度-內容寬度/2</li>
+<li>gutter：16(自訂)</li>
+</ol>
+<ul>
+<li>8網格間距(8 point grids)能夠更有效率、達成一致性
+<ul>
+<li>4、8、12、16、20、24、28、32、40、48、56、64&hellip;</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<p><code>斷點(break point)建議參考主流框架</code></p>
+<h1 id="heading-20"></h1>
+<hr>
+<h1 id="heading-21"></h1>
+<h2 id="建立核心樣式">建立核心樣式</h2>
+<h1 id="heading-22"></h1>
+<ol>
+<li>顏色(預設/深色/淺色)
+<ul>
+<li>主要色(Primary)品牌色、重要文字、按鈕</li>
+<li>次要色(Secondary)提示訊息、次要文字按鈕</li>
+<li>警告色(Alert)錯誤訊息、警告</li>
+<li>輔助色(Complementary)其他更多輔助介面</li>
+<li>強調色(Accent)強調特定資訊</li>
+<li>灰階(Gray scale)分隔線、外框線、內容文字</li>
+</ul>
+</li>
+<li>文字
+<ul>
+<li>選定字型(1~2種)</li>
+<li>定義H1~H6、主標、副標、內容文字、輔助文字
+<ul>
+<li>H1(40px)(125%)</li>
+<li>H2(32px)(125%)</li>
+<li>H3(24px)(125%)</li>
+<li>H4(20px)(140%)</li>
+<li>H5(18px)(140%)</li>
+<li>Title(16px)(140%)</li>
+<li>P(12px)(140%)</li>
+<li>small(11px)(140%)</li>
+</ul>
+</li>
+<li>粗細度(2~3種)</li>
+<li>階層不同、深淺度可調整</li>
+<li>行高1.4%~1.6%，大於24px建議1.25%</li>
+</ul>
+</li>
+<li>間距(8 point grids)</li>
+</ol>
+<ul>
+<li>input 文字跟輸入框上下12px 左右16px</li>
+</ul>
+<h1 id="heading-23"></h1>
+<hr>
+<h1 id="heading-24"></h1>
+<h2 id="建立完整按鈕樣式">建立完整按鈕樣式</h2>
+<h1 id="heading-25"></h1>
+<ol>
+<li>元件名稱btn/form/nav</li>
+<li>狀態default/hover/foucs/disabled</li>
+<li>icon有無true/false</li>
+</ol>
+<ul>
+<li>name / state / icon</li>
+<li>btn / dafault / text</li>
+</ul>
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://jack842248.github.io/tags/design/">design</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-04-25-design-figma%25E4%25BD%25BF%25E7%2594%25A8%25E6%2595%2599%25E5%25AD%25B8%2f&amp;text=Figma%e4%bd%bf%e7%94%a8%e6%95%99%e5%ad%b8&amp;via=" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-04-25-design-figma%25E4%25BD%25BF%25E7%2594%25A8%25E6%2595%2599%25E5%25AD%25B8%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-04-25-design-figma%25E4%25BD%25BF%25E7%2594%25A8%25E6%2595%2599%25E5%25AD%25B8%2f&amp;title=Figma%e4%bd%bf%e7%94%a8%e6%95%99%e5%ad%b8" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-04-25-design-figma%25E4%25BD%25BF%25E7%2594%25A8%25E6%2595%2599%25E5%25AD%25B8%2f&amp;title=Figma%e4%bd%bf%e7%94%a8%e6%95%99%e5%ad%b8" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-04-25-design-figma%25E4%25BD%25BF%25E7%2594%25A8%25E6%2595%2599%25E5%25AD%25B8%2f&amp;title=Figma%e4%bd%bf%e7%94%a8%e6%95%99%e5%ad%b8" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-04-25-design-figma%25E4%25BD%25BF%25E7%2594%25A8%25E6%2595%2599%25E5%25AD%25B8%2f&amp;description=Figma%e4%bd%bf%e7%94%a8%e6%95%99%e5%ad%b8" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+            
+          
+
+          
+                  <h4 class="see-also">其他相關</h4>
+                  <ul>
+                
+                
+                    <li><a href="/post/2023-04-26-css-sass%E5%BF%AB%E9%80%9F%E7%B7%A8%E8%AD%AF%E6%A8%A3%E5%BC%8F/">SASS快速編譯樣式</a></li>
+                
+                    <li><a href="/post/2023-04-24-design-uiux%E6%A0%B8%E5%BF%83%E8%A7%80%E5%BF%B5/">UIUX核心觀念</a></li>
+                
+                    <li><a href="/post/2023-04-09-design-%E4%BA%86%E8%A7%A3%E7%9B%B8%E6%A9%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">了解相機的基本操作</a></li>
+                
+                    <li><a href="/post/2023-02-18-design-%E5%8D%B0%E5%88%B7%E8%88%87%E6%9D%BF%E6%9D%90%E5%8A%A0%E5%B7%A5%E7%9F%A5%E8%AD%98/">印刷與板材加工知識</a></li>
+                
+              </ul>
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://jack842248.github.io/post/2023-04-24-design-uiux%E6%A0%B8%E5%BF%83%E8%A7%80%E5%BF%B5/" data-toggle="tooltip" data-placement="top" title="UIUX核心觀念">&larr; 上一篇</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://jack842248.github.io/post/2023-04-26-css-sass%E5%BF%AB%E9%80%9F%E7%B7%A8%E8%AD%AF%E6%A8%A3%E5%BC%8F/" data-toggle="tooltip" data-placement="top" title="SASS快速編譯樣式">下一篇 &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+          
+          <div class="disqus-comments">                  
+            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2023-04-25-design-figma%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8">則評論</span></button>
+            <div id="disqus_thread"></div>
+
+            <script type="text/javascript">
+              var disqus_config = function () {
+              this.page.url = 'https:\/\/jack842248.github.io\/post\/2023-04-25-design-figma%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8';
+            };
+
+          </script>
+          </div>
+          
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:jack842248@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/jack842248" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/jack842248" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/jack842248" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://codepen.io/jack842248" title="CodePen">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-codepen fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://jack842248.github.io">JackHuang</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2023
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://jack842248.github.io">Jack Huang Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          由 <a href="https://gohugo.io">Hugo v0.111.3</a> 提供 &nbsp;&bull;&nbsp; 主題 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 移植自 <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://jack842248.github.io/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://jack842248.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+  $('#show-comments').on('click', function(){
+    var disqus_shortname = 'jack842248';
+      
+    (function() {
+      var disqus = document.createElement('script'); 
+      disqus.type = 'text/javascript'; 
+      disqus.async = true;
+      disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
+    })();
+      
+    $(this).hide(); 
+    });
+  });
+      
+</script>
+<script id="dsq-count-scr" src="//jack842248.disqus.com/count.js" async></script>
+
+
+
+
+    
+  </body>
+</html>
+
