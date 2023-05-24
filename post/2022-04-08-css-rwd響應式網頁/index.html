@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "RWD響應式網頁",
-  "description" : "好的響應式體驗 從PC版轉到手機版時，標題長度以及部份不必要內容可以適度隱藏 PC版圖片高度可固定px，手機版height:auto jpg、png放大會模糊，svg向量圖放大不會失真 在safari瀏覽器上height:100%會跑版 logo通上在左上角、中間 留意文章閱讀換行的頻率，中文單行30～40個字，英文單行32～80個字元 手機沒有hover效果 禁止X軸產生(除非特定區域或效果) 重要訊息要出現在一開始的畫面 一個網站不超過兩種字型 降低干擾，建立清楚的層次感 元素間距、留白、對齊、對比、色調一致性 明顯標示可點擊區域 內容行距1.4%~1.6%，標題行距1.25$% 無障礙網頁 不能自動輪播 字體大中小切換 圖片alt要描述 文字和背景對比度要高 裝置 最小可觸碰元件 最小非觸碰元件 最小字體 狀態欄 導航欄 ios 48*48px 40*40px 11px 24px 56px android 44*44px 30*30px 13px 20px 44px 好的網頁設計?別低估習慣用法的價值，要為了掃描閱讀而設計\nCSS Reset徹底清除標籤樣式 CSS Reset清除標籤樣式 CSS Normalize是另一種保留部分樣式 Pure.css是Yahoo開發的兼容性樣式 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: \u0026#39;\u0026#39;; content: none; } table { border-collapse: collapse; border-spacing: 0; } *,*:before,*:after{ box-sizing: border-box; } img{ max-width: 100%; height: auto; } @media斷點設置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 \/*設定當螢幕寬度在400px以上時*\/ @media screen and(min-width:400px){ body{ background-color: red; } } \/*設定當螢幕寬度在0px~600px時*\/ @media screen and(max-width:600px){ body{ background-color: red; } } \/*設定當螢幕寬度在600px以上，1000px以下時*\/ @media screen and (min-width:600px) and (max-width:1000px){ body{ background-color: green; } } \/*設定當螢幕寬度在1000px以上，1920px以下時*\/ @media screen and (min-width:1000px) and (max-width:1920px){ body{ background-color: blue; } } and前後一定要空格",
+  "description" : "好的響應式體驗 從PC版轉到手機版時，標題長度以及部份不必要內容可以適度隱藏 PC版圖片高度可固定px，手機版height:auto jpg、png放大會模糊，svg向量圖放大不會失真 在safari瀏覽器上height:100%會跑版 logo通上在左上角、中間 留意文章閱讀換行的頻率，中文單行30～40個字，英文單行32～80個字元 手機沒有hover效果 禁止X軸產生(除非特定區域或效果) 重要訊息要出現在一開始的畫面 一個網站不超過兩種字型 降低干擾，建立清楚的層次感 元素間距、留白、對齊、對比、色調一致性 明顯標示可點擊區域 內容行距1.4%~1.6%，標題行距1.25$% 無障礙網頁 不能自動輪播 字體大中小切換 圖片alt要描述 文字和背景對比度要高 aria-label=\u0026quot;\u0026quot; 裝置 最小可觸碰元件 最小非觸碰元件 最小字體 狀態欄 導航欄 ios 48*48px 40*40px 11px 24px 56px android 44*44px 30*30px 13px 20px 44px 好的網頁設計?別低估習慣用法的價值，要為了掃描閱讀而設計\nCSS Reset徹底清除標籤樣式 CSS Reset清除標籤樣式 CSS Normalize是另一種保留部分樣式 Pure.css是Yahoo開發的兼容性樣式 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: \u0026#39;\u0026#39;; content: none; } table { border-collapse: collapse; border-spacing: 0; } *,*:before,*:after{ box-sizing: border-box; } img{ max-width: 100%; height: auto; } @media斷點設置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 \/*設定當螢幕寬度在400px以上時*\/ @media screen and(min-width:400px){ body{ background-color: red; } } \/*設定當螢幕寬度在0px~600px時*\/ @media screen and(max-width:600px){ body{ background-color: red; } } \/*設定當螢幕寬度在600px以上，1000px以下時*\/ @media screen and (min-width:600px) and (max-width:1000px){ body{ background-color: green; } } \/*設定當螢幕寬度在1000px以上，1920px以下時*\/ @media screen and (min-width:1000px) and (max-width:1920px){ body{ background-color: blue; } } and前後一定要空格",
   "inLanguage" : "zh-tw",
-  "wordCount":  396 ,
+  "wordCount":  397 ,
   "datePublished" : "2022-04-08T00:00:00",
   "dateModified" : "2022-04-08T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;396&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;397&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;396&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;397&nbsp;個字
   
   
   
@@ -345,6 +345,10 @@
 <li>字體大中小切換</li>
 <li>圖片alt要描述</li>
 <li>文字和背景對比度要高</li>
+<li>aria-label=&quot;&quot;</li>
+<li>
+<!-- raw HTML omitted -->
+</li>
 </ul>
 </li>
 </ul>
