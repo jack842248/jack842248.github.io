@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "建立Bootstrap4自定義環境",
-  "description" : "建立gulp環境 下載node.js LTS：長期維護版(較穩定) Current：目前最新版(較為不穩定) node -v 檢查版本 安裝npm npm insatll npm -v 檢查版本 安裝全域gulp(每台電腦僅需執行一次) npm install gulp -g Gulp3版 npm install gulp-cli -g Gulp4版 sudo npm install gulp-cli -g mac安裝 生成package.json npm init 自訂package.json npm init -y 預設package.json 在專案安裝gulp npm install gulp npm5版本 npm install gulp --save npm5以前版本 gulp -v 檢查版本 手動新增index.html、gulpfile.js gulp.task()：創建名為 copyFile 的任務(水管名稱) gulp.src()：導入 index.html 這一個檔案(水的來源) .pipe()：以 gulp.src() 導入的檔案需做的處理(截獲水源所做的處理) gulp.dest()：檔案輸出的目錄(水該從何處流出) 1 2 3 4 5 6 7 8 const gulp = require(\u0026#39;gulp\u0026#39;); gulp.",
+  "description" : "gulp基本指令 指令 一般 縮寫 安裝 npm install copyFile npm i copyFile 移除 npm uninstall copyFile npm uni copyFile 搜尋 npm search copyFile npm s copyFile 清單 npm list npm ls 查詢版本 npm \u0026ndash;version npm -v 初始化 npm init \u0026mdash; 初始化(預設) npm init -y \u0026mdash; 顯示清單 npm list \u0026mdash; 更新套件 npm update copyFile \u0026mdash; 部署到github上 gulp deploy \u0026mdash; 建立gulp環境 下載node.js LTS：長期維護版(較穩定) Current：目前最新版(較為不穩定) node -v 檢查版本 安裝npm npm insatll npm -v 檢查版本 安裝全域gulp(每台電腦僅需執行一次) npm install gulp -g Gulp3版 npm install gulp-cli -g Gulp4版 sudo npm install gulp-cli -g mac安裝 生成package.",
   "inLanguage" : "zh-tw",
-  "wordCount":  152 ,
+  "wordCount":  678 ,
   "datePublished" : "2022-04-09T00:00:00",
   "dateModified" : "2022-04-09T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -257,10 +257,10 @@
   <i class="fas fa-calendar"></i>&nbsp;發表於 2022-04-09
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;152&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;678&nbsp;個字
   
   
   
@@ -296,10 +296,10 @@
   <i class="fas fa-calendar"></i>&nbsp;發表於 2022-04-09
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;152&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;678&nbsp;個字
   
   
   
@@ -322,90 +322,8 @@
       <article role="main" class="blog-post">
         <hr>
 <h1 id="heading"></h1>
-<h2 id="建立gulp環境">建立gulp環境</h2>
+<h2 id="gulp基本指令">gulp基本指令</h2>
 <h1 id="heading-1"></h1>
-<ol>
-<li>下載<a href="https://nodejs.org/en">node.js</a>
-<ul>
-<li>LTS：長期維護版(較穩定)</li>
-<li>Current：目前最新版(較為不穩定)</li>
-<li><code>node -v</code> 檢查版本</li>
-</ul>
-</li>
-</ol>
-<h1 id="heading-2"></h1>
-<ol start="2">
-<li>安裝npm
-<ul>
-<li><code>npm insatll</code></li>
-<li><code>npm -v</code> 檢查版本</li>
-</ul>
-</li>
-</ol>
-<h1 id="heading-3"></h1>
-<ol start="3">
-<li>安裝全域gulp(每台電腦僅需執行一次)
-<ul>
-<li><code>npm install gulp -g</code> Gulp3版</li>
-<li><code>npm install gulp-cli -g</code> Gulp4版</li>
-<li><code>sudo npm install gulp-cli -g</code> mac安裝</li>
-</ul>
-</li>
-</ol>
-<h1 id="heading-4"></h1>
-<ol start="4">
-<li>生成package.json
-<ul>
-<li><code>npm init</code> 自訂package.json</li>
-<li><code>npm init -y</code> 預設package.json</li>
-</ul>
-</li>
-</ol>
-<h1 id="heading-5"></h1>
-<ol start="5">
-<li>在專案安裝gulp
-<ul>
-<li><code>npm install gulp</code> npm5版本</li>
-<li><code>npm install gulp --save</code> npm5以前版本</li>
-<li><code>gulp -v</code> 檢查版本</li>
-</ul>
-</li>
-</ol>
-<h1 id="heading-6"></h1>
-<ol start="6">
-<li>手動新增index.html、gulpfile.js
-<ul>
-<li>gulp.task()：創建名為 copyFile 的任務(水管名稱)</li>
-<li>gulp.src()：導入 index.html 這一個檔案(水的來源)</li>
-<li>.pipe()：以 gulp.src() 導入的檔案需做的處理(截獲水源所做的處理)</li>
-<li>gulp.dest()：檔案輸出的目錄(水該從何處流出)</li>
-</ul>
-</li>
-</ol>
-<h1 id="heading-7"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copyFile&#39;</span>, <span style="color:#66d9ef">function</span>(){
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;./index.html&#39;</span>)
-</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./public&#39;</span>)
-</span></span><span style="display:flex;"><span>  );
-</span></span><span style="display:flex;"><span>});
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-8"></h1>
 <table>
 <thead>
 <tr>
@@ -467,7 +385,477 @@
 </tr>
 </tbody>
 </table>
+<h1 id="heading-2"></h1>
+<hr>
+<h1 id="heading-3"></h1>
+<h2 id="建立gulp環境">建立gulp環境</h2>
+<h1 id="heading-4"></h1>
+<ol>
+<li>下載<a href="https://nodejs.org/en">node.js</a>
+<ul>
+<li>LTS：長期維護版(較穩定)</li>
+<li>Current：目前最新版(較為不穩定)</li>
+<li><code>node -v</code> 檢查版本</li>
+</ul>
+</li>
+</ol>
+<h1 id="heading-5"></h1>
+<hr>
+<h1 id="heading-6"></h1>
+<ol start="2">
+<li>安裝npm
+<ul>
+<li><code>npm insatll</code></li>
+<li><code>npm -v</code> 檢查版本</li>
+</ul>
+</li>
+</ol>
+<h1 id="heading-7"></h1>
+<hr>
+<h1 id="heading-8"></h1>
+<ol start="3">
+<li>安裝全域gulp(每台電腦僅需執行一次)
+<ul>
+<li><code>npm install gulp -g</code> Gulp3版</li>
+<li><code>npm install gulp-cli -g</code> Gulp4版</li>
+<li><code>sudo npm install gulp-cli -g</code> mac安裝</li>
+</ul>
+</li>
+</ol>
 <h1 id="heading-9"></h1>
+<hr>
+<h1 id="heading-10"></h1>
+<ol start="4">
+<li>生成package.json
+<ul>
+<li><code>npm init</code> 自訂package.json</li>
+<li><code>npm init -y</code> 預設package.json</li>
+</ul>
+</li>
+</ol>
+<h1 id="heading-11"></h1>
+<pre tabindex="0"><code>you project
+└─── package.json         
+</code></pre><h1 id="heading-12"></h1>
+<hr>
+<h1 id="heading-13"></h1>
+<ol start="5">
+<li>在專案安裝gulp
+<ul>
+<li><code>npm install gulp</code> npm5版本</li>
+<li><code>npm install gulp --save</code> npm5以前版本</li>
+<li><code>gulp -v</code> 檢查版本</li>
+</ul>
+</li>
+</ol>
+<h1 id="heading-14"></h1>
+<pre tabindex="0"><code>you project
+├─── node_modules/
+├─── package-lock.json    
+└─── package.json         
+</code></pre><h1 id="heading-15"></h1>
+<hr>
+<h1 id="heading-16"></h1>
+<ol start="6">
+<li>將index.html新增在src資料夾裡</li>
+</ol>
+<h1 id="heading-17"></h1>
+<pre tabindex="0"><code>you project
+├─── node_modules/        
+├─── src/
+│     │
+│     └─── index.html    
+│ 
+├─── package-lock.json    
+└─── package.json        
+</code></pre><h1 id="heading-18"></h1>
+<hr>
+<h1 id="heading-19"></h1>
+<ol start="7">
+<li>在根目錄手動新增gulpfile.js
+<ul>
+<li>gulp.task()：創建名為 copyFile 的任務(水管名稱)</li>
+<li>gulp.src()：導入 index.html 這一個檔案(水的來源)</li>
+<li>.pipe()：以 gulp.src() 導入的檔案需做的處理(截獲水源所做的處理)</li>
+<li>gulp.dest()：檔案輸出的目錄(水該從何處流出)</li>
+</ul>
+</li>
+</ol>
+<h1 id="heading-20"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>); <span style="color:#75715e">//載入gulp套件
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>, <span style="color:#66d9ef">function</span>(){ 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;./src/*.html&#39;</span>) <span style="color:#75715e">//html原始路徑
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./public&#39;</span>)) <span style="color:#75715e">//html編譯完成路徑
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); <span style="color:#75715e">//注入更改內容
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-21"></h1>
+<pre tabindex="0"><code>you project
+├─── node_modules/        # gulp零件包
+├─── src/
+│     │
+│     └─── index.html     
+│
+├─── gulpfile.js          # gulp配置檔案
+├─── package-lock.json    # gulp安裝紀錄
+└─── package.json         # gulp安裝版本
+</code></pre><h1 id="heading-22"></h1>
+<hr>
+<h1 id="heading-23"></h1>
+<ol start="8">
+<li>執行初次gulp複製index.html</li>
+</ol>
+<h1 id="heading-24"></h1>
+<pre tabindex="0"><code>you project
+├─── node_modules/        
+├─── public/
+│     │
+│     └─── index.html    # HTML檔案(複製出來的)
+│ 
+├─── src/
+│     │
+│     └─── index.html    # HTML檔案(複製用)
+│
+├─── gulpfile.js          
+├─── package-lock.json    
+└─── package.json       
+</code></pre><h1 id="heading-25"></h1>
+<hr>
+<h1 id="heading-26"></h1>
+<ol start="9">
+<li>安裝sass編譯
+<ul>
+<li><code>npm install gulp-sass</code></li>
+<li>手動在src裡再新增css資料夾，然後建立all.scss</li>
+</ul>
+</li>
+</ol>
+<h1 id="heading-27"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>); 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-sass&#39;</span>)(<span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;sass&#39;</span>)); <span style="color:#75715e">//載入gulp-sass套件
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>, <span style="color:#66d9ef">function</span>(){ 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;./src/*.html&#39;</span>) 
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./public&#39;</span>)) 
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); 
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>([<span style="color:#e6db74">&#39;./src/css/**/*.scss&#39;</span>,<span style="color:#e6db74">&#39;./src/css/**/*.sass&#39;</span>]) <span style="color:#75715e">//scss原始路徑
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>({ 
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">outputStyle</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;compressed&#39;</span>, <span style="color:#75715e">//編譯後壓縮
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">includePaths</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;./node_modules/bootstrap/scss&#39;</span>] <span style="color:#75715e">//引用nodeBS4
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }).<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>,<span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>)) <span style="color:#75715e">//使用gulp-sass進行編譯
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./public/css&#39;</span>)) <span style="color:#75715e">//css編譯完成路徑
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); <span style="color:#75715e">//注入更改內容
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-28"></h1>
+<pre tabindex="0"><code>you project
+├─── node_modules/        
+├─── public/
+│     │
+│     └─── index.html    
+│ 
+├─── src/
+│     ├─── css/
+│     │     │
+│     │     └─── all.scss
+│     │
+│     └─── index.html    
+│
+├─── gulpfile.js          
+├─── package-lock.json    
+└─── package.json         
+</code></pre><h1 id="heading-29"></h1>
+<hr>
+<h1 id="heading-30"></h1>
+<ol start="10">
+<li>執行<code>gulp-sass</code>生成all.css
+<ul>
+<li>在index.html裡的<!-- raw HTML omitted -->新增<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/all.css&quot;&gt;</code></li>
+</ul>
+</li>
+</ol>
+<h1 id="heading-31"></h1>
+<pre tabindex="0"><code>you project
+├─── node_modules/    
+├─── public/
+│     │
+│     ├─── css/
+│     │     └─── all.css # css樣式(編譯後給index用)
+│     │  
+│     └─── index.html    
+│ 
+├─── src/
+│     ├─── css/
+│     │     │
+│     │     └─── all.scss # css樣式(編譯前)
+│     │
+│     └─── index.html    
+│
+├─── gulpfile.js          
+├─── package-lock.json    
+└─── package.json      
+</code></pre><h1 id="heading-32"></h1>
+<hr>
+<h1 id="heading-33"></h1>
+<ol start="11">
+<li>安裝browser-sync自動監聽渲染
+<ul>
+<li><code>npm install browser-sync</code></li>
+</ul>
+</li>
+</ol>
+<h1 id="heading-34"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>); 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-sass&#39;</span>)(<span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;sass&#39;</span>)); 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">browserSync</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;browser-sync&#39;</span>).<span style="color:#a6e22e">create</span>(); <span style="color:#75715e">//載入瀏覽器套件
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>, <span style="color:#66d9ef">function</span>(){ 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;./src/*.html&#39;</span>) 
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./public&#39;</span>)) 
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); 
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>([<span style="color:#e6db74">&#39;./src/css/**/*.scss&#39;</span>,<span style="color:#e6db74">&#39;./src/css/**/*.sass&#39;</span>]) 
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>({ 
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">outputStyle</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;compressed&#39;</span>, 
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">includePaths</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;./node_modules/bootstrap/scss&#39;</span>]
+</span></span><span style="display:flex;"><span>    }).<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>,<span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>)) 
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./public/css&#39;</span>)) 
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); 
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;watch&#39;</span>, <span style="color:#66d9ef">function</span>(){ 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">init</span>({
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">server</span><span style="color:#f92672">:</span>{ 
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">baseDir</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;./public&#39;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">port</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3000</span>, <span style="color:#75715e">//伺服器端口號碼
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">reloadDelay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>, <span style="color:#75715e">//重新加載時間(毫秒)，預設0
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  });
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;./src/*.html&#39;</span>,<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;./src/css/**/*.scss&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;sass&#39;</span>));
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;default&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;sass&#39;</span>,<span style="color:#e6db74">&#39;copyHTML&#39;</span>,<span style="color:#e6db74">&#39;watch&#39;</span>)); <span style="color:#75715e">//將任務串連執行
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-35"></h1>
+<hr>
+<h1 id="heading-36"></h1>
+<ol start="12">
+<li>安裝bootstrap4.6.2版本
+<ul>
+<li><code>npm install bootstrap@4.6.2</code></li>
+<li>從node_modules資料夾裡的bootstrap複製一份<code>_variables.scss</code>到helpers資料夾裡</li>
+<li>在src裡的css資料夾新增_custom.scss</li>
+</ul>
+</li>
+</ol>
+<h1 id="heading-37"></h1>
+<pre tabindex="0"><code>you project
+├─── node_modules/  
+├─── public/
+│     │
+│     ├─── css/
+│     │     └─── all.css 
+│     │  
+│     └─── index.html    
+│     
+├─── src/
+│     ├─── css/
+│     │     ├─── helpers/
+│     │     │     └─── _variables.scss # 可用來自定義bootstrap用
+│     │     │  
+│     │     ├────_custom.scss # 客製化樣式用
+│     │     │  
+│     │     └─── all.scss
+│     │       
+│     └─── index.html   
+│      
+├─── gulpfile.js 
+├─── package-lock.json    
+└─── package.json      
+</code></pre><h1 id="heading-38"></h1>
+<hr>
+<h1 id="heading-39"></h1>
+<ol start="13">
+<li>在引用bootstrap到all.scss</li>
+</ol>
+<h1 id="heading-40"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;functions&#34;</span>; <span style="color:#75715e">/*引用BS4*/</span>
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;helpers/variables&#34;</span>; <span style="color:#75715e">/*引用helpers資料夾的*/</span>
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;mixins&#34;</span>; <span style="color:#75715e">/*引用BS4*/</span>
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;root&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;reboot&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;type&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;images&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;code&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;grid&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;tables&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;forms&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;buttons&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;transitions&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;dropdown&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;button-group&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;input-group&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;custom-forms&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;nav&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;navbar&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;card&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;breadcrumb&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;pagination&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;badge&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;jumbotron&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;alert&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;progress&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;media&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;list-group&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;close&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;toasts&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;modal&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;tooltip&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;popover&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;carousel&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;spinners&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;utilities&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;print&#34;</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;custom&#34;</span>; <span style="color:#75715e">/*自定義樣式*/</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-41"></h1>
+<hr>
+<h1 id="heading-42"></h1>
+<ol start="14">
+<li>執行<code>gulp</code>自動開啟瀏覽器
 <ul>
 <li>若遇到&quot;cannot find module &rsquo;nan'&quot;
 <ol>
@@ -476,7 +864,9 @@
 </ol>
 </li>
 </ul>
-<h1 id="heading-10"></h1>
+</li>
+</ol>
+<h1 id="heading-43"></h1>
 
 
         

@@ -365,7 +365,7 @@
       <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2022-04-09-css-%E5%BB%BA%E7%AB%8Bbootstrap4%E8%87%AA%E5%AE%9A%E7%BE%A9%E7%92%B0%E5%A2%83/</guid>
-      <description>建立gulp環境 下載node.js LTS：長期維護版(較穩定) Current：目前最新版(較為不穩定) node -v 檢查版本 安裝npm npm insatll npm -v 檢查版本 安裝全域gulp(每台電腦僅需執行一次) npm install gulp -g Gulp3版 npm install gulp-cli -g Gulp4版 sudo npm install gulp-cli -g mac安裝 生成package.json npm init 自訂package.json npm init -y 預設package.json 在專案安裝gulp npm install gulp npm5版本 npm install gulp --save npm5以前版本 gulp -v 檢查版本 手動新增index.html、gulpfile.js gulp.task()：創建名為 copyFile 的任務(水管名稱) gulp.src()：導入 index.html 這一個檔案(水的來源) .pipe()：以 gulp.src() 導入的檔案需做的處理(截獲水源所做的處理) gulp.dest()：檔案輸出的目錄(水該從何處流出) 1 2 3 4 5 6 7 8 const gulp = require(&amp;#39;gulp&amp;#39;); gulp.</description>
+      <description>gulp基本指令 指令 一般 縮寫 安裝 npm install copyFile npm i copyFile 移除 npm uninstall copyFile npm uni copyFile 搜尋 npm search copyFile npm s copyFile 清單 npm list npm ls 查詢版本 npm &amp;ndash;version npm -v 初始化 npm init &amp;mdash; 初始化(預設) npm init -y &amp;mdash; 顯示清單 npm list &amp;mdash; 更新套件 npm update copyFile &amp;mdash; 部署到github上 gulp deploy &amp;mdash; 建立gulp環境 下載node.js LTS：長期維護版(較穩定) Current：目前最新版(較為不穩定) node -v 檢查版本 安裝npm npm insatll npm -v 檢查版本 安裝全域gulp(每台電腦僅需執行一次) npm install gulp -g Gulp3版 npm install gulp-cli -g Gulp4版 sudo npm install gulp-cli -g mac安裝 生成package.</description>
     </item>
     
     <item>
