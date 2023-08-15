@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gulp on Jack Huang Blog</title>
+    <link>https://jack842248.github.io/tags/gulp/</link>
+    <description>Recent content in gulp on Jack Huang Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
+    <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
+    <lastBuildDate>Sat, 12 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/gulp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>讓專案自動將sass編譯成css</title>
+      <link>https://jack842248.github.io/post/2023-08-12-css-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2023-08-12-css-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css/</guid>
+      <description>gulp-sass 在專案中打開終端機 1 npm install gulp-sass 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); gulp.task(&amp;#39;sass&amp;#39;, () =&amp;gt; { .pipe([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) //引用scss、sass檔案路徑 .pipe(sass().on(&amp;#39;error&amp;#39;,sass.logError)) //編譯過程中捕捉錯誤並輸出錯誤訊息，以避免因編譯錯誤而中斷gulp .pipe(gulp.dest(&amp;#39;./public/css&amp;#39;)) //css編譯完成路徑 }); **←所有檔案、*.scss←所有scss檔
+在終端機執行指令 1 gulp sass 執行結果會將src裡的all.scss編譯後生成到public裡變成all.css 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 you project ├─── node_modules/ ├─── public/ │ │ │ └─── css/ │ │ │ └─── all.</description>
+    </item>
+    
+  </channel>
+</rss>
