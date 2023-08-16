@@ -9,21 +9,31 @@
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
     <lastBuildDate>Sat, 12 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>讓專案自動將sass編譯成css</title>
-      <link>https://jack842248.github.io/post/2023-08-12-css-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css/</link>
+      <title>將JavaScript編譯成穩定版本</title>
+      <link>https://jack842248.github.io/post/2023-08-13-gulp-%E5%B0%87javascript%E7%B7%A8%E8%AD%AF%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-08-12-css-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css/</guid>
-      <description>gulp-sass 在專案中打開終端機 1 npm install gulp-sass 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); gulp.task(&amp;#39;sass&amp;#39;, () =&amp;gt; { .pipe([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) //引用scss、sass檔案路徑 .pipe(sass().on(&amp;#39;error&amp;#39;,sass.logError)) //編譯過程中捕捉錯誤並輸出錯誤訊息，以避免因編譯錯誤而中斷gulp .pipe(gulp.dest(&amp;#39;./public/css&amp;#39;)) //css編譯完成路徑 }); **←所有檔案、*.scss←所有scss檔
-在終端機執行指令 1 gulp sass 執行結果會將src裡的all.scss編譯後生成到public裡變成all.css 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 you project ├─── node_modules/ ├─── public/ │ │ │ └─── css/ │ │ │ └─── all.</description>
+      <guid>https://jack842248.github.io/post/2023-08-13-gulp-%E5%B0%87javascript%E7%B7%A8%E8%AD%AF%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC/</guid>
+      <description>gulp-babel 在專案中打開終端機(安裝gulp-babel、babel裡的套件core、babel裡的套件preset) 1 $ npm install gulp-babel @babel/core @babel/preset-env 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 const gulp = require(&amp;#39;gulp&amp;#39;); const babel = require(&amp;#39;gulp-babel&amp;#39;); gulp.task(&amp;#39;babel&amp;#39;, () =&amp;gt; { return gulp .src(&amp;#39;./src/js/*.js&amp;#39;) .pipe(babel({preset:[&amp;#39;@babel/env&amp;#39;]}) .pipe(gulp.dest(&amp;#39;./public/js&amp;#39;)) }); *.js←所有js檔
+在終端機執行指令 1 $ gulp babel 執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯後生成到public裡變成穩定的all.js 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 you project ├─── node_modules/ ├─── public/ │ │ │ └─── js/ │ │ │ └─── all.</description>
+    </item>
+    
+    <item>
+      <title>讓專案自動將sass編譯成css</title>
+      <link>https://jack842248.github.io/post/2023-08-12-gulp-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2023-08-12-gulp-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css/</guid>
+      <description>gulp-sass 在專案中打開終端機 1 $ npm install gulp-sass 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); gulp.task(&amp;#39;sass&amp;#39;, () =&amp;gt; { return gulp .src([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) //引用scss、sass檔案路徑 .pipe(sass() .on(&amp;#39;error&amp;#39;,sass.logError)) //編譯過程中捕捉錯誤並輸出錯誤訊息，以避免因編譯錯誤而中斷gulp .pipe(gulp.dest(&amp;#39;./public/css&amp;#39;)) //css編譯完成路徑 }); **←所有檔案、*.scss←所有scss檔
+在終端機執行指令 1 $ gulp sass 執行結果會將src裡的所有scss和所有sass檔編譯後生成到public裡變成all.css 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 you project ├─── node_modules/ ├─── public/ │ │ │ └─── css/ │ │ │ └─── all.</description>
     </item>
     
     <item>
       <title>建立gulp開發環境</title>
-      <link>https://jack842248.github.io/post/2023-08-11-css-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/</link>
+      <link>https://jack842248.github.io/post/2023-08-11-gulp-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/</link>
       <pubDate>Fri, 11 Aug 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-08-11-css-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/</guid>
+      <guid>https://jack842248.github.io/post/2023-08-11-gulp-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/</guid>
       <description>gulp基本指令 指令 一般 縮寫 安裝 npm install gulp-sass npm i gulp-sass 移除 npm uninstall gulp-sass npm uni gulp-sass 搜尋 npm search gulp-sass npm s gulp-sass 清單 npm list npm ls 查詢版本 npm &amp;ndash;version npm -v 初始化 npm init &amp;mdash; 初始化(預設) npm init -y &amp;mdash; 顯示清單 npm list &amp;mdash; 更新套件 npm update gulp-sass &amp;mdash; 部署到github上 gulp deploy &amp;mdash; 建立gulp環境 下載node.js LTS：長期維護版(較穩定) Current：目前最新版(較為不穩定) node -v 檢查版本 安裝npm npm insatll npm -v 檢查版本 安裝全域gulp(每台電腦僅需執行一次) npm install gulp -g Gulp3版 npm install gulp-cli -g Gulp4版 sudo npm install gulp-cli -g mac安裝 生成package.</description>
     </item>
     
@@ -387,7 +397,7 @@
       <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2022-04-16-css-%E6%8F%92%E5%85%A5fontawesome%E5%9C%96%E7%A4%BA/</guid>
-      <description>Font Awesome 4 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 4搜尋icon 1 2 3 4 5 6 &amp;lt;i class=&amp;#34;fa fa-camera&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;i class=&amp;#34;fa fa-camera fa-lg&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--大型--&amp;gt; &amp;lt;i class=&amp;#34;fa fa-camera fa-2x&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--2倍大--&amp;gt; &amp;lt;i class=&amp;#34;fa fa-camera fa-3x&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--3倍大--&amp;gt; &amp;lt;i class=&amp;#34;fa fa-camera fa-4x&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--4倍大--&amp;gt; &amp;lt;i class=&amp;#34;fa fa-camera fa-5x&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--5倍大--&amp;gt; Font Awesome 6 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 6搜尋icon 1 2 3 4 5 6 &amp;lt;i class=&amp;#34;fa-solid fa-camera&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-2xs&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--超小型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-sm&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!</description>
+      <description>Font Awesome 5 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 5搜尋icon 1 2 3 4 &amp;lt;i class=&amp;#34;fas fa-camera&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-xs&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--小型--&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-sm&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--中型--&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-lg&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--大型--&amp;gt; Font Awesome 6 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 6搜尋icon 1 2 3 4 5 6 &amp;lt;i class=&amp;#34;fa-solid fa-camera&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-2xs&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--超小型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-sm&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--小型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-lg&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--中型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-xl&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--大型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-2xl&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--超大型--&amp;gt; 加入在偽元素中 1 2 3 4 5 6 .</description>
     </item>
     
     <item>

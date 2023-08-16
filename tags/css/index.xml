@@ -7,23 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Fri, 11 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>建立gulp開發環境</title>
-      <link>https://jack842248.github.io/post/2023-08-11-css-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/</link>
-      <pubDate>Fri, 11 Aug 2023 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-08-11-css-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/</guid>
-      <description>gulp基本指令 指令 一般 縮寫 安裝 npm install gulp-sass npm i gulp-sass 移除 npm uninstall gulp-sass npm uni gulp-sass 搜尋 npm search gulp-sass npm s gulp-sass 清單 npm list npm ls 查詢版本 npm &amp;ndash;version npm -v 初始化 npm init &amp;mdash; 初始化(預設) npm init -y &amp;mdash; 顯示清單 npm list &amp;mdash; 更新套件 npm update gulp-sass &amp;mdash; 部署到github上 gulp deploy &amp;mdash; 建立gulp環境 下載node.js LTS：長期維護版(較穩定) Current：目前最新版(較為不穩定) node -v 檢查版本 安裝npm npm insatll npm -v 檢查版本 安裝全域gulp(每台電腦僅需執行一次) npm install gulp -g Gulp3版 npm install gulp-cli -g Gulp4版 sudo npm install gulp-cli -g mac安裝 生成package.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>插入Fontawesome圖示</title>
       <link>https://jack842248.github.io/post/2022-04-16-css-%E6%8F%92%E5%85%A5fontawesome%E5%9C%96%E7%A4%BA/</link>
       <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2022-04-16-css-%E6%8F%92%E5%85%A5fontawesome%E5%9C%96%E7%A4%BA/</guid>
-      <description>Font Awesome 4 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 4搜尋icon 1 2 3 4 5 6 &amp;lt;i class=&amp;#34;fa fa-camera&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;i class=&amp;#34;fa fa-camera fa-lg&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--大型--&amp;gt; &amp;lt;i class=&amp;#34;fa fa-camera fa-2x&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--2倍大--&amp;gt; &amp;lt;i class=&amp;#34;fa fa-camera fa-3x&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--3倍大--&amp;gt; &amp;lt;i class=&amp;#34;fa fa-camera fa-4x&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--4倍大--&amp;gt; &amp;lt;i class=&amp;#34;fa fa-camera fa-5x&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--5倍大--&amp;gt; Font Awesome 6 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 6搜尋icon 1 2 3 4 5 6 &amp;lt;i class=&amp;#34;fa-solid fa-camera&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-2xs&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--超小型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-sm&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!</description>
+      <description>Font Awesome 5 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 5搜尋icon 1 2 3 4 &amp;lt;i class=&amp;#34;fas fa-camera&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-xs&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--小型--&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-sm&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--中型--&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-lg&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--大型--&amp;gt; Font Awesome 6 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 6搜尋icon 1 2 3 4 5 6 &amp;lt;i class=&amp;#34;fa-solid fa-camera&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-2xs&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--超小型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-sm&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--小型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-lg&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--中型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-xl&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--大型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-2xl&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--超大型--&amp;gt; 加入在偽元素中 1 2 3 4 5 6 .</description>
     </item>
     
     <item>

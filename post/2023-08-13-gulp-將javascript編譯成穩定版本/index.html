@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>讓專案自動將sass編譯成css - Jack Huang Blog</title>
-  <meta name="description" content="node.js、npm、gulp、gulpfile、package.json、gulp-sass">
+  <title>將JavaScript編譯成穩定版本 - Jack Huang Blog</title>
+  <meta name="description" content="node.js、npm、gulp、gulpfile、package.json、gulp-babel">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -44,8 +44,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/jack842248.github.io\/post\/2023-08-12-css-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css\/",
-          "name": "讓專案自動將sass編譯成css"
+          "@id": "https:\/\/jack842248.github.io\/post\/2023-08-13-gulp-%E5%B0%87javascript%E7%B7%A8%E8%AD%AF%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC\/",
+          "name": "將 java script編譯成穩定版本"
         }
     }]
 }
@@ -56,15 +56,15 @@
   "author": {
     "name" : "JackHuang"
   },
-  "headline": "讓專案自動將sass編譯成css",
-  "description" : "gulp-sass 在專案中打開終端機 1 npm install gulp-sass 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); gulp.task(\u0026#39;sass\u0026#39;, () =\u0026gt; { .pipe([\u0026#39;.\/src\/**\/*.scss\u0026#39;,\u0026#39;.\/src\/css\/**\/*.sass\u0026#39;]) \/\/引用scss、sass檔案路徑 .pipe(sass().on(\u0026#39;error\u0026#39;,sass.logError)) \/\/編譯過程中捕捉錯誤並輸出錯誤訊息，以避免因編譯錯誤而中斷gulp .pipe(gulp.dest(\u0026#39;.\/public\/css\u0026#39;)) \/\/css編譯完成路徑 }); **←所有檔案、*.scss←所有scss檔\n在終端機執行指令 1 gulp sass 執行結果會將src裡的all.scss編譯後生成到public裡變成all.css 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 you project ├─── node_modules\/ ├─── public\/ │ │ │ └─── css\/ │ │ │ └─── all.",
+  "headline": "將JavaScript編譯成穩定版本",
+  "description" : "gulp-babel 在專案中打開終端機(安裝gulp-babel、babel裡的套件core、babel裡的套件preset) 1 $ npm install gulp-babel @babel\/core @babel\/preset-env 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 const gulp = require(\u0026#39;gulp\u0026#39;); const babel = require(\u0026#39;gulp-babel\u0026#39;); gulp.task(\u0026#39;babel\u0026#39;, () =\u0026gt; { return gulp .src(\u0026#39;.\/src\/js\/*.js\u0026#39;) .pipe(babel({preset:[\u0026#39;@babel\/env\u0026#39;]}) .pipe(gulp.dest(\u0026#39;.\/public\/js\u0026#39;)) }); *.js←所有js檔\n在終端機執行指令 1 $ gulp babel 執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯後生成到public裡變成穩定的all.js 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 you project ├─── node_modules\/ ├─── public\/ │ │ │ └─── js\/ │ │ │ └─── all.",
   "inLanguage" : "zh-tw",
-  "wordCount":  95 ,
+  "wordCount":  100 ,
   "datePublished" : "2023-08-12T00:00:00",
   "dateModified" : "2023-08-12T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
   "keywords" : [ "gulp" ],
-  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2023-08-12-css-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css\/",
+  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2023-08-13-gulp-%E5%B0%87javascript%E7%B7%A8%E8%AD%AF%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/jack842248.github.io",
@@ -78,14 +78,14 @@
 }
 </script>
 
-<meta property="og:title" content="讓專案自動將sass編譯成css" />
-<meta property="og:description" content="node.js、npm、gulp、gulpfile、package.json、gulp-sass">
-<meta property="og:url" content="https://jack842248.github.io/post/2023-08-12-css-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css/" />
+<meta property="og:title" content="將JavaScript編譯成穩定版本" />
+<meta property="og:description" content="node.js、npm、gulp、gulpfile、package.json、gulp-babel">
+<meta property="og:url" content="https://jack842248.github.io/post/2023-08-13-gulp-%E5%B0%87javascript%E7%B7%A8%E8%AD%AF%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
-  <meta name="twitter:title" content="讓專案自動將sass編譯成css" />
-  <meta name="twitter:description" content="node.js、npm、gulp、gulpfile、package.json、gulp-sass">
+  <meta name="twitter:title" content="將JavaScript編譯成穩定版本" />
+  <meta name="twitter:description" content="node.js、npm、gulp、gulpfile、package.json、gulp-babel">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.111.3">
@@ -244,10 +244,10 @@
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="post-heading">
-                <h1>讓專案自動將sass編譯成css</h1>
+                <h1>將JavaScript編譯成穩定版本</h1>
                   
                     
-                      <h2 class="post-subheading">node.js、npm、gulp、gulpfile、package.json、gulp-sass</h2>
+                      <h2 class="post-subheading">node.js、npm、gulp、gulpfile、package.json、gulp-babel</h2>
                     
                   
                   
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;95&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;100&nbsp;個字
   
   
   
@@ -281,12 +281,12 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>讓專案自動將sass編譯成css</h1>
+                <h1>將JavaScript編譯成穩定版本</h1>
               
               
               
                 
-                  <h2 class="post-subheading">node.js、npm、gulp、gulpfile、package.json、gulp-sass</h2>
+                  <h2 class="post-subheading">node.js、npm、gulp、gulpfile、package.json、gulp-babel</h2>
                 
               
               
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;95&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;100&nbsp;個字
   
   
   
@@ -322,10 +322,10 @@
       <article role="main" class="blog-post">
         <hr>
 <h1 id="heading"></h1>
-<h2 id="gulp-sass">gulp-sass</h2>
+<h2 id="gulp-babel">gulp-babel</h2>
 <h1 id="heading-1"></h1>
 <ol>
-<li>在專案中打開終端機</li>
+<li>在專案中打開終端機(安裝gulp-babel、babel裡的套件core、babel裡的套件preset)</li>
 </ol>
 <h1 id="heading-2"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -333,7 +333,7 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>npm install gulp-sass
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install gulp-babel @babel/core @babel/preset-env
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-3"></h1>
@@ -351,20 +351,22 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-sass&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">babel</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-babel&#39;</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, () =&gt; {
-</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">pipe</span>([<span style="color:#e6db74">&#39;./src/**/*.scss&#39;</span>,<span style="color:#e6db74">&#39;./src/css/**/*.sass&#39;</span>]) <span style="color:#75715e">//引用scss、sass檔案路徑
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>().<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>,<span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>)) <span style="color:#75715e">//編譯過程中捕捉錯誤並輸出錯誤訊息，以避免因編譯錯誤而中斷gulp
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./public/css&#39;</span>)) <span style="color:#75715e">//css編譯完成路徑
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;babel&#39;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;./src/js/*.js&#39;</span>) 
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">babel</span>({<span style="color:#a6e22e">preset</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#39;@babel/env&#39;</span>]})
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./public/js&#39;</span>)) 
+</span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-5"></h1>
-<p><code>**←所有檔案、*.scss←所有scss檔</code></p>
+<p><code>*.js←所有js檔</code></p>
 <h1 id="heading-6"></h1>
 <ol start="3">
 <li>在終端機執行指令</li>
@@ -375,12 +377,12 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>gulp sass
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ gulp babel
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-8"></h1>
 <ol start="4">
-<li>執行結果會將src裡的<code>all.scss</code>編譯後生成到public裡變成<code>all.css</code></li>
+<li>執行結果會將src裡的<code>所有js檔(ES5、ES6、ES7)</code>編譯後生成到public裡變成穩定的<code>all.js</code></li>
 </ol>
 <h1 id="heading-9"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -407,14 +409,14 @@
 </span></span><span style="display:flex;"><span>├─── node_modules/        
 </span></span><span style="display:flex;"><span>├─── public/
 </span></span><span style="display:flex;"><span>│     │
-</span></span><span style="display:flex;"><span>│     └─── css/
+</span></span><span style="display:flex;"><span>│     └─── js/
 </span></span><span style="display:flex;"><span>│           │
-</span></span><span style="display:flex;"><span>│           └─── all.css
+</span></span><span style="display:flex;"><span>│           └─── all.js   #編譯完成的js檔
 </span></span><span style="display:flex;"><span>│   
 </span></span><span style="display:flex;"><span>├─── src/
-</span></span><span style="display:flex;"><span>│     └─── css/
+</span></span><span style="display:flex;"><span>│     └─── js/
 </span></span><span style="display:flex;"><span>│           │
-</span></span><span style="display:flex;"><span>│           └─── all.scss
+</span></span><span style="display:flex;"><span>│           └─── all.js   #開發時編輯用的js檔
 </span></span><span style="display:flex;"><span>│     
 </span></span><span style="display:flex;"><span>├─── gulpfile.js          
 </span></span><span style="display:flex;"><span>├─── package-lock.json    
@@ -423,7 +425,7 @@
 </div>
 </div><h1 id="heading-10"></h1>
 <ol start="5">
-<li>回到index.html在<code>&lt;head&gt;</code>裡新增</li>
+<li>回到index.html在<code>&lt;body&gt;</code>最後面新增</li>
 </ol>
 <h1 id="heading-11"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -431,11 +433,10 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css/all.css&#34;</span>&gt;
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;js/all.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-12"></h1>
-
+</div>
 
         
           <div class="blog-tags">
@@ -455,42 +456,42 @@
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-12-css-%25E8%25AE%2593%25E5%25B0%2588%25E6%25A1%2588%25E8%2587%25AA%25E5%258B%2595%25E5%25B0%2587sass%25E7%25B7%25A8%25E8%25AD%25AF%25E6%2588%2590css%2f&amp;text=%e8%ae%93%e5%b0%88%e6%a1%88%e8%87%aa%e5%8b%95%e5%b0%87sass%e7%b7%a8%e8%ad%af%e6%88%90css&amp;via=" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-13-gulp-%25E5%25B0%2587javascript%25E7%25B7%25A8%25E8%25AD%25AF%25E6%2588%2590%25E7%25A9%25A9%25E5%25AE%259A%25E7%2589%2588%25E6%259C%25AC%2f&amp;text=%e5%b0%87JavaScript%e7%b7%a8%e8%ad%af%e6%88%90%e7%a9%a9%e5%ae%9a%e7%89%88%e6%9c%ac&amp;via=" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-12-css-%25E8%25AE%2593%25E5%25B0%2588%25E6%25A1%2588%25E8%2587%25AA%25E5%258B%2595%25E5%25B0%2587sass%25E7%25B7%25A8%25E8%25AD%25AF%25E6%2588%2590css%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-13-gulp-%25E5%25B0%2587javascript%25E7%25B7%25A8%25E8%25AD%25AF%25E6%2588%2590%25E7%25A9%25A9%25E5%25AE%259A%25E7%2589%2588%25E6%259C%25AC%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-12-css-%25E8%25AE%2593%25E5%25B0%2588%25E6%25A1%2588%25E8%2587%25AA%25E5%258B%2595%25E5%25B0%2587sass%25E7%25B7%25A8%25E8%25AD%25AF%25E6%2588%2590css%2f&amp;title=%e8%ae%93%e5%b0%88%e6%a1%88%e8%87%aa%e5%8b%95%e5%b0%87sass%e7%b7%a8%e8%ad%af%e6%88%90css" target="_blank" title="Share on Reddit">
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-13-gulp-%25E5%25B0%2587javascript%25E7%25B7%25A8%25E8%25AD%25AF%25E6%2588%2590%25E7%25A9%25A9%25E5%25AE%259A%25E7%2589%2588%25E6%259C%25AC%2f&amp;title=%e5%b0%87JavaScript%e7%b7%a8%e8%ad%af%e6%88%90%e7%a9%a9%e5%ae%9a%e7%89%88%e6%9c%ac" target="_blank" title="Share on Reddit">
           <i class="fab fa-reddit"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-12-css-%25E8%25AE%2593%25E5%25B0%2588%25E6%25A1%2588%25E8%2587%25AA%25E5%258B%2595%25E5%25B0%2587sass%25E7%25B7%25A8%25E8%25AD%25AF%25E6%2588%2590css%2f&amp;title=%e8%ae%93%e5%b0%88%e6%a1%88%e8%87%aa%e5%8b%95%e5%b0%87sass%e7%b7%a8%e8%ad%af%e6%88%90css" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-13-gulp-%25E5%25B0%2587javascript%25E7%25B7%25A8%25E8%25AD%25AF%25E6%2588%2590%25E7%25A9%25A9%25E5%25AE%259A%25E7%2589%2588%25E6%259C%25AC%2f&amp;title=%e5%b0%87JavaScript%e7%b7%a8%e8%ad%af%e6%88%90%e7%a9%a9%e5%ae%9a%e7%89%88%e6%9c%ac" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-12-css-%25E8%25AE%2593%25E5%25B0%2588%25E6%25A1%2588%25E8%2587%25AA%25E5%258B%2595%25E5%25B0%2587sass%25E7%25B7%25A8%25E8%25AD%25AF%25E6%2588%2590css%2f&amp;title=%e8%ae%93%e5%b0%88%e6%a1%88%e8%87%aa%e5%8b%95%e5%b0%87sass%e7%b7%a8%e8%ad%af%e6%88%90css" target="_blank" title="Share on StumbleUpon">
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-13-gulp-%25E5%25B0%2587javascript%25E7%25B7%25A8%25E8%25AD%25AF%25E6%2588%2590%25E7%25A9%25A9%25E5%25AE%259A%25E7%2589%2588%25E6%259C%25AC%2f&amp;title=%e5%b0%87JavaScript%e7%b7%a8%e8%ad%af%e6%88%90%e7%a9%a9%e5%ae%9a%e7%89%88%e6%9c%ac" target="_blank" title="Share on StumbleUpon">
           <i class="fab fa-stumbleupon"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-12-css-%25E8%25AE%2593%25E5%25B0%2588%25E6%25A1%2588%25E8%2587%25AA%25E5%258B%2595%25E5%25B0%2587sass%25E7%25B7%25A8%25E8%25AD%25AF%25E6%2588%2590css%2f&amp;description=%e8%ae%93%e5%b0%88%e6%a1%88%e8%87%aa%e5%8b%95%e5%b0%87sass%e7%b7%a8%e8%ad%af%e6%88%90css" target="_blank" title="Share on Pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-13-gulp-%25E5%25B0%2587javascript%25E7%25B7%25A8%25E8%25AD%25AF%25E6%2588%2590%25E7%25A9%25A9%25E5%25AE%259A%25E7%2589%2588%25E6%259C%25AC%2f&amp;description=%e5%b0%87JavaScript%e7%b7%a8%e8%ad%af%e6%88%90%e7%a9%a9%e5%ae%9a%e7%89%88%e6%9c%ac" target="_blank" title="Share on Pinterest">
           <i class="fab fa-pinterest"></i>
         </a>
       </li>
@@ -504,6 +505,19 @@
 
         
           
+            
+          
+
+          
+                  <h4 class="see-also">其他相關</h4>
+                  <ul>
+                
+                
+                    <li><a href="/post/2023-08-12-gulp-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css/">讓專案自動將sass編譯成css</a></li>
+                
+                    <li><a href="/post/2023-08-11-gulp-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/">建立gulp開發環境</a></li>
+                
+              </ul>
 
           
         
@@ -513,7 +527,7 @@
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2023-08-11-css-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/" data-toggle="tooltip" data-placement="top" title="建立gulp開發環境">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2023-08-12-gulp-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css/" data-toggle="tooltip" data-placement="top" title="讓專案自動將sass編譯成css">&larr; 上一篇</a>
             </li>
           
           
@@ -525,12 +539,12 @@
         
           
           <div class="disqus-comments">                  
-            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2023-08-12-css-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css">則評論</span></button>
+            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2023-08-13-gulp-%E5%B0%87javascript%E7%B7%A8%E8%AD%AF%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC">則評論</span></button>
             <div id="disqus_thread"></div>
 
             <script type="text/javascript">
               var disqus_config = function () {
-              this.page.url = 'https:\/\/jack842248.github.io\/post\/2023-08-12-css-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css';
+              this.page.url = 'https:\/\/jack842248.github.io\/post\/2023-08-13-gulp-%E5%B0%87javascript%E7%B7%A8%E8%AD%AF%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC';
             };
 
           </script>
