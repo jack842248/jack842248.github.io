@@ -7,24 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Sat, 12 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>將JavaScript編譯成穩定版本</title>
-      <link>https://jack842248.github.io/post/2023-08-13-gulp-%E5%B0%87javascript%E7%B7%A8%E8%AD%AF%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC/</link>
-      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <title>自動將css樣式加上前綴增加兼容性</title>
+      <link>https://jack842248.github.io/post/2023-08-14-gulp-%E8%87%AA%E5%8B%95%E5%B0%87css%E6%A8%A3%E5%BC%8F%E5%8A%A0%E4%B8%8A%E5%89%8D%E7%B6%B4%E5%A2%9E%E5%8A%A0%E5%85%BC%E5%AE%B9%E6%80%A7/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-08-13-gulp-%E5%B0%87javascript%E7%B7%A8%E8%AD%AF%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC/</guid>
-      <description>gulp-babel 在專案中打開終端機(安裝gulp-babel、babel裡的套件core、babel裡的套件preset) 1 $ npm install gulp-babel @babel/core @babel/preset-env 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 const gulp = require(&amp;#39;gulp&amp;#39;); const babel = require(&amp;#39;gulp-babel&amp;#39;); gulp.task(&amp;#39;babel&amp;#39;, () =&amp;gt; { return gulp .src(&amp;#39;./src/js/*.js&amp;#39;) .pipe(babel({preset:[&amp;#39;@babel/env&amp;#39;]}) .pipe(gulp.dest(&amp;#39;./public/js&amp;#39;)) }); *.js←所有js檔
+      <guid>https://jack842248.github.io/post/2023-08-14-gulp-%E8%87%AA%E5%8B%95%E5%B0%87css%E6%A8%A3%E5%BC%8F%E5%8A%A0%E4%B8%8A%E5%89%8D%E7%B6%B4%E5%A2%9E%E5%8A%A0%E5%85%BC%E5%AE%B9%E6%80%A7/</guid>
+      <description>gulp-postcss 在專案中打開終端機安裝gulp-postcss套件 另外安裝gulp-postcss底下插件autoprefixer和cssnano 1 $ npm install gulp-postcss autoprefixer cssnano 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); const postcss = require(&amp;#39;gulp-postcss&amp;#39;); const autoprefixer = require(&amp;#39;autoprefixer&amp;#39;); const cssnano = require(&amp;#39;cssnano&amp;#39;); gulp.task(&amp;#39;sass&amp;#39;, function(){ return gulp .src([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) .pipe(sass() .on(&amp;#39;error&amp;#39;,sass.logError)) .pipe( postcss( [ autoprefixer(), cssnano() ] ) ) .pipe(gulp.dest(&amp;#39;./public/css&amp;#39;)); }); 在終端機執行指令 1 $ gulp sass 執行結果會將css樣式加上前綴詞-webkit-讓瀏覽器兼容性更好 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 you project ├─── node_modules/ ├─── public/ │ │ │ └─── css/ │ │ │ └─── all.</description>
+    </item>
+    
+    <item>
+      <title>自動將JavaScript整合編譯成穩定版本</title>
+      <link>https://jack842248.github.io/post/2023-08-13-gulp-%E8%87%AA%E5%8B%95%E5%B0%87javascript%E6%95%B4%E5%90%88%E7%B7%A8%E8%AD%AF%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2023-08-13-gulp-%E8%87%AA%E5%8B%95%E5%B0%87javascript%E6%95%B4%E5%90%88%E7%B7%A8%E8%AD%AF%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC/</guid>
+      <description>gulp-babel 在專案中打開終端機安裝gulp-babel套件 另外安裝gulp-babel底下插件core和preset 1 $ npm install gulp-babel @babel/core @babel/preset-env @開頭的套件，表示這是一個由特定組織或作者維護的套件
+在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 const gulp = require(&amp;#39;gulp&amp;#39;); const babel = require(&amp;#39;gulp-babel&amp;#39;); gulp.task(&amp;#39;babel&amp;#39;, function(){ return gulp .src(&amp;#39;./src/js/*.js&amp;#39;) .pipe( babel( { preset:[&amp;#39;@babel/env&amp;#39;] } ) ) .pipe(gulp.dest(&amp;#39;./public/js&amp;#39;)) }); *.js←所有js檔
 在終端機執行指令 1 $ gulp babel 執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯後生成到public裡變成穩定的all.js 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 you project ├─── node_modules/ ├─── public/ │ │ │ └─── js/ │ │ │ └─── all.</description>
     </item>
     
     <item>
-      <title>讓專案自動將sass編譯成css</title>
-      <link>https://jack842248.github.io/post/2023-08-12-gulp-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css/</link>
+      <title>自動將專案中sass和scss編譯成css</title>
+      <link>https://jack842248.github.io/post/2023-08-12-gulp-%E8%87%AA%E5%8B%95%E5%B0%87%E5%B0%88%E6%A1%88%E4%B8%ADsass%E5%92%8Cscss%E7%B7%A8%E8%AD%AF%E6%88%90css/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-08-12-gulp-%E8%AE%93%E5%B0%88%E6%A1%88%E8%87%AA%E5%8B%95%E5%B0%87sass%E7%B7%A8%E8%AD%AF%E6%88%90css/</guid>
-      <description>gulp-sass 在專案中打開終端機 1 $ npm install gulp-sass 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); gulp.task(&amp;#39;sass&amp;#39;, () =&amp;gt; { return gulp .src([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) //引用scss、sass檔案路徑 .pipe(sass() .on(&amp;#39;error&amp;#39;,sass.logError)) //編譯過程中捕捉錯誤並輸出錯誤訊息，以避免因編譯錯誤而中斷gulp .pipe(gulp.dest(&amp;#39;./public/css&amp;#39;)) //css編譯完成路徑 }); **←所有檔案、*.scss←所有scss檔
+      <guid>https://jack842248.github.io/post/2023-08-12-gulp-%E8%87%AA%E5%8B%95%E5%B0%87%E5%B0%88%E6%A1%88%E4%B8%ADsass%E5%92%8Cscss%E7%B7%A8%E8%AD%AF%E6%88%90css/</guid>
+      <description>gulp-sass 在專案中打開終端機安裝gulp-sass套件 1 $ npm install gulp-sass 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); gulp.task(&amp;#39;sass&amp;#39;, function(){ return gulp .src([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) //引用scss、sass檔案路徑 .pipe(sass() .on(&amp;#39;error&amp;#39;,sass.logError)) //編譯過程中捕捉錯誤並輸出錯誤訊息，以避免因編譯錯誤而中斷gulp .pipe(gulp.dest(&amp;#39;./public/css&amp;#39;)) //css編譯完成路徑 }); **←所有檔案、*.scss←所有scss檔
 在終端機執行指令 1 $ gulp sass 執行結果會將src裡的所有scss和所有sass檔編譯後生成到public裡變成all.css 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 you project ├─── node_modules/ ├─── public/ │ │ │ └─── css/ │ │ │ └─── all.</description>
     </item>
     
