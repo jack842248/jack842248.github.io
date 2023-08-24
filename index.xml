@@ -23,7 +23,7 @@
       <pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2023-08-18-gulp-%E8%87%AA%E5%8B%95%E5%88%AA%E9%99%A4%E4%B8%8A%E4%B8%80%E6%AC%A1%E7%9A%84%E7%B7%A8%E8%AD%AF%E7%B5%90%E6%9E%9C/</guid>
-      <description>del 在專案中打開終端機安裝del套件 1 $ npm install del 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); const del = require(&amp;#39;del&amp;#39;); gulp.task(&amp;#39;sass&amp;#39;, function(){ return gulp .src([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) .pipe(sass() .on(&amp;#39;error&amp;#39;,sass.logError)) .pipe(gulp.dest(&amp;#39;./dist/css&amp;#39;)); }); gulp.task(&amp;#39;copyHTML&amp;#39;, function(){ return gulp .src(&amp;#39;./src/*.html&amp;#39;) .pipe(gulp.dest(&amp;#39;./dist&amp;#39;)) }); gulp.task(&amp;#39;clean&amp;#39;, function(){ return del([&amp;#39;./dist&amp;#39;]) .src(&amp;#39;./src/*.html&amp;#39;) .pipe(gulp.dest(&amp;#39;./dist&amp;#39;)) }); 在終端機執行指令 1 $ gulp clean 執行後會刪除整個dist資料夾 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 you project ├─── node_modules/ ├─── dist/ │ ├─── css/ │ │ │ │ │ └─── all.</description>
+      <description>del 在專案中打開終端機安裝del套件 1 $ npm install del 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); const del = require(&amp;#39;del&amp;#39;); gulp.task(&amp;#39;sass&amp;#39;, function(){ return gulp .src([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) .pipe(sass() .on(&amp;#39;error&amp;#39;,sass.logError)) .pipe(gulp.dest(&amp;#39;./dist/css&amp;#39;)); }); gulp.task(&amp;#39;copyHTML&amp;#39;, function(){ return gulp .src(&amp;#39;./src/*.html&amp;#39;) .pipe(gulp.dest(&amp;#39;./dist&amp;#39;)) }); gulp.task(&amp;#39;clean&amp;#39;, function(){ return del([&amp;#39;./dist&amp;#39;]) .src(&amp;#39;./src/*.html&amp;#39;) .pipe(gulp.dest(&amp;#39;./dist&amp;#39;)) }); 在終端機執行指令 1 $ gulp clean 執行後會刪除整個dist資料夾 you project ├─── node_modules/ ├─── dist/ │ ├─── css/ │ │ │ │ │ └─── all.</description>
     </item>
     
     <item>
@@ -32,7 +32,7 @@
       <pubDate>Thu, 17 Aug 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2023-08-17-gulp-%E9%96%8B%E5%95%9F%E6%9C%AC%E5%9C%B0%E7%AB%AF%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%80%8F%E8%A6%BD%E7%B6%B2%E7%AB%99/</guid>
-      <description>browser-sync 在專案中打開終端機安裝browser-sync套件 1 $ npm install browser-sync 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); const browserSync = require(&amp;#39;browser-sync&amp;#39;).create(); gulp.task(&amp;#39;sass&amp;#39;, function(){ return gulp .src([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) .pipe(sass() .on(&amp;#39;error&amp;#39;,sass.logError)) .pipe(gulp.dest(&amp;#39;./dist/css&amp;#39;)); .pipe(browserSync.stream()); }); gulp.task(&amp;#39;copyHTML&amp;#39;, function(){ return gulp .src(&amp;#39;./src/*.html&amp;#39;) .pipe(gulp.dest(&amp;#39;./dist&amp;#39;)) .pipe(browserSync.stream()); }); gulp.task(&amp;#39;watch&amp;#39;, function(){ browserSync.</description>
+      <description>browser-sync 在專案中打開終端機安裝browser-sync套件 1 $ npm install browser-sync 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); const browserSync = require(&amp;#39;browser-sync&amp;#39;).create(); gulp.task(&amp;#39;sass&amp;#39;, function(){ return gulp .src([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) .pipe(sass() .on(&amp;#39;error&amp;#39;,sass.logError)) .pipe(gulp.dest(&amp;#39;./dist/css&amp;#39;)); .pipe(browserSync.stream()); //監控css有無變更 }); gulp.task(&amp;#39;copyHTML&amp;#39;, function(){ return gulp .src(&amp;#39;./src/*.html&amp;#39;) .pipe(gulp.dest(&amp;#39;./dist&amp;#39;)) .pipe(browserSync.stream()); //監控html有無變更 }); gulp.</description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@
       <pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2023-08-16-gulp-%E5%B0%87%E5%BC%95%E5%85%A5%E7%9A%84js%E5%A5%97%E4%BB%B6%E5%90%88%E4%BD%B5%E6%88%90%E4%B8%80%E5%80%8B%E6%AA%94%E6%A1%88/</guid>
-      <description>gulp-concat 在專案中打開終端機安裝套件 gulp-concat: 1 $ npm install gulp-concat jquery: 1 $ npm install jquery bootstrap: 1 $ npm install bootstrap 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); const sourcemaps = require(&amp;#39;gulp-concat&amp;#39;); gulp.task(&amp;#39;concat&amp;#39;, function(){ return gulp .src( [ &amp;#39;./node_modules/jquery/dist/jquery.slim.min.js&amp;#39;, //引入jQuery &amp;#39;./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js&amp;#39;, //引入bootstrap &amp;#39;.src/js/*.js&amp;#39; ] ) .pipe(concat(&amp;#39;bundle.js&amp;#39;)) // 合併檔案，名稱為：bundle.js .pipe(gulp.dest(&amp;#39;./dist/css&amp;#39;)); }); 在終端機執行指令 1 $ gulp concat 執行結果會在src資料夾裡新增一個bundle.</description>
+      <description>gulp-concat 在專案中打開終端機安裝套件 gulp-concat: 1 $ npm install gulp-concat jquery: 1 $ npm install jquery bootstrap: 1 $ npm install bootstrap 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); const sourcemaps = require(&amp;#39;gulp-concat&amp;#39;); gulp.task(&amp;#39;concat&amp;#39;, function(){ return gulp .src([ &amp;#39;./node_modules/jquery/dist/jquery.slim.min.js&amp;#39;, //引入jQuery &amp;#39;./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js&amp;#39;, //引入bootstrap &amp;#39;.src/js/*.js&amp;#39; ]) .pipe(concat(&amp;#39;bundle.js&amp;#39;)) // 合併檔案，名稱為：bundle.js .pipe(gulp.dest(&amp;#39;./dist/css&amp;#39;)); }); 在終端機執行指令 1 $ gulp concat 執行結果會在src裡新增一個bundle.js檔 you project ├─── node_modules/ ├─── dist/ │ │ │ └─── js/ │ │ │ └─── bundle.</description>
     </item>
     
     <item>
@@ -52,7 +52,7 @@
       <guid>https://jack842248.github.io/post/2023-08-15-gulp-%E7%94%9F%E6%88%90%E7%A8%8B%E5%BC%8F%E7%A2%BCmap%E4%BB%A5%E5%88%A9%E9%99%A4%E9%8C%AF%E7%B7%A8%E8%AD%AF/</guid>
       <description>gulp-sourcemaps 在專案中打開終端機安裝gulp-sourcemaps套件 1 $ npm install gulp-sourcemaps 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); const sourcemaps = require(&amp;#39;gulp-sourcemaps&amp;#39;); gulp.task(&amp;#39;sass&amp;#39;, function(){ return gulp .src([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) .pipe(sourcemaps.init()) //sourcemaps初始化 .pipe(sass() .on(&amp;#39;error&amp;#39;,sass.logError)) .pipe(sourcemaps.write(&amp;#34;./&amp;#34;)) //生成sourcemaps文件 .pipe(gulp.dest(&amp;#39;./dist/css&amp;#39;)); }); ./←當前的工作目錄
 init: 布林值，設定是否在管道中初始化 Source Maps。默認為 true。如果你想要自行生成 Source Maps，可以將這個屬性設為 false。
-在終端機執行指令 1 $ gulp sass 執行結果會在all.css旁自動新加入一個.map檔 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 you project ├─── node_modules/ ├─── dist/ │ │ │ └─── css/ │ │ │ ├─── all.</description>
+在終端機執行指令 1 $ gulp sass 執行結果會在all.css旁自動新加入一個.map檔 you project ├─── node_modules/ ├─── dist/ │ │ │ └─── css/ │ │ │ ├─── all.</description>
     </item>
     
     <item>
@@ -61,7 +61,7 @@ init: 布林值，設定是否在管道中初始化 Source Maps。默認為 true
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2023-08-14-gulp-%E5%B0%87css%E6%A8%A3%E5%BC%8F%E5%8A%A0%E4%B8%8A%E5%89%8D%E7%B6%B4%E5%A2%9E%E5%8A%A0%E7%80%8F%E8%A6%BD%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7/</guid>
-      <description>gulp-postcss 在專案中打開終端機安裝套件 gulp-postcss: 1 $ npm install gulp-postcss autoprefixer: 1 $ npm install autoprefixer cssnano: 1 $ npm install cssnano 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); const postcss = require(&amp;#39;gulp-postcss&amp;#39;); const autoprefixer = require(&amp;#39;autoprefixer&amp;#39;); const cssnano = require(&amp;#39;cssnano&amp;#39;); gulp.task(&amp;#39;sass&amp;#39;, function(){ return gulp .src([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) .pipe(sass() .on(&amp;#39;error&amp;#39;,sass.logError)) .</description>
+      <description>gulp-postcss 在專案中打開終端機安裝套件 gulp-postcss: 1 $ npm install gulp-postcss autoprefixer: 1 $ npm install autoprefixer cssnano: 1 $ npm install cssnano 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); const postcss = require(&amp;#39;gulp-postcss&amp;#39;); const autoprefixer = require(&amp;#39;autoprefixer&amp;#39;); const cssnano = require(&amp;#39;cssnano&amp;#39;); gulp.task(&amp;#39;sass&amp;#39;, function(){ return gulp .src([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) .pipe(sass() .on(&amp;#39;error&amp;#39;,sass.logError)) .pipe( postcss([ autoprefixer(), //將編譯完成的CSS做PostCSS處理，確保你的CSS在不同瀏覽器中正確顯示 cssnano() //啟用cssnano插件，去除不必要的空格、注釋從而壓縮和最小化CSS ]) ) .</description>
     </item>
     
     <item>
@@ -71,8 +71,8 @@ init: 布林值，設定是否在管道中初始化 Source Maps。默認為 true
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2023-08-13-gulp-%E5%B0%87javascript%E6%95%B4%E5%90%88%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC/</guid>
       <description>gulp-babel 在專案中打開終端機安裝套件 gulp-babel： 1 $ npm install gulp-babelpreset-env @babel/core： 1 $ npm install @babel/core @babel/preset-env： 1 $ npm install @babel/preset-env @開頭的套件，表示這是一個由特定組織或作者維護的套件
-在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 const gulp = require(&amp;#39;gulp&amp;#39;); const babel = require(&amp;#39;gulp-babel&amp;#39;); gulp.task(&amp;#39;babel&amp;#39;, function(){ return gulp .src(&amp;#39;./src/js/*.js&amp;#39;) //引用js檔案來源 .pipe( babel( { preset:[&amp;#39;@babel/env&amp;#39;] //使用預設環境編譯 } ) ) .pipe(gulp.dest(&amp;#39;./dist/js&amp;#39;)) //js編譯完成路徑 }); presets : 陣列，用於指定要使用的Babel預設集。預設集是一組預先配置好的轉換規則的集合，用於實現特定的JavaScript轉譯。例如，@babel/preset-env 可以根據瀏覽器的兼容性自動選擇適當的轉譯規則。
-在終端機執行指令 1 $ gulp babel 執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯後生成到dist裡變成穩定的all.</description>
+在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 const gulp = require(&amp;#39;gulp&amp;#39;); const babel = require(&amp;#39;gulp-babel&amp;#39;); gulp.task(&amp;#39;babel&amp;#39;, function(){ return gulp .src(&amp;#39;./src/js/*.js&amp;#39;) //引用js檔案來源 .pipe( babel({ preset:[&amp;#39;@babel/env&amp;#39;] //使用預設環境編譯 }) ) .pipe(gulp.dest(&amp;#39;./dist/js&amp;#39;)) //js編譯完成路徑 }); presets : 陣列，用於指定要使用的Babel預設集。預設集是一組預先配置好的轉換規則的集合，用於實現特定的JavaScript轉譯。例如，@babel/preset-env 可以根據瀏覽器的兼容性自動選擇適當的轉譯規則。
+在終端機執行指令 1 $ gulp babel 執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯後生成到dist裡變成穩定的all.js you project ├─── node_modules/ ├─── dist/ │ │ │ └─── js/ │ │ │ └─── all.</description>
     </item>
     
     <item>
@@ -82,16 +82,16 @@ init: 布林值，設定是否在管道中初始化 Source Maps。默認為 true
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2023-08-12-gulp-%E5%B0%87sass%E5%92%8Cscss%E8%87%AA%E5%8B%95%E7%B7%A8%E8%AD%AF%E6%88%90css/</guid>
       <description>gulp-sass 在專案中打開終端機安裝gulp-sass套件 1 $ npm install gulp-sass 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 const gulp = require(&amp;#39;gulp&amp;#39;); const sass = require(&amp;#39;gulp-sass&amp;#39;); gulp.task(&amp;#39;sass&amp;#39;, function(){ return gulp .src([&amp;#39;./src/**/*.scss&amp;#39;,&amp;#39;./src/css/**/*.sass&amp;#39;]) //引用scss、sass檔案路徑 .pipe(sass() .on(&amp;#39;error&amp;#39;,sass.logError)) //編譯過程中捕捉錯誤並輸出錯誤訊息，以避免因編譯錯誤而中斷gulp .pipe(gulp.dest(&amp;#39;./dist/css&amp;#39;)) //css編譯完成路徑 }); **←所有檔案、*.scss←所有scss檔
-在終端機執行指令 1 $ gulp sass 執行結果會將src裡的所有scss和所有sass檔編譯後生成到dist裡變成all.css 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 you project ├─── node_modules/ ├─── dist/ │ │ │ └─── css/ │ │ │ └─── all.</description>
+在終端機執行指令 1 $ gulp sass 執行結果會將src裡的所有scss和所有sass檔編譯後生成到dist裡變成all.css you project ├─── node_modules/ ├─── dist/ │ │ │ └─── css/ │ │ │ └─── all.css #編譯完成的css檔 │ ├─── src/ │ └─── css/ │ │ │ └─── all.</description>
     </item>
     
     <item>
-      <title>【gulp】建立gulp開發環境</title>
+      <title>【gulp】安裝gulp建立bootstrap開發環境</title>
       <link>https://jack842248.github.io/post/2023-08-11-gulp-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/</link>
       <pubDate>Fri, 11 Aug 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2023-08-11-gulp-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/</guid>
-      <description>gulp基本指令 指令 一般 縮寫 安裝 npm install gulp-sass npm i gulp-sass 移除 npm uninstall gulp-sass npm uni gulp-sass 搜尋 npm search gulp-sass npm s gulp-sass 清單 npm list npm ls 查詢版本 npm &amp;ndash;version npm -v 初始化 npm init &amp;mdash; 初始化(預設) npm init -y &amp;mdash; 顯示清單 npm list &amp;mdash; 更新套件 npm update gulp-sass &amp;mdash; 部署到github上 gulp deploy &amp;mdash; 建立gulp環境 下載node.js LTS：長期維護版(較穩定) Current：目前最新版(較為不穩定) node -v 檢查版本 安裝npm npm insatll npm -v 檢查版本 安裝全域gulp(每台電腦僅需執行一次) npm install gulp -g Gulp3版 npm install gulp-cli -g Gulp4版 sudo npm install gulp-cli -g mac安裝 生成package.</description>
+      <description>gulp基本指令 指令 一般 縮寫 安裝 npm install gulp-sass npm i gulp-sass 移除 npm uninstall gulp-sass npm uni gulp-sass 搜尋 npm search gulp-sass npm s gulp-sass 清單 npm list npm ls 查詢版本 npm &amp;ndash;version npm -v 初始化 npm init &amp;mdash; 初始化(預設) npm init -y &amp;mdash; 顯示清單 npm list &amp;mdash; 更新套件 npm update gulp-sass &amp;mdash; 部署到github上 gulp deploy &amp;mdash; 建立gulp環境 1.下載node.js node.js下載網址 LTS：長期維護版(較穩定) Current：目前最新版(較為不穩定) 檢查node版本: 1 $ node -v 2.安裝npm 安裝npm: 1 $ npm insatll 檢查npm版本: 1 $ npm -v 3.</description>
     </item>
     
     <item>

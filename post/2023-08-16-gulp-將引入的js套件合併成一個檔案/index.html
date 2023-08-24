@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】將引入的js套件合併成一個檔案",
-  "description" : "gulp-concat 在專案中打開終端機安裝套件 gulp-concat: 1 $ npm install gulp-concat jquery: 1 $ npm install jquery bootstrap: 1 $ npm install bootstrap 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); const sourcemaps = require(\u0026#39;gulp-concat\u0026#39;); gulp.task(\u0026#39;concat\u0026#39;, function(){ return gulp .src( [ \u0026#39;.\/node_modules\/jquery\/dist\/jquery.slim.min.js\u0026#39;, \/\/引入jQuery \u0026#39;.\/node_modules\/bootstrap\/dist\/js\/bootstrap.bundle.min.js\u0026#39;, \/\/引入bootstrap \u0026#39;.src\/js\/*.js\u0026#39; ] ) .pipe(concat(\u0026#39;bundle.js\u0026#39;)) \/\/ 合併檔案，名稱為：bundle.js .pipe(gulp.dest(\u0026#39;.\/dist\/css\u0026#39;)); }); 在終端機執行指令 1 $ gulp concat 執行結果會在src資料夾裡新增一個bundle.",
+  "description" : "gulp-concat 在專案中打開終端機安裝套件 gulp-concat: 1 $ npm install gulp-concat jquery: 1 $ npm install jquery bootstrap: 1 $ npm install bootstrap 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); const sourcemaps = require(\u0026#39;gulp-concat\u0026#39;); gulp.task(\u0026#39;concat\u0026#39;, function(){ return gulp .src([ \u0026#39;.\/node_modules\/jquery\/dist\/jquery.slim.min.js\u0026#39;, \/\/引入jQuery \u0026#39;.\/node_modules\/bootstrap\/dist\/js\/bootstrap.bundle.min.js\u0026#39;, \/\/引入bootstrap \u0026#39;.src\/js\/*.js\u0026#39; ]) .pipe(concat(\u0026#39;bundle.js\u0026#39;)) \/\/ 合併檔案，名稱為：bundle.js .pipe(gulp.dest(\u0026#39;.\/dist\/css\u0026#39;)); }); 在終端機執行指令 1 $ gulp concat 執行結果會在src裡新增一個bundle.js檔 you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── js\/ │ │ │ └─── bundle.",
   "inLanguage" : "zh-tw",
-  "wordCount":  125 ,
+  "wordCount":  104 ,
   "datePublished" : "2023-08-16T00:00:00",
   "dateModified" : "2023-08-16T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;125&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;104&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;125&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;104&nbsp;個字
   
   
   
@@ -389,8 +389,6 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
@@ -399,13 +397,11 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;concat&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(
-</span></span><span style="display:flex;"><span>      [
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;./node_modules/jquery/dist/jquery.slim.min.js&#39;</span>, <span style="color:#75715e">//引入jQuery
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#e6db74">&#39;./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js&#39;</span>, <span style="color:#75715e">//引入bootstrap
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#e6db74">&#39;.src/js/*.js&#39;</span>
-</span></span><span style="display:flex;"><span>      ]
-</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>([
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;./node_modules/jquery/dist/jquery.slim.min.js&#39;</span>, <span style="color:#75715e">//引入jQuery
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#e6db74">&#39;./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js&#39;</span>, <span style="color:#75715e">//引入bootstrap
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#e6db74">&#39;.src/js/*.js&#39;</span>
+</span></span><span style="display:flex;"><span>    ])
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">concat</span>(<span style="color:#e6db74">&#39;bundle.js&#39;</span>)) <span style="color:#75715e">// 合併檔案，名稱為：bundle.js
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./dist/css&#39;</span>));
 </span></span><span style="display:flex;"><span>});
@@ -430,48 +426,26 @@
 <hr>
 <h1 id="heading-15"></h1>
 <ol start="4">
-<li>執行結果會在src資料夾裡新增一個bundle.js檔</li>
+<li>執行結果會在src裡新增一個<code>bundle.js</code>檔</li>
 </ol>
 <h1 id="heading-16"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>you project
-</span></span><span style="display:flex;"><span>├─── node_modules/        
-</span></span><span style="display:flex;"><span>├─── dist/
-</span></span><span style="display:flex;"><span>│     │
-</span></span><span style="display:flex;"><span>│     └─── js/
-</span></span><span style="display:flex;"><span>│           │
-</span></span><span style="display:flex;"><span>│           └─── bundle.js  #合併的js檔
-</span></span><span style="display:flex;"><span>│  
-</span></span><span style="display:flex;"><span>├─── src/
-</span></span><span style="display:flex;"><span>│     └─── js/
-</span></span><span style="display:flex;"><span>│           │
-</span></span><span style="display:flex;"><span>│           └─── all.js     #未合併的js檔
-</span></span><span style="display:flex;"><span>│
-</span></span><span style="display:flex;"><span>├─── gulpfile.js          
-</span></span><span style="display:flex;"><span>├─── package-lock.json    
-</span></span><span style="display:flex;"><span>└─── package.json  
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+<pre tabindex="0"><code>you project
+├─── node_modules/        
+├─── dist/
+│     │
+│     └─── js/
+│           │
+│           └─── bundle.js  #合併的js檔
+│  
+├─── src/
+│     └─── js/
+│           │
+│           └─── all.js     
+│
+├─── gulpfile.js          
+├─── package-lock.json    
+└─── package.json  
+</code></pre>
 
         
           <div class="blog-tags">

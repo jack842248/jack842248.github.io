@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】生成程式碼map以利除錯編譯",
-  "description" : "gulp-sourcemaps 在專案中打開終端機安裝gulp-sourcemaps套件 1 $ npm install gulp-sourcemaps 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); const sourcemaps = require(\u0026#39;gulp-sourcemaps\u0026#39;); gulp.task(\u0026#39;sass\u0026#39;, function(){ return gulp .src([\u0026#39;.\/src\/**\/*.scss\u0026#39;,\u0026#39;.\/src\/css\/**\/*.sass\u0026#39;]) .pipe(sourcemaps.init()) \/\/sourcemaps初始化 .pipe(sass() .on(\u0026#39;error\u0026#39;,sass.logError)) .pipe(sourcemaps.write(\u0026#34;.\/\u0026#34;)) \/\/生成sourcemaps文件 .pipe(gulp.dest(\u0026#39;.\/dist\/css\u0026#39;)); }); .\/←當前的工作目錄\ninit: 布林值，設定是否在管道中初始化 Source Maps。默認為 true。如果你想要自行生成 Source Maps，可以將這個屬性設為 false。\n在終端機執行指令 1 $ gulp sass 執行結果會在all.css旁自動新加入一個.map檔 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── css\/ │ │ │ ├─── all.",
+  "description" : "gulp-sourcemaps 在專案中打開終端機安裝gulp-sourcemaps套件 1 $ npm install gulp-sourcemaps 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); const sourcemaps = require(\u0026#39;gulp-sourcemaps\u0026#39;); gulp.task(\u0026#39;sass\u0026#39;, function(){ return gulp .src([\u0026#39;.\/src\/**\/*.scss\u0026#39;,\u0026#39;.\/src\/css\/**\/*.sass\u0026#39;]) .pipe(sourcemaps.init()) \/\/sourcemaps初始化 .pipe(sass() .on(\u0026#39;error\u0026#39;,sass.logError)) .pipe(sourcemaps.write(\u0026#34;.\/\u0026#34;)) \/\/生成sourcemaps文件 .pipe(gulp.dest(\u0026#39;.\/dist\/css\u0026#39;)); }); .\/←當前的工作目錄\ninit: 布林值，設定是否在管道中初始化 Source Maps。默認為 true。如果你想要自行生成 Source Maps，可以將這個屬性設為 false。\n在終端機執行指令 1 $ gulp sass 執行結果會在all.css旁自動新加入一個.map檔 you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── css\/ │ │ │ ├─── all.",
   "inLanguage" : "zh-tw",
-  "wordCount":  133 ,
+  "wordCount":  111 ,
   "datePublished" : "2023-08-15T00:00:00",
   "dateModified" : "2023-08-15T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;133&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;111&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;133&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;111&nbsp;個字
   
   
   
@@ -401,57 +401,29 @@
 <li>執行結果會在all.css旁自動新加入一個.map檔</li>
 </ol>
 <h1 id="heading-13"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>you project
-</span></span><span style="display:flex;"><span>├─── node_modules/        
-</span></span><span style="display:flex;"><span>├─── dist/
-</span></span><span style="display:flex;"><span>│     │
-</span></span><span style="display:flex;"><span>│     └─── css/
-</span></span><span style="display:flex;"><span>│           │
-</span></span><span style="display:flex;"><span>│           ├─── all.css  
-</span></span><span style="display:flex;"><span>│           │   
-</span></span><span style="display:flex;"><span>│           └─── all.css.map
-</span></span><span style="display:flex;"><span>│  
-</span></span><span style="display:flex;"><span>├─── src/
-</span></span><span style="display:flex;"><span>│     └─── css/
-</span></span><span style="display:flex;"><span>│           │
-</span></span><span style="display:flex;"><span>│           ├─── all.scss   #未加上前綴詞的檔
-</span></span><span style="display:flex;"><span>│           │
-</span></span><span style="display:flex;"><span>│           └─── helpers
-</span></span><span style="display:flex;"><span>│                 │
-</span></span><span style="display:flex;"><span>│                 └─── _variables.scss
-</span></span><span style="display:flex;"><span>│
-</span></span><span style="display:flex;"><span>├─── gulpfile.js          
-</span></span><span style="display:flex;"><span>├─── package-lock.json    
-</span></span><span style="display:flex;"><span>└─── package.json  
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+<pre tabindex="0"><code>you project
+├─── node_modules/        
+├─── dist/
+│     │
+│     └─── css/
+│           │
+│           ├─── all.css  
+│           │   
+│           └─── all.css.map  #自動生成的map檔
+│  
+├─── src/
+│     └─── css/
+│           │
+│           ├─── all.scss   
+│           │
+│           └─── helpers
+│                 │
+│                 └─── _variables.scss
+│
+├─── gulpfile.js          
+├─── package-lock.json    
+└─── package.json  
+</code></pre>
 
         
           <div class="blog-tags">

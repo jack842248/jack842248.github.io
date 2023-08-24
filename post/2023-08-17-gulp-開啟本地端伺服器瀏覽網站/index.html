@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】開啟本地端伺服器瀏覽網站",
-  "description" : "browser-sync 在專案中打開終端機安裝browser-sync套件 1 $ npm install browser-sync 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); const browserSync = require(\u0026#39;browser-sync\u0026#39;).create(); gulp.task(\u0026#39;sass\u0026#39;, function(){ return gulp .src([\u0026#39;.\/src\/**\/*.scss\u0026#39;,\u0026#39;.\/src\/css\/**\/*.sass\u0026#39;]) .pipe(sass() .on(\u0026#39;error\u0026#39;,sass.logError)) .pipe(gulp.dest(\u0026#39;.\/dist\/css\u0026#39;)); .pipe(browserSync.stream()); }); gulp.task(\u0026#39;copyHTML\u0026#39;, function(){ return gulp .src(\u0026#39;.\/src\/*.html\u0026#39;) .pipe(gulp.dest(\u0026#39;.\/dist\u0026#39;)) .pipe(browserSync.stream()); }); gulp.task(\u0026#39;watch\u0026#39;, function(){ browserSync.",
+  "description" : "browser-sync 在專案中打開終端機安裝browser-sync套件 1 $ npm install browser-sync 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); const browserSync = require(\u0026#39;browser-sync\u0026#39;).create(); gulp.task(\u0026#39;sass\u0026#39;, function(){ return gulp .src([\u0026#39;.\/src\/**\/*.scss\u0026#39;,\u0026#39;.\/src\/css\/**\/*.sass\u0026#39;]) .pipe(sass() .on(\u0026#39;error\u0026#39;,sass.logError)) .pipe(gulp.dest(\u0026#39;.\/dist\/css\u0026#39;)); .pipe(browserSync.stream()); \/\/監控css有無變更 }); gulp.task(\u0026#39;copyHTML\u0026#39;, function(){ return gulp .src(\u0026#39;.\/src\/*.html\u0026#39;) .pipe(gulp.dest(\u0026#39;.\/dist\u0026#39;)) .pipe(browserSync.stream()); \/\/監控html有無變更 }); gulp.",
   "inLanguage" : "zh-tw",
-  "wordCount":  206 ,
+  "wordCount":  189 ,
   "datePublished" : "2023-08-17T00:00:00",
   "dateModified" : "2023-08-17T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;206&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;189&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;206&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;189&nbsp;個字
   
   
   
@@ -386,15 +386,15 @@
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>()
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>,<span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>))
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./dist/css&#39;</span>));
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>());
-</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); <span style="color:#75715e">//監控css有無變更
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>, <span style="color:#66d9ef">function</span>(){ 
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;./src/*.html&#39;</span>) 
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./dist&#39;</span>)) 
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); 
-</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); <span style="color:#75715e">//監控html有無變更
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;watch&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">init</span>({
@@ -426,54 +426,29 @@
 <hr>
 <h1 id="heading-10"></h1>
 <ol start="4">
-<li>執行結果會在dist複製一個index.html裏面css資料夾也會生成all.css檔</li>
+<li>執行結果會在dist複製一個<code>index.html</code>裏面css資料夾也會生成<code>all.css</code>檔</li>
 </ol>
 <h1 id="heading-11"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>you project
-</span></span><span style="display:flex;"><span>├─── node_modules/        
-</span></span><span style="display:flex;"><span>├─── dist/
-</span></span><span style="display:flex;"><span>│     ├─── css/
-</span></span><span style="display:flex;"><span>│     │     │
-</span></span><span style="display:flex;"><span>│     │     └─── all.css
-</span></span><span style="display:flex;"><span>│     │
-</span></span><span style="display:flex;"><span>│     └─── index.html    
-</span></span><span style="display:flex;"><span>│ 
-</span></span><span style="display:flex;"><span>├─── src/
-</span></span><span style="display:flex;"><span>│     ├─── css/
-</span></span><span style="display:flex;"><span>│     │     │
-</span></span><span style="display:flex;"><span>│     │     └─── all.scss
-</span></span><span style="display:flex;"><span>│     │
-</span></span><span style="display:flex;"><span>│     └─── index.html    
-</span></span><span style="display:flex;"><span>│
-</span></span><span style="display:flex;"><span>├─── gulpfile.js          
-</span></span><span style="display:flex;"><span>├─── package-lock.json    
-</span></span><span style="display:flex;"><span>└─── package.json   
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-12"></h1>
+<pre tabindex="0"><code>you project
+├─── node_modules/        
+├─── dist/
+│     ├─── css/
+│     │     │
+│     │     └─── all.css
+│     │
+│     └─── index.html    
+│ 
+├─── src/
+│     ├─── css/
+│     │     │
+│     │     └─── all.scss
+│     │
+│     └─── index.html    
+│
+├─── gulpfile.js          
+├─── package-lock.json    
+└─── package.json   
+</code></pre><h1 id="heading-12"></h1>
 <hr>
 <h1 id="heading-13"></h1>
 <ol start="5">

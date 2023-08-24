@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】將JavaScript整合成穩定版本",
-  "description" : "gulp-babel 在專案中打開終端機安裝套件 gulp-babel： 1 $ npm install gulp-babelpreset-env @babel\/core： 1 $ npm install @babel\/core @babel\/preset-env： 1 $ npm install @babel\/preset-env @開頭的套件，表示這是一個由特定組織或作者維護的套件\n在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 const gulp = require(\u0026#39;gulp\u0026#39;); const babel = require(\u0026#39;gulp-babel\u0026#39;); gulp.task(\u0026#39;babel\u0026#39;, function(){ return gulp .src(\u0026#39;.\/src\/js\/*.js\u0026#39;) \/\/引用js檔案來源 .pipe( babel( { preset:[\u0026#39;@babel\/env\u0026#39;] \/\/使用預設環境編譯 } ) ) .pipe(gulp.dest(\u0026#39;.\/dist\/js\u0026#39;)) \/\/js編譯完成路徑 }); presets : 陣列，用於指定要使用的Babel預設集。預設集是一組預先配置好的轉換規則的集合，用於實現特定的JavaScript轉譯。例如，@babel\/preset-env 可以根據瀏覽器的兼容性自動選擇適當的轉譯規則。\n在終端機執行指令 1 $ gulp babel 執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯後生成到dist裡變成穩定的all.",
+  "description" : "gulp-babel 在專案中打開終端機安裝套件 gulp-babel： 1 $ npm install gulp-babelpreset-env @babel\/core： 1 $ npm install @babel\/core @babel\/preset-env： 1 $ npm install @babel\/preset-env @開頭的套件，表示這是一個由特定組織或作者維護的套件\n在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 const gulp = require(\u0026#39;gulp\u0026#39;); const babel = require(\u0026#39;gulp-babel\u0026#39;); gulp.task(\u0026#39;babel\u0026#39;, function(){ return gulp .src(\u0026#39;.\/src\/js\/*.js\u0026#39;) \/\/引用js檔案來源 .pipe( babel({ preset:[\u0026#39;@babel\/env\u0026#39;] \/\/使用預設環境編譯 }) ) .pipe(gulp.dest(\u0026#39;.\/dist\/js\u0026#39;)) \/\/js編譯完成路徑 }); presets : 陣列，用於指定要使用的Babel預設集。預設集是一組預先配置好的轉換規則的集合，用於實現特定的JavaScript轉譯。例如，@babel\/preset-env 可以根據瀏覽器的兼容性自動選擇適當的轉譯規則。\n在終端機執行指令 1 $ gulp babel 執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯後生成到dist裡變成穩定的all.js you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── js\/ │ │ │ └─── all.",
   "inLanguage" : "zh-tw",
-  "wordCount":  172 ,
+  "wordCount":  156 ,
   "datePublished" : "2023-08-13T00:00:00",
   "dateModified" : "2023-08-13T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;172&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;156&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;172&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;156&nbsp;個字
   
   
   
@@ -390,8 +390,6 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
@@ -401,11 +399,9 @@
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;./src/js/*.js&#39;</span>) <span style="color:#75715e">//引用js檔案來源
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">babel</span>(
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">preset</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#39;@babel/env&#39;</span>] <span style="color:#75715e">//使用預設環境編譯
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        }
-</span></span><span style="display:flex;"><span>      )
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">babel</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">preset</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#39;@babel/env&#39;</span>] <span style="color:#75715e">//使用預設環境編譯
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      })
 </span></span><span style="display:flex;"><span>    )  
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./dist/js&#39;</span>)) <span style="color:#75715e">//js編譯完成路徑
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
@@ -435,57 +431,39 @@
 <li>執行結果會將src裡的<code>所有js檔(ES5、ES6、ES7)</code>編譯後生成到dist裡變成穩定的<code>all.js</code></li>
 </ol>
 <h1 id="heading-18"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>you project
-</span></span><span style="display:flex;"><span>├─── node_modules/        
-</span></span><span style="display:flex;"><span>├─── dist/
-</span></span><span style="display:flex;"><span>│     │
-</span></span><span style="display:flex;"><span>│     └─── js/
-</span></span><span style="display:flex;"><span>│           │
-</span></span><span style="display:flex;"><span>│           └─── all.js   #編譯完成的js檔
-</span></span><span style="display:flex;"><span>│   
-</span></span><span style="display:flex;"><span>├─── src/
-</span></span><span style="display:flex;"><span>│     └─── js/
-</span></span><span style="display:flex;"><span>│           │
-</span></span><span style="display:flex;"><span>│           └─── all.js   #開發時編輯用的js檔
-</span></span><span style="display:flex;"><span>│     
-</span></span><span style="display:flex;"><span>├─── gulpfile.js          
-</span></span><span style="display:flex;"><span>├─── package-lock.json    
-</span></span><span style="display:flex;"><span>└─── package.json  
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-19"></h1>
+<pre tabindex="0"><code>you project
+├─── node_modules/        
+├─── dist/
+│     │
+│     └─── js/
+│           │
+│           └─── all.js   #編譯完成的js檔
+│   
+├─── src/
+│     └─── js/
+│           │
+│           └─── all.js   #開發時編輯用的js檔
+│     
+├─── gulpfile.js          
+├─── package-lock.json    
+└─── package.json  
+</code></pre><h1 id="heading-19"></h1>
 <hr>
 <h1 id="heading-20"></h1>
 <ol start="5">
-<li>回到index.html在<code>&lt;body&gt;</code>最後面新增<code>&lt;script&gt;</code></li>
+<li>回到<code>index.html</code>引入js</li>
 </ol>
 <h1 id="heading-21"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;js/all.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;js/all.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-22"></h1>

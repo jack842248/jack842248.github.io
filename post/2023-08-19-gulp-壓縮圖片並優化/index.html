@@ -59,7 +59,7 @@
   "headline": "【gulp】壓縮圖片並優化",
   "description" : "gulp-imagemin 在專案中打開終端機安裝gulp-imagemin套件 1 $ npm install gulp-imagemin 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 const gulp = require(\u0026#39;gulp\u0026#39;); const imagemin = require(\u0026#39;gulp-imagemin\u0026#39;); gulp.task(\u0026#39;imagemin\u0026#39;, function(){ return gulp .src(\u0026#39;src\/img\/*\u0026#39;) .pipe(imagemin()) \/\/執行優化(壓縮) .pipe(gulp.dest(\u0026#39;dist\/img\u0026#39;)); }); 在終端機執行指令 1 $ gulp imagemin 執行後會自動壓縮img裡的圖片，到dist裡的img資料夾裡 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 you project ├─── node_modules\/ ├─── dist\/ │ └─── img\/ │ │ │ └─── logo.svg # 壓縮過的 │ ├─── src\/ │ └─── img\/ │ │ │ └─── logo.",
   "inLanguage" : "zh-tw",
-  "wordCount":  421 ,
+  "wordCount":  216 ,
   "datePublished" : "2023-08-19T00:00:00",
   "dateModified" : "2023-08-19T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;421&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;216&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;421&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;216&nbsp;個字
   
   
   
@@ -428,22 +428,55 @@
 </div><h1 id="heading-12"></h1>
 <hr>
 <h1 id="heading-13"></h1>
-<ol start="5">
-<li>設定JPEG圖片<code>imagemin-mozjpeg</code>相關參數
 <ul>
-<li><code>quality</code> : 數字，指定優化品質。範圍是0到100，數字越高，品質越好
+<li><code>imagemin-mozjpeg</code>設定JPEG圖片
 <ul>
-<li><code>quality</code> : <code>0</code> 表示最低的壓縮品質，圖片品質最差</li>
-<li><code>quality</code> : <code>100</code> 表示最高的壓縮品質，圖片品質最佳</li>
+<li><code>quality</code> 壓縮品質:
+<ul>
+<li><code>0</code> : 壓縮最大，品質最差</li>
+<li><code>75</code> : 預設值</li>
+<li><code>100</code> : 無壓縮，品質最好</li>
 </ul>
 </li>
-<li><code>progressive</code> : 布林值，指定是否生成漸進式 JPEG圖片</li>
-<li><code>targa</code> : 布林值，指定是否支援Targa圖片格式</li>
-<li><code>revert</code> : 布林值，指定是否恢復圖片中的Exif資訊</li>
-<li><code>fastCrush</code> : 布林值，指定是否使用快速優化方法</li>
+<li><code>progressive</code> : 布林值，圖像在加載時會先顯示模糊的預覽，然後逐漸增加清晰度(預設值true)</li>
 </ul>
 </li>
-</ol>
+<li><code>imagemin-optipng</code>設定PNG圖片的
+<ul>
+<li><code>optimizationLevel</code>優化級別:
+<ul>
+<li><code>0</code> : 沒有優化</li>
+<li><code>1</code> : 基本的優化，移除不必要的元數據</li>
+<li><code>2</code> : 輕微的優化，更進一步優化掃描線過濾和設置標誌(預設值)</li>
+<li><code>3</code> : 預設級別，包括輕微的壓縮，但不會影響圖片品質</li>
+<li><code>4</code> : 更進一步的壓縮和剝離</li>
+<li><code>5</code> : 更強的壓縮和剝離</li>
+<li><code>6</code> : 最強的壓縮，可能會稍微影響圖片品質</li>
+<li><code>7</code> : 最強的壓縮，可能會明顯影響圖片品質</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>imagemin-gifsicle</code>設定GIF圖片
+<ul>
+<li><code>interlaced</code> : 布林值，先顯示大致輪廓，然後逐漸填充細節(預設值false)</li>
+</ul>
+</li>
+<li><code>imagemin-svgo</code>設定SVG圖片
+<ul>
+<li><code>plugins</code> : 陣列，自訂應用的優化插件:
+<ul>
+<li><code>cleanupIDs</code> : 布林值，用於控制是否清理SVG中的無用的ID(預設值true)</li>
+<li><code>removeViewBox</code> : 布林值，用於控制是否刪除SVG中的viewBox屬性(預設值true)</li>
+<li><code>removeUselessStrokeAndFill</code> : 布林值，用於刪除無用的stroke和fill屬性(預設值true)</li>
+<li><code>removeDimensions</code> : 布林值，用於刪除SVG中的width和height屬性(預設值false)</li>
+<li><code>removeUselessDefs</code> : 布林值，用於刪除SVG中無用的<!-- raw HTML omitted -->元素(預設值true)</li>
+<li><code>convertColors</code> : 布林值，用於嘗試將顏色值轉換為合適的CSS顏色名稱如果適用(預設值true)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h1 id="heading-14"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -463,197 +496,6 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">imagemin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-imagemin&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mozjpeg</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;imagemin-mozjpeg&#39;</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;imagemin&#39;</span>, <span style="color:#66d9ef">function</span>(){
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/img/*&#39;</span>)
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">imagemin</span>([
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">mozjpeg</span>({
-</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">quality</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">75</span>, <span style="color:#75715e">// 壓縮品質
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        }),
-</span></span><span style="display:flex;"><span>      ])
-</span></span><span style="display:flex;"><span>    )
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;public/img&#39;</span>));
-</span></span><span style="display:flex;"><span>});
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-15"></h1>
-<hr>
-<h1 id="heading-16"></h1>
-<ol start="6">
-<li>設定PNG圖片<code>imagemin-optipng</code>相關參數
-<ul>
-<li><code>optimizationLevel</code> : 數字，指定優化級別。範圍是0到7，數字越高，優化越多，但可能會花費更多時間
-<ul>
-<li><code>optimizationLevel</code> : <code>0</code> 沒有優化</li>
-<li><code>optimizationLevel</code> : <code>1</code> 基本的優化，移除不必要的元數據</li>
-<li><code>optimizationLevel</code> : <code>2</code> 輕微的優化，更進一步優化掃描線過濾和設置標誌</li>
-<li><code>optimizationLevel</code> : <code>3</code> 預設級別，包括輕微的壓縮，但不會影響圖片品質</li>
-<li><code>optimizationLevel</code> : <code>4</code> 更進一步的壓縮和剝離</li>
-<li><code>optimizationLevel</code> : <code>5</code> 更強的壓縮和剝離</li>
-<li><code>optimizationLevel</code> : <code>6</code> 最強的壓縮，可能會稍微影響圖片品質</li>
-<li><code>optimizationLevel</code> : <code>7</code> 最強的壓縮，可能會明顯影響圖片品質</li>
-</ul>
-</li>
-<li><code>bitDepthReduction</code> : 布林值，指定是否進行位深度減少的優化</li>
-<li><code>colorTypeReduction</code> : 布林值，指定是否進行色彩類型減少的優化</li>
-<li><code>paletteReduction</code> : 布林值，指定是否進行調色板減少的優化</li>
-<li><code>dithering</code> : 字串，指定使用的抖動算法。可選值有&rsquo;none&rsquo;、&lsquo;floyd&rsquo;和&rsquo;diffusion&rsquo;</li>
-<li><code>posterize</code> : 數字，指定色彩的色階數目。</li>
-</ul>
-</li>
-</ol>
-<h1 id="heading-17"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">imagemin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-imagemin&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mozjpeg</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;imagemin-mozjpeg&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">optipng</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;imagemin-optipng&#39;</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;imagemin&#39;</span>, <span style="color:#66d9ef">function</span>(){
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/img/*&#39;</span>)
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">imagemin</span>([
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">mozjpeg</span>({
-</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">quality</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">75</span>
-</span></span><span style="display:flex;"><span>        }),
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">optipng</span>({
-</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">optimizationLevel</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> <span style="color:#75715e">//優化級別
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        })
-</span></span><span style="display:flex;"><span>      ])
-</span></span><span style="display:flex;"><span>    )
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;public/img&#39;</span>));
-</span></span><span style="display:flex;"><span>});
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-18"></h1>
-<hr>
-<h1 id="heading-19"></h1>
-<ol start="7">
-<li>設定SVG圖片<code>imagemin-svgo</code>相關參數
-<ul>
-<li><code>multipass</code> : 布林值，指定是否執行多次優化通過以獲得更佳的結果。</li>
-<li><code>datauri</code> : 字串，用於將小圖片嵌入到SVG中。可選值為&rsquo;base64&rsquo;或&rsquo;enc'</li>
-<li><code>floatPrecision</code> : 數字，指定小數點的精確度</li>
-<li><code>js2svg</code> : 物件，自定義js2svg設定，用於將JSON樹轉換為SVG</li>
-<li><code>plugins</code> : 這個屬性是用來設定插件的。每個插件都由一個物件表示，其中包括<code>name</code>和<code>active</code>屬性，用於指定插件的名稱和是否啟用</li>
-</ul>
-</li>
-</ol>
-<h1 id="heading-20"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">imagemin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-imagemin&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mozjpeg</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;imagemin-mozjpeg&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">optipng</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;imagemin-optipng&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">optipng</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;imagemin-svgo&#39;</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;imagemin&#39;</span>, <span style="color:#66d9ef">function</span>(){
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/img/*&#39;</span>)
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">imagemin</span>([
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">mozjpeg</span>({
-</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">quality</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">75</span>
-</span></span><span style="display:flex;"><span>        }),
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">optipng</span>({
-</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">optimizationLevel</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> <span style="color:#75715e">//優化級別
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        }),
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">svgo</span>({
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        })
-</span></span><span style="display:flex;"><span>      ])
-</span></span><span style="display:flex;"><span>    )
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;public/img&#39;</span>));
-</span></span><span style="display:flex;"><span>});
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-21"></h1>
-<hr>
-<h1 id="heading-22"></h1>
-<ol start="8">
-<li>設定GIF圖片<code>imagemin-gifsicle</code>相關參數
-<ul>
-<li><code>interlaced</code> : <code>true</code> 將GIF圖片進行交錯處理，以實現漸進式渲染</li>
-</ul>
-</li>
-</ol>
-<h1 id="heading-23"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
@@ -664,30 +506,29 @@
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">imagemin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-imagemin&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mozjpeg</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;imagemin-mozjpeg&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">optipng</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;imagemin-optipng&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">optipng</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;imagemin-svgo&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">optipng</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;imagemin-gifsicle&#39;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;imagemin&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/img/*&#39;</span>)
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">imagemin</span>([
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">mozjpeg</span>({
-</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">quality</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">75</span>
-</span></span><span style="display:flex;"><span>        }),
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">optipng</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">imagemin</span>.<span style="color:#a6e22e">mozjpeg</span>({
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">quality</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">80</span>, <span style="color:#75715e">//壓縮品質
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        }),
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">imagemin</span>.<span style="color:#a6e22e">optipng</span>({
 </span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">optimizationLevel</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> <span style="color:#75715e">//優化級別
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        })
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        }),
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">imagemin</span>.<span style="color:#a6e22e">gifsicle</span>({
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">interlaced</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> <span style="color:#75715e">//漸進式渲染
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        }),
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">imagemin</span>.<span style="color:#a6e22e">gifsicle</span>()
 </span></span><span style="display:flex;"><span>      ])
 </span></span><span style="display:flex;"><span>    )
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;public/img&#39;</span>));
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-24"></h1>
-
+</div>
 
         
           <div class="blog-tags">
