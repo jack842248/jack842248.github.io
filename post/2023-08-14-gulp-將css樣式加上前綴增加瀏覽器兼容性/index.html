@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】將css樣式加上前綴增加瀏覽器兼容性",
-  "description" : "gulp-postcss 在專案中打開終端機安裝套件 gulp-postcss: 1 $ npm install gulp-postcss autoprefixer: 1 $ npm install autoprefixer cssnano: 1 $ npm install cssnano 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); const postcss = require(\u0026#39;gulp-postcss\u0026#39;); const autoprefixer = require(\u0026#39;autoprefixer\u0026#39;); const cssnano = require(\u0026#39;cssnano\u0026#39;); gulp.task(\u0026#39;sass\u0026#39;, function(){ return gulp .src([\u0026#39;.\/src\/**\/*.scss\u0026#39;,\u0026#39;.\/src\/css\/**\/*.sass\u0026#39;]) .pipe(sass() .on(\u0026#39;error\u0026#39;,sass.logError)) .pipe( postcss([ autoprefixer(), \/\/將編譯完成的CSS做PostCSS處理，確保你的CSS在不同瀏覽器中正確顯示 cssnano() \/\/啟用cssnano插件，去除不必要的空格、注釋從而壓縮和最小化CSS ]) ) .",
+  "description" : "gulp-postcss 在專案中打開終端機安裝gulp-postcss、autoprefixer、cssnano、gulp-sass、sass套件(版本@1.62.0) 1 $ npm install gulp-postcss autoprefixer cssnano gulp-sass sass@1.62.0 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); const postcss = require(\u0026#39;gulp-postcss\u0026#39;); const autoprefixer = require(\u0026#39;autoprefixer\u0026#39;); const cssnano = require(\u0026#39;cssnano\u0026#39;); gulp.task(\u0026#39;sass\u0026#39;, function(){ return gulp .src(\u0026#39;src\/scss\/**\/*.scss\u0026#39;) .pipe(sass() .on(\u0026#39;error\u0026#39;,sass.logError)) .pipe( postcss([ autoprefixer(), \/\/使用autoprefixer套件，將編譯完成的CSS做PostCSS處理，確保你的CSS在不同瀏覽器中正確顯示 cssnano() \/\/使用cssnano套件，去除不必要的空格、注釋從而壓縮和最小化CSS ]) ) .pipe(gulp.dest(\u0026#39;dist\/css\u0026#39;)); }); 在終端機執行指令 1 $ gulp sass 執行結果會將css樣式加上前綴詞-webkit-讓瀏覽器兼容性更好 you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── css\/ │ │ │ └─── all.",
   "inLanguage" : "zh-tw",
-  "wordCount":  350 ,
+  "wordCount":  349 ,
   "datePublished" : "2023-08-14T00:00:00",
   "dateModified" : "2023-08-14T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;350&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;349&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;350&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;349&nbsp;個字
   
   
   
@@ -325,54 +325,24 @@
 <h2 id="gulp-postcss">gulp-postcss</h2>
 <h1 id="heading-1"></h1>
 <ol>
-<li>在專案中打開終端機安裝套件</li>
+<li>在專案中打開終端機安裝<code>gulp-postcss</code>、<code>autoprefixer</code>、<code>cssnano</code>、<code>gulp-sass</code>、<code>sass</code>套件(版本@1.62.0)</li>
 </ol>
 <h1 id="heading-2"></h1>
-<ul>
-<li>gulp-postcss:</li>
-</ul>
-<h1 id="heading-3"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install gulp-postcss
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install gulp-postcss autoprefixer cssnano gulp-sass sass@1.62.0
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-4"></h1>
-<ul>
-<li>autoprefixer:</li>
-</ul>
-<h1 id="heading-5"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install autoprefixer
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-6"></h1>
-<ul>
-<li>cssnano:</li>
-</ul>
-<h1 id="heading-7"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install cssnano
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-8"></h1>
+</div><h1 id="heading-3"></h1>
 <hr>
-<h1 id="heading-9"></h1>
+<h1 id="heading-4"></h1>
 <ol start="2">
-<li>在<code>gulpfile.js</code>新增程式碼</li>
+<li>在gulpfile.js新增程式碼</li>
 </ol>
-<h1 id="heading-10"></h1>
+<h1 id="heading-5"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -404,26 +374,26 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>([<span style="color:#e6db74">&#39;./src/**/*.scss&#39;</span>,<span style="color:#e6db74">&#39;./src/css/**/*.sass&#39;</span>])
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/scss/**/*.scss&#39;</span>)
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>()
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>,<span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>))
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">postcss</span>([ 
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">autoprefixer</span>(), <span style="color:#75715e">//將編譯完成的CSS做PostCSS處理，確保你的CSS在不同瀏覽器中正確顯示
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">cssnano</span>() <span style="color:#75715e">//啟用cssnano插件，去除不必要的空格、注釋從而壓縮和最小化CSS
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">autoprefixer</span>(), <span style="color:#75715e">//使用autoprefixer套件，將編譯完成的CSS做PostCSS處理，確保你的CSS在不同瀏覽器中正確顯示
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">cssnano</span>() <span style="color:#75715e">//使用cssnano套件，去除不必要的空格、注釋從而壓縮和最小化CSS
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      ])
 </span></span><span style="display:flex;"><span>    )
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./dist/css&#39;</span>));
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/css&#39;</span>));
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-11"></h1>
+</div><h1 id="heading-6"></h1>
 <hr>
-<h1 id="heading-12"></h1>
+<h1 id="heading-7"></h1>
 <ol start="3">
 <li>在終端機執行指令</li>
 </ol>
-<h1 id="heading-13"></h1>
+<h1 id="heading-8"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -432,13 +402,13 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ gulp sass
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-14"></h1>
+</div><h1 id="heading-9"></h1>
 <hr>
-<h1 id="heading-15"></h1>
+<h1 id="heading-10"></h1>
 <ol start="4">
 <li>執行結果會將css樣式加上前綴詞<code>-webkit-</code>讓瀏覽器兼容性更好</li>
 </ol>
-<h1 id="heading-16"></h1>
+<h1 id="heading-11"></h1>
 <pre tabindex="0"><code>you project
 ├─── node_modules/        
 ├─── dist/
@@ -448,20 +418,20 @@
 │           └─── all.css    #加上前綴詞的css檔
 │   
 ├─── src/
-│     └─── css/
+│     └─── scss/
 │           │
 │           └─── all.scss   #未加上前綴詞的檔
 │     
 ├─── gulpfile.js          
 ├─── package-lock.json    
 └─── package.json  
-</code></pre><h1 id="heading-17"></h1>
+</code></pre><h1 id="heading-12"></h1>
 <hr>
-<h1 id="heading-18"></h1>
+<h1 id="heading-13"></h1>
 <ol start="5">
-<li>回到<code>index.html</code>引入css</li>
+<li>回到index.html引入css</li>
 </ol>
-<h1 id="heading-19"></h1>
+<h1 id="heading-14"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -474,13 +444,13 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-20"></h1>
+</div><h1 id="heading-15"></h1>
 <hr>
-<h1 id="heading-21"></h1>
+<h1 id="heading-16"></h1>
 <ol start="6">
-<li>回到<code>gulpfile.js</code>啟用<code>cssnano</code>高級轉換組件</li>
+<li>回到gulpfile.js啟用<code>cssnano</code>高級轉換組件</li>
 </ol>
-<h1 id="heading-22"></h1>
+<h1 id="heading-17"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -489,7 +459,7 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install cssnano-preset-advanced
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-23"></h1>
+</div><h1 id="heading-18"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -523,7 +493,7 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>([<span style="color:#e6db74">&#39;./src/**/*.scss&#39;</span>,<span style="color:#e6db74">&#39;./src/css/**/*.sass&#39;</span>])
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/scss/**/*.scss&#39;</span>)
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>()
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>,<span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>))
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(
@@ -534,17 +504,17 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        })
 </span></span><span style="display:flex;"><span>      ])
 </span></span><span style="display:flex;"><span>    )
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./dist/css&#39;</span>));
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/css&#39;</span>));
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-24"></h1>
+</div><h1 id="heading-19"></h1>
 <hr>
-<h1 id="heading-25"></h1>
+<h1 id="heading-20"></h1>
 <ol start="7">
-<li>啟用<code>postcss-preset-env</code>兼容性自動選擇插件</li>
+<li>啟用<code>postcss-preset-env</code>套件</li>
 </ol>
-<h1 id="heading-26"></h1>
+<h1 id="heading-21"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -553,7 +523,7 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>npm install postcss-preset-env
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-27"></h1>
+</div><h1 id="heading-22"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -588,17 +558,17 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">postcss</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-postcss&#39;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">autoprefixer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;autoprefixer&#39;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cssnano</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;cssnano&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cssnano</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;postcss-preset-env&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">postcssPresetEnv</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;postcss-preset-env&#39;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>([<span style="color:#e6db74">&#39;./src/**/*.scss&#39;</span>,<span style="color:#e6db74">&#39;./src/css/**/*.sass&#39;</span>])
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/scss/**/*.scss&#39;</span>)
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>()
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>,<span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>))
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">postcss</span>(
 </span></span><span style="display:flex;"><span>        [ 
-</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">postcssPresetEnv</span>(), <span style="color:#75715e">//啟用postcss-preset-env插件
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">postcssPresetEnv</span>(), <span style="color:#75715e">//兼容性自動選擇插件
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          <span style="color:#a6e22e">autoprefixer</span>(),
 </span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">cssnano</span>({
 </span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">preset</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;advanced&#34;</span>
@@ -606,17 +576,17 @@
 </span></span><span style="display:flex;"><span>        ]
 </span></span><span style="display:flex;"><span>      )
 </span></span><span style="display:flex;"><span>    )
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./dist/css&#39;</span>));
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/css&#39;</span>));
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-28"></h1>
+</div><h1 id="heading-23"></h1>
 <hr>
-<h1 id="heading-29"></h1>
+<h1 id="heading-24"></h1>
 <ol start="8">
-<li>啟用<code>postcss-flexbugs-fixes</code>修復Flexbox在不同瀏覽器中的一些兼容性問題</li>
+<li>啟用<code>postcss-flexbugs-fixes</code>套件</li>
 </ol>
-<h1 id="heading-30"></h1>
+<h1 id="heading-25"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -625,7 +595,7 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install postcss-preset-env
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-31"></h1>
+</div><h1 id="heading-26"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -653,6 +623,8 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
@@ -660,17 +632,17 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">postcss</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-postcss&#39;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">autoprefixer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;autoprefixer&#39;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cssnano</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;cssnano&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cssnano</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;postcss-preset-env&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cssnano</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;postcss-flexbugs-fixes&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">postcssPresetEnv</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;postcss-preset-env&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">postcssFlexbugsFixes</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;postcss-flexbugs-fixes&#39;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>([<span style="color:#e6db74">&#39;./src/**/*.scss&#39;</span>,<span style="color:#e6db74">&#39;./src/css/**/*.sass&#39;</span>])
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/scss/**/*.scss&#39;</span>)
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>()
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>,<span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>))
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">postcss</span>([ 
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">flexbugsFixes</span>(), <span style="color:#75715e">//啟用postcss-flexbugs-fixes插件
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">flexbugsFixes</span>(), <span style="color:#75715e">//修復Flexbox在不同瀏覽器中的一些兼容性問題
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">postcssPresetEnv</span>(), 
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">autoprefixer</span>(),
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">cssnano</span>({
@@ -678,8 +650,25 @@
 </span></span><span style="display:flex;"><span>        })
 </span></span><span style="display:flex;"><span>      ])
 </span></span><span style="display:flex;"><span>    )
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./dist/css&#39;</span>));
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/css&#39;</span>));
 </span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;default&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;sass&#39;</span>));
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-27"></h1>
+<hr>
+<h1 id="heading-28"></h1>
+<ol start="9">
+<li>最後，在終端機執行<code>gulp</code>即可完成任務</li>
+</ol>
+<h1 id="heading-29"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ gulp
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
@@ -759,6 +748,8 @@
                   <ul>
                 
                 
+                    <li><a href="/post/2023-08-20-gulp-%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87%E4%B8%A6%E5%84%AA/">【gulp】壓縮圖片並優化</a></li>
+                
                     <li><a href="/post/2023-08-19-gulp-%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87%E4%B8%A6%E5%84%AA%E5%8C%96/">【gulp】壓縮圖片並優化</a></li>
                 
                     <li><a href="/post/2023-08-18-gulp-%E8%87%AA%E5%8B%95%E5%88%AA%E9%99%A4%E4%B8%8A%E4%B8%80%E6%AC%A1%E7%9A%84%E7%B7%A8%E8%AD%AF%E7%B5%90%E6%9E%9C/">【gulp】自動刪除上一次的編譯結果</a></li>
@@ -766,8 +757,6 @@
                     <li><a href="/post/2023-08-17-gulp-%E9%96%8B%E5%95%9F%E6%9C%AC%E5%9C%B0%E7%AB%AF%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%80%8F%E8%A6%BD%E7%B6%B2%E7%AB%99/">【gulp】開啟本地端伺服器瀏覽網站</a></li>
                 
                     <li><a href="/post/2023-08-16-gulp-%E5%B0%87%E5%BC%95%E5%85%A5%E7%9A%84js%E5%A5%97%E4%BB%B6%E5%90%88%E4%BD%B5%E6%88%90%E4%B8%80%E5%80%8B%E6%AA%94%E6%A1%88/">【gulp】將引入的js套件合併成一個檔案</a></li>
-                
-                    <li><a href="/post/2023-08-15-gulp-%E7%94%9F%E6%88%90%E7%A8%8B%E5%BC%8F%E7%A2%BCmap%E4%BB%A5%E5%88%A9%E9%99%A4%E9%8C%AF%E7%B7%A8%E8%AD%AF/">【gulp】生成程式碼map以利除錯編譯</a></li>
                 
               </ul>
 

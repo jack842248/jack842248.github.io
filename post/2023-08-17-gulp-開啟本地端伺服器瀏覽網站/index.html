@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】開啟本地端伺服器瀏覽網站",
-  "description" : "browser-sync 在專案中打開終端機安裝browser-sync套件 1 $ npm install browser-sync 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); const browserSync = require(\u0026#39;browser-sync\u0026#39;).create(); gulp.task(\u0026#39;sass\u0026#39;, function(){ return gulp .src([\u0026#39;.\/src\/**\/*.scss\u0026#39;,\u0026#39;.\/src\/css\/**\/*.sass\u0026#39;]) .pipe(sass() .on(\u0026#39;error\u0026#39;,sass.logError)) .pipe(gulp.dest(\u0026#39;.\/dist\/css\u0026#39;)); .pipe(browserSync.stream()); \/\/監控css有無變更 }); gulp.task(\u0026#39;copyHTML\u0026#39;, function(){ return gulp .src(\u0026#39;.\/src\/*.html\u0026#39;) .pipe(gulp.dest(\u0026#39;.\/dist\u0026#39;)) .pipe(browserSync.stream()); \/\/監控html有無變更 }); gulp.",
+  "description" : "browser-sync 在專案中打開終端機安裝browser-sync、gulp-sass、sass套件(版本@1.62.0) 1 $ npm install browser-sync gulp-sass sass@1.62.0 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); const browserSync = require(\u0026#39;browser-sync\u0026#39;).create(); gulp.task(\u0026#39;copyHTML\u0026#39;, function(){ return gulp .src(\u0026#39;src\/*.html\u0026#39;) .pipe(gulp.dest(\u0026#39;dist\u0026#39;)) .pipe(browserSync.stream()); \/\/更新到瀏覽器 }); gulp.task(\u0026#39;sass\u0026#39;, function(){ return gulp .src(\u0026#39;src\/scss\/**\/*.scss\u0026#39;) .pipe(sass() .on(\u0026#39;error\u0026#39;,sass.logError)) .pipe(gulp.dest(\u0026#39;dist\/css\u0026#39;)); .pipe(browserSync.stream()); \/\/更新到瀏覽器 }); gulp.",
   "inLanguage" : "zh-tw",
-  "wordCount":  189 ,
+  "wordCount":  241 ,
   "datePublished" : "2023-08-17T00:00:00",
   "dateModified" : "2023-08-17T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -257,10 +257,10 @@
   <i class="fas fa-calendar"></i>&nbsp;發表於 2023-08-17
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;189&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;241&nbsp;個字
   
   
   
@@ -296,10 +296,10 @@
   <i class="fas fa-calendar"></i>&nbsp;發表於 2023-08-17
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;189&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;241&nbsp;個字
   
   
   
@@ -325,7 +325,7 @@
 <h2 id="browser-sync">browser-sync</h2>
 <h1 id="heading-1"></h1>
 <ol>
-<li>在專案中打開終端機安裝<code>browser-sync</code>套件</li>
+<li>在專案中打開終端機安裝<code>browser-sync</code>、<code>gulp-sass</code>、<code>sass</code>套件(版本@1.62.0)</li>
 </ol>
 <h1 id="heading-2"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -333,14 +333,14 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install browser-sync
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install browser-sync gulp-sass sass@1.62.0
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-3"></h1>
 <hr>
 <h1 id="heading-4"></h1>
 <ol start="2">
-<li>在<code>gulpfile.js</code>新增程式碼</li>
+<li>在gulpfile.js新增程式碼</li>
 </ol>
 <h1 id="heading-5"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -380,30 +380,30 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-sass&#39;</span>); 
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">browserSync</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;browser-sync&#39;</span>).<span style="color:#a6e22e">create</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>([<span style="color:#e6db74">&#39;./src/**/*.scss&#39;</span>,<span style="color:#e6db74">&#39;./src/css/**/*.sass&#39;</span>])
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>()
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>,<span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>))
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./dist/css&#39;</span>));
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); <span style="color:#75715e">//監控css有無變更
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>, <span style="color:#66d9ef">function</span>(){ 
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;./src/*.html&#39;</span>) 
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./dist&#39;</span>)) 
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); <span style="color:#75715e">//監控html有無變更
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/*.html&#39;</span>) 
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist&#39;</span>)) 
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); <span style="color:#75715e">//更新到瀏覽器
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/scss/**/*.scss&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>,<span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>))
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/css&#39;</span>));
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); <span style="color:#75715e">//更新到瀏覽器
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;watch&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">init</span>({
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">server</span><span style="color:#f92672">:</span> { <span style="color:#75715e">//配置伺服器選項
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">baseDir</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./dist&#39;</span>, <span style="color:#75715e">//指定伺服器的基本目錄
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">server</span><span style="color:#f92672">:</span> { 
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">baseDir</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;dist&#39;</span>, <span style="color:#75715e">//指定伺服器的基本目錄
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    },
 </span></span><span style="display:flex;"><span>  });
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;./src/*.html&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>));
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;./src/**/*.scss&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;sass&#39;</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;src/*.html&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;src/scss/**/*.scss&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;sass&#39;</span>));
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
@@ -426,7 +426,7 @@
 <hr>
 <h1 id="heading-10"></h1>
 <ol start="4">
-<li>執行結果會在dist複製一個<code>index.html</code>裏面css資料夾也會生成<code>all.css</code>檔</li>
+<li>執行結果會在dist複製出一個<code>index.html</code>，dist/css會生成<code>all.css</code>檔</li>
 </ol>
 <h1 id="heading-11"></h1>
 <pre tabindex="0"><code>you project
@@ -439,7 +439,7 @@
 │     └─── index.html    
 │ 
 ├─── src/
-│     ├─── css/
+│     ├─── scss/
 │     │     │
 │     │     └─── all.scss
 │     │
@@ -452,30 +452,16 @@
 <hr>
 <h1 id="heading-13"></h1>
 <ol start="5">
-<li>串連整個gulp.task任務，讓渲染瀏覽器時，能得到最新的畫面</li>
-</ol>
-<h1 id="heading-14"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;default&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>, <span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#e6db74">&#39;watch&#39;</span>));
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-15"></h1>
-<hr>
-<h1 id="heading-16"></h1>
-<ol start="6">
-<li>回到<code>gulpfile.js</code>設定其他相關屬性
+<li>回到gulpfile.js設定其他屬性
 <ul>
-<li><code>port</code> : 數字，指定代理伺服器的埠號</li>
-<li><code>browser</code> : 字串，指定在哪個瀏覽器中打開網站</li>
-<li><code>open</code> : 布林值，指定是否自動打開瀏覽器</li>
+<li><code>port</code>: 數字，指定代理伺服器的埠號</li>
+<li><code>reloadDelay</code>: 數字，重新加載延遲時間</li>
+<li><code>browser</code>: 字串，指定在哪個瀏覽器中打開網站</li>
+<li><code>open</code>: 布林值，指定是否自動打開瀏覽器</li>
 </ul>
 </li>
 </ol>
-<h1 id="heading-17"></h1>
+<h1 id="heading-14"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -491,21 +477,80 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;watch&#39;</span>, <span style="color:#66d9ef">function</span>(){
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-sass&#39;</span>); 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">browserSync</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;browser-sync&#39;</span>).<span style="color:#a6e22e">create</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>, <span style="color:#66d9ef">function</span>(){ 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/*.html&#39;</span>) 
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist&#39;</span>)) 
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); 
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/scss/**/*.scss&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>,<span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>))
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/css&#39;</span>));
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); 
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;watch&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">init</span>({
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">server</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">baseDir</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./dist&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">baseDir</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;dist&#39;</span>,
 </span></span><span style="display:flex;"><span>    },
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">port</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3000</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">reloadDelay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">browser</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;google chrome&#39;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">open</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
 </span></span><span style="display:flex;"><span>  });
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;./src/*.html&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>));
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;./src/**/*.scss&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;sass&#39;</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;src/*.html&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;src/scss/**/*.scss&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;sass&#39;</span>));
 </span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;default&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>,<span style="color:#e6db74">&#39;sass&#39;</span>,<span style="color:#e6db74">&#39;watch&#39;</span>));
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-15"></h1>
+<hr>
+<h1 id="heading-16"></h1>
+<ol start="6">
+<li>最後，在終端機執行<code>gulp</code>即可完成任務</li>
+</ol>
+<h1 id="heading-17"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ gulp
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
@@ -585,6 +630,8 @@
                   <ul>
                 
                 
+                    <li><a href="/post/2023-08-20-gulp-%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87%E4%B8%A6%E5%84%AA/">【gulp】壓縮圖片並優化</a></li>
+                
                     <li><a href="/post/2023-08-19-gulp-%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87%E4%B8%A6%E5%84%AA%E5%8C%96/">【gulp】壓縮圖片並優化</a></li>
                 
                     <li><a href="/post/2023-08-18-gulp-%E8%87%AA%E5%8B%95%E5%88%AA%E9%99%A4%E4%B8%8A%E4%B8%80%E6%AC%A1%E7%9A%84%E7%B7%A8%E8%AD%AF%E7%B5%90%E6%9E%9C/">【gulp】自動刪除上一次的編譯結果</a></li>
@@ -592,8 +639,6 @@
                     <li><a href="/post/2023-08-16-gulp-%E5%B0%87%E5%BC%95%E5%85%A5%E7%9A%84js%E5%A5%97%E4%BB%B6%E5%90%88%E4%BD%B5%E6%88%90%E4%B8%80%E5%80%8B%E6%AA%94%E6%A1%88/">【gulp】將引入的js套件合併成一個檔案</a></li>
                 
                     <li><a href="/post/2023-08-15-gulp-%E7%94%9F%E6%88%90%E7%A8%8B%E5%BC%8F%E7%A2%BCmap%E4%BB%A5%E5%88%A9%E9%99%A4%E9%8C%AF%E7%B7%A8%E8%AD%AF/">【gulp】生成程式碼map以利除錯編譯</a></li>
-                
-                    <li><a href="/post/2023-08-14-gulp-%E5%B0%87css%E6%A8%A3%E5%BC%8F%E5%8A%A0%E4%B8%8A%E5%89%8D%E7%B6%B4%E5%A2%9E%E5%8A%A0%E7%80%8F%E8%A6%BD%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7/">【gulp】將css樣式加上前綴增加瀏覽器兼容性</a></li>
                 
               </ul>
 

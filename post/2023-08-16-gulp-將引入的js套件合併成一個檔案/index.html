@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】將引入的js套件合併成一個檔案",
-  "description" : "gulp-concat 在專案中打開終端機安裝套件 gulp-concat: 1 $ npm install gulp-concat jquery: 1 $ npm install jquery bootstrap: 1 $ npm install bootstrap 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); const sourcemaps = require(\u0026#39;gulp-concat\u0026#39;); gulp.task(\u0026#39;concat\u0026#39;, function(){ return gulp .src([ \u0026#39;.\/node_modules\/jquery\/dist\/jquery.slim.min.js\u0026#39;, \/\/引入jQuery \u0026#39;.\/node_modules\/bootstrap\/dist\/js\/bootstrap.bundle.min.js\u0026#39;, \/\/引入bootstrap \u0026#39;.src\/js\/*.js\u0026#39; ]) .pipe(concat(\u0026#39;bundle.js\u0026#39;)) \/\/ 合併檔案，名稱為：bundle.js .pipe(gulp.dest(\u0026#39;.\/dist\/css\u0026#39;)); }); 在終端機執行指令 1 $ gulp concat 執行結果會在src裡新增一個bundle.js檔 you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── js\/ │ │ │ └─── bundle.",
+  "description" : "gulp-concat 在專案中打開終端機安裝gulp-concat、jquery、bootstrap套件(版本@4.6.2) 1 $ npm install gulp-concat jquery bootstrap@4.6.2 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 const gulp = require(\u0026#39;gulp\u0026#39;); const concat = require(\u0026#39;gulp-concat\u0026#39;); gulp.task(\u0026#39;concat\u0026#39;, function(){ return gulp .src([ \u0026#39;node_modules\/jquery\/dist\/jquery.slim.min.js\u0026#39;, \/\/引入jQuery \u0026#39;node_modules\/bootstrap\/dist\/js\/bootstrap.bundle.min.js\u0026#39;, \/\/引入bootstrap \u0026#39;src\/js\/*.js\u0026#39; \/\/引入自定義js ]) .pipe(concat(\u0026#39;all.js\u0026#39;)) \/\/ 合併檔案，名稱為：all.js .pipe(gulp.dest(\u0026#39;dist\/css\u0026#39;)); }); 在終端機執行指令 1 $ gulp concat 執行結果會在src裡新增一個all.js檔 you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── js\/ │ │ │ └─── all.",
   "inLanguage" : "zh-tw",
-  "wordCount":  104 ,
+  "wordCount":  97 ,
   "datePublished" : "2023-08-16T00:00:00",
   "dateModified" : "2023-08-16T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;104&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;97&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;104&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;97&nbsp;個字
   
   
   
@@ -325,54 +325,24 @@
 <h2 id="gulp-concat">gulp-concat</h2>
 <h1 id="heading-1"></h1>
 <ol>
-<li>在專案中打開終端機安裝套件</li>
+<li>在專案中打開終端機安裝<code>gulp-concat</code>、<code>jquery</code>、<code>bootstrap</code>套件(版本@4.6.2)</li>
 </ol>
 <h1 id="heading-2"></h1>
-<ul>
-<li>gulp-concat:</li>
-</ul>
-<h1 id="heading-3"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install gulp-concat
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install gulp-concat jquery bootstrap@4.6.2
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-4"></h1>
-<ul>
-<li>jquery:</li>
-</ul>
-<h1 id="heading-5"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install jquery
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-6"></h1>
-<ul>
-<li>bootstrap:</li>
-</ul>
-<h1 id="heading-7"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install bootstrap
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-8"></h1>
+</div><h1 id="heading-3"></h1>
 <hr>
-<h1 id="heading-9"></h1>
+<h1 id="heading-4"></h1>
 <ol start="2">
-<li>在<code>gulpfile.js</code>新增程式碼</li>
+<li>在gulpfile.js新增程式碼</li>
 </ol>
-<h1 id="heading-10"></h1>
+<h1 id="heading-5"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -388,32 +358,30 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-sass&#39;</span>); 
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sourcemaps</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-concat&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">concat</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-concat&#39;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;concat&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>([
-</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;./node_modules/jquery/dist/jquery.slim.min.js&#39;</span>, <span style="color:#75715e">//引入jQuery
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#e6db74">&#39;./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js&#39;</span>, <span style="color:#75715e">//引入bootstrap
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#e6db74">&#39;.src/js/*.js&#39;</span>
-</span></span><span style="display:flex;"><span>    ])
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">concat</span>(<span style="color:#e6db74">&#39;bundle.js&#39;</span>)) <span style="color:#75715e">// 合併檔案，名稱為：bundle.js
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./dist/css&#39;</span>));
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;node_modules/jquery/dist/jquery.slim.min.js&#39;</span>, <span style="color:#75715e">//引入jQuery
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#e6db74">&#39;node_modules/bootstrap/dist/js/bootstrap.bundle.min.js&#39;</span>, <span style="color:#75715e">//引入bootstrap
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#e6db74">&#39;src/js/*.js&#39;</span> <span style="color:#75715e">//引入自定義js
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    ])
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">concat</span>(<span style="color:#e6db74">&#39;all.js&#39;</span>)) <span style="color:#75715e">// 合併檔案，名稱為：all.js
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/css&#39;</span>));
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-11"></h1>
+</div><h1 id="heading-6"></h1>
 <hr>
-<h1 id="heading-12"></h1>
+<h1 id="heading-7"></h1>
 <ol start="3">
 <li>在終端機執行指令</li>
 </ol>
-<h1 id="heading-13"></h1>
+<h1 id="heading-8"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -422,20 +390,20 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ gulp concat
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-14"></h1>
+</div><h1 id="heading-9"></h1>
 <hr>
-<h1 id="heading-15"></h1>
+<h1 id="heading-10"></h1>
 <ol start="4">
-<li>執行結果會在src裡新增一個<code>bundle.js</code>檔</li>
+<li>執行結果會在src裡新增一個<code>all.js</code>檔</li>
 </ol>
-<h1 id="heading-16"></h1>
+<h1 id="heading-11"></h1>
 <pre tabindex="0"><code>you project
 ├─── node_modules/        
 ├─── dist/
 │     │
 │     └─── js/
 │           │
-│           └─── bundle.js  #合併的js檔
+│           └─── all.js  #合併的js檔
 │  
 ├─── src/
 │     └─── js/
@@ -445,7 +413,37 @@
 ├─── gulpfile.js          
 ├─── package-lock.json    
 └─── package.json  
-</code></pre>
+</code></pre><h1 id="heading-12"></h1>
+<hr>
+<h1 id="heading-13"></h1>
+<ol start="5">
+<li>回到gulpfile.js添加任務清單</li>
+</ol>
+<h1 id="heading-14"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;default&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;concat&#39;</span>));
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-15"></h1>
+<hr>
+<h1 id="heading-16"></h1>
+<ol start="6">
+<li>最後，在終端機執行<code>gulp</code>即可完成任務</li>
+</ol>
+<h1 id="heading-17"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ gulp
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 
         
           <div class="blog-tags">
@@ -522,6 +520,8 @@
                   <ul>
                 
                 
+                    <li><a href="/post/2023-08-20-gulp-%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87%E4%B8%A6%E5%84%AA/">【gulp】壓縮圖片並優化</a></li>
+                
                     <li><a href="/post/2023-08-19-gulp-%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87%E4%B8%A6%E5%84%AA%E5%8C%96/">【gulp】壓縮圖片並優化</a></li>
                 
                     <li><a href="/post/2023-08-18-gulp-%E8%87%AA%E5%8B%95%E5%88%AA%E9%99%A4%E4%B8%8A%E4%B8%80%E6%AC%A1%E7%9A%84%E7%B7%A8%E8%AD%AF%E7%B5%90%E6%9E%9C/">【gulp】自動刪除上一次的編譯結果</a></li>
@@ -529,8 +529,6 @@
                     <li><a href="/post/2023-08-17-gulp-%E9%96%8B%E5%95%9F%E6%9C%AC%E5%9C%B0%E7%AB%AF%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%80%8F%E8%A6%BD%E7%B6%B2%E7%AB%99/">【gulp】開啟本地端伺服器瀏覽網站</a></li>
                 
                     <li><a href="/post/2023-08-15-gulp-%E7%94%9F%E6%88%90%E7%A8%8B%E5%BC%8F%E7%A2%BCmap%E4%BB%A5%E5%88%A9%E9%99%A4%E9%8C%AF%E7%B7%A8%E8%AD%AF/">【gulp】生成程式碼map以利除錯編譯</a></li>
-                
-                    <li><a href="/post/2023-08-14-gulp-%E5%B0%87css%E6%A8%A3%E5%BC%8F%E5%8A%A0%E4%B8%8A%E5%89%8D%E7%B6%B4%E5%A2%9E%E5%8A%A0%E7%80%8F%E8%A6%BD%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7/">【gulp】將css樣式加上前綴增加瀏覽器兼容性</a></li>
                 
               </ul>
 
