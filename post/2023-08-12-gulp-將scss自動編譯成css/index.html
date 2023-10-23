@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】將scss自動編譯成css",
-  "description" : "gulp-sass 在專案中打開終端機安裝gulp-sass和sass套件(版本@1.62.0) 1 $ npm install gulp-sass sass@1.62.0 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); gulp.task(\u0026#39;sass\u0026#39;, function(){ return gulp .src(\u0026#39;src\/scss\/**\/*.scss\u0026#39;) \/\/引用scss檔案路徑 .pipe(sass() \/\/執行sass編譯 .on(\u0026#39;error\u0026#39;,sass.logError)) \/\/編譯過程中捕捉錯誤並輸出錯誤訊息，以避免因編譯錯誤而中斷gulp .pipe(gulp.dest(\u0026#39;dist\/css\u0026#39;)) \/\/css編譯完成路徑 }); 在終端機執行指令 1 $ gulp sass 執行結果會將src裡的scss編譯，生成到dist裡變成css you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── css\/ │ │ │ └─── all.css #編譯完成的css檔 │ ├─── src\/ │ └─── scss\/ │ │ │ └─── all.",
+  "description" : "gulp-sass 在專案中打開終端機安裝gulp-sass和sass套件(版本@1.62.0) 1 $ npm install gulp-sass sass@1.62.0 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); gulp.task(\u0026#39;sass\u0026#39;, function(){ return gulp .src(\u0026#39;src\/scss\/**\/*.scss\u0026#39;) \/\/引用scss檔案路徑 .pipe( sass().on(\u0026#39;error\u0026#39;,sass.logError) \/\/sass編譯過程中捕捉錯誤並輸出錯誤訊息，以避免因編譯錯誤而中斷gulp ) .pipe(gulp.dest(\u0026#39;dist\/css\u0026#39;)) \/\/css編譯完成路徑 }); 在終端機執行指令 1 $ gulp sass 執行結果會將src裡的scss編譯，生成到dist裡變成css you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── css\/ │ │ │ └─── all.css #編譯完成的css檔 │ ├─── src\/ │ └─── scss\/ │ │ │ └─── all.",
   "inLanguage" : "zh-tw",
-  "wordCount":  143 ,
+  "wordCount":  144 ,
   "datePublished" : "2023-08-12T00:00:00",
   "dateModified" : "2023-08-12T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;143&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;144&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;143&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;144&nbsp;個字
   
   
   
@@ -355,6 +355,7 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
@@ -363,9 +364,10 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/scss/**/*.scss&#39;</span>) <span style="color:#75715e">//引用scss檔案路徑
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>() <span style="color:#75715e">//執行sass編譯
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>,<span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>)) <span style="color:#75715e">//編譯過程中捕捉錯誤並輸出錯誤訊息，以避免因編譯錯誤而中斷gulp
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/css&#39;</span>)) <span style="color:#75715e">//css編譯完成路徑
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">sass</span>().<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;error&#39;</span>,<span style="color:#a6e22e">sass</span>.<span style="color:#a6e22e">logError</span>) <span style="color:#75715e">//sass編譯過程中捕捉錯誤並輸出錯誤訊息，以避免因編譯錯誤而中斷gulp
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    )
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/css&#39;</span>)) <span style="color:#75715e">//css編譯完成路徑
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
 </span></span></code></pre></td></tr></table>
 </div>
@@ -467,7 +469,7 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/scss/**/*.scss&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/scss/**/*.*&#39;</span>)
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>({
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">outputStyle</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;compressed&#39;</span> <span style="color:#75715e">//編譯出的檔案形式為&#39;壓縮&#39;
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    })
@@ -570,7 +572,7 @@
                   <ul>
                 
                 
-                    <li><a href="/post/2023-08-20-gulp-%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87%E4%B8%A6%E5%84%AA/">【gulp】壓縮圖片並優化</a></li>
+                    <li><a href="/post/2023-08-20-gulp-%E6%92%B0%E5%AF%ABhtml%E7%B6%B2%E9%A0%81%E6%A8%A1%E7%89%88/">【gulp】撰寫html網頁模版</a></li>
                 
                     <li><a href="/post/2023-08-19-gulp-%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87%E4%B8%A6%E5%84%AA%E5%8C%96/">【gulp】壓縮圖片並優化</a></li>
                 
@@ -595,7 +597,7 @@
           
           
             <li class="next">
-              <a href="https://jack842248.github.io/post/2023-08-13-gulp-%E5%B0%87javascript%E6%95%B4%E5%90%88%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC/" data-toggle="tooltip" data-placement="top" title="【gulp】將JavaScript整合成穩定版本">下一篇 &rarr;</a>
+              <a href="https://jack842248.github.io/post/2023-08-13-gulp-%E5%B0%87javascript%E6%95%B4%E5%90%88%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC/" data-toggle="tooltip" data-placement="top" title="【gulp】將javascript整合成穩定版本">下一篇 &rarr;</a>
             </li>
           
         </ul>

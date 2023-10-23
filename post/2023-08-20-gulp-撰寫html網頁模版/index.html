@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>【gulp】將javascript整合成穩定版本 - Jack Huang Blog</title>
-  <meta name="description" content="node.js、npm、gulp、gulpfile、package.json、gulp-babel、@babel/core、@babel/preset-env">
+  <title>【gulp】撰寫html網頁模版 - Jack Huang Blog</title>
+  <meta name="description" content="node.js、npm、gulp、gulpfile、package.json、gulp-nunjucks-render">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -44,8 +44,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/jack842248.github.io\/post\/2023-08-13-gulp-%E5%B0%87javascript%E6%95%B4%E5%90%88%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC\/",
-          "name": "【gulp】將javascript整合成穩定版本"
+          "@id": "https:\/\/jack842248.github.io\/post\/2023-08-20-gulp-%E6%92%B0%E5%AF%ABhtml%E7%B6%B2%E9%A0%81%E6%A8%A1%E7%89%88\/",
+          "name": "【gulp】撰寫html網頁模版"
         }
     }]
 }
@@ -56,15 +56,15 @@
   "author": {
     "name" : "JackHuang"
   },
-  "headline": "【gulp】將javascript整合成穩定版本",
-  "description" : "gulp-babel 在專案中打開終端機安裝gulp-babel、@babel\/core、@babel\/preset-env套件 1 $ npm install gulp-babel @babel\/core @babel\/preset-env @開頭的套件，表示這是一個由特定組織或作者維護的套件\n在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 const gulp = require(\u0026#39;gulp\u0026#39;); const babel = require(\u0026#39;gulp-babel\u0026#39;); gulp.task(\u0026#39;babel\u0026#39;, function(){ return gulp .src(\u0026#39;src\/js\/*.js\u0026#39;) \/\/引用js檔案來源 .pipe( babel({ \/\/使用babel套件 presets:[\u0026#39;@babel\/env\u0026#39;] \/\/設定使用\u0026#39;@babel\/env\u0026#39;套件進行編譯 }) ) .pipe(gulp.dest(\u0026#39;dist\/js\u0026#39;)) \/\/js編譯完成路徑 }); 在終端機執行指令 1 $ gulp babel 執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯，生成到dist裡變成穩定的all.js you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── js\/ │ │ │ └─── all.",
+  "headline": "【gulp】撰寫html網頁模版",
+  "description" : "gulp-nunjucks-render 在專案中打開終端機安裝gulp-nunjucks-render套件 1 $ npm install gulp-nunjucks-render 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 const gulp = require(\u0026#39;gulp\u0026#39;); const nunjucksRender = require(\u0026#39;gulp-nunjucks-render\u0026#39;); gulp.task(\u0026#39;layout\u0026#39;, function(){ return gulp .src(\u0026#39;src\/**\/*.html\u0026#39;) .pipe(nunjucksRender({ path: [\u0026#39;src\/templates\u0026#39;] })) .pipe(gulp.dest(\u0026#39;dist\u0026#39;)); .pipe(browsersync.stream()); }); 在終端機執行指令 1 $ gulp layout 執行後會自動壓縮img裡的圖片，到dist裡的img資料夾裡 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 you project ├─── node_modules\/ ├─── dist\/ │ └─── img\/ │ │ │ └─── logo.",
   "inLanguage" : "zh-tw",
-  "wordCount":  195 ,
-  "datePublished" : "2023-08-13T00:00:00",
-  "dateModified" : "2023-08-13T00:00:00",
+  "wordCount":  282 ,
+  "datePublished" : "2023-08-20T00:00:00",
+  "dateModified" : "2023-08-20T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
   "keywords" : [ "gulp" ],
-  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2023-08-13-gulp-%E5%B0%87javascript%E6%95%B4%E5%90%88%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC\/",
+  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2023-08-20-gulp-%E6%92%B0%E5%AF%ABhtml%E7%B6%B2%E9%A0%81%E6%A8%A1%E7%89%88\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/jack842248.github.io",
@@ -78,14 +78,14 @@
 }
 </script>
 
-<meta property="og:title" content="【gulp】將javascript整合成穩定版本" />
-<meta property="og:description" content="node.js、npm、gulp、gulpfile、package.json、gulp-babel、@babel/core、@babel/preset-env">
-<meta property="og:url" content="https://jack842248.github.io/post/2023-08-13-gulp-%E5%B0%87javascript%E6%95%B4%E5%90%88%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC/" />
+<meta property="og:title" content="【gulp】撰寫html網頁模版" />
+<meta property="og:description" content="node.js、npm、gulp、gulpfile、package.json、gulp-nunjucks-render">
+<meta property="og:url" content="https://jack842248.github.io/post/2023-08-20-gulp-%E6%92%B0%E5%AF%ABhtml%E7%B6%B2%E9%A0%81%E6%A8%A1%E7%89%88/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
-  <meta name="twitter:title" content="【gulp】將javascript整合成穩定版本" />
-  <meta name="twitter:description" content="node.js、npm、gulp、gulpfile、package.json、gulp-babel、@babel/core、@babel/preset-env">
+  <meta name="twitter:title" content="【gulp】撰寫html網頁模版" />
+  <meta name="twitter:description" content="node.js、npm、gulp、gulpfile、package.json、gulp-nunjucks-render">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.111.3">
@@ -244,23 +244,23 @@
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="post-heading">
-                <h1>【gulp】將javascript整合成穩定版本</h1>
+                <h1>【gulp】撰寫html網頁模版</h1>
                   
                     
-                      <h2 class="post-subheading">node.js、npm、gulp、gulpfile、package.json、gulp-babel、@babel/core、@babel/preset-env</h2>
+                      <h2 class="post-subheading">node.js、npm、gulp、gulpfile、package.json、gulp-nunjucks-render</h2>
                     
                   
                   
                     <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2023-08-13
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2023-08-20
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;195&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;282&nbsp;個字
   
   
   
@@ -281,25 +281,25 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>【gulp】將javascript整合成穩定版本</h1>
+                <h1>【gulp】撰寫html網頁模版</h1>
               
               
               
                 
-                  <h2 class="post-subheading">node.js、npm、gulp、gulpfile、package.json、gulp-babel、@babel/core、@babel/preset-env</h2>
+                  <h2 class="post-subheading">node.js、npm、gulp、gulpfile、package.json、gulp-nunjucks-render</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2023-08-13
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2023-08-20
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;195&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;282&nbsp;個字
   
   
   
@@ -322,10 +322,10 @@
       <article role="main" class="blog-post">
         <hr>
 <h1 id="heading"></h1>
-<h2 id="gulp-babel">gulp-babel</h2>
+<h2 id="gulp-nunjucks-render">gulp-nunjucks-render</h2>
 <h1 id="heading-1"></h1>
 <ol>
-<li>在專案中打開終端機安裝<code>gulp-babel</code>、<code>@babel/core</code>、<code>@babel/preset-env</code>套件</li>
+<li>在專案中打開終端機安裝<code>gulp-nunjucks-render</code>套件</li>
 </ol>
 <h1 id="heading-2"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -333,18 +333,16 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install gulp-babel @babel/core @babel/preset-env
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install gulp-nunjucks-render
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-3"></h1>
-<p><code>@開頭的套件，表示這是一個由特定組織或作者維護的套件</code></p>
-<h1 id="heading-4"></h1>
 <hr>
-<h1 id="heading-5"></h1>
+<h1 id="heading-4"></h1>
 <ol start="2">
 <li>在gulpfile.js新增程式碼</li>
 </ol>
-<h1 id="heading-6"></h1>
+<h1 id="heading-5"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -359,92 +357,44 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">babel</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-babel&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">nunjucksRender</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-nunjucks-render&#39;</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;babel&#39;</span>, <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;layout&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/js/*.js&#39;</span>) <span style="color:#75715e">//引用js檔案來源
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">babel</span>({  <span style="color:#75715e">//使用babel套件
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">presets</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#39;@babel/env&#39;</span>] <span style="color:#75715e">//設定使用&#39;@babel/env&#39;套件進行編譯
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      })
-</span></span><span style="display:flex;"><span>    )  
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/js&#39;</span>)) <span style="color:#75715e">//js編譯完成路徑
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/**/*.html&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">nunjucksRender</span>({
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;src/templates&#39;</span>]
+</span></span><span style="display:flex;"><span>    })) 
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist&#39;</span>));
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browsersync</span>.<span style="color:#a6e22e">stream</span>());
+</span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-7"></h1>
+</div><h1 id="heading-6"></h1>
 <hr>
-<h1 id="heading-8"></h1>
+<h1 id="heading-7"></h1>
 <ol start="3">
 <li>在終端機執行指令</li>
 </ol>
-<h1 id="heading-9"></h1>
+<h1 id="heading-8"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ gulp babel
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ gulp layout
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-10"></h1>
+</div><h1 id="heading-9"></h1>
 <hr>
-<h1 id="heading-11"></h1>
+<h1 id="heading-10"></h1>
 <ol start="4">
-<li>執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯，生成到dist裡變成穩定的all.js</li>
+<li>執行後會自動壓縮img裡的圖片，到dist裡的img資料夾裡</li>
 </ol>
-<h1 id="heading-12"></h1>
-<pre tabindex="0"><code>you project
-├─── node_modules/        
-├─── dist/
-│     │
-│     └─── js/
-│           │
-│           └─── all.js   #編譯完成的js檔
-│   
-├─── src/
-│     └─── js/
-│           │
-│           └─── all.js   #開發時編輯用的js檔
-│     
-├─── gulpfile.js          
-├─── package-lock.json    
-└─── package.json  
-</code></pre><h1 id="heading-13"></h1>
-<hr>
-<h1 id="heading-14"></h1>
-<ol start="5">
-<li>回到index.html引入js</li>
-</ol>
-<h1 id="heading-15"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;js/all.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-16"></h1>
-<hr>
-<h1 id="heading-17"></h1>
-<ol start="6">
-<li>回到gulpfile.js設置屬性
-<ul>
-<li><code>minified</code>: 布林值，是否要壓縮代碼</li>
-</ul>
-</li>
-</ol>
-<h1 id="heading-18"></h1>
+<h1 id="heading-11"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -462,43 +412,82 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">babel</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-babel&#39;</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;babel&#39;</span>, <span style="color:#66d9ef">function</span>(){
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/js/*.js&#39;</span>) 
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">babel</span>({
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">presets</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#39;@babel/env&#39;</span>],
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">minified</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> <span style="color:#75715e">//壓縮代碼
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      })
-</span></span><span style="display:flex;"><span>    )  
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/js&#39;</span>)) 
-</span></span><span style="display:flex;"><span>});
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;default&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;babel&#39;</span>));
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>you project
+</span></span><span style="display:flex;"><span>├─── node_modules/    
+</span></span><span style="display:flex;"><span>├─── dist/
+</span></span><span style="display:flex;"><span>│     └─── img/
+</span></span><span style="display:flex;"><span>│           │
+</span></span><span style="display:flex;"><span>│           └─── logo.svg     # 壓縮過的
+</span></span><span style="display:flex;"><span>│ 
+</span></span><span style="display:flex;"><span>├─── src/
+</span></span><span style="display:flex;"><span>│     └─── img/
+</span></span><span style="display:flex;"><span>│           │
+</span></span><span style="display:flex;"><span>│           └─── logo.svg     # 未壓縮過的
+</span></span><span style="display:flex;"><span>│
+</span></span><span style="display:flex;"><span>├─── gulpfile.js          
+</span></span><span style="display:flex;"><span>├─── package-lock.json    
+</span></span><span style="display:flex;"><span>└─── package.json   
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-19"></h1>
+</div><h1 id="heading-12"></h1>
 <hr>
-<h1 id="heading-20"></h1>
-<ol start="7">
-<li>【補充】安裝<code>gulp-plumber</code>編譯發生錯誤時，將訊息傳到控制台</li>
+<h1 id="heading-13"></h1>
+<ol start="5">
+<li>回到gulpfile.js設定其他屬性</li>
 </ol>
-<h1 id="heading-21"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm install gulp-plumber
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-22"></h1>
+<h1 id="heading-14"></h1>
+<ul>
+<li><code>imagemin-mozjpeg</code>設定JPEG圖片
+<ul>
+<li><code>quality</code>: 壓縮品質
+<ul>
+<li><code>0</code>: 壓縮最大，品質最差</li>
+<li><code>75</code>: 預設值</li>
+<li><code>100</code>: 無壓縮，品質最好</li>
+</ul>
+</li>
+<li><code>progressive</code>: 布林值，圖像在加載時會先顯示模糊的預覽，然後逐漸增加清晰度(預設值true)</li>
+</ul>
+</li>
+<li><code>imagemin-optipng</code>: 設定PNG圖片的
+<ul>
+<li><code>optimizationLevel</code>: 優化級別
+<ul>
+<li><code>0</code>: 沒有優化</li>
+<li><code>1</code>: 基本的優化，移除不必要的元數據</li>
+<li><code>2</code>: 輕微的優化，更進一步優化掃描線過濾和設置標誌(預設值)</li>
+<li><code>3</code>: 預設級別，包括輕微的壓縮，但不會影響圖片品質</li>
+<li><code>4</code>: 更進一步的壓縮和剝離</li>
+<li><code>5</code>: 更強的壓縮和剝離</li>
+<li><code>6</code>: 最強的壓縮，可能會稍微影響圖片品質</li>
+<li><code>7</code>: 最強的壓縮，可能會明顯影響圖片品質</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>imagemin-gifsicle</code>: 設定GIF圖片
+<ul>
+<li><code>interlaced</code>: 布林值，先顯示大致輪廓，然後逐漸填充細節(預設值false)</li>
+</ul>
+</li>
+<li><code>imagemin-svgo</code>: 設定SVG圖片
+<ul>
+<li><code>plugins</code>: 陣列，自訂應用的優化插件:
+<ul>
+<li><code>cleanupIDs</code>: 布林值，用於控制是否清理SVG中的無用的ID(預設值true)</li>
+<li><code>removeViewBox</code>: 布林值，用於控制是否刪除SVG中的viewBox屬性(預設值true)</li>
+<li><code>removeUselessStrokeAndFill</code>: 布林值，用於刪除無用的stroke和fill屬性(預設值true)</li>
+<li><code>removeDimensions</code>: 布林值，用於刪除SVG中的width和height屬性(預設值false)</li>
+<li><code>removeUselessDefs</code>: 布林值，用於刪除SVG中無用的<!-- raw HTML omitted -->元素(預設值true)</li>
+<li><code>convertColors</code>: 布林值，用於嘗試將顏色值轉換為合適的CSS顏色名稱如果適用(預設值true)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="heading-15"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -518,34 +507,112 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">babel</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-babel&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">imagemin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-imagemin&#39;</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;babel&#39;</span>, <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;imagemin&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/js/*.js&#39;</span>) 
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">plumber</span>())
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/img/*&#39;</span>)
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">babel</span>({
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">presets</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#39;@babel/env&#39;</span>],
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">minified</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> <span style="color:#75715e">//壓縮代碼
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      })
-</span></span><span style="display:flex;"><span>    )  
-</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/js&#39;</span>)) 
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">imagemin</span>([
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">imagemin</span>.<span style="color:#a6e22e">mozjpeg</span>({
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">quality</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">80</span>, <span style="color:#75715e">//壓縮品質
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        }),
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">imagemin</span>.<span style="color:#a6e22e">optipng</span>({
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">optimizationLevel</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> <span style="color:#75715e">//優化級別
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        }),
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">imagemin</span>.<span style="color:#a6e22e">gifsicle</span>({
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">interlaced</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> <span style="color:#75715e">//漸進式渲染
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        }),
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">imagemin</span>.<span style="color:#a6e22e">gifsicle</span>()
+</span></span><span style="display:flex;"><span>      ])
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/img&#39;</span>));
 </span></span><span style="display:flex;"><span>});
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;default&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;babel&#39;</span>));
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;default&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;imagemin&#39;</span>));
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-23"></h1>
+</div><h1 id="heading-16"></h1>
 <hr>
-<h1 id="heading-24"></h1>
+<h1 id="heading-17"></h1>
+<ol start="7">
+<li>【補充】安裝<code>gulp-newer</code>套件：只針對新加入的檔案做動作</li>
+</ol>
+<h1 id="heading-18"></h1>
+<pre tabindex="0"><code>$ npm install gulp-newer
+</code></pre><h1 id="heading-19"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">imagemin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-imagemin&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;imagemin&#39;</span>, <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/img/*&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">newer</span>(<span style="color:#e6db74">&#39;dist/img&#39;</span>)) <span style="color:#75715e">//監控有新圖片時才會做處理
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">pipe</span>(
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">imagemin</span>([
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">imagemin</span>.<span style="color:#a6e22e">mozjpeg</span>({
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">quality</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">80</span>, 
+</span></span><span style="display:flex;"><span>        }),
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">imagemin</span>.<span style="color:#a6e22e">optipng</span>({
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">optimizationLevel</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> 
+</span></span><span style="display:flex;"><span>        }),
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">imagemin</span>.<span style="color:#a6e22e">gifsicle</span>({
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">interlaced</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        }),
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">imagemin</span>.<span style="color:#a6e22e">gifsicle</span>()
+</span></span><span style="display:flex;"><span>      ])
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/img&#39;</span>));
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;default&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;imagemin&#39;</span>));
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h1 id="heading-20"></h1>
 <ol start="8">
 <li>最後，在終端機執行<code>gulp</code>即可完成任務</li>
 </ol>
-<h1 id="heading-25"></h1>
+<h1 id="heading-21"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -574,42 +641,42 @@
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-13-gulp-%25E5%25B0%2587javascript%25E6%2595%25B4%25E5%2590%2588%25E6%2588%2590%25E7%25A9%25A9%25E5%25AE%259A%25E7%2589%2588%25E6%259C%25AC%2f&amp;text=%e3%80%90gulp%e3%80%91%e5%b0%87javascript%e6%95%b4%e5%90%88%e6%88%90%e7%a9%a9%e5%ae%9a%e7%89%88%e6%9c%ac&amp;via=" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-20-gulp-%25E6%2592%25B0%25E5%25AF%25ABhtml%25E7%25B6%25B2%25E9%25A0%2581%25E6%25A8%25A1%25E7%2589%2588%2f&amp;text=%e3%80%90gulp%e3%80%91%e6%92%b0%e5%af%abhtml%e7%b6%b2%e9%a0%81%e6%a8%a1%e7%89%88&amp;via=" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-13-gulp-%25E5%25B0%2587javascript%25E6%2595%25B4%25E5%2590%2588%25E6%2588%2590%25E7%25A9%25A9%25E5%25AE%259A%25E7%2589%2588%25E6%259C%25AC%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-20-gulp-%25E6%2592%25B0%25E5%25AF%25ABhtml%25E7%25B6%25B2%25E9%25A0%2581%25E6%25A8%25A1%25E7%2589%2588%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-13-gulp-%25E5%25B0%2587javascript%25E6%2595%25B4%25E5%2590%2588%25E6%2588%2590%25E7%25A9%25A9%25E5%25AE%259A%25E7%2589%2588%25E6%259C%25AC%2f&amp;title=%e3%80%90gulp%e3%80%91%e5%b0%87javascript%e6%95%b4%e5%90%88%e6%88%90%e7%a9%a9%e5%ae%9a%e7%89%88%e6%9c%ac" target="_blank" title="Share on Reddit">
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-20-gulp-%25E6%2592%25B0%25E5%25AF%25ABhtml%25E7%25B6%25B2%25E9%25A0%2581%25E6%25A8%25A1%25E7%2589%2588%2f&amp;title=%e3%80%90gulp%e3%80%91%e6%92%b0%e5%af%abhtml%e7%b6%b2%e9%a0%81%e6%a8%a1%e7%89%88" target="_blank" title="Share on Reddit">
           <i class="fab fa-reddit"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-13-gulp-%25E5%25B0%2587javascript%25E6%2595%25B4%25E5%2590%2588%25E6%2588%2590%25E7%25A9%25A9%25E5%25AE%259A%25E7%2589%2588%25E6%259C%25AC%2f&amp;title=%e3%80%90gulp%e3%80%91%e5%b0%87javascript%e6%95%b4%e5%90%88%e6%88%90%e7%a9%a9%e5%ae%9a%e7%89%88%e6%9c%ac" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-20-gulp-%25E6%2592%25B0%25E5%25AF%25ABhtml%25E7%25B6%25B2%25E9%25A0%2581%25E6%25A8%25A1%25E7%2589%2588%2f&amp;title=%e3%80%90gulp%e3%80%91%e6%92%b0%e5%af%abhtml%e7%b6%b2%e9%a0%81%e6%a8%a1%e7%89%88" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-13-gulp-%25E5%25B0%2587javascript%25E6%2595%25B4%25E5%2590%2588%25E6%2588%2590%25E7%25A9%25A9%25E5%25AE%259A%25E7%2589%2588%25E6%259C%25AC%2f&amp;title=%e3%80%90gulp%e3%80%91%e5%b0%87javascript%e6%95%b4%e5%90%88%e6%88%90%e7%a9%a9%e5%ae%9a%e7%89%88%e6%9c%ac" target="_blank" title="Share on StumbleUpon">
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-20-gulp-%25E6%2592%25B0%25E5%25AF%25ABhtml%25E7%25B6%25B2%25E9%25A0%2581%25E6%25A8%25A1%25E7%2589%2588%2f&amp;title=%e3%80%90gulp%e3%80%91%e6%92%b0%e5%af%abhtml%e7%b6%b2%e9%a0%81%e6%a8%a1%e7%89%88" target="_blank" title="Share on StumbleUpon">
           <i class="fab fa-stumbleupon"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-13-gulp-%25E5%25B0%2587javascript%25E6%2595%25B4%25E5%2590%2588%25E6%2588%2590%25E7%25A9%25A9%25E5%25AE%259A%25E7%2589%2588%25E6%259C%25AC%2f&amp;description=%e3%80%90gulp%e3%80%91%e5%b0%87javascript%e6%95%b4%e5%90%88%e6%88%90%e7%a9%a9%e5%ae%9a%e7%89%88%e6%9c%ac" target="_blank" title="Share on Pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2023-08-20-gulp-%25E6%2592%25B0%25E5%25AF%25ABhtml%25E7%25B6%25B2%25E9%25A0%2581%25E6%25A8%25A1%25E7%2589%2588%2f&amp;description=%e3%80%90gulp%e3%80%91%e6%92%b0%e5%af%abhtml%e7%b6%b2%e9%a0%81%e6%a8%a1%e7%89%88" target="_blank" title="Share on Pinterest">
           <i class="fab fa-pinterest"></i>
         </a>
       </li>
@@ -631,8 +698,6 @@
                   <ul>
                 
                 
-                    <li><a href="/post/2023-08-20-gulp-%E6%92%B0%E5%AF%ABhtml%E7%B6%B2%E9%A0%81%E6%A8%A1%E7%89%88/">【gulp】撰寫html網頁模版</a></li>
-                
                     <li><a href="/post/2023-08-19-gulp-%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87%E4%B8%A6%E5%84%AA%E5%8C%96/">【gulp】壓縮圖片並優化</a></li>
                 
                     <li><a href="/post/2023-08-18-gulp-%E8%87%AA%E5%8B%95%E5%88%AA%E9%99%A4%E4%B8%8A%E4%B8%80%E6%AC%A1%E7%9A%84%E7%B7%A8%E8%AD%AF%E7%B5%90%E6%9E%9C/">【gulp】自動刪除上一次的編譯結果</a></li>
@@ -640,6 +705,8 @@
                     <li><a href="/post/2023-08-17-gulp-%E9%96%8B%E5%95%9F%E6%9C%AC%E5%9C%B0%E7%AB%AF%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%80%8F%E8%A6%BD%E7%B6%B2%E7%AB%99/">【gulp】開啟本地端伺服器瀏覽網站</a></li>
                 
                     <li><a href="/post/2023-08-16-gulp-%E5%B0%87%E5%BC%95%E5%85%A5%E7%9A%84js%E5%A5%97%E4%BB%B6%E5%90%88%E4%BD%B5%E6%88%90%E4%B8%80%E5%80%8B%E6%AA%94%E6%A1%88/">【gulp】將引入的js套件合併成一個檔案</a></li>
+                
+                    <li><a href="/post/2023-08-15-gulp-%E7%94%9F%E6%88%90%E7%A8%8B%E5%BC%8F%E7%A2%BCmap%E4%BB%A5%E5%88%A9%E9%99%A4%E9%8C%AF%E7%B7%A8%E8%AD%AF/">【gulp】生成程式碼map以利除錯編譯</a></li>
                 
               </ul>
 
@@ -651,13 +718,9 @@
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2023-08-12-gulp-%E5%B0%87scss%E8%87%AA%E5%8B%95%E7%B7%A8%E8%AD%AF%E6%88%90css/" data-toggle="tooltip" data-placement="top" title="【gulp】將scss自動編譯成css">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2023-08-19-gulp-%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87%E4%B8%A6%E5%84%AA%E5%8C%96/" data-toggle="tooltip" data-placement="top" title="【gulp】壓縮圖片並優化">&larr; 上一篇</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://jack842248.github.io/post/2023-08-14-gulp-%E5%B0%87css%E6%A8%A3%E5%BC%8F%E5%8A%A0%E4%B8%8A%E5%89%8D%E7%B6%B4%E5%A2%9E%E5%8A%A0%E7%80%8F%E8%A6%BD%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7/" data-toggle="tooltip" data-placement="top" title="【gulp】將css樣式加上前綴增加瀏覽器兼容性">下一篇 &rarr;</a>
-            </li>
           
         </ul>
       
@@ -667,12 +730,12 @@
         
           
           <div class="disqus-comments">                  
-            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2023-08-13-gulp-%E5%B0%87javascript%E6%95%B4%E5%90%88%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC">則評論</span></button>
+            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2023-08-20-gulp-%E6%92%B0%E5%AF%ABhtml%E7%B6%B2%E9%A0%81%E6%A8%A1%E7%89%88">則評論</span></button>
             <div id="disqus_thread"></div>
 
             <script type="text/javascript">
               var disqus_config = function () {
-              this.page.url = 'https:\/\/jack842248.github.io\/post\/2023-08-13-gulp-%E5%B0%87javascript%E6%95%B4%E5%90%88%E6%88%90%E7%A9%A9%E5%AE%9A%E7%89%88%E6%9C%AC';
+              this.page.url = 'https:\/\/jack842248.github.io\/post\/2023-08-20-gulp-%E6%92%B0%E5%AF%ABhtml%E7%B6%B2%E9%A0%81%E6%A8%A1%E7%89%88';
             };
 
           </script>
