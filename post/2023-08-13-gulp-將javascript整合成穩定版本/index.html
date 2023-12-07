@@ -59,7 +59,7 @@
   "headline": "【gulp】將javascript整合成穩定版本",
   "description" : "gulp-babel 在專案中打開終端機安裝gulp-babel、@babel\/core、@babel\/preset-env套件 1 $ npm install gulp-babel @babel\/core @babel\/preset-env @開頭的套件，表示這是一個由特定組織或作者維護的套件\n在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 const gulp = require(\u0026#39;gulp\u0026#39;); const babel = require(\u0026#39;gulp-babel\u0026#39;); gulp.task(\u0026#39;babel\u0026#39;, function(){ return gulp .src(\u0026#39;src\/js\/*.js\u0026#39;) \/\/引用js檔案來源 .pipe( babel({ \/\/使用babel套件 presets:[\u0026#39;@babel\/env\u0026#39;] \/\/設定使用\u0026#39;@babel\/env\u0026#39;套件進行編譯 }) ) .pipe(gulp.dest(\u0026#39;dist\/js\u0026#39;)) \/\/js編譯完成路徑 }); 在終端機執行指令 1 $ gulp babel 執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯，生成到dist裡變成穩定的all.js you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── js\/ │ │ │ └─── all.",
   "inLanguage" : "zh-tw",
-  "wordCount":  195 ,
+  "wordCount":  200 ,
   "datePublished" : "2023-08-13T00:00:00",
   "dateModified" : "2023-08-13T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;195&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;200&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;195&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;200&nbsp;個字
   
   
   
@@ -518,10 +518,12 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">babel</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-babel&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">plumber</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-plumber&#39;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;babel&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>

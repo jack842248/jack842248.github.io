@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】生成程式碼map以利除錯編譯",
-  "description" : "gulp-sourcemaps 在專案中打開終端機安裝gulp-sourcemaps、gulp-sass、sass套件(版本@1.62.0) 1 $ npm install gulp-sourcemaps gulp-sass sass@1.62.0 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;); const sourcemaps = require(\u0026#39;gulp-sourcemaps\u0026#39;); gulp.task(\u0026#39;sass\u0026#39;, function(){ return gulp .src(\u0026#39;src\/scss\/**\/*.*\u0026#39;) .pipe(sourcemaps.init()) \/\/sourcemaps初始化 .pipe( sass().on(\u0026#39;error\u0026#39;,sass.logError) ) .pipe(sourcemaps.write(\u0026#34;.\/\u0026#34;)) \/\/在當前的目錄下，生成sourcemaps文件 .pipe(gulp.dest(\u0026#39;dist\/css\u0026#39;)) }); 在終端機執行指令 1 $ gulp sass 執行結果會在all.css旁自動新加入一個.map檔 you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── css\/ │ │ │ ├─── all.",
+  "description" : "gulp-sourcemaps 在專案中打開終端機安裝gulp-sourcemaps、gulp-sass、sass套件(版本@1.62.0) 1 $ npm install gulp-sourcemaps gulp-sass sass@1.62.0 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;)(require(\u0026#39;sass\u0026#39;)); const sourcemaps = require(\u0026#39;gulp-sourcemaps\u0026#39;); gulp.task(\u0026#39;sass\u0026#39;, function(){ return gulp .src(\u0026#39;src\/scss\/**\/*.*\u0026#39;) .pipe(sourcemaps.init()) \/\/sourcemaps初始化 .pipe( sass().on(\u0026#39;error\u0026#39;,sass.logError) ) .pipe(sourcemaps.write(\u0026#34;.\/\u0026#34;)) \/\/在當前的目錄下，生成sourcemaps文件 .pipe(gulp.dest(\u0026#39;dist\/css\u0026#39;)) }); 在終端機執行指令 1 $ gulp sass 執行結果會在all.css旁自動新加入一個.map檔 you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── css\/ │ │ │ ├─── all.",
   "inLanguage" : "zh-tw",
   "wordCount":  114 ,
   "datePublished" : "2023-08-15T00:00:00",
@@ -362,7 +362,7 @@
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-sass&#39;</span>); 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-sass&#39;</span>)(<span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;sass&#39;</span>));
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sourcemaps</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-sourcemaps&#39;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){

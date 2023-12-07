@@ -59,7 +59,7 @@
   "headline": "【gulp】壓縮圖片並優化",
   "description" : "gulp-imagemin 在專案中打開終端機安裝gulp-imagemin套件(版本@7.1.0) 1 $ npm install gulp-imagemin@7.1.0 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 const gulp = require(\u0026#39;gulp\u0026#39;); const imagemin = require(\u0026#39;gulp-imagemin\u0026#39;); gulp.task(\u0026#39;imagemin\u0026#39;, function(){ return gulp .src(\u0026#39;src\/img\/*\u0026#39;) .pipe(imagemin()) \/\/執行優化(壓縮) .pipe(gulp.dest(\u0026#39;dist\/img\u0026#39;)); }); 在終端機執行指令 1 $ gulp imagemin 執行後會自動壓縮img裡的圖片，到dist裡的img資料夾裡 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 you project ├─── node_modules\/ ├─── dist\/ │ └─── img\/ │ │ │ └─── logo.svg # 壓縮過的 │ ├─── src\/ │ └─── img\/ │ │ │ └─── logo.",
   "inLanguage" : "zh-tw",
-  "wordCount":  276 ,
+  "wordCount":  281 ,
   "datePublished" : "2023-08-19T00:00:00",
   "dateModified" : "2023-08-19T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;276&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;281&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;276&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;281&nbsp;個字
   
   
   
@@ -572,10 +572,12 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">imagemin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-imagemin&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-newer&#39;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;imagemin&#39;</span>, <span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>
