@@ -59,7 +59,7 @@
   "headline": "【gulp】安裝gulp建立bootstrap開發環境",
   "description" : " gulp基本指令 ",
   "inLanguage" : "zh-tw",
-  "wordCount":  466 ,
+  "wordCount":  467 ,
   "datePublished" : "2023-08-11T00:00:00",
   "dateModified" : "2023-08-11T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;466&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;467&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;466&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;467&nbsp;個字
   
   
   
@@ -772,10 +772,12 @@
 ├─── package-lock.json    
 └─── package.json         
 </code></pre><h1 id="heading-67"></h1>
-<hr>
+<p><code>_variable.scss有底線的檔案不會被編譯，但可以被合併</code></p>
 <h1 id="heading-68"></h1>
-<h3 id="13打開allscss檔引用boostrap">13.打開all.scss檔引用boostrap</h3>
+<hr>
 <h1 id="heading-69"></h1>
+<h3 id="13打開allscss檔引用boostrap">13.打開all.scss檔引用boostrap</h3>
+<h1 id="heading-70"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -800,11 +802,11 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">@import</span> <span style="color:#e6db74">&#39;custom&#39;</span>; <span style="color:#75715e">//本地檔案，編寫用
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-70"></h1>
+</div><h1 id="heading-71"></h1>
 <hr>
-<h1 id="heading-71"></h1>
-<h3 id="14回到indexhtml裡引用css">14.回到index.html裡引用css</h3>
 <h1 id="heading-72"></h1>
+<h3 id="14回到indexhtml裡引用css">14.回到index.html裡引用css</h3>
+<h1 id="heading-73"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -817,11 +819,11 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-73"></h1>
+</div><h1 id="heading-74"></h1>
 <hr>
-<h1 id="heading-74"></h1>
-<h3 id="15回到gulpfilejs添加任務清單">15.回到gulpfile.js添加任務清單</h3>
 <h1 id="heading-75"></h1>
+<h3 id="15回到gulpfilejs添加任務清單">15.回到gulpfile.js添加任務清單</h3>
+<h1 id="heading-76"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -830,7 +832,7 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;default&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;copyHTML&#39;</span>,<span style="color:#e6db74">&#39;sass&#39;</span>));
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-76"></h1>
+</div><h1 id="heading-77"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -839,17 +841,17 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ gulp
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-77"></h1>
+</div><h1 id="heading-78"></h1>
 <p><code>只要執行'gulp'會接續執行'copyHTML'、'sass'任務</code></p>
-<h1 id="heading-78"></h1>
-<hr>
 <h1 id="heading-79"></h1>
-<h3 id="若遇到cannot-find-module-nan">若遇到cannot find module &ldquo;nan&rdquo;</h3>
+<hr>
 <h1 id="heading-80"></h1>
+<h3 id="若遇到cannot-find-module-nan">若遇到cannot find module &ldquo;nan&rdquo;</h3>
+<h1 id="heading-81"></h1>
 <ol>
 <li>清除npm緩存</li>
 </ol>
-<h1 id="heading-81"></h1>
+<h1 id="heading-82"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -858,11 +860,11 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ npm cache clean --force
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-82"></h1>
+</div><h1 id="heading-83"></h1>
 <ol start="2">
 <li>在根目錄下運行安裝nan模組</li>
 </ol>
-<h1 id="heading-83"></h1>
+<h1 id="heading-84"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -950,13 +952,13 @@
                 
                     <li><a href="/post/2023-08-20-gulp-%E6%92%B0%E5%AF%ABhtml%E7%B6%B2%E9%A0%81%E6%A8%A1%E7%89%88/">【gulp】撰寫html網頁模版</a></li>
                 
+                    <li><a href="/post/2023-12-01-php-%E5%9F%B7%E8%A1%8Cphp%E5%B0%88%E6%A1%88/">【gulp】撰寫html網頁模版</a></li>
+                
                     <li><a href="/post/2023-08-19-gulp-%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87%E4%B8%A6%E5%84%AA%E5%8C%96/">【gulp】壓縮圖片並優化</a></li>
                 
                     <li><a href="/post/2023-08-18-gulp-%E8%87%AA%E5%8B%95%E5%88%AA%E9%99%A4%E4%B8%8A%E4%B8%80%E6%AC%A1%E7%9A%84%E7%B7%A8%E8%AD%AF%E7%B5%90%E6%9E%9C/">【gulp】自動刪除上一次的編譯結果</a></li>
                 
                     <li><a href="/post/2023-08-17-gulp-%E9%96%8B%E5%95%9F%E6%9C%AC%E5%9C%B0%E7%AB%AF%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%80%8F%E8%A6%BD%E7%B6%B2%E7%AB%99/">【gulp】開啟本地端伺服器瀏覽網站</a></li>
-                
-                    <li><a href="/post/2023-08-16-gulp-%E5%B0%87%E5%BC%95%E5%85%A5%E7%9A%84js%E5%A5%97%E4%BB%B6%E5%90%88%E4%BD%B5%E6%88%90%E4%B8%80%E5%80%8B%E6%AA%94%E6%A1%88/">【gulp】將引入的js套件合併成一個檔案</a></li>
                 
               </ul>
 
