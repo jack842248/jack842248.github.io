@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】撰寫html網頁模版",
-  "description" : "gulp-nunjucks-render 在專案中打開終端機安裝gulp-nunjucks-render套件 1 $ npm install gulp-nunjucks-render 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 const gulp = require(\u0026#39;gulp\u0026#39;); const nunjucksRender = require(\u0026#39;gulp-nunjucks-render\u0026#39;); gulp.task(\u0026#39;layout\u0026#39;,function(){ return gulp .src(\u0026#39;src\/**\/*.html\u0026#39;) .pipe(nunjucksRender({ path: [\u0026#39;src\/templates\u0026#39;] })) .pipe(gulp.dest(\u0026#39;dist\u0026#39;)) .pipe(browserSync.stream()); }); 在終端機執行指令 1 $ gulp layout 執行後會自動壓縮img裡的圖片，到dist裡的img資料夾裡 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 you project ├─── node_modules\/ ├─── dist\/ │ └─── index.html # 模板＋內容 │ ├─── src\/ │ ├─── templates\/ │ │ │ │ │ └─── layout.",
+  "description" : " gulp-nunjucks-render ",
   "inLanguage" : "zh-tw",
   "wordCount":  369 ,
   "datePublished" : "2023-08-20T00:00:00",

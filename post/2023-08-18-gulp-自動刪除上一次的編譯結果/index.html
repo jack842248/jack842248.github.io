@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】自動刪除上一次的編譯結果",
-  "description" : "del 在專案中打開終端機安裝del套件(版本6.1.1) 1 $ npm install del@6.1.1 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 const gulp = require(\u0026#39;gulp\u0026#39;); const del = require(\u0026#39;del\u0026#39;); gulp.task(\u0026#39;clean\u0026#39;, function(){ return del([\u0026#39;dist\/**\/*\u0026#39;,\u0026#39;!dist\/img\u0026#39;]) \/\/刪除dist裡的所有檔案，圖片除外 }); gulp.task(\u0026#39;copyHTML\u0026#39;, function(){ return gulp .src(\u0026#39;src\/*.html\u0026#39;) .pipe(gulp.dest(\u0026#39;dist\u0026#39;)) }); 在終端機執行指令 1 $ gulp clean 執行後會先執行刪除動作後，再重新生成新的index.html you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── index.html #刪除後再重新成的index.html │ ├─── src\/ │ │ │ └─── index.html │ ├─── gulpfile.",
+  "description" : " del ",
   "inLanguage" : "zh-tw",
   "wordCount":  133 ,
   "datePublished" : "2023-08-18T00:00:00",

@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】將javascript整合成穩定版本",
-  "description" : "gulp-babel 在專案中打開終端機安裝gulp-babel、@babel\/core、@babel\/preset-env套件 1 $ npm install gulp-babel @babel\/core @babel\/preset-env @開頭的套件，表示這是一個由特定組織或作者維護的套件\n在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 const gulp = require(\u0026#39;gulp\u0026#39;); const babel = require(\u0026#39;gulp-babel\u0026#39;); gulp.task(\u0026#39;babel\u0026#39;, function(){ return gulp .src(\u0026#39;src\/js\/*.js\u0026#39;) \/\/引用js檔案來源 .pipe( babel({ \/\/使用babel套件 presets:[\u0026#39;@babel\/env\u0026#39;] \/\/設定使用\u0026#39;@babel\/env\u0026#39;套件進行編譯 }) ) .pipe(gulp.dest(\u0026#39;dist\/js\u0026#39;)) \/\/js編譯完成路徑 }); 在終端機執行指令 1 $ gulp babel 執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯，生成到dist裡變成穩定的all.js you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── js\/ │ │ │ └─── all.",
+  "description" : " gulp-babel ",
   "inLanguage" : "zh-tw",
   "wordCount":  200 ,
   "datePublished" : "2023-08-13T00:00:00",

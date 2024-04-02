@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】將引入的js套件合併成一個檔案",
-  "description" : "gulp-concat 在專案中打開終端機安裝gulp-concat、jquery、bootstrap套件(版本@4.6.2) 1 $ npm install gulp-concat jquery bootstrap@4.6.2 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 const gulp = require(\u0026#39;gulp\u0026#39;); const concat = require(\u0026#39;gulp-concat\u0026#39;); gulp.task(\u0026#39;concat\u0026#39;, function(){ return gulp .src([ \u0026#39;node_modules\/jquery\/dist\/jquery.slim.min.js\u0026#39;, \/\/引入jQuery \u0026#39;node_modules\/bootstrap\/dist\/js\/bootstrap.bundle.min.js\u0026#39;, \/\/引入bootstrap \u0026#39;src\/js\/*.js\u0026#39; \/\/引入自定義js ]) .pipe(concat(\u0026#39;all.js\u0026#39;)) \/\/ 合併檔案，名稱為：all.js .pipe(gulp.dest(\u0026#39;dist\/css\u0026#39;)); }); 在終端機執行指令 1 $ gulp concat 執行結果會在src裡新增一個all.js檔 you project ├─── node_modules\/ ├─── dist\/ │ │ │ └─── js\/ │ │ │ └─── all.",
+  "description" : " gulp-concat ",
   "inLanguage" : "zh-tw",
   "wordCount":  97 ,
   "datePublished" : "2023-08-16T00:00:00",

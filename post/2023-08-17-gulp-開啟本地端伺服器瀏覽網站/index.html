@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【gulp】開啟本地端伺服器瀏覽網站",
-  "description" : "browser-sync 在專案中打開終端機安裝browser-sync、gulp-sass、sass套件(版本@1.62.0) 1 $ npm install browser-sync gulp-sass sass@1.62.0 在gulpfile.js新增程式碼 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 const gulp = require(\u0026#39;gulp\u0026#39;); const sass = require(\u0026#39;gulp-sass\u0026#39;)(require(\u0026#39;sass\u0026#39;)); const browserSync = require(\u0026#39;browser-sync\u0026#39;).create(); gulp.task(\u0026#39;copyHTML\u0026#39;, function(){ return gulp .src(\u0026#39;src\/**\/*.html\u0026#39;) .pipe(gulp.dest(\u0026#39;dist\u0026#39;)) .pipe(browserSync.stream()); \/\/更新到瀏覽器 }); gulp.task(\u0026#39;sass\u0026#39;, function(){ return gulp .src(\u0026#39;src\/scss\/*.*\u0026#39;) .pipe(sass() .on(\u0026#39;error\u0026#39;,sass.logError)) .pipe(gulp.dest(\u0026#39;dist\/css\u0026#39;)); .pipe(browserSync.stream()); \/\/更新到瀏覽器 }); gulp.",
+  "description" : " browser-sync ",
   "inLanguage" : "zh-tw",
   "wordCount":  243 ,
   "datePublished" : "2023-08-17T00:00:00",
