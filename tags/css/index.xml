@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【css】footer置底方法</title>
+      <link>https://jack842248.github.io/post/2024-01-01-css-%E7%B6%B2%E9%A0%81%E5%88%9D%E6%AD%A5%E6%9E%B6%E6%A7%8B%E6%8E%92%E7%89%88%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2024-01-01-css-%E7%B6%B2%E9%A0%81%E5%88%9D%E6%AD%A5%E6%9E%B6%E6%A7%8B%E6%8E%92%E7%89%88%E6%8A%80%E5%B7%A7/</guid>
+      <description> 如何讓footer置底 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 html{ height: 100%; overflow-x: hidden; } body{ height: 100%; min-height: 100%; display: flex; flex-direction: column; } footer{ margin-top: auto; } </description>
+    </item>
+    
     <item>
       <title>插入Fontawesome圖示</title>
       <link>https://jack842248.github.io/post/2022-04-16-css-%E6%8F%92%E5%85%A5fontawesome%E5%9C%96%E7%A4%BA/</link>
