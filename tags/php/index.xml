@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHP on Jack Huang Blog</title>
+    <link>https://jack842248.github.io/tags/php/</link>
+    <description>Recent content in PHP on Jack Huang Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
+    <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
+    <lastBuildDate>Sun, 20 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【PHP】執行php專案</title>
+      <link>https://jack842248.github.io/post/2023-12-01-php-%E5%9F%B7%E8%A1%8Cphp%E5%B0%88%E6%A1%88/</link>
+      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2023-12-01-php-%E5%9F%B7%E8%A1%8Cphp%E5%B0%88%E6%A1%88/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;執行php專案&#34;&gt;執行php專案&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
