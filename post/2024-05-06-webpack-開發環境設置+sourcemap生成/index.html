@@ -361,7 +361,7 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">static</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">__dirname</span>,<span style="color:#e6db74">&#39;dist&#39;</span>),
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">compress</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>, <span style="color:#75715e">//啟用gzip壓縮方式(加速)
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">hot</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>, <span style="color:#75715e">//只重新加載修改的部分
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">watchFile</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;src/**/*&#39;</span>] <span style="color:#75715e">//監控檔案
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">watchFiles</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;src/**/*&#39;</span>] <span style="color:#75715e">//監控檔案
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
@@ -409,7 +409,7 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">static</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#a6e22e">__dirname</span>,<span style="color:#e6db74">&#39;dist&#39;</span>),
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">compress</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">hot</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">watchFile</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;src/**/*&#39;</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">watchFiles</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;src/**/*&#39;</span>]
 </span></span><span style="display:flex;"><span>    },
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">devtool</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;source-map&#39;</span> <span style="color:#75715e">//自動生成sourceMap檔
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}

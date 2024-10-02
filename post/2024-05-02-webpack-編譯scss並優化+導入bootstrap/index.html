@@ -59,7 +59,7 @@
   "headline": "【Webpack】編譯scss並優化\u002b導入Bootstrap",
   "description" : " 編譯css ",
   "inLanguage" : "zh-tw",
-  "wordCount":  841 ,
+  "wordCount":  772 ,
   "datePublished" : "2024-05-02T00:00:00",
   "dateModified" : "2024-05-02T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;841&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;772&nbsp;個字
   
   
   
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;841&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;772&nbsp;個字
   
   
   
@@ -326,18 +326,13 @@
 <h1 id="heading-1"></h1>
 <h1 id="heading-2"></h1>
 <ol>
-<li>安裝套件<code>style-loader</code>和<code>css-loader</code>套件
-<ul>
-<li><code>style-loader</code>是解析並壓縮css</li>
-<li><code>css-loader</code>是將css引入html</li>
-</ul>
-</li>
+<li>安裝套件<code>style-loader</code>和<code>css-loader</code>套件</li>
 </ol>
 <h1 id="heading-3"></h1>
 <pre tabindex="0"><code>$ npm i style-loader css-loader -D
 </code></pre><h1 id="heading-4"></h1>
 <ol start="2">
-<li>在<code>src</code>資料夾底下手動建立<code>style.css</code>檔案，並在裡面隨便寫一些樣式：</li>
+<li>在<code>src</code>資料夾底下手動建立<code>css/style.css</code>檔案，並在裡面寫一些樣式：</li>
 </ol>
 <h1 id="heading-5"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -440,8 +435,8 @@
 </span></span><span style="display:flex;"><span>            {
 </span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/\.css$/</span>,
 </span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">use</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#39;style-loader&#39;</span>, <span style="color:#75715e">//後執行
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                    <span style="color:#e6db74">&#39;css-loader&#39;</span> <span style="color:#75715e">//先執行
+</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#39;style-loader&#39;</span>, <span style="color:#75715e">//後執行，將css以&lt;style&gt;方式直接引入html
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                    <span style="color:#e6db74">&#39;css-loader&#39;</span> <span style="color:#75715e">//先執行，解析並壓縮代碼
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                ]
 </span></span><span style="display:flex;"><span>            }
 </span></span><span style="display:flex;"><span>        ]
@@ -501,22 +496,20 @@
 ├─── package.json
 └─── webpack.config.js   
 </code></pre><h1 id="heading-15"></h1>
-<p><code>這樣設定完成後，css就會以&lt;style&gt;方式帶到html上</code></p>
-<h1 id="heading-16"></h1>
 <hr>
-<h1 id="heading-17"></h1>
+<h1 id="heading-16"></h1>
 <h3 id="將css以獨立方式帶入html">將css以獨立方式帶入html</h3>
-<h1 id="heading-18"></h1>
+<h1 id="heading-17"></h1>
 <ol>
 <li>安裝<code>mini-css-extract-plugin</code>套件</li>
 </ol>
-<h1 id="heading-19"></h1>
+<h1 id="heading-18"></h1>
 <pre tabindex="0"><code>$ npm i mini-css-extract-plugin -D
-</code></pre><h1 id="heading-20"></h1>
+</code></pre><h1 id="heading-19"></h1>
 <ol start="2">
 <li>在<code>webpack.config.js</code>新增：</li>
 </ol>
-<h1 id="heading-21"></h1>
+<h1 id="heading-20"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -568,7 +561,7 @@
 </span></span><span style="display:flex;"><span>            {
 </span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/\.css$/</span>,
 </span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">use</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">MiniCssExtractPlugin</span>.<span style="color:#a6e22e">loader</span>, <span style="color:#75715e">//將原本style-loader替換掉
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">MiniCssExtractPlugin</span>.<span style="color:#a6e22e">loader</span>, <span style="color:#75715e">//將原本style-loader替換掉，改用&lt;link&gt;方式引入html
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                    <span style="color:#e6db74">&#39;css-loader&#39;</span>
 </span></span><span style="display:flex;"><span>                ]
 </span></span><span style="display:flex;"><span>            }
@@ -585,29 +578,27 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-22"></h1>
+</div><h1 id="heading-21"></h1>
 <ol start="3">
 <li>在終端機執行：</li>
 </ol>
-<h1 id="heading-23"></h1>
+<h1 id="heading-22"></h1>
 <pre tabindex="0"><code>$ npm run start
-</code></pre><h1 id="heading-24"></h1>
-<p><code>這樣設定完成後，css就會以&lt;link&gt;方式帶到html上</code></p>
-<h1 id="heading-25"></h1>
+</code></pre><h1 id="heading-23"></h1>
 <hr>
-<h1 id="heading-26"></h1>
-<h3 id="編譯sass檔案並將樣式帶入html">編譯sass檔案並將樣式帶入html</h3>
-<h1 id="heading-27"></h1>
+<h1 id="heading-24"></h1>
+<h3 id="編譯scss檔案並將樣式帶入html">編譯scss檔案並將樣式帶入html</h3>
+<h1 id="heading-25"></h1>
 <ol>
 <li>安裝<code>sass</code>、<code>sass-loader</code>、<code>postcss</code>、<code>postcss-loader</code>、<code>postcss-preset-env</code>、</li>
 </ol>
-<h1 id="heading-28"></h1>
+<h1 id="heading-26"></h1>
 <pre tabindex="0"><code>$ npm i sass sass-loader postcss postcss-loader postcss-preset-env -D
-</code></pre><h1 id="heading-29"></h1>
+</code></pre><h1 id="heading-27"></h1>
 <ol start="2">
 <li>在<code>webpack.config.js</code>新增：</li>
 </ol>
-<h1 id="heading-30"></h1>
+<h1 id="heading-28"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -656,8 +647,8 @@
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;path&#39;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">HtmlWebpackPlugin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;html-webpack-plugin&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">MiniCssExtractPlugin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;mini-css-extract-plugin&#39;</span>); <span style="color:#75715e">//引入套件
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">MiniCssExtractPlugin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;mini-css-extract-plugin&#39;</span>);
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">entry</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./src/js/main.js&#39;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">output</span><span style="color:#f92672">:</span> {
@@ -668,13 +659,13 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">module</span><span style="color:#f92672">:</span> {
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">rules</span><span style="color:#f92672">:</span> [
 </span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/\.scss$/</span>, <span style="color:#75715e">//將原本css替換掉
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> <span style="color:#e6db74">/\.scss$/</span>, <span style="color:#75715e">//將原本css替換掉，改成scss檔
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                <span style="color:#a6e22e">use</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">MiniCssExtractPlugin</span>.<span style="color:#a6e22e">loader</span>, <span style="color:#75715e">//將原本style-loader替換掉
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                    <span style="color:#e6db74">&#39;css-loader&#39;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">MiniCssExtractPlugin</span>.<span style="color:#a6e22e">loader</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#39;css-loader&#39;</span>,
 </span></span><span style="display:flex;"><span>                    {
-</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;postcss-loader&#39;</span>,
-</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">loader</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;postcss-loader&#39;</span>, <span style="color:#75715e">//使用postcss套件
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                        <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
 </span></span><span style="display:flex;"><span>                            <span style="color:#a6e22e">postcssOptions</span><span style="color:#f92672">:</span>{
 </span></span><span style="display:flex;"><span>                                <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span>[
 </span></span><span style="display:flex;"><span>                                    [<span style="color:#e6db74">&#39;postcss-preset-env&#39;</span>] <span style="color:#75715e">//包含autoprefixer
@@ -698,11 +689,11 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-31"></h1>
+</div><h1 id="heading-29"></h1>
 <ol start="3">
-<li>建立scss資料夾結構，並在<code>style.scss</code>裡新增一些樣式：</li>
+<li>建立<code>scss</code>資料夾結構，並在裡面新增<code>style.scss</code>檔，簡單寫一些樣式：</li>
 </ol>
-<h1 id="heading-32"></h1>
+<h1 id="heading-30"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -727,36 +718,11 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-33"></h1>
-<pre tabindex="0"><code>you project
-├─── dist/
-│     │
-│     ├─── js/ 
-│     │     │
-│     │     └── main.js
-│     │
-│     └─── css/ 
-│           │
-│           └── style.css
-│  
-├─── node_modules/        
-├─── src/
-│     │
-│     ├─── js/ 
-│     │     │
-│     │     └── main.js
-│     │
-│     └─── scss/ 
-│           │
-│           └── style.scss
-│ 
-├─── package.json
-└─── webpack.config.js   
-</code></pre><h1 id="heading-34"></h1>
+</div><h1 id="heading-31"></h1>
 <ol start="4">
 <li>修改<code>main.js</code>裡的樣式路徑：</li>
 </ol>
-<h1 id="heading-35"></h1>
+<h1 id="heading-32"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -765,27 +731,13 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;../scss/style.scss&#39;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-36"></h1>
-<hr>
-<h1 id="heading-37"></h1>
-<h3 id="執行編譯看最終結果">執行編譯看最終結果</h3>
-<h1 id="heading-38"></h1>
-<ol>
-<li>在終端機輸入：</li>
+</div><h1 id="heading-33"></h1>
+<ol start="5">
+<li>在終端機執行：</li>
 </ol>
-<h1 id="heading-39"></h1>
+<h1 id="heading-34"></h1>
 <pre tabindex="0"><code>$ npm run start
-</code></pre><h1 id="heading-40"></h1>
-<ol start="2">
-<li>接著再輸入：</li>
-</ol>
-<h1 id="heading-41"></h1>
-<pre tabindex="0"><code>$npm run dev
-</code></pre><h1 id="heading-42"></h1>
-<ol start="3">
-<li>最後就能看到資料夾結構如下：</li>
-</ol>
-<h1 id="heading-43"></h1>
+</code></pre><h1 id="heading-35"></h1>
 <pre tabindex="0"><code>you project
 ├─── dist/
 │     │
@@ -810,11 +762,11 @@
 │ 
 ├─── package.json
 └─── webpack.config.js   
-</code></pre><h1 id="heading-44"></h1>
-<ol start="4">
-<li>並且在<code>dist</code>裡的<code>style.css</code>，可以看到樣式自動增加前綴</li>
+</code></pre><h1 id="heading-36"></h1>
+<ol start="6">
+<li>可以看到在<code>dist</code>裡的`style.css樣式自動增加前綴</li>
 </ol>
-<h1 id="heading-45"></h1>
+<h1 id="heading-37"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -853,11 +805,11 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-46"></h1>
+</div><h1 id="heading-38"></h1>
 <hr>
-<h1 id="heading-47"></h1>
+<h1 id="heading-39"></h1>
 <h3 id="若要使用bootstrap533">若要使用bootstrap(5.3.3)</h3>
-<h1 id="heading-48"></h1>
+<h1 id="heading-40"></h1>
 <ol>
 <li>安裝<code>bootstrap</code>套件:
 <ul>
@@ -866,13 +818,13 @@
 </ul>
 </li>
 </ol>
-<h1 id="heading-49"></h1>
+<h1 id="heading-41"></h1>
 <pre tabindex="0"><code>$ npm i bootstrap @popperjs/core
-</code></pre><h1 id="heading-50"></h1>
+</code></pre><h1 id="heading-42"></h1>
 <ol start="2">
 <li>快速取用<code>bootstrap</code>方法，是直接在<code>main.js</code>引入：</li>
 </ol>
-<h1 id="heading-51"></h1>
+<h1 id="heading-43"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -885,11 +837,11 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js&#39;</span>; <span style="color:#75715e">//bootstrap定位套件
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-52"></h1>
+</div><h1 id="heading-44"></h1>
 <ol start="3">
 <li>自訂<code>bootstrap</code>方法，在scss裡的<code>style.scss</code>引入：</li>
 </ol>
-<h1 id="heading-53"></h1>
+<h1 id="heading-45"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -992,17 +944,17 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">@import</span> <span style="color:#e6db74">&#34;custom&#34;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-54"></h1>
+</div><h1 id="heading-46"></h1>
 <ol start="4">
 <li>重要補充：如果<code>sass</code>出現，關於變數等等的警告錯誤，請將<code>sass</code>版本降低到<code>@1.77.6</code>：</li>
 </ol>
-<h1 id="heading-55"></h1>
+<h1 id="heading-47"></h1>
 <p><code>More info: https://sass-lang.com/d/color-functions</code></p>
-<h1 id="heading-56"></h1>
+<h1 id="heading-48"></h1>
 <p><code>More info: https://sass-lang.com/d/mixed-decls</code>å</p>
-<h1 id="heading-57"></h1>
+<h1 id="heading-49"></h1>
 <pre tabindex="0"><code>$ npm i sass@1.77.6
-</code></pre><h1 id="heading-58"></h1>
+</code></pre><h1 id="heading-50"></h1>
 
         
           <div class="blog-tags">
