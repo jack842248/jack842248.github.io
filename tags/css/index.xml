@@ -58,10 +58,10 @@
     
     <item>
       <title>【CSS】Fontawesome</title>
-      <link>https://jack842248.github.io/post/2022-04-16-css-fontawesome/</link>
-      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
+      <link>https://jack842248.github.io/post/2022-04-09-css-fontawesome/</link>
+      <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2022-04-16-css-fontawesome/</guid>
+      <guid>https://jack842248.github.io/post/2022-04-09-css-fontawesome/</guid>
       <description>Font Awesome 5 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 5搜尋icon 1 2 3 4 &amp;lt;i class=&amp;#34;fas fa-camera&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-xs&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--小型--&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-sm&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--中型--&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-lg&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--大型--&amp;gt; Font Awesome 6 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 6搜尋icon 1 2 3 4 5 6 &amp;lt;i class=&amp;#34;fa-solid fa-camera&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-2xs&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--超小型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-sm&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--小型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-lg&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--中型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-xl&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--大型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-2xl&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--超大型--&amp;gt; 加入在偽元素中 1 2 3 4 5 6 .</description>
     </item>
     

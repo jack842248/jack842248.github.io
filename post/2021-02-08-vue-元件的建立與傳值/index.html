@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>【Vue】vue元件的建立與傳值 - Jack Huang Blog</title>
+  <title>【Vue】元件的建立與傳值 - Jack Huang Blog</title>
   <meta name="description" content="component、props、$emit()">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
@@ -45,7 +45,7 @@
         "position": 3,
         "item": {
           "@id": "https:\/\/jack842248.github.io\/post\/2021-02-08-vue-%E5%85%83%E4%BB%B6%E7%9A%84%E5%BB%BA%E7%AB%8B%E8%88%87%E5%82%B3%E5%80%BC\/",
-          "name": "【 vue】vue元件的建立與傳值"
+          "name": "【 vue】元件的建立與傳值"
         }
     }]
 }
@@ -56,7 +56,7 @@
   "author": {
     "name" : "JackHuang"
   },
-  "headline": "【Vue】vue元件的建立與傳值",
+  "headline": "【Vue】元件的建立與傳值",
   "description" : "元件(Component) 元件資料是獨立運作，也可以重複使用。 元件裡面可以再包元件。 建立元件有兩種方式:\n全域註冊 : 使用Vue.component()建立，其他app也可以使用。\n局部註冊 : 在app裡使用components建立，只有app自己可以使用。\n全域註冊元件 使用Vue.component()建立，第一個參數自訂[標籤名稱]。 在HTML建立一個類型為 text\/x-template 的\u0026lt;script\u0026gt;，並賦予一個[id]名稱。 並在底下建立元件結構。 在 Vue.component() ，使用[template]對應\u0026lt;script\u0026gt;的[id]。 在HTML上使用自訂[標籤名稱]。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 \/\/ \u0026lt;-----html-----\u0026gt; #app list-com \/\/5. script(type=\u0026#34;text\/x-template\u0026#34; id=\u0026#34;list-com\u0026#34;) \/\/2. ul \/\/3. li 蘋果 li 香蕉 li 鳳梨 \/\/ \u0026lt;-----js-----\u0026gt; Vue.component(\u0026#34;list-com\u0026#34;,{ \/\/1. template: \u0026#34;#list-com\u0026#34; \/\/4. }); var app = new Vue({ el: \u0026#34;#app\u0026#34; }); 局部註冊元件 在app裡使用[components]建立元件。 先自訂[標籤名稱]。 使用物件方式，帶入[template]，並建立元件結構。 在HTML上使用自訂[標籤名稱]。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 \/\/ \u0026lt;-----html-----\u0026gt; #app list-com \/\/ \u0026lt;-----js-----\u0026gt; var app = new Vue({ el: \u0026#34;#app\u0026#34;, components:{ \u0026#34;list-com\u0026#34;:{ template: ` \u0026lt;ul\u0026gt; \u0026lt;li\u0026gt;蘋果\u0026lt;\/li\u0026gt; \u0026lt;li\u0026gt;香蕉\u0026lt;\/li\u0026gt; \u0026lt;li\u0026gt;鳳梨\u0026lt;\/li\u0026gt; \u0026lt;\/ul\u0026gt; ` } } }); 元件的data資料 元件的data需使用function(){return{.",
   "inLanguage" : "zh-tw",
   "wordCount":  721 ,
@@ -78,13 +78,13 @@
 }
 </script>
 
-<meta property="og:title" content="【Vue】vue元件的建立與傳值" />
+<meta property="og:title" content="【Vue】元件的建立與傳值" />
 <meta property="og:description" content="component、props、$emit()">
 <meta property="og:url" content="https://jack842248.github.io/post/2021-02-08-vue-%E5%85%83%E4%BB%B6%E7%9A%84%E5%BB%BA%E7%AB%8B%E8%88%87%E5%82%B3%E5%80%BC/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
-  <meta name="twitter:title" content="【Vue】vue元件的建立與傳值" />
+  <meta name="twitter:title" content="【Vue】元件的建立與傳值" />
   <meta name="twitter:description" content="component、props、$emit()">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -244,7 +244,7 @@
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="post-heading">
-                <h1>【Vue】vue元件的建立與傳值</h1>
+                <h1>【Vue】元件的建立與傳值</h1>
                   
                     
                       <h2 class="post-subheading">component、props、$emit()</h2>
@@ -281,7 +281,7 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>【Vue】vue元件的建立與傳值</h1>
+                <h1>【Vue】元件的建立與傳值</h1>
               
               
               
@@ -1082,7 +1082,7 @@
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-08-vue-%25E5%2585%2583%25E4%25BB%25B6%25E7%259A%2584%25E5%25BB%25BA%25E7%25AB%258B%25E8%2588%2587%25E5%2582%25B3%25E5%2580%25BC%2f&amp;text=%e3%80%90Vue%e3%80%91vue%e5%85%83%e4%bb%b6%e7%9a%84%e5%bb%ba%e7%ab%8b%e8%88%87%e5%82%b3%e5%80%bc&amp;via=" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-08-vue-%25E5%2585%2583%25E4%25BB%25B6%25E7%259A%2584%25E5%25BB%25BA%25E7%25AB%258B%25E8%2588%2587%25E5%2582%25B3%25E5%2580%25BC%2f&amp;text=%e3%80%90Vue%e3%80%91%e5%85%83%e4%bb%b6%e7%9a%84%e5%bb%ba%e7%ab%8b%e8%88%87%e5%82%b3%e5%80%bc&amp;via=" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1096,28 +1096,28 @@
   
       
       <li>
-        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-08-vue-%25E5%2585%2583%25E4%25BB%25B6%25E7%259A%2584%25E5%25BB%25BA%25E7%25AB%258B%25E8%2588%2587%25E5%2582%25B3%25E5%2580%25BC%2f&amp;title=%e3%80%90Vue%e3%80%91vue%e5%85%83%e4%bb%b6%e7%9a%84%e5%bb%ba%e7%ab%8b%e8%88%87%e5%82%b3%e5%80%bc" target="_blank" title="Share on Reddit">
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-08-vue-%25E5%2585%2583%25E4%25BB%25B6%25E7%259A%2584%25E5%25BB%25BA%25E7%25AB%258B%25E8%2588%2587%25E5%2582%25B3%25E5%2580%25BC%2f&amp;title=%e3%80%90Vue%e3%80%91%e5%85%83%e4%bb%b6%e7%9a%84%e5%bb%ba%e7%ab%8b%e8%88%87%e5%82%b3%e5%80%bc" target="_blank" title="Share on Reddit">
           <i class="fab fa-reddit"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-08-vue-%25E5%2585%2583%25E4%25BB%25B6%25E7%259A%2584%25E5%25BB%25BA%25E7%25AB%258B%25E8%2588%2587%25E5%2582%25B3%25E5%2580%25BC%2f&amp;title=%e3%80%90Vue%e3%80%91vue%e5%85%83%e4%bb%b6%e7%9a%84%e5%bb%ba%e7%ab%8b%e8%88%87%e5%82%b3%e5%80%bc" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-08-vue-%25E5%2585%2583%25E4%25BB%25B6%25E7%259A%2584%25E5%25BB%25BA%25E7%25AB%258B%25E8%2588%2587%25E5%2582%25B3%25E5%2580%25BC%2f&amp;title=%e3%80%90Vue%e3%80%91%e5%85%83%e4%bb%b6%e7%9a%84%e5%bb%ba%e7%ab%8b%e8%88%87%e5%82%b3%e5%80%bc" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-08-vue-%25E5%2585%2583%25E4%25BB%25B6%25E7%259A%2584%25E5%25BB%25BA%25E7%25AB%258B%25E8%2588%2587%25E5%2582%25B3%25E5%2580%25BC%2f&amp;title=%e3%80%90Vue%e3%80%91vue%e5%85%83%e4%bb%b6%e7%9a%84%e5%bb%ba%e7%ab%8b%e8%88%87%e5%82%b3%e5%80%bc" target="_blank" title="Share on StumbleUpon">
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-08-vue-%25E5%2585%2583%25E4%25BB%25B6%25E7%259A%2584%25E5%25BB%25BA%25E7%25AB%258B%25E8%2588%2587%25E5%2582%25B3%25E5%2580%25BC%2f&amp;title=%e3%80%90Vue%e3%80%91%e5%85%83%e4%bb%b6%e7%9a%84%e5%bb%ba%e7%ab%8b%e8%88%87%e5%82%b3%e5%80%bc" target="_blank" title="Share on StumbleUpon">
           <i class="fab fa-stumbleupon"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-08-vue-%25E5%2585%2583%25E4%25BB%25B6%25E7%259A%2584%25E5%25BB%25BA%25E7%25AB%258B%25E8%2588%2587%25E5%2582%25B3%25E5%2580%25BC%2f&amp;description=%e3%80%90Vue%e3%80%91vue%e5%85%83%e4%bb%b6%e7%9a%84%e5%bb%ba%e7%ab%8b%e8%88%87%e5%82%b3%e5%80%bc" target="_blank" title="Share on Pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-08-vue-%25E5%2585%2583%25E4%25BB%25B6%25E7%259A%2584%25E5%25BB%25BA%25E7%25AB%258B%25E8%2588%2587%25E5%2582%25B3%25E5%2580%25BC%2f&amp;description=%e3%80%90Vue%e3%80%91%e5%85%83%e4%bb%b6%e7%9a%84%e5%bb%ba%e7%ab%8b%e8%88%87%e5%82%b3%e5%80%bc" target="_blank" title="Share on Pinterest">
           <i class="fab fa-pinterest"></i>
         </a>
       </li>
@@ -1139,15 +1139,15 @@
                   <ul>
                 
                 
-                    <li><a href="/post/2021-02-09-vue-%E5%85%83%E4%BB%B6%E7%9A%84%E5%88%87%E6%8F%9B%E8%88%87%E6%8F%92%E6%A7%BD/">【Vue】vue元件的切換與插槽</a></li>
+                    <li><a href="/post/2021-02-09-vue-%E5%85%83%E4%BB%B6%E7%9A%84%E5%88%87%E6%8F%9B%E8%88%87%E6%8F%92%E6%A7%BD/">【Vue】元件的切換與插槽</a></li>
                 
                     <li><a href="/post/2021-02-07-vue-table%E6%8E%92%E5%BA%8Fbootstrap%E7%89%88/">【Vue】vue-table排序(Bootstrap版)</a></li>
                 
-                    <li><a href="/post/2021-02-06-vue-%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A3%BE%E7%AC%A6/">【Vue】vue事件修飾符</a></li>
+                    <li><a href="/post/2021-02-06-vue-%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A3%BE%E7%AC%A6/">【Vue】事件修飾符</a></li>
                 
-                    <li><a href="/post/2021-02-05-vue-%E5%88%87%E6%8F%9B%E6%87%89%E7%94%A8%E6%96%B9%E6%B3%95/">【Vue】vue切換應用方法</a></li>
+                    <li><a href="/post/2021-02-05-vue-%E5%88%87%E6%8F%9B%E6%87%89%E7%94%A8%E6%96%B9%E6%B3%95/">【Vue】切換應用方法</a></li>
                 
-                    <li><a href="/post/2021-02-04-vue-%E9%80%B2%E9%9A%8E%E6%87%89%E7%94%A8%E6%96%B9%E6%B3%95/">【Vue】vue進階應用方法</a></li>
+                    <li><a href="/post/2021-02-04-vue-%E9%80%B2%E9%9A%8E%E6%87%89%E7%94%A8%E6%96%B9%E6%B3%95/">【Vue】進階應用方法</a></li>
                 
               </ul>
 
@@ -1164,7 +1164,7 @@
           
           
             <li class="next">
-              <a href="https://jack842248.github.io/post/2021-02-09-vue-%E5%85%83%E4%BB%B6%E7%9A%84%E5%88%87%E6%8F%9B%E8%88%87%E6%8F%92%E6%A7%BD/" data-toggle="tooltip" data-placement="top" title="【Vue】vue元件的切換與插槽">下一篇 &rarr;</a>
+              <a href="https://jack842248.github.io/post/2021-02-09-vue-%E5%85%83%E4%BB%B6%E7%9A%84%E5%88%87%E6%8F%9B%E8%88%87%E6%8F%92%E6%A7%BD/" data-toggle="tooltip" data-placement="top" title="【Vue】元件的切換與插槽">下一篇 &rarr;</a>
             </li>
           
         </ul>

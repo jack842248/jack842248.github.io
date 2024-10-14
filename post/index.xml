@@ -7,37 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Sun, 02 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>【JS】jQuery抓取鍵盤事件</title>
-      <link>https://jack842248.github.io/post/2024-06-02-javascript-jquery%E6%8A%93%E5%8F%96%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6/</link>
-      <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
+      <title>【PHP】執行php專案</title>
+      <link>https://jack842248.github.io/post/2024-07-01-php-%E5%9F%B7%E8%A1%8Cphp%E5%B0%88%E6%A1%88/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-06-02-javascript-jquery%E6%8A%93%E5%8F%96%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6/</guid>
+      <guid>https://jack842248.github.io/post/2024-07-01-php-%E5%9F%B7%E8%A1%8Cphp%E5%B0%88%E6%A1%88/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;使用鍵盤事件來改變狀態&#34;&gt;使用鍵盤事件來改變狀態&lt;/h2&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
-    </item>
-    
-    <item>
-      <title>【JS】skrollr頁面滾動效果</title>
-      <link>https://jack842248.github.io/post/2024-06-01-javascript-skrollr%E9%A0%81%E9%9D%A2%E6%BB%BE%E5%8B%95%E6%95%88%E6%9E%9C/</link>
-      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-06-01-javascript-skrollr%E9%A0%81%E9%9D%A2%E6%BB%BE%E5%8B%95%E6%95%88%E6%9E%9C/</guid>
-      <description>&lt;hr&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;使用方式直接引入cdn&#34;&gt;使用方式直接引入cdn&lt;/h2&gt;
+&lt;h2 id=&#34;執行php專案&#34;&gt;執行php專案&lt;/h2&gt;
 &lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
     <item>
       <title>【Webpack】開發環境設置&#43;SourceMap生成</title>
-      <link>https://jack842248.github.io/post/2024-05-06-webpack-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83%E8%A8%AD%E7%BD%AE&#43;sourcemap%E7%94%9F%E6%88%90/</link>
-      <pubDate>Mon, 06 May 2024 00:00:00 +0000</pubDate>
+      <link>https://jack842248.github.io/post/2024-05-05-webpack-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83%E8%A8%AD%E7%BD%AE&#43;sourcemap%E7%94%9F%E6%88%90/</link>
+      <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-05-06-webpack-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83%E8%A8%AD%E7%BD%AE&#43;sourcemap%E7%94%9F%E6%88%90/</guid>
+      <guid>https://jack842248.github.io/post/2024-05-05-webpack-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83%E8%A8%AD%E7%BD%AE&#43;sourcemap%E7%94%9F%E6%88%90/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;開發環境設置&#34;&gt;開發環境設置&lt;/h2&gt;
@@ -46,10 +34,10 @@
     
     <item>
       <title>【Webpack】複製檔案&#43;自動壓縮圖片</title>
-      <link>https://jack842248.github.io/post/2024-05-05-webpack-%E8%A4%87%E8%A3%BD%E6%AA%94%E6%A1%88&#43;%E8%87%AA%E5%8B%95%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87/</link>
+      <link>https://jack842248.github.io/post/2024-05-04-webpack-%E8%A4%87%E8%A3%BD%E6%AA%94%E6%A1%88&#43;%E8%87%AA%E5%8B%95%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87/</link>
       <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-05-05-webpack-%E8%A4%87%E8%A3%BD%E6%AA%94%E6%A1%88&#43;%E8%87%AA%E5%8B%95%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87/</guid>
+      <guid>https://jack842248.github.io/post/2024-05-04-webpack-%E8%A4%87%E8%A3%BD%E6%AA%94%E6%A1%88&#43;%E8%87%AA%E5%8B%95%E5%A3%93%E7%B8%AE%E5%9C%96%E7%89%87/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;單純複製檔案&#34;&gt;單純複製檔案&lt;/h2&gt;
@@ -125,6 +113,18 @@
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;音樂播放按鈕&#34;&gt;音樂播放按鈕&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>【jQuery】用JS&#43;CSS實作常用元件</title>
+      <link>https://jack842248.github.io/post/2024-02-09-jquery-%E7%94%A8js&#43;css%E5%AF%A6%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%85%83%E4%BB%B6/</link>
+      <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2024-02-09-jquery-%E7%94%A8js&#43;css%E5%AF%A6%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%85%83%E4%BB%B6/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;漢堡選單&#34;&gt;漢堡選單&lt;/h2&gt;
 &lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
@@ -212,11 +212,23 @@
     </item>
     
     <item>
-      <title>【jQuery】自訂動態效果</title>
-      <link>https://jack842248.github.io/post/2024-01-12-jquery-%E8%87%AA%E8%A8%82%E5%8B%95%E6%85%8B%E6%95%88%E6%9E%9C/</link>
-      <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
+      <title>【jQuery】抓取鍵盤事件</title>
+      <link>https://jack842248.github.io/post/2024-02-01-jquery-%E6%8A%93%E5%8F%96%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-01-12-jquery-%E8%87%AA%E8%A8%82%E5%8B%95%E6%85%8B%E6%95%88%E6%9E%9C/</guid>
+      <guid>https://jack842248.github.io/post/2024-02-01-jquery-%E6%8A%93%E5%8F%96%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;使用鍵盤事件來改變狀態&#34;&gt;使用鍵盤事件來改變狀態&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>【jQuery】自訂動態效果</title>
+      <link>https://jack842248.github.io/post/2024-01-31-jquery-%E8%87%AA%E8%A8%82%E5%8B%95%E6%85%8B%E6%95%88%E6%9E%9C/</link>
+      <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2024-01-31-jquery-%E8%87%AA%E8%A8%82%E5%8B%95%E6%85%8B%E6%95%88%E6%9E%9C/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;animate用法介紹&#34;&gt;animate用法介紹&lt;/h2&gt;
@@ -225,10 +237,10 @@
     
     <item>
       <title>【jQuery】動態改變內容</title>
-      <link>https://jack842248.github.io/post/2024-01-11-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E9%A1%AF%E7%A4%BA%E6%88%96%E9%9A%B1%E8%97%8F/</link>
-      <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
+      <link>https://jack842248.github.io/post/2024-01-30-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E9%A1%AF%E7%A4%BA%E6%88%96%E9%9A%B1%E8%97%8F/</link>
+      <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-01-11-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E9%A1%AF%E7%A4%BA%E6%88%96%E9%9A%B1%E8%97%8F/</guid>
+      <guid>https://jack842248.github.io/post/2024-01-30-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E9%A1%AF%E7%A4%BA%E6%88%96%E9%9A%B1%E8%97%8F/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;jquery起手式&#34;&gt;jQuery起手式&lt;/h2&gt;
@@ -237,13 +249,25 @@
     
     <item>
       <title>【jQuery】改變標籤屬性</title>
-      <link>https://jack842248.github.io/post/2024-01-10-jquery-%E6%94%B9%E8%AE%8A%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <link>https://jack842248.github.io/post/2024-01-29-jquery-%E6%94%B9%E8%AE%8A%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7/</link>
+      <pubDate>Mon, 29 Jan 2024 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-01-10-jquery-%E6%94%B9%E8%AE%8A%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7/</guid>
+      <guid>https://jack842248.github.io/post/2024-01-29-jquery-%E6%94%B9%E8%AE%8A%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;改變元素的內容&#34;&gt;改變元素的內容&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>【JS】skrollr頁面滾動效果</title>
+      <link>https://jack842248.github.io/post/2024-01-10-javascript-skrollr%E9%A0%81%E9%9D%A2%E6%BB%BE%E5%8B%95%E6%95%88%E6%9E%9C/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2024-01-10-javascript-skrollr%E9%A0%81%E9%9D%A2%E6%BB%BE%E5%8B%95%E6%95%88%E6%9E%9C/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;使用方式直接引入cdn&#34;&gt;使用方式直接引入cdn&lt;/h2&gt;
 &lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
@@ -357,10 +381,10 @@
     
     <item>
       <title>【Gulp】最終gulp完整final版</title>
-      <link>https://jack842248.github.io/post/2023-08-20-gulp-%E6%9C%80%E7%B5%82gulp%E5%AE%8C%E6%95%B4final%E7%89%88/</link>
+      <link>https://jack842248.github.io/post/2023-08-21-gulp-%E6%9C%80%E7%B5%82gulp%E5%AE%8C%E6%95%B4final%E7%89%88/</link>
       <pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-08-20-gulp-%E6%9C%80%E7%B5%82gulp%E5%AE%8C%E6%95%B4final%E7%89%88/</guid>
+      <guid>https://jack842248.github.io/post/2023-08-21-gulp-%E6%9C%80%E7%B5%82gulp%E5%AE%8C%E6%95%B4final%E7%89%88/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;gulp-nunjucks-render&#34;&gt;gulp-nunjucks-render&lt;/h2&gt;
@@ -376,18 +400,6 @@
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;gulp-nunjucks-render&#34;&gt;gulp-nunjucks-render&lt;/h2&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
-    </item>
-    
-    <item>
-      <title>【PHP】執行php專案</title>
-      <link>https://jack842248.github.io/post/2023-12-01-php-%E5%9F%B7%E8%A1%8Cphp%E5%B0%88%E6%A1%88/</link>
-      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-12-01-php-%E5%9F%B7%E8%A1%8Cphp%E5%B0%88%E6%A1%88/</guid>
-      <description>&lt;hr&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;執行php專案&#34;&gt;執行php專案&lt;/h2&gt;
 &lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
@@ -572,42 +584,6 @@
     </item>
     
     <item>
-      <title>【PS】混合圖層的應用</title>
-      <link>https://jack842248.github.io/post/2023-04-13-photoshop-ps%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4%E7%9A%84%E6%87%89%E7%94%A8/</link>
-      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-04-13-photoshop-ps%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4%E7%9A%84%E6%87%89%E7%94%A8/</guid>
-      <description>&lt;hr&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;ps混合圖層效果&#34;&gt;PS混合圖層效果&lt;/h2&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
-    </item>
-    
-    <item>
-      <title>【PS】如何把色版調整回來</title>
-      <link>https://jack842248.github.io/post/2023-04-11-photoshop-%E5%A6%82%E4%BD%95%E6%8A%8A%E8%89%B2%E7%89%88%E8%AA%BF%E6%95%B4%E5%9B%9E%E4%BE%86/</link>
-      <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-04-11-photoshop-%E5%A6%82%E4%BD%95%E6%8A%8A%E8%89%B2%E7%89%88%E8%AA%BF%E6%95%B4%E5%9B%9E%E4%BE%86/</guid>
-      <description>&lt;hr&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;調整ps色版&#34;&gt;調整PS色版&lt;/h2&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
-    </item>
-    
-    <item>
-      <title>【PS】去背玻璃物體</title>
-      <link>https://jack842248.github.io/post/2023-04-10-photoshop-%E5%8E%BB%E8%83%8C%E7%8E%BB%E7%92%83%E7%89%A9%E9%AB%94/</link>
-      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-04-10-photoshop-%E5%8E%BB%E8%83%8C%E7%8E%BB%E7%92%83%E7%89%A9%E9%AB%94/</guid>
-      <description>&lt;hr&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;去背玻璃物體&#34;&gt;去背玻璃物體&lt;/h2&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
-    </item>
-    
-    <item>
       <title>【Design】了解相機的基本操作</title>
       <link>https://jack842248.github.io/post/2023-04-09-design-%E4%BA%86%E8%A7%A3%E7%9B%B8%E6%A9%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate>
@@ -773,18 +749,6 @@
     </item>
     
     <item>
-      <title>【jQuery】用JS&#43;CSS實作常用元件</title>
-      <link>https://jack842248.github.io/post/2024-02-09-jquery-%E7%94%A8js&#43;css%E5%AF%A6%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%85%83%E4%BB%B6/</link>
-      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-02-09-jquery-%E7%94%A8js&#43;css%E5%AF%A6%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%85%83%E4%BB%B6/</guid>
-      <description>&lt;hr&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;漢堡選單&#34;&gt;漢堡選單&lt;/h2&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
-    </item>
-    
-    <item>
       <title>【Mac】解決MAC無法存取隨身碟</title>
       <link>https://jack842248.github.io/post/2022-06-08-mac-%E8%A7%A3%E6%B1%BAmac%E7%84%A1%E6%B3%95%E5%AD%98%E5%8F%96%E9%9A%A8%E8%BA%AB%E7%A2%9F/</link>
       <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
@@ -793,6 +757,42 @@
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;解決mac無法存取隨身碟&#34;&gt;解決MAC無法存取隨身碟&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>【PS】混合圖層的應用</title>
+      <link>https://jack842248.github.io/post/2022-04-22-photoshop-ps%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4%E7%9A%84%E6%87%89%E7%94%A8/</link>
+      <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-22-photoshop-ps%E6%B7%B7%E5%90%88%E5%9C%96%E5%B1%A4%E7%9A%84%E6%87%89%E7%94%A8/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;ps混合圖層效果&#34;&gt;PS混合圖層效果&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>【PS】如何把色版調整回來</title>
+      <link>https://jack842248.github.io/post/2022-04-21-photoshop-%E5%A6%82%E4%BD%95%E6%8A%8A%E8%89%B2%E7%89%88%E8%AA%BF%E6%95%B4%E5%9B%9E%E4%BE%86/</link>
+      <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-21-photoshop-%E5%A6%82%E4%BD%95%E6%8A%8A%E8%89%B2%E7%89%88%E8%AA%BF%E6%95%B4%E5%9B%9E%E4%BE%86/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;調整ps色版&#34;&gt;調整PS色版&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>【PS】去背玻璃物體</title>
+      <link>https://jack842248.github.io/post/2022-04-20-photoshop-%E5%8E%BB%E8%83%8C%E7%8E%BB%E7%92%83%E7%89%A9%E9%AB%94/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2022-04-20-photoshop-%E5%8E%BB%E8%83%8C%E7%8E%BB%E7%92%83%E7%89%A9%E9%AB%94/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;去背玻璃物體&#34;&gt;去背玻璃物體&lt;/h2&gt;
 &lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
@@ -831,20 +831,11 @@
     
     <item>
       <title>【CSS】Fontawesome</title>
-      <link>https://jack842248.github.io/post/2022-04-16-css-fontawesome/</link>
-      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2022-04-16-css-fontawesome/</guid>
-      <description>Font Awesome 5 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 5搜尋icon 1 2 3 4 &amp;lt;i class=&amp;#34;fas fa-camera&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-xs&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--小型--&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-sm&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--中型--&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-lg&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--大型--&amp;gt; Font Awesome 6 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 6搜尋icon 1 2 3 4 5 6 &amp;lt;i class=&amp;#34;fa-solid fa-camera&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-2xs&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--超小型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-sm&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--小型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-lg&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--中型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-xl&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--大型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-2xl&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--超大型--&amp;gt; 加入在偽元素中 1 2 3 4 5 6 .</description>
-    </item>
-    
-    <item>
-      <title>【gulp】建立gulp開發環境</title>
-      <link>https://jack842248.github.io/post/2022-04-09-css-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/</link>
+      <link>https://jack842248.github.io/post/2022-04-09-css-fontawesome/</link>
       <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2022-04-09-css-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/</guid>
-      <description>gulp基本指令 指令 一般 縮寫 安裝 npm install gulp-sass npm i gulp-sass 移除 npm uninstall gulp-sass npm uni gulp-sass 搜尋 npm search gulp-sass npm s gulp-sass 清單 npm list npm ls 查詢版本 npm &amp;ndash;version npm -v 初始化 npm init &amp;mdash; 初始化(預設) npm init -y &amp;mdash; 顯示清單 npm list &amp;mdash; 更新套件 npm update gulp-sass &amp;mdash; 部署到github上 gulp deploy &amp;mdash; 建立gulp環境 下載node.js LTS：長期維護版(較穩定) Current：目前最新版(較為不穩定) node -v 檢查版本 安裝npm npm insatll npm -v 檢查版本 安裝全域gulp(每台電腦僅需執行一次) npm install gulp -g Gulp3版 npm install gulp-cli -g Gulp4版 sudo npm install gulp-cli -g mac安裝 生成package.</description>
+      <guid>https://jack842248.github.io/post/2022-04-09-css-fontawesome/</guid>
+      <description>Font Awesome 5 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 5搜尋icon 1 2 3 4 &amp;lt;i class=&amp;#34;fas fa-camera&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-xs&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--小型--&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-sm&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--中型--&amp;gt; &amp;lt;i class=&amp;#34;fas fa-camera fa-lg&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--大型--&amp;gt; Font Awesome 6 將&amp;lt;head&amp;gt;加入&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&amp;quot;&amp;gt; 使用font awesome 6搜尋icon 1 2 3 4 5 6 &amp;lt;i class=&amp;#34;fa-solid fa-camera&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-2xs&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--超小型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-sm&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--小型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-lg&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--中型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-xl&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--大型--&amp;gt; &amp;lt;i class=&amp;#34;fa-solid fa-camera fa-2xl&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;!--超大型--&amp;gt; 加入在偽元素中 1 2 3 4 5 6 .</description>
     </item>
     
     <item>
@@ -914,6 +905,18 @@ CSS Reset徹底清除標籤樣式 CSS Reset清除標籤樣式 CSS Normalize是�
     </item>
     
     <item>
+      <title>【PS】常用快捷鍵</title>
+      <link>https://jack842248.github.io/post/2021-03-01-photoshop-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2021-03-01-photoshop-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;常用快捷鍵&#34;&gt;常用快捷鍵&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
       <title>【JS】封裝AJAX請求</title>
       <link>https://jack842248.github.io/post/2021-02-24-javascript-%E5%B0%81%E8%A3%9Dajax%E8%AB%8B%E6%B1%82/</link>
       <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
@@ -926,18 +929,6 @@ PromiseValue : 回傳的值。
 在 *非同步事件 之後才會執行結果。
 需要用 .then() : 顯示成功的結果， catch() : 顯示失敗的結果。
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 function promiseFn(item){ //1. return new Promise((resolve,reject)=&amp;gt;{ //2. setTimeout(()=&amp;gt;{ //3. if(item){ resolve(&amp;#34;成功&amp;#34;); }else{ reject(&amp;#34;失敗&amp;#34;); } },1000) }) } promiseFn(1) .then((res)=&amp;gt;{ //4. console.log(res); }) .catch((rej)=&amp;gt;{ //4. console.log(rej); }) 用.</description>
-    </item>
-    
-    <item>
-      <title>【PS】常用快捷鍵</title>
-      <link>https://jack842248.github.io/post/2021-03-01-photoshop-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5/</link>
-      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2021-03-01-photoshop-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5/</guid>
-      <description>&lt;hr&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;常用快捷鍵&#34;&gt;常用快捷鍵&lt;/h2&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
     <item>
@@ -1041,7 +1032,7 @@ Google Map API 在Google雲端平台創建一個帳戶(需綁定一張信用卡)
     </item>
     
     <item>
-      <title>【Vue】vue元件的切換與插槽</title>
+      <title>【Vue】元件的切換與插槽</title>
       <link>https://jack842248.github.io/post/2021-02-09-vue-%E5%85%83%E4%BB%B6%E7%9A%84%E5%88%87%E6%8F%9B%E8%88%87%E6%8F%92%E6%A7%BD/</link>
       <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
@@ -1050,7 +1041,7 @@ Google Map API 在Google雲端平台創建一個帳戶(需綁定一張信用卡)
     </item>
     
     <item>
-      <title>【Vue】vue元件的建立與傳值</title>
+      <title>【Vue】元件的建立與傳值</title>
       <link>https://jack842248.github.io/post/2021-02-08-vue-%E5%85%83%E4%BB%B6%E7%9A%84%E5%BB%BA%E7%AB%8B%E8%88%87%E5%82%B3%E5%80%BC/</link>
       <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
@@ -1071,7 +1062,7 @@ Google Map API 在Google雲端平台創建一個帳戶(需綁定一張信用卡)
     </item>
     
     <item>
-      <title>【Vue】vue事件修飾符</title>
+      <title>【Vue】事件修飾符</title>
       <link>https://jack842248.github.io/post/2021-02-06-vue-%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A3%BE%E7%AC%A6/</link>
       <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
@@ -1080,7 +1071,7 @@ Google Map API 在Google雲端平台創建一個帳戶(需綁定一張信用卡)
     </item>
     
     <item>
-      <title>【Vue】vue切換應用方法</title>
+      <title>【Vue】切換應用方法</title>
       <link>https://jack842248.github.io/post/2021-02-05-vue-%E5%88%87%E6%8F%9B%E6%87%89%E7%94%A8%E6%96%B9%E6%B3%95/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
@@ -1089,7 +1080,7 @@ Google Map API 在Google雲端平台創建一個帳戶(需綁定一張信用卡)
     </item>
     
     <item>
-      <title>【Vue】vue進階應用方法</title>
+      <title>【Vue】進階應用方法</title>
       <link>https://jack842248.github.io/post/2021-02-04-vue-%E9%80%B2%E9%9A%8E%E6%87%89%E7%94%A8%E6%96%B9%E6%B3%95/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
@@ -1116,7 +1107,7 @@ Google Map API 在Google雲端平台創建一個帳戶(需綁定一張信用卡)
     </item>
     
     <item>
-      <title>【Vue】vue基本模板語法</title>
+      <title>【Vue】基本模板語法</title>
       <link>https://jack842248.github.io/post/2021-02-01-vue-%E5%9F%BA%E6%9C%AC%E6%A8%A1%E6%9D%BF%E8%AA%9E%E6%B3%95/</link>
       <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>

@@ -10,10 +10,10 @@
     <lastBuildDate>Mon, 21 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/gulp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【Gulp】最終gulp完整final版</title>
-      <link>https://jack842248.github.io/post/2023-08-20-gulp-%E6%9C%80%E7%B5%82gulp%E5%AE%8C%E6%95%B4final%E7%89%88/</link>
+      <link>https://jack842248.github.io/post/2023-08-21-gulp-%E6%9C%80%E7%B5%82gulp%E5%AE%8C%E6%95%B4final%E7%89%88/</link>
       <pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2023-08-20-gulp-%E6%9C%80%E7%B5%82gulp%E5%AE%8C%E6%95%B4final%E7%89%88/</guid>
+      <guid>https://jack842248.github.io/post/2023-08-21-gulp-%E6%9C%80%E7%B5%82gulp%E5%AE%8C%E6%95%B4final%E7%89%88/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;gulp-nunjucks-render&#34;&gt;gulp-nunjucks-render&lt;/h2&gt;
@@ -138,15 +138,6 @@
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;gulp基本指令&#34;&gt;gulp基本指令&lt;/h2&gt;
 &lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
-    </item>
-    
-    <item>
-      <title>【gulp】建立gulp開發環境</title>
-      <link>https://jack842248.github.io/post/2022-04-09-css-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/</link>
-      <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2022-04-09-css-%E5%BB%BA%E7%AB%8Bgulp%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/</guid>
-      <description>gulp基本指令 指令 一般 縮寫 安裝 npm install gulp-sass npm i gulp-sass 移除 npm uninstall gulp-sass npm uni gulp-sass 搜尋 npm search gulp-sass npm s gulp-sass 清單 npm list npm ls 查詢版本 npm &amp;ndash;version npm -v 初始化 npm init &amp;mdash; 初始化(預設) npm init -y &amp;mdash; 顯示清單 npm list &amp;mdash; 更新套件 npm update gulp-sass &amp;mdash; 部署到github上 gulp deploy &amp;mdash; 建立gulp環境 下載node.js LTS：長期維護版(較穩定) Current：目前最新版(較為不穩定) node -v 檢查版本 安裝npm npm insatll npm -v 檢查版本 安裝全域gulp(每台電腦僅需執行一次) npm install gulp -g Gulp3版 npm install gulp-cli -g Gulp4版 sudo npm install gulp-cli -g mac安裝 生成package.</description>
     </item>
     
   </channel>

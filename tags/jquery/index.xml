@@ -21,6 +21,18 @@
     </item>
     
     <item>
+      <title>【jQuery】用JS&#43;CSS實作常用元件</title>
+      <link>https://jack842248.github.io/post/2024-02-09-jquery-%E7%94%A8js&#43;css%E5%AF%A6%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%85%83%E4%BB%B6/</link>
+      <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2024-02-09-jquery-%E7%94%A8js&#43;css%E5%AF%A6%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%85%83%E4%BB%B6/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;漢堡選單&#34;&gt;漢堡選單&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
       <title>【jQuery】實作滾動頁面頁籤變換</title>
       <link>https://jack842248.github.io/post/2024-02-08-jquery-%E5%AF%A6%E4%BD%9C%E6%BB%BE%E5%8B%95%E9%A0%81%E9%9D%A2%E9%A0%81%E7%B1%A4%E8%AE%8A%E6%8F%9B/</link>
       <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
@@ -104,11 +116,23 @@
     </item>
     
     <item>
-      <title>【jQuery】自訂動態效果</title>
-      <link>https://jack842248.github.io/post/2024-01-12-jquery-%E8%87%AA%E8%A8%82%E5%8B%95%E6%85%8B%E6%95%88%E6%9E%9C/</link>
-      <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
+      <title>【jQuery】抓取鍵盤事件</title>
+      <link>https://jack842248.github.io/post/2024-02-01-jquery-%E6%8A%93%E5%8F%96%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-01-12-jquery-%E8%87%AA%E8%A8%82%E5%8B%95%E6%85%8B%E6%95%88%E6%9E%9C/</guid>
+      <guid>https://jack842248.github.io/post/2024-02-01-jquery-%E6%8A%93%E5%8F%96%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;使用鍵盤事件來改變狀態&#34;&gt;使用鍵盤事件來改變狀態&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>【jQuery】自訂動態效果</title>
+      <link>https://jack842248.github.io/post/2024-01-31-jquery-%E8%87%AA%E8%A8%82%E5%8B%95%E6%85%8B%E6%95%88%E6%9E%9C/</link>
+      <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2024-01-31-jquery-%E8%87%AA%E8%A8%82%E5%8B%95%E6%85%8B%E6%95%88%E6%9E%9C/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;animate用法介紹&#34;&gt;animate用法介紹&lt;/h2&gt;
@@ -117,10 +141,10 @@
     
     <item>
       <title>【jQuery】動態改變內容</title>
-      <link>https://jack842248.github.io/post/2024-01-11-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E9%A1%AF%E7%A4%BA%E6%88%96%E9%9A%B1%E8%97%8F/</link>
-      <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
+      <link>https://jack842248.github.io/post/2024-01-30-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E9%A1%AF%E7%A4%BA%E6%88%96%E9%9A%B1%E8%97%8F/</link>
+      <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-01-11-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E9%A1%AF%E7%A4%BA%E6%88%96%E9%9A%B1%E8%97%8F/</guid>
+      <guid>https://jack842248.github.io/post/2024-01-30-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E9%A1%AF%E7%A4%BA%E6%88%96%E9%9A%B1%E8%97%8F/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;jquery起手式&#34;&gt;jQuery起手式&lt;/h2&gt;
@@ -129,25 +153,13 @@
     
     <item>
       <title>【jQuery】改變標籤屬性</title>
-      <link>https://jack842248.github.io/post/2024-01-10-jquery-%E6%94%B9%E8%AE%8A%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <link>https://jack842248.github.io/post/2024-01-29-jquery-%E6%94%B9%E8%AE%8A%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7/</link>
+      <pubDate>Mon, 29 Jan 2024 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-01-10-jquery-%E6%94%B9%E8%AE%8A%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7/</guid>
+      <guid>https://jack842248.github.io/post/2024-01-29-jquery-%E6%94%B9%E8%AE%8A%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;改變元素的內容&#34;&gt;改變元素的內容&lt;/h2&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
-    </item>
-    
-    <item>
-      <title>【jQuery】用JS&#43;CSS實作常用元件</title>
-      <link>https://jack842248.github.io/post/2024-02-09-jquery-%E7%94%A8js&#43;css%E5%AF%A6%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%85%83%E4%BB%B6/</link>
-      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
-      <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-02-09-jquery-%E7%94%A8js&#43;css%E5%AF%A6%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%85%83%E4%BB%B6/</guid>
-      <description>&lt;hr&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;漢堡選單&#34;&gt;漢堡選單&lt;/h2&gt;
 &lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
