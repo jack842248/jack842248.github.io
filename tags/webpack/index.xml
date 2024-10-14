@@ -7,7 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jack842248@gmail.com (JackHuang)</managingEditor>
     <webMaster>jack842248@gmail.com (JackHuang)</webMaster>
-    <lastBuildDate>Mon, 06 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/webpack/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jack842248.github.io/tags/webpack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【JS】jQuery抓取鍵盤事件</title>
+      <link>https://jack842248.github.io/post/2024-06-02-javascript-jquery%E6%8A%93%E5%8F%96%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6/</link>
+      <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2024-06-02-javascript-jquery%E6%8A%93%E5%8F%96%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;使用鍵盤事件來改變狀態&#34;&gt;使用鍵盤事件來改變狀態&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>【JS】skrollr頁面滾動效果</title>
+      <link>https://jack842248.github.io/post/2024-06-01-javascript-skrollr%E9%A0%81%E9%9D%A2%E6%BB%BE%E5%8B%95%E6%95%88%E6%9E%9C/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2024-06-01-javascript-skrollr%E9%A0%81%E9%9D%A2%E6%BB%BE%E5%8B%95%E6%95%88%E6%9E%9C/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;使用方式直接引入cdn&#34;&gt;使用方式直接引入cdn&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
     <item>
       <title>【Webpack】開發環境設置&#43;SourceMap生成</title>
       <link>https://jack842248.github.io/post/2024-05-06-webpack-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83%E8%A8%AD%E7%BD%AE&#43;sourcemap%E7%94%9F%E6%88%90/</link>
