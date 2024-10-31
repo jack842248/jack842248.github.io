@@ -93,14 +93,14 @@
     </item>
     
     <item>
-      <title>【jQuery】點擊事件&#43;抓取不同層級元素</title>
-      <link>https://jack842248.github.io/post/2024-02-03-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E6%8A%93%E5%8F%96%E4%B8%8D%E5%90%8C%E5%B1%A4%E7%B4%9A%E5%85%83%E7%B4%A0/</link>
+      <title>【jQuery】處理陣列</title>
+      <link>https://jack842248.github.io/post/2024-02-03-jquery-%E8%99%95%E7%90%86%E9%99%A3%E5%88%97/</link>
       <pubDate>Sat, 03 Feb 2024 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-02-03-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E6%8A%93%E5%8F%96%E4%B8%8D%E5%90%8C%E5%B1%A4%E7%B4%9A%E5%85%83%E7%B4%A0/</guid>
+      <guid>https://jack842248.github.io/post/2024-02-03-jquery-%E8%99%95%E7%90%86%E9%99%A3%E5%88%97/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;直接點擊並作用自己&#34;&gt;直接點擊並作用自己&lt;/h2&gt;
+&lt;h2 id=&#34;陣列資料格式&#34;&gt;陣列資料格式&lt;/h2&gt;
 &lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
@@ -129,11 +129,59 @@
     </item>
     
     <item>
-      <title>【jQuery】點擊事件&#43;動態效果</title>
-      <link>https://jack842248.github.io/post/2024-01-31-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E5%8B%95%E6%85%8B%E6%95%88%E6%9E%9C/</link>
-      <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
+      <title>【jQuery】點擊事件&#43;依層級抓取元素</title>
+      <link>https://jack842248.github.io/post/2024-01-26-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E4%BE%9D%E5%B1%A4%E7%B4%9A%E6%8A%93%E5%8F%96%E5%85%83%E7%B4%A0/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-01-31-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E5%8B%95%E6%85%8B%E6%95%88%E6%9E%9C/</guid>
+      <guid>https://jack842248.github.io/post/2024-01-26-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E4%BE%9D%E5%B1%A4%E7%B4%9A%E6%8A%93%E5%8F%96%E5%85%83%E7%B4%A0/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;找父層元素parentparents&#34;&gt;找父層元素(parent、parents)&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>【jQuery】點擊事件&#43;依順序抓取元素</title>
+      <link>https://jack842248.github.io/post/2024-01-25-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E4%BE%9D%E9%A0%86%E5%BA%8F%E6%8A%93%E5%8F%96%E5%85%83%E7%B4%A0/</link>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2024-01-25-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E4%BE%9D%E9%A0%86%E5%BA%8F%E6%8A%93%E5%8F%96%E5%85%83%E7%B4%A0/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;直接點擊並作用自己&#34;&gt;直接點擊並作用自己&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>【jQuery】點擊事件&#43;抓取元素位置</title>
+      <link>https://jack842248.github.io/post/2024-01-24-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E6%8A%93%E5%8F%96%E5%85%83%E7%B4%A0%E4%BD%8D%E7%BD%AE/</link>
+      <pubDate>Wed, 24 Jan 2024 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2024-01-24-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E6%8A%93%E5%8F%96%E5%85%83%E7%B4%A0%E4%BD%8D%E7%BD%AE/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;抓取元素位置position&#34;&gt;抓取元素位置(position)&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>【jQuery】點擊事件&#43;抓取元素尺寸</title>
+      <link>https://jack842248.github.io/post/2024-01-23-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E6%8A%93%E5%8F%96%E5%85%83%E7%B4%A0%E5%B0%BA%E5%AF%B8/</link>
+      <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2024-01-23-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E6%8A%93%E5%8F%96%E5%85%83%E7%B4%A0%E5%B0%BA%E5%AF%B8/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;抓取元素高度content-box&#34;&gt;抓取元素高度(content-box)&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>【jQuery】點擊事件&#43;動態效果</title>
+      <link>https://jack842248.github.io/post/2024-01-22-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E5%8B%95%E6%85%8B%E6%95%88%E6%9E%9C/</link>
+      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
+      <author>jack842248@gmail.com (JackHuang)</author>
+      <guid>https://jack842248.github.io/post/2024-01-22-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E5%8B%95%E6%85%8B%E6%95%88%E6%9E%9C/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;animate用法介紹&#34;&gt;animate用法介紹&lt;/h2&gt;
@@ -142,10 +190,10 @@
     
     <item>
       <title>【jQuery】點擊事件&#43;顯示或隱藏</title>
-      <link>https://jack842248.github.io/post/2024-01-30-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E9%A1%AF%E7%A4%BA%E6%88%96%E9%9A%B1%E8%97%8F/</link>
-      <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
+      <link>https://jack842248.github.io/post/2024-01-21-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E9%A1%AF%E7%A4%BA%E6%88%96%E9%9A%B1%E8%97%8F/</link>
+      <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-01-30-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E9%A1%AF%E7%A4%BA%E6%88%96%E9%9A%B1%E8%97%8F/</guid>
+      <guid>https://jack842248.github.io/post/2024-01-21-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E9%A1%AF%E7%A4%BA%E6%88%96%E9%9A%B1%E8%97%8F/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;動態切換樣式語法表&#34;&gt;動態切換樣式語法表&lt;/h2&gt;
@@ -154,10 +202,10 @@
     
     <item>
       <title>【jQuery】點擊事件&#43;改變標籤</title>
-      <link>https://jack842248.github.io/post/2024-01-29-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E6%94%B9%E8%AE%8A%E6%A8%99%E7%B1%A4/</link>
-      <pubDate>Mon, 29 Jan 2024 00:00:00 +0000</pubDate>
+      <link>https://jack842248.github.io/post/2024-01-20-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E6%94%B9%E8%AE%8A%E6%A8%99%E7%B1%A4/</link>
+      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
-      <guid>https://jack842248.github.io/post/2024-01-29-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E6%94%B9%E8%AE%8A%E6%A8%99%E7%B1%A4/</guid>
+      <guid>https://jack842248.github.io/post/2024-01-20-jquery-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6&#43;%E6%94%B9%E8%AE%8A%E6%A8%99%E7%B1%A4/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;jquery起手式&#34;&gt;jQuery起手式&lt;/h2&gt;
