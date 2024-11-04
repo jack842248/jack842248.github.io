@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>【JS】變數與函式 - Jack Huang Blog</title>
-  <meta name="description" content="var、function">
+  <title>【JS】取得input值做處理 - Jack Huang Blog</title>
+  <meta name="description" content="getElementById、textContent、onclick、value、parseInt、return">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -44,8 +44,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/jack842248.github.io\/post\/2021-02-01-javascript-%E8%AE%8A%E6%95%B8\/",
-          "name": "【 js】變數與函式"
+          "@id": "https:\/\/jack842248.github.io\/post\/2021-02-07-javascript-%E5%8F%96%E5%BE%97input%E5%80%BC%E5%81%9A%E8%99%95%E7%90%86\/",
+          "name": "【 js】取得input值做處理"
         }
     }]
 }
@@ -56,15 +56,15 @@
   "author": {
     "name" : "JackHuang"
   },
-  "headline": "【JS】變數與函式",
-  "description" : "變數 1 2 let apple = \u0026#34;蘋果\u0026#34;; \/\/宣告變數 變數名稱 = 賦予的值; 宣告的變數會儲存在window裡\n區域變數 1 2 3 4 5 function count(num1,num2){ let total = num1 \u002b num2; } console.log(total); \/\/undefined function()執行完後，宣告也會跟著結束\n全域變數 1 2 3 4 5 6 7 8 9 let total; function count(num1,num2){ total = num1 \u002b num2; } count(1,2) console.log(total); \/\/3 若要讓function()執行完後，取得變數，則在function外先做宣告\n函式 1 2 3 4 5 6 7 8 9 function sayHi(){ console.log(\u0026#34;Hello World!!\u0026#34;); } \/\/宣告函式 函式名稱 (帶參數){ \/\/ 執行動作 \/\/}; sayHi(); \/\/執行函式 帶參數寫法： 1 2 3 4 5 6 7 8 9 function sayHi(item){ console.",
+  "headline": "【JS】取得input值做處理",
+  "description" : "點擊按鈕，取得input裡的值(onclick) 1 2 \u0026lt;input type=\u0026#34;text\u0026#34; id=\u0026#34;apple\u0026#34; value=\u0026#34;蘋果\u0026#34;\u0026gt; \u0026lt;button type=\u0026#34;button\u0026#34; id=\u0026#34;btn\u0026#34;\u0026gt;按鈕\u0026lt;\/button\u0026gt; 1 2 3 4 document.getElementById(\u0026#34;btn\u0026#34;).onclick = function(){ let inputValue = document.getElementById(\u0026#34;apple\u0026#34;).value; console.log(inputValue) } 將input裡的值轉換成數字處理(parseInt) 1 2 3 \u0026lt;input type=\u0026#34;text\u0026#34; id=\u0026#34;apple\u0026#34; value=\u0026#34;2\u0026#34;\u0026gt; \u0026lt;input type=\u0026#34;text\u0026#34; id=\u0026#34;banana\u0026#34; value=\u0026#34;2\u0026#34;\u0026gt; \u0026lt;button type=\u0026#34;button\u0026#34; id=\u0026#34;btn\u0026#34;\u0026gt;按鈕\u0026lt;\/button\u0026gt; 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 \/\/第一種寫法 document.getElementById(\u0026#34;btn\u0026#34;).onclick = function(){ let applePrice = 20; \/\/蘋果一顆20元 let bananaPrice = 15; \/\/香蕉一根15元 let appleNum = parseInt(document.",
   "inLanguage" : "zh-tw",
-  "wordCount":  154 ,
-  "datePublished" : "2021-02-01T00:00:00",
-  "dateModified" : "2021-02-01T00:00:00",
+  "wordCount":  130 ,
+  "datePublished" : "2021-02-07T00:00:00",
+  "dateModified" : "2021-02-07T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
   "keywords" : [ "javaScript" ],
-  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2021-02-01-javascript-%E8%AE%8A%E6%95%B8\/",
+  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2021-02-07-javascript-%E5%8F%96%E5%BE%97input%E5%80%BC%E5%81%9A%E8%99%95%E7%90%86\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/jack842248.github.io",
@@ -78,14 +78,14 @@
 }
 </script>
 
-<meta property="og:title" content="【JS】變數與函式" />
-<meta property="og:description" content="var、function">
-<meta property="og:url" content="https://jack842248.github.io/post/2021-02-01-javascript-%E8%AE%8A%E6%95%B8/" />
+<meta property="og:title" content="【JS】取得input值做處理" />
+<meta property="og:description" content="getElementById、textContent、onclick、value、parseInt、return">
+<meta property="og:url" content="https://jack842248.github.io/post/2021-02-07-javascript-%E5%8F%96%E5%BE%97input%E5%80%BC%E5%81%9A%E8%99%95%E7%90%86/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
-  <meta name="twitter:title" content="【JS】變數與函式" />
-  <meta name="twitter:description" content="var、function">
+  <meta name="twitter:title" content="【JS】取得input值做處理" />
+  <meta name="twitter:description" content="getElementById、textContent、onclick、value、parseInt、return">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.111.3">
@@ -244,23 +244,23 @@
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="post-heading">
-                <h1>【JS】變數與函式</h1>
+                <h1>【JS】取得input值做處理</h1>
                   
                     
-                      <h2 class="post-subheading">var、function</h2>
+                      <h2 class="post-subheading">getElementById、textContent、onclick、value、parseInt、return</h2>
                     
                   
                   
                     <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-01
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-07
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;154&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;130&nbsp;個字
   
   
   
@@ -281,25 +281,25 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>【JS】變數與函式</h1>
+                <h1>【JS】取得input值做處理</h1>
               
               
               
                 
-                  <h2 class="post-subheading">var、function</h2>
+                  <h2 class="post-subheading">getElementById、textContent、onclick、value、parseInt、return</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-01
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2021-02-07
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;154&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;130&nbsp;個字
   
   
   
@@ -322,7 +322,7 @@
       <article role="main" class="blog-post">
         <hr>
 <h1 id="heading"></h1>
-<h2 id="變數">變數</h2>
+<h2 id="點擊按鈕取得input裡的值onclick">點擊按鈕，取得input裡的值(onclick)</h2>
 <h1 id="heading-1"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -330,216 +330,92 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">apple</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//宣告變數 變數名稱 = 賦予的值;
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;apple&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;蘋果&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn&#34;</span>&gt;按鈕&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-2"></h1>
-<p><code>宣告的變數會儲存在window裡</code></p>
-<h1 id="heading-3"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;btn&#34;</span>).<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">inputValue</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;apple&#34;</span>).<span style="color:#a6e22e">value</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">inputValue</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-3"></h1>
 <hr>
 <h1 id="heading-4"></h1>
-<h4 id="區域變數">區域變數</h4>
+<h2 id="將input裡的值轉換成數字處理parseint">將input裡的值轉換成數字處理(parseInt)</h2>
 <h1 id="heading-5"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">count</span>(<span style="color:#a6e22e">num1</span>,<span style="color:#a6e22e">num2</span>){
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">num1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">num2</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>); <span style="color:#75715e">//undefined
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;apple&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;banana&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn&#34;</span>&gt;按鈕&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-6"></h1>
-<p><code>function()執行完後，宣告也會跟著結束</code></p>
-<h1 id="heading-7"></h1>
-<hr>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">//第一種寫法
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;btn&#34;</span>).<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">applePrice</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>; <span style="color:#75715e">//蘋果一顆20元
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">bananaPrice</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>; <span style="color:#75715e">//香蕉一根15元
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">appleNum</span> <span style="color:#f92672">=</span> parseInt(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;apple&#34;</span>).<span style="color:#a6e22e">value</span>); <span style="color:#75715e">//蘋果數量
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">bananaNum</span> <span style="color:#f92672">=</span> parseInt(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;banana&#34;</span>).<span style="color:#a6e22e">value</span>); <span style="color:#75715e">//香蕉數量
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">applePrice</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">appleNum</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">bananaPrice</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">bananaNum</span>); <span style="color:#75715e">//20 * 2 + 15 * 2 = 70
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//第二種寫法return寫法
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">count</span>(<span style="color:#a6e22e">applePrice</span>,<span style="color:#a6e22e">bananaPrice</span>){ 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">appleNum</span> <span style="color:#f92672">=</span> parseInt(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;apple&#34;</span>).<span style="color:#a6e22e">value</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">bananaNum</span> <span style="color:#f92672">=</span> parseInt(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;banana&#34;</span>).<span style="color:#a6e22e">value</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">applePrice</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">appleNum</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">bananaPrice</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">bananaNum</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">total</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;btn&#34;</span>).<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">count</span>(<span style="color:#ae81ff">20</span>,<span style="color:#ae81ff">15</span>)); <span style="color:#75715e">//將價錢以參數方式帶入
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-7"></h1>
+<p><code>從input裡取出來的值是&quot;字串&quot;，利用.parseInt()將字串轉為數字</code></p>
 <h1 id="heading-8"></h1>
-<h4 id="全域變數">全域變數</h4>
-<h1 id="heading-9"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">count</span>(<span style="color:#a6e22e">num1</span>,<span style="color:#a6e22e">num2</span>){
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">num1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">num2</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">count</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>); <span style="color:#75715e">//3
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-10"></h1>
-<p><code>若要讓function()執行完後，取得變數，則在function外先做宣告</code></p>
-<h1 id="heading-11"></h1>
-<hr>
-<h1 id="heading-12"></h1>
-<h2 id="函式">函式</h2>
-<h1 id="heading-13"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sayHi</span>(){
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Hello World!!&#34;</span>);
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//宣告函式 函式名稱 (帶參數){
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//  執行動作
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//};
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sayHi</span>();
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//執行函式
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-14"></h1>
-<h4 id="帶參數寫法">帶參數寫法：</h4>
-<h1 id="heading-15"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sayHi</span>(<span style="color:#a6e22e">item</span>){
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">item</span>);
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//宣告函式 函式名稱 (帶參數){
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//  執行動作
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//};
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sayHi</span>(<span style="color:#e6db74">&#34;Hello World!!&#34;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//執行函式
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-16"></h1>
-<p><code>函式具有hoisting效果，不論執行先後，function都會先執行</code></p>
-<h1 id="heading-17"></h1>
-<hr>
-<h1 id="heading-18"></h1>
-<h2 id="javascript的保留字">javascript的保留字</h2>
-<h1 id="heading-19"></h1>
-<table>
-<thead>
-<tr>
-<th>關鍵字</th>
-<th>關鍵字</th>
-<th>關鍵字</th>
-<th>關鍵字</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>arguments</td>
-<td>await*</td>
-<td>break</td>
-<td>case</td>
-</tr>
-<tr>
-<td>catch</td>
-<td>class*</td>
-<td>const*</td>
-<td>continue</td>
-</tr>
-<tr>
-<td>debugger</td>
-<td>default</td>
-<td>delete</td>
-<td>do</td>
-</tr>
-<tr>
-<td>else</td>
-<td>enum*</td>
-<td>eval</td>
-<td>export*</td>
-</tr>
-<tr>
-<td>extends*</td>
-<td>false</td>
-<td>finally</td>
-<td>for</td>
-</tr>
-<tr>
-<td>function</td>
-<td>if</td>
-<td>implements</td>
-<td>import*</td>
-</tr>
-<tr>
-<td>in</td>
-<td>instanceof</td>
-<td>interface</td>
-<td>let*</td>
-</tr>
-<tr>
-<td>new</td>
-<td>null</td>
-<td>package</td>
-<td>private</td>
-</tr>
-<tr>
-<td>protected</td>
-<td>public</td>
-<td>return</td>
-<td>static</td>
-</tr>
-<tr>
-<td>super*</td>
-<td>switch</td>
-<td>this</td>
-<td>throw</td>
-</tr>
-<tr>
-<td>try</td>
-<td>typeof</td>
-<td>var</td>
-<td>void</td>
-</tr>
-<tr>
-<td>while</td>
-<td>with</td>
-<td>yield</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h1 id="heading-20"></h1>
-<p><code>宣告變數或函式時若使用保留字會出錯</code></p>
-<h1 id="heading-21"></h1>
 
 
         
@@ -560,42 +436,42 @@
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-01-javascript-%25E8%25AE%258A%25E6%2595%25B8%2f&amp;text=%e3%80%90JS%e3%80%91%e8%ae%8a%e6%95%b8%e8%88%87%e5%87%bd%e5%bc%8f&amp;via=" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-07-javascript-%25E5%258F%2596%25E5%25BE%2597input%25E5%2580%25BC%25E5%2581%259A%25E8%2599%2595%25E7%2590%2586%2f&amp;text=%e3%80%90JS%e3%80%91%e5%8f%96%e5%be%97input%e5%80%bc%e5%81%9a%e8%99%95%e7%90%86&amp;via=" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-01-javascript-%25E8%25AE%258A%25E6%2595%25B8%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-07-javascript-%25E5%258F%2596%25E5%25BE%2597input%25E5%2580%25BC%25E5%2581%259A%25E8%2599%2595%25E7%2590%2586%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-01-javascript-%25E8%25AE%258A%25E6%2595%25B8%2f&amp;title=%e3%80%90JS%e3%80%91%e8%ae%8a%e6%95%b8%e8%88%87%e5%87%bd%e5%bc%8f" target="_blank" title="Share on Reddit">
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-07-javascript-%25E5%258F%2596%25E5%25BE%2597input%25E5%2580%25BC%25E5%2581%259A%25E8%2599%2595%25E7%2590%2586%2f&amp;title=%e3%80%90JS%e3%80%91%e5%8f%96%e5%be%97input%e5%80%bc%e5%81%9a%e8%99%95%e7%90%86" target="_blank" title="Share on Reddit">
           <i class="fab fa-reddit"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-01-javascript-%25E8%25AE%258A%25E6%2595%25B8%2f&amp;title=%e3%80%90JS%e3%80%91%e8%ae%8a%e6%95%b8%e8%88%87%e5%87%bd%e5%bc%8f" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-07-javascript-%25E5%258F%2596%25E5%25BE%2597input%25E5%2580%25BC%25E5%2581%259A%25E8%2599%2595%25E7%2590%2586%2f&amp;title=%e3%80%90JS%e3%80%91%e5%8f%96%e5%be%97input%e5%80%bc%e5%81%9a%e8%99%95%e7%90%86" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-01-javascript-%25E8%25AE%258A%25E6%2595%25B8%2f&amp;title=%e3%80%90JS%e3%80%91%e8%ae%8a%e6%95%b8%e8%88%87%e5%87%bd%e5%bc%8f" target="_blank" title="Share on StumbleUpon">
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-07-javascript-%25E5%258F%2596%25E5%25BE%2597input%25E5%2580%25BC%25E5%2581%259A%25E8%2599%2595%25E7%2590%2586%2f&amp;title=%e3%80%90JS%e3%80%91%e5%8f%96%e5%be%97input%e5%80%bc%e5%81%9a%e8%99%95%e7%90%86" target="_blank" title="Share on StumbleUpon">
           <i class="fab fa-stumbleupon"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-01-javascript-%25E8%25AE%258A%25E6%2595%25B8%2f&amp;description=%e3%80%90JS%e3%80%91%e8%ae%8a%e6%95%b8%e8%88%87%e5%87%bd%e5%bc%8f" target="_blank" title="Share on Pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2021-02-07-javascript-%25E5%258F%2596%25E5%25BE%2597input%25E5%2580%25BC%25E5%2581%259A%25E8%2599%2595%25E7%2590%2586%2f&amp;description=%e3%80%90JS%e3%80%91%e5%8f%96%e5%be%97input%e5%80%bc%e5%81%9a%e8%99%95%e7%90%86" target="_blank" title="Share on Pinterest">
           <i class="fab fa-pinterest"></i>
         </a>
       </li>
@@ -637,12 +513,12 @@
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2021-01-23-markdown-markdown%E8%AA%9E%E6%B3%95%E6%92%B0%E5%AF%AB/" data-toggle="tooltip" data-placement="top" title="【MD】Markdown語法撰寫">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2021-02-06-javascript-%E4%BD%BF%E7%94%A8%E8%80%85%E4%BA%8B%E4%BB%B6/" data-toggle="tooltip" data-placement="top" title="【JS】使用者事件">&larr; 上一篇</a>
             </li>
           
           
             <li class="next">
-              <a href="https://jack842248.github.io/post/2021-02-02-javascript-%E5%88%A4%E6%96%B7%E5%BC%8F/" data-toggle="tooltip" data-placement="top" title="【JS】判斷式">下一篇 &rarr;</a>
+              <a href="https://jack842248.github.io/post/2021-02-08-javascript-%E8%AA%8D%E8%AD%98javascript/" data-toggle="tooltip" data-placement="top" title="【JS】認識JavaScript">下一篇 &rarr;</a>
             </li>
           
         </ul>
@@ -653,12 +529,12 @@
         
           
           <div class="disqus-comments">                  
-            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2021-02-01-javascript-%E8%AE%8A%E6%95%B8">則評論</span></button>
+            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2021-02-07-javascript-%E5%8F%96%E5%BE%97input%E5%80%BC%E5%81%9A%E8%99%95%E7%90%86">則評論</span></button>
             <div id="disqus_thread"></div>
 
             <script type="text/javascript">
               var disqus_config = function () {
-              this.page.url = 'https:\/\/jack842248.github.io\/post\/2021-02-01-javascript-%E8%AE%8A%E6%95%B8';
+              this.page.url = 'https:\/\/jack842248.github.io\/post\/2021-02-07-javascript-%E5%8F%96%E5%BE%97input%E5%80%BC%E5%81%9A%E8%99%95%E7%90%86';
             };
 
           </script>
