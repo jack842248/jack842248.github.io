@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>【JS】判斷式 - Jack Huang Blog</title>
-  <meta name="description" content="=、==、===、!=、!==、true、false、&gt;、&lt;、&gt;=、&lt;=、&amp;&amp;、||、!">
+  <meta name="description" content="=、==、===、!=、!==、true、false、&gt;、&lt;、&gt;=、&lt;=、&amp;&amp;、||、!、if、else、else if、switch">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "【JS】判斷式",
-  "description" : "運算子 運算子 口語化說明 = 賦予 == 等於 === 等於(嚴謹模式) != 不等於 !== 不等於(嚴謹模式) true 是;成立 false 不是;不成立 \u0026gt; 大於 \u0026lt; 小於 \u0026gt;= 大於等於 \u0026lt;= 小於等於 \u0026amp;\u0026amp; 以及(and) ｜｜ 或是(or) ! 反轉true或false(not) 1 2 3 4 5 6 console.log(1 === \u0026#34;1\u0026#34;); \/\/false console.log(1 === 1); \/\/true console.log(1 != \u0026#34;1\u0026#34;); \/\/false console.log(1 !== 1); \/\/true console.log(true == \u0026#34;1\u0026#34;); \/\/true console.log(true === \u0026#34;1\u0026#34;); \/\/false 在javascript裡：1是true、0是false\nif、else、else if 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 \/\/飢餓程度：1~10 let hungry = 8; function eat(item){ console.",
+  "description" : "運算子 運算子 口語化說明 = 賦予 == 等於 === 等於(嚴謹模式) != 不等於 !== 不等於(嚴謹模式) true 是;成立 false 不是;不成立 \u0026gt; 大於 \u0026lt; 小於 \u0026gt;= 大於等於 \u0026lt;= 小於等於 \u0026amp;\u0026amp; 以及(and) ｜｜ 或是(or) ! 反轉true或false(not) 1 2 3 4 5 6 console.log(1 === \u0026#34;1\u0026#34;); \/\/false console.log(1 === 1); \/\/true console.log(1 != \u0026#34;1\u0026#34;); \/\/false console.log(1 !== 1); \/\/true console.log(true == \u0026#34;1\u0026#34;); \/\/true console.log(true === \u0026#34;1\u0026#34;); \/\/false 在javascript裡：1是true、0是false\nif、else、else if 適合判斷式數值，限制範圍。 一律使用 if 開頭，若不成立，則往下執行。 可以使用多個 else if ，若不成立，則往下執行。 若以上都不成立則執行 else 。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 \/\/飢餓程度：1~10 let hungry = 8; function eat(item){ console.",
   "inLanguage" : "zh-tw",
-  "wordCount":  159 ,
+  "wordCount":  180 ,
   "datePublished" : "2021-02-02T00:00:00",
   "dateModified" : "2021-02-02T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -79,13 +79,13 @@
 </script>
 
 <meta property="og:title" content="【JS】判斷式" />
-<meta property="og:description" content="=、==、===、!=、!==、true、false、&gt;、&lt;、&gt;=、&lt;=、&amp;&amp;、||、!">
+<meta property="og:description" content="=、==、===、!=、!==、true、false、&gt;、&lt;、&gt;=、&lt;=、&amp;&amp;、||、!、if、else、else if、switch">
 <meta property="og:url" content="https://jack842248.github.io/post/2021-02-02-javascript-%E5%88%A4%E6%96%B7%E5%BC%8F/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
   <meta name="twitter:title" content="【JS】判斷式" />
-  <meta name="twitter:description" content="=、==、===、!=、!==、true、false、&gt;、&lt;、&gt;=、&lt;=、&amp;&amp;、||、!">
+  <meta name="twitter:description" content="=、==、===、!=、!==、true、false、&gt;、&lt;、&gt;=、&lt;=、&amp;&amp;、||、!、if、else、else if、switch">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.111.3">
@@ -247,7 +247,7 @@
                 <h1>【JS】判斷式</h1>
                   
                     
-                      <h2 class="post-subheading">=、==、===、!=、!==、true、false、&gt;、&lt;、&gt;=、&lt;=、&amp;&amp;、||、!</h2>
+                      <h2 class="post-subheading">=、==、===、!=、!==、true、false、&gt;、&lt;、&gt;=、&lt;=、&amp;&amp;、||、!、if、else、else if、switch</h2>
                     
                   
                   
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;159&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;180&nbsp;個字
   
   
   
@@ -286,7 +286,7 @@
               
               
                 
-                  <h2 class="post-subheading">=、==、===、!=、!==、true、false、&gt;、&lt;、&gt;=、&lt;=、&amp;&amp;、||、!</h2>
+                  <h2 class="post-subheading">=、==、===、!=、!==、true、false、&gt;、&lt;、&gt;=、&lt;=、&amp;&amp;、||、!、if、else、else if、switch</h2>
                 
               
               
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;159&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;180&nbsp;個字
   
   
   
@@ -416,6 +416,22 @@
 <h1 id="heading-5"></h1>
 <h2 id="ifelseelse-if">if、else、else if</h2>
 <h1 id="heading-6"></h1>
+<ul>
+<li>適合判斷式數值，限制範圍。</li>
+</ul>
+<h1 id="heading-7"></h1>
+<ul>
+<li>一律使用 <strong>if</strong> 開頭，若不成立，則往下執行。</li>
+</ul>
+<h1 id="heading-8"></h1>
+<ul>
+<li>可以使用多個 <strong>else if</strong> ，若不成立，則往下執行。</li>
+</ul>
+<h1 id="heading-9"></h1>
+<ul>
+<li>若以上都不成立則執行 <strong>else</strong> 。</li>
+</ul>
+<h1 id="heading-10"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -454,13 +470,29 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-7"></h1>
+</div><h1 id="heading-11"></h1>
 <p><code>當以上都不成立時就執行else</code></p>
-<h1 id="heading-8"></h1>
+<h1 id="heading-12"></h1>
 <hr>
-<h1 id="heading-9"></h1>
+<h1 id="heading-13"></h1>
 <h2 id="switch">switch</h2>
-<h1 id="heading-10"></h1>
+<h1 id="heading-14"></h1>
+<ul>
+<li>效能比 <strong>if&hellip;else</strong> 好，適合判斷已知的結果。</li>
+</ul>
+<h1 id="heading-15"></h1>
+<ul>
+<li><strong>switch</strong> 一定要帶參數才能判斷。</li>
+</ul>
+<h1 id="heading-16"></h1>
+<ul>
+<li><strong>break</strong> 可阻止往下執行。</li>
+</ul>
+<h1 id="heading-17"></h1>
+<ul>
+<li>若都不成立則執行 <strong>default</strong> 。</li>
+</ul>
+<h1 id="heading-18"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -509,9 +541,9 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-11"></h1>
+</div><h1 id="heading-19"></h1>
 <p><code>當以上值都沒有就跑default</code></p>
-<h1 id="heading-12"></h1>
+<h1 id="heading-20"></h1>
 
 
         

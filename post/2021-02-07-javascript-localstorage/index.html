@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>【JS】localStorage - Jack Huang Blog</title>
-  <meta name="description" content="localStorage.setItem()、localStorage.getItem()、JSON.stringify()、JSON.parse()">
+  <meta name="description" content="localStorage.setItem、localStorage.getItem、JSON.stringify、JSON.parse">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "【JS】localStorage",
-  "description" : "將input值存入localStorage，再取出 1 2 3 \u0026lt;input type=\u0026#34;text\u0026#34;\u0026gt; \u0026lt;button type=\u0026#34;button\u0026#34;\u0026gt;儲存資料\u0026lt;\/button\u0026gt; \u0026lt;button type=\u0026#34;button\u0026#34;\u0026gt;呼叫資料\u0026lt;\/button\u0026gt; 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \/\/抓取第一個按鈕元素，綁定點擊事件 document.getElementsByTagName(\u0026#34;button\u0026#34;)[0].addEventListener(\u0026#34;click\u0026#34;,function(){ \/\/設定變數=input裡面的值 let str = document.getElementsByTagName(\u0026#34;input\u0026#34;)[0]; \/\/儲存資料，key:myName，value:輸入框裡的值 localStorage.setItem(\u0026#34;myName\u0026#34;,str.value); }) \/\/抓取第二個按鈕元素，綁定點擊事件 document.getElementsByTagName(\u0026#34;button\u0026#34;)[1].addEventListener(\u0026#34;click\u0026#34;,function(){ \/\/設定變數=localStorage的myName的值 let str = localStorage.getItem(\u0026#34;myName\u0026#34;); \/\/彈跳出資料 alert(str); }) 將JSON資料存入localStorage，再取出 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 let fruitsData = [ { name: \u0026#34;蘋果\u0026#34;, price: 15 } ] \/\/存入\u0026#34;字串\u0026#34;資料 let fruitString = JSON.",
+  "description" : "將input值存入localStorage，再取出 Key Value myName text.value(輸入框裡的值) 1 2 3 \u0026lt;input class=\u0026#34;text\u0026#34; type=\u0026#34;text\u0026#34;\u0026gt; \u0026lt;button class=\u0026#34;save\u0026#34; type=\u0026#34;button\u0026#34;\u0026gt;儲存資料\u0026lt;\/button\u0026gt; \u0026lt;button class=\u0026#34;call\u0026#34; type=\u0026#34;button\u0026#34;\u0026gt;呼叫資料\u0026lt;\/button\u0026gt; 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 let text = document.querySelector(\u0026#34;.text\u0026#34;); let save = document.querySelector(\u0026#34;.save\u0026#34;); let call = document.querySelector(\u0026#34;.call\u0026#34;); \/\/點擊「儲存資料」按鈕 save.addEventListener(\u0026#34;click\u0026#34;,function(){ \/\/儲存資料，(要存入的值是什麼標題，存入什麼值) localStorage.setItem(\u0026#34;myName\u0026#34;,text.value); }) \/\/點擊「呼叫資料」按鈕 call.addEventListener(\u0026#34;click\u0026#34;,function(){ \/\/設定變數=localStorage的myName的值 let str = localStorage.getItem(\u0026#34;myName\u0026#34;); \/\/彈跳出資料 alert(str); }) 將JSON資料存入localStorage，再取出 Key Value fruitName {name: \u0026ldquo;蘋果\u0026rdquo;,price: 15} 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 let fruitsData = [ { name: \u0026#34;蘋果\u0026#34;, price: 15 } ] \/\/存入\u0026#34;字串\u0026#34;資料 let fruitStr = JSON.",
   "inLanguage" : "zh-tw",
-  "wordCount":  279 ,
+  "wordCount":  309 ,
   "datePublished" : "2021-02-07T00:00:00",
   "dateModified" : "2021-02-07T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -79,13 +79,13 @@
 </script>
 
 <meta property="og:title" content="【JS】localStorage" />
-<meta property="og:description" content="localStorage.setItem()、localStorage.getItem()、JSON.stringify()、JSON.parse()">
+<meta property="og:description" content="localStorage.setItem、localStorage.getItem、JSON.stringify、JSON.parse">
 <meta property="og:url" content="https://jack842248.github.io/post/2021-02-07-javascript-localstorage/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
   <meta name="twitter:title" content="【JS】localStorage" />
-  <meta name="twitter:description" content="localStorage.setItem()、localStorage.getItem()、JSON.stringify()、JSON.parse()">
+  <meta name="twitter:description" content="localStorage.setItem、localStorage.getItem、JSON.stringify、JSON.parse">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.111.3">
@@ -247,7 +247,7 @@
                 <h1>【JS】localStorage</h1>
                   
                     
-                      <h2 class="post-subheading">localStorage.setItem()、localStorage.getItem()、JSON.stringify()、JSON.parse()</h2>
+                      <h2 class="post-subheading">localStorage.setItem、localStorage.getItem、JSON.stringify、JSON.parse</h2>
                     
                   
                   
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;279&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;309&nbsp;個字
   
   
   
@@ -286,7 +286,7 @@
               
               
                 
-                  <h2 class="post-subheading">localStorage.setItem()、localStorage.getItem()、JSON.stringify()、JSON.parse()</h2>
+                  <h2 class="post-subheading">localStorage.setItem、localStorage.getItem、JSON.stringify、JSON.parse</h2>
                 
               
               
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;279&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;309&nbsp;個字
   
   
   
@@ -324,6 +324,21 @@
 <h1 id="heading"></h1>
 <h2 id="將input值存入localstorage再取出">將input值存入localStorage，再取出</h2>
 <h1 id="heading-1"></h1>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>myName</td>
+<td>text.value(輸入框裡的值)</td>
+</tr>
+</tbody>
+</table>
+<h1 id="heading-2"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -331,12 +346,12 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;儲存資料&lt;/<span style="color:#f92672">button</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;呼叫資料&lt;/<span style="color:#f92672">button</span>&gt;
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;save&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;儲存資料&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;call&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;呼叫資料&lt;/<span style="color:#f92672">button</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-2"></h1>
+</div><h1 id="heading-3"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -356,19 +371,25 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">//抓取第一個按鈕元素，綁定點擊事件
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#34;button&#34;</span>)[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(){
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//設定變數=input裡面的值
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#34;input&#34;</span>)[<span style="color:#ae81ff">0</span>];
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.text&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">save</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.save&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">call</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.call&#34;</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//儲存資料，key:myName，value:輸入框裡的值
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">setItem</span>(<span style="color:#e6db74">&#34;myName&#34;</span>,<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">value</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//點擊「儲存資料」按鈕
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">save</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//儲存資料，(要存入的值是什麼標題，存入什麼值)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">setItem</span>(<span style="color:#e6db74">&#34;myName&#34;</span>,<span style="color:#a6e22e">text</span>.<span style="color:#a6e22e">value</span>);
 </span></span><span style="display:flex;"><span>})
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//抓取第二個按鈕元素，綁定點擊事件
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#34;button&#34;</span>)[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//點擊「呼叫資料」按鈕
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">call</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">//設定變數=localStorage的myName的值
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#e6db74">&#34;myName&#34;</span>);
 </span></span><span style="display:flex;"><span>
@@ -377,11 +398,26 @@
 </span></span><span style="display:flex;"><span>})
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-3"></h1>
+</div><h1 id="heading-4"></h1>
 <hr>
-<h1 id="heading-4"></h1>
-<h2 id="將json資料存入localstorage再取出">將JSON資料存入localStorage，再取出</h2>
 <h1 id="heading-5"></h1>
+<h2 id="將json資料存入localstorage再取出">將JSON資料存入localStorage，再取出</h2>
+<h1 id="heading-6"></h1>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fruitName</td>
+<td>{name: &ldquo;蘋果&rdquo;,price: 15}</td>
+</tr>
+</tbody>
+</table>
+<h1 id="heading-7"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -410,23 +446,38 @@
 </span></span><span style="display:flex;"><span>]
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//存入&#34;字串&#34;資料
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fruitString</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">fruitsData</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruitString</span>); <span style="color:#75715e">//&#34;[{&#39;name&#39;:&#39;蘋果&#39;,&#39;price&#39;:15}]&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">setItem</span>(<span style="color:#e6db74">&#34;fruitName&#34;</span>,<span style="color:#a6e22e">fruitString</span>);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fruitStr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">fruitsData</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruitStr</span>); <span style="color:#75715e">//&#34;[{&#39;name&#39;:&#39;蘋果&#39;,&#39;price&#39;:15}]&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">setItem</span>(<span style="color:#e6db74">&#34;fruitName&#34;</span>,<span style="color:#a6e22e">fruitStr</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//取出&#34;字串&#34;資料，並轉成JSON格式
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">getData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#e6db74">&#34;fruitName&#34;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fruitArray</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">getData</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruitArray</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//&#34;蘋果&#34;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fruitArr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">getData</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruitArr</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//&#34;蘋果&#34;
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-6"></h1>
+</div><h1 id="heading-8"></h1>
 <p><code>從localStorage取出來的資料壹定都是字串</code></p>
-<h1 id="heading-7"></h1>
-<hr>
-<h1 id="heading-8"></h1>
-<h2 id="實作todolist">實作todolist</h2>
 <h1 id="heading-9"></h1>
+<hr>
+<h1 id="heading-10"></h1>
+<h2 id="實作todolist">實作todolist</h2>
+<h1 id="heading-11"></h1>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>todoItem</td>
+<td>text.value(輸入框裡的值)</td>
+</tr>
+</tbody>
+</table>
+<h1 id="heading-12"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -434,12 +485,12 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newTodo&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;addTodo&#34;</span>&gt;按鈕&lt;/<span style="color:#f92672">button</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;todoList&#34;</span>&gt;&lt;/<span style="color:#f92672">ul</span>&gt;
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn&#34;</span>&gt;按鈕&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;list&#34;</span>&gt;&lt;/<span style="color:#f92672">ul</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-10"></h1>
+</div><h1 id="heading-13"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -505,21 +556,25 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">todoData</span> <span style="color:#f92672">=</span> [];
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">newTodo</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;newTodo&#34;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">addTodo</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;addTodo&#34;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">todoList</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;todoList&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.text&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">btn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.btn&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">list</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.list&#34;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//初始化資料
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">initData</span>(){
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">//取得localStorage上的&#34;todoItem&#34;資料
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">getData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#e6db74">&#34;todoItem&#34;</span>));
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//將&#34;字串&#34;資料轉為JSON格式
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">todoArray</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">getData</span>);
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//將原本是空資料賦予取得的資料
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">todoData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">todoArray</span>;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">getData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#e6db74">&#34;todoItem&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//如果有取得資料，就將&#34;字串&#34;資料轉為JSON格式
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">getData</span>){
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">todoData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">getData</span>);
+</span></span><span style="display:flex;"><span>    }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">todoData</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">initData</span>();
 </span></span><span style="display:flex;"><span>
@@ -533,16 +588,16 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">str</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;&lt;li&gt;&lt;a href=&#39;#&#39; data-num=&#39;&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">i</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;&#39;&gt;刪除&lt;/a&gt;&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">todoData</span>[<span style="color:#a6e22e">i</span>]<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;&lt;/li&gt;&#34;</span>;
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">//組裝完成後，渲染到頁面上
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">todoList</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">updateList</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//新增資料
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">addTodo</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//點擊&#34;按鈕&#34;時新增資料
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(){
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">//如果input裡有值才執行
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">newTodo</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;&#34;</span>){
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">text</span>.<span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">trim</span>() <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;&#34;</span>){
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">//將input裡的值新增到資料
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">todoData</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">newTodo</span>.<span style="color:#a6e22e">value</span>);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">todoData</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">text</span>.<span style="color:#a6e22e">value</span>);
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">//將整個資料轉成&#34;字串&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">setData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">todoData</span>);
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">//儲存到localStorage上
@@ -550,14 +605,14 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">//重新渲染頁面的資料
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">updateList</span>();
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">//清空input裡的值
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">newTodo</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">text</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>},<span style="color:#66d9ef">false</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//刪除資料
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">todoList</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">e</span>){
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//點擊&#34;刪除&#34;時刪除資料
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>,<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">//當我點擊的是ul裡的a才執行
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">nodeName</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;A&#34;</span>){
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">nodeName</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;A&#34;</span>){
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">//取得我點擊目標的data-num編號
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">targetNum</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">dataset</span>.<span style="color:#a6e22e">num</span>;
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">//並從資料中刪除該項
@@ -674,7 +729,7 @@
           
           
             <li class="next">
-              <a href="https://jack842248.github.io/post/2021-02-08-javascript-%E5%9B%9E%E5%88%B0%E4%B8%8A%E4%B8%80%E9%A0%81/" data-toggle="tooltip" data-placement="top" title="【JS】回到上一頁">下一篇 &rarr;</a>
+              <a href="https://jack842248.github.io/post/2021-02-08-javascript-bom%E7%80%8F%E8%A6%BD%E5%99%A8%E7%89%A9%E4%BB%B6/" data-toggle="tooltip" data-placement="top" title="【JS】BOM瀏覽器物件">下一篇 &rarr;</a>
             </li>
           
         </ul>

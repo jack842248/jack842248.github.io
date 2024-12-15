@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>【JS】變數與函式 - Jack Huang Blog</title>
-  <meta name="description" content="var、function">
+  <meta name="description" content="let、function">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -57,9 +57,9 @@
     "name" : "JackHuang"
   },
   "headline": "【JS】變數與函式",
-  "description" : "變數 1 2 let apple = \u0026#34;蘋果\u0026#34;; \/\/宣告變數 變數名稱 = 賦予的值; 宣告的變數會儲存在window裡\n區域變數 1 2 3 4 5 function count(num1,num2){ let total = num1 \u002b num2; } console.log(total); \/\/undefined function()執行完後，宣告也會跟著結束\n全域變數 1 2 3 4 5 6 7 8 9 let total; function count(num1,num2){ total = num1 \u002b num2; } count(1,2) console.log(total); \/\/3 若要讓function()執行完後，取得變數，則在function外先做宣告\n函式 1 2 3 4 5 6 7 8 9 function sayHi(){ console.log(\u0026#34;Hello World!!\u0026#34;); } \/\/宣告函式 函式名稱 (帶參數){ \/\/ 執行動作 \/\/}; sayHi(); \/\/執行函式 帶參數寫法： 1 2 3 4 5 6 7 8 9 function sayHi(item){ console.",
+  "description" : "變數 1 2 let apple = \u0026#34;蘋果\u0026#34;; \/\/宣告變數 變數名稱 = 賦予的值; 宣告的變數會儲存在window裡\n區域變數(Area Variable) 1 2 3 4 5 6 function sayApple(){ let apple = \u0026#34;蘋果\u0026#34;; console.log(apple); \/\/蘋果 } sayApple(); console.log(apple); \/\/undefined function()執行完後，宣告也會跟著結束\n全域變數(Global Variable) 1 2 3 4 5 6 let apple; function sayApple(){ apple = \u0026#34;蘋果\u0026#34;; } sayApple(); console.log(apple); \/\/蘋果 若要讓function()執行完後，取得變數，則在function外先做宣告\n函式 1 2 3 4 5 6 7 8 9 function sayHi(){ console.log(\u0026#34;Hello World!!\u0026#34;); } \/\/宣告函式 函式名稱 (帶參數){ \/\/ 執行動作 \/\/}; sayHi(); \/\/執行函式 帶參數寫法： 1 2 3 4 5 6 7 8 9 function sayHi(item){ console.",
   "inLanguage" : "zh-tw",
-  "wordCount":  154 ,
+  "wordCount":  153 ,
   "datePublished" : "2021-02-01T00:00:00",
   "dateModified" : "2021-02-01T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -79,13 +79,13 @@
 </script>
 
 <meta property="og:title" content="【JS】變數與函式" />
-<meta property="og:description" content="var、function">
+<meta property="og:description" content="let、function">
 <meta property="og:url" content="https://jack842248.github.io/post/2021-02-01-javascript-%E8%AE%8A%E6%95%B8/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
   <meta name="twitter:title" content="【JS】變數與函式" />
-  <meta name="twitter:description" content="var、function">
+  <meta name="twitter:description" content="let、function">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.111.3">
@@ -247,7 +247,7 @@
                 <h1>【JS】變數與函式</h1>
                   
                     
-                      <h2 class="post-subheading">var、function</h2>
+                      <h2 class="post-subheading">let、function</h2>
                     
                   
                   
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;154&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;153&nbsp;個字
   
   
   
@@ -286,7 +286,7 @@
               
               
                 
-                  <h2 class="post-subheading">var、function</h2>
+                  <h2 class="post-subheading">let、function</h2>
                 
               
               
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;154&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;153&nbsp;個字
   
   
   
@@ -339,7 +339,7 @@
 <h1 id="heading-3"></h1>
 <hr>
 <h1 id="heading-4"></h1>
-<h4 id="區域變數">區域變數</h4>
+<h4 id="區域變數area-variable">區域變數(Area Variable)</h4>
 <h1 id="heading-5"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -348,13 +348,15 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">count</span>(<span style="color:#a6e22e">num1</span>,<span style="color:#a6e22e">num2</span>){
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">num1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">num2</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>); <span style="color:#75715e">//undefined
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sayApple</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">apple</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">apple</span>);  <span style="color:#75715e">//蘋果
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sayApple</span>();
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">apple</span>); <span style="color:#75715e">//undefined
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-6"></h1>
@@ -362,7 +364,7 @@
 <h1 id="heading-7"></h1>
 <hr>
 <h1 id="heading-8"></h1>
-<h4 id="全域變數">全域變數</h4>
+<h4 id="全域變數global-variable">全域變數(Global Variable)</h4>
 <h1 id="heading-9"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -372,20 +374,14 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">count</span>(<span style="color:#a6e22e">num1</span>,<span style="color:#a6e22e">num2</span>){
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">num1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">num2</span>;
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">apple</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sayApple</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">apple</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
 </span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">count</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">total</span>); <span style="color:#75715e">//3
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sayApple</span>();
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">apple</span>);  <span style="color:#75715e">//蘋果
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-10"></h1>
