@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>【JS】發送AJAX請求 - Jack Huang Blog</title>
-  <meta name="description" content="XMLHttpRequest、open、readyState、setRequestHeader、send、onload、responseText、status、">
+  <meta name="description" content="XMLHttpRequest、open、readyState、setRequestHeader、send、onload、responseText、status">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -59,7 +59,7 @@
   "headline": "【JS】發送AJAX請求",
   "description" : "動態載入資料(AJAX) 使用new XMLHttpRequest原型，來向伺服器發送請求。 不用重新整理網頁就能取得資料庫回傳的資料，例如 : 加入購物車，顯示商品數量。 註冊帳號時，顯示該帳號是否已使用。 搜尋時，顯示的關鍵提示字。 載入的資料必須支援跨網域(CORS)。 若發送請求時出現Access-Control-Allow-Origin錯誤，代表不支援 1 let xhr = new XMLHttpRequest(); .open(\u0026ldquo;方法\u0026rdquo; , \u0026ldquo;網址\u0026rdquo; , true\/false)。 向伺服器發送請求.open(method, url, async, user, password)。 method：請求方法（如 \u0026ldquo;GET\u0026rdquo;、\u0026ldquo;POST\u0026rdquo;、\u0026ldquo;PUT\u0026rdquo;、\u0026ldquo;DELETE\u0026rdquo; 等） url：請求的 URL 地址，可以是相對路徑或絕對路徑。 async(可選)：是否異步執行請求，預設為 true。如果設定為 false，請求會同步執行，頁面會被阻塞，直到請求完成。一般建議使用異步請求。 user(可選)：HTTP 請求的使用者名稱，用於需要身份驗證的請求。 password(可選)：HTTP 請求的密碼，用於需要身份驗證的請求。 請求方法 說明 \u0026ldquo;GET\u0026rdquo; 用於請求數據。通常用於獲取資源。 \u0026ldquo;POST\u0026rdquo; 用於將數據發送到伺服器。例如，提交表單或上傳數據。 \u0026ldquo;PUT\u0026rdquo; 用於更新伺服器上的資源。 \u0026ldquo;DELETE\u0026rdquo; 用於刪除伺服器上的資源。 \u0026ldquo;PATCH\u0026rdquo; 用於更新部分資源，類似於 PUT，但只更新部分內容。 \u0026ldquo;HEAD\u0026rdquo; 與 GET 類似，但不返回回應體，僅返回回應頭部信息。 \u0026ldquo;OPTIONS\u0026rdquo; 用於查詢伺服器支持哪些請求方法和其他配置。 \u0026ldquo;TRACE\u0026rdquo; 用於追蹤請求和回應的路徑，通常很少使用。 \u0026ldquo;CONNECT\u0026rdquo; 用於建立到目標伺服器的隧道連接，常用於代理伺服器。 1 2 3 4 5 6 7 let xhr = new XMLHttpRequest(); \/\/true(預設)，不等資料載入完就會往下執行(非同步載入) xhr.",
   "inLanguage" : "zh-tw",
-  "wordCount":  300 ,
+  "wordCount":  283 ,
   "datePublished" : "2021-02-09T00:00:00",
   "dateModified" : "2021-02-09T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
@@ -79,13 +79,13 @@
 </script>
 
 <meta property="og:title" content="【JS】發送AJAX請求" />
-<meta property="og:description" content="XMLHttpRequest、open、readyState、setRequestHeader、send、onload、responseText、status、">
+<meta property="og:description" content="XMLHttpRequest、open、readyState、setRequestHeader、send、onload、responseText、status">
 <meta property="og:url" content="https://jack842248.github.io/post/2021-02-09-javascript-%E7%99%BC%E9%80%81ajax%E8%AB%8B%E6%B1%82/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
   <meta name="twitter:title" content="【JS】發送AJAX請求" />
-  <meta name="twitter:description" content="XMLHttpRequest、open、readyState、setRequestHeader、send、onload、responseText、status、">
+  <meta name="twitter:description" content="XMLHttpRequest、open、readyState、setRequestHeader、send、onload、responseText、status">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta name="generator" content="Hugo 0.111.3">
@@ -247,7 +247,7 @@
                 <h1>【JS】發送AJAX請求</h1>
                   
                     
-                      <h2 class="post-subheading">XMLHttpRequest、open、readyState、setRequestHeader、send、onload、responseText、status、</h2>
+                      <h2 class="post-subheading">XMLHttpRequest、open、readyState、setRequestHeader、send、onload、responseText、status</h2>
                     
                   
                   
@@ -260,7 +260,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;300&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;283&nbsp;個字
   
   
   
@@ -286,7 +286,7 @@
               
               
                 
-                  <h2 class="post-subheading">XMLHttpRequest、open、readyState、setRequestHeader、send、onload、responseText、status、</h2>
+                  <h2 class="post-subheading">XMLHttpRequest、open、readyState、setRequestHeader、send、onload、responseText、status</h2>
                 
               
               
@@ -299,7 +299,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;300&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;283&nbsp;個字
   
   
   
@@ -670,7 +670,7 @@
 </div><h1 id="heading-29"></h1>
 <hr>
 <h1 id="heading-30"></h1>
-<h2 id="xmlhttprequest-完整範例">XMLHttpRequest 完整範例</h2>
+<h2 id="xmlhttprequest-取得訊息">XMLHttpRequest 取得訊息</h2>
 <h1 id="heading-31"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -710,34 +710,24 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">message</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;.message&#34;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">xhr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//0：成功建立new XMLHttpRequest()
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">readyState</span>); 
-</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">readyState</span>); <span style="color:#75715e">//0：成功建立new XMLHttpRequest()
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;get&#34;</span>,<span style="color:#e6db74">&#34;https://hexschool.github.io/ajaxHomework/data.json&#34;</span>,<span style="color:#66d9ef">true</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//若遇到XMLHttpRequest cannot load http://....... NO &#34;Access-Control-Allow-Origin&#34; header is present on the  
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//表示該資料只能由同樣的網址來發送請求
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">readyState</span>); <span style="color:#75715e">//1：使用了open()，但還沒有send()
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//1：使用了open()，但還沒有send()
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">readyState</span>); 
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">send</span>(<span style="color:#66d9ef">null</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">send</span>(<span style="color:#66d9ef">null</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">readyState</span>); 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//2：偵測到使用send()
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">readyState</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//3：loading中
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//3：loading中
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">//4：已成功撈到資料
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
@@ -867,7 +857,7 @@
           
           
             <li class="next">
-              <a href="https://jack842248.github.io/post/2021-02-12-javascript-%E9%A9%97%E8%AD%89%E8%A1%A8%E5%96%AE/" data-toggle="tooltip" data-placement="top" title="【JS】驗證表單">下一篇 &rarr;</a>
+              <a href="https://jack842248.github.io/post/2021-02-10-javascript-%E9%A9%97%E8%AD%89%E8%A1%A8%E5%96%AE/" data-toggle="tooltip" data-placement="top" title="【JS】驗證表單">下一篇 &rarr;</a>
             </li>
           
         </ul>
