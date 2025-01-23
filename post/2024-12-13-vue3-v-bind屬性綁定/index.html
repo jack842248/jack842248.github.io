@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>【Vue3】物件傳參考特性 - Jack Huang Blog</title>
+  <title>【Vue3】v-bind屬性綁定 - Jack Huang Blog</title>
   <meta name="description" content="Vue3">
   <meta name="author" content="JackHuang"/><script type="application/ld+json">
 {
@@ -44,8 +44,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/jack842248.github.io\/post\/2024-12-04-vue3-%E7%89%A9%E4%BB%B6%E5%82%B3%E5%8F%83%E8%80%83%E7%89%B9%E6%80%A7\/",
-          "name": "【 vue3】物件傳參考特性"
+          "@id": "https:\/\/jack842248.github.io\/post\/2024-12-13-vue3-v-bind%E5%B1%AC%E6%80%A7%E7%B6%81%E5%AE%9A\/",
+          "name": "【 vue3】v bind屬性綁定"
         }
     }]
 }
@@ -56,15 +56,15 @@
   "author": {
     "name" : "JackHuang"
   },
-  "headline": "【Vue3】物件傳參考特性",
-  "description" : "兩個物件互相影響 1 2 3 4 5 6 7 8 9 const fruits = { name: \u0026#34;蘋果\u0026#34;, obj:{} } const fruits2 = fruits; fruits2.name = \u0026#34;香蕉\u0026#34;; console.log(fruits.name); \/\/香蕉 console.log(fruits2.name); \/\/香蕉 當物件賦予到另一個物件時，就等於指向同一個物件\n兩個物件互相影響2 1 2 3 4 5 6 7 8 9 10 11 const fruits = { name: \u0026#34;蘋果\u0026#34;, obj:{} } const fn = (item) =\u0026gt; { item.name = \u0026#34;香蕉\u0026#34;; } fn(fruits); console.log(fruits.name); \/\/香蕉 當物件賦予到另一個物件時，就等於指向同一個物件\n淺層拷貝(兩物件不影響) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 const fruits = { name: \u0026#34;蘋果\u0026#34;, obj:{} } const fruits2 = Object.",
+  "headline": "【Vue3】v-bind屬性綁定",
+  "description" : "v-bind 圖片綁定 1 2 3 \u0026lt;div id=\u0026#34;app\u0026#34;\u0026gt; \u0026lt;img :src=\u0026#34;apple.imgUrl\u0026#34; :title=\u0026#34;apple.name\u0026#34; :alt=\u0026#34;apple.name\u0026#34;\u0026gt; \u0026lt;\/div\u0026gt; 1 2 3 4 5 6 7 8 9 10 Vue.createApp({ data(){ return{ apple: { name: \u0026#34;蘋果\u0026#34;, imgUrl: \u0026#34;https:\/\/waapple.org\/wp-content\/uploads\/2021\/06\/Variety_Cosmic-Crisp-transparent-658x677.png\u0026#34; } } } }).mount(\u0026#34;#app\u0026#34;); v-bind \u002b input \u002b readonly 1 2 3 4 5 \u0026lt;div id=\u0026#34;app\u0026#34;\u0026gt; {{ isReadonly }} \u0026lt;input type=\u0026#34;text\u0026#34; :readonly=\u0026#34;isReadonly\u0026#34;\u0026gt; \u0026lt;button type=\u0026#34;button\u0026#34; @click=\u0026#34;changeReadonly\u0026#34;\u0026gt;切換狀態\u0026lt;\/button\u0026gt; \u0026lt;\/div\u0026gt; 1 2 3 4 5 6 7 8 9 10 11 12 Vue.",
   "inLanguage" : "zh-tw",
-  "wordCount":  182 ,
-  "datePublished" : "2024-12-04T00:00:00",
-  "dateModified" : "2024-12-04T00:00:00",
+  "wordCount":  141 ,
+  "datePublished" : "2024-12-13T00:00:00",
+  "dateModified" : "2024-12-13T00:00:00",
   "image" : "https:\/\/jack842248.github.io",
   "keywords" : [ "Vue3" ],
-  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2024-12-04-vue3-%E7%89%A9%E4%BB%B6%E5%82%B3%E5%8F%83%E8%80%83%E7%89%B9%E6%80%A7\/",
+  "mainEntityOfPage" : "https:\/\/jack842248.github.io\/post\/2024-12-13-vue3-v-bind%E5%B1%AC%E6%80%A7%E7%B6%81%E5%AE%9A\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/jack842248.github.io",
@@ -78,13 +78,13 @@
 }
 </script>
 
-<meta property="og:title" content="【Vue3】物件傳參考特性" />
+<meta property="og:title" content="【Vue3】v-bind屬性綁定" />
 <meta property="og:description" content="Vue3">
-<meta property="og:url" content="https://jack842248.github.io/post/2024-12-04-vue3-%E7%89%A9%E4%BB%B6%E5%82%B3%E5%8F%83%E8%80%83%E7%89%B9%E6%80%A7/" />
+<meta property="og:url" content="https://jack842248.github.io/post/2024-12-13-vue3-v-bind%E5%B1%AC%E6%80%A7%E7%B6%81%E5%AE%9A/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jack Huang Blog" />
 
-  <meta name="twitter:title" content="【Vue3】物件傳參考特性" />
+  <meta name="twitter:title" content="【Vue3】v-bind屬性綁定" />
   <meta name="twitter:description" content="Vue3">
   <meta name="twitter:card" content="summary" />
   <link href='https://jack842248.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -244,7 +244,7 @@
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="post-heading">
-                <h1>【Vue3】物件傳參考特性</h1>
+                <h1>【Vue3】v-bind屬性綁定</h1>
                   
                     
                       <h2 class="post-subheading">Vue3</h2>
@@ -254,13 +254,13 @@
                     <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2024-12-04
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2024-12-13
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;182&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;141&nbsp;個字
   
   
   
@@ -281,7 +281,7 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>【Vue3】物件傳參考特性</h1>
+                <h1>【Vue3】v-bind屬性綁定</h1>
               
               
               
@@ -293,13 +293,13 @@
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;發表於 2024-12-04
+  <i class="fas fa-calendar"></i>&nbsp;發表於 2024-12-13
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分鐘
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;182&nbsp;個字
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;141&nbsp;個字
   
   
   
@@ -322,160 +322,52 @@
       <article role="main" class="blog-post">
         <hr>
 <h1 id="heading"></h1>
-<h2 id="兩個物件互相影響">兩個物件互相影響</h2>
+<h2 id="v-bind-圖片綁定">v-bind 圖片綁定</h2>
 <h1 id="heading-1"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">obj</span><span style="color:#f92672">:</span>{}
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fruits</span>;
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//香蕉
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//香蕉
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">:src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;apple.imgUrl&#34;</span> <span style="color:#a6e22e">:title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;apple.name&#34;</span> <span style="color:#a6e22e">:alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;apple.name&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="heading-2"></h1>
-<p><code>當物件賦予到另一個物件時，就等於指向同一個物件</code></p>
-<h1 id="heading-3"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">createApp</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">data</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">apple</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">imgUrl</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://waapple.org/wp-content/uploads/2021/06/Variety_Cosmic-Crisp-transparent-658x677.png&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}).<span style="color:#a6e22e">mount</span>(<span style="color:#e6db74">&#34;#app&#34;</span>);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-3"></h1>
 <hr>
 <h1 id="heading-4"></h1>
-<h2 id="兩個物件互相影響2">兩個物件互相影響2</h2>
+<h2 id="v-bind--input--readonly">v-bind + input + readonly</h2>
 <h1 id="heading-5"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">obj</span><span style="color:#f92672">:</span>{}
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fn</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">item</span>) =&gt; {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fn</span>(<span style="color:#a6e22e">fruits</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//香蕉
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-6"></h1>
-<p><code>當物件賦予到另一個物件時，就等於指向同一個物件</code></p>
-<h1 id="heading-7"></h1>
-<hr>
-<h1 id="heading-8"></h1>
-<h2 id="淺層拷貝兩物件不影響">淺層拷貝(兩物件不影響)</h2>
-<h1 id="heading-9"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">obj</span><span style="color:#f92672">:</span>{}
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits2</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">assign</span>({},<span style="color:#a6e22e">fruits</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//蘋果
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//香蕉
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">price</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>;
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">price</span>); <span style="color:#75715e">//80
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">price</span>); <span style="color:#75715e">//80
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-10"></h1>
-<p><code>淺層拷貝的意思是，物件第一層指向不同，但下一層指向卻還是相同</code></p>
-<h1 id="heading-11"></h1>
-<hr>
-<h1 id="heading-12"></h1>
-<h2 id="淺層拷貝兩物件不影響2">淺層拷貝(兩物件不影響)2</h2>
-<h1 id="heading-13"></h1>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">obj</span><span style="color:#f92672">:</span>{}
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits2</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>  ...<span style="color:#a6e22e">fruits</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//蘋果
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//香蕉
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">price</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>;
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">price</span>); <span style="color:#75715e">//80
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">price</span>); <span style="color:#75715e">//80
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="heading-14"></h1>
-<p><code>淺層拷貝的意思是，物件第一層指向不同，但下一層指向卻還是相同</code></p>
-<h1 id="heading-15"></h1>
-<hr>
-<h1 id="heading-16"></h1>
-<h2 id="深層拷貝兩物件不影響">深層拷貝(兩物件不影響)</h2>
-<h1 id="heading-17"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -483,26 +375,101 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">obj</span><span style="color:#f92672">:</span>{}
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">fruits</span>));
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;香蕉&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//蘋果
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//香蕉
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  {{ isReadonly }}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">:readonly</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;isReadonly&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;changeReadonly&#34;</span>&gt;切換狀態&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-18"></h1>
-<p><code>當物件賦予到另一個物件時，就等於指向同一個物件</code></p>
-<h1 id="heading-19"></h1>
+</div><h1 id="heading-6"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">createApp</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">data</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">isReadonly</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">changeReadonly</span>(){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">isReadonly</span> <span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">isReadonly</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}).<span style="color:#a6e22e">mount</span>(<span style="color:#e6db74">&#34;#app&#34;</span>);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-7"></h1>
+<hr>
+<h1 id="heading-8"></h1>
+<h2 id="v-bind--input--dynamic">v-bind + input + dynamic</h2>
+<h1 id="heading-9"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  {{ dynamic }}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">:</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">dynamic</span><span style="color:#960050;background-color:#1e0010">]</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;changeStatus&#34;</span>&gt;切換狀態&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-10"></h1>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">createApp</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">data</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">dynamic</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;disabled&#39;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">changeStatus</span>(){
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">//this.dynamic現在等於disabled嗎？是的話就變成readonly，不是的話就變成disabled
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">dynamic</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">dynamic</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;disabled&#39;</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#39;readonly&#39;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;disabled&#39;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}).<span style="color:#a6e22e">mount</span>(<span style="color:#e6db74">&#34;#app&#34;</span>);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="heading-11"></h1>
 
 
         
@@ -523,42 +490,42 @@
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2024-12-04-vue3-%25E7%2589%25A9%25E4%25BB%25B6%25E5%2582%25B3%25E5%258F%2583%25E8%2580%2583%25E7%2589%25B9%25E6%2580%25A7%2f&amp;text=%e3%80%90Vue3%e3%80%91%e7%89%a9%e4%bb%b6%e5%82%b3%e5%8f%83%e8%80%83%e7%89%b9%e6%80%a7&amp;via=" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2024-12-13-vue3-v-bind%25E5%25B1%25AC%25E6%2580%25A7%25E7%25B6%2581%25E5%25AE%259A%2f&amp;text=%e3%80%90Vue3%e3%80%91v-bind%e5%b1%ac%e6%80%a7%e7%b6%81%e5%ae%9a&amp;via=" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2024-12-04-vue3-%25E7%2589%25A9%25E4%25BB%25B6%25E5%2582%25B3%25E5%258F%2583%25E8%2580%2583%25E7%2589%25B9%25E6%2580%25A7%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjack842248.github.io%2fpost%2f2024-12-13-vue3-v-bind%25E5%25B1%25AC%25E6%2580%25A7%25E7%25B6%2581%25E5%25AE%259A%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2024-12-04-vue3-%25E7%2589%25A9%25E4%25BB%25B6%25E5%2582%25B3%25E5%258F%2583%25E8%2580%2583%25E7%2589%25B9%25E6%2580%25A7%2f&amp;title=%e3%80%90Vue3%e3%80%91%e7%89%a9%e4%bb%b6%e5%82%b3%e5%8f%83%e8%80%83%e7%89%b9%e6%80%a7" target="_blank" title="Share on Reddit">
+        <a href="//reddit.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2024-12-13-vue3-v-bind%25E5%25B1%25AC%25E6%2580%25A7%25E7%25B6%2581%25E5%25AE%259A%2f&amp;title=%e3%80%90Vue3%e3%80%91v-bind%e5%b1%ac%e6%80%a7%e7%b6%81%e5%ae%9a" target="_blank" title="Share on Reddit">
           <i class="fab fa-reddit"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2024-12-04-vue3-%25E7%2589%25A9%25E4%25BB%25B6%25E5%2582%25B3%25E5%258F%2583%25E8%2580%2583%25E7%2589%25B9%25E6%2580%25A7%2f&amp;title=%e3%80%90Vue3%e3%80%91%e7%89%a9%e4%bb%b6%e5%82%b3%e5%8f%83%e8%80%83%e7%89%b9%e6%80%a7" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2024-12-13-vue3-v-bind%25E5%25B1%25AC%25E6%2580%25A7%25E7%25B6%2581%25E5%25AE%259A%2f&amp;title=%e3%80%90Vue3%e3%80%91v-bind%e5%b1%ac%e6%80%a7%e7%b6%81%e5%ae%9a" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2024-12-04-vue3-%25E7%2589%25A9%25E4%25BB%25B6%25E5%2582%25B3%25E5%258F%2583%25E8%2580%2583%25E7%2589%25B9%25E6%2580%25A7%2f&amp;title=%e3%80%90Vue3%e3%80%91%e7%89%a9%e4%bb%b6%e5%82%b3%e5%8f%83%e8%80%83%e7%89%b9%e6%80%a7" target="_blank" title="Share on StumbleUpon">
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2024-12-13-vue3-v-bind%25E5%25B1%25AC%25E6%2580%25A7%25E7%25B6%2581%25E5%25AE%259A%2f&amp;title=%e3%80%90Vue3%e3%80%91v-bind%e5%b1%ac%e6%80%a7%e7%b6%81%e5%ae%9a" target="_blank" title="Share on StumbleUpon">
           <i class="fab fa-stumbleupon"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2024-12-04-vue3-%25E7%2589%25A9%25E4%25BB%25B6%25E5%2582%25B3%25E5%258F%2583%25E8%2580%2583%25E7%2589%25B9%25E6%2580%25A7%2f&amp;description=%e3%80%90Vue3%e3%80%91%e7%89%a9%e4%bb%b6%e5%82%b3%e5%8f%83%e8%80%83%e7%89%b9%e6%80%a7" target="_blank" title="Share on Pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fjack842248.github.io%2fpost%2f2024-12-13-vue3-v-bind%25E5%25B1%25AC%25E6%2580%25A7%25E7%25B6%2581%25E5%25AE%259A%2f&amp;description=%e3%80%90Vue3%e3%80%91v-bind%e5%b1%ac%e6%80%a7%e7%b6%81%e5%ae%9a" target="_blank" title="Share on Pinterest">
           <i class="fab fa-pinterest"></i>
         </a>
       </li>
@@ -586,9 +553,9 @@
                 
                     <li><a href="/post/2024-12-14-vue3-html%E6%A8%A3%E5%BC%8F%E7%B6%81%E5%AE%9A/">【Vue3】html樣式綁定</a></li>
                 
-                    <li><a href="/post/2024-12-13-vue3-v-bind%E5%B1%AC%E6%80%A7%E7%B6%81%E5%AE%9A/">【Vue3】v-bind屬性綁定</a></li>
-                
                     <li><a href="/post/2024-12-12-vue3-v-if%E9%81%B8%E6%93%87%E6%80%A7%E9%A1%AF%E7%A4%BA/">【Vue3】v-if選擇性顯示</a></li>
+                
+                    <li><a href="/post/2024-12-11-vue3-v-for%E5%91%88%E7%8F%BE%E5%A4%9A%E7%AD%86%E8%B3%87%E6%96%99/">【Vue3】v-for呈現多筆資料</a></li>
                 
               </ul>
 
@@ -600,12 +567,12 @@
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://jack842248.github.io/post/2024-12-03-vue3-%E9%97%9C%E6%B3%A8%E9%BB%9E%E5%88%86%E9%9B%A2%E5%AF%A6%E4%BD%9C/" data-toggle="tooltip" data-placement="top" title="【Vue3】關注點分離實作">&larr; 上一篇</a>
+              <a href="https://jack842248.github.io/post/2024-12-12-vue3-v-if%E9%81%B8%E6%93%87%E6%80%A7%E9%A1%AF%E7%A4%BA/" data-toggle="tooltip" data-placement="top" title="【Vue3】v-if選擇性顯示">&larr; 上一篇</a>
             </li>
           
           
             <li class="next">
-              <a href="https://jack842248.github.io/post/2024-12-05-vue3-promise%E9%9D%9E%E5%90%8C%E6%AD%A5%E8%A7%80%E5%BF%B5/" data-toggle="tooltip" data-placement="top" title="【Vue3】promise非同步觀念">下一篇 &rarr;</a>
+              <a href="https://jack842248.github.io/post/2024-12-14-vue3-html%E6%A8%A3%E5%BC%8F%E7%B6%81%E5%AE%9A/" data-toggle="tooltip" data-placement="top" title="【Vue3】html樣式綁定">下一篇 &rarr;</a>
             </li>
           
         </ul>
@@ -616,12 +583,12 @@
         
           
           <div class="disqus-comments">                  
-            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2024-12-04-vue3-%E7%89%A9%E4%BB%B6%E5%82%B3%E5%8F%83%E8%80%83%E7%89%B9%E6%80%A7">則評論</span></button>
+            <button id="show-comments" class="btn btn-default" type="button">顯示 <span class="disqus-comment-count" data-disqus-url="https://jack842248.github.io/post/2024-12-13-vue3-v-bind%E5%B1%AC%E6%80%A7%E7%B6%81%E5%AE%9A">則評論</span></button>
             <div id="disqus_thread"></div>
 
             <script type="text/javascript">
               var disqus_config = function () {
-              this.page.url = 'https:\/\/jack842248.github.io\/post\/2024-12-04-vue3-%E7%89%A9%E4%BB%B6%E5%82%B3%E5%8F%83%E8%80%83%E7%89%B9%E6%80%A7';
+              this.page.url = 'https:\/\/jack842248.github.io\/post\/2024-12-13-vue3-v-bind%E5%B1%AC%E6%80%A7%E7%B6%81%E5%AE%9A';
             };
 
           </script>
