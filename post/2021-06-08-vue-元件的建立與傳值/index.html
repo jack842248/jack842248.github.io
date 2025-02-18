@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【Vue】元件的建立與傳值",
-  "description" : "元件(Component) 元件資料是獨立運作，也可以重複使用。 元件裡面可以再包元件。 建立元件有兩種方式:\n全域註冊 : 使用Vue.component()建立，其他app也可以使用。\n局部註冊 : 在app裡使用components建立，只有app自己可以使用。\n全域註冊元件 使用Vue.component()建立，第一個參數自訂[標籤名稱]。 在HTML建立一個類型為 text\/x-template 的\u0026lt;script\u0026gt;，並賦予一個[id]名稱。 並在底下建立元件結構。 在 Vue.component() ，使用[template]對應\u0026lt;script\u0026gt;的[id]。 在HTML上使用自訂[標籤名稱]。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 \/\/ \u0026lt;-----html-----\u0026gt; #app list-com \/\/5. script(type=\u0026#34;text\/x-template\u0026#34; id=\u0026#34;list-com\u0026#34;) \/\/2. ul \/\/3. li 蘋果 li 香蕉 li 鳳梨 \/\/ \u0026lt;-----js-----\u0026gt; Vue.component(\u0026#34;list-com\u0026#34;,{ \/\/1. template: \u0026#34;#list-com\u0026#34; \/\/4. }); let app = new Vue({ el: \u0026#34;#app\u0026#34; }); 局部註冊元件 在app裡使用[components]建立元件。 先自訂[標籤名稱]。 使用物件方式，帶入[template]，並建立元件結構。 在HTML上使用自訂[標籤名稱]。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 \/\/ \u0026lt;-----html-----\u0026gt; #app list-com \/\/ \u0026lt;-----js-----\u0026gt; let app = new Vue({ el: \u0026#34;#app\u0026#34;, components:{ \u0026#34;list-com\u0026#34;:{ template: ` \u0026lt;ul\u0026gt; \u0026lt;li\u0026gt;蘋果\u0026lt;\/li\u0026gt; \u0026lt;li\u0026gt;香蕉\u0026lt;\/li\u0026gt; \u0026lt;li\u0026gt;鳳梨\u0026lt;\/li\u0026gt; \u0026lt;\/ul\u0026gt; ` } } }); 元件的data資料 元件的data需使用function(){return{.",
+  "description" : " 元件(Component) ",
   "inLanguage" : "zh-tw",
   "wordCount":  721 ,
   "datePublished" : "2021-06-08T00:00:00",
@@ -324,14 +324,15 @@
 <h1 id="heading"></h1>
 <h2 id="元件component">元件(Component)</h2>
 <h1 id="heading-1"></h1>
+<h1 id="heading-2"></h1>
 <ul>
 <li>元件資料是獨立運作，也可以重複使用。</li>
 </ul>
-<h1 id="heading-2"></h1>
+<h1 id="heading-3"></h1>
 <ul>
 <li>元件裡面可以再包元件。</li>
 </ul>
-<h1 id="heading-3"></h1>
+<h1 id="heading-4"></h1>
 <ul>
 <li>
 <p>建立元件有兩種方式:</p>
@@ -346,29 +347,29 @@
 </li>
 </ul>
 <hr>
-<h1 id="heading-4"></h1>
-<h2 id="全域註冊元件">全域註冊元件</h2>
 <h1 id="heading-5"></h1>
+<h2 id="全域註冊元件">全域註冊元件</h2>
+<h1 id="heading-6"></h1>
 <ol>
 <li>使用Vue.component()建立，第一個參數自訂[標籤名稱]。</li>
 </ol>
-<h1 id="heading-6"></h1>
+<h1 id="heading-7"></h1>
 <ol start="2">
 <li>在HTML建立一個類型為 <strong>text/x-template</strong> 的&lt;script&gt;，並賦予一個[id]名稱。</li>
 </ol>
-<h1 id="heading-7"></h1>
+<h1 id="heading-8"></h1>
 <ol start="3">
 <li>並在底下建立元件結構。</li>
 </ol>
-<h1 id="heading-8"></h1>
+<h1 id="heading-9"></h1>
 <ol start="4">
 <li>在 <strong>Vue.component()</strong> ，使用[template]對應&lt;script&gt;的[id]。</li>
 </ol>
-<h1 id="heading-9"></h1>
+<h1 id="heading-10"></h1>
 <ol start="5">
 <li>在HTML上使用自訂[標籤名稱]。</li>
 </ol>
-<h1 id="heading-10"></h1>
+<h1 id="heading-11"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -411,27 +412,27 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-11"></h1>
+</div><h1 id="heading-12"></h1>
 <hr>
-<h1 id="heading-12"></h1>
-<h2 id="局部註冊元件">局部註冊元件</h2>
 <h1 id="heading-13"></h1>
+<h2 id="局部註冊元件">局部註冊元件</h2>
+<h1 id="heading-14"></h1>
 <ol>
 <li>在app裡使用[components]建立元件。</li>
 </ol>
-<h1 id="heading-14"></h1>
+<h1 id="heading-15"></h1>
 <ol start="2">
 <li>先自訂[標籤名稱]。</li>
 </ol>
-<h1 id="heading-15"></h1>
+<h1 id="heading-16"></h1>
 <ol start="3">
 <li>使用物件方式，帶入[template]，並建立元件結構。</li>
 </ol>
-<h1 id="heading-16"></h1>
+<h1 id="heading-17"></h1>
 <ol start="4">
 <li>在HTML上使用自訂[標籤名稱]。</li>
 </ol>
-<h1 id="heading-17"></h1>
+<h1 id="heading-18"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -478,13 +479,13 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-18"></h1>
+</div><h1 id="heading-19"></h1>
 <hr>
-<h1 id="heading-19"></h1>
-<h2 id="元件的data資料">元件的data資料</h2>
 <h1 id="heading-20"></h1>
-<p><code>元件的data需使用function(){return{...}}</code></p>
+<h2 id="元件的data資料">元件的data資料</h2>
 <h1 id="heading-21"></h1>
+<p><code>元件的data需使用function(){return{...}}</code></p>
+<h1 id="heading-22"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -531,9 +532,9 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-22"></h1>
+</div><h1 id="heading-23"></h1>
 <h2 id="元件的陣列資料">元件的陣列資料</h2>
-<h1 id="heading-23"></h1>
+<h1 id="heading-24"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -590,11 +591,11 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-24"></h1>
+</div><h1 id="heading-25"></h1>
 <h2 id="元件的ajax資料">元件的ajax資料</h2>
-<h1 id="heading-25"></h1>
-<p><code>因ajax載入與顯示有時間差，要在該元件上使用v-if來確保資料載入</code></p>
 <h1 id="heading-26"></h1>
+<p><code>因ajax載入與顯示有時間差，要在該元件上使用v-if來確保資料載入</code></p>
+<h1 id="heading-27"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -669,31 +670,31 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-27"></h1>
+</div><h1 id="heading-28"></h1>
 <blockquote>
 <p>使用keep-alive 標籤可以讓元件被消失後再顯示時，不重新載入ajax</p>
 </blockquote>
-<h1 id="heading-28"></h1>
-<hr>
 <h1 id="heading-29"></h1>
-<h2 id="使用props將資料傳入元件">使用props將資料傳入元件</h2>
+<hr>
 <h1 id="heading-30"></h1>
+<h2 id="使用props將資料傳入元件">使用props將資料傳入元件</h2>
+<h1 id="heading-31"></h1>
 <ol>
 <li>使用props以陣列方式傳入屬性名稱。</li>
 </ol>
-<h1 id="heading-31"></h1>
+<h1 id="heading-32"></h1>
 <ol start="2">
 <li>在標籤上動態綁定屬性，並賦予值。<code>此時更動傳入的屬性會出現單向數據流的錯誤</code></li>
 </ol>
-<h1 id="heading-32"></h1>
+<h1 id="heading-33"></h1>
 <ol start="3">
 <li>使用一個新的data來接收props傳入的資料。</li>
 </ol>
-<h1 id="heading-33"></h1>
+<h1 id="heading-34"></h1>
 <ol start="4">
 <li>在元件建構上套用新的data資料。</li>
 </ol>
-<h1 id="heading-34"></h1>
+<h1 id="heading-35"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -748,9 +749,9 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-35"></h1>
+</div><h1 id="heading-36"></h1>
 <h2 id="使用props將陣列傳入元件">使用props將陣列傳入元件</h2>
-<h1 id="heading-36"></h1>
+<h1 id="heading-37"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -815,11 +816,11 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-37"></h1>
+</div><h1 id="heading-38"></h1>
 <h2 id="使用props將ajax傳入元件">使用props將ajax傳入元件</h2>
-<h1 id="heading-38"></h1>
-<p><code>因ajax載入與顯示有時間差，要在該標籤上使用v-if來確保資料載入</code></p>
 <h1 id="heading-39"></h1>
+<p><code>因ajax載入與顯示有時間差，要在該標籤上使用v-if來確保資料載入</code></p>
+<h1 id="heading-40"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -900,11 +901,11 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-40"></h1>
+</div><h1 id="heading-41"></h1>
 <hr>
-<h1 id="heading-41"></h1>
-<h2 id="props傳入的型別和預設值">props傳入的型別和預設值</h2>
 <h1 id="heading-42"></h1>
+<h2 id="props傳入的型別和預設值">props傳入的型別和預設值</h2>
+<h1 id="heading-43"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -975,27 +976,27 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-43"></h1>
+</div><h1 id="heading-44"></h1>
 <hr>
-<h1 id="heading-44"></h1>
-<h2 id="使用emit讓元件方法影響到外層data">使用$emit()讓元件方法影響到外層data</h2>
 <h1 id="heading-45"></h1>
+<h2 id="使用emit讓元件方法影響到外層data">使用$emit()讓元件方法影響到外層data</h2>
+<h1 id="heading-46"></h1>
 <ol>
 <li>先建立好元件的template。</li>
 </ol>
-<h1 id="heading-46"></h1>
+<h1 id="heading-47"></h1>
 <ol start="2">
 <li>在元件的methods上新增[addCash1]方法，並將使用$emit()，傳出一個[item]。</li>
 </ol>
-<h1 id="heading-47"></h1>
+<h1 id="heading-48"></h1>
 <ol start="3">
 <li>在HTML上使用自訂標籤，並在該標籤上使用v-on:[item]，然後呼叫[addCash2]方法。</li>
 </ol>
-<h1 id="heading-48"></h1>
+<h1 id="heading-49"></h1>
 <ol start="4">
 <li>在methods方法中新增[addCash2]方法。</li>
 </ol>
-<h1 id="heading-49"></h1>
+<h1 id="heading-50"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1

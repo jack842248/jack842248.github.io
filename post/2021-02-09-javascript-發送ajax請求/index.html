@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【JS】發送AJAX請求",
-  "description" : "動態載入資料(AJAX) 使用new XMLHttpRequest原型，來向伺服器發送請求。 不用重新整理網頁就能取得資料庫回傳的資料，例如 : 加入購物車，顯示商品數量。 註冊帳號時，顯示該帳號是否已使用。 搜尋時，顯示的關鍵提示字。 載入的資料必須支援跨網域(CORS)。 若發送請求時出現Access-Control-Allow-Origin錯誤，代表不支援 1 let xhr = new XMLHttpRequest(); .open(\u0026ldquo;方法\u0026rdquo; , \u0026ldquo;網址\u0026rdquo; , true\/false)。 向伺服器發送請求.open(method, url, async, user, password)。 method：請求方法（如 \u0026ldquo;GET\u0026rdquo;、\u0026ldquo;POST\u0026rdquo;、\u0026ldquo;PUT\u0026rdquo;、\u0026ldquo;DELETE\u0026rdquo; 等） url：請求的 URL 地址，可以是相對路徑或絕對路徑。 async(可選)：是否異步執行請求，預設為 true。如果設定為 false，請求會同步執行，頁面會被阻塞，直到請求完成。一般建議使用異步請求。 user(可選)：HTTP 請求的使用者名稱，用於需要身份驗證的請求。 password(可選)：HTTP 請求的密碼，用於需要身份驗證的請求。 請求方法 說明 \u0026ldquo;GET\u0026rdquo; 用於請求數據。通常用於獲取資源。 \u0026ldquo;POST\u0026rdquo; 用於將數據發送到伺服器。例如，提交表單或上傳數據。 \u0026ldquo;PUT\u0026rdquo; 用於更新伺服器上的資源。 \u0026ldquo;DELETE\u0026rdquo; 用於刪除伺服器上的資源。 \u0026ldquo;PATCH\u0026rdquo; 用於更新部分資源，類似於 PUT，但只更新部分內容。 \u0026ldquo;HEAD\u0026rdquo; 與 GET 類似，但不返回回應體，僅返回回應頭部信息。 \u0026ldquo;OPTIONS\u0026rdquo; 用於查詢伺服器支持哪些請求方法和其他配置。 \u0026ldquo;TRACE\u0026rdquo; 用於追蹤請求和回應的路徑，通常很少使用。 \u0026ldquo;CONNECT\u0026rdquo; 用於建立到目標伺服器的隧道連接，常用於代理伺服器。 1 2 3 4 5 6 7 let xhr = new XMLHttpRequest(); \/\/true(預設)，不等資料載入完就會往下執行(非同步載入) xhr.",
+  "description" : " 動態載入資料(AJAX) ",
   "inLanguage" : "zh-tw",
   "wordCount":  283 ,
   "datePublished" : "2021-02-09T00:00:00",
@@ -324,10 +324,11 @@
 <h1 id="heading"></h1>
 <h2 id="動態載入資料ajax">動態載入資料(AJAX)</h2>
 <h1 id="heading-1"></h1>
+<h1 id="heading-2"></h1>
 <ul>
 <li>使用<code>new XMLHttpRequest</code>原型，來向伺服器發送請求。</li>
 </ul>
-<h1 id="heading-2"></h1>
+<h1 id="heading-3"></h1>
 <ul>
 <li>不用重新整理網頁就能取得資料庫回傳的資料，例如 :
 <ul>
@@ -337,7 +338,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="heading-3"></h1>
+<h1 id="heading-4"></h1>
 <ul>
 <li>載入的資料必須支援跨網域(CORS)。
 <ul>
@@ -345,7 +346,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="heading-4"></h1>
+<h1 id="heading-5"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -354,11 +355,11 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">xhr</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-5"></h1>
+</div><h1 id="heading-6"></h1>
 <hr>
-<h1 id="heading-6"></h1>
-<h3 id="open方法--網址--truefalse">.open(&ldquo;方法&rdquo; , &ldquo;網址&rdquo; , true/false)。</h3>
 <h1 id="heading-7"></h1>
+<h3 id="open方法--網址--truefalse">.open(&ldquo;方法&rdquo; , &ldquo;網址&rdquo; , true/false)。</h3>
+<h1 id="heading-8"></h1>
 <ul>
 <li>向伺服器發送請求.open(method, url, async, user, password)。
 <ul>
@@ -370,7 +371,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="heading-8"></h1>
+<h1 id="heading-9"></h1>
 <table>
 <thead>
 <tr>
@@ -417,7 +418,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="heading-9"></h1>
+<h1 id="heading-10"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -438,15 +439,15 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;get&#34;</span>,<span style="color:#e6db74">&#34;https://hexschool.github.io/ajaxHomework/data.json&#34;</span>,<span style="color:#66d9ef">false</span>);
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-10"></h1>
+</div><h1 id="heading-11"></h1>
 <hr>
-<h1 id="heading-11"></h1>
-<h3 id="readystate">.readyState</h3>
 <h1 id="heading-12"></h1>
+<h3 id="readystate">.readyState</h3>
+<h1 id="heading-13"></h1>
 <ul>
 <li>取得當前請求的處理狀態。</li>
 </ul>
-<h1 id="heading-13"></h1>
+<h1 id="heading-14"></h1>
 <table>
 <thead>
 <tr>
@@ -477,7 +478,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="heading-14"></h1>
+<h1 id="heading-15"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -490,15 +491,15 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">readyState</span>); <span style="color:#75715e">//0
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-15"></h1>
+</div><h1 id="heading-16"></h1>
 <hr>
-<h1 id="heading-16"></h1>
-<h3 id="setrequestheader">.setRequestHeader</h3>
 <h1 id="heading-17"></h1>
+<h3 id="setrequestheader">.setRequestHeader</h3>
+<h1 id="heading-18"></h1>
 <ul>
 <li>決定傳送給伺服器的資料格式。</li>
 </ul>
-<h1 id="heading-18"></h1>
+<h1 id="heading-19"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -523,15 +524,15 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">setRequestHeader</span>(<span style="color:#e6db74">&#34;content-type&#34;</span>,<span style="color:#e6db74">&#34;application/json&#34;</span>);
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-19"></h1>
+</div><h1 id="heading-20"></h1>
 <hr>
-<h1 id="heading-20"></h1>
-<h3 id="send">.send</h3>
 <h1 id="heading-21"></h1>
+<h3 id="send">.send</h3>
+<h1 id="heading-22"></h1>
 <ul>
 <li>傳送給伺服器資料。</li>
 </ul>
-<h1 id="heading-22"></h1>
+<h1 id="heading-23"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -550,11 +551,11 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">xhr</span>.<span style="color:#a6e22e">send</span>(<span style="color:#66d9ef">null</span>);
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-23"></h1>
+</div><h1 id="heading-24"></h1>
 <hr>
-<h1 id="heading-24"></h1>
-<h3 id="onload">.onload</h3>
 <h1 id="heading-25"></h1>
+<h3 id="onload">.onload</h3>
+<h1 id="heading-26"></h1>
 <ul>
 <li>.responseText
 <ul>
@@ -563,7 +564,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="heading-26"></h1>
+<h1 id="heading-27"></h1>
 <ul>
 <li>.status
 <ul>
@@ -571,7 +572,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="heading-27"></h1>
+<h1 id="heading-28"></h1>
 <table>
 <thead>
 <tr>
@@ -642,7 +643,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="heading-28"></h1>
+<h1 id="heading-29"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -667,11 +668,11 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-29"></h1>
+</div><h1 id="heading-30"></h1>
 <hr>
-<h1 id="heading-30"></h1>
-<h2 id="xmlhttprequest-取得訊息">XMLHttpRequest 取得訊息</h2>
 <h1 id="heading-31"></h1>
+<h2 id="xmlhttprequest-取得訊息">XMLHttpRequest 取得訊息</h2>
+<h1 id="heading-32"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -680,7 +681,7 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;message&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-32"></h1>
+</div><h1 id="heading-33"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -741,9 +742,9 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-33"></h1>
+</div><h1 id="heading-34"></h1>
 <h4 id="輸出結果">輸出結果：</h4>
-<h1 id="heading-34"></h1>
+<h1 id="heading-35"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -752,10 +753,9 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;message&#34;</span>&gt;王小名&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-35"></h1>
+</div><h1 id="heading-36"></h1>
 <p><code>正常情況下都會使用true非同步載入資料，因為資料龐大頁面會載入很久</code></p>
-<h1 id="heading-36"></h1>
-
+<h1 id="heading-37"></h1>
 
         
           <div class="blog-tags">

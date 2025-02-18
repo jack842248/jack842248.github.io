@@ -2,19 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jack842248.github.io/post/2024-12-24-vue3-%E5%85%83%E4%BB%B6/</loc>
-    <lastmod>2024-12-24T00:00:00+00:00</lastmod>
+    <loc>https://jack842248.github.io/post/2024-12-29-vue3-slot%E5%85%83%E4%BB%B6%E6%8F%92%E5%B7%A2/</loc>
+    <lastmod>2024-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jack842248.github.io/</loc>
-    <lastmod>2024-12-24T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jack842248.github.io/post/</loc>
-    <lastmod>2024-12-24T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jack842248.github.io/tags/</loc>
-    <lastmod>2024-12-24T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jack842248.github.io/tags/vue3/</loc>
+    <lastmod>2024-12-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jack842248.github.io/post/2024-12-28-vue3-%E5%AF%A6%E4%BD%9Calert%E5%BD%88%E8%B7%B3%E8%A6%96%E7%AA%97/</loc>
+    <lastmod>2024-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jack842248.github.io/post/2024-12-27-vue3-emit%E8%B3%87%E6%96%99%E7%94%B1%E5%85%A7%E5%82%B3%E5%A4%96/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jack842248.github.io/post/2024-12-26-vue3-props%E8%B3%87%E6%96%99%E7%94%B1%E5%A4%96%E5%82%B3%E5%85%A7/</loc>
+    <lastmod>2024-12-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jack842248.github.io/post/2024-12-25-vue3-template%E6%A8%A1%E6%9D%BF/</loc>
+    <lastmod>2024-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jack842248.github.io/post/2024-12-24-vue3-component%E5%85%83%E4%BB%B6/</loc>
     <lastmod>2024-12-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jack842248.github.io/post/2024-12-23-vue3-%E7%94%A8watch%E7%9B%A3%E8%81%BDdata%E8%B3%87%E6%96%99/</loc>

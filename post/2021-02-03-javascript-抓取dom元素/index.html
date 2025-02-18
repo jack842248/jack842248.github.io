@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【JS】抓取DOM元素",
-  "description" : "取得DOM元素方法 方法 取得目標 回傳結果 .getElementById() id 第一個符合的標籤 .getElementsByName() name 物件 .getElementsByTagName() \u0026lt;標籤\u0026gt; 物件 .querySelector() id、class、\u0026lt;標籤\u0026gt; 第一個符合的標籤 .querySelectorAll() id、class 物件 抓取id元素 1 \u0026lt;div id=\u0026#34;apple\u0026#34;\u0026gt;\u0026lt;\/div\u0026gt; 1 2 3 4 5 let apple = document.getElementById(\u0026#34;apple\u0026#34;); console.log(apple); \/\/\u0026lt;div id=\u0026#34;apple\u0026#34;\u0026gt;\u0026lt;\/div\u0026gt; apple.textContent = \u0026#34;蘋果\u0026#34;; 抓取name元素 1 \u0026lt;div name=\u0026#34;apple\u0026#34;\u0026gt;\u0026lt;\/div\u0026gt; 1 2 3 4 5 let apple = document.getElementsByName(\u0026#34;apple\u0026#34;); console.log(typeof(apple)); \/\/object apple[0].textContent = \u0026#34;蘋果\u0026#34;; 抓取tag標籤 1 \u0026lt;button type=\u0026#34;button\u0026#34;\u0026gt;按鈕\u0026lt;\/button\u0026gt; 1 2 3 4 5 let btn = document.getElementsByTagName(\u0026#34;button\u0026#34;); console.",
+  "description" : " 取得DOM元素方法 ",
   "inLanguage" : "zh-tw",
   "wordCount":  167 ,
   "datePublished" : "2021-02-03T00:00:00",
@@ -324,6 +324,7 @@
 <h1 id="heading"></h1>
 <h2 id="取得dom元素方法">取得DOM元素方法</h2>
 <h1 id="heading-1"></h1>
+<h1 id="heading-2"></h1>
 <table>
 <thead>
 <tr>
@@ -360,11 +361,11 @@
 </tr>
 </tbody>
 </table>
-<h1 id="heading-2"></h1>
-<hr>
 <h1 id="heading-3"></h1>
-<h2 id="抓取id元素">抓取id元素</h2>
+<hr>
 <h1 id="heading-4"></h1>
+<h2 id="抓取id元素">抓取id元素</h2>
+<h1 id="heading-5"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -373,7 +374,7 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;apple&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-5"></h1>
+</div><h1 id="heading-6"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -390,11 +391,11 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">apple</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-6"></h1>
+</div><h1 id="heading-7"></h1>
 <hr>
-<h1 id="heading-7"></h1>
-<h2 id="抓取name元素">抓取name元素</h2>
 <h1 id="heading-8"></h1>
+<h2 id="抓取name元素">抓取name元素</h2>
+<h1 id="heading-9"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -403,7 +404,7 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;apple&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-9"></h1>
+</div><h1 id="heading-10"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -420,11 +421,11 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">apple</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-10"></h1>
+</div><h1 id="heading-11"></h1>
 <hr>
-<h1 id="heading-11"></h1>
-<h2 id="抓取tag標籤">抓取tag標籤</h2>
 <h1 id="heading-12"></h1>
+<h2 id="抓取tag標籤">抓取tag標籤</h2>
+<h1 id="heading-13"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -433,7 +434,7 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;按鈕&lt;/<span style="color:#f92672">button</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-13"></h1>
+</div><h1 id="heading-14"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -450,11 +451,11 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">btn</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蘋果&#34;</span>;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-14"></h1>
+</div><h1 id="heading-15"></h1>
 <hr>
-<h1 id="heading-15"></h1>
-<h2 id="抓取class元素">抓取class元素</h2>
 <h1 id="heading-16"></h1>
+<h2 id="抓取class元素">抓取class元素</h2>
+<h1 id="heading-17"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -471,7 +472,7 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">ul</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-17"></h1>
+</div><h1 id="heading-18"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -490,9 +491,9 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;.nav-link&#34;</span>)[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;蓮霧&#34;</span>;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-18"></h1>
+</div><h1 id="heading-19"></h1>
 <h4 id="輸出結果">輸出結果：</h4>
-<h1 id="heading-19"></h1>
+<h1 id="heading-20"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -509,13 +510,13 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">ul</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-20"></h1>
+</div><h1 id="heading-21"></h1>
 <p><code>querySelector若有多個，只會抓取第一個元素</code></p>
-<h1 id="heading-21"></h1>
-<hr>
 <h1 id="heading-22"></h1>
-<h2 id="抓取input值">抓取input值</h2>
+<hr>
 <h1 id="heading-23"></h1>
+<h2 id="抓取input值">抓取input值</h2>
+<h1 id="heading-24"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -524,7 +525,7 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;蘋果&#34;</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-24"></h1>
+</div><h1 id="heading-25"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -551,9 +552,9 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span>(<span style="color:#a6e22e">text</span>.<span style="color:#a6e22e">value</span>)); <span style="color:#75715e">//string
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-25"></h1>
+</div><h1 id="heading-26"></h1>
 <h4 id="輸出結果-1">輸出結果：</h4>
-<h1 id="heading-26"></h1>
+<h1 id="heading-27"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -562,8 +563,7 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;香蕉&#34;</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-27"></h1>
-
+</div><h1 id="heading-28"></h1>
 
         
           <div class="blog-tags">

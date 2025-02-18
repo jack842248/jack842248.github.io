@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【JS】封裝AJAX請求",
-  "description" : "建立Promise Promise 是一個函式物件，需要用函式來建構。\nPromiseState : 狀態。\nPromiseValue : 回傳的值。\n需要帶入兩個參數 resolve : 成功， reject : 失敗。\n在 *非同步事件 之後才會執行結果。\n需要用 .then() : 顯示成功的結果， catch() : 顯示失敗的結果。\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 function promiseFn(item){ \/\/1. return new Promise((resolve,reject)=\u0026gt;{ \/\/2. setTimeout(()=\u0026gt;{ \/\/3. if(item){ resolve(\u0026#34;成功\u0026#34;); }else{ reject(\u0026#34;失敗\u0026#34;); } },1000) }) } promiseFn(1) .then((res)=\u0026gt;{ \/\/4. console.log(res); }) .catch((rej)=\u0026gt;{ \/\/4. console.log(rej); }) 用.",
+  "description" : " 建立Promise ",
   "inLanguage" : "zh-tw",
   "wordCount":  640 ,
   "datePublished" : "2021-02-24T00:00:00",
@@ -324,6 +324,7 @@
 <h1 id="heading"></h1>
 <h2 id="建立promise">建立Promise</h2>
 <h1 id="heading-1"></h1>
+<h1 id="heading-2"></h1>
 <ol>
 <li>
 <p><strong>Promise</strong> 是一個函式物件，需要用函式來建構。</p>
@@ -346,7 +347,7 @@
 <p>需要用 <strong>.then()</strong>  : 顯示成功的結果， <strong>catch()</strong>  : 顯示失敗的結果。</p>
 </li>
 </ol>
-<h1 id="heading-2"></h1>
+<h1 id="heading-3"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -389,11 +390,11 @@
 </span></span><span style="display:flex;"><span>  })
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-3"></h1>
+</div><h1 id="heading-4"></h1>
 <ul>
 <li>用.then(第一個參數接收resolve,第二的參數接收reject)。</li>
 </ul>
-<h1 id="heading-4"></h1>
+<h1 id="heading-5"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -434,15 +435,15 @@
 </span></span><span style="display:flex;"><span>  })
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-5"></h1>
+</div><h1 id="heading-6"></h1>
 <hr>
-<h1 id="heading-6"></h1>
-<h2 id="promise-chain">Promise chain</h2>
 <h1 id="heading-7"></h1>
+<h2 id="promise-chain">Promise chain</h2>
+<h1 id="heading-8"></h1>
 <ul>
 <li>串聯多個 <strong>promise</strong> ，若有其中 <strong>.then()</strong> 不成立，則直接跳至 <strong>.catch()</strong> 。</li>
 </ul>
-<h1 id="heading-8"></h1>
+<h1 id="heading-9"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -509,11 +510,11 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  })
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-9"></h1>
+</div><h1 id="heading-10"></h1>
 <ul>
 <li>使用 <strong>.then()</strong> 來顯示，失敗或是成功的結果。</li>
 </ul>
-<h1 id="heading-10"></h1>
+<h1 id="heading-11"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -602,15 +603,15 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  })
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-11"></h1>
+</div><h1 id="heading-12"></h1>
 <hr>
-<h1 id="heading-12"></h1>
-<h2 id="promiseall">Promise.all</h2>
 <h1 id="heading-13"></h1>
+<h2 id="promiseall">Promise.all</h2>
+<h1 id="heading-14"></h1>
 <ul>
 <li>將全部使用陣列方式帶入參數，如果全部都成功執行後，才會執行接下來要執行的的結果，</li>
 </ul>
-<h1 id="heading-14"></h1>
+<h1 id="heading-15"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -657,11 +658,11 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-15"></h1>
+</div><h1 id="heading-16"></h1>
 <ul>
 <li>若其中有失敗的結果，則直接跳至.catch()。</li>
 </ul>
-<h1 id="heading-16"></h1>
+<h1 id="heading-17"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -714,15 +715,15 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-17"></h1>
+</div><h1 id="heading-18"></h1>
 <hr>
-<h1 id="heading-18"></h1>
-<h2 id="promiserace">Promise.race</h2>
 <h1 id="heading-19"></h1>
+<h2 id="promiserace">Promise.race</h2>
+<h1 id="heading-20"></h1>
 <ul>
 <li>將全部都成功執行後，才執行接下來要執行的的動作，但只執行最快完的成功。</li>
 </ul>
-<h1 id="heading-20"></h1>
+<h1 id="heading-21"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -769,11 +770,11 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-21"></h1>
+</div><h1 id="heading-22"></h1>
 <ul>
 <li>若最快完成的是失敗，則後續的成功不會顯示。</li>
 </ul>
-<h1 id="heading-22"></h1>
+<h1 id="heading-23"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -826,15 +827,15 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-23"></h1>
+</div><h1 id="heading-24"></h1>
 <hr>
-<h1 id="heading-24"></h1>
-<h2 id="使用random-user-api取得假人頭資料">使用Random User API取得假人頭資料</h2>
 <h1 id="heading-25"></h1>
+<h2 id="使用random-user-api取得假人頭資料">使用Random User API取得假人頭資料</h2>
+<h1 id="heading-26"></h1>
 <ul>
 <li>取得資料<a href="https://randomuser.me/">假人頭資料</a>範例。</li>
 </ul>
-<h1 id="heading-26"></h1>
+<h1 id="heading-27"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -887,11 +888,11 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-27"></h1>
+</div><h1 id="heading-28"></h1>
 <hr>
-<h1 id="heading-28"></h1>
-<h2 id="取得相同資料">取得相同資料</h2>
 <h1 id="heading-29"></h1>
+<h2 id="取得相同資料">取得相同資料</h2>
+<h1 id="heading-30"></h1>
 <ol>
 <li>
 <p>先取得資料裡的seed[序號]。</p>
@@ -903,7 +904,7 @@
 <p>載入https://randomuser.me/api/?seed=[序號]。</p>
 </li>
 </ol>
-<h1 id="heading-30"></h1>
+<h1 id="heading-31"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1

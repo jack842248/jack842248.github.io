@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【Vue3】用watch監聽data資料",
-  "description" : "watch新舊值介紹 1 2 3 4 \u0026lt;div id=\u0026#34;app\u0026#34;\u0026gt; \u0026lt;input type=\u0026#34;text\u0026#34; v-model=\u0026#34;tempName\u0026#34;\u0026gt; \u0026lt;p\u0026gt;{{ tempName }}\u0026lt;\/p\u0026gt; \u0026lt;\/div\u0026gt; 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Vue.createApp({ data(){ return{ tempName: \u0026#34;\u0026#34;, } }, watch:{ \/\/n = 新輸入的值 \/\/o = 上一次輸入的值 tempName(n,o){ console.log(n,o) } } }).mount(\u0026#34;#app\u0026#34;); 當輸入第一次值的時候，watch\nwatch監看，textarea字數 1 2 3 4 \u0026lt;div id=\u0026#34;app\u0026#34;\u0026gt; \u0026lt;textarea v-model=\u0026#34;tempName\u0026#34; cols=\u0026#34;30\u0026#34; rows=\u0026#34;5\u0026#34;\u0026gt;\u0026lt;\/textarea\u0026gt; \u0026lt;p\u0026gt;您已經輸入了{{ textLength }}個字元\u0026lt;\/p\u0026gt; \u0026lt;\/div\u0026gt; 1 2 3 4 5 6 7 8 9 10 11 12 13 Vue.",
+  "description" : " watch新舊值介紹 ",
   "inLanguage" : "zh-tw",
   "wordCount":  281 ,
   "datePublished" : "2024-12-23T00:00:00",
@@ -324,6 +324,7 @@
 <h1 id="heading"></h1>
 <h2 id="watch新舊值介紹">watch新舊值介紹</h2>
 <h1 id="heading-1"></h1>
+<h1 id="heading-2"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -338,7 +339,7 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-2"></h1>
+</div><h1 id="heading-3"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -373,13 +374,13 @@
 </span></span><span style="display:flex;"><span>}).<span style="color:#a6e22e">mount</span>(<span style="color:#e6db74">&#34;#app&#34;</span>);
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-3"></h1>
+</div><h1 id="heading-4"></h1>
 <p><code>當輸入第一次值的時候，watch</code></p>
-<h1 id="heading-4"></h1>
-<hr>
 <h1 id="heading-5"></h1>
-<h2 id="watch監看textarea字數">watch監看，textarea字數</h2>
+<hr>
 <h1 id="heading-6"></h1>
+<h2 id="watch監看textarea字數">watch監看，textarea字數</h2>
+<h1 id="heading-7"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -394,7 +395,7 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-7"></h1>
+</div><h1 id="heading-8"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -427,11 +428,11 @@
 </span></span><span style="display:flex;"><span>}).<span style="color:#a6e22e">mount</span>(<span style="color:#e6db74">&#34;#app&#34;</span>);
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-8"></h1>
+</div><h1 id="heading-9"></h1>
 <hr>
-<h1 id="heading-9"></h1>
-<h2 id="computed監看data值有無更動">computed監看data值有無更動</h2>
 <h1 id="heading-10"></h1>
+<h2 id="computed監看data值有無更動">computed監看data值有無更動</h2>
+<h1 id="heading-11"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -454,7 +455,7 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-11"></h1>
+</div><h1 id="heading-12"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -487,11 +488,11 @@
 </span></span><span style="display:flex;"><span>}).<span style="color:#a6e22e">mount</span>(<span style="color:#e6db74">&#34;#app&#34;</span>);
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-12"></h1>
+</div><h1 id="heading-13"></h1>
 <hr>
-<h1 id="heading-13"></h1>
-<h2 id="watch監看data值有無更動">watch監看data值有無更動</h2>
 <h1 id="heading-14"></h1>
+<h2 id="watch監看data值有無更動">watch監看data值有無更動</h2>
+<h1 id="heading-15"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -514,7 +515,7 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-15"></h1>
+</div><h1 id="heading-16"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -555,11 +556,11 @@
 </span></span><span style="display:flex;"><span>}).<span style="color:#a6e22e">mount</span>(<span style="color:#e6db74">&#34;#app&#34;</span>);
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-16"></h1>
+</div><h1 id="heading-17"></h1>
 <hr>
-<h1 id="heading-17"></h1>
-<h2 id="watch監看data物件有無更動深層監聽">watch監看data物件有無更動(深層監聽)</h2>
 <h1 id="heading-18"></h1>
+<h2 id="watch監看data物件有無更動深層監聽">watch監看data物件有無更動(深層監聽)</h2>
+<h1 id="heading-19"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -582,7 +583,7 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-19"></h1>
+</div><h1 id="heading-20"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -627,10 +628,9 @@
 </span></span><span style="display:flex;"><span>}).<span style="color:#a6e22e">mount</span>(<span style="color:#e6db74">&#34;#app&#34;</span>);
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-20"></h1>
+</div><h1 id="heading-21"></h1>
 <p><code>handler(n,o){},deep: true是固定寫法，n是新物件；o是舊物件</code></p>
-<h1 id="heading-21"></h1>
-
+<h1 id="heading-22"></h1>
 
         
           <div class="blog-tags">
@@ -707,15 +707,15 @@
                   <ul>
                 
                 
-                    <li><a href="/post/2024-12-24-vue3-%E5%85%83%E4%BB%B6/">【Vue3】元件</a></li>
+                    <li><a href="/post/2024-12-29-vue3-slot%E5%85%83%E4%BB%B6%E6%8F%92%E5%B7%A2/">【Vue3】slot元件插巢</a></li>
                 
-                    <li><a href="/post/2024-12-22-vue3-%E7%94%A8computed%E9%80%B2%E8%A1%8C%E8%A8%88%E7%AE%97%E8%99%95%E7%90%86/">【Vue3】用computed進行計算處理</a></li>
+                    <li><a href="/post/2024-12-28-vue3-%E5%AF%A6%E4%BD%9Calert%E5%BD%88%E8%B7%B3%E8%A6%96%E7%AA%97/">【Vue3】實作alert彈跳視窗</a></li>
                 
-                    <li><a href="/post/2024-12-21-vue3-%E7%94%A8computed%E9%80%B2%E8%A1%8C%E6%90%9C%E5%B0%8B%E9%81%8E%E6%BF%BE/">【Vue3】用computed進行搜尋過濾</a></li>
+                    <li><a href="/post/2024-12-27-vue3-emit%E8%B3%87%E6%96%99%E7%94%B1%E5%85%A7%E5%82%B3%E5%A4%96/">【Vue3】emit資料由內傳外</a></li>
                 
-                    <li><a href="/post/2024-12-20-vue3-%E9%BB%9E%E6%93%8A%E5%95%86%E5%93%81%E5%8A%A0%E5%85%A5%E8%B3%BC%E7%89%A9%E8%BB%8A/">【Vue3】點擊商品加入購物車</a></li>
+                    <li><a href="/post/2024-12-26-vue3-props%E8%B3%87%E6%96%99%E7%94%B1%E5%A4%96%E5%82%B3%E5%85%A7/">【Vue3】props資料由外傳內</a></li>
                 
-                    <li><a href="/post/2024-12-19-vue3-v-ondom%E5%85%83%E7%B4%A0/">【Vue3】v-on修飾符</a></li>
+                    <li><a href="/post/2024-12-25-vue3-template%E6%A8%A1%E6%9D%BF/">【Vue3】template模板</a></li>
                 
               </ul>
 
@@ -732,7 +732,7 @@
           
           
             <li class="next">
-              <a href="https://jack842248.github.io/post/2024-12-24-vue3-%E5%85%83%E4%BB%B6/" data-toggle="tooltip" data-placement="top" title="【Vue3】元件">下一篇 &rarr;</a>
+              <a href="https://jack842248.github.io/post/2024-12-24-vue3-component%E5%85%83%E4%BB%B6/" data-toggle="tooltip" data-placement="top" title="【Vue3】component元件">下一篇 &rarr;</a>
             </li>
           
         </ul>

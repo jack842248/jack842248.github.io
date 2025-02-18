@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【Vue3】物件傳參考特性",
-  "description" : "兩個物件互相影響 1 2 3 4 5 6 7 8 9 const fruits = { name: \u0026#34;蘋果\u0026#34;, obj:{} } const fruits2 = fruits; fruits2.name = \u0026#34;香蕉\u0026#34;; console.log(fruits.name); \/\/香蕉 console.log(fruits2.name); \/\/香蕉 當物件賦予到另一個物件時，就等於指向同一個物件\n兩個物件互相影響2 1 2 3 4 5 6 7 8 9 10 11 const fruits = { name: \u0026#34;蘋果\u0026#34;, obj:{} } const fn = (item) =\u0026gt; { item.name = \u0026#34;香蕉\u0026#34;; } fn(fruits); console.log(fruits.name); \/\/香蕉 當物件賦予到另一個物件時，就等於指向同一個物件\n淺層拷貝(兩物件不影響) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 const fruits = { name: \u0026#34;蘋果\u0026#34;, obj:{} } const fruits2 = Object.",
+  "description" : " 兩個物件互相影響 ",
   "inLanguage" : "zh-tw",
   "wordCount":  182 ,
   "datePublished" : "2024-12-04T00:00:00",
@@ -324,6 +324,7 @@
 <h1 id="heading"></h1>
 <h2 id="兩個物件互相影響">兩個物件互相影響</h2>
 <h1 id="heading-1"></h1>
+<h1 id="heading-2"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -348,13 +349,13 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//香蕉
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-2"></h1>
+</div><h1 id="heading-3"></h1>
 <p><code>當物件賦予到另一個物件時，就等於指向同一個物件</code></p>
-<h1 id="heading-3"></h1>
-<hr>
 <h1 id="heading-4"></h1>
-<h2 id="兩個物件互相影響2">兩個物件互相影響2</h2>
+<hr>
 <h1 id="heading-5"></h1>
+<h2 id="兩個物件互相影響2">兩個物件互相影響2</h2>
+<h1 id="heading-6"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -383,13 +384,13 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//香蕉
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-6"></h1>
+</div><h1 id="heading-7"></h1>
 <p><code>當物件賦予到另一個物件時，就等於指向同一個物件</code></p>
-<h1 id="heading-7"></h1>
-<hr>
 <h1 id="heading-8"></h1>
-<h2 id="淺層拷貝兩物件不影響">淺層拷貝(兩物件不影響)</h2>
+<hr>
 <h1 id="heading-9"></h1>
+<h2 id="淺層拷貝兩物件不影響">淺層拷貝(兩物件不影響)</h2>
+<h1 id="heading-10"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -424,13 +425,13 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">price</span>); <span style="color:#75715e">//80
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-10"></h1>
+</div><h1 id="heading-11"></h1>
 <p><code>淺層拷貝的意思是，物件第一層指向不同，但下一層指向卻還是相同</code></p>
-<h1 id="heading-11"></h1>
-<hr>
 <h1 id="heading-12"></h1>
-<h2 id="淺層拷貝兩物件不影響2">淺層拷貝(兩物件不影響)2</h2>
+<hr>
 <h1 id="heading-13"></h1>
+<h2 id="淺層拷貝兩物件不影響2">淺層拷貝(兩物件不影響)2</h2>
+<h1 id="heading-14"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -469,13 +470,13 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">price</span>); <span style="color:#75715e">//80
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-14"></h1>
+</div><h1 id="heading-15"></h1>
 <p><code>淺層拷貝的意思是，物件第一層指向不同，但下一層指向卻還是相同</code></p>
-<h1 id="heading-15"></h1>
-<hr>
 <h1 id="heading-16"></h1>
-<h2 id="深層拷貝兩物件不影響">深層拷貝(兩物件不影響)</h2>
+<hr>
 <h1 id="heading-17"></h1>
+<h2 id="深層拷貝兩物件不影響">深層拷貝(兩物件不影響)</h2>
+<h1 id="heading-18"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -500,10 +501,9 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits2</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">//香蕉
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-18"></h1>
+</div><h1 id="heading-19"></h1>
 <p><code>當物件賦予到另一個物件時，就等於指向同一個物件</code></p>
-<h1 id="heading-19"></h1>
-
+<h1 id="heading-20"></h1>
 
         
           <div class="blog-tags">
@@ -580,15 +580,15 @@
                   <ul>
                 
                 
-                    <li><a href="/post/2024-12-24-vue3-%E5%85%83%E4%BB%B6/">【Vue3】元件</a></li>
+                    <li><a href="/post/2024-12-29-vue3-slot%E5%85%83%E4%BB%B6%E6%8F%92%E5%B7%A2/">【Vue3】slot元件插巢</a></li>
                 
-                    <li><a href="/post/2024-12-23-vue3-%E7%94%A8watch%E7%9B%A3%E8%81%BDdata%E8%B3%87%E6%96%99/">【Vue3】用watch監聽data資料</a></li>
+                    <li><a href="/post/2024-12-28-vue3-%E5%AF%A6%E4%BD%9Calert%E5%BD%88%E8%B7%B3%E8%A6%96%E7%AA%97/">【Vue3】實作alert彈跳視窗</a></li>
                 
-                    <li><a href="/post/2024-12-22-vue3-%E7%94%A8computed%E9%80%B2%E8%A1%8C%E8%A8%88%E7%AE%97%E8%99%95%E7%90%86/">【Vue3】用computed進行計算處理</a></li>
+                    <li><a href="/post/2024-12-27-vue3-emit%E8%B3%87%E6%96%99%E7%94%B1%E5%85%A7%E5%82%B3%E5%A4%96/">【Vue3】emit資料由內傳外</a></li>
                 
-                    <li><a href="/post/2024-12-21-vue3-%E7%94%A8computed%E9%80%B2%E8%A1%8C%E6%90%9C%E5%B0%8B%E9%81%8E%E6%BF%BE/">【Vue3】用computed進行搜尋過濾</a></li>
+                    <li><a href="/post/2024-12-26-vue3-props%E8%B3%87%E6%96%99%E7%94%B1%E5%A4%96%E5%82%B3%E5%85%A7/">【Vue3】props資料由外傳內</a></li>
                 
-                    <li><a href="/post/2024-12-20-vue3-%E9%BB%9E%E6%93%8A%E5%95%86%E5%93%81%E5%8A%A0%E5%85%A5%E8%B3%BC%E7%89%A9%E8%BB%8A/">【Vue3】點擊商品加入購物車</a></li>
+                    <li><a href="/post/2024-12-25-vue3-template%E6%A8%A1%E6%9D%BF/">【Vue3】template模板</a></li>
                 
               </ul>
 

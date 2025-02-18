@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【JS】變數與函式",
-  "description" : "宣告變數 |變數|說明|修改| |\u0026mdash;|\u0026mdash;| |var|在{}裡宣告變數，會影響全域變數(window)|可以被修改| |let|在{}裡宣告變數，只存留在{}裡|可以被修改| |const|在{}裡宣告變數，只存留在{}裡|不能被修改，但物件和陣列除外|\n使用Object.freeze()，括弧裡面放const宣告的物件可以凍結\n1 2 let apple = \u0026#34;蘋果\u0026#34;; \/\/宣告變數 變數名稱 = 賦予的值; 宣告的變數會儲存在window裡\n區域變數(Area Variable) 1 2 3 4 5 6 function sayApple(){ let apple = \u0026#34;蘋果\u0026#34;; console.log(apple); \/\/蘋果 } sayApple(); console.log(apple); \/\/undefined function()執行完後，宣告也會跟著結束\n全域變數(Global Variable) 1 2 3 4 5 6 let apple; function sayApple(){ apple = \u0026#34;蘋果\u0026#34;; } sayApple(); console.log(apple); \/\/蘋果 若要讓function()執行完後，取得變數，則在function外先做宣告\n函式 1 2 3 4 5 6 7 8 9 function sayHi(){ console.",
+  "description" : " 宣告變數 ",
   "inLanguage" : "zh-tw",
   "wordCount":  159 ,
   "datePublished" : "2021-02-01T00:00:00",
@@ -324,14 +324,15 @@
 <h1 id="heading"></h1>
 <h2 id="宣告變數">宣告變數</h2>
 <h1 id="heading-1"></h1>
+<h1 id="heading-2"></h1>
 <p>|變數|說明|修改|
 |&mdash;|&mdash;|
 |var|在{}裡宣告變數，會影響全域變數(window)|可以被修改|
 |let|在{}裡宣告變數，只存留在{}裡|可以被修改|
 |const|在{}裡宣告變數，只存留在{}裡|不能被修改，但物件和陣列除外|</p>
-<h1 id="heading-2"></h1>
-<p><code>使用Object.freeze()，括弧裡面放const宣告的物件可以凍結</code></p>
 <h1 id="heading-3"></h1>
+<p><code>使用Object.freeze()，括弧裡面放const宣告的物件可以凍結</code></p>
+<h1 id="heading-4"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -342,13 +343,13 @@
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//宣告變數 變數名稱 = 賦予的值;
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-4"></h1>
+</div><h1 id="heading-5"></h1>
 <p><code>宣告的變數會儲存在window裡</code></p>
-<h1 id="heading-5"></h1>
-<hr>
 <h1 id="heading-6"></h1>
-<h2 id="區域變數area-variable">區域變數(Area Variable)</h2>
+<hr>
 <h1 id="heading-7"></h1>
+<h2 id="區域變數area-variable">區域變數(Area Variable)</h2>
+<h1 id="heading-8"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -367,13 +368,13 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">apple</span>); <span style="color:#75715e">//undefined
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-8"></h1>
+</div><h1 id="heading-9"></h1>
 <p><code>function()執行完後，宣告也會跟著結束</code></p>
-<h1 id="heading-9"></h1>
-<hr>
 <h1 id="heading-10"></h1>
-<h2 id="全域變數global-variable">全域變數(Global Variable)</h2>
+<hr>
 <h1 id="heading-11"></h1>
+<h2 id="全域變數global-variable">全域變數(Global Variable)</h2>
+<h1 id="heading-12"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -392,13 +393,13 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">apple</span>);  <span style="color:#75715e">//蘋果
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-12"></h1>
+</div><h1 id="heading-13"></h1>
 <p><code>若要讓function()執行完後，取得變數，則在function外先做宣告</code></p>
-<h1 id="heading-13"></h1>
-<hr>
 <h1 id="heading-14"></h1>
-<h2 id="函式">函式</h2>
+<hr>
 <h1 id="heading-15"></h1>
+<h2 id="函式">函式</h2>
+<h1 id="heading-16"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -423,9 +424,9 @@
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//執行函式
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-16"></h1>
+</div><h1 id="heading-17"></h1>
 <h4 id="帶參數寫法">帶參數寫法：</h4>
-<h1 id="heading-17"></h1>
+<h1 id="heading-18"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -450,13 +451,13 @@
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//執行函式
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-18"></h1>
+</div><h1 id="heading-19"></h1>
 <p><code>函式具有hoisting效果，不論執行先後，function都會先執行</code></p>
-<h1 id="heading-19"></h1>
-<hr>
 <h1 id="heading-20"></h1>
-<h2 id="javascript的保留字">javascript的保留字</h2>
+<hr>
 <h1 id="heading-21"></h1>
+<h2 id="javascript的保留字">javascript的保留字</h2>
+<h1 id="heading-22"></h1>
 <table>
 <thead>
 <tr>
@@ -541,10 +542,9 @@
 </tr>
 </tbody>
 </table>
-<h1 id="heading-22"></h1>
-<p><code>宣告變數或函式時若使用保留字會出錯</code></p>
 <h1 id="heading-23"></h1>
-
+<p><code>宣告變數或函式時若使用保留字會出錯</code></p>
+<h1 id="heading-24"></h1>
 
         
           <div class="blog-tags">

@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【CSS】Flexbox彈性盒子",
-  "description" : "flexbox排版 外層flex，item寬度超出container也不會超出 item內有文字或div時撐開高度時，其他item會以(最高)來延伸成等高 外容器(Container) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 ul{ display: flex; \/*主軸方向*\/ flex-direction: row; \/*從左到右(預設)*\/ flex-direction: row-reverse; \/*從右到左*\/ flex-direction: column; \/*從上到下*\/ flex-direction: column-reverse; \/*從下到上*\/ \/*主軸線排列*\/ justify-content: flex-start; \/*從頭開始(預設)*\/ justify-content: flex-end; \/*從尾開始*\/ justify-content: center; \/*置中排列*\/ justify-content: space-between; \/*貼齊頭和尾*\/ justify-content: space-around; \/*平均分散*\/ \/*交錯線排列*\/ align-items: flex-start; \/*從交錯線頭開始對齊(預設值)*\/ align-items: flex-end; \/*從交錯線尾開始對齊*\/ align-items: center; \/*從交錯線置中對齊*\/ align-items: stretch; \/*從交錯線延伸到底*\/ align-items: baseline; \/*從交錯線對齊(文字)基線*\/ flex-wrap: nowrap; \/*內容超出範圍不換行(預設值)*\/ flex-wrap: wrap; \/*內容超出範圍自動換行*\/ flex-wrap: wrap-reverse; \/*內容超出範圍反向換行*\/ flex-flow: row nowrap; \/*(預設值)*\/ flex-flow: column wrap; \/*從上到下，自動換行*\/ \/*使用前提flex-wrap: wrap*\/ align-content: stretch; \/*第一行與最後一行都延伸至滿版(預設值)*\/ align-content: flex-start; \/*第一行與最後一行都從交錯線頭開始排列*\/ align-content: flex-end; \/*第一行與最後一行都從交錯線尾開始排列*\/ align-content: center; \/*第一行與最後一行都對齊交錯線中間位置*\/ align-content: space-between; \/*第一行從交錯線頭，最後一行從交錯線尾*\/ align-content: space-around; \/*第一行與最後一行平均分散在交錯軸上*\/ } 內元件(Items) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 ul \u0026gt; li{ align-self: flex-start; \/*元件本身從頭對齊*\/ align-self: flex-end; \/*元件本身從尾對齊*\/ align-self: center; \/*元件本身對齊中線*\/ align-self: stretch; \/**元件本身延伸到底*\/ align-items: baseline; \/**元件本身對齊(文字)基線*\/ flex-grow: 0; \/*伸展比(預設值)*\/ flex-grow: 1; \/*將容器剩餘空間，進行比例分配*\/ flex-shrink: 1; \/*被壓縮比(預設值)*\/ flex-shrink: 0; \/*不要被壓縮*\/ flex-basis: auto; \/*預先被分配比(預設值)*\/ flex-basis: 200px; \/*絕對被分配值*\/ flex: 0 1 auto; \/*(預設值)*\/ flex: flex-grow | flex-shrink | flex-basis; flex: 3; \/*永遠佔30%*\/ flex: none; \/*取消彈性，保持原尺寸*\/ order: 0; \/*(預設值)*\/ order: 1~100; \/*設定排序，數字小的先*\/ } Bootstrap4樣板 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 \u0026lt;!",
+  "description" : " flexbox排版 ",
   "inLanguage" : "zh-tw",
   "wordCount":  1022 ,
   "datePublished" : "2022-04-06T00:00:00",
@@ -324,14 +324,15 @@
 <h1 id="heading"></h1>
 <h2 id="flexbox排版">flexbox排版</h2>
 <h1 id="heading-1"></h1>
+<h1 id="heading-2"></h1>
 <ul>
 <li>外層flex，item寬度超出container也不會超出</li>
 <li>item內有文字或div時撐開高度時，其他item會以(最高)來延伸成等高</li>
 <li></li>
 </ul>
-<h1 id="heading-2"></h1>
-<h4 id="外容器container">外容器(Container)</h4>
 <h1 id="heading-3"></h1>
+<h4 id="外容器container">外容器(Container)</h4>
+<h1 id="heading-4"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -414,9 +415,9 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-4"></h1>
+</div><h1 id="heading-5"></h1>
 <h4 id="內元件items">內元件(Items)</h4>
-<h1 id="heading-5"></h1>
+<h1 id="heading-6"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -471,11 +472,11 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-6"></h1>
+</div><h1 id="heading-7"></h1>
 <hr>
-<h1 id="heading-7"></h1>
-<h2 id="bootstrap4樣板">Bootstrap4樣板</h2>
 <h1 id="heading-8"></h1>
+<h2 id="bootstrap4樣板">Bootstrap4樣板</h2>
+<h1 id="heading-9"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -522,31 +523,31 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-9"></h1>
+</div><h1 id="heading-10"></h1>
 <hr>
-<h1 id="heading-10"></h1>
-<h2 id="bootstrap4排版方式與斷點">Bootstrap4排版方式與斷點</h2>
 <h1 id="heading-11"></h1>
+<h2 id="bootstrap4排版方式與斷點">Bootstrap4排版方式與斷點</h2>
+<h1 id="heading-12"></h1>
 <ul>
 <li>單位是rem</li>
 </ul>
-<h1 id="heading-12"></h1>
+<h1 id="heading-13"></h1>
 <ul>
 <li>預設字體大小16px</li>
 </ul>
-<h1 id="heading-13"></h1>
+<h1 id="heading-14"></h1>
 <ul>
 <li>以12欄方式排版</li>
 </ul>
-<h1 id="heading-14"></h1>
+<h1 id="heading-15"></h1>
 <ul>
 <li><code>.container</code> &gt; <code>.row</code> &gt; <code>.col-*</code> &gt; 內容</li>
 </ul>
-<h1 id="heading-15"></h1>
+<h1 id="heading-16"></h1>
 <ul>
 <li>以下為Bootstrap4的斷點：</li>
 </ul>
-<h1 id="heading-16"></h1>
+<h1 id="heading-17"></h1>
 <table>
 <thead>
 <tr>
@@ -581,13 +582,13 @@
 </tr>
 </tbody>
 </table>
-<h1 id="heading-17"></h1>
-<p><code>Bootstrap是從手機版開始製作網頁版型，要超過斷點才會套用樣式</code></p>
 <h1 id="heading-18"></h1>
-<hr>
+<p><code>Bootstrap是從手機版開始製作網頁版型，要超過斷點才會套用樣式</code></p>
 <h1 id="heading-19"></h1>
-<h2 id="容器container">容器(Container)</h2>
+<hr>
 <h1 id="heading-20"></h1>
+<h2 id="容器container">容器(Container)</h2>
+<h1 id="heading-21"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -658,13 +659,13 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-21"></h1>
+</div><h1 id="heading-22"></h1>
 <p><code>滿版容器可用.container-fluid</code></p>
-<h1 id="heading-22"></h1>
-<hr>
 <h1 id="heading-23"></h1>
-<h2 id="列row">列(Row)</h2>
+<hr>
 <h1 id="heading-24"></h1>
+<h2 id="列row">列(Row)</h2>
+<h1 id="heading-25"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -683,9 +684,9 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-25"></h1>
+</div><h1 id="heading-26"></h1>
 <h4 id="可添加的樣式">可添加的樣式</h4>
-<h1 id="heading-26"></h1>
+<h1 id="heading-27"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -744,11 +745,11 @@
 </span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">row</span> .<span style="color:#a6e22e">flex-wrap</span> .<span style="color:#a6e22e">align-content-stretch</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-27"></h1>
+</div><h1 id="heading-28"></h1>
 <hr>
-<h1 id="heading-28"></h1>
-<h2 id="欄col">欄(Col)</h2>
 <h1 id="heading-29"></h1>
+<h2 id="欄col">欄(Col)</h2>
+<h1 id="heading-30"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -769,7 +770,7 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-30"></h1>
+</div><h1 id="heading-31"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -812,9 +813,9 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-31"></h1>
+</div><h1 id="heading-32"></h1>
 <h4 id="可添加的樣式-1">可添加的樣式</h4>
-<h1 id="heading-32"></h1>
+<h1 id="heading-33"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -853,9 +854,9 @@
 </span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">col</span> .<span style="color:#a6e22e">order-last</span> <span style="color:#75715e">/*order:13*/</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-33"></h1>
+</div><h1 id="heading-34"></h1>
 <h4 id="order排序應用">order排序應用</h4>
-<h1 id="heading-34"></h1>
+<h1 id="heading-35"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -874,9 +875,9 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-35"></h1>
+</div><h1 id="heading-36"></h1>
 <p><code>原本排序：1&gt;2&gt;3&gt;4，加order後排序變：3&gt;4&gt;1&gt;2</code></p>
-<h1 id="heading-36"></h1>
+<h1 id="heading-37"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -895,15 +896,15 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-37"></h1>
+</div><h1 id="heading-38"></h1>
 <p><code>再加上sm表示在行動版以上排序才會是：3&gt;4&gt;1&gt;2</code></p>
-<h1 id="heading-38"></h1>
-<hr>
 <h1 id="heading-39"></h1>
-<h2 id="bootstrap預設樣式">Bootstrap預設樣式</h2>
+<hr>
 <h1 id="heading-40"></h1>
-<h4 id="字體">字體</h4>
+<h2 id="bootstrap預設樣式">Bootstrap預設樣式</h2>
 <h1 id="heading-41"></h1>
+<h4 id="字體">字體</h4>
+<h1 id="heading-42"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -932,9 +933,9 @@
 </span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">h6</span> <span style="color:#75715e">/*font-size: 16px*/</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-42"></h1>
+</div><h1 id="heading-43"></h1>
 <h4 id="顏色">顏色</h4>
-<h1 id="heading-43"></h1>
+<h1 id="heading-44"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -967,9 +968,9 @@
 </span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">border-</span>{<span style="color:#960050;background-color:#1e0010">color</span>} <span style="color:#75715e">/*線框顏色*/</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-44"></h1>
+</div><h1 id="heading-45"></h1>
 <h4 id="排版">排版</h4>
-<h1 id="heading-45"></h1>
+<h1 id="heading-46"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -1024,7 +1025,7 @@
 </span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">d-sm-none</span> <span style="color:#75715e">/*在超過小尺寸螢幕時消失*/</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-46"></h1>
+</div><h1 id="heading-47"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -1091,9 +1092,9 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-47"></h1>
+</div><h1 id="heading-48"></h1>
 <h4 id="圖片文字">圖片、文字</h4>
-<h1 id="heading-48"></h1>
+<h1 id="heading-49"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1114,7 +1115,7 @@
 </span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">sr-only</span> <span style="color:#75715e">/*畫面隱藏，給瀏覽器了解該元素*/</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-49"></h1>
+</div><h1 id="heading-50"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -1147,9 +1148,9 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">figure</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-50"></h1>
+</div><h1 id="heading-51"></h1>
 <h4 id="影音嵌入">影音嵌入</h4>
-<h1 id="heading-51"></h1>
+<h1 id="heading-52"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1162,9 +1163,9 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-52"></h1>
+</div><h1 id="heading-53"></h1>
 <p><code>影片網址內需要有/embed/字樣</code></p>
-<h1 id="heading-53"></h1>
+<h1 id="heading-54"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1179,9 +1180,9 @@
 </span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">embed-responsive</span> .<span style="color:#a6e22e">embed-responsive-1by1</span> <span style="color:#75715e">/*影片尺寸1:1*/</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-54"></h1>
+</div><h1 id="heading-55"></h1>
 <h4 id="固定選單">固定選單</h4>
-<h1 id="heading-55"></h1>
+<h1 id="heading-56"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1194,7 +1195,7 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-56"></h1>
+</div><h1 id="heading-57"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1

@@ -57,7 +57,7 @@
     "name" : "JackHuang"
   },
   "headline": "【Vue】進階應用方法",
-  "description" : "v-text模板語法 可以插入 運算子 來呈現結果。(範例一) 使用 v-once 可以只綁定一次，之後在修改不會變更。(範例二) 可以直接撰寫 javascript 。(範例三) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 \/\/ \u0026lt;-----html-----\u0026gt; #app \/\/** 範例一 **\/\/ p {{ a \u002b b }} \/\/100300 p {{ a * b }} \/\/30000 p {{ a == b }} \/\/false \/\/** 範例二 **\/\/ p(v-text=\u0026#34;b\u0026#34; v-once) \/\/300 \/\/** 範例三 **\/\/ p {{ b.",
+  "description" : " v-text模板語法 ",
   "inLanguage" : "zh-tw",
   "wordCount":  943 ,
   "datePublished" : "2021-06-04T00:00:00",
@@ -324,18 +324,19 @@
 <h1 id="heading"></h1>
 <h3 id="v-text模板語法">v-text模板語法</h3>
 <h1 id="heading-1"></h1>
+<h1 id="heading-2"></h1>
 <ul>
 <li>可以插入 <strong>運算子</strong> 來呈現結果。(範例一)</li>
 </ul>
-<h1 id="heading-2"></h1>
+<h1 id="heading-3"></h1>
 <ul>
 <li>使用 <strong>v-once</strong> 可以只綁定一次，之後在修改不會變更。(範例二)</li>
 </ul>
-<h1 id="heading-3"></h1>
+<h1 id="heading-4"></h1>
 <ul>
 <li>可以直接撰寫 <strong>javascript</strong> 。(範例三)</li>
 </ul>
-<h1 id="heading-4"></h1>
+<h1 id="heading-5"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -384,37 +385,37 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-5"></h1>
+</div><h1 id="heading-6"></h1>
 <hr>
-<h1 id="heading-6"></h1>
-<h3 id="class動態切換樣式">:class動態切換樣式</h3>
 <h1 id="heading-7"></h1>
+<h3 id="class動態切換樣式">:class動態切換樣式</h3>
+<h1 id="heading-8"></h1>
 <ul>
 <li>使用 <strong>判斷式</strong> 來決定是否套用樣式。(範例一)</li>
 </ul>
-<h1 id="heading-8"></h1>
+<h1 id="heading-9"></h1>
 <ul>
 <li>以{物件}方式套用樣式。(範例二)</li>
 </ul>
-<h1 id="heading-9"></h1>
+<h1 id="heading-10"></h1>
 <ul>
 <li>以[陣列]方式套用樣式。(範例三)</li>
 </ul>
-<h1 id="heading-10"></h1>
+<h1 id="heading-11"></h1>
 <ul>
 <li>將切換綁定在 <strong>button</strong> 上。(範例四)</li>
 </ul>
-<h1 id="heading-11"></h1>
+<h1 id="heading-12"></h1>
 <ul>
 <li>將切換綁定在 <strong>checkbox</strong> 上。(範例五)</li>
 </ul>
-<h1 id="heading-12"></h1>
+<h1 id="heading-13"></h1>
 <ul>
 <li>直接寫入行內 <strong>style</strong> 樣式。(範例六)</li>
 </ul>
-<h1 id="heading-13"></h1>
-<p><code>屬性名稱不能有『-』，如果有的話，第二個單字的第一個字母改大寫，例如:backgroundColor</code></p>
 <h1 id="heading-14"></h1>
+<p><code>屬性名稱不能有『-』，如果有的話，第二個單字的第一個字母改大寫，例如:backgroundColor</code></p>
+<h1 id="heading-15"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -515,27 +516,27 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-15"></h1>
+</div><h1 id="heading-16"></h1>
 <hr>
-<h1 id="heading-16"></h1>
-<h3 id="v-for陣列與物件迴圈">v-for陣列與物件迴圈</h3>
 <h1 id="heading-17"></h1>
+<h3 id="v-for陣列與物件迴圈">v-for陣列與物件迴圈</h3>
+<h1 id="heading-18"></h1>
 <ul>
 <li>&lt;template&gt;標籤本身不會被v-for列印。(範例一)</li>
 </ul>
-<h1 id="heading-18"></h1>
+<h1 id="heading-19"></h1>
 <ul>
 <li>可單純列印數字。(範例二)</li>
 </ul>
-<h1 id="heading-19"></h1>
+<h1 id="heading-20"></h1>
 <ul>
 <li>陣列的[key]是 <strong>位置</strong> ，物件的[key]是 <strong>名稱</strong> 。(範例三)</li>
 </ul>
-<h1 id="heading-20"></h1>
+<h1 id="heading-21"></h1>
 <ul>
 <li>使用 <strong>v-if</strong> 可以篩選 <strong>v-for</strong> 的結果。</li>
 </ul>
-<h1 id="heading-21"></h1>
+<h1 id="heading-22"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -626,11 +627,11 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-22"></h1>
+</div><h1 id="heading-23"></h1>
 <ul>
 <li>使用 <strong>Vue.set</strong> 可以傳入 <strong>v-for</strong> 資料。</li>
 </ul>
-<h1 id="heading-23"></h1>
+<h1 id="heading-24"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -681,11 +682,11 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-24"></h1>
+</div><h1 id="heading-25"></h1>
 <ul>
 <li>點擊按鈕篩選輸入框裡的值。</li>
 </ul>
-<h1 id="heading-25"></h1>
+<h1 id="heading-26"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -748,15 +749,15 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-26"></h1>
+</div><h1 id="heading-27"></h1>
 <hr>
-<h1 id="heading-27"></h1>
-<h3 id="methods">methods</h3>
 <h1 id="heading-28"></h1>
+<h3 id="methods">methods</h3>
+<h1 id="heading-29"></h1>
 <ul>
 <li>點擊按鈕，讓數值增加或減少。</li>
 </ul>
-<h1 id="heading-29"></h1>
+<h1 id="heading-30"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -805,11 +806,11 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-30"></h1>
+</div><h1 id="heading-31"></h1>
 <ul>
 <li>點擊按鈕，讓數值增加或減少結合 <strong>v-for</strong> 。</li>
 </ul>
-<h1 id="heading-31"></h1>
+<h1 id="heading-32"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -868,19 +869,19 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-32"></h1>
+</div><h1 id="heading-33"></h1>
 <hr>
-<h1 id="heading-33"></h1>
-<h3 id="computed計算屬性">computed計算屬性</h3>
 <h1 id="heading-34"></h1>
+<h3 id="computed計算屬性">computed計算屬性</h3>
+<h1 id="heading-35"></h1>
 <ul>
 <li>有緩存資料的能力，效能比methods好。</li>
 </ul>
-<h1 id="heading-35"></h1>
+<h1 id="heading-36"></h1>
 <ul>
 <li>自動篩選輸入框裡的值。</li>
 </ul>
-<h1 id="heading-36"></h1>
+<h1 id="heading-37"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -939,11 +940,11 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-37"></h1>
+</div><h1 id="heading-38"></h1>
 <ul>
 <li>自動調整顯示正確的時間格式。</li>
 </ul>
-<h1 id="heading-38"></h1>
+<h1 id="heading-39"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -1002,15 +1003,15 @@
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="heading-39"></h1>
+</div><h1 id="heading-40"></h1>
 <hr>
-<h1 id="heading-40"></h1>
-<h3 id="watch">watch</h3>
 <h1 id="heading-41"></h1>
+<h3 id="watch">watch</h3>
+<h1 id="heading-42"></h1>
 <ul>
 <li>監控資料有無更動，再執行其他方法。</li>
 </ul>
-<h1 id="heading-42"></h1>
+<h1 id="heading-43"></h1>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1

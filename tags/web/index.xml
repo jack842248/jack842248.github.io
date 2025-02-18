@@ -110,7 +110,10 @@
       <pubDate>Sun, 17 Apr 2022 00:00:00 +0000</pubDate>
       <author>jack842248@gmail.com (JackHuang)</author>
       <guid>https://jack842248.github.io/post/2022-04-17-web-%E7%B6%B2%E9%A0%81%E7%9B%B8%E9%97%9C%E5%A4%A7%E5%B0%8F%E4%BA%8B/</guid>
-      <description>檔案路徑 project/ └── src/ └── css/ ├── all.scss ├── helpers/ │ └── _variable.scss └── component/ └── _sidebar.scss .src(&amp;lsquo;src/css/**/*.scss&amp;rsquo;) 獲取all.scss、_variable.scss、_sidebar.scss .src(&amp;lsquo;src/css//.scss&amp;rsquo;) 獲取_variable.scss、_sidebar.scss .src(&amp;lsquo;src/css/*.scss&amp;rsquo;) 獲取all.scss 查詢ajax是否跨網域 複製ajax網址 使用test-cors.org 貼上ajax網址 XHR start：0 (不支援跨網域) XHR start：200 (支援跨網域) API(Application Programming Interface) 已經寫好程式語言的應用程式介面 名稱 說明 Google Maps 地圖導覽 Heroku 主機服務 Firebase 資料庫儲存 XSS(Cross-Site Scripting) 跨站指令攻擊 若有輸入框或動態新增的部分 少用innerHTML語法 改用createElement、appendChild Google Analytics追蹤 登入Google Analytics 設定完成到追蹤資訊再到追蹤程式碼複製代碼，貼到&amp;lt;head&amp;gt; 在根目錄建立config.yml 1 2 3 #Google Analytics google_analytics: tracking_id:`追蹤程式碼` 假圖生產器 使用Lorem Picsum https://picsum.photos/200/300 https://picsum.</description>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;檔案路徑&#34;&gt;檔案路徑&lt;/h2&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;</description>
     </item>
     
   </channel>
