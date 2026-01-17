@@ -1,0 +1,108 @@
+---
+title: 【Gulp】將scss自動編譯成css
+date: 2023-08-12
+tags: ["gulp"]
+---
+#
+## gulp-sass
+#
+<!--more-->
+#
+1. 在專案中打開終端機安裝`gulp-sass`和`sass`套件(版本@1.62.0)
+#
+```html
+$ npm install gulp-sass sass@1.62.0
+```
+#
+-----------------------------------------------
+#
+2. 在gulpfile.js新增程式碼
+#
+```js
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+
+gulp.task('sass', function(){
+  return gulp
+    .src('src/scss/**/*.scss') //引用scss檔案路徑
+    .pipe(
+        sass().on('error',sass.logError) //sass編譯過程中捕捉錯誤並輸出錯誤訊息，以避免因編譯錯誤而中斷gulp
+    )
+    .pipe(gulp.dest('dist/css')) //css編譯完成路徑
+});
+```
+#
+-----------------------------------------------
+#
+3. 在終端機執行指令
+#
+```html
+$ gulp sass
+```
+#
+-----------------------------------------------
+#
+4. 執行結果會將src裡的scss編譯，生成到dist裡變成css
+#
+```
+you project
+├─── node_modules/        
+├─── dist/
+│     │
+│     └─── css/
+│           │
+│           └─── all.css    #編譯完成的css檔
+│   
+├─── src/
+│     └─── scss/
+│           │
+│           └─── all.scss   #開發時編輯用的scss檔
+│     
+├─── gulpfile.js          
+├─── package-lock.json    
+└─── package.json  
+```
+#
+-----------------------------------------------
+#
+5. 回到index.html引入css
+#
+```html
+<head>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+```
+#
+-----------------------------------------------
+#
+6. 回到gulpfile.js設置屬性
+    * `outputStyle`: 字串，編譯出的檔案形式
+        * `'nested'`: 保留原始的巢狀層次結構(預設值)
+        * `'expanded'`: 保留巢狀的層次結構，每個選擇器和屬性都有自己的行
+        * `'compact'`: 將每個規則放在單獨的一行
+        * `'compressed'`: 刪除所有的空白字符和換行，減少加載時間
+#
+```js
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+
+gulp.task('sass', function(){
+  return gulp
+    .src('src/scss/**/*.*')
+    .pipe(sass({
+        outputStyle: 'compressed' //編譯出的檔案形式為'壓縮'
+    })
+    .on('error',sass.logError))
+    .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('default', gulp.series('sass'));
+```
+#
+-----------------------------------------------
+#
+7. 最後，在終端機執行`gulp`即可完成任務
+#
+```html
+$ gulp
+```

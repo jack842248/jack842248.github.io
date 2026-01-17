@@ -1,0 +1,40 @@
+---
+title: 【JS】Skrollr頁面滾動效果
+date: 2024-01-10
+tags: ["webpack"]
+---
+#
+## 使用方式直接引入cdn
+#
+<!--more-->
+#
+1. 直接將套件以`cdn`方式引入
+#
+```js
+<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+```
+#
+-----------------------------------------------
+#
+2. 在`js`開始撰寫地方，初始化套件：
+#
+```js
+let s = skrollr.init();
+```
+#
+-----------------------------------------------
+#
+3. 在`html`的標籤上撰寫`data`範例：
+#
+![圖片](/img/skrollr頁面滾動效果/skrollr頁面滾動效果-1.png)
+#
+-----------------------------------------------
+#
+4. 撰寫方式：
+#
+![圖片](/img/skrollr頁面滾動效果/skrollr頁面滾動效果-2.png)
+#
+-----------------------------------------------
+#
+5. [更多用法可參考API](https://github.com/Prinzhorn/skrollr?tab=readme-ov-file)
+#

@@ -1,0 +1,20 @@
+---
+title: 【HTML】在網頁嵌入Google地圖
+date: 2024-01-06
+tags: ["html"]
+---
+#
+## Google map iframe設定
+#
+<!--more-->
+#
+|屬性|說明|
+|---|---|
+|width|寬度|
+|height|高度|
+|src|來源網址|
+|title|影片標題|
+|frameborder|iframe邊框|
+|allow|開啟youtube預設允許功能|
+|allowfullscreen|允許全螢幕播放(有添加就有這項功能，移除就無這項功能)|
+#

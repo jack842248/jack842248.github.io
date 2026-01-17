@@ -1,0 +1,217 @@
+---
+title: 【JS】認識JavaScript
+date: 2021-03-01
+tags: ["javaScript"]
+---
+#
+## 直譯式語言(Interpreted Language)
+#
+<!--more-->
+|例如|JavaScript、Python、PHP、Ruby、BASIC、LISP、Perl、R|
+|---|---|
+|流程|原始碼 → 直譯器 → 代碼生成 → 執行|
+|特性|程式碼由上到下執行，效能比較差、除錯比較慢、需要依賴執行環境。|
+#
+-----------------------------------------------
+#
+## 編譯式語言(Compiled Language)
+#
+|例如|Java、C、C#、C++、Pascal|
+|---|---|
+|流程|原始碼 → 預處理器 → 代碼生成 → 執行|
+|特性|效能比較好、除錯比較快、程式碼可獨立執行。|
+#
+-----------------------------------------------
+#
+## 語法作用域(Lexical Scope)
+#
+* 語法在解析時就決定作用域，且不再改變。
+#
+```js
+function fn1(){
+    let a = 1; 
+}
+fn1();
+console.log(a);   //a is not defined
+//因為console.log(a)不在function內
+//而全域並無宣告a變數，因此console.log找不到
+```
+#
+-----------------------------------------------
+#
+## 單執行緒(Single Thread)
+#
+* 同步事件會依序執行，而非同步事件會先移到 **事件佇列(Event Queue)** ，等待其他事件執行完才會執行。
+
+    * setTimeout(範例一)
+
+    * addEventListener(範例二)
+#
+```js
+/** 範例一 **/
+function fn1(){
+  setTimeout(function(){
+    console.log("蘋果");
+  },3000);
+}
+function fn2(){
+  console.log("香蕉");
+}
+function fn3(){
+  console.log("鳳梨");
+}
+fn1();
+fn2();
+fn3();
+//console.log出現順序:"香蕉"、"鳳梨"、"蘋果"
+//但因為fn1()裡的setTimeout屬於非同步事件
+//會在事件佇列，等到fn2()、fn3()執行完才執行
+
+/** 範例二 **/
+let a = document.getElementById("button");
+a.addEventListener("click",function(){
+  c
+});
+```
+#
+-----------------------------------------------
+#
+## 執行環境(Execution Context)
+#
+* 全域環境
+
+    * 瀏覽器開啟時產生的 **window** 。
+
+    * **window**  ===  **this** 。
+    
+* 區域環境
+
+    * 在函式 **(function)** 內，會產生自己的 **this** 。
+
+    * 可以重複被執行產生環境。
+#
+-----------------------------------------------
+#
+## 執行堆疊(Execution stack)
+#
+1. 全域環境最先堆疊，再來依序堆疊區域環境。
+#
+2. 區域環境依序結束，最後留下全域執行環境。
+#
+```js
+function fn1(){
+  fn2();
+}
+function fn2(){
+  let a = 1;
+  console.log(a);
+}
+fn1();
+//當瀏覽器開啟時...
+//產生window執行環境(全域) → 
+//fn1(); → 產生fn1執行環境(區域) → 
+//fn2(); → 產生fn2執行環境(區域) → 
+//fn2執行環境(區域)消失 → fn1執行環境(區域)消失 → 
+//留下window執行環境(全域)
+```
+#
+-----------------------------------------------
+#
+## 範圍鍊(Scope Chain)
+#
+* 當函式本身沒有變數時，會向外層找到 **全域變數** 。(範例一)
+#
+* 當函式裡的函式本身沒有變數時，會向外層找到函式裡的變數。(範例二)
+#
+```js
+/** 範例一 **/
+let a = 1;
+function fn1(){
+  let a = 2;
+  fn2();
+}
+function fn2(){
+  console.log(a);
+}
+fn1();
+//console.log(a);  1
+//因為fn2本身沒有變數，所以會向外找到全域的變數;
+
+/** 範例二 **/
+let a = 1;
+function fn1(){
+  let a = 2;
+  function fn2(){
+    console.log(a);  //2
+  }
+  fn2();
+}
+fn1();
+//因為fn2本身沒有變數，所以會找向外層找到fn1的變數;
+```
+#
+-----------------------------------------------
+#
+## 提升(Hoisting)
+#
+* 在創造階段時，宣告變數、函式表達式會先存放在 **記憶體** 裡，還取不到值 **(undefined)** 。(範例一)
+#
+* 函式會優先於變數宣告。(範例二)
+#
+* 執行順序 : function > 宣告(let、const) > fn()。(範例三)
+#
+```js
+/** 範例一 **/
+let apple; //創造階段
+console.log(apple); 
+apple = "蘋果";
+
+
+/** 範例二 **/
+let sayApple = function(){
+  console.log("蘋果1")
+}
+function sayApple(){
+  console.log("蘋果2")
+}
+sayApple(); //蘋果2
+
+/** 範例三 **/
+sayApple();
+function sayApple(){
+  console.log(apple);
+}
+let apple = "蘋果";
+
+//------拆解過程如下-----
+//創造
+function sayApple(){
+  console.log(apple);
+}
+let apple;
+
+//執行階段
+sayApple();
+apple = "蘋果";
+
+//因此console.log只找到宣告的apple 但並未賦予值，因此會出現ReferenceError(暫時性死區)錯誤
+```
+#
+-----------------------------------------------
+#
+## 回收機制(Garbage Collection)
+#
+* 當沒有任何物件參考時，物件的 **記憶體** 就會釋放掉。
+#
+```js
+function fn1(){
+  fn2();
+}
+function fn2(){
+  console.log("執行完畢");
+}
+fn1();
+//在console.log("執行完畢");前...
+//因沒有任何物件參考function fn1，所以記憶體它的也釋放掉了。
+```
+#

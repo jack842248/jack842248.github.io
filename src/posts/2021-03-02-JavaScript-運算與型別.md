@@ -1,0 +1,500 @@
+---
+title: 【JS】運算與型別
+date: 2021-03-02
+tags: ["javaScript"]
+---
+#
+## 陳述式(Statement)
+#
+<!--more-->
+#
+* 用於命令執行，不會回傳結果，不能賦值(=)到變數上。
+#
+|陳述式|例如|
+|---|---|
+|判斷式|if、else if、else、switch、break|
+|宣告變數|var、let、const|
+|函式陳述式|function fn1(){...}|
+|Block區塊|{}|
+#
+```js
+/** 判斷式 **/
+if(...){
+  ...
+}else{
+  ...
+}
+
+/** 宣告變數 **/
+var a;
+
+/** 函式陳述式  **/
+function fn1(){...}
+
+/** Block區塊 **/
+{
+  let a = 1;
+}
+```
+#
+-----------------------------------------------
+#
+## 表達式(Expression)
+#
+* 又稱 **表示式** 、 **運算式**，結合符號運算回傳結果 。
+#
+* 會運算及回傳結果。
+#
+|表達式|例如|
+|---|---|
+|函式表達式|var fn1 = function(){...}|
+|物件實字|var obj1 = { a:1 }|
+|一元運算式|只需要一個運算元|
+|二元運算式|兩個運算元，一個運算子|
+|三元運算式|三個運算元，兩個運算子|
+#
+```js
+/** 函式陳述式 **/
+function fn1(){...}
+
+/** 函式表達式 **/
+let fn1 = function(){...}
+
+/** 物件實字 **/
+let obj1 = { a:1 }
+
+/** 一元運算式 **/
+delete a;
+typeof a;
+
+/** 二元運算式 **/
+let a;
+a = 1 + 1;
+console.log(a);  //2
+//先執行 1 + 1;
+//再執行 a = 2;
+
+/** 三元運算式 **/
+let a = 1;
+let b = ( a > 0 ) ? "蘋果" : "香蕉";
+console.log(b);  //蘋果
+
+//判斷式 ? 表達式1 : 表達式2 ;
+//(判斷式)成立/不成立，執行{表達式1}/{表達式2}。
+```
+#
+-----------------------------------------------
+#
+## 優先性與相依性(Precedence＆Associativity)
+#
+1. 運算子會依照 **優先序** 大小來決定先後順序，大的先，小的後。
+    * 乘號優先於加號
+#
+2. 當 **優先性** 相同時，依照 **相依性** 來決定執行方向。
+#
+|優先序|執行方向|運算子|
+|---|---|---|
+|20|無|( )|
+|16|從右至左←|! 、 ++ 、 -- 、 typeof 、 delete|
+|14|從左至右→|* 、 / 、 %|
+|13|從左至右→|+ 、 -|
+|11|從左至右→|< 、 <= 、 > 、 =>|
+|10|從左至右→|== 、 != 、 === 、 !==|
+|6|從左至右→|&&|
+|5|從左至右→|ll|
+|4|從右至左←|… ? … : …|
+|3|從右至左←|= 、 += 、 -=|
+|1|從左至右→|,|
+#
+```js
+/** 範例一 **/
+var a = 2 * 2 + 2 * 3;
+console.log(a);  //10
+//2 * 2;  4
+//2 * 3;  6
+//4 + 6;  10
+
+/** 範例二 **/
+var a = 1 < 2 < 3;
+console.log(a);  //true
+//1 < 2;  true
+//true < 3;  true; 
+
+/** 範例三 **/
+var a = 3 > 2 > 1;
+console.log(a);  //false
+//3 > 2;  true
+//true > 1;  false
+//因為在比對時true會變成1，所以1不會大於1
+
+/** 範例四 **/
+let a = 1;
+let b = 2;
+a = b = 3;
+console.log(a,b); // 3,3
+//3賦予到b的“回傳結果”; 
+//b = 3; 
+//a = b;
+```
+#
+-----------------------------------------------
+#
+## 嚴格相等與寬鬆相等(Strict Equals&Loose Equals)
+#
+* 型別都要相同，才相等。(範例一)
+#
+* 只要值相同就會相等。(範例二)
+#
+* true會變成 **1** ，false會變成 **0** 。(範例三)
+#
+* 字串與數字相比時會以包裹方式 **Number()** 。(範例四)
+#
+* 陣列會數字相比自動去掉 **[]** 。(範例五)
+#
+* 物件與物件相比時，會是false。(範例六)
+#
+```js
+/** 範例一 **/
+console.log(1 === 1);  //true
+console.log(1 === "1");  //false
+console.log(1 === true);  //false
+
+/** 範例二 **/
+console.log(1 == 1);  //true
+
+/** 範例三 **/
+console.log(true == 1);  //true
+console.log(false == 0); //true
+
+/** 範例四 **/
+console.log(1 == "1");  //true
+console.log(1 == true);  //true
+console.log("1" == true);  //true
+console.log("0" == false);  //true
+console.log(17 == "0x11");  //true
+console.log('1' == !0);  //true
+
+/** 範例五 **/
+console.log(1 == ["1"]);  //true
+console.log("1" == [1]);  //true
+console.log([1] == true);  //true
+
+/** 範例六 **/
+console.log([] == []); //false
+console.log({} == {});  //false
+
+/** 例外案 **/
+console.log(null == 0);  //false
+console.log(undefined == 0)  //false
+console.log(null == 0);  //false
+console.log(null == undefined);  //true
+console.log(+0 === -0);  //true
+console.log(NaN === NaN);  //false
+
+/** 進階範例 **/
+console.log(a = 1 + 1 === 1);  //false
+//1 + 1 = 2;
+//2 === 1 = false;
+//a = false;
+```
+#
+`物件與非物件，使用包裹物件做轉換`
+#
+-----------------------------------------------
+#
+## 判斷式(if...else)
+#
+* 判斷式裡如果是 **真值(Truthy)** ，就會成立。(範例一)
+#
+* 判斷式裡如果是 **假值(Falsy)** ，就會不成立。(範例二)
+#
+|判斷值|例如|
+|---|---|
+|真值|true 、 1 、 "1" 、 [] 、 {}|
+|假值|false 、 0 、 "" 、 NaN 、 null 、 undefined|
+#
+```js
+/** 範例一 **/
+if([]){
+  console.log("蘋果");  //結果，因為[]是真值
+}else{
+  console.log("香蕉");
+}
+
+/** 範例二 **/
+if(""){
+  console.log("蘋果");
+}else{
+  console.log("香蕉");  //結果，因為""是假值
+}
+
+/** 特別案 **/
+if(new Boolean(false)){
+  console.log("蘋果"); //結果，因為{}是真值
+}else{
+  console.log("香蕉");  
+}
+```
+#
+-----------------------------------------------
+#
+## 邏輯運算子(&&、||、!) 
+#
+|邏輯運算子|英文|中文|說明|
+|---|---|---|---|
+|&&|AND|而且|左邊是假值(false)回傳結果，是真值(true)回傳右邊|
+|\|\||OR|或者|左邊是真值(true)回傳結果，是假值(false)回傳右邊|
+|!|NOT|不|真值(true)變假值(false)，假值(false)變真值(true)|
+#
+```js
+/** 快速說明 **/
+//□&&○
+//□是false回傳自己，true回傳○
+
+//□||○
+//□是true回傳自己，false回傳○
+
+/** 範例一 **/
+console.log(0 && 1);  //0
+console.log(2 && 3);  //3
+
+/** 範例二 **/
+console.log(0 || 1);  //1
+console.log(2 || 3);  //2
+
+/** 範例三 **/
+console.log(!0);  //true
+console.log(!1);  //false
+console.log(!true);  //false
+console.log(3 != "3");  //false
+console.log(3 !== "3");  //true
+
+/** 進階範例一 **/
+console.log(0 && 1 && 2);  //0
+//0 && 1 = 0;
+//0 && 2 = 0;
+
+/** 進階範例二 **/
+console.log(0 && 1 || 2 && 3);  //3
+//0 && 1 = 0;
+//2 && 3 = 3;
+//0 || 3 = 3;
+
+/** 進階範例三 **/
+console.log(0 || 1 && 2 || 3);  //2
+//1 && 2 = 2;
+//0 || 2 = 2;
+//2 || 3 = 2;
+
+/** 衍伸練習題 **/
+let a = 1 + 1 === 1;
+console.log(a); //false
+
+console.log(1000 < 10000 < 10); //true
+```
+#
+#### 進階衍伸題：
+#
+```js
+let myMoney = 500;
+function addValue(cash){
+  let total = cash + myMoney;
+  console.log('我有'+total+'元')
+}
+addValue(300); // "我有800元"
+addValue(); // "我有NaN元"
+addValue(0); // "我有500元"
+
+//解決NaN，預設值給500
+let myMoney = 500;
+function addValue(cash){
+  cash = cash || 500;
+  let total = cash + myMoney;
+  console.log('我有'+total+'元')
+}
+addValue(0); // 但是如果真的想傳0進入，這樣0會被判讀為假值，卻給500
+
+//最終解決辦法
+let myMoney = 500;
+function addValue(cash){
+  cash = parseInt(cash);
+  cash = (cash || cash === 0)? cash: 500;
+  let total = cash + myMoney;
+  console.log('我有'+total+'元')
+}
+addValue(); // "我有1000元"
+addValue(0); // "我有500元"
+```
+#
+-----------------------------------------------
+#
+## 原始型別(Primitive Data Type)
+#
+|typeof|中文|說明|
+|---|---|---|
+|Boolean|布林值|true、false|
+|Null|空值|曾經被賦予值，但是沒有值(型別為 object，歷史錯誤)|
+|Undefined|未定義|尚未被賦予值|
+|Number|數字|1234567890、NaN、Infinity|
+|String|字串|''或""內的文字|
+|Biglnt|符號/唯一值|表示超大整數，如 123456789n|
+|Symbol|唯一符號|表示唯一識別符，可作物件 key，無法被重複|
+#
+`Biglnt是處理金融、加密、天文，例如:const big = 1234567890123456789012345678901234567890n;`
+#
+```js
+/** 字串 **/
+var a = "蘋果";
+console.log(typeof a);  //string
+
+/** 數字 **/
+var a = 3.1415;
+console.log(typeof a);  //number
+
+/** 布林值 **/
+var a = true;
+console.log(typeof a);  //boolean
+
+/** 未定義 **/
+var a;
+console.log(typeof a);  //undefined
+
+/** 空值 **/
+var a = null;
+console.log(typeof a);  //object
+```
+#
+## 物件型別(Object Type)
+#
+|typeof|中文|說明|
+|---|---|---|
+|Object|物件|{}內的值|
+|Object|陣列|[]內的值|
+|function|函式|物件裡的子型別|
+|Object|new String()|包裹方式建立的型別|
+|Object|new Number()|包裹方式建立的型別|
+|Object|new Boolean()|包裹方式建立的型別|
+#
+```js
+/** 物件 **/
+var a = {
+  name:"蘋果"
+};
+console.log(typeof a);  //object
+
+/** 陣列 **/
+var a = ["蘋果"];
+console.log(typeof a);  //object
+
+/** 函式 **/
+var a = function(){};
+console.log(typeof a);  //function
+```
+#
+-----------------------------------------------
+#
+#### 當變數在執行階段被賦予值時，可能會轉換型別。而轉換分為以下兩種:
+#
+## 顯性轉換(Explicit Conversion)
+#
+* 直接賦予值
+
+    * 字串 = 數字。(範例一)
+
+    * 數字 = 字串。(範例二)
+#
+```js
+/** 範例一 **/
+var a = "蘋果";
+a = 1;
+console.log(typeof a);  //number
+
+/** 範例二 **/
+var a = 1;
+a = "蘋果";
+console.log(typeof a);  //string
+```
+#
+## 隱性轉換(Implicit Conversion)
+#
+* 透過運算子來轉換型別
+
+    * 字串 * 數字 = 數字。(範例一)
+
+    * 數字 + 字串 = 字串。(範例二)
+    
+#
+```js
+/** 範例一 **/
+var a = 1;
+var b = "2";
+console.log(typeof (a * b));  //number
+//1 * "2" = 2   <-最後結果是數字
+
+/** 範例二 **/
+var a = 1;
+var b = "2";
+console.log(typeof (a + b));  //string
+//1 + "2" = "12"   <-最後結果字串
+```
+#
+-----------------------------------------------
+#
+## 數字與字串的應用
+#
+* 使用 **parseInt()** 可將字串轉數字。(範例一)
+#
+* 使用 **.toString** 可轉數字轉字串。(範例二) 
+#
+* 使用 **.length** 可取得字數(空白也算)。(範例三)
+#
+* 使用 **.trim()** 可以濾掉空白。(範例四)
+#
+```js
+/** 範例一 **/
+let a = "100";
+a = parseInt(a);
+console.log(typeof a);  //number
+
+/** 範例二 **/
+let a = 100;
+a = a.toString();
+console.log(typeof a);  //string
+
+/** 範例三 **/
+let a = " 蘋果";
+console.log(a.length);  //3
+
+/** 範例四 **/
+let a = " 蘋果";
+a = a.trim();
+console.log(a);  //蘋果
+```
+#
+-----------------------------------------------
+#
+## 簡化賦值運算子
+#
+```js
+let a = 1;
+a = a + 1;
+console.log(a);  //2
+
+/** 簡化 **/
+let a = 1;
+a += 1;
+console.log(a);  //2
+
+/** 再簡化 **/
+let a = 1;
+a++;
+console.log(a);  //2
+
+/** 進階題 **/
+let a = 10;
+console.log(++a);// 11
+console.log(--a);// 9
+console.log(++a * a);// 121
+console.log(--a * a);// 81
+```
+#

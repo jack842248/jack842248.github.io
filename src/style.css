@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+	--font-work-sans: 'Work Sans', sans-serif;
+}
+
+
+
+@layer base {
+	* {
+		@apply font-work-sans;
+	}
+
+	body {
+		@apply bg-neutral-200 overflow-x-hidden;
+	}
+
+	a {
+		@apply block;
+	}
+
+	button {
+		@apply cursor-pointer;
+	}
+}
+
+@layer components {
+	.article-title{
+		@apply text-base font-medium text-neutral-900 group-hover:text-emerald-700 transition-all mb-2
+	}
+	.article-tag{
+		@apply inline text-xs text-emerald-700 bg-neutral-200 rounded p-1 px-2 mr-1 hover:text-neutral-100 hover:bg-emerald-700 transition-all
+	}
+	.article-content{
+		@apply text-sm text-neutral-500 line-clamp-2 break-all mb-3
+	}
+}

@@ -1,0 +1,39 @@
+---
+title: 【Web】iphone歷代手機尺寸
+date: 2024-04-01
+tags: ["web"]
+---
+#
+## iphone歷代手機尺寸
+#
+<!--more-->
+#
+|機型|尺寸in|PPI|縱橫比|寬x高dp|寬x高px|密度dpi|
+|---|---|---|---|---|---|---|
+|iPhone15ProMax|6.7|460|19:9|430x932|1290x2796|3.0xxhdpi|
+|iPhone15Pro|6.1|460|19:9|393x852|1179x2556|3.0xxhdpi|
+|iPhone15Plus|6.7|460|19:9|430x932|1290x2796|3.0xxhdpi|
+|iPhone15|6.1|460|19:9|393x852|1179x2556|3.0xxhdpi|
+|iPhone14ProMax|6.7|460|19:9|430x932|1290x2796|3.0xxhdpi|
+|iPhone14Pro|6.1|460|19:9|393x852|1179x2556|3.0xxhdpi|
+|iPhone14Plus|6.7|458|19:9|428x926|1284x2778|3.0xxhdpi|
+|iPhone14|6.1|460|19:9|390x844|1170x2532|3.0xxhdpi|
+|iPhoneSE3|4.7|326|16:9|375x667|750x1334|2.0xhdpi|
+|iPhone13ProMax|6.7|458|19:9|428x926|1284x2778|3.0xxhdpi|
+|iPhone13Pro|6.1|460|19:9|390x844|1170x2532|3.0xxhdpi|
+|iPhone13|6.1|460|19:9|390x844|1170x2532|3.0xxhdpi|
+|iPhone13mini|5.4|476|19:9|360x780|1080x2340|3.0xxhdpi|
+|iPhone12ProMax|6.7|458|19:9|428x926|1284x2778|3.0xxhdpi|
+|iPhone12Pro|6.1|460|19:9|390x844|1170x2532|3.0xxhdpi|
+|iPhone12|6.1|460|19:9|390x844|1170x2532|3.0xxhdpi|
+|iPhone12mini|5.4|476|19:9|360x780|1080x2340|3.0xxhdpi|
+|iPhoneSE2|4.7|326|16:9|375x667|750x1334|2.0xhdpi|
+|iPhone11Pro|5.8|458|19:9|375x812|1125x2436|3.0xxhdpi|
+|iPhone11ProMax|6.5|458|19:9|414x896|1242x2688|3.0xxhdpi|
+|iPhone11|6.1|326|19:9|414x896|828x1792|2.0xhdpi|
+|iPhoneXSMax|6.5|458|19:9|414x896|1242x2688|3.0xxhdpi|
+|iPhoneX(X,XS)|5.8|458|19:9|375x812|1125x2436|3.0xxhdpi|
+|iPhone8+(8+,7+,6S+,6+)|5.5|401|16:9|414x736|1242x2208|3.0xxhdpi|
+|iPhone8(8,7,6S,6)|4.7|326|16:9|375x667|750x1334|2.0xhdpi|
+|iPhoneSE(SE,5S,5C)|4.0|326|16:9|320x568|640x1136|2.0xhdpi|
+#

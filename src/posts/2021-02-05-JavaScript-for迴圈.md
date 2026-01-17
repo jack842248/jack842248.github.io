@@ -1,0 +1,277 @@
+---
+title: 【JS】for迴圈
+date: 2021-02-05
+tags: ["javaScript"]
+---
+#
+## for
+#
+<!--more-->
+#
+```js
+//初始狀態;條件;每次執行
+for(let i=0 ; i<3 ; i++){
+    console.log("我會被執行"+i+"次");
+    //"我會被執行0次"
+    //"我會被執行1次"
+    //"我會被執行2次"
+}
+
+//99乘法表
+for(let i=2 ; i<10 ; i++){
+    console.log(i+'*'+i+'='+i*i);
+}
+//"2*2=4"
+//"3*3=9"
+//"4*4=16"
+//"5*5=25"
+//"6*6=36"
+//"7*7=49"
+//"8*8=64"
+//"9*9=81"
+```
+#
+`i=i+1等於i+=1等於i++`
+#
+-----------------------------------------------
+#
+## for + json 
+#
+```js
+let fruitsData = [
+    {
+        name: "蘋果",
+        price: 15
+    },
+    {
+        name: "香蕉",
+        price: 25
+    },
+    {
+        name: "鳳梨",
+        price: 35    
+    }
+]
+
+//列印出每一項水果
+for(let i=0 ; i<fruitsData.length ; i++){
+  console.log(fruitsData[i].name);
+}
+//蘋果
+//香蕉
+//鳳梨
+```
+#
+-----------------------------------------------
+#
+## for + json + 用if過濾結果
+#
+```js
+let fruitsData = [
+    {
+        name: "蘋果",
+        price: 15
+    },
+    {
+        name: "香蕉",
+        price: 25
+    },
+    {
+        name: "鳳梨",
+        price: 35    
+    }
+]
+
+//判斷價錢超過20的水果
+for(let i=0 ; i<fruitsData.length ; i++){
+    if(fruitsData[i].price > 20){
+        console.log(fruitsData[i].name);
+    }
+}
+//香蕉
+//鳳梨
+
+//判斷價錢超過20的水果，滿足條件就不繼續
+for(let i=0 ; i<fruitsData.length ; i++){
+    if(fruitsData[i].price > 20){
+        console.log(fruitsData[i].name);
+        break;
+    }
+}
+//香蕉
+```
+#
+`若使用break，if只要買足一次條件就不在執行後續`
+#
+-----------------------------------------------
+#
+## for + json + 將數字加總
+#
+```js
+let fruitsData = [
+    {
+        name: "蘋果",
+        price: 15
+    },
+    {
+        name: "香蕉",
+        price: 25
+    },
+    {
+        name: "鳳梨",
+        price: 35    
+    }
+]
+
+let priceTotal = 0;
+
+for(let i=0 ; i<fruitsData.length ; i++){
+    priceTotal += fruitsData[i].price;
+}
+
+console.log(priceTotal); //75
+```
+#
+-----------------------------------------------
+#
+## for + ul + 組字串 + innerHTML
+#
+```html
+<ul class="list"></ul>
+```
+#
+```js
+let fruitsData = [
+    {
+        name: "蘋果",
+        price: 15
+    },
+    {
+        name: "香蕉",
+        price: 25
+    },
+    {
+        name: "鳳梨",
+        price: 35    
+    }
+]
+
+//宣告一個空字串
+let str = "";
+let list = document.querySelector(".list");
+
+for(let i=0 ; i<fruitsData.length ; i++){
+    //累加<li>
+    str+="<li>"+fruitsData[i].name+"</li>";
+}
+
+//用innerHTML將組好的<li>一次塞入<ul>裡
+list.innerHTML = str;
+```
+#
+#### 輸出結果：
+#
+```html
+<ul class="list">
+    <li>蘋果</li>
+    <li>香蕉</li>
+    <li>鳳梨</li>
+</ul>
+```
+#
+`innerHTML特性是會先清空元素再塞值`
+#
+-----------------------------------------------
+#
+## for + ul + createElement + appendChild
+#
+```html
+<ul class="list"></ul>
+```
+#
+```js
+let fruitsData = [
+    {
+        name: "蘋果",
+        price: 15
+    },
+    {
+        name: "香蕉",
+        price: 25
+    },
+    {
+        name: "鳳梨",
+        price: 35    
+    }
+]
+
+let list = document.querySelector(".list");
+
+for(let i=0 ; i<fruitsData.length ; i++){
+
+    //創建li元素
+    let liElement = document.createElement("li");
+
+    //將li的內容文字都分別塞名稱
+    liElement.textContent = fruitsData[i].name;
+
+    list.appendChild(liElement);
+}
+```
+#
+#### 輸出結果：
+#
+```html
+<ul class="list">
+    <li>蘋果</li>
+    <li>香蕉</li>
+    <li>鳳梨</li>
+</ul>
+```
+#
+`appendChild不會清空內容`
+#
+-----------------------------------------------
+#
+## for + ul + data-* + innerHTML
+#
+```html
+<ul class="list"></ul>
+```
+#
+```js
+let fruitsData = [
+    {
+        name: "蘋果",
+        price: 15
+    },
+    {
+        name: "香蕉",
+        price: 25
+    },
+    {
+        name: "鳳梨",
+        price: 35    
+    }
+]
+
+let list = document.querySelector(".list");
+let str = "";
+
+for(let i=0 ; i<fruitsData.length ; i++){
+    //將資料組字串，並帶入data-num
+    str += "<li data-num='"+ i +"'>"+ fruitsData[i].name +"</li>";
+    list.innerHTML = str;
+}
+
+//監聽ul裡面的元素
+list.addEventListener("click",function(e){
+  if(e.target.nodeName !== "LI"){
+    return
+  }
+
+  //點擊li時取得該元素的編號
+  let targetNum = e.target.dataset.num;
+  console.log("你點擊的是第"+targetNum+"資料");
+})
+```

@@ -1,0 +1,121 @@
+---
+title: 【JS】驗證表單
+date: 2021-02-10
+tags: ["javaScript"]
+---
+#
+## POST註冊表單(application/x-www-form-urlencoded)
+#
+<!--more-->
+#
+```html
+<label for="email">帳號：</label>
+<input class="email" id="email" type="email" name="email">
+<br>
+<label for="password">密碼：</label>
+<input class="password" id="password" type="password" name="password">
+<br>
+<button class="send" type="submit">送出</button>
+<!-- 1.帳號輸入：jack@gmail.com -->
+<!-- 2.密碼輸入：abc123456 -->
+<!-- 3.點擊送出按鈕 -->
+<!-- 4.瀏覽器網址列會出現：https://cdpn.io/pen/debug/index.html?account=jack&password=abc123456-->
+```
+#
+```js
+let send = document.querySelector(".send");
+let email = document.querySelector(".email");
+let password = document.querySelector(".password");
+
+send.addEventListener("click",function(){
+
+  let xhr = new XMLHttpRequest();
+  xhr.open("POST","https://escape-room.hexschool.io/api/user/signup",true);
+
+  //設置提交表單格式
+  xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+
+  let emailValue = email.value;
+  let passwordValue = password.value;
+
+  //組字串"email=jack@gmail.com&password=abc123456"
+  let totalValue = "email="+emailValue+"&"+"password="+passwordValue;
+
+  xhr.send(totalValue);
+  xhr.onload = function(){
+    let callBackData = JSON.parse(xhr.responseText);
+    alert(callBackData.message);
+  }
+});
+```
+#
+-----------------------------------------------
+#
+## POST註冊表單(application/json)
+#
+```html
+<label for="email">帳號：</label>
+<input class="email" id="email" type="email" name="email">
+<br>
+<label for="password">密碼：</label>
+<input class="password" id="password" type="password" name="password">
+<br>
+<button class="send" type="submit">送出</button>
+```
+#
+```js
+let send = document.querySelector(".send");
+let email = document.querySelector(".email");
+let password = document.querySelector(".password");
+
+send.addEventListener("click",function(){
+  
+  let emailVal = email.value;
+  let passwordVal = password.value;
+
+  //組成JSON格式，建議：去比對後端的資料格式
+  let account = {};
+  account.email = emailVal;
+  account.password = passwordVal;
+  
+  let xhr = new XMLHttpRequest();
+  xhr.open("POST","https://escape-room.hexschool.io/api/user/signup",true);
+
+  //設置提交JSON字串符
+  xhr.setRequestHeader("Content-type","application/json");
+
+  //將JSON轉成字串
+  let data = JSON.stringify(account);
+  xhr.send(data);
+
+  xhr.onload = function(){
+
+    //將取得的字串轉成JSON
+    let callBackData = JSON.parse(xhr.responseText);
+    alert(callBackData.message);
+  }
+});
+```
+#
+`登入api：https://escape-room.hexschool.io/api/user/signup`
+#
+-----------------------------------------------
+#
+## Chrome開發人員工具檢視POST資料
+#
+* Chrome→"右鍵"→"檢查"→"Network"→"Header"
+#
+![圖片](/img/驗證表單/驗證表單-1.png)
+#
+* Chrome→"右鍵"→"檢查"→"Network"→"Payload"
+#
+![圖片](/img/驗證表單/驗證表單-2.png)
+#
+* Chrome→"右鍵"→"檢查"→"Network"→"Preview"
+#
+![圖片](/img/驗證表單/驗證表單-3.png)
+#
+* Chrome→"右鍵"→"檢查"→"Network"→"Response"
+#
+![圖片](/img/驗證表單/驗證表單-4.png)
+#

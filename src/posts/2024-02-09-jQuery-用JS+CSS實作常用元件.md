@@ -1,0 +1,343 @@
+---
+title: 【jQuery】用JS+CSS實作常用元件
+date: 2024-02-09
+tags: ["jquery"]
+---
+#
+## 漢堡選單
+#
+<!--more-->
+#
+```html
+<div class="header">
+  <ul class="menu">
+      <li><a href="#">選單一</a></li>
+      <li><a href="#">選單二</a></li>
+      <li><a href="#">選單三</a></li>
+      <li><a href="#">選單四</a></li>
+  </ul>
+  <a class="menuicon" href="#">選單按鈕</a>
+</div>
+```
+#
+```css
+.header{
+  height: 80px;
+}
+.menu{
+  float: right;
+}
+.menu li{
+  float: left;
+}
+.menuicon{
+  display: none;
+}
+.show{
+    max-height: 600px; /*選單展開高度*/
+}
+@media (max-width:768px){
+  .menu{
+    max-height: 0px; /*選單關閉高度*/
+    overflow: hidden; /*讓文字也隱藏*/
+    position: absolute;
+    top: 80px; /*從header下面開始出現*/
+    left: 0; /*左右兩邊滿版*/
+    right: 0; /*左右兩邊滿版*/
+    z-index: 100;
+    transition: max-height 2s; /*動態效果*/
+  }
+  .menu li{
+    float: none;
+  }
+  .menuicon{
+    display: block;
+  }
+  .show{
+    max-height: 800px;
+  }
+}
+```
+#
+```js
+$(".menuicon").click(function(){
+  e.preventDefault();
+  $(".menu").toggleClass("show");
+});
+```
+#
+-----------------------------------------------
+#
+## 側邊選單(Offcanvas)
+#
+1. 最外層容器max-width
+2. 右側內容width給%寬度
+3. 右側內容用margin-left向左推選單寬度
+#
+```html
+<a class="menuicon" href="#">選單按鈕</a>
+<aside>
+  <a class="close" href="#">X</a>
+  <ul class="menu">
+    <li><a href="#">選單一</a></li>
+    <li><a href="#">選單二</a></li>
+    <li><a href="#">選單三</a></li>
+    <li><a href="#">選單四</a></li>
+  </ul>
+</aside>
+```
+#
+```css
+aside{
+  position: absolute;
+  width: 300px; /*固定寬，避免內容被壓縮*/
+  top: 0;
+  bottom: 0;
+  transform: translate(-300px);
+  transition: 1s;
+}
+.show{
+  transform: translate(0px);
+}
+```
+#
+```js
+$(".menuicon").click(function(){
+  event.preventDefault();
+  $("aside").addClass("show");
+});
+$(".close").click(function(){
+  event.preventDefault();
+  $("aside").removeClass("show");
+});
+```
+#
+-----------------------------------------------
+#
+## 簡易QA選單效果
+#
+```html
+<ul class="menu">
+  <li>項目一
+      <a>連結一</a>
+  </li>
+  <li>項目二
+      <a>連結二</a>
+  </li>
+  <li>項目三
+      <a>連結三</a>
+  </li>
+</ul>
+```
+#
+```css
+a{
+  display: none;
+}
+```
+#
+```js
+$(".menu li").click(function(){
+  $(this).find("a").slideToggle();
+  $(this).siblings().find("a").slideUp();
+});
+```
+#
+`只有點擊的a連結展開，再次點擊收闔，其他連結也收闔`
+#
+-----------------------------------------------
+#
+## 彈跳視窗(監聽事件)
+#
+```html
+<a>連結一</a>
+<div class="box"></div>
+```
+#
+```js
+$("body").on("click","a",function(){//.on("觸發事件","選擇器")
+  alert();
+});
+$(".box").html("<a>連結二</a>");
+```
+#
+`.on()不論程式碼先後順序全部都可以監聽`
+#
+-----------------------------------------------
+#
+## 刪除選單
+#
+```html
+<ul class="menu">
+  <li>項目一<span>X</span></li>
+  <li>項目二<span>X</span></li>
+  <li>項目三<span>X</span></li>
+</ul>
+```
+#
+```js
+$(".menu li span").click(function(){
+  $(this).parent().remove();
+});
+```
+#
+`點擊X，刪除該項目`
+#
+-----------------------------------------------
+#
+## 回到頂端
+#
+```html
+<a href="#">UP</a>
+```
+#
+```css
+a{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+```
+#
+```js
+$("a").click(function(){
+  event.preventDefault();
+  $("html,body").animate({//對整個頁面
+    scrollTop:0 
+  },800);//花0.8秒
+});
+```
+#
+-----------------------------------------------
+#
+## 滾動至錨點
+#
+```html
+<ul class="menu">
+  <li><a href="#one">連結一</a></li>
+  <li><a href="#two">連結二</a></li>
+  <li><a href="#three">連結三</a></li>
+</ul>
+<section id="one">第一部分</section>
+<section id="two">第二部分</section>
+<section id="three">第三部分</section>
+```
+#
+```js
+$("a").click(function(e){
+    e.preventDefault();
+    var target = $(this).attr("href"); //找出a連結對應到的id
+    var targetPos = $(target).offset().top; //該id當前視窗的相對頂部
+    $("html,body").animate({scrollTop:targetPos},3000);
+});
+```
+#
+`<a href="先對應到">，<section id="這裡">`
+#
+-----------------------------------------------
+#
+## 滾動視窗到章節處出現效果
+#
+```html
+<section id="one" data-color="yellow">第一部分</section>
+<section id="two" data-color="green">第二部分</section>
+<section id="three" data-color="blue">第三部分</section>
+```
+#
+```css
+section{
+  height: 1000px;
+  transition: 1s;
+  background-color: red;
+}
+```
+#
+```js
+$(window).scroll(function(){
+  var twoPos = $("#two").position().top; //抓取第二部分的高度
+  var scrollTop = $(window).scrollTop(); //抓取視窗滾動的距離
+  var windowHeight = $(window).height(); //抓取視窗的高度
+  if (twoPos <= (scrollTop + windowHeight / 2 )){
+    $("section").each(function(){ //同時抓取每個section
+      var dataColor = $(this).data("color"); //讀出每個裡面的data值
+      $(this).css("background-color",dataColor); //將data值顯示在樣式上
+    })
+  }
+});
+```
+#
+-----------------------------------------------
+#
+## 滾動視窗到章節處出現淡入效果
+#
+```html
+<section id="one">第一部分</section>
+<section id="two">第二部分
+  <div class="box animated"></div>
+</section>
+<section id="three">第三部分</section>
+```
+#
+```css
+section{
+  height: 1000px;
+}
+.box{
+  width: 30px;
+  height: 30px;
+  background-color: red;
+}
+.animated{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s;
+}
+.fadeIn{
+  opacity: 1;
+  transform: translateY(0px);
+}
+```
+#
+```js
+$(window).scroll(function(){
+  $(".animated").each(function(){
+    var thisPos = $(this).offset().top;
+    var scrollTop = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    console.log(thisPos)
+    if((windowHeight + scrollTop) >= thisPos){
+      $(this).addClass("fadeIn");
+    }
+  })
+});
+```
+#
+-----------------------------------------------
+#
+## 滾動背景錯動
+#
+```html
+<section id="one">第一部分</section>
+<section id="two">第二部分</section>
+<section id="three">第三部分</section>
+```
+#
+```css
+#two{
+  height: 1000px;
+  background-image: url("https://picsum.photos/1000/1000.jpg")
+}
+#three{
+  height: 1000px;
+  background-image: url("https://picsum.photos/1000/1000.jpg")
+}
+```
+#
+```js
+$(window).scroll(function(){
+  var scrollTop = $(window).scrollTop();
+  $("#two").css('background-position-y', (scrollTop / 2) + 'px');
+  $("#three").css('transform','translateY(' + (scrollTop / 2) + 'px)');
+});
+```
+#
