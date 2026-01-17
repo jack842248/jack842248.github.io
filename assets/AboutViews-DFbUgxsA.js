@@ -1,1 +1,0 @@
-import{r as o,c as s,a,t as l,F as n,o as c}from"./index-B0e203Su.js";const i={__name:"AboutViews",setup(r){const e=o(!1),t=()=>{e.value=!e.value,console.log("點擊按鈕")};return(u,p)=>(c(),s(n,null,[a("p",{onClick:t},"我是關於我"),a("p",null,l(e.value),1)],64))}};export{i as default};
