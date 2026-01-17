@@ -1,1 +1,0 @@
-import{d as t,r as s,c as l,a as o,t as n,F as c,o as r}from"./index-C5bNOWk_.js";const i={__name:"ProjectViews",setup(u){t(()=>{console.log("我是案例")});const e=s(!1),a=()=>{e.value=!e.value,console.log("點擊按鈕")};return(p,_)=>(r(),l(c,null,[o("p",{onClick:a},"我是案例"),o("p",null,n(e.value),1)],64))}};export{i as default};
