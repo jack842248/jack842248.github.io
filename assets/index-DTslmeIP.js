@@ -13775,378 +13775,244 @@ title: 【Hugo】添加Disqus評論功能
 date: 2023-04-04
 tags: ["hugo"]
 ---
-#
-## 將Hugo添加Disqus評論功能
-#
-<!--more-->
-#
+### 將Hugo添加Disqus評論功能
 1. 進入[Disqus](https://blog.disqus.com/)頁面，點擊GET STARTD，登入或註冊
-#
 ![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-1.png)
-#
+
 -----------------------------------------------
-#
 2. 點擊I want to install Disqus on my site
-#
 ![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-2.png)
-#
+
 -----------------------------------------------
-#
 3. 輸入專案名稱，選擇類別，按Create Site
-#
 ![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-3.png)
-#
+
 -----------------------------------------------
-#
 4. 選擇免費版Subscribe Now
-#
-#
 ![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-4.png)
-#
+
 -----------------------------------------------
-#
 5. 選擇平台類型，若無則選擇I don't see my platform listed...
-#
 ![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-5.png)
-#
+
 -----------------------------------------------
-#
-6. ㄏConfigure
-#
+6. Configure
 ![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-6.png)
-#
+
 -----------------------------------------------
-#
 7. 輸入網站網址，下面可選擇顏色、字體樣式，按Next繼續
-#
 ![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-7.png)
-#
+
 -----------------------------------------------
-#
 8. 點擊Complete Setup
-#
 ![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-8.png)
-#
+
 -----------------------------------------------
-#
 9. 點擊Dismiss Setup
-#
 ![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-9.png)
-#
+
 -----------------------------------------------
-#
 10. 點擊右上角Edit Setting
-#
 ![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-10.png)
-#
+
 -----------------------------------------------
-#
 11. 接著會看到shortname，將他複製起來
-#
 ![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-11.png)
-#
+
 -----------------------------------------------
-#
 12. 貼到config.toml(設定檔)裡的disqusShortname(有些Hugo主題不支援)
-#
 ![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-12.png)
-#
+
 -----------------------------------------------
-#
 13. 填好之後更新網站，在點選任一篇文章，滑到底下就會出現評論
-#
 ![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-13.png)
-#
+
 -----------------------------------------------
-#
 14. 點開評論即可開始留言
-#
-![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-14.png)
-#`,__vite_glob_0_56=Object.freeze(Object.defineProperty({__proto__:null,default:_20230404Hugo___Disqus____},Symbol.toStringTag,{value:"Module"})),_20230405__eb__GA____GA4=`---
+![圖片](/img/添加Disqus評論功能/添加Disqus評論功能-14.png)`,__vite_glob_0_56=Object.freeze(Object.defineProperty({__proto__:null,default:_20230404Hugo___Disqus____},Symbol.toStringTag,{value:"Module"})),_20230405__eb__GA____GA4=`---
 title: 【Web】舊GA升級為新GA4
 date: 2023-04-05
 tags: ["web"]
 ---
-#
-## 將Google Analytics升級成GA4
-#
-<!--more-->
-#
+### 將Google Analytics升級成GA4
 1. 登入[Google Analytics](https://analytics.google.com/analytics/web)進入首頁畫面，點擊下方管理
-#
 ![圖片](/img/舊GA升級為新GA4/舊GA升級為新GA4-1.png)
-#
+
 -----------------------------------------------
-#
 2. 接著點擊中間\`建立資源\`
-#
 ![圖片](/img/舊GA升級為新GA4/舊GA升級為新GA4-2.png)
-#
+
 -----------------------------------------------
-#
 3. 進入建立資源頁面，按照指示填入資源名稱(該專案顯示名稱)，按下一步繼續
-#
 ![圖片](/img/舊GA升級為新GA4/舊GA升級為新GA4-3.png)
-#
+
 -----------------------------------------------
-#
 4. 填寫產業類別，商家規模，按下一步繼續
-#
-#
 ![圖片](/img/舊GA升級為新GA4/舊GA升級為新GA4-4.png)
-#
+
 -----------------------------------------------
-#
 5. 選擇業務目標，按建立
-#
 ![圖片](/img/舊GA升級為新GA4/舊GA升級為新GA4-5.png)
-#
+
 -----------------------------------------------
-#
 6. 依照平台選擇
-#
 ![圖片](/img/舊GA升級為新GA4/舊GA升級為新GA4-6.png)
-#
+
 -----------------------------------------------
-#
 7. 輸入網站網址，串流名稱，按建立串流(等待約5秒不動讓頁面自動彈出)
-#
 ![圖片](/img/舊GA升級為新GA4/舊GA升級為新GA4-7.png)
-#
+
 -----------------------------------------------
-#
 8. 接著會出現安裝操作說明頁面，點選手動安裝
-#
 ![圖片](/img/舊GA升級為新GA4/舊GA升級為新GA4-8.png)
-#
+
 -----------------------------------------------
-#
 9. 複製代碼
-#
 ![圖片](/img/舊GA升級為新GA4/舊GA升級為新GA4-9.png)
-#
+
 -----------------------------------------------
-#
 10. 貼到網站的<head></head>裡面，並且將舊GA代碼刪除
-#
 ![圖片](/img/舊GA升級為新GA4/舊GA升級為新GA4-10.png)
-#
+
 -----------------------------------------------
-#
 11. 重新更新網站後，回到[Google Analytics](https://analytics.google.com/analytics/web)首頁顯示該畫面，表示升級成功
-#
-![圖片](/img/舊GA升級為新GA4/舊GA升級為新GA4-11.png)
-#`,__vite_glob_0_57=Object.freeze(Object.defineProperty({__proto__:null,default:_20230405__eb__GA____GA4},Symbol.toStringTag,{value:"Module"})),_20230406Hugo__Google_________=`---
+![圖片](/img/舊GA升級為新GA4/舊GA升級為新GA4-11.png)`,__vite_glob_0_57=Object.freeze(Object.defineProperty({__proto__:null,default:_20230405__eb__GA____GA4},Symbol.toStringTag,{value:"Module"})),_20230406Hugo__Google_________=`---
 title: 【Hugo】讓Google搜尋找到自己的網站
 date: 2023-04-06
 tags: ["hugo"]
 ---
-#
-## 檢測自己網站是否可被搜尋
-#
-<!--more-->
-#
+### 檢測自己網站是否可被搜尋
 1. 手先到google搜尋引擎輸入\`site:自己的網站\`
-#
 ![圖片](/img/讓Google搜尋找到自己的網站/讓Google搜尋找到自己的網站-1.png)
-#
+
 -----------------------------------------------
-#
 2. 按下搜尋後，如果只有顯示請使用Google Search Console，表示自己的網站還未提交給google
-#
 ![圖片](/img/讓Google搜尋找到自己的網站/讓Google搜尋找到自己的網站-2.png)
-#
+
 -----------------------------------------------
-#
-## 提交網站地圖給google
-#
+### 提交網站地圖給google
 1. 搜尋[Google Search Console](https://search.google.com/search-console/about)進入頁面，點擊立即開始
-#
 ![圖片](/img/讓Google搜尋找到自己的網站/讓Google搜尋找到自己的網站-3.png)
-#
+
 -----------------------------------------------
-#
 2. 選擇右邊網址前置字元，輸入自己的網站，按繼續
-#
-#
 ![圖片](/img/讓Google搜尋找到自己的網站/讓Google搜尋找到自己的網站-4.png)
-#
+
 -----------------------------------------------
-#
 3. 使用hugo會自動產生sitemap.xml將它更新到網站上
     * 或使用[xml-sitemaps](https://www.xml-sitemaps.com/)生產出sitemaps
-#
 ![圖片](/img/讓Google搜尋找到自己的網站/讓Google搜尋找到自己的網站-5.png)
-#
+
 -----------------------------------------------
-#
 4. 回到Google Search Console點選左側sitemap並將後面sitemap.xml打上後，點擊提交
-#
 ![圖片](/img/讓Google搜尋找到自己的網站/讓Google搜尋找到自己的網站-6.png)
-#
+
 -----------------------------------------------
-#
 5. 等待2~3天狀態變為成功，再重新搜索即可找到自己的網頁
-#
 ![圖片](/img/讓Google搜尋找到自己的網站/讓Google搜尋找到自己的網站-7.png)
-#
+
 -----------------------------------------------
-#
-## 重新提交新頁面給google
-#
+### 重新提交新頁面給google
 1. 在Google Search Console上方搜尋欄，輸入想提交的網址
-#
 ![圖片](/img/讓Google搜尋找到自己的網站/讓Google搜尋找到自己的網站-8.png)
-#
+
 -----------------------------------------------
-#
 2. 點選右邊要求建立索引
-#
 ![圖片](/img/讓Google搜尋找到自己的網站/讓Google搜尋找到自己的網站-9.png)
-#
+
 -----------------------------------------------
-#
 3. 等待處理
-#
 ![圖片](/img/讓Google搜尋找到自己的網站/讓Google搜尋找到自己的網站-10.png)
-#
+
 -----------------------------------------------
-#
 4. 出現已要求建立索引，即代表google將安排建立索引
-#
-![圖片](/img/讓Google搜尋找到自己的網站/讓Google搜尋找到自己的網站-11.png)
-#`,__vite_glob_0_58=Object.freeze(Object.defineProperty({__proto__:null,default:_20230406Hugo__Google_________},Symbol.toStringTag,{value:"Module"})),_20230407__ebChrome_______=`---
+![圖片](/img/讓Google搜尋找到自己的網站/讓Google搜尋找到自己的網站-11.png)`,__vite_glob_0_58=Object.freeze(Object.defineProperty({__proto__:null,default:_20230406Hugo__Google_________},Symbol.toStringTag,{value:"Module"})),_20230407__ebChrome_______=`---
 title: 【Web】Chrome隱藏技巧及插件
 date: 2023-04-07
 tags: ["web"]
 ---
-#
-## 搜尋技巧
-#
-<!--more-->
-#
+### 搜尋技巧
 1. 打開瀏覽器在搜尋引擎
     * 用引號包覆搜尋字，可搜尋完整字詞
     * \`filetype:pdf\`輸入檔案類型，可以找到特定檔案
-#
+
 -----------------------------------------------
-#
-## 尋找網頁的IP位置
-#
+### 尋找網頁的IP位置
 1. 右鍵\`檢查\`
-#
 2. \`Network\`再點選旁邊\`Name\`下的檔案，再點選旁邊\`Headers\`
-#
 3. Request URL：網址(DNS)
-#
 4. Remote Address：IP位置
-#
+
 -----------------------------------------------
-#
-## Clear Cache清除快取
-#
+### Clear Cache清除快取
 chrome為了加速瀏覽速度，會自動抓取一些資料，但容易導致更新頁面後看到的還是舊的畫面，使用Clear Cache插件可以清除快取，讓chrome重新抓取最新資料
-#
-![圖片](/img/好用的Chrome插件/好用的Chrome插件-1.png)
-#`,__vite_glob_0_59=Object.freeze(Object.defineProperty({__proto__:null,default:_20230407__ebChrome_______},Symbol.toStringTag,{value:"Module"})),_20230408__eb_______FTP___=`---
+![圖片](/img/好用的Chrome插件/好用的Chrome插件-1.png)`,__vite_glob_0_59=Object.freeze(Object.defineProperty({__proto__:null,default:_20230407__ebChrome_______},Symbol.toStringTag,{value:"Module"})),_20230408__eb_______FTP___=`---
 title: 【Web】登入藍主機的FTP伺服器
 date: 2023-04-08
 tags: ["web"]
 ---
-#
-## 購買Bluehost主機並登入伺服器
-#
-<!--more-->
-#
+### 購買Bluehost主機並登入伺服器
 1. 到[FileZilla](https://filezilla-project.org/)官網下載軟體，選擇左邊(傳遞文件用)
-#
 ![圖片](/img/登入藍主機的FTP伺服器/登入藍主機的FTP伺服器-1.png)
-#
+
 -----------------------------------------------
-#
 2. 下載適合的版本
-#
 ![圖片](/img/登入藍主機的FTP伺服器/登入藍主機的FTP伺服器-2.png)
-#
+
 -----------------------------------------------
-#
 3. 點選最左上角圖示
-#
 ![圖片](/img/登入藍主機的FTP伺服器/登入藍主機的FTP伺服器-3.png)
-#
+
 -----------------------------------------------
-#
 4. 點選新增站台，可以給他一個新命名
-#
 ![圖片](/img/登入藍主機的FTP伺服器/登入藍主機的FTP伺服器-4.png)
-#
+
 -----------------------------------------------
-#
 5. 接著進到[Bluehost後台](https://my.bluehost.com/hosting/app#/)，右邊有主機的IP位置
-#
 ![圖片](/img/登入藍主機的FTP伺服器/登入藍主機的FTP伺服器-5.png)
-#
+
 -----------------------------------------------
-#
 6. 點選Advancedy，再點FTP，新增一個登入帳戶，輸入帳號密碼後，點擊建立FTP帳戶
-#
 ![圖片](/img/登入藍主機的FTP伺服器/登入藍主機的FTP伺服器-6.png)
-#
+
 -----------------------------------------------
-#
 7. 之後下方就會出現此帳戶，點擊設定FTP用戶端，可查看登入資訊
-#
 ![圖片](/img/登入藍主機的FTP伺服器/登入藍主機的FTP伺服器-7.png)
-#
+
 -----------------------------------------------
-#
 8. 回到FileZilla將得到的參數對應填入並連線(主機也可填IP位置)
-#
 ![圖片](/img/登入藍主機的FTP伺服器/登入藍主機的FTP伺服器-8.png)
-#
+
 -----------------------------------------------
-#
 9. 上方資訊顯示\`狀態：成功取得\`即代表登入成功
-#
 ![圖片](/img/登入藍主機的FTP伺服器/登入藍主機的FTP伺服器-9.png)
-#
+
 -----------------------------------------------
-#
 10. 之後可以將檔案放到public_html裡，或再建立資料夾
-#
 ![圖片](/img/登入藍主機的FTP伺服器/登入藍主機的FTP伺服器-10.png)
-#
+
 -----------------------------------------------
-#
 11. 到瀏覽器上輸入對應網址可以查看相對應的檔案
-#
 ![圖片](/img/登入藍主機的FTP伺服器/登入藍主機的FTP伺服器-11.png)
-#`,__vite_glob_0_60=Object.freeze(Object.defineProperty({__proto__:null,default:_20230408__eb_______FTP___},Symbol.toStringTag,{value:"Module"})),_20230409Design__________=`---
+`,__vite_glob_0_60=Object.freeze(Object.defineProperty({__proto__:null,default:_20230408__eb_______FTP___},Symbol.toStringTag,{value:"Module"})),_20230409Design__________=`---
 title: 【Design】了解相機的基本操作
 date: 2023-04-09
 tags: ["design"]
 ---
-#
-## 光圈(Aperture)
-#
-<!--more-->
-#
+### 光圈(Aperture)
 * 調整光圈葉片大小，控制從鏡頭進入的光量，如人的瞳孔
 * F值=鏡頭的焦距/鏡頭光孔直徑
 * 一般手機沒有光圈設定
 * 光圈越大數字越小，光圈越小數字越大
 * 大光圈容易聚焦，小光圈可全部對焦
 * 最佳畫質光圈值：F/2~F/8
-#
 |f/|表示|進光量|影響|適用|
 |---|---|---|---|---|
 |數字小|光圈越大|進光量越多|背景虛化大(景深)|人像、靜態主體|
 |數字大|光圈越小|進光量越少|背景虛化小|風景、大合照|
-#
+
 -----------------------------------------------
-#
-## 快門(Shutter)
-#
+### 快門(Shutter)
 * 快門打開時間長短，控制光進入感光元件的時間長短，如眼睛眨眼速度
 * 用慢速快門時容易手震，建議使用腳架避免模糊
 * 1"表示1秒，8表示1/8秒，1000表示1/1000秒
@@ -14154,71 +14020,57 @@ tags: ["design"]
 * 拍照安全快門：鏡頭焦段=快門速度
 * 拍攝安全快門：幀率X2=快門速度
 * 正常值：1/160秒、1/250秒
-#
 |調整|表示|進光量|影響|適用|
 |---|---|---|---|---|
 |慢速快門|快門時間長|進光量越多|容易模糊、有殘影|飄移、流川、車軌|
 |高速快門|快門時間短|進光量越少|比較清晰、被凍結|拍攝動物、跑步瞬間|
-#
+
 -----------------------------------------------
-#
-## ISO(感光度)
-#
+### ISO(感光度)
 * 調整感光元件的對光的靈敏度，控制亮度與噪點的平衡
 * 在光線充足的情況下，建議將數值調低、畫質越好
 * 正常值：100~200
-#
 |調整|表示|曝光|影響|適用|
 |---|---|---|---|---|
 |ISO數值高|對光敏感度越高|容易曝光(越亮)|畫面雜訊多|星空|
 |ISO數值低|對光敏感度越低|不易曝光(越暗)|畫面雜訊少|-|
-#
+
 -----------------------------------------------
-#
-## 白平衡(White Balance)
-#
+### 白平衡(White Balance)
 * 決定相機成像偏冷或偏暖的濾鏡效果
 * K(Kelvin)是計算白平衡單位
 * 可利用白紙設定相機，取得當前環境的白平衡
 * 數值越大越暖，數值越小越冷
-#
+
 -----------------------------------------------
-#
-## 對焦模式(Fucus Mode)
-#
+### 對焦模式(Fucus Mode)
 * 峰值是相機對焦的輔助設定 
 * 每個鏡頭都有最短對焦距離
-#
 |模式|效果|適用|
 |---|---|---|
 |AF自動對焦|隨著拍攝移動，相機自動捕捉|難著摸的動態物體|
 |MF手動對焦|對焦深度固定|景深聚焦切換效果|
-#
+
 -----------------------------------------------
-#
-## 拍攝模式(PASM)
-#
+### 拍攝模式(PASM)
 |模式|光圈|快門|ISO|適用|
 |---|---|---|---|---|
 |AUTO全自動模式|\`自動\`|\`自動\`|\`自動\`|成功率達99%|
 |P程式自動模式|\`自動\`|\`自動\`|手動|聚焦物體亦離開容易模糊|
 |A光圈先決模式|手動|\`自動\`|手動|靜物模式，留意畫面是否模糊|
 |S快門先決模式|\`自動\`|手動|手動|留意畫面是否過曝或太暗|
-|M純手動模式|手動|手動|手動|所有數值自己掌控|
-#`,__vite_glob_0_61=Object.freeze(Object.defineProperty({__proto__:null,default:_20230409Design__________},Symbol.toStringTag,{value:"Module"})),_20230412Web____SEO______=`---
+|M純手動模式|手動|手動|手動|所有數值自己掌控|`,__vite_glob_0_61=Object.freeze(Object.defineProperty({__proto__:null,default:_20230409Design__________},Symbol.toStringTag,{value:"Module"})),_20230412Web____SEO______=`---
 title: 【Web】有助於SEO優化重點彙整
 date: 2023-04-12
 tags: ["photoshop"]
 ---
-#
-## SEO大方向
-#
-<!--more-->
-#
+### SEO大方向
 1. 找出與競爭對手的差別、優勢、弱勢
 2. 分析網站點擊率、曝光，尋找點閱率4％以下的關鍵字
 3. 研究關鍵字，優化內容
-## 標題
+
+-----------------------------------------------
+### 標題
 * 使用數字
 * 什麼是...
 * 將關鍵字往前放
@@ -14226,10 +14078,14 @@ tags: ["photoshop"]
 * 標題長度適中
 * 放入流行、時事相關的詞句
 * 刺激好奇心，留一點伏筆
-## 內容
+
+-----------------------------------------------
+### 內容
 * Ｍeta描述約二行(約70個字)
 * 不可過度強塞關鍵字
 * 閱讀順暢、口語化
+
+-----------------------------------------------
 ## 關鍵字
 1. 了解搜索意圖，利用網站找出好的關鍵字詞(20個)
     * [Google Keyword Planner](https://ads.google.com/intl/zh-TW_tw/getstarted/)
@@ -14246,21 +14102,16 @@ tags: ["photoshop"]
 3. 分析競爭對手
     * 對手有的內容自己也要有，並且要更多
     * 做出差異
-    * 
-    * 
+
 4. 內容優化
 4. 反向連結
     * 有相關度、有真正在運作、高質量比多數重要
 5. 善用內容時效權重，提升能見度，並維持創新
-7. 
-8. 
+
 9. 網站核心內容分析，抓住主軸做延伸
 10. 如何提高你的搜索結果點擊率(CTR)
-#
 -----------------------------------------------
-#
-## 關鍵字
-#
+### 關鍵字
 * 是搜索的意圖
 * 口語化
 * 大型關鍵字(特斯拉、iphone、衣服)
@@ -14273,14 +14124,14 @@ tags: ["photoshop"]
 * 資訊型關鍵字
 * 資訊型關鍵字
 
-1.市場調查Google Trends 廣義衣服包包 趨勢涼感衣
-2.口語化關鍵詞
-3.要有實質的內容
-4.meta(google2009年不在參考)
-5.需要長時間觀察
-6.避免文字過少/重複率太高/需要獨特性
-7.持續管理更新內容
-8.手機版使用體驗佳 
+1. 市場調查Google Trends 廣義衣服包包 趨勢涼感衣
+2. 口語化關鍵詞
+3. 要有實質的內容
+4. meta(google2009年不在參考)
+5. 需要長時間觀察
+6. 避免文字過少/重複率太高/需要獨特性
+7. 持續管理更新內容
+8. 手機版使用體驗佳 
 內容要3次點擊到達
 
 。利用搜尋輸入關鍵字前段-參考自動出現的詞
@@ -14316,71 +14167,48 @@ title: 【JS】lightbox2燈箱效果
 date: 2023-04-22
 tags: ["javaScript"]
 ---
-#
-## lightbox2使用前準備
-#
-<!--more-->
-#
+### lightbox2使用前準備
 1. 下載[lightbox2](https://github.com/lokesh/lightbox2)
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-1.png)
-#
+
 -----------------------------------------------
-#
 2. 解壓縮後，將\`/examples\`內的檔案拉到自己的資料夾內
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-2.png)
-#
 \`.js檔、.css檔、圖片檔都要拉\`
-#
+
 -----------------------------------------------
-#
 3. 將.css和.js引入
     * 在\`<head>\`加入\`<link href="css/lightbox.min.css" rel="stylesheet"/>\`
     * 在\`<body>\`加入\`<script src="js/lightbox-plus-jquery.min.js"><\/script>\`
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-3.png)
-#
+
 -----------------------------------------------
-#
 4. 接著將圖片放入images資料夾
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-4.png)
-#
+
 -----------------------------------------------
-#
 5. 到index.html開始撰寫
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-5.png)
-#
+
 -----------------------------------------------
-#
 6. \`data-title\`圖片左下角標題
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-6.png)
-#
+
 -----------------------------------------------
-#
 7. 進階修改樣式到.js檔裡的最下方開始撰寫
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-7.png)
-#
+
 -----------------------------------------------
-#
-## 將圖片群組化
-#
+### 將圖片群組化
+將\`data-lightbox\`名稱命名相同
 \`\`\`html
 <a href="images/image-1.jpg" data-lightbox="group1">Image1</a>
 <a href="images/image-2.jpg" data-lightbox="group1">Image2</a>
 <a href="images/image-3.jpg" data-lightbox="group1">Image3</a>
 \`\`\`
-#
-將\`data-lightbox\`名稱命名相同
-#
+
 -----------------------------------------------
-#
-## 其他參數設定
-#
+### 其他參數設定
 \`\`\`js
 lightbox.option({
     'alwaysShowNavOnTouchDevices': true,//在手機裝置上出現箭頭
@@ -14392,57 +14220,40 @@ lightbox.option({
     'resizeDuration': 700,//圖片出現速度
     'wrapAround': true//圖片到最後一張時會在從第一張開始
 });
-\`\`\`
-`,__vite_glob_0_63=Object.freeze(Object.defineProperty({__proto__:null,default:_20230422JavaScriptLightbox2____},Symbol.toStringTag,{value:"Module"})),_20230423JavaScriptSwiper____=`---
+\`\`\``,__vite_glob_0_63=Object.freeze(Object.defineProperty({__proto__:null,default:_20230422JavaScriptLightbox2____},Symbol.toStringTag,{value:"Module"})),_20230423JavaScriptSwiper____=`---
 title: 【JS】swiper輪播效果
 date: 2023-04-23
 tags: ["javaScript"]
 ---
-#
-## swiper使用前準備
-#
-<!--more-->
-#
+### swiper使用前準備
 1. 先到[swiper](https://swiperjs.com/swiper-api)找到CDN
-#
 ![圖片](/img/swiper輪播效果/swiper輪播效果-1.png)
-#
+
 -----------------------------------------------
-#
 2. 將.css和.js引入
   * 在\`<head>\`加入\`<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>\`
   * 在\`<body>\`加入\`<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"><\/script>\`
-#
 ![圖片](/img/swiper輪播效果/swiper輪播效果-2.png)
-#
+
 -----------------------------------------------
-#
 3. 在\`<body>\`放入主容器
-#
 ![圖片](/img/swiper輪播效果/swiper輪播效果-3.png)
-#
+
 -----------------------------------------------
-#
 4. 先到在\`<style>\`寫主容器的寬度和高度
-#
 ![圖片](/img/swiper輪播效果/swiper輪播效果-4.png)
-#
+
 -----------------------------------------------
-#
 5. 到\`<script>\`後面寫上程式碼
-#
 ![圖片](/img/swiper輪播效果/swiper輪播效果-5.png)
-#
+
 -----------------------------------------------
-#
 6. 在\`swiper-slide\`裡面放圖片
-#
 ![圖片](/img/swiper輪播效果/swiper輪播效果-6.png)
-#
+
 -----------------------------------------------
-#
-## 輪播容器
-#
+### 輪播容器
+
 \`\`\`html
 <div class="swiper"><!--主容器-->  
   <div class="swiper-wrapper">
@@ -14456,22 +14267,18 @@ tags: ["javaScript"]
   <div class="swiper-scrollbar"></div><!--滾動條-->
 </div>
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 輪播容器樣式
-#
+### 輪播容器樣式
 \`\`\`css
 .swiper {
   width: 600px; 
   height: 300px;
 }
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 輪播方式設定
-#
+### 輪播方式設定
 \`\`\`js
 const swiper = new Swiper('.swiper', {
   direction: 'vertical',//垂直方向播放
@@ -14500,34 +14307,25 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
-\`\`\`
-#`,__vite_glob_0_64=Object.freeze(Object.defineProperty({__proto__:null,default:_20230423JavaScriptSwiper____},Symbol.toStringTag,{value:"Module"})),_20230424DesignUIUX____=`---
+\`\`\``,__vite_glob_0_64=Object.freeze(Object.defineProperty({__proto__:null,default:_20230423JavaScriptSwiper____},Symbol.toStringTag,{value:"Module"})),_20230424DesignUIUX____=`---
 title: 【Design】UIUX核心觀念
 date: 2023-04-24
 tags: ["design"]
 ---
-#
-## 單位
-#
-<!--more-->
-#
+### 單位
 * 解析度 px(device pixel)
   * 是抽象長度單位
   * 在不同螢幕上每個像素點大小都不同
-#
 * 螢幕密度 ppi、dpi
   * 圖像 ppi 值越高=畫面的細節越豐富
   * 300ppi = retina = 人眼無法分辨出像素點 = 視網膜螢幕
-#
 * dpi 是印刷用
   * 163dpi = 1x = 3G
   * 326dpi = 2x = 6/7
   * 401dpi = 3x = 6plus
-#
+
 -----------------------------------------------
-#
-## ios
-#
+### ios
 * ios 單位：pt
   * 1x = 1pt = 1px
   * 2x = 1pt = 2px
@@ -14544,57 +14342,46 @@ tags: ["design"]
   * 非觸控元件：30x30pt
   * 狀態欄位高度：44pt
   * 導航欄位高度：44pt
-#
+
 -----------------------------------------------
-#
-## android
-#
-- android 單位：
-  - 文字：sp
-  - 圖片、間距：dp
-#
-- 使用字體：
-  - 中文： Source Han Sans/Noto（思源黑體）
-  - 英文： Roboto
-#
-- 基本元件：
-  - 可觸控元件：48x48dp
-  - 頭像：40x40dp
-  - 元件內圖標：24x24dp
-  - 9 patch（九宮格）技術來顯示由 NicePatch 圖片提供的背景以適應不同的設備和螢幕大小
-#
+### android
+* android 單位：
+  * 文字：sp
+  * 圖片、間距：dp
+* 使用字體：
+  * 中文： Source Han Sans/Noto（思源黑體）
+  * 英文： Roboto
+* 基本元件：
+  * 可觸控元件：48x48dp
+  * 頭像：40x40dp
+  * 元件內圖標：24x24dp
+  * 9 patch（九宮格）技術來顯示由 NicePatch 圖片提供的背景以適應不同的設備和螢幕大小
+
 -----------------------------------------------
-#
-## 什麼是 UI、UX？
-#
-- UX=User(使用者)+Experience(體驗)
-  - 是使用體驗所有總和，包括 UI、情緒、認知、生理反應
-  - 產品形象(設計師)
-  - 問題回覆時間(客服人員)
-  - 頁面讀取速度(工程師)
-  - 產品經理(新功能規劃)
-#
-- UI=User(使用者)+Interface(介面)
-  - UI 是和特定『使用者』互動，平面設計面向『大眾』
-  - 透過視覺手段，讓使用者感受產品
-  - 使用者-介面-產品
-    - 螢幕觸控：手機、車機、平板
-    - 語音系統：Google Home
-    - 實體按鈕：遙控器、洗衣機、販賣機、電鍋
-#
+### 什麼是 UI、UX？
+* UX=User(使用者)+Experience(體驗)
+  * 是使用體驗所有總和，包括 UI、情緒、認知、生理反應
+  * 產品形象(設計師)
+  * 問題回覆時間(客服人員)
+  * 頁面讀取速度(工程師)
+  * 產品經理(新功能規劃)
+* UI=User(使用者)+Interface(介面)
+  * UI 是和特定『使用者』互動，平面設計面向『大眾』
+  * 透過視覺手段，讓使用者感受產品
+  * 使用者-介面-產品
+    * 螢幕觸控：手機、車機、平板
+    * 語音系統：Google Home
+    * 實體按鈕：遙控器、洗衣機、販賣機、電鍋
+
 -----------------------------------------------
-#
-## UCD 設計思維流程
-#
+### UCD 設計思維流程
 1. 了解使用情境
 2. 定義使用者需求
 3. 設計解決方案
 4. 評估設計成果
-#
+
 -----------------------------------------------
-#
-## 判斷產品體驗的七大指標
-#
+### 判斷產品體驗的七大指標
 1. 可用的(有幫助的)
 2. 有用的(減少錯誤)
 3. 令人嚮往的(配色、文案、視覺勾引力)
@@ -14602,68 +14389,55 @@ tags: ["design"]
 5. 有信用的(安全感)
 6. 可發現的
 7. 有價值的(綜合以上 6 點)
-#
+
 -----------------------------------------------
-#
-## UX 需要具備的五大元素
-#
+### UX 需要具備的五大元素
 1. 使用者需求與產品目標(了解用戶需求，提供什麼樣的服務)
 2. 功能規格與需求定義(提供什麼功能、願景)
 3. 資訊架構與互動設計(定義產品使用流程、架構)
 4. UI 設計與內容設計(互動設計、資訊層級)
 5. 視覺設計與美感(配色、視覺感受)
-#
+
 -----------------------------------------------
-#
-## 設計思考流程
-#
+### 設計思考流程
 1. 同理用戶(探索問題、找出使用者的痛點、做問卷訪談)
 2. 定義問題(假設問題)
 3. 發想創意(團隊討論、頭腦風暴、工作坊)
 4. 製作原型(製作範本使用來得到反饋)
 5. 測試(重新修改討問、解決問題)
-#
+
 -----------------------------------------------
-#
-## 通用設計原則
-#
-- 減少裝飾性元素、複雜度
-- 資訊重點讓文案明確易懂
-- 多留一點呼吸空間、留白拿捏
-- 視覺一致性、使用有限的顏色和字型
-- 遵循通用設計規範內容一致性、標準化
-- 增加文字和背景按鈕顏色對比度
-- 了解設計是給誰
-- 注意手指觸控範圍、按鈕大小
-- 簡化表單
-- 使用熟悉佈局、介面，減少熟悉時間
-- 按鈕要是可以點擊狀態
-- 使用者控制權、操控自由度
-#
+### 通用設計原則
+* 減少裝飾性元素、複雜度
+* 資訊重點讓文案明確易懂
+* 多留一點呼吸空間、留白拿捏
+* 視覺一致性、使用有限的顏色和字型
+* 遵循通用設計規範內容一致性、標準化
+* 增加文字和背景按鈕顏色對比度
+* 了解設計是給誰
+* 注意手指觸控範圍、按鈕大小
+* 簡化表單
+* 使用熟悉佈局、介面，減少熟悉時間
+* 按鈕要是可以點擊狀態
+* 使用者控制權、操控自由度
+
 -----------------------------------------------
-#
-## 前期設計工具
-#
-- 線框稿(wireframe)
-  - 用最少的視覺元素呈現
-  - 讓團隊了解排列位置、功能結構
-  - 不必添加內容
-- 介面流程圖(UI flow)
-  - 文字任務流程或視覺頁面流程
-  - 誰是使用者
-  - 他們的目標是什麼
-  - 怎樣到達目標
-- 使用者旅程地圖
-#`,__vite_glob_0_65=Object.freeze(Object.defineProperty({__proto__:null,default:_20230424DesignUIUX____},Symbol.toStringTag,{value:"Module"})),_20230425DesignFigma____=`---
+### 前期設計工具
+* 線框稿(wireframe)
+  * 用最少的視覺元素呈現
+  * 讓團隊了解排列位置、功能結構
+  * 不必添加內容
+* 介面流程圖(UI flow)
+  * 文字任務流程或視覺頁面流程
+  * 誰是使用者
+  * 他們的目標是什麼
+  * 怎樣到達目標
+* 使用者旅程地圖`,__vite_glob_0_65=Object.freeze(Object.defineProperty({__proto__:null,default:_20230424DesignUIUX____},Symbol.toStringTag,{value:"Module"})),_20230425DesignFigma____=`---
 title: 【Design】Figma使用教學
 date: 2023-04-25
 tags: ["design"]
 ---
-#
-## 免費版figma
-#
-<!--more-->
-#
+### 免費版figma
 * 團隊(不限)-專案(最多3個)-檔案(不限)
 * 免費版本控制只保留30天
     * 方法一：匯出檔案再匯入
@@ -14672,34 +14446,27 @@ tags: ["design"]
     * 方法二：儲存歷史並回朔紀錄(30天)
         * 點選左上角-檔案-儲存版控
         * 點選左上角-檔案-顯示版控
-#
+
 -----------------------------------------------
-#
-## 工具
-#
+### 工具
 * 元件
     * 群組(group)縮放內容變形
     * 框架(frame)縮放會被constraints固定
         * 重疊時會自動包覆
         * 按著滑鼠移動frame+空白鍵不會被包覆
-#
 * 文字
     * 行高建議1.4~1.6倍(140%~160%)
     * 點選文字控制區右上角(四個點)可建立文字樣版(命名：種類/樣式名稱)
     * 載入本地端字型：點擊頭像-setting-font
     * 文字底線可用陰影代替
-#
 * 圖片
     * 進行遮罩時，形狀需放在圖片下層，先群組再遮罩
-#
 * 顏色
     * 在滴管吸取時，滑鼠按著不放可瀏覽變色
     * 全選物件後，可在右邊顏色選擇器針對特定顏色選取
-#
+
 -----------------------------------------------
-#
-## 常用快捷鍵
-#
+### 常用快捷鍵
 |功能|快捷鍵|
 |---|---|
 |游標|\`V\`|
@@ -14727,11 +14494,9 @@ tags: ["design"]
 |垂直/水平反轉|\`shift\`+\`H\`/\`V\`|
 |調整透明度|點一下圖形+\`數字鍵\`|
 |調整尺寸|點一下圖形+\`方向鍵\`|
-#
+
 -----------------------------------------------
-#
-## 元件(Component)
-#
+### 元件(Component)
 * 元件本體(main component)
 * 元件分身(instance)
 * 元件建立
@@ -14742,11 +14507,9 @@ tags: ["design"]
     5. 在資源可用文字搜尋
     6. 修改樣式時統一使用元件本體
 \`若在instance上修改樣式，main component修改就不再同步\`
-#
+
 -----------------------------------------------
-#
-## 變體(Variants)
-#
+### 變體(Variants)
 * 將元件集合(component set)
 * 每個元件可以有多個屬性，每個屬性對應到一個值
 * 建立變體
@@ -14757,11 +14520,9 @@ tags: ["design"]
     5. 群組複製再次進行修改
     6. 檢查元件是否可以用分類選擇到
 \`只有元件才能進行變體\`
-#
+
 -----------------------------------------------
-#
-## 格線系統(grid system)
-#
+### 格線系統(grid system)
 1. 建立frame
 2. 啟用layout grid
 3. 選擇columns，count：12
@@ -14772,11 +14533,9 @@ tags: ["design"]
     * 4、8、12、16、20、24、28、32、40、48、56、64...
     * 
 \`斷點(break point)建議參考主流框架\`
-#
+
 -----------------------------------------------
-#
-## 建立核心樣式
-#
+### 建立核心樣式
 1. 顏色(預設/深色/淺色)
     * 主要色(Primary)品牌色、重要文字、按鈕
     * 次要色(Secondary)提示訊息、次要文字按鈕
@@ -14799,14 +14558,10 @@ tags: ["design"]
     * 階層不同、深淺度可調整
     * 行高1.4%~1.6%，大於24px建議1.25%
 3. 間距(8 point grids)
-
-
 * input 文字跟輸入框上下12px 左右16px 
-#
+
 -----------------------------------------------
-#
-## 建立完整按鈕樣式
-#
+### 建立完整按鈕樣式
 1. 元件名稱btn/form/nav
 3. 狀態default/hover/foucs/disabled
 5. icon有無true/false
@@ -14816,13 +14571,8 @@ title: 【CSS】Sass快速編譯+變數使用
 date: 2023-04-26
 tags: ["css"]
 ---
-#
-## SASS與SCSS與CSS差別
-#
-<!--more-->
-#
+### SASS與SCSS與CSS差別
 #### css樣式寫法
-#
 \`\`\`css
 .menu{
     display: flex;
@@ -14835,9 +14585,7 @@ tags: ["css"]
     color: #333333;
 }
 \`\`\`
-#
 #### scss樣式寫法
-#
 \`\`\`scss
 .menu{
   display: flex;
@@ -14850,11 +14598,8 @@ tags: ["css"]
   }
 }
 \`\`\`
-#
 \`以縮排方式編譯\`
-#
 #### sass樣式寫法
-#
 \`\`\`sass
 .menu
   display: flex
@@ -14864,15 +14609,11 @@ tags: ["css"]
       a
         color: #333333
 \`\`\`
-#
 \`少了{}以及;，以縮排方式編譯\`
-#
+
 -----------------------------------------------
-#
-## @mixin自訂樣式組
-#
+### @mixin自訂樣式組
 #### sass樣式寫法
-#
 \`\`\`sass
 /*變數設定*/
 @mixin greenCube
@@ -14884,9 +14625,7 @@ tags: ["css"]
 .box
     +greenCube
 \`\`\`
-#
 #### scss樣式寫法
-#
 \`\`\`scss
 /*變數設定*/
 @mixin greenCube{
@@ -14900,9 +14639,7 @@ tags: ["css"]
   @include greenCube;
 }
 \`\`\`
-#
 #### css編譯結果
-#
 \`\`\`css
 .box{
   width: 50px;
@@ -14910,13 +14647,10 @@ tags: ["css"]
   background-color: #28DF99;
 }
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## $自訂常用變數
-#
+### $自訂常用變數
 #### sass樣式寫法
-#
 \`\`\`sass
 /*變數設定*/
 $cube_width: 50px
@@ -14929,9 +14663,7 @@ $color_green: #28DF99
   height: $cube_height
   background-color: $color_green
 \`\`\`
-#
 #### scss樣式寫法
-#
 \`\`\`scss
 /*變數設定*/
 $cube_width: 50px;
@@ -14945,9 +14677,7 @@ $color_green: #28DF99;
   background-color: $color_green
 }
 \`\`\`
-#
 #### css編譯結果
-#
 \`\`\`css
 .box{
   width: 50px;
@@ -14955,13 +14685,10 @@ $color_green: #28DF99;
   background-color: #28DF99;
 }
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## @mixin+$混合用法
-#
+### @mixin+$混合用法
 #### sass樣式寫法
-#
 \`\`\`sass
 /*變數設定*/
 @mixin greenCube($width, $height, $color_green)
@@ -14973,9 +14700,7 @@ $color_green: #28DF99;
 .box
   +greenCube(50px,50px,#28DF99)
 \`\`\`
-#
 #### scss樣式寫法
-#
 \`\`\`scss
 /*變數設定*/
 @mixin greenCube($width, $height, $color_green){
@@ -14989,9 +14714,7 @@ $color_green: #28DF99;
   @include greenCube(50px, 50px, #28DF99);
 }
 \`\`\`
-#
 #### css編譯結果
-#
 \`\`\`css
 .box{
   width: 50px;
@@ -14999,13 +14722,10 @@ $color_green: #28DF99;
   background-color: #28DF99;
 }
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## @mixin+@media斷點用法
-#
+### @mixin+@media斷點用法
 #### sass樣式寫法
-#
 \`\`\`sass
 /*變數設定*/
 @mixin X-Small
@@ -15020,9 +14740,7 @@ $color_green: #28DF99;
   +X-Small
     background-color: red
 \`\`\`
-#
 #### scss樣式寫法
-#
 \`\`\`scss
 /*變數設定*/
 @mixin X-Small{
@@ -15042,9 +14760,7 @@ $color_green: #28DF99;
   }
 }
 \`\`\`
-#
 #### css編譯結果
-#
 \`\`\`css
 .box{
   width: 50px;
@@ -15057,13 +14773,10 @@ $color_green: #28DF99;
   }
 }
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 匯入@import
-#
+### 匯入@import
 #### 在all.scss使用@import再彙整出all.css
-#
 \`\`\`scss
 @import "variable"; /*常用變數*/
 @import "reset"; /*css reset*/
@@ -15071,9 +14784,7 @@ $color_green: #28DF99;
 @import "button"; /*按鈕元件*/
 @import "資料夾名稱/檔案名稱";
 \`\`\`
-#
 #### 檔名前面加上底線\`_\`可以被編譯，但不會被輸出
-#
 \`\`\`
 src/
 ├─── scss/
@@ -15084,9 +14795,7 @@ src/
 │
 └─── index.html          
 \`\`\`
-#
 #### @import的scss在編譯時會將變數連同帶走
-#
 \`\`\`scss
 /*custom.scss*/
 $primary-color: blue;
@@ -15107,45 +14816,26 @@ title: 【Mac】網頁的動態效果消失
 date: 2023-08-10
 tags: ["mac"]
 ---
-#
-## 測試
-#
-<!--more-->
-#
+### 測試
 1. 到[animate.css](https://animate.style/)網站點擊右側選項，看看中間animate.css字樣是否有效果
-#
 ![圖片](/img/瀏覽動畫效果消失/瀏覽動畫效果消失-1.png)
-#
+
 -----------------------------------------------
-#
 2. 若無效果，更換瀏覽器也無效，就直接到系統設定
-#
 ![圖片](/img/瀏覽動畫效果消失/瀏覽動畫效果消失-2.png)
-#
+
 -----------------------------------------------
-#
 3. 點“輔助使用”
-#
 ![圖片](/img/瀏覽動畫效果消失/瀏覽動畫效果消失-3.png)
-#
+
 -----------------------------------------------
-#
 4. 將“減少動態效果”取消勾選，即完成
-#
-![圖片](/img/瀏覽動畫效果消失/瀏覽動畫效果消失-4.png)
-#
-
-
-`,__vite_glob_0_68=Object.freeze(Object.defineProperty({__proto__:null,default:_20230810Mac__________},Symbol.toStringTag,{value:"Module"})),_20230811Gulp___gulp____=`---
+![圖片](/img/瀏覽動畫效果消失/瀏覽動畫效果消失-4.png)`,__vite_glob_0_68=Object.freeze(Object.defineProperty({__proto__:null,default:_20230810Mac__________},Symbol.toStringTag,{value:"Module"})),_20230811Gulp___gulp____=`---
 title: 【Gulp】安裝gulp建立bootstrap開發環境
 date: 2023-08-11
 tags: ["gulp"]
 ---
-#
-## gulp基本指令
-#
-<!--more-->
-#
+### gulp基本指令
 |指令|一般|縮寫|
 |---|---|---|
 |安裝|npm install gulp-sass|npm i gulp-sass|
@@ -15158,107 +14848,76 @@ tags: ["gulp"]
 |顯示清單|npm list|---|
 |更新套件|npm update gulp-sass|---|
 |部署到github上|gulp deploy|---|
-#
+
 -----------------------------------------------
-#
-## 建立gulp環境
-#
-### 1.下載node.js
+### 建立gulp環境
+1.下載node.js
 * [node.js下載網址](https://nodejs.org/en)
     * LTS：長期維護版(較穩定)
     * Current：目前最新版(較為不穩定)
-#
 * 檢查node版本:
-#
 \`\`\`html
 $ node -v
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 2.安裝npm套件管理工具
-#
+2.安裝npm套件管理工具
 * 安裝npm:
-#
 \`\`\`html
 $ npm insatll
 \`\`\`    
-#
 * 檢查npm版本:
-#
 \`\`\`html
 $ npm -v
 \`\`\`    
-#
+
 -----------------------------------------------
-#
-### 3.安裝gulp全域環境(每台電腦僅需執行一次)   
-#
+3.安裝gulp全域環境(每台電腦僅需執行一次)   
 * 安裝Gulp4:
-#
 \`\`\`html
 $ npm install gulp-cli -g
 \`\`\`    
-#
 * mac安裝Gulp4:
-#
 \`\`\`html
 $ sudo npm install gulp-cli -g
 \`\`\`  
-#
+
 -----------------------------------------------
-#
-### 4.生成package.json
-#
+4.生成package.json
 * 生成自訂package.json:
-#
 \`\`\`html
 $ npm init
 \`\`\`
-#
-#
 * 生成預設package.json:
-#
 \`\`\`html
 $ npm init -y
 \`\`\`
-#
 \`專案資料夾會自動生成package.json檔\`
-#
 \`\`\`
 you project
 └─── package.json  #記錄各種套件的版本，可以自行指定專案的名稱、版本等資訊
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 5.在專案安裝gulp套件
-#
+5.在專案安裝gulp套件
 * 安裝gulp套件:
-#
 \`\`\`html
 $ npm install gulp
 \`\`\`
-#
 * 檢查gulp套件版本:
-#
 \`\`\`html
 $ gulp -v
 \`\`\`
-#
 \`專案資料夾會自動生成node_modules/、package-lock.json\`
-#
 \`\`\`
 you project
 ├─── node_modules/  #gulp零件包
 ├─── package-lock.json  #詳細記錄了每個依賴套件的版本，防止不同開發者發生版本變更的意外
 └─── package.json         
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 6.將index.html檔新增在src資料夾裡
-#
+6.將index.html檔新增在src資料夾裡
 \`\`\`
 you project
 ├─── node_modules/        
@@ -15269,18 +14928,15 @@ you project
 ├─── package-lock.json    
 └─── package.json        
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 7.在根目錄新增gulpfile.js檔
-#
+7.在根目錄新增gulpfile.js檔
 * gulp.task(): 定義任務名稱
 * gulp.src(): 指定來源文件的路徑
 * .pipe(): 將導入的檔案做處理
 * gulp.dest(): 指定文件輸出目錄
 * gulp.watch(): 監聽指定文件的變動
 * gulp.serise(): 將任務串連
-#
 \`\`\`js
 const gulp = require('gulp'); //載入gulp套件
 
@@ -15290,7 +14946,6 @@ gulp.task('copyHTML', function(){ //創建'copyHTML'任務
     .pipe(gulp.dest('dist')) //編譯到'dist'資料夾
 });
 \`\`\`
-#
 \`\`\`
 you project
 ├─── node_modules/        
@@ -15302,17 +14957,13 @@ you project
 ├─── package-lock.json    
 └─── package.json         
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 8.在終端機執行指令
-#
+8.在終端機執行指令
 \`\`\`html
 $ gulp copyHTML
 \`\`\`
-#
 \`執行後dist資料夾內會自動複製出一個index.html\`
-#
 \`\`\`
 you project
 ├─── node_modules/        
@@ -15328,23 +14979,17 @@ you project
 ├─── package-lock.json    
 └─── package.json       
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 9.安裝gulp-sass編譯套件和sass(版本1.62.0)
-#
+9.安裝gulp-sass編譯套件和sass(版本1.62.0)
 * 安裝gulp-sass套件:
-#
 \`\`\`html
 $ npm install gulp-sass
 \`\`\`
-#
 * 安裝sass套件:
-#
 \`\`\`html
 $ npm install sass@1.62.0
 \`\`\`
-#
 \`\`\`js
 const gulp = require('gulp'); 
 const sass = require('gulp-sass')(require('sass')); //載入gulp-sass套件
@@ -15364,21 +15009,16 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('dist/css')) ////編譯到'dist'底下的'css'資料夾
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 10.安裝bootstrap套件(版本4.6.2)
-#
+10.安裝bootstrap套件(版本4.6.2)
 \`\`\`html
 $ npm install bootstrap@4.6.2
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 11.建立all.scss
-#
+11.建立all.scss
 * 在src資料夾裡新增css資料夾，然後建立all.scss
-#
 \`\`\`
 you project
 ├─── node_modules/        
@@ -15397,13 +15037,10 @@ you project
 ├─── package-lock.json    
 └─── package.json         
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 12.將bootstrap的變數檔複製到本地
-#
+12.將bootstrap的變數檔複製到本地
 * 將node_modules/bootstrap/scss/_variables.scss複製到src/scss/helpers
-#
 \`\`\`
 you project
 ├─── node_modules/        
@@ -15428,13 +15065,10 @@ you project
 ├─── package-lock.json    
 └─── package.json         
 \`\`\`
-#
 \`_variable.scss有底線的檔案不會被編譯，但可以被合併\`
-#
+
 -----------------------------------------------
-#
-### 13.打開all.scss檔引用boostrap
-#
+13.打開all.scss檔引用boostrap
 \`\`\`scss
 @import "../../node_modules/bootstrap/scss/functions"; //bootstrap，設置文字顏色、背景顏色、邊框等樣式
 
@@ -15446,43 +15080,32 @@ you project
 
 @import 'custom'; //本地檔案，編寫用
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 14.回到index.html裡引用css
-#
+14.回到index.html裡引用css
 \`\`\`html
 <head>
   <link rel="stylesheet" href="css/all.css">
 </head>
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 15.回到gulpfile.js添加任務清單
-#
+15.回到gulpfile.js添加任務清單
 \`\`\`js
 gulp.task('default', gulp.series('copyHTML','sass'));
 \`\`\`
-#
 \`\`\`html
 $ gulp
 \`\`\`
-#
 \`只要執行'gulp'會接續執行'copyHTML'、'sass'任務\`
-#
+
 -----------------------------------------------
-#
 ### 若遇到cannot find module "nan"
-#
 1. 清除npm緩存
-#
 \`\`\`html
 $ npm cache clean --force
 \`\`\`
-#
 2. 在根目錄下運行安裝nan模組
-#
 \`\`\`html
 $ npm install nan --save
 \`\`\``,__vite_glob_0_69=Object.freeze(Object.defineProperty({__proto__:null,default:_20230811Gulp___gulp____},Symbol.toStringTag,{value:"Module"})),_20230812Gulp__scss_____css=`---
@@ -15490,21 +15113,14 @@ title: 【Gulp】將scss自動編譯成css
 date: 2023-08-12
 tags: ["gulp"]
 ---
-#
-## gulp-sass
-#
-<!--more-->
-#
+### gulp-sass
 1. 在專案中打開終端機安裝\`gulp-sass\`和\`sass\`套件(版本@1.62.0)
-#
 \`\`\`html
 $ npm install gulp-sass sass@1.62.0
 \`\`\`
-#
+
 -----------------------------------------------
-#
 2. 在gulpfile.js新增程式碼
-#
 \`\`\`js
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
@@ -15518,19 +15134,15 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('dist/css')) //css編譯完成路徑
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
 3. 在終端機執行指令
-#
 \`\`\`html
 $ gulp sass
 \`\`\`
-#
+
 -----------------------------------------------
-#
 4. 執行結果會將src裡的scss編譯，生成到dist裡變成css
-#
 \`\`\`
 you project
 ├─── node_modules/        
@@ -15549,26 +15161,22 @@ you project
 ├─── package-lock.json    
 └─── package.json  
 \`\`\`
-#
+
 -----------------------------------------------
-#
 5. 回到index.html引入css
-#
 \`\`\`html
 <head>
     <link rel="stylesheet" href="css/all.css">
 </head>
 \`\`\`
-#
+
 -----------------------------------------------
-#
 6. 回到gulpfile.js設置屬性
     * \`outputStyle\`: 字串，編譯出的檔案形式
         * \`'nested'\`: 保留原始的巢狀層次結構(預設值)
         * \`'expanded'\`: 保留巢狀的層次結構，每個選擇器和屬性都有自己的行
         * \`'compact'\`: 將每個規則放在單獨的一行
         * \`'compressed'\`: 刪除所有的空白字符和換行，減少加載時間
-#
 \`\`\`js
 const gulp = require('gulp');
 const sass = require('gulp-sass');
@@ -15585,11 +15193,9 @@ gulp.task('sass', function(){
 
 gulp.task('default', gulp.series('sass'));
 \`\`\`
-#
+
 -----------------------------------------------
-#
 7. 最後，在終端機執行\`gulp\`即可完成任務
-#
 \`\`\`html
 $ gulp
 \`\`\``,__vite_glob_0_70=Object.freeze(Object.defineProperty({__proto__:null,default:_20230812Gulp__scss_____css},Symbol.toStringTag,{value:"Module"})),_20230813Gulp__javascript_______=`---
@@ -15597,23 +15203,15 @@ title: 【Gulp】將javascript整合成穩定版本
 date: 2023-08-13
 tags: ["gulp"]
 ---
-#
-## gulp-babel
-#
-<!--more-->
-#
+### gulp-babel
 1. 在專案中打開終端機安裝\`gulp-babel\`、\`@babel/core\`、\`@babel/preset-env\`套件
-#
 \`\`\`html
 $ npm install gulp-babel @babel/core @babel/preset-env
 \`\`\`
-#
 \`@開頭的套件，表示這是一個由特定組織或作者維護的套件\`
-#
+
 -----------------------------------------------
-#
 2. 在gulpfile.js新增程式碼
-#
 \`\`\`js
 const gulp = require('gulp');
 const babel = require('gulp-babel');
@@ -15629,19 +15227,15 @@ gulp.task('babel', function(){
     .pipe(gulp.dest('dist/js')) //js編譯完成路徑
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
 3. 在終端機執行指令
-#
 \`\`\`html
 $ gulp babel
 \`\`\`
-#
+
 -----------------------------------------------
-#
 4. 執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯，生成到dist裡變成穩定的all.js
-#
 \`\`\`
 you project
 ├─── node_modules/        
@@ -15660,22 +15254,18 @@ you project
 ├─── package-lock.json    
 └─── package.json  
 \`\`\`
-#
+
 -----------------------------------------------
-#
 5. 回到index.html引入js
-#
 \`\`\`html
 <body>
     <script src="js/all.js"><\/script>
 </body>
 \`\`\`
-#
+
 -----------------------------------------------
-#
 6. 回到gulpfile.js設置屬性
     * \`minified\`: 布林值，是否要壓縮代碼
-#
 \`\`\`js
 const gulp = require('gulp');
 const babel = require('gulp-babel');
@@ -15694,15 +15284,12 @@ gulp.task('babel', function(){
 
 gulp.task('default', gulp.series('babel'));
 \`\`\`
-#
+
 -----------------------------------------------
-#
 7. 【補充】安裝\`gulp-plumber\`編譯發生錯誤時，將訊息傳到控制台
-#
 \`\`\`html
 $ npm install gulp-plumber
 \`\`\`
-#
 \`\`\`js
 const gulp = require('gulp');
 const babel = require('gulp-babel');
@@ -15723,11 +15310,8 @@ gulp.task('babel', function(){
 
 gulp.task('default', gulp.series('babel'));
 \`\`\`
-#
 -----------------------------------------------
-#
 8. 最後，在終端機執行\`gulp\`即可完成任務
-#
 \`\`\`html
 $ gulp
 \`\`\``,__vite_glob_0_71=Object.freeze(Object.defineProperty({__proto__:null,default:_20230813Gulp__javascript_______},Symbol.toStringTag,{value:"Module"})),_20230814Gulp__css______________=`---
@@ -15735,21 +15319,14 @@ title: 【Gulp】將css樣式加上前綴增加瀏覽器兼容性
 date: 2023-08-14
 tags: ["gulp"]
 ---
-#
-## gulp-postcss
-#
-<!--more-->
-#
+### gulp-postcss
 1. 在專案中打開終端機安裝\`gulp-postcss\`、\`autoprefixer\`、\`cssnano\`、\`gulp-sass\`、\`sass\`套件(版本@1.62.0)
-#
 \`\`\`html
 $ npm install gulp-postcss autoprefixer cssnano gulp-sass sass@1.62.0
 \`\`\`
-#
+
 -----------------------------------------------
-#
 2. 在gulpfile.js新增程式碼
-#
 \`\`\`js
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
@@ -15771,19 +15348,15 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('dist/css'));
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
 3. 在終端機執行指令
-#
 \`\`\`html
 $ gulp sass
 \`\`\`
-#
+
 -----------------------------------------------
-#
 4. 執行結果會將css樣式加上前綴詞\`-webkit-\`讓瀏覽器兼容性更好
-#
 \`\`\`
 you project
 ├─── node_modules/        
@@ -15802,25 +15375,20 @@ you project
 ├─── package-lock.json    
 └─── package.json  
 \`\`\`
-#
+
 -----------------------------------------------
-#
 5. 回到index.html引入css
-#
 \`\`\`html
 <head>
     <link rel="stylesheet" href="css/all.css">
 </head>
 \`\`\`
-#
+
 -----------------------------------------------
-#
 6. 回到gulpfile.js啟用\`cssnano\`高級轉換組件
-#
 \`\`\`html
 $ npm install cssnano-preset-advanced
 \`\`\`
-#
 \`\`\`js
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
@@ -15844,15 +15412,12 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('dist/css'));
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
 7. 啟用\`postcss-preset-env\`套件
-#
 \`\`\`html
 npm install postcss-preset-env
 \`\`\`
-#
 \`\`\`js
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
@@ -15880,15 +15445,12 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('dist/css'));
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
 8. 啟用\`postcss-flexbugs-fixes\`套件
-#
 \`\`\`html
 $ npm install postcss-flexbugs-fixes
 \`\`\`
-#
 \`\`\`js
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
@@ -15919,11 +15481,9 @@ gulp.task('sass', function(){
 
 gulp.task('default', gulp.series('sass'));
 \`\`\`
-#
+
 -----------------------------------------------
-#
 9. 最後，在終端機執行\`gulp\`即可完成任務
-#
 \`\`\`html
 $ gulp
 \`\`\``,__vite_glob_0_72=Object.freeze(Object.defineProperty({__proto__:null,default:_20230814Gulp__css______________},Symbol.toStringTag,{value:"Module"})),_20230815Gulp______map______=`---
@@ -15931,21 +15491,14 @@ title: 【Gulp】生成程式碼map以利除錯編譯
 date: 2023-08-15
 tags: ["gulp"]
 ---
-#
-## gulp-sourcemaps
-#
-<!--more-->
-#
+### gulp-sourcemaps
 1. 在專案中打開終端機安裝\`gulp-sourcemaps\`、\`gulp-sass\`、\`sass\`套件(版本@1.62.0)
-#
 \`\`\`html
 $ npm install gulp-sourcemaps gulp-sass sass@1.62.0
 \`\`\`
-#
+
 -----------------------------------------------
-#
 2. 在gulpfile.js新增程式碼
-#
 \`\`\`js
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
@@ -15962,19 +15515,15 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('dist/css'))
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
 3. 在終端機執行指令
-#
 \`\`\`html
 $ gulp sass
 \`\`\`
-#
+
 -----------------------------------------------
-#
 4. 執行結果會在all.css旁自動新加入一個.map檔
-#
 \`\`\`
 you project
 ├─── node_modules/        
@@ -15999,19 +15548,15 @@ you project
 ├─── package-lock.json    
 └─── package.json  
 \`\`\`
-#
+
 -----------------------------------------------
-#
 5. 回到gulpfile.js添加任務清單
-#
 \`\`\`js
 gulp.task('default', gulp.series('sass'));
 \`\`\`
-#
+
 -----------------------------------------------
-#
 6. 最後，在終端機執行\`gulp\`即可完成任務
-#
 \`\`\`html
 $ gulp
 \`\`\``,__vite_glob_0_73=Object.freeze(Object.defineProperty({__proto__:null,default:_20230815Gulp______map______},Symbol.toStringTag,{value:"Module"})),_20230816Gulp_____js_________=`---
@@ -16019,21 +15564,14 @@ title: 【Gulp】將引入的js套件合併成一個檔案
 date: 2023-08-16
 tags: ["gulp"]
 ---
-#
-## gulp-concat
-#
-<!--more-->
-#
+### gulp-concat
 1. 在專案中打開終端機安裝\`gulp-concat\`、\`jquery\`、\`bootstrap\`套件(版本@4.6.2)
-#
 \`\`\`html
 $ npm install gulp-concat jquery bootstrap@4.6.2
 \`\`\`
-#
+
 -----------------------------------------------
-#
 2. 在gulpfile.js新增程式碼
-#
 \`\`\`js
 const gulp = require('gulp');
 const concat = require('gulp-concat');
@@ -16049,19 +15587,15 @@ gulp.task('concat', function(){
     .pipe(gulp.dest('dist/css'));
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
 3. 在終端機執行指令
-#
 \`\`\`html
 $ gulp concat
 \`\`\`
-#
+
 -----------------------------------------------
-#
 4. 執行結果會在src裡新增一個\`all.js\`檔
-#
 \`\`\`
 you project
 ├─── node_modules/        
@@ -16080,19 +15614,15 @@ you project
 ├─── package-lock.json    
 └─── package.json  
 \`\`\`
-#
+
 -----------------------------------------------
-#
 5. 回到gulpfile.js添加任務清單
-#
 \`\`\`js
 gulp.task('default', gulp.series('concat'));
 \`\`\`
-#
+
 -----------------------------------------------
-#
 6. 最後，在終端機執行\`gulp\`即可完成任務
-#
 \`\`\`html
 $ gulp
 \`\`\``,__vite_glob_0_74=Object.freeze(Object.defineProperty({__proto__:null,default:_20230816Gulp_____js_________},Symbol.toStringTag,{value:"Module"})),_20230817Gulp_____________=`---
@@ -16100,21 +15630,15 @@ title: 【Gulp】開啟本地端伺服器瀏覽網站
 date: 2023-08-17
 tags: ["gulp"]
 ---
-#
-## browser-sync
-#
-<!--more-->
-#
+### browser-sync
 1. 在專案中打開終端機安裝\`browser-sync\`、\`gulp-sass\`、\`sass\`套件(版本@1.62.0)
 #
 \`\`\`html
 $ npm install browser-sync gulp-sass sass@1.62.0
 \`\`\`
-#
+
 -----------------------------------------------
-#
 2. 在gulpfile.js新增程式碼
-#
 \`\`\`js
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
@@ -16146,19 +15670,15 @@ gulp.task('watch', function(){
   gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
 3. 在終端機執行指令
-#
 \`\`\`html
 $ gulp watch
 \`\`\`
-#
+
 -----------------------------------------------
-#
 4. 執行結果會在dist複製出一個\`index.html\`，dist/css會生成\`all.css\`檔
-#
 \`\`\`
 you project
 ├─── node_modules/        
@@ -16180,15 +15700,13 @@ you project
 ├─── package-lock.json    
 └─── package.json   
 \`\`\`
-#
+
 -----------------------------------------------
-#
 5. 回到gulpfile.js設定其他屬性
     * \`port\`: 數字，指定代理伺服器的埠號
     * \`reloadDelay\`: 數字，重新加載延遲時間
     * \`browser\`: 字串，指定在哪個瀏覽器中打開網站
     * \`open\`: 布林值，指定是否自動打開瀏覽器
-#
 \`\`\`js
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
@@ -16227,11 +15745,9 @@ gulp.task('watch', function(){
 
 gulp.task('default', gulp.series('copyHTML','sass','watch'));
 \`\`\`
-#
+
 -----------------------------------------------
-#
 6. 最後，在終端機執行\`gulp\`即可完成任務
-#
 \`\`\`html
 $ gulp
 \`\`\``,__vite_glob_0_75=Object.freeze(Object.defineProperty({__proto__:null,default:_20230817Gulp_____________},Symbol.toStringTag,{value:"Module"})),_20230818Gulp_____________=`---
@@ -16239,21 +15755,14 @@ title: 【Gulp】自動刪除上一次的編譯結果
 date: 2023-08-18
 tags: ["gulp"]
 ---
-#
-## del
-#
-<!--more-->
-#
+### del
 1. 在專案中打開終端機安裝\`del\`套件(版本6.1.1)
-#
 \`\`\`html
 $ npm install del@6.1.1
 \`\`\`
-#
+
 -----------------------------------------------
-#
 2. 在gulpfile.js新增程式碼
-#
 \`\`\`js
 const gulp = require('gulp');
 const del = require('del');
@@ -16268,19 +15777,15 @@ gulp.task('copyHTML', function(){
     .pipe(gulp.dest('dist'))
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
 3. 在終端機執行指令
-#
 \`\`\`html
 $ gulp clean
 \`\`\`
-#
+
 -----------------------------------------------
-#
 4. 執行後會先執行刪除動作後，再重新生成新的index.html
-#
 \`\`\`
 you project
 ├─── node_modules/         
@@ -16296,13 +15801,11 @@ you project
 ├─── package-lock.json    
 └─── package.json   
 \`\`\`
-#
+
 -----------------------------------------------
-#
 5. 回到gulpfile.js設定其他屬性
     * \`gitignore\`: 布林值，刪除時是否要保留版本控制的檔案
     * \`force\`: 布林值，檔案被其他程式佔用或是唯讀檔案是否強制刪除
-#
 \`\`\`js
 const gulp = require('gulp');
 const del = require('del');
@@ -16324,11 +15827,9 @@ gulp.task('copyHTML', function(){
 
 gulp.task('default', gulp.series('copyHTML','clean'));
 \`\`\`
-#
+
 -----------------------------------------------
-#
 6. 最後，在終端機執行\`gulp\`即可完成任務
-#
 \`\`\`html
 $ gulp
 \`\`\``,__vite_glob_0_76=Object.freeze(Object.defineProperty({__proto__:null,default:_20230818Gulp_____________},Symbol.toStringTag,{value:"Module"})),_20230819Gulp________=`---
@@ -16336,21 +15837,14 @@ title: 【Gulp】壓縮圖片並優化
 date: 2023-08-19
 tags: ["gulp"]
 ---
-#
-## gulp-imagemin
-#
-<!--more-->
-#
+### gulp-imagemin
 1. 在專案中打開終端機安裝\`gulp-imagemin\`套件(版本@7.1.0)
-#
 \`\`\`html
 $ npm install gulp-imagemin@7.1.0
 \`\`\`
-#
+
 -----------------------------------------------
-#
 2. 在gulpfile.js新增程式碼
-#
 \`\`\`js
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
@@ -16362,21 +15856,16 @@ gulp.task('imagemin', function(){
     .pipe(gulp.dest('dist/img'));
 });
 \`\`\`
-#
 \`{ encoding: false }多增加這行，可以確保圖片不會被以編碼方式處理\`
-#
+
 -----------------------------------------------
-#
 3. 在終端機執行指令
-#
 \`\`\`html
 $ gulp imagemin
 \`\`\`
-#
+
 -----------------------------------------------
-#
 4. 執行後會自動壓縮img裡的圖片，到dist裡的img資料夾裡
-#
 \`\`\`html
 you project
 ├─── node_modules/    
@@ -16394,11 +15883,9 @@ you project
 ├─── package-lock.json    
 └─── package.json   
 \`\`\`
-#
+
 -----------------------------------------------
-#
 5. 回到gulpfile.js設定其他屬性
-#
 * \`imagemin-mozjpeg\`設定JPEG圖片
     * \`quality\`: 壓縮品質
         * \`0\`: 壓縮最大，品質最差
@@ -16425,7 +15912,6 @@ you project
         * \`removeDimensions\`: 布林值，用於刪除SVG中的width和height屬性(預設值false)
         * \`removeUselessDefs\`: 布林值，用於刪除SVG中無用的<defs>元素(預設值true)
         * \`convertColors\`: 布林值，用於嘗試將顏色值轉換為合適的CSS顏色名稱如果適用(預設值true)
-#
 \`\`\`js
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
@@ -16452,15 +15938,12 @@ gulp.task('imagemin', function(){
 
 gulp.task('default', gulp.series('imagemin'));
 \`\`\`
-#
+
 -----------------------------------------------
-#
 7. 【補充】安裝\`gulp-newer\`套件：只針對新加入的檔案做動作
-#
 \`\`\`
 $ npm install gulp-newer
 \`\`\`
-#
 \`\`\`js
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
@@ -16489,10 +15972,9 @@ gulp.task('imagemin', function(){
 
 gulp.task('default', gulp.series('imagemin'));
 \`\`\`
+
 -----------------------------------------------
-#
 8. 最後，在終端機執行\`gulp\`即可完成任務
-#
 \`\`\`html
 $ gulp
 \`\`\``,__vite_glob_0_77=Object.freeze(Object.defineProperty({__proto__:null,default:_20230819Gulp________},Symbol.toStringTag,{value:"Module"})),_20230820GulpNunjucks____=`---
@@ -16500,21 +15982,14 @@ title: 【Gulp】nunjucks網頁模版
 date: 2023-08-20
 tags: ["gulp"]
 ---
-#
-## gulp-nunjucks-render
-#
-<!--more-->
-#
+### gulp-nunjucks-render
 1. 在專案中打開終端機安裝\`gulp-nunjucks-render\`套件
-#
 \`\`\`html
 $ npm install gulp-nunjucks-render
 \`\`\`
-#
+
 -----------------------------------------------
-#
 2. 在gulpfile.js新增程式碼
-#
 \`\`\`js
 const gulp = require('gulp');
 const nunjucksRender = require('gulp-nunjucks-render');
@@ -16529,19 +16004,15 @@ gulp.task('layout',function(){
     .pipe(browserSync.stream());
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
 3. 在終端機執行指令
-#
 \`\`\`html
 $ gulp layout
 \`\`\`
-#
+
 -----------------------------------------------
-#
 4. 執行後會自動壓縮img裡的圖片，到dist裡的img資料夾裡
-#
 \`\`\`html
 you project
 ├─── node_modules/    
@@ -16559,15 +16030,11 @@ you project
 ├─── package-lock.json
 └─── package.json
 \`\`\`
-#
+
 -----------------------------------------------
-#
 ### nunjucks模板基礎用法1
-#
 #### 將重複標籤寫成模板
-#
 * layout.njk(父層)：
-#
 \`\`\`html
 <!DOCTYPE html>
 <html lang="zh-tw">
@@ -16585,9 +16052,7 @@ you project
 </body>
 </html>
 \`\`\`
-#
 * index.html(子層)：
-#
 \`\`\`html
 {% extends "layout.njk" %}
 
@@ -16597,9 +16062,7 @@ you project
 </div>
 {% endblock %}
 \`\`\`
-#
 * 渲染出的結果：
-#
 \`\`\`html
 <!DOCTYPE html>
 <html lang="zh-tw">
@@ -16619,13 +16082,10 @@ you project
 </body>
 </html>
 \`\`\`
-#
+
 -----------------------------------------------
-#
-#### 從模板寫回父層
-#
+### 從模板寫回父層
 * index.html(子層)
-#
 \`\`\`html
 {% extends "layout.njk" %}
 
@@ -16639,68 +16099,26 @@ you project
 
 {% endblock %}
 \`\`\`
-#
+
 -----------------------------------------------
-#
-#### 判斷式顯示
-#
+### 判斷式顯示
 * layout.njk(父層)：
-#
 \`\`\`html
   {% if variable %}
   <p>如果是true就換出現這段</p>
   {% endif %}
 \`\`\`
-#
 * index.html(子層)：
-#
 \`\`\`html
   {% set variable = true %}
 \`\`\`
-#
 * 渲染出的結果：
-#
 \`\`\`html
   <p>如果是true就換出現這段</p>
 \`\`\`
-#
------------------------------------------------
-#
-#### 進階判斷式顯示
-#
-* layout.njk(父層)：
-#
-\`\`\`html
-    {% if hungry %}
-    <p>如果hungry成立就顯示</p>
-    {% elif tired %}
-    <p>如果tired成立就顯示</p>
-    {% else %}
-    <p>如果hungry、tired都不成立就顯示</p>
-    {% endif %}
-\`\`\`
-#
-* index.html(子層)：
-#
-\`\`\`html
-
-\`\`\`
-#
-* 渲染出的結果：
-#
-\`\`\`html
-  <p>如果hungry、tired都不成立就顯示</p>
-\`\`\`
-
-
-
-
-
 
 -----------------------------------------------
-#
 * extends用於模板繼承
-#
 \`\`\`html
 <!-- layout.njk -->
 <!DOCTYPE html>
@@ -16716,7 +16134,6 @@ you project
 </body>
 </html>
 \`\`\`
-#
 \`\`\`html
 <!-- index.html -->
 {% extends "layout.njk" %}
@@ -16724,23 +16141,12 @@ you project
 {% block content %}
 撰寫的內容
 {% endblock %}
-\`\`\`
-#
------------------------------------------------
-#
-* import用於導入macro，可以重複在模板使用
-#
-\`\`\`
 \`\`\``,__vite_glob_0_78=Object.freeze(Object.defineProperty({__proto__:null,default:_20230820GulpNunjucks____},Symbol.toStringTag,{value:"Module"})),_20230821Gulp___gulp__final_=`---
 title: 【Gulp】最終gulp完整final版
 date: 2023-08-21
 tags: ["gulp"]
 ---
-#
-## gulp-nunjucks-render
-#
-<!--more-->
-#
+### gulp-nunjucks-render
 \`\`\`js
 const gulp                 = require('gulp');
 const sass                 = require('gulp-sass')(require('sass'));
@@ -16868,11 +16274,7 @@ title: 【CSS】footer置底方法
 date: 2024-01-01
 tags: ["css"]
 ---
-#
-## 如何讓footer置底
-#
-<!--more-->
-#
+### 如何讓footer置底
 \`\`\`css
 html{
   height: 100%;
@@ -16894,21 +16296,12 @@ title: 【Web】VScode技巧+實用套件
 date: 2024-01-02
 tags: ["css"]
 ---
-#
-## 快捷鍵用法
-#
-<!--more-->
-#
+### 快捷鍵用法
 1. 快速移動程式碼：在程式碼上按住 option 鍵＋上下鍵
-#
 2. 快速跳躍字詞：按住 option 鍵＋左右鍵
-#
 3. 快速選取整行程式碼：在該程式碼行按住 command ＋ L
-#
 4. 開啟設定：command+“逗點”，若要進入 setting.json 檔點右上角 file 圖示
-#
 5. 在 JS 片段中使用 Emmet 輸入，進入 setting.json 加入以下程式碼:
-#
 \`\`\`json
 {
   "emmet.includeLanguages": {
@@ -16922,72 +16315,52 @@ tags: ["css"]
   "editor.minimap.enabled": false
 }
 \`\`\`
-#
 6. 複製程式碼：只要游標在程式碼尾端 command ＋ C 即可複製
-#
 7. 設定縮排為“2 空格”，點擊 vscode 最底下的按鈕調整：
    * 第一步：先將縮排轉換為定位點
    * 第二步：使用空格進行縮排，調整為 2
-#
 8. 快速選取程式碼：
    * 第一步：進入設定搜尋"展開選取項目"
    * 第二步：設定快捷鍵“control ＋ shift ＋ →”
-#
 9. 快速重新命名標籤頭尾名：
    * 第一步：進入設定搜尋"重新命名符號"
    * 第二步：設定快捷鍵“control ＋ F”
-#
 10. 資料夾路徑重疊修改：進入“設定”，搜尋“Compact Folders”，取消勾選
-#
+
 -----------------------------------------------
-#
-## 實用的套件
-#
+### 實用的套件
 1. Chinese Language Pack for Visua
    * 說明：讓 vscode 介面變成繁體中文
-#
 2. Live Server
    * 說明：能建立伺服器，在瀏覽器查看網頁
    * 用法：
      1. 對 html 檔右鍵“Open with Live Server”
      2. 點擊 vscode 最下方"Go Live"就可以每次編輯後存檔並自動刷新頁面
-#
 3. Atom Keymap
    * 說明：可快速編寫 JS、切換視窗
    * 用法：
      1. command ＋ 1,2,3 可快速切換視窗
      2. 在編寫 JS 片段時，輸入“log”＋ tab 鍵，可快速展開成"console.log"
-#
 4. Prettier - Code formatter
    * 說明：快速整理程式碼
    * 用法：
      1. option ＋ shift ＋Ｆ可快速整理程式碼
      2. 若要將雙引號改為單引號，進入 setting.json 輸入：
-#
 \`\`\`json
 "prettier.singleQuote": true,
 \`\`\`
-#
 5. Code Spell Checker
    * 說明：自動檢查英文拼字有無錯誤
    * 用法：安裝後，在編寫錯誤的英文單字底下，會自動顯示藍色波浪
-#
 6. indent-rainbow
-   * 說明：讓code縮排呈現彩虹
-#`,__vite_glob_0_81=Object.freeze(Object.defineProperty({__proto__:null,default:_20240102WebVScode_______},Symbol.toStringTag,{value:"Module"})),_20240103Mac________=`---
+   * 說明：讓code縮排呈現彩虹`,__vite_glob_0_81=Object.freeze(Object.defineProperty({__proto__:null,default:_20240102WebVScode_______},Symbol.toStringTag,{value:"Module"})),_20240103Mac________=`---
 title: 【Mac】將檔案加密方法
 date: 2024-01-03
 tags: ["mac"]
 ---
-#
-## 將檔案加密方法
-#
-<!--more-->
-#
+### 將檔案加密方法
 1. 打開終端機：command ＋空白，輸入 terminal，enter 開啟 app
-#
 2. 先輸入 cd，再把欲加密檔案直接拉進終端機，然後把資料名稱刪除(**要先在資料夾外層**)
-#
 3. 接著輸入:
 \`\`\`
 $ zip -er 資料夾名稱.zip 資料夾名稱
@@ -16997,67 +16370,43 @@ $ zip -er 資料夾名稱.zip 資料夾名稱
 $ zip -er dist.zip dist
 \`\`\`
 4. 接著會出現”Enter password:“，設定密碼
-#
 5. enter 後出現“Verify password:”，再次輸入密碼
-#
 6. 完成後，該資料夾就會出現加密 zip 檔`,__vite_glob_0_82=Object.freeze(Object.defineProperty({__proto__:null,default:_20240103Mac________},Symbol.toStringTag,{value:"Module"})),_20240104WebChrome_______=`---
 title: 【Web】Chrome網頁長截圖方法
 date: 2024-01-04
 tags: ["web"]
 ---
-#
-## Chrome 網頁長截圖方法
-#
-<!--more-->
-#
+### Chrome 網頁長截圖方法
 1. 打開 Chrome 到欲長截圖頁面，右鍵“檢查”，快捷鍵(option ＋ command ＋ I)
-#
 ![圖片](/img/Chrome網頁長截圖方法/Chrome網頁長截圖方法-1.png)
-#
+
 -----------------------------------------------
 2. 執行，快捷鍵(command ＋ shift ＋ P)
-#
 ![圖片](/img/Chrome網頁長截圖方法/Chrome網頁長截圖方法-2.png)
-#
+
 -----------------------------------------------
 3. 中文輸入“截圖”，英文輸入“capture full size screenshot”
-#
-![圖片](/img/Chrome網頁長截圖方法/Chrome網頁長截圖方法-3.png)
-#
-`,__vite_glob_0_83=Object.freeze(Object.defineProperty({__proto__:null,default:_20240104WebChrome_______},Symbol.toStringTag,{value:"Module"})),_20240105Web___Devtools__api__=`---
+![圖片](/img/Chrome網頁長截圖方法/Chrome網頁長截圖方法-3.png)`,__vite_glob_0_83=Object.freeze(Object.defineProperty({__proto__:null,default:_20240104WebChrome_______},Symbol.toStringTag,{value:"Module"})),_20240105Web___Devtools__api__=`---
 title: 【Web】使用Devtools找出api資料
 date: 2024-01-05
 tags: ["web"]
 ---
-#
-## 使用Devtools找出api資料
-#
-<!--more-->
-#
+### 使用Devtools找出api資料
 1. 打開 Chrome 到欲找資料頁面，右鍵“檢查”，快捷鍵(option ＋ command ＋ I)
-#
 ![圖片](/img/使用Devtools找出api資料/使用Devtools找出api資料-1.png)
-#
+
 -----------------------------------------------
 2. 點擊網路“network”，並重新整理頁面
-#
 ![圖片](/img/使用Devtools找出api資料/使用Devtools找出api資料-2.png)
-#
+
 -----------------------------------------------
 3. 點擊“Fetch/XHR”(JSON、XML、HTML)，並查找看是哪一隻檔案，並預覽查看資料內容
-#
-![圖片](/img/使用Devtools找出api資料/使用Devtools找出api資料-3.png)
-#
-`,__vite_glob_0_84=Object.freeze(Object.defineProperty({__proto__:null,default:_20240105Web___Devtools__api__},Symbol.toStringTag,{value:"Module"})),_20240106HTML______Google__=`---
+![圖片](/img/使用Devtools找出api資料/使用Devtools找出api資料-3.png)`,__vite_glob_0_84=Object.freeze(Object.defineProperty({__proto__:null,default:_20240105Web___Devtools__api__},Symbol.toStringTag,{value:"Module"})),_20240106HTML______Google__=`---
 title: 【HTML】在網頁嵌入Google地圖
 date: 2024-01-06
 tags: ["html"]
 ---
-#
-## Google map iframe設定
-#
-<!--more-->
-#
+### Google map iframe設定
 |屬性|說明|
 |---|---|
 |width|寬度|
@@ -17066,18 +16415,12 @@ tags: ["html"]
 |title|影片標題|
 |frameborder|iframe邊框|
 |allow|開啟youtube預設允許功能|
-|allowfullscreen|允許全螢幕播放(有添加就有這項功能，移除就無這項功能)|
-#
-`,__vite_glob_0_85=Object.freeze(Object.defineProperty({__proto__:null,default:_20240106HTML______Google__},Symbol.toStringTag,{value:"Module"})),_20240107HTML______Youtube__=`---
+|allowfullscreen|允許全螢幕播放(有添加就有這項功能，移除就無這項功能)|`,__vite_glob_0_85=Object.freeze(Object.defineProperty({__proto__:null,default:_20240106HTML______Google__},Symbol.toStringTag,{value:"Module"})),_20240107HTML______Youtube__=`---
 title: 【HTML】在網頁嵌入Youtube影片
 date: 2024-01-07
 tags: ["html"]
 ---
-#
-## 直接設定的屬性
-#
-<!--more-->
-#
+### 直接設定的屬性
 |屬性|說明|
 |---|---|
 |width|寬度|
@@ -17087,9 +16430,7 @@ tags: ["html"]
 |frameborder|iframe邊框|
 |allow|開啟youtube預設允許功能|
 |allowfullscreen|允許全螢幕播放(有添加就有這項功能，移除就無這項功能)|
-#
 #### 加在src後面的屬性，多個屬性以&符號隔開
-#
 |屬性|說明|
 |---|---|
 |start|從第幾秒開始，例：設300=從第5分鐘開始|
@@ -17104,9 +16445,8 @@ tags: ["html"]
 |color|進度條顏色，red=紅色(預設)；white=白色|
 |fs|0=隱藏全螢幕按鈕；1=顯示全螢幕按鈕(預設)|
 |mute|0=有聲音(預設)；1=靜音|
-#
+
 \`若要設定自動播放，必須要設置成靜音mute=1\`
-#
 \`\`\`html
 <iframe 
     width="560" 
@@ -17121,15 +16461,9 @@ title: 【CSS】載入網頁字體方法
 date: 2024-01-08
 tags: ["css"]
 ---
-#
-## 載入下載的字體
-#
-<!--more-->
-#
+### 載入下載的字體
 1. 下載字體檔(.ttf)，放在專案中的資料夾(fonts)
-#
 2. 在css樣式檔中寫以下程式碼：
-#
 \`\`\`css
 /*Regular*/
 @font-face {
@@ -17167,13 +16501,10 @@ p{
     font-family: 'MantouSans', Arial, sans-serif;
 }
 \`\`\`
-#
 \`檔案名稱：MantouSans-Regular，但只要寫MantouSans\`
-#
+
 -----------------------------------------------
-#
-#### font-family說明
-#
+### font-family說明
 \`\`\`css
 body{
     font-family: sans-serif; /*無襯線體*/
@@ -17187,11 +16518,9 @@ body{
     /*通用字一定會有，通常放在最末端*/
 }
 \`\`\`
-#
+
 -----------------------------------------------
-#
-#### src說明
-#
+### src說明
 \`\`\`css
 @font-face {
     font-family: 'Helvetica';
@@ -17201,17 +16530,12 @@ body{
          local("Helvetica") /*抓取使用者電腦的字體，但必須要精確的對應字體名稱，通常不建議使用*/
 }
 \`\`\`
-#
+
 -----------------------------------------------
-#
-#### 使google font引入方法
-#
+### 使google font引入方法
 1. 到[Google Fonts](https://fonts.google.com/)網站
-#
 2. 找到想要的字體後，點擊“Get font”，再點擊“Get embed code”
-#
 3. link方法：直接寫在主要樣板中的head裡
-#
 \`\`\`html
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17219,9 +16543,7 @@ body{
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 \`\`\`
-#
 4. import方法：在custom.scss檔中引入
-#
 \`\`\`scss
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 \`\`\``,__vite_glob_0_87=Object.freeze(Object.defineProperty({__proto__:null,default:_20240108CSS_________},Symbol.toStringTag,{value:"Module"})),_20240109JavaScript___________=`---
@@ -17229,43 +16551,30 @@ title: 【JS】提高效能延遲載入方法
 date: 2024-01-09
 tags: ["javaScript"]
 ---
-#
-## 使用lozad.js套件
-#
-<!--more-->
-#
+### 使用lozad.js套件
 1. 在\`<head>\`引入cdn
-#
 \`\`\`html
 <head>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"><\/script>
 </head>
 \`\`\`
-#
 2. 在標籤樣式\`class\`加上\`lozad\`，將\`src\`改成\`data-src\`
-#
 \`\`\`html
 <img class="lozad" data-src="image.png" />
 \`\`\`
-#
 3. 在js檔中：
-#
 \`\`\`js
 const observer = lozad();
 observer.observe();
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## script腳本載入async、defer
-#
+### script腳本載入async、defer
 #### async
-#
 * 當瀏覽器遇到帶有async的\`<script>\`腳本會立即下載，並且在完成後立刻執行，同時不會中斷html渲染
 * 若有多個async的\`<script>\`腳本，順序不會由上往下依序執行，是依檔案大小、下載速度決定
 * 適合需要盡快執行，但不會影響渲染的腳本，同時下載可提高效能
 * 例如：Google Analytics、Twitter、Facebook(分析、廣告、第三方追蹤)
-#
 \`\`\`html
 <!--Google Analytics-->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"><\/script>
@@ -17283,14 +16592,11 @@ observer.observe();
 <!--廣告-->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script>
 \`\`\`
-#
 #### defer
-#
 * 當瀏覽器遇到帶有defer的\`<script>\`會優先進行html渲染，同時異步下載，等待html渲染完成後才執行
 * 若有多個defer的\`<script>\`腳本，會由上往下依序執行
 * 適合需要解析後、不用立即執行的腳本
 * 例如：初始化腳本、監聽事件、修改頁面上的內容、Bootstrap.js
-#
 \`\`\`html
 <!--頁面初始化腳本-->
 <script defer src="js/init.js"><\/script>
@@ -17305,71 +16611,47 @@ title: 【JS】Skrollr頁面滾動效果
 date: 2024-01-10
 tags: ["webpack"]
 ---
-#
-## 使用方式直接引入cdn
-#
-<!--more-->
-#
+### 使用方式直接引入cdn
 1. 直接將套件以\`cdn\`方式引入
-#
 \`\`\`js
 <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"><\/script>
 \`\`\`
-#
+
 -----------------------------------------------
-#
 2. 在\`js\`開始撰寫地方，初始化套件：
-#
 \`\`\`js
 let s = skrollr.init();
 \`\`\`
-#
 -----------------------------------------------
-#
 3. 在\`html\`的標籤上撰寫\`data\`範例：
-#
 ![圖片](/img/skrollr頁面滾動效果/skrollr頁面滾動效果-1.png)
-#
+
 -----------------------------------------------
-#
 4. 撰寫方式：
-#
 ![圖片](/img/skrollr頁面滾動效果/skrollr頁面滾動效果-2.png)
-#
+
 -----------------------------------------------
-#
-5. [更多用法可參考API](https://github.com/Prinzhorn/skrollr?tab=readme-ov-file)
-#
-`,__vite_glob_0_89=Object.freeze(Object.defineProperty({__proto__:null,default:_20240110JavaScriptSkrollr______},Symbol.toStringTag,{value:"Module"})),_20240120JQuery__________=`---
+5. [更多用法可參考API](https://github.com/Prinzhorn/skrollr?tab=readme-ov-file)`,__vite_glob_0_89=Object.freeze(Object.defineProperty({__proto__:null,default:_20240110JavaScriptSkrollr______},Symbol.toStringTag,{value:"Module"})),_20240120JQuery__________=`---
 title: 【jQuery】點擊事件+改變標籤
 date: 2024-01-20
 tags: ["jquery"]
 ---
-#
-## jQuery起手式
-#
-<!--more-->
-#
+### jQuery起手式
 \`\`\`js
 $(document).ready(function(){
     //在此處編寫執行的code
 });
 \`\`\`
-#
 \`function(參數){執行的動作}\`
-#
+
 -----------------------------------------------
-#
-## 改變標籤結構
-#
-<!--more-->
+### 改變標籤結構
 \`\`\`html
 <button type="button">按鈕</button>
 <ul>
   <li>蘋果</li>
 </ul>
 \`\`\`
-#
 \`\`\`js
 //替換蘋果
 $("button").click(function(){
@@ -17386,16 +16668,13 @@ $("button").click(function(){
   $("ul").append('<li>香蕉</li>')
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 改變標籤文字
-#
+### 改變標籤文字
 \`\`\`html
 <button type="button">按鈕</button>
 <p>蘋果</p>
 \`\`\`
-#
 \`\`\`js
 //取代<標籤>裡的文字
 $("button").click(function(){
@@ -17412,16 +16691,13 @@ $("button").click(function(){
   $("p").after('香蕉')
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 改變標籤樣式
-#
+### 改變標籤樣式
 \`\`\`html
 <button type="button">按鈕</button>
 <p>蘋果</p>
 \`\`\`
-#
 \`\`\`js
 //一個樣式寫法
 $("button").click(function(){
@@ -17438,51 +16714,41 @@ $("button").click(function(){
   $("p").attr("style","background-color:red");
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 改變標籤屬性
-#
+### 改變標籤屬性
 * $(selector).attr(attribute,value)
   * attribute(必填):要抓取的屬性
   * attribute(選填):要給予的值，若不給值則為抓取
-#
 \`\`\`html
 <button type="button">按鈕</button>
 <p style="background-color:red">蘋果</p>
 \`\`\`
-#
 \`\`\`js
 $("button").click(function(){
   $("p").attr("style","background-color:blue");
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 抓取a連結的網址
-#
+### 抓取a連結的網址
 \`\`\`html
 <button type="button">按鈕</button>
 <a href="https://www.google.com.tw/">連結</a>
 \`\`\`
-#
 \`\`\`js
 $("button").click(function(){
   let link = $("a").attr("href");
   console.log(link); //https://www.google.com.tw/
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 抓取input裡的值
-#
+### 抓取input裡的值
 \`\`\`html
 <button type="button">按鈕</button>
 <input type="text" value="蘋果">
 \`\`\`
-#
 \`\`\`js
 //使用.attr()方法
 $("button").click(function(){
@@ -17496,16 +16762,13 @@ $("button").click(function(){
   console.log(inputValue); //蘋果
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 抓取標籤data值
-#
+### 抓取標籤data值
 \`\`\`html
 <button type="button">按鈕</button>
 <p data-num="3">蘋果</p>
 \`\`\`
-#
 \`\`\`js
 //使用.data()方法
 $("button").click(function(){
@@ -17519,18 +16782,15 @@ $("button").click(function(){
   console.log(dataNum); //3
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 移除標籤
-#
+### 移除標籤
 \`\`\`html
 <button type="button">按鈕</button>
 <ul>
   <li>蘋果</li>
 </ul>
 \`\`\`
-#
 \`\`\`js
 //刪除整個<ul>
 $("button").click(function(){
@@ -17546,35 +16806,27 @@ $("button").click(function(){
 $("button").click(function(){
   $("ul").html();
 });
-\`\`\`
-#`,__vite_glob_0_90=Object.freeze(Object.defineProperty({__proto__:null,default:_20240120JQuery__________},Symbol.toStringTag,{value:"Module"})),_20240121JQuery___________=`---
+\`\`\``,__vite_glob_0_90=Object.freeze(Object.defineProperty({__proto__:null,default:_20240120JQuery__________},Symbol.toStringTag,{value:"Module"})),_20240121JQuery___________=`---
 title: 【jQuery】點擊事件+顯示或隱藏
 date: 2024-01-21
 tags: ["jquery"]
 ---
-#
-## 動態切換樣式語法表
-#
-<!--more-->
-#
+### 動態切換樣式語法表
 |動畫方式|顯示|隱藏|自動切換|
 |---|---|---|---|
 |一般|.show()|.hide()|.toggle()|
 |淡入淡出|.fadeIn()|.fadeOut|.fadeToggle()|
 |滑入滑出|.slideUp()|.slideDown()|.slideToggle()|
 |自訂樣式|.addClass()|.removeClass()|.toggleClass()|
-#
+
 \`.show(3000)，裡面可加入秒數(毫秒)\`
-#
+
 -----------------------------------------------
-#
-## 切換顯示或隱藏
-#
+### 切換顯示或隱藏
 \`\`\`html
 <button type="button">按鈕</button>
 <p>這段文字會隱藏</p>
 \`\`\`
-#
 \`\`\`js
 //隱藏元素
 $("button").click(function(){
@@ -17591,18 +16843,14 @@ $("button").click(function(){
   $("p").toggle();
 });
 \`\`\`
-#
 \`原理：判斷元素上是否有style="display:block"\`
-#
+
 -----------------------------------------------
-#
-## 滑入滑出效果(slide)
-#
+### 滑入滑出效果(slide)
 \`\`\`html
 <button type="button">按鈕</button>
 <p>這段文字會切換顯示或隱藏</p>
 \`\`\`
-#
 \`\`\`js
 //滑出元素
 $("button").click(function(){
@@ -17619,16 +16867,13 @@ $("button").click(function(){
   $("p").slideToggle();
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 切換淡入淡出效果(fade)
-#
+### 切換淡入淡出效果(fade)
 \`\`\`html
 <button type="button">按鈕</button>
 <p>這段文字會切換顯示或隱藏</p>
 \`\`\`
-#
 \`\`\`js
 //淡出元素
 $("button").click(function(){
@@ -17645,23 +16890,18 @@ $("button").click(function(){
   $("p").fadeToggle();
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 漸變淡出效果(fadeTo)
-#
+### 漸變淡出效果(fadeTo)
 #### $(selector).fadeTo(speed, opacity, [easing], [callback]);
-#
 * speed(必選) 速度
 * opacity(必選) 透明度
 * easing(可選) 動畫加速方式
 * callback(可選) function(){}
-#
 \`\`\`html
 <button type="button">按鈕</button>
 <p>這段文字會隱藏</p>
 \`\`\`
-#
 \`\`\`js
 //基本用法
 $("button").click(function(){
@@ -17685,24 +16925,19 @@ $("button").click(function(){
   });
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 切換顯示或隱藏(class)
-#
+### 切換顯示或隱藏(class)
 #### html:
-#
 \`\`\`html
 <button type="button">按鈕</button>
 <p>這段文字會切換紅底背景</p>
 \`\`\`
-#
 \`\`\`css
 .bg-red{
   background-color: red;
 }
 \`\`\`
-#
 \`\`\`js
 //新增class樣式
 $("button").click(function(){
@@ -17718,39 +16953,29 @@ $("button").click(function(){
 $("button").click(function(){
   $("p").toggleClass("bg-red");
 });
-\`\`\`
-#
-`,__vite_glob_0_91=Object.freeze(Object.defineProperty({__proto__:null,default:_20240121JQuery___________},Symbol.toStringTag,{value:"Module"})),_20240122JQuery__________=`---
+\`\`\``,__vite_glob_0_91=Object.freeze(Object.defineProperty({__proto__:null,default:_20240121JQuery___________},Symbol.toStringTag,{value:"Module"})),_20240122JQuery__________=`---
 title: 【jQuery】點擊事件+動態效果
 date: 2024-01-22
 tags: ["jquery"]
 ---
-#
-## animate用法介紹
-#
-<!--more-->
-#
+### animate用法介紹
 * $(selector).animate(properties, duration, easing, callback);
   * properties(必填): {css樣式組}
   * duration(可選): 持續時間
   * easing(可選): 動畫加速方式
   * callback(可選): function(){}
-#
+
 -----------------------------------------------
-#
-## 動態樣式支援類型
-#
+### 動態樣式支援類型
 |類型|css|
 |---|---|
 |支援的屬性|height、width、opacity、margin、padding、left、top、right、bottom、fontSize、borderWidth、scrollTop、scrollLeft|
 |不支援的屬性|backgroundColor、color、borderColor、boxShadow、textShadow|
-#
+
 \`原本background-color要改用駝峰式寫法backgroundColor\`
-#
+
 -----------------------------------------------
-#
-## 動態改變樣式
-#
+### 動態改變樣式
 \`\`\`js
 //改變字體大小
 $("button").click(function(){
@@ -17769,11 +16994,9 @@ $("button").click(function(){
   });
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 動態改變樣式(進階用法)
-#
+### 動態改變樣式(進階用法)
 \`\`\`js
 //一次執行多組動畫
 $("button").click(function(){
@@ -17788,44 +17011,34 @@ $("button").click(function(){
         .animate({paddingLeft: "50px" }, 600);
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 動態改變背景顏色
-#
+### 動態改變背景顏色
 #### 需要再額外引入jQuery.ui
-#
 \`\`\`js
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"><\/script>
 \`\`\`
-#
 \`\`\`html
 <button type="button">按鈕</button>
 <p>這段文字會隱藏</p>
 \`\`\`
-#
 \`\`\`js
 $("button").click(function(){
   $("p").animate({backgroundColor:"red"},3000);
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 延遲效果
-#
+### 延遲效果
 \`\`\`js
 $(".box").delay(0).slideDown();
 $(".box").delay(1000).slideDown();
 $(".box").delay(2000).show(0);
 \`\`\`
-#
 \`show()若不給時間，會直接出現\`
-#
+
 -----------------------------------------------
-#
-## 停止動畫效果
-#
+### 停止動畫效果
 * $(selector).stop(stopAll,goToEnd)
   * stopAll(布林值)
     * true: 停止下一個動作
@@ -17833,34 +17046,26 @@ $(".box").delay(2000).show(0);
   * goToEnd(布林值)
     * true: 停止在一開始
     * false: 停止在最後狀態
-#
 \`\`\`js
 $(".box").stop(false,true);
-\`\`\`
-#`,__vite_glob_0_92=Object.freeze(Object.defineProperty({__proto__:null,default:_20240122JQuery__________},Symbol.toStringTag,{value:"Module"})),_20240123JQuery____________=`---
+\`\`\``,__vite_glob_0_92=Object.freeze(Object.defineProperty({__proto__:null,default:_20240122JQuery__________},Symbol.toStringTag,{value:"Module"})),_20240123JQuery____________=`---
 title: 【jQuery】點擊事件+抓取元素尺寸
 date: 2024-01-23
 tags: ["jquery"]
 ---
-#
-## 抓取元素高度(content-box)
-#
-<!--more-->
-#
+### 抓取元素高度(content-box)
 |語法|說明|
 |---|---|
 |.height()|height|
 |.innerHeight()|height + padding|
 |.outerHeight()|height + padding+border|
 |.outerHeight(true)|height + padding + border + margin|
-#
+
 \`先決條件是：box-sizing: content-box\`
-#
 \`\`\`html
 <button type="button">按鈕</button>
 <div class="box"></div>
 \`\`\`
-#
 \`\`\`css
 .box{
   width: 50px;
@@ -17873,7 +17078,6 @@ tags: ["jquery"]
   box-sizing: content-box; /* 引響關鍵 */
 }
 \`\`\`
-#
 \`\`\`js
 //抓取元素高度
 $("button").click(function(){
@@ -17900,26 +17104,21 @@ $("button").click(function(){
   console.log(boxHeight); //50 + (上下padding:20px) + (上下border:10px) + (上下margin:50px) = 130
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 抓取元素高度(border-box)
-#
-<!--more-->
+### 抓取元素高度(border-box)
 |語法|說明|
 |---|---|
 |.height()|height - border - padding|
 |.innerHeight()|height - border|
 |.outerHeight()|height|
 |.outerHeight(true)|height + margin|
-#
+
 \`先決條件是：box-sizing: border-box\`
-#
 \`\`\`html
 <button type="button">按鈕</button>
 <div class="box"></div>
 \`\`\`
-#
 \`\`\`css
 .box{
   width: 50px;
@@ -17932,7 +17131,6 @@ $("button").click(function(){
   box-sizing: border-box; /* 引響關鍵 */
 }
 \`\`\`
-#
 \`\`\`js
 //抓取元素高度
 $("button").click(function(){
@@ -17946,7 +17144,6 @@ $("button").click(function(){
   console.log(boxHeight); //50 - (上下border:10px)  = 40
 });
 
-
 //抓取整體高度
 $("button").click(function(){
   let boxHeight = $(".box").outerHeight()
@@ -17958,25 +17155,18 @@ $("button").click(function(){
   let boxHeight = $(".box").outerHeight(true)
   console.log(boxHeight); //50 + (上下margin) = 100
 });
-\`\`\`
-#
-`,__vite_glob_0_93=Object.freeze(Object.defineProperty({__proto__:null,default:_20240123JQuery____________},Symbol.toStringTag,{value:"Module"})),_20240124JQuery____________=`---
+\`\`\``,__vite_glob_0_93=Object.freeze(Object.defineProperty({__proto__:null,default:_20240123JQuery____________},Symbol.toStringTag,{value:"Module"})),_20240124JQuery____________=`---
 title: 【jQuery】點擊事件+抓取元素位置
 date: 2024-01-24
 tags: ["jquery"]
 ---
-#
-## 抓取元素位置(position)
-#
-<!--more-->
-#
+### 抓取元素位置(position)
 \`\`\`html
 <div class="wrap">
   <div class="content"></div>
 </div>
 <button type="button">按鈕</button>
 \`\`\`
-#
 \`\`\`css
 .wrap{
   width: 150px;
@@ -17991,7 +17181,6 @@ tags: ["jquery"]
   }
 }
 \`\`\`
-#
 \`\`\`js
 //抓取外層容器位置
 $("button").click(function(){
@@ -18011,20 +17200,16 @@ $("button").click(function(){
   console.log(contentPos); //{top:30 ,left:30}
 });
 \`\`\`
-#
 \`內容被外層容器向內推移30px\`
-#
+
 -----------------------------------------------
-#
-## 抓取元素位置(offset)
-#
+### 抓取元素位置(offset)
 \`\`\`html
 <div class="wrap">
   <div class="content"></div>
 </div>
 <button type="button">按鈕</button>
 \`\`\`
-#
 \`\`\`css
 .wrap{
   width: 150px;
@@ -18039,7 +17224,6 @@ $("button").click(function(){
   }
 }
 \`\`\`
-#
 \`\`\`js
 //抓取內層相對距離
 $("button").click(function(){
@@ -18053,13 +17237,10 @@ $("button").click(function(){
   console.log(contentPos); //{top:50 ,left:30}
 });
 \`\`\`
-#
 \`內容被被外容器padding+本身margin的距離\`
-#
+
 -----------------------------------------------
-#
-## 抓取滾動時，視窗對上方距離多少
-#
+### 抓取滾動時，視窗對上方距離多少
 \`\`\`js
 $(window).scroll(function() {
   let windowTop = $(window).scrollTop();
@@ -18070,11 +17251,7 @@ title: 【jQuery】點擊事件+依順序抓取元素
 date: 2024-01-25
 tags: ["jquery"]
 ---
-#
-## 直接點擊並作用自己
-#
-<!--more-->
-#
+### 直接點擊並作用自己
 \`\`\`html
 <ul>
   <li>蘋果</li>
@@ -18082,19 +17259,15 @@ tags: ["jquery"]
   <li>鳳梨</li>
 </ul>
 \`\`\`
-#
 \`\`\`js
 $("li").click(function(){
   $(this).css("background-color","red");
 }); 
 \`\`\`
-#
 \`只會對點擊的li進行作用，其他li則不影響\`
-#
+
 -----------------------------------------------
-#
-## 抓取「第一個」和「最後一個」元素
-#
+### 抓取「第一個」和「最後一個」元素
 \`\`\`html
 <button type="button">按鈕</button>
 <ul>
@@ -18103,7 +17276,6 @@ $("li").click(function(){
   <li>鳳梨</li>
 </ul>
 \`\`\`
-#
 \`\`\`js
 //抓取「第一個」蘋果
 $("button").click(function(){
@@ -18115,19 +17287,15 @@ $("ul").click(function(){
   $("li").last().css("background-color","red");
 });
 \`\`\`
-#
 \`適合用在標籤都一樣的時候\`
-#
+
 -----------------------------------------------
-#
-## 抓取「下一個」和「上一個」元素
-#
+### 抓取「下一個」和「上一個」元素
 |語法|說明|
 |---|---|
 |.next()|指定下一個|
 |.nextAll()|指定接下來的全部|
 |.nextUntil()|指定到哪個元素為止(不包含括弧內的)|
-#
 \`\`\`html
 <button type="button">按鈕</button>
 <ul>
@@ -18137,7 +17305,6 @@ $("ul").click(function(){
   <li class="waxapple">蓮霧</li>
 </ul>
 \`\`\`
-#
 \`\`\`js
 //抓取香蕉的「下一個」鳳梨
 $("button").click(function(){
@@ -18169,12 +17336,9 @@ $("button").click(function(){
   $(".banana").nextUntil(".waxapple").css("background-color","red");
 }); 
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 進階抓取不同順序元素
-#
-<!--more-->
+### 進階抓取不同順序元素
 \`\`\`html
 <button type="button">按鈕</button>
 <ul>
@@ -18188,7 +17352,6 @@ $("button").click(function(){
   <li>酪梨</li>
 </ul>
 \`\`\`
-#
 \`\`\`js
 //抓取蘋果
 $("button").click(function(){
@@ -18214,26 +17377,17 @@ $("button").click(function(){
   console.log(avocado); //酪梨
 });
 \`\`\`
-#
-\`.eq(0)會抓取第一個\`
-#
-
-`,__vite_glob_0_95=Object.freeze(Object.defineProperty({__proto__:null,default:_20240125JQuery_____________},Symbol.toStringTag,{value:"Module"})),_20240126JQuery_____________=`---
+\`.eq(0)會抓取第一個\``,__vite_glob_0_95=Object.freeze(Object.defineProperty({__proto__:null,default:_20240125JQuery_____________},Symbol.toStringTag,{value:"Module"})),_20240126JQuery_____________=`---
 title: 【jQuery】點擊事件+依層級抓取元素
 date: 2024-01-26
 tags: ["jquery"]
 ---
-#
-## 找父層元素(parent、parents)
-#
-<!--more-->
-#
+### 找父層元素(parent、parents)
 |語法|說明|
 |---|---|
 |.parent()|抓取父層|
 |.parents()|抓取父層以外的全部|
 |.parentUntil()|抓取父層以外的元素(但不包含括弧內的)|
-#
 \`\`\`html
 <nav>
   <ul>
@@ -18249,7 +17403,6 @@ tags: ["jquery"]
   </ul>
 </nav>
 \`\`\`
-#
 \`\`\`js
 //點擊<a>連結，對外層<li>作用
 $(".nav-link").click(function(){
@@ -18266,14 +17419,10 @@ $(".nav-link").click(function(){
   $(this).parentsUntil("nav").css("background-color","red");
 });
 \`\`\`
-#
 \`.parents()會包括body、html\`
-#
+
 -----------------------------------------------
-#
-## 找子層元素(children、find)
-#
-<!--more-->
+### 找子層元素(children、find)
 \`\`\`html
 <nav>
   <ul>
@@ -18289,7 +17438,6 @@ $(".nav-link").click(function(){
   </ul>
 </nav>
 \`\`\`
-#
 \`\`\`js
 //點擊<a>對<ul>底下的所有<li>作用
 $(".nav-link").click(function(){
@@ -18301,13 +17449,10 @@ $(".nav-link").click(function(){
   $("ul").find(".nav-link").css("background-color","red");
 });
 \`\`\`
-#
 \`.find()可以找到孫層，但.children()只能找到子層\`
-#
+
 -----------------------------------------------
-#
-## 找同層元素(siblings)
-#
+### 找同層元素(siblings)
 \`\`\`html
 <nav>
   <ul>
@@ -18323,18 +17468,15 @@ $(".nav-link").click(function(){
   </ul>
 </nav>
 \`\`\`
-#
 \`\`\`js
 //抓取<li>同層的其他<li>
 $(".nav-link").click(function(){
   $(".nav-item").siblings().css("background-color","red");
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 只有被點擊的那一項有效果，再點其他的效果取消
-#
+### 只有被點擊的那一項有效果，再點其他的效果取消
 \`\`\`html
 <nav>
   <ul>
@@ -18350,7 +17492,6 @@ $(".nav-link").click(function(){
   </ul>
 </nav>
 \`\`\`
-#
 \`\`\`js
 $(".nav-link").click(function(){
   $(this).css("background-color","red")
@@ -18359,24 +17500,16 @@ $(".nav-link").click(function(){
         .children() //底下的<a>
         .css("background-color","transparent");
 });
-\`\`\`
-#
-`,__vite_glob_0_96=Object.freeze(Object.defineProperty({__proto__:null,default:_20240126JQuery_____________},Symbol.toStringTag,{value:"Module"})),_20240201JQuery_______=`---
+\`\`\``,__vite_glob_0_96=Object.freeze(Object.defineProperty({__proto__:null,default:_20240126JQuery_____________},Symbol.toStringTag,{value:"Module"})),_20240201JQuery_______=`---
 title: 【jQuery】抓取鍵盤事件
 date: 2024-02-01
 tags: ["jquery"]
 ---
-#
-## 使用鍵盤事件來改變狀態
-#
-<!--more-->
-#
-* 當我按鍵盤\`z\`鍵時，對應的\`ascii\`碼是\`90\`：
-#
+### 使用鍵盤事件來改變狀態
+當我按鍵盤\`z\`鍵時，對應的\`ascii\`碼是\`90\`
 \`\`\`html
 <div class="box"></div>
 \`\`\`
-#
 \`\`\`css
 .box{
   width: 30px;
@@ -18384,7 +17517,6 @@ tags: ["jquery"]
   background-color: #ccc;
 }
 \`\`\`
-#
 \`\`\`js
 //按下鍵盤的那個剎那
 $(window).keydown(function(event){
@@ -18407,13 +17539,10 @@ $(window).keyup(function(event){
   }
 });
 \`\`\`
-#
 \`event.which跟event.keyCode是一樣的，但是event.keyCode寫法較舊，event.which比較標準化\`
-#
+
 -----------------------------------------------
-#
-## ascii碼鍵盤對應表
-#
+### ascii碼鍵盤對應表
 |字母|鍵碼值|字母|鍵碼值|字母|鍵碼值|字母|鍵碼值|
 |---|---|---|---|---|---|---|---|
 | a | 97  | A | 65  | 1  | 49  | Enter | 13 |
@@ -18442,21 +17571,16 @@ $(window).keyup(function(event){
 | x | 120 | X | 88  | 上鍵| 38 |  |  |
 | y | 121 | Y | 89  | 右鍵| 39 |  |  |
 | z | 122 | Z | 90  | 下鍵| 40 |  |  |
-#
+
 -----------------------------------------------
-#
-## 讓ascii碼轉回字母
-#
+### 讓ascii碼轉回字母
 \`\`\`html
 <p>90</p>
 \`\`\`
-#
 \`\`\`js
 $("p").text(String.fromCharCode(90));
 \`\`\`
-#
 #### 輸出結果：
-#
 \`\`\`html
 <p>Z</p>
 \`\`\``,__vite_glob_0_97=Object.freeze(Object.defineProperty({__proto__:null,default:_20240201JQuery_______},Symbol.toStringTag,{value:"Module"})),_20240202JQuery_______=`---
@@ -18464,15 +17588,10 @@ title: 【jQuery】抓取滑鼠事件
 date: 2024-02-02
 tags: ["jquery"]
 ---
-#
-## 滑鼠點擊事件
-#
-<!--more-->
-#
+### 滑鼠點擊事件
 \`\`\`html
 <button type="button">按鈕</button>
 \`\`\`
-#
 \`\`\`js
 //當滑鼠點擊一次時
 $("button").click(function(){
@@ -18494,15 +17613,12 @@ $("button").mouseup(function(){
   $(this).css("background-color","");
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 滑鼠移入、移出事件
-#
+### 滑鼠移入、移出事件
 \`\`\`html
 <button type="button">按鈕</button>
 \`\`\`
-#
 \`\`\`js
 //當滑鼠移入時
 $("button").mouseenter(function(){
@@ -18524,11 +17640,9 @@ $("button").hover(
   }
 );
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 切換選單
-#
+### 切換選單
 \`\`\`html
 <select>
   <option value="蘋果">蘋果</option>
@@ -18537,18 +17651,15 @@ $("button").hover(
 </select>
 <p></p>
 \`\`\`
-#
 \`\`\`js
 $("select").change(function(e){
   //<p>顯示選單的值
   $("p").text(e.target.value);
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 輸入框事件
-#
+### 輸入框事件
 \`\`\`js
 //焦點所在時
 $("input").focus(function(){
@@ -18560,11 +17671,9 @@ $("input").blur(function(){
   $(this).css("outline","solid 5px red");
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 取得游標位置
-#
+### 取得游標位置
 \`\`\`js
 $(document).mousemove(function(e){
   console.log(e.screenX); //距離 整個瀏覽器視窗 X軸
@@ -18575,17 +17684,14 @@ $(document).mousemove(function(e){
   console.log(e.clientY); //距離 整個螢幕裝置 Y軸
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 用圖片替代游標樣式
-#
+### 用圖片替代游標樣式
 \`\`\`html
 <div class="cursor">
   <img src="images/mouseImg.png">
 </div>
 \`\`\`
-#
 \`\`\`css
 html,body{
   cursor: none;
@@ -18594,7 +17700,6 @@ html,body{
   position: fixed;
 }
 \`\`\`
-#
 \`\`\`js
 $(document).mousemove(function(event){
   let x = event.clientX;
@@ -18605,22 +17710,9 @@ $(document).mousemove(function(event){
   })
 });
 \`\`\`
-#
 
-
-
-
-
-
-
-
-
-
-
-
-#
-## 經過特定時間後執行
-#
+-----------------------------------------------
+### 經過特定時間後執行
 \`\`\`html
 <p>五秒後可關閉廣告<button class="cross" style="display: none">Ｘ</button></p>
 \`\`\`
@@ -18629,13 +17721,10 @@ setTimeout(function(){
   $(".cross").show();
 },5000);
 \`\`\`
-#
 \`setTimeout(動作,幾毫秒);\`
-#
+
 -----------------------------------------------
-#
-## 每經過特定時間後執行一次
-#
+### 每經過特定時間後執行一次
 \`\`\`html
 <p>自動登出計時<span class="time">300</span></p>
 \`\`\`
@@ -18646,13 +17735,10 @@ setInterval(function(){
   $(".time").text(nowTime);
 },1000);
 \`\`\`
-#
 \`setInterval(動作,幾毫秒);\`
-#
+
 -----------------------------------------------
-#
-## 倒數計時
-#
+### 倒數計時
 \`\`\`html
 <p>自動登出計時<span class="time">300</span></p>
 \`\`\`
@@ -18663,25 +17749,19 @@ setInterval(function(){
   $(".time").text(nowTime);
 },1000);
 \`\`\`
-#
 \`setInterval(動作,幾毫秒);\`
-#
+
 -----------------------------------------------
-#
-## 暫停作用中效果
-#
+### 暫停作用中效果
 \`\`\`js
 $("button").click(function(){
   $(".box").stop().sligeToggle(5000);
 });
 \`\`\`
-#
 \`若toggle在展開時點擊，會直接收合\`
-#
+
 -----------------------------------------------
-#
-## 取消預設行為事件
-#
+### 取消預設行為事件
 \`\`\`html
 <a class="link" href="www.google.com">連結</a>
 \`\`\`
@@ -18689,17 +17769,12 @@ $("button").click(function(){
 $(".link").click(function(){
   event.preventDefault();//取消原本會連到google事件
 });
-\`\`\`
-#`,__vite_glob_0_98=Object.freeze(Object.defineProperty({__proto__:null,default:_20240202JQuery_______},Symbol.toStringTag,{value:"Module"})),_20240203JQuery_____=`---
+\`\`\``,__vite_glob_0_98=Object.freeze(Object.defineProperty({__proto__:null,default:_20240202JQuery_______},Symbol.toStringTag,{value:"Module"})),_20240203JQuery_____=`---
 title: 【jQuery】處理陣列
 date: 2024-02-03
 tags: ["jquery"]
 ---
-#
-## 陣列資料格式
-#
-<!--more-->
-#
+### 陣列資料格式
 \`\`\`js
 let fruits = ["蘋果","香蕉","鳳梨","蓮霧"];
 console.log(fruits[0]); //蘋果
@@ -18707,15 +17782,12 @@ console.log(fruits[1]); //香蕉
 console.log(fruits[2]); //鳳梨
 console.log(fruits[3]); //蓮霧
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 將陣列資料塞進html
-#
+### 將陣列資料塞進html
 \`\`\`html
 <ul></ul>
 \`\`\`
-#
 \`\`\`js
 let fruits = ["蘋果","香蕉","鳳梨","蓮霧"];
 
@@ -18735,9 +17807,7 @@ fruits.forEach(function(fruit){
   $("ul").append("<li>" + fruit + "</li>")
 });
 \`\`\`
-#
 #### 編譯結果：
-#
 \`\`\`html
 <ul>
   <li>蘋果</li>
@@ -18746,13 +17816,10 @@ fruits.forEach(function(fruit){
   <li>蓮霧</li>
 </ul>
 \`\`\`
-#
 \`for(從第幾個開始,到第幾個結束,每一次要間隔多少)\`
-#
+
 -----------------------------------------------
-#
-## 新增資料(push)
-#
+### 新增資料(push)
 \`\`\`js
 let fruits = ["蘋果","香蕉","鳳梨","蓮霧"];
 
@@ -18760,35 +17827,21 @@ fruits.push("榴槤");
 
 console.log(fruits); //["蘋果","香蕉","鳳梨","蓮霧","榴槤"]
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 新增資料2(push)
-#
+### 新增資料2(push)
 \`\`\`js
 let fruits = ["蘋果","香蕉","鳳梨","蓮霧"];
 
 fruits.push("榴槤","酪梨");
 
 console.log(fruits); //["蘋果","香蕉","鳳梨","蓮霧","榴槤","酪梨"]
-\`\`\`
-#
------------------------------------------------
-#
-
-
-
-
-`,__vite_glob_0_99=Object.freeze(Object.defineProperty({__proto__:null,default:_20240203JQuery_____},Symbol.toStringTag,{value:"Module"})),_20240204JQuery________=`---
+\`\`\``,__vite_glob_0_99=Object.freeze(Object.defineProperty({__proto__:null,default:_20240203JQuery_____},Symbol.toStringTag,{value:"Module"})),_20240204JQuery________=`---
 title: 【jQuery】處理物件與陣列
 date: 2024-02-04
 tags: ["jquery"]
 ---
-#
-## 陣列資料格式
-#
-<!--more-->
-#
+### 陣列資料格式
 \`\`\`js
 //陣列型式1
 var menu = [];
@@ -18799,11 +17852,9 @@ menu[2] = "鳳梨";
 //陣列型式2
 var menu = ["蘋果","香蕉","鳳梨"];
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 將陣列資料塞進html
-#
+### 將陣列資料塞進html
 \`\`\`html
 <ul id="menu"></ul>
 \`\`\`
@@ -18828,13 +17879,10 @@ for(var i=0;i<3;i++){
   <li>鳳梨</li>
 </ul>
 \`\`\`
-#
 \`for(從第幾個開始,到第幾個結束,每一次要間隔多少)\`
-#
+
 -----------------------------------------------
-#
-## 物件資料格式
-#
+### 物件資料格式
 \`\`\`js
 //物件型式1
 var shop = {};
@@ -18849,11 +17897,9 @@ var shop = {
   phone: "07 1234567"
 }
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 列印物件所有資料
-#
+### 列印物件所有資料
 \`\`\`html
 <ul id="shop"></ul>
 \`\`\`
@@ -18886,11 +17932,7 @@ title: 【jQuery】判斷式
 date: 2024-02-05
 tags: ["jquery"]
 ---
-#
-## 多種判斷式
-#
-<!--more-->
-#
+### 多種判斷式
 \`\`\`html
 <ul class="menu">
   <li>蘋果</li>
@@ -18928,17 +17970,12 @@ $("li").click(function(){
 
   }
 });
-\`\`\`
-`,__vite_glob_0_101=Object.freeze(Object.defineProperty({__proto__:null,default:_20240205JQuery____},Symbol.toStringTag,{value:"Module"})),_20240206JQuery________=`---
+\`\`\``,__vite_glob_0_101=Object.freeze(Object.defineProperty({__proto__:null,default:_20240205JQuery____},Symbol.toStringTag,{value:"Module"})),_20240206JQuery________=`---
 title: 【jQuery】實作數量選擇器
 date: 2024-02-06
 tags: ["jquery"]
 ---
-#
-## 數量選擇器
-#
-<!--more-->
-#
+### 數量選擇器
 \`\`\`html
 <button type="button" class="reduce">－</button>
 <span>0</span>
@@ -18959,17 +17996,12 @@ $(".add").click(function(){
   num+=1;
   $("span").text(num);
 });
-\`\`\`
-`,__vite_glob_0_102=Object.freeze(Object.defineProperty({__proto__:null,default:_20240206JQuery________},Symbol.toStringTag,{value:"Module"})),_20240207JQuery_____________=`---
+\`\`\``,__vite_glob_0_102=Object.freeze(Object.defineProperty({__proto__:null,default:_20240206JQuery________},Symbol.toStringTag,{value:"Module"})),_20240207JQuery_____________=`---
 title: 【jQuery】實作點擊錨點滑動至該區塊
 date: 2024-02-07
 tags: ["jquery"]
 ---
-#
-## 點擊錨點滑動至該區塊
-#
-<!--more-->
-#
+### 點擊錨點滑動至該區塊
 \`\`\`html
 <ul class="nav">
   <li class="nav-item">
@@ -19009,17 +18041,12 @@ $(".nav-link").click(function(event){
   },600);
 
 });
-\`\`\`
-`,__vite_glob_0_103=Object.freeze(Object.defineProperty({__proto__:null,default:_20240207JQuery_____________},Symbol.toStringTag,{value:"Module"})),_20240208JQuery___________=`---
+\`\`\``,__vite_glob_0_103=Object.freeze(Object.defineProperty({__proto__:null,default:_20240207JQuery_____________},Symbol.toStringTag,{value:"Module"})),_20240208JQuery___________=`---
 title: 【jQuery】實作滾動頁面頁籤變換
 date: 2024-02-08
 tags: ["jquery"]
 ---
-#
-## 實作滾動頁面頁籤變換
-#
-<!--more-->
-#
+### 實作滾動頁面頁籤變換
 \`\`\`html
 <ul class="nav">
   <li class="nav-item">
@@ -19059,17 +18086,12 @@ $(".nav-link").click(function(event){
   },600);
 
 });
-\`\`\`
-`,__vite_glob_0_104=Object.freeze(Object.defineProperty({__proto__:null,default:_20240208JQuery___________},Symbol.toStringTag,{value:"Module"})),_20240209JQuery__JS_CSS______=`---
+\`\`\``,__vite_glob_0_104=Object.freeze(Object.defineProperty({__proto__:null,default:_20240208JQuery___________},Symbol.toStringTag,{value:"Module"})),_20240209JQuery__JS_CSS______=`---
 title: 【jQuery】用JS+CSS實作常用元件
 date: 2024-02-09
 tags: ["jquery"]
 ---
-#
-## 漢堡選單
-#
-<!--more-->
-#
+### 漢堡選單
 \`\`\`html
 <div class="header">
   <ul class="menu">
@@ -19081,7 +18103,6 @@ tags: ["jquery"]
   <a class="menuicon" href="#">選單按鈕</a>
 </div>
 \`\`\`
-#
 \`\`\`css
 .header{
   height: 80px;
@@ -19120,22 +18141,18 @@ tags: ["jquery"]
   }
 }
 \`\`\`
-#
 \`\`\`js
 $(".menuicon").click(function(){
   e.preventDefault();
   $(".menu").toggleClass("show");
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 側邊選單(Offcanvas)
-#
+### 側邊選單(Offcanvas)
 1. 最外層容器max-width
 2. 右側內容width給%寬度
 3. 右側內容用margin-left向左推選單寬度
-#
 \`\`\`html
 <a class="menuicon" href="#">選單按鈕</a>
 <aside>
@@ -19148,7 +18165,6 @@ $(".menuicon").click(function(){
   </ul>
 </aside>
 \`\`\`
-#
 \`\`\`css
 aside{
   position: absolute;
@@ -19162,7 +18178,6 @@ aside{
   transform: translate(0px);
 }
 \`\`\`
-#
 \`\`\`js
 $(".menuicon").click(function(){
   event.preventDefault();
@@ -19173,11 +18188,9 @@ $(".close").click(function(){
   $("aside").removeClass("show");
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 簡易QA選單效果
-#
+### 簡易QA選單效果
 \`\`\`html
 <ul class="menu">
   <li>項目一
@@ -19191,44 +18204,35 @@ $(".close").click(function(){
   </li>
 </ul>
 \`\`\`
-#
 \`\`\`css
 a{
   display: none;
 }
 \`\`\`
-#
 \`\`\`js
 $(".menu li").click(function(){
   $(this).find("a").slideToggle();
   $(this).siblings().find("a").slideUp();
 });
 \`\`\`
-#
 \`只有點擊的a連結展開，再次點擊收闔，其他連結也收闔\`
-#
+
 -----------------------------------------------
-#
-## 彈跳視窗(監聽事件)
-#
+### 彈跳視窗(監聽事件)
 \`\`\`html
 <a>連結一</a>
 <div class="box"></div>
 \`\`\`
-#
 \`\`\`js
 $("body").on("click","a",function(){//.on("觸發事件","選擇器")
   alert();
 });
 $(".box").html("<a>連結二</a>");
 \`\`\`
-#
 \`.on()不論程式碼先後順序全部都可以監聽\`
-#
+
 -----------------------------------------------
-#
-## 刪除選單
-#
+### 刪除選單
 \`\`\`html
 <ul class="menu">
   <li>項目一<span>X</span></li>
@@ -19236,23 +18240,18 @@ $(".box").html("<a>連結二</a>");
   <li>項目三<span>X</span></li>
 </ul>
 \`\`\`
-#
 \`\`\`js
 $(".menu li span").click(function(){
   $(this).parent().remove();
 });
 \`\`\`
-#
 \`點擊X，刪除該項目\`
-#
+
 -----------------------------------------------
-#
-## 回到頂端
-#
+### 回到頂端
 \`\`\`html
 <a href="#">UP</a>
 \`\`\`
-#
 \`\`\`css
 a{
   position: fixed;
@@ -19260,7 +18259,6 @@ a{
   bottom: 0;
 }
 \`\`\`
-#
 \`\`\`js
 $("a").click(function(){
   event.preventDefault();
@@ -19269,11 +18267,9 @@ $("a").click(function(){
   },800);//花0.8秒
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 滾動至錨點
-#
+### 滾動至錨點
 \`\`\`html
 <ul class="menu">
   <li><a href="#one">連結一</a></li>
@@ -19284,7 +18280,6 @@ $("a").click(function(){
 <section id="two">第二部分</section>
 <section id="three">第三部分</section>
 \`\`\`
-#
 \`\`\`js
 $("a").click(function(e){
     e.preventDefault();
@@ -19293,19 +18288,15 @@ $("a").click(function(e){
     $("html,body").animate({scrollTop:targetPos},3000);
 });
 \`\`\`
-#
 \`<a href="先對應到">，<section id="這裡">\`
-#
+
 -----------------------------------------------
-#
-## 滾動視窗到章節處出現效果
-#
+### 滾動視窗到章節處出現效果
 \`\`\`html
 <section id="one" data-color="yellow">第一部分</section>
 <section id="two" data-color="green">第二部分</section>
 <section id="three" data-color="blue">第三部分</section>
 \`\`\`
-#
 \`\`\`css
 section{
   height: 1000px;
@@ -19313,7 +18304,6 @@ section{
   background-color: red;
 }
 \`\`\`
-#
 \`\`\`js
 $(window).scroll(function(){
   var twoPos = $("#two").position().top; //抓取第二部分的高度
@@ -19327,11 +18317,9 @@ $(window).scroll(function(){
   }
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 滾動視窗到章節處出現淡入效果
-#
+### 滾動視窗到章節處出現淡入效果
 \`\`\`html
 <section id="one">第一部分</section>
 <section id="two">第二部分
@@ -19339,7 +18327,6 @@ $(window).scroll(function(){
 </section>
 <section id="three">第三部分</section>
 \`\`\`
-#
 \`\`\`css
 section{
   height: 1000px;
@@ -19359,7 +18346,6 @@ section{
   transform: translateY(0px);
 }
 \`\`\`
-#
 \`\`\`js
 $(window).scroll(function(){
   $(".animated").each(function(){
@@ -19373,17 +18359,14 @@ $(window).scroll(function(){
   })
 });
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 滾動背景錯動
-#
+### 滾動背景錯動
 \`\`\`html
 <section id="one">第一部分</section>
 <section id="two">第二部分</section>
 <section id="three">第三部分</section>
 \`\`\`
-#
 \`\`\`css
 #two{
   height: 1000px;
@@ -19394,24 +18377,18 @@ $(window).scroll(function(){
   background-image: url("https://picsum.photos/1000/1000.jpg")
 }
 \`\`\`
-#
 \`\`\`js
 $(window).scroll(function(){
   var scrollTop = $(window).scrollTop();
   $("#two").css('background-position-y', (scrollTop / 2) + 'px');
   $("#three").css('transform','translateY(' + (scrollTop / 2) + 'px)');
 });
-\`\`\`
-#`,__vite_glob_0_105=Object.freeze(Object.defineProperty({__proto__:null,default:_20240209JQuery__JS_CSS______},Symbol.toStringTag,{value:"Module"})),_20240301JQuery_______=`---
+\`\`\``,__vite_glob_0_105=Object.freeze(Object.defineProperty({__proto__:null,default:_20240209JQuery__JS_CSS______},Symbol.toStringTag,{value:"Module"})),_20240301JQuery_______=`---
 title: 【jQuery】加入聲音效果
 date: 2024-03-01
 tags: ["jquery"]
 ---
-#
-## 音樂播放按鈕
-#
-<!--more-->
-#
+### 音樂播放按鈕
 \`\`\`html
 <button type="button" id="btn-play">點擊播放音樂</button>
 \`\`\`
@@ -19421,17 +18398,12 @@ var button_audio = new Audio("網址");
 $("#btn-play").click(function(){
   button_audio.play();
 });
-\`\`\`
-#`,__vite_glob_0_106=Object.freeze(Object.defineProperty({__proto__:null,default:_20240301JQuery_______},Symbol.toStringTag,{value:"Module"})),_20240401WebIphone______=`---
+\`\`\``,__vite_glob_0_106=Object.freeze(Object.defineProperty({__proto__:null,default:_20240301JQuery_______},Symbol.toStringTag,{value:"Module"})),_20240401WebIphone______=`---
 title: 【Web】iphone歷代手機尺寸
 date: 2024-04-01
 tags: ["web"]
 ---
-#
-## iphone歷代手機尺寸
-#
-<!--more-->
-#
+### iphone歷代手機尺寸
 |機型|尺寸in|PPI|縱橫比|寬x高dp|寬x高px|密度dpi|
 |---|---|---|---|---|---|---|
 |iPhone15ProMax|6.7|460|19:9|430x932|1290x2796|3.0xxhdpi|
@@ -19459,21 +18431,15 @@ tags: ["web"]
 |iPhoneX(X,XS)|5.8|458|19:9|375x812|1125x2436|3.0xxhdpi|
 |iPhone8+(8+,7+,6S+,6+)|5.5|401|16:9|414x736|1242x2208|3.0xxhdpi|
 |iPhone8(8,7,6S,6)|4.7|326|16:9|375x667|750x1334|2.0xhdpi|
-|iPhoneSE(SE,5S,5C)|4.0|326|16:9|320x568|640x1136|2.0xhdpi|
-#`,__vite_glob_0_107=Object.freeze(Object.defineProperty({__proto__:null,default:_20240401WebIphone______},Symbol.toStringTag,{value:"Module"})),_20240430Web___nvm___node__=`---
+|iPhoneSE(SE,5S,5C)|4.0|326|16:9|320x568|640x1136|2.0xhdpi|`,__vite_glob_0_107=Object.freeze(Object.defineProperty({__proto__:null,default:_20240401WebIphone______},Symbol.toStringTag,{value:"Module"})),_20240430Web___nvm___node__=`---
 title: 【Web】利用nvm來控制node版本
 date: 2024-04-30
 tags: ["web"]
 ---
-#
-## 安裝nvm
-#
-<!--more-->
-#
+### 安裝nvm
 \`\`\`
 $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 \`\`\`
-#
 |指令|一般|縮寫|
 |---|---|---|
 |安裝最新穩定版node|nvm install node|nvm i node|
@@ -19482,75 +18448,55 @@ $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bas
 |查看已安裝的node清單|nvm list|nvm ls|
 |列出可安裝的nodeLTS版本|nvm ls-remote --lts||
 |設定node預設使用版本|nvm alias default 18.20.4||
-|移除已安裝版本|nvm uninstall 18.20.4|nvm uni 18.20.4|
-`,__vite_glob_0_108=Object.freeze(Object.defineProperty({__proto__:null,default:_20240430Web___nvm___node__},Symbol.toStringTag,{value:"Module"})),_20240501Webpack_____________=`---
+|移除已安裝版本|nvm uninstall 18.20.4|nvm uni 18.20.4|`,__vite_glob_0_108=Object.freeze(Object.defineProperty({__proto__:null,default:_20240430Web___nvm___node__},Symbol.toStringTag,{value:"Module"})),_20240501Webpack_____________=`---
 title: 【Webpack】基本環境建置並渲染出畫面
 date: 2024-05-01
 tags: ["webpack"]
 ---
-#
-## Webpack5 初步環境建置
-#
-<!--more-->
-#
-### 1.安裝node.js
-#
+### Webpack5 初步環境建置
+#### 1.安裝node.js
 1. \`node.js\`版本建議要18以上(可以使用nvm版本控制)
-#
 * 查看已安裝的\`node.js\`版本
-#
 \`\`\`
 $ nvm ls
 \`\`\`
 * 查看\`node.js\`有哪些LTS版本(較穩定)
-#
 \`\`\`
 $ nvm ls-remote --lts
 \`\`\`
 * 安裝\`node.js\`版本18.20.4
-#
 \`\`\`
 $ nvm i 18.20.4
 \`\`\`
 * 使用\`node.js\`版本18.20.4
-#
 \`\`\`
 $ nvm use 18.20.4
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 2.手動建立資料夾
-#
+#### 2.手動建立資料夾
 1. 快速建立\`package.json\`，輸入：
-#
 \`\`\`
 $ npm init -y
 \`\`\`
-#
 2. 安裝\`webpack\`基本套件：
     * \`webpack\`是主要核心
     * \`webpack-cli\`是webpack工具包
     * \`webpack-dev-server\`是執行環境工具
-#
 \`\`\`
 $ npm i webpack webpack-cli webpack-dev-server -D
 \`\`\`
-#
 3. 補充說明：\`-D\` 是 \`--save-dev\`的縮寫
     * 沒有加-D的套件會安裝在package.json的"dependencies"底下，表示生產環境和開發環境都會使用到，例：bootstrap。
     * 有加-D的套件會安裝在package.json的放在"devDependencies"底下，表示開發期間的工具和插件，在生產環境下不需要運行，例：webpack-cli。
-#
 \`\`\`
 you project
 ├─── node_modules/        
 └─── package.json   
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 3.在package.json設置：
-#
+#### 3.在package.json設置：
 \`\`\`json
 {
   "scripts":{
@@ -19569,19 +18515,15 @@ you project
   }
 }
 \`\`\`
-#
 \`--mode development 是開發模式：編譯完成的程式碼不會壓縮檔案較大\`
-#
+
 \`--mode production 是生產模式：編譯完成的程式碼會自動壓縮檔案較小\`
-#
+
 \`webpack serve 利用暫存空間渲染畫面在伺服器\`
-#
+
 -----------------------------------------------
-#
-### 4.手動建立檔案：
-#
+#### 4.手動建立檔案：
 1. 建立\`webpack.config.js\`檔：
-#
 \`\`\`js
 const path = require('path');
 
@@ -19594,15 +18536,12 @@ module.exports = {
     }
 }
 \`\`\`
-#
 \`entry可用物件方式傳多一次設置多個進入點\`
-#
+
 2. 在進入點位置手動新增\`main.js\`檔，然後在裡面寫：
-#
 \`\`\`js
 console.log('Hello World!!')
 \`\`\`
-#
 \`\`\`
 you project
 ├─── node_modules/        
@@ -19615,16 +18554,13 @@ you project
 ├─── package.json
 └─── webpack.config.js   
 \`\`\`
+
 -----------------------------------------------
-#
-### 5.執行專案：
-#
+#### 5.執行專案：
 1. 在終端機執行，就可以自動生成\`dist\`以及\`js/main.js\`檔：
-#
 \`\`\`
 $ npm run start
 \`\`\`
-#
 \`\`\`
 you project
 ├─── dist/
@@ -19643,19 +18579,14 @@ you project
 ├─── package.json
 └─── webpack.config.js   
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 6.建立index.html：
-#
+#### 6.建立index.html：
 1. 安裝\`html-webpack-plugin\`：
-#
 \`\`\`
 $ npm i html-webpack-plugin -D
 \`\`\`
-#
 2. 在\`src\`資料夾底下新增\`index.html\`，並簡單就夠基本html樣板：
-#
 \`\`\`html
 <!DOCTYPE html>
 <html lang="en">
@@ -19669,9 +18600,7 @@ $ npm i html-webpack-plugin -D
 </body>
 </html>
 \`\`\`
-#
 3. 在\`webpack.config.js\`檔案新增：
-#
 \`\`\`js
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //引入套件
@@ -19690,7 +18619,6 @@ module.exports = {
     ]
 }
 \`\`\`
-#
 \`\`\`
 you project
 ├─── dist/
@@ -19711,25 +18639,18 @@ you project
 ├─── package.json
 └─── webpack.config.js   
 \`\`\`
-#
+
 -----------------------------------------------
-#
-### 7.再次編譯最終成果：
-#
+#### 7.再次編譯最終成果：
 1. 在終端機輸入：
-#
 \`\`\`
 $ npm run start
 \`\`\`
-#
 2. 接著再輸入：
-#
 \`\`\`
 $npm run dev
 \`\`\`
-#
 3. 最後就能看到資料夾結構如下：
-#
 \`\`\`
 you project
 ├─── dist/
@@ -19756,19 +18677,12 @@ title: 【Webpack】編譯SCSS並優化+導入Bootstrap
 date: 2024-05-02
 tags: ["webpack"]
 ---
-#
-## 編譯css
-#
-<!--more-->
-#
+### 編譯css
 1. 安裝套件\`style-loader\`和\`css-loader\`套件
-#
 \`\`\`
 $ npm i style-loader css-loader -D
 \`\`\`
-#
 2. 在\`src\`資料夾底下手動建立\`css/style.css\`檔案，並在裡面寫一些樣式：
-#
 \`\`\`css
 body{
     background-color: red;
@@ -19780,7 +18694,6 @@ body{
     transform: translateX(-30px);
 }
 \`\`\`
-#
 \`\`\`
 you project
 ├─── dist/
@@ -19807,9 +18720,7 @@ you project
 ├─── package.json
 └─── webpack.config.js   
 \`\`\`
-#
 3. 在\`webpack.config.js\`新增：
-#
 \`\`\`js
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -19839,21 +18750,16 @@ module.exports = {
     ]
 }
 \`\`\`
-#
 \`在loader裡的執行序是由下往上\`
-#
+
 4. 在\`main.js\`裡新增：
-#
 \`\`\`js
 import '../css/style.css'
 \`\`\`
-#
 5. 在終端機執行： 
-#
 \`\`\`
 $ npm run start
 \`\`\`
-#
 \`\`\`
 you project
 ├─── dist/
@@ -19880,19 +18786,14 @@ you project
 ├─── package.json
 └─── webpack.config.js   
 \`\`\`
-#
+
 -----------------------------------------------
-#
 ### 將css以獨立方式帶入html
-#
 1. 安裝\`mini-css-extract-plugin\`套件
-#
 \`\`\`
 $ npm i mini-css-extract-plugin -D
 \`\`\`
-#
 2. 在\`webpack.config.js\`新增：
-#
 \`\`\`js
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -19926,25 +18827,18 @@ module.exports = {
     ]
 }
 \`\`\`
-#
 3. 在終端機執行： 
-#
 \`\`\`
 $ npm run start
 \`\`\`
-#
+
 -----------------------------------------------
-#
 ### 編譯scss檔案並將樣式帶入html
-#
 1. 安裝\`sass\`、\`sass-loader\`、\`postcss\`、\`postcss-loader\`、\`postcss-preset-env\`、
-#
 \`\`\`
 $ npm i sass sass-loader postcss postcss-loader postcss-preset-env -D
 \`\`\`
-#
 2. 在\`webpack.config.js\`新增：
-#
 \`\`\`js
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -19989,9 +18883,7 @@ module.exports = {
     ]
 }
 \`\`\`
-#
 3. 建立\`scss\`資料夾結構，並在裡面新增\`style.scss\`檔，簡單寫一些樣式：
-#
 \`\`\`scss
 body{
     background-color: red;
@@ -20003,19 +18895,14 @@ body{
     transform: translateX(-30px);
 }
 \`\`\`
-#
 4. 修改\`main.js\`裡的樣式路徑：
-#
 \`\`\`js
 import '../scss/style.scss'
 \`\`\`
-#
 5. 在終端機執行：
-#
 \`\`\`
 $ npm run start
 \`\`\`
-#
 \`\`\`
 you project
 ├─── dist/
@@ -20042,9 +18929,7 @@ you project
 ├─── package.json
 └─── webpack.config.js   
 \`\`\`
-#
 6. 可以看到在\`dist\`裡的\`style.css樣式自動增加前綴
-#
 \`\`\`css
 body {
   background-color: red;
@@ -20063,29 +18948,22 @@ body {
   transform: translateX(-30px);
 }
 \`\`\`
-#
+
 -----------------------------------------------
-#
 ### 若要使用bootstrap(5.3.3)
-#
 1. 安裝\`bootstrap\`套件:
     * \`bootstrap\`是css樣板套件
     * \`@popperjs/core\`是bootstrap定位套件
-#
 \`\`\`
 $ npm i bootstrap @popperjs/core
 \`\`\`
-#
 2. 快速取用\`bootstrap\`方法，是直接在\`main.js\`引入：
-#
 \`\`\`js
 import '../../node_modules/bootstrap/scss/bootstrap.scss'; //bootstrap核心
 import '../scss/style.scss'; //自定義樣式
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'; //bootstrap定位套件
 \`\`\`
-#
 3. 自訂\`bootstrap\`方法，在scss裡的\`style.scss\`引入：
-#
 \`\`\`scss
 //bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
@@ -20136,37 +19014,27 @@ import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'; //bootstr
 //自訂樣式
 @import "custom"
 \`\`\`
-#
 4. 重要補充：如果\`sass\`出現，關於變數等等的警告錯誤，請將\`sass\`版本降低到\`@1.77.6\`：
-#
+
 \`More info: https://sass-lang.com/d/color-functions\`
-#
-\`More info: https://sass-lang.com/d/mixed-decls\`å
-#
+
+\`More info: https://sass-lang.com/d/mixed-decls\`
 \`\`\`
 $ npm i sass@1.77.6
-\`\`\`
-#`,__vite_glob_0_110=Object.freeze(Object.defineProperty({__proto__:null,default:_20240502Webpack___SCSS______Bootstrap},Symbol.toStringTag,{value:"Module"})),_20240503Webpack___JS_____jQuery=`---
+\`\`\``,__vite_glob_0_110=Object.freeze(Object.defineProperty({__proto__:null,default:_20240502Webpack___SCSS______Bootstrap},Symbol.toStringTag,{value:"Module"})),_20240503Webpack___JS_____jQuery=`---
 title: 【Webpack】自動轉譯JS版本+全域引用jQuery
 date: 2024-05-03
 tags: ["webpack"]
 ---
-#
-## 轉譯js
-#
-<!--more-->
-#
+### 轉譯js
 1. 安裝套件\`babel-loader\`和\`@babel/core\`和\`@babel/preset-env\`套件
     * \`babel-loader\`是webpack的loader套件
     * \`@babel/core\`調用babel的api編譯
     * \`@babel/preset-env\`可以使用最新版本的javascript去編譯
-#
 \`\`\`
 $ npm i babel-loader @babel/core @babel/preset-env -D
 \`\`\`
-#
 2. 在\`webpack.config.js\`新增：
-#
 \`\`\`js
 const path = require('path');
 
@@ -20193,15 +19061,12 @@ module.exports = {
     }
 }
 \`\`\`
-#
 3. 在\`src\`底下新增\`all.js\`檔，並在檔案裡隨便寫一些程式：
-#
 \`\`\`js
 const greet = (name = 'Jack') => {
     return \`Hello, \${name}!\`;
 };
 \`\`\`
-#
 \`\`\`
 you project
 ├─── node_modules/        
@@ -20218,19 +19083,14 @@ you project
 ├─── package.json
 └─── webpack.config.js   
 \`\`\`
-#
 4. 在\`main.js\`引入這支\`all.js\`檔：
-#
 \`\`\`js
 import './all.js';
 \`\`\`
-#
 5. 在終端機執行：
-#
 \`\`\`
 $ npm run start
 \`\`\`
-#
 \`\`\`
 you project
 ├─── dist/
@@ -20253,31 +19113,22 @@ you project
 ├─── package.json
 └─── webpack.config.js   
 \`\`\`
-#
 6. 可以在編譯出來的\`dist\`檔底下的\`main.js\`看到轉譯的結果：
-#
 \`\`\`js
 eval("var greet = function greet() {\\n  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'Jack';\\n  return \\"Hello, \\".concat(name, \\"!\\");\\n};\\n\\n//# sourceURL=webpack:///./src/js/all.js?");
 \`\`\`
-#
+
 -----------------------------------------------
-#
 ### 若要使用jquery
-#
 1. 安裝套件\`jquery\`：
-#
 \`\`\`
 $ npm i jquery
 \`\`\`
-#
 2. 在\`main.js\`引用：
-#
 \`\`\`js
 import '../../node_modules/jquery.min.js'
 \`\`\`
-#
 3. 在\`webpack.config.js\`新增：
-#
 \`\`\`js
 const webpack = require('webpack'); //引用webpack-cli內的工具
 const path = require('path');
@@ -20312,41 +19163,28 @@ module.exports = {
     ]
 }
 \`\`\`
-#
 4. 測試\`jquery\`有沒有載入成功，可以在先前的\`all.js\`：
-#
 \`\`\`js
 $(document).ready(function(){
     $("body").css('backgroundColor','red')
 })
 \`\`\`
-#
 5. 再次終端機執行：
-#
 \`\`\`
 $ npm run start
 \`\`\`
-#
 6. 如果頁面整個有成功變成\`紅色\`，表示成功。
-#
 `,__vite_glob_0_111=Object.freeze(Object.defineProperty({__proto__:null,default:_20240503Webpack___JS_____jQuery},Symbol.toStringTag,{value:"Module"})),_20240504Webpack____________=`---
 title: 【Webpack】複製檔案+自動壓縮圖片
 date: 2024-05-04
 tags: ["webpack"]
 ---
-#
-## 單純複製檔案
-#
-<!--more-->
-#
+### 單純複製檔案
 1. 安裝\`copy-webpack-plugin\`套件
-#
 \`\`\`
 $ npm i copy-webpack-plugin -D
 \`\`\`
-#
 2. 在\`webpack.config.js\`新增：
-#
 \`\`\`js
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin'); //引用套件
@@ -20369,11 +19207,9 @@ module.exports = {
     ],
 }
 \`\`\`
-#
 \`from是來源路徑，to是輸出路徑，統一使用物件方式包裹\`
-#
+
 3. 在\`src\`底下新增\`images/favicon\`和\`fonts\`：
-#
 \`\`\`
 you project
 ├─── node_modules/        
@@ -20388,15 +19224,11 @@ you project
 ├─── package.json
 └─── webpack.config.js   
 \`\`\`
-#
 4. 在終端機執行：
-#
 \`\`\`
 $ npm run start
 \`\`\`
-#
 5. 可以發現資料夾被複製到\`dist\`底下：
-#
 \`\`\`
 you project
 ├─── dist/
@@ -20419,21 +19251,15 @@ you project
 ├─── package.json
 └─── webpack.config.js   
 \`\`\`
-#
 \`此時images裡的檔案(除了favicon)並不會被複製，因為沒有為該路徑進行複製\`
-#
+
 -----------------------------------------------
-#
-## 自動壓縮圖片處理
-#
+### 自動壓縮圖片處理
 1. 安裝\`image-webpack-loader\`套件：
-#
 \`\`\`
 $ npm i image-webpack-loader -D
 \`\`\`
-#
 2. 在\`webpack.config.js\`新增：
-#
 \`\`\`js
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -20489,29 +19315,20 @@ module.exports = {
     ],
 }
 \`\`\`
-#
 3. 到main.js將圖片全部引入：
-#
 \`\`\`js
 function importAll(r){
     r.keys().forEach(r);
 }
 importAll(require.context('../images',false,/\\.(gif|png|jpe?g|svg|webp)$/i));
 \`\`\`
-#
-\`此時images裡的檔案會成功的複製，並且經過壓縮處理\`
-#`,__vite_glob_0_112=Object.freeze(Object.defineProperty({__proto__:null,default:_20240504Webpack____________},Symbol.toStringTag,{value:"Module"})),_20240505Webpack________SourceMap__=`---
+\`此時images裡的檔案會成功的複製，並且經過壓縮處理\``,__vite_glob_0_112=Object.freeze(Object.defineProperty({__proto__:null,default:_20240504Webpack____________},Symbol.toStringTag,{value:"Module"})),_20240505Webpack________SourceMap__=`---
 title: 【Webpack】開發環境設置+SourceMap生成
 date: 2024-05-05
 tags: ["webpack"]
 ---
-#
-## 開發環境設置
-#
-<!--more-->
-#
+### 開發環境設置
 1. 在\`webpack.config.js\`新增：
-#
 \`\`\`js
 const path = require('path');
 
@@ -20530,13 +19347,10 @@ module.exports = {
     }
 }
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 自動生成map檔
-#
+### 自動生成map檔
 1. 在\`webpack.config.js\`新增：
-#
 \`\`\`js
 const path = require('path');
 
@@ -20555,60 +19369,42 @@ module.exports = {
     },
     devtool: 'source-map' //自動生成sourceMap檔
 }
-\`\`\`
-#`,__vite_glob_0_113=Object.freeze(Object.defineProperty({__proto__:null,default:_20240505Webpack________SourceMap__},Symbol.toStringTag,{value:"Module"})),_20240701PHP___php__=`---
+\`\`\``,__vite_glob_0_113=Object.freeze(Object.defineProperty({__proto__:null,default:_20240505Webpack________SourceMap__},Symbol.toStringTag,{value:"Module"})),_20240701PHP___php__=`---
 title: 【PHP】執行php專案
 date: 2024-07-01
 tags: ["PHP"]
 ---
-#
-## 執行php專案
-#
-<!--more-->
-#
+### 執行php專案
 1. 打開git中laravel專案
-#
 2. control＋\`開啟終端機
-#
 3. 複製env輸入：cp .env.example .env
-#
 4. 在.env裡的
     * DB_DATABASE=(看DB裡的sql名稱寫什麼就寫什麼)
     * DB_USERNAME=root
     * DB_PASSWORD=a1234567
     * APP_URL=localhost
-#
 5. 登入php(安裝在本機)
     * http://127.0.0.1/public/phpMyAdmin/
     * 帳號：root
     * 密碼：a1234567
-#
 6. 點“新增”
     1. 資料表名稱：(看DB裡的sql名稱寫什麼就寫什麼)
     2. 選擇：utf8mb4_general_ci
     3. 點“匯入”將DB裡的.sql匯入
-#
 7. 回到終端機
     1. 更新依賴套件：composer update
     2. 產生應用程序金鑰：php artisan key:generate --ansi 
     3. 建立公開連結：php artisan storage:link
     4. 啟動伺服器：php artisan serve
-#
+
 -----------------------------------------------
-#
-## php專案結構
-#
-![圖片](/img/執行php專案/執行php專案-1.jpg)
-#`,__vite_glob_0_114=Object.freeze(Object.defineProperty({__proto__:null,default:_20240701PHP___php__},Symbol.toStringTag,{value:"Module"})),_20241201Vue3JavaScript__=`---
+### php專案結構
+![圖片](/img/執行php專案/執行php專案-1.jpg)`,__vite_glob_0_114=Object.freeze(Object.defineProperty({__proto__:null,default:_20240701PHP___php__},Symbol.toStringTag,{value:"Module"})),_20241201Vue3JavaScript__=`---
 title: 【Vue3】JavaScript縮寫
 date: 2024-12-01
 tags: ["Vue3"]
 ---
-#
-## 物件字面值(Object literals)
-#
-<!--more-->
-#
+### 物件字面值(Object literals)
 \`\`\`js
 const obj = {
   name: '蘋果',
@@ -20619,9 +19415,7 @@ const obj = {
 
 console.log(obj.fn()); //蘋果
 \`\`\`
-#
 #### 縮寫後：
-#
 \`\`\`js
 const obj = {
   name: '蘋果',
@@ -20632,11 +19426,9 @@ const obj = {
 
 console.log(obj.fn()); //蘋果
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 物件內的變數
-#
+### 物件內的變數
 \`\`\`js
 const person = {
   name: '小明'
@@ -20648,9 +19440,7 @@ const people = {
 
 console.log(people); //person:{ name: '小明' }
 \`\`\`
-#
 #### 縮寫後：
-#
 \`\`\`js
 const person = {
   name: '小明'
@@ -20662,11 +19452,9 @@ const people = {
 
 console.log(people); //person:{ name: '小明' }
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 合併兩個陣列
-#
+### 合併兩個陣列
 \`\`\`js
 const groupA = ['蘋果', '香蕉', '鳳梨'];
 const groupB = ['蓮霧', '芭樂'];
@@ -20674,9 +19462,7 @@ const groupAll = groupA.concat(groupB);
 
 console.log(groupAll); //['蘋果', '香蕉', '鳳梨' , '蓮霧', '芭樂']
 \`\`\`
-#
 #### 縮寫後：
-#
 \`\`\`js
 const groupA = ['蘋果', '香蕉', '鳳梨'];
 const groupB = ['蓮霧', '芭樂'];
@@ -20684,11 +19470,9 @@ const groupAll = [...groupA , ...groupB];
 
 console.log(groupAll); //['蘋果', '香蕉', '鳳梨' , '蓮霧', '芭樂']
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 合併兩個物件
-#
+### 合併兩個物件
 \`\`\`js
 const methods = {
   fn1() {
@@ -20708,11 +19492,9 @@ const newMethods = {
 
 console.log(newMethods); //{fn: ƒ, fn1: ƒ, fn2: ƒ}
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 將dom元素陣列轉為純陣列
-#
+### 將dom元素陣列轉為純陣列
 \`\`\`html
 <ul>
     <li>1</li>
@@ -20727,13 +19509,10 @@ console.log(doms); //NodeList(3) [li, li, li]
 const newDoms = [...doms];
 console.log(newDoms); // [li, li, li]
 \`\`\`
-#
 \`純陣列比NodeList可使用的方法還多，例如：filter、map等\`
-#
+
 -----------------------------------------------
-#
-## 參數預設值
-#
+### 參數預設值
 \`\`\`js
 function sum(a, b) { 
     if(!b){
@@ -20743,9 +19522,7 @@ function sum(a, b) {
 }
 console.log(sum(1)); //4
 \`\`\`
-#
 #### 縮寫後：
-#
 \`\`\`js
 //設定b預設3，所以如果沒帶參數的話b自動會是3
 function sum(a, b = 3) { 
@@ -20763,11 +19540,7 @@ title: 【Vue3】this的指向
 date: 2024-12-02
 tags: ["Vue3"]
 ---
-#
-## 傳統函式this
-#
-<!--more-->
-#
+### 傳統函式this
 \`\`\`js
 let name = "全域蘋果";
 function sayApple(){
@@ -20779,13 +19552,10 @@ const obj = {
 }
 obj.sayApple(); //蘋果
 \`\`\`
-#
 \`看函式前面是在哪邊調用，而決定this的指向\`
-#
+
 -----------------------------------------------
-#
-## 傳統函式this 2
-#
+### 傳統函式this 2
 \`\`\`js
 let name = "全域蘋果";
 const obj = {
@@ -20796,11 +19566,9 @@ const obj = {
 }
 obj.sayApple(); //蘋果
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 物件內的物件函式
-#
+### 物件內的物件函式
 \`\`\`js
 let name = "全域蘋果";
 function sayApple(){
@@ -20816,11 +19584,9 @@ const obj = {
 }
 obj.obj2.sayApple(); //內層蘋果
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 物件內的函式裡的函式
-#
+### 物件內的函式裡的函式
 \`\`\`js
 let name = "全域蘋果";
 function sayApple() {
@@ -20834,11 +19600,9 @@ const obj = {
 }
 obj.fn(); //全域蘋果
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 非同步函式
-#
+### 非同步函式
 \`\`\`js
 let name = "全域蘋果";
 function sayApple() {
@@ -20854,11 +19618,9 @@ const obj = {
 }
 obj.fn(); //全域蘋果
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 箭頭函式的this指向
-#
+### 箭頭函式的this指向
 \`\`\`js
 let name = "全域蘋果";
 const obj = {
@@ -20869,13 +19631,10 @@ const obj = {
 }
 obj.sayApple(); //'全域蘋果'
 \`\`\`
-#
 \`箭頭函式沒有自己的this，會優先指向外層的this\`
-#
+
 -----------------------------------------------
-#
-## 箭頭函式的this指向
-#
+### 箭頭函式的this指向
 \`\`\`js
 let name = '全域蘋果'
 const obj = {
@@ -20893,13 +19652,8 @@ title: 【Vue3】關注點分離實作
 date: 2024-12-03
 tags: ["Vue3"]
 ---
-#
-## 傳統javascript
-#
-<!--more-->
-#
-#### 使用傳統JavaScript實作Vue元件生成按綁定刪除事件
-#
+### 傳統javascript
+使用傳統JavaScript實作Vue元件生成按綁定刪除事件
 \`\`\`html
 <ul class="list">
 </ul>
@@ -20940,11 +19694,7 @@ title: 【Vue3】物件傳參考特性
 date: 2024-12-04
 tags: ["Vue3"]
 ---
-#
-## 兩個物件互相影響
-#
-<!--more-->
-#
+### 兩個物件互相影響
 \`\`\`js
 const fruits = {
   name: "蘋果",
@@ -20956,13 +19706,10 @@ fruits2.name = "香蕉";
 console.log(fruits.name); //香蕉
 console.log(fruits2.name); //香蕉
 \`\`\`
-#
 \`當物件賦予到另一個物件時，就等於指向同一個物件\`
-#
+
 -----------------------------------------------
-#
-## 兩個物件互相影響2
-#
+### 兩個物件互相影響2
 \`\`\`js
 const fruits = {
   name: "蘋果",
@@ -20976,13 +19723,10 @@ const fn = (item) => {
 fn(fruits);
 console.log(fruits.name); //香蕉
 \`\`\`
-#
 \`當物件賦予到另一個物件時，就等於指向同一個物件\`
-#
+
 -----------------------------------------------
-#
-## 淺層拷貝(兩物件不影響)
-#
+### 淺層拷貝(兩物件不影響)
 \`\`\`js
 const fruits = {
   name: "蘋果",
@@ -20999,13 +19743,10 @@ fruits2.obj.price = 80;
 console.log(fruits.obj.price); //80
 console.log(fruits2.obj.price); //80
 \`\`\`
-#
 \`淺層拷貝的意思是，物件第一層指向不同，但下一層指向卻還是相同\`
-#
+
 -----------------------------------------------
-#
-## 淺層拷貝(兩物件不影響)2
-#
+### 淺層拷貝(兩物件不影響)2
 \`\`\`js
 const fruits = {
   name: "蘋果",
@@ -21024,13 +19765,10 @@ fruits2.obj.price = 80;
 console.log(fruits.obj.price); //80
 console.log(fruits2.obj.price); //80
 \`\`\`
-#
 \`淺層拷貝的意思是，物件第一層指向不同，但下一層指向卻還是相同\`
-#
+
 -----------------------------------------------
-#
-## 深層拷貝(兩物件不影響)
-#
+### 深層拷貝(兩物件不影響)
 \`\`\`js
 const fruits = {
   name: "蘋果",
@@ -21042,18 +19780,12 @@ fruits2.name = "香蕉";
 console.log(fruits.name); //蘋果
 console.log(fruits2.name); //香蕉
 \`\`\`
-#
-\`當物件賦予到另一個物件時，就等於指向同一個物件\`
-#`,__vite_glob_0_118=Object.freeze(Object.defineProperty({__proto__:null,default:_20241204Vue3________},Symbol.toStringTag,{value:"Module"})),_20241205Vue3Promise_____=`---
+\`當物件賦予到另一個物件時，就等於指向同一個物件\``,__vite_glob_0_118=Object.freeze(Object.defineProperty({__proto__:null,default:_20241204Vue3________},Symbol.toStringTag,{value:"Module"})),_20241205Vue3Promise_____=`---
 title: 【Vue3】promise非同步觀念
 date: 2024-12-05
 tags: ["Vue3"]
 ---
-#
-## 非同步觀念
-#
-<!--more-->
-#
+### 非同步觀念
 \`\`\`js
 const component = {
   init(){
@@ -21074,17 +19806,12 @@ component.init();
 //2
 //"已取得遠端資料"
 \`\`\`
-#
 \`重點結論：非同步事件一定是在事件都執行完之後才執行\`
-#
+
 -----------------------------------------------
-#
-## promise基本用法
-#
+### promise基本用法
 * 成功：透過resolve回傳結果，使用.then做接收
-#
 * 失敗：透過resolve回傳結果，使用.then和.catch接收
-#
 \`\`\`js
 const promiseSetTimeout = (status) => {
   return new Promise((resolve,reject)=>{
@@ -21098,18 +19825,14 @@ const promiseSetTimeout = (status) => {
   })
 }
 \`\`\`
-#
 #### 基礎應用
-#
 \`\`\`js
 promiseSetTimeout(true)
   .then(res => {
     console.log(res); //promiseSetTimeout 成功
   })
 \`\`\`
-#
 #### 串接
-#
 \`\`\`js
 promiseSetTimeout(true)
   .then(res => {
@@ -21120,11 +19843,8 @@ promiseSetTimeout(true)
     console.log(2,res); //2,promiseSetTimeout 成功
   })
 \`\`\`
-#
 \`連續接收第二、第三個資料時，可以使用return一個非同步事件，就可以繼續接.then\`
-#
 #### 失敗捕捉
-#
 \`\`\`js
 promiseSetTimeout(false)
   .then(res => {
@@ -21134,13 +19854,9 @@ promiseSetTimeout(false)
     console.log(err); //promiseSetTimeout 失敗
   })
 \`\`\`
-#
 \`捕捉失敗.then會直接被忽略\`
-#
 \`\`
-#
 #### 元件運用
-#
 \`\`\`js
 const component = {
   data:{
@@ -21157,27 +19873,17 @@ const component = {
 }
 component.init();
 \`\`\`
-#
-\`使用元件的初始化事件，將api資料載入到data\`
-#
-`,__vite_glob_0_119=Object.freeze(Object.defineProperty({__proto__:null,default:_20241205Vue3Promise_____},Symbol.toStringTag,{value:"Module"})),_20241206Vue3___axios__api=`---
+\`使用元件的初始化事件，將api資料載入到data\``,__vite_glob_0_119=Object.freeze(Object.defineProperty({__proto__:null,default:_20241205Vue3Promise_____},Symbol.toStringTag,{value:"Module"})),_20241206Vue3___axios__api=`---
 title: 【Vue3】使用axios串接api
 date: 2024-12-06
 tags: ["Vue3"]
 ---
-#
-## axios
-#
-<!--more-->
-#
+### axios
 * axios是promise的封裝套件
-#
 #### 使用前先在head引入
-#
 \`\`\`html
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"><\/script>
 \`\`\`
-#
 \`\`\`js
 //官方寫法
 $.ajax({
@@ -21197,41 +19903,31 @@ axios.get("https://randomuser.me/api/")
     console.log(err.response)
   })
 \`\`\`
-#
 \`.response是固定寫法\`
-#
+
 `,__vite_glob_0_120=Object.freeze(Object.defineProperty({__proto__:null,default:_20241206Vue3___axios__api},Symbol.toStringTag,{value:"Module"})),_20241207Vue3________ES__=`---
 title: 【Vue3】在瀏覽器上運行ES模組
 date: 2024-12-07
 tags: ["Vue3"]
 ---
-#
-## 匯入與匯出
-#
-#### 預設匯入和匯出
-#
+### 匯入與匯出
+#### 預設匯入和匯出：
 \`\`\`js
 import 自訂名稱 from ...
 
 export default = 
 \`\`\`
-#
-#### 具名匯入和匯出
-#
+#### 具名匯入和匯出：
 \`\`\`js
 import { 具名名稱 } from ...
 
 export const xxx = ...
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 匯入元件
-#
-###### 常見的匯出方式，通常用於匯出物件，在 Vue 開發中可用來匯出元件
-#
+### 匯入元件
+常見的匯出方式，通常用於匯出物件，在 Vue 開發中可用來匯出元件
 1. 先建立一個export1.js檔(component)
-#
 \`\`\`js
 export default {
   data:[ "蘋果","香蕉","鳳梨" ],
@@ -21261,9 +19957,7 @@ export default {
   }
 }
 \`\`\`
-#
 2. 在html或js檔進行匯入
-#
 \`\`\`html
 <script type="module">
 
@@ -21275,9 +19969,7 @@ newComponent.initData();
 
 <\/script>  
 \`\`\`
-#
 \`注意：一定要在<script>上加上type="module"才能使用\`
-#
 \`\`\`html
 <script type="module">
   var apple = "蘋果";
@@ -21287,18 +19979,12 @@ newComponent.initData();
   console.log(apple); // not defined
 <\/script>
 \`\`\`
-#
 \`每個type="module"作用域都是獨立的\`
-#
+
 -----------------------------------------------
-#
-## 匯入方法
-#
-###### 可用於匯出已定義的變數、物件、函式，專案開發中通常用於 “方法匯出”
-###### 第三方的框架、函式、套件很常使用具名定義 “方法”
-#
+### 匯入方法
+可用於匯出已定義的變數、物件、函式，專案開發中通常用於 “方法匯出”，第三方的框架、函式、套件很常使用具名定義 “方法”
 1. 先建立一個export2.js檔
-#
 \`\`\`js
 export const a = 1;
 
@@ -21310,9 +19996,7 @@ export function c(a,b){
   return a + b;
 }
 \`\`\`
-#
 2. 在html或js檔進行匯入
-#
 \`\`\`html
 <script type="module">
 //單一匯入（建議寫法）
@@ -21332,39 +20016,29 @@ all.b(); //1
 console.log(all.c(a,b)); //3
 <\/script>
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## sideEffect
-#
+### sideEffect
 1. 先建立一個sideEffect.js檔
-#
 \`\`\`js
 //立即函式
 (function (global) {
   global.$ = '我是 jQuery';
 })(window);
 \`\`\`
-#
 2. 匯入檔案
-#
 \`\`\`html
 <script type="module">
 import "./sideEffect.js";
 console.log($); //我是 jQuery
 <\/script>
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 使用ESM方式匯入vue
-#
-<!--more-->
-#
+### 使用ESM方式匯入vue
 \`\`\`html
 <div id="app">{{ apple }}</div>
 \`\`\`
-#
 \`\`\`html
 <script type="module">
 import { createApp } from "https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.esm-browser.min.js";
@@ -21379,22 +20053,15 @@ const apple = {
 
 createApp(apple).mount('#app');
 <\/script>
-\`\`\`
-
-`,__vite_glob_0_121=Object.freeze(Object.defineProperty({__proto__:null,default:_20241207Vue3________ES__},Symbol.toStringTag,{value:"Module"})),_20241208Vue3_____vue=`---
+\`\`\``,__vite_glob_0_121=Object.freeze(Object.defineProperty({__proto__:null,default:_20241207Vue3________ES__},Symbol.toStringTag,{value:"Module"})),_20241208Vue3_____vue=`---
 title: 【Vue3】開始使用vue
 date: 2024-12-08
 tags: ["Vue3"]
 ---
-#
-## 創建vue
-#
-<!--more-->
-#
+### 創建vue
 \`\`\`html
 <div id="app">{{ count }}{{ text }}</div>
 \`\`\`
-#
 \`\`\`js
 Vue.createApp({
   data(){
@@ -21405,27 +20072,20 @@ Vue.createApp({
   }
 }).mount("#app");
 \`\`\`
-#
 \`mount是綁定html顯示位置\`
-#
 #### 顯示結果：
-#
 \`\`\`html
 <div id="app">0這是一段文字</div>
 \`\`\`
-#
+
 -----------------------------------------------
-#
-## 資料數字，每次點擊按鈕資料數字+1
-#
+### 資料數字，每次點擊按鈕資料數字+1
 \`\`\`html
 <div id="app">
   <p>{{ count }}</p>
   <button type="button" @click="addCount">按我</button>
 </div>
-
 \`\`\`
-#
 \`\`\`js
 const app = {
   //資料（函式）
@@ -21448,13 +20108,10 @@ const app = {
 
 Vue.createApp(app).mount("#app");
 \`\`\`
-#
 \`不論在data或created或methods裡新增的東西，都會被攤在Proxy層，所以this都可以直接取用\`
-#
+
 -----------------------------------------------
-#
-## 更新名稱和圖片
-#
+### 更新名稱和圖片
 \`\`\`html
 <div id="app">
   <form>
@@ -21480,7 +20137,6 @@ Vue.createApp(app).mount("#app");
   </form>
 </div>
 \`\`\`
-#
 \`\`\`js
 const app = {
   data(){
@@ -21499,8 +20155,7 @@ const app = {
 }
 
 Vue.createApp(app).mount("#app");
-\`\`\`
-#`,__vite_glob_0_122=Object.freeze(Object.defineProperty({__proto__:null,default:_20241208Vue3_____vue},Symbol.toStringTag,{value:"Module"})),_20241209Vue3__________=`---
+\`\`\``,__vite_glob_0_122=Object.freeze(Object.defineProperty({__proto__:null,default:_20241208Vue3_____vue},Symbol.toStringTag,{value:"Module"})),_20241209Vue3__________=`---
 title: 【Vue3】實作新增或編輯資料
 date: 2024-12-09
 tags: ["Vue3"]
@@ -22403,7 +21058,22 @@ Vue.createApp({
   }
 }).mount("#app");
 \`\`\`
-
+-----------------------------------------------
+### checkbox綁定
+\`\`\`html
+<div id="app">
+  <input type="checkbox" v-model="checkAnswer">
+</div>
+\`\`\`
+\`\`\`js
+Vue.createApp({
+  data(){
+    return{
+      checkAnswer: true
+    }
+  }
+}).mount("#app");
+\`\`\`
 -----------------------------------------------
 ### checkbox單選 + 三元判斷式
 \`\`\`html
@@ -22445,7 +21115,8 @@ Vue.createApp({
 }).mount("#app");
 \`\`\`
 -----------------------------------------------
-### checkbox多選
+### checkbox多選(回傳陣列)
+如果要讓checkbox勾選就回傳陣列的話：
 \`\`\`html
 <div id="app">
   <p>您選擇的是：{{ checkboxAnswer.join() }}</p>
@@ -24718,7 +23389,7 @@ app.component('modal-component',{
 })
 
 app.mount("#app");
-\`\`\``,__vite_glob_0_145=Object.freeze(Object.defineProperty({__proto__:null,default:_20250101Vue3Ref__DOM___copy},Symbol.toStringTag,{value:"Module"})),_20260117Vue3___vite_vue3_tailwind4_1___copy=`---
+\`\`\``,__vite_glob_0_145=Object.freeze(Object.defineProperty({__proto__:null,default:_20250101Vue3Ref__DOM___copy},Symbol.toStringTag,{value:"Module"})),_20260117Vue3___vite_vue3_tailwind4_1__=`---
 title: 【Vue3】建立vite+vue3+tailwind4.1環境
 date: 2026-01-17
 tags: ["Vue3"]
@@ -24872,14 +23543,14 @@ defineProps({
 <template>
   {{ count }}
 </template>
-\`\`\``,__vite_glob_0_146=Object.freeze(Object.defineProperty({__proto__:null,default:_20260117Vue3___vite_vue3_tailwind4_1___copy},Symbol.toStringTag,{value:"Module"})),_20260118Vue3Setup_defineProps___copy=`---
+\`\`\``,__vite_glob_0_146=Object.freeze(Object.defineProperty({__proto__:null,default:_20260117Vue3___vite_vue3_tailwind4_1__},Symbol.toStringTag,{value:"Module"})),_20260118Vue3Setup_defineProps__=`---
 title: 【Vue3】setup與defineProps傳值
 date: 2026-01-18
 tags: ["Vue3"]
 ---
 ### 關於setup
 #### vue2：
-元件建立得時候在\`setup()\`宣告的資料，必須要return，才能讓\`template\`使用
+元件建立得時候在\`setup()\`宣告的資料，必須要\`return\`，才能讓\`template\`使用
 \`\`\`js
 <script>
 const { ref } = Vue;
@@ -24913,14 +23584,14 @@ const addCount = () => {
 -----------------------------------------------
 ### defineProps傳接資料
 1. \`defineProps()\`只在\`<script setup>\`能用
-2. props是唯讀的(read-only)只能用，不能改
+2. \`props\`是唯讀的(read-only)只能用，不能改
 #### 在父層：
 \`\`\`js
 <script setup>
 import AddTodo from 'components/AddTodo.vue';
 import { ref } from 'vue';
 const count = ref(0);
-const addCount = () =>{
+const addCount = () => {
     count.value += 1;
 }
 <\/script>
@@ -24946,48 +23617,7 @@ defineProps({
   }
 })
 <\/script>
-\`\`\``,__vite_glob_0_147=Object.freeze(Object.defineProperty({__proto__:null,default:_20260118Vue3Setup_defineProps___copy},Symbol.toStringTag,{value:"Module"})),_20260119Vue3_______github_pages=`---
-title: 【Vue3】將網站部署到github pages
-date: 2026-01-19
-tags: ["Vue3"]
----
-### 在github建立新的repository
-1. 建立repository時，網址為\`帳號\`/\`專案名稱\`
-2. 若已在vscode已經，建立了git檔，可以選擇推送儲存庫
-\`\`\`
-git remote add origin https://github.com/帳號/vuetest.git
-git branch -M main
-git push -u origin main
-\`\`\`
-3. 在專案中的終端機輸入以上指令，並且授權github允許存取vscode
-4. 回到github重整頁面，可以看到資料已上傳
-
------------------------------------------------
-### 將dist部署到github page上
-1. 安裝\`gh-pages\`套件
-\`\`\`
-$ npm i gh-pages
-\`\`\`
-2. 新增\`部署\`指令，到package.json
-\`\`\`js
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "deploy": "vite build && gh-pages -d dist"
-},
-\`\`\`
-\`gh-pages -d dist\`指令表示將dist部署
-
-3. 此時若直接部署到github上，會因為網址不對而無法正常顯示，所以我們必須要再設定基本路徑：
-新增\`base\`讓名稱跟\`帳號\`/\`vuetest\`相同
-\`\`\`js
-//vite.config.js
-
-export default defineConfig({
-    bass: '/vuetest/',
-});
-\`\`\``,__vite_glob_0_148=Object.freeze(Object.defineProperty({__proto__:null,default:_20260119Vue3_______github_pages},Symbol.toStringTag,{value:"Module"})),__viteBrowserExternal={},__viteBrowserExternal$1=Object.freeze(Object.defineProperty({__proto__:null,default:__viteBrowserExternal},Symbol.toStringTag,{value:"Module"})),require$$0=getAugmentedNamespace(__viteBrowserExternal$1);var kindOf,hasRequiredKindOf;function requireKindOf(){if(hasRequiredKindOf)return kindOf;hasRequiredKindOf=1;var r=Object.prototype.toString;kindOf=function(d){if(d===void 0)return"undefined";if(d===null)return"null";var k=typeof d;if(k==="boolean")return"boolean";if(k==="string")return"string";if(k==="number")return"number";if(k==="symbol")return"symbol";if(k==="function")return u(d)?"generatorfunction":"function";if(j(d))return"array";if(i(d))return"buffer";if(t(d))return"arguments";if(p(d))return"date";if(l(d))return"error";if(c(d))return"regexp";switch(_(d)){case"Symbol":return"symbol";case"Promise":return"promise";case"WeakMap":return"weakmap";case"WeakSet":return"weakset";case"Map":return"map";case"Set":return"set";case"Int8Array":return"int8array";case"Uint8Array":return"uint8array";case"Uint8ClampedArray":return"uint8clampedarray";case"Int16Array":return"int16array";case"Uint16Array":return"uint16array";case"Int32Array":return"int32array";case"Uint32Array":return"uint32array";case"Float32Array":return"float32array";case"Float64Array":return"float64array"}if(h(d))return"generator";switch(k=r.call(d),k){case"[object Object]":return"object";case"[object Map Iterator]":return"mapiterator";case"[object Set Iterator]":return"setiterator";case"[object String Iterator]":return"stringiterator";case"[object Array Iterator]":return"arrayiterator"}return k.slice(8,-1).toLowerCase().replace(/\s/g,"")};function _(a){return typeof a.constructor=="function"?a.constructor.name:null}function j(a){return Array.isArray?Array.isArray(a):a instanceof Array}function l(a){return a instanceof Error||typeof a.message=="string"&&a.constructor&&typeof a.constructor.stackTraceLimit=="number"}function p(a){return a instanceof Date?!0:typeof a.toDateString=="function"&&typeof a.getDate=="function"&&typeof a.setDate=="function"}function c(a){return a instanceof RegExp?!0:typeof a.flags=="string"&&typeof a.ignoreCase=="boolean"&&typeof a.multiline=="boolean"&&typeof a.global=="boolean"}function u(a,d){return _(a)==="GeneratorFunction"}function h(a){return typeof a.throw=="function"&&typeof a.return=="function"&&typeof a.next=="function"}function t(a){try{if(typeof a.length=="number"&&typeof a.callee=="function")return!0}catch(d){if(d.message.indexOf("callee")!==-1)return!0}return!1}function i(a){return a.constructor&&typeof a.constructor.isBuffer=="function"?a.constructor.isBuffer(a):!1}return kindOf}var isExtendable,hasRequiredIsExtendable;function requireIsExtendable(){return hasRequiredIsExtendable||(hasRequiredIsExtendable=1,isExtendable=function(_){return typeof _<"u"&&_!==null&&(typeof _=="object"||typeof _=="function")}),isExtendable}var extendShallow,hasRequiredExtendShallow;function requireExtendShallow(){if(hasRequiredExtendShallow)return extendShallow;hasRequiredExtendShallow=1;var r=requireIsExtendable();extendShallow=function(p){r(p)||(p={});for(var c=arguments.length,u=1;u<c;u++){var h=arguments[u];r(h)&&_(p,h)}return p};function _(l,p){for(var c in p)j(p,c)&&(l[c]=p[c])}function j(l,p){return Object.prototype.hasOwnProperty.call(l,p)}return extendShallow}var sectionMatter,hasRequiredSectionMatter;function requireSectionMatter(){if(hasRequiredSectionMatter)return sectionMatter;hasRequiredSectionMatter=1;var r=requireKindOf(),_=requireExtendShallow();sectionMatter=function(t,i){typeof i=="function"&&(i={parse:i});var a=l(t),d={section_delimiter:"---",parse:u},k=_({},d,i),q=k.section_delimiter,A=a.content.split(/\r?\n/),M=null,D=c(),V=[],R=[];function H(U){a.content=U,M=[],V=[]}function L(U){R.length&&(D.key=p(R[0],q),D.content=U,k.parse(D,M),M.push(D),D=c(),V=[],R=[])}for(var F=0;F<A.length;F++){var G=A[F],W=R.length,B=G.trim();if(j(B,q)){if(B.length===3&&F!==0){if(W===0||W===2){V.push(G);continue}R.push(B),D.data=V.join(`
+\`\`\``,__vite_glob_0_147=Object.freeze(Object.defineProperty({__proto__:null,default:_20260118Vue3Setup_defineProps__},Symbol.toStringTag,{value:"Module"})),_20260119Vue3_______github_pages='---\ntitle: 【Vue3】將網站部署到github pages\ndate: 2026-01-19\ntags: ["Vue3"]\n---\n### 在github建立新的repository\n1. 建立`repository`時，網址為`帳號`/`專案名稱`\n2. 若已在`vscode`已經，建立了`git`檔，可以選擇推送儲存庫\n#### 推送儲存庫指令：\n```\ngit remote add origin https://github.com/帳號/vuetest.git\ngit branch -M main\ngit push -u origin main\n```\n3. 在專案中的終端機輸入以上指令，並且授權github允許存取vscode\n4. 回到github重整頁面，可以看到資料已上傳\n\n-----------------------------------------------\n### 將dist部署到github page上\n1. 安裝`gh-pages`套件\n```\n$ npm i gh-pages\n```\n2. 新增`部署`指令，到`package.json`\n```js\n"scripts": {\n  "dev": "vite",\n  "build": "vite build",\n  "preview": "vite preview",\n  "deploy": "vite build && gh-pages -d dist"\n},\n```\n`gh-pages -d dist`指令表示將dist部署\n\n3. 此時若直接部署到`github`上，會因為網址不對而無法正常顯示，所以我們必須要再設定基本路徑：\n新增`base`讓名稱跟`帳號`/`vuetest`相同\n```js\n//vite.config.js\n\nexport default defineConfig({\n    base: \'/vuetest/\',\n});\n```',__vite_glob_0_148=Object.freeze(Object.defineProperty({__proto__:null,default:_20260119Vue3_______github_pages},Symbol.toStringTag,{value:"Module"})),__viteBrowserExternal={},__viteBrowserExternal$1=Object.freeze(Object.defineProperty({__proto__:null,default:__viteBrowserExternal},Symbol.toStringTag,{value:"Module"})),require$$0=getAugmentedNamespace(__viteBrowserExternal$1);var kindOf,hasRequiredKindOf;function requireKindOf(){if(hasRequiredKindOf)return kindOf;hasRequiredKindOf=1;var r=Object.prototype.toString;kindOf=function(d){if(d===void 0)return"undefined";if(d===null)return"null";var k=typeof d;if(k==="boolean")return"boolean";if(k==="string")return"string";if(k==="number")return"number";if(k==="symbol")return"symbol";if(k==="function")return u(d)?"generatorfunction":"function";if(j(d))return"array";if(i(d))return"buffer";if(t(d))return"arguments";if(p(d))return"date";if(l(d))return"error";if(c(d))return"regexp";switch(_(d)){case"Symbol":return"symbol";case"Promise":return"promise";case"WeakMap":return"weakmap";case"WeakSet":return"weakset";case"Map":return"map";case"Set":return"set";case"Int8Array":return"int8array";case"Uint8Array":return"uint8array";case"Uint8ClampedArray":return"uint8clampedarray";case"Int16Array":return"int16array";case"Uint16Array":return"uint16array";case"Int32Array":return"int32array";case"Uint32Array":return"uint32array";case"Float32Array":return"float32array";case"Float64Array":return"float64array"}if(h(d))return"generator";switch(k=r.call(d),k){case"[object Object]":return"object";case"[object Map Iterator]":return"mapiterator";case"[object Set Iterator]":return"setiterator";case"[object String Iterator]":return"stringiterator";case"[object Array Iterator]":return"arrayiterator"}return k.slice(8,-1).toLowerCase().replace(/\s/g,"")};function _(a){return typeof a.constructor=="function"?a.constructor.name:null}function j(a){return Array.isArray?Array.isArray(a):a instanceof Array}function l(a){return a instanceof Error||typeof a.message=="string"&&a.constructor&&typeof a.constructor.stackTraceLimit=="number"}function p(a){return a instanceof Date?!0:typeof a.toDateString=="function"&&typeof a.getDate=="function"&&typeof a.setDate=="function"}function c(a){return a instanceof RegExp?!0:typeof a.flags=="string"&&typeof a.ignoreCase=="boolean"&&typeof a.multiline=="boolean"&&typeof a.global=="boolean"}function u(a,d){return _(a)==="GeneratorFunction"}function h(a){return typeof a.throw=="function"&&typeof a.return=="function"&&typeof a.next=="function"}function t(a){try{if(typeof a.length=="number"&&typeof a.callee=="function")return!0}catch(d){if(d.message.indexOf("callee")!==-1)return!0}return!1}function i(a){return a.constructor&&typeof a.constructor.isBuffer=="function"?a.constructor.isBuffer(a):!1}return kindOf}var isExtendable,hasRequiredIsExtendable;function requireIsExtendable(){return hasRequiredIsExtendable||(hasRequiredIsExtendable=1,isExtendable=function(_){return typeof _<"u"&&_!==null&&(typeof _=="object"||typeof _=="function")}),isExtendable}var extendShallow,hasRequiredExtendShallow;function requireExtendShallow(){if(hasRequiredExtendShallow)return extendShallow;hasRequiredExtendShallow=1;var r=requireIsExtendable();extendShallow=function(p){r(p)||(p={});for(var c=arguments.length,u=1;u<c;u++){var h=arguments[u];r(h)&&_(p,h)}return p};function _(l,p){for(var c in p)j(p,c)&&(l[c]=p[c])}function j(l,p){return Object.prototype.hasOwnProperty.call(l,p)}return extendShallow}var sectionMatter,hasRequiredSectionMatter;function requireSectionMatter(){if(hasRequiredSectionMatter)return sectionMatter;hasRequiredSectionMatter=1;var r=requireKindOf(),_=requireExtendShallow();sectionMatter=function(t,i){typeof i=="function"&&(i={parse:i});var a=l(t),d={section_delimiter:"---",parse:u},k=_({},d,i),q=k.section_delimiter,A=a.content.split(/\r?\n/),M=null,D=c(),V=[],R=[];function H(U){a.content=U,M=[],V=[]}function L(U){R.length&&(D.key=p(R[0],q),D.content=U,k.parse(D,M),M.push(D),D=c(),V=[],R=[])}for(var F=0;F<A.length;F++){var G=A[F],W=R.length,B=G.trim();if(j(B,q)){if(B.length===3&&F!==0){if(W===0||W===2){V.push(G);continue}R.push(B),D.data=V.join(`
 `),V=[];continue}M===null&&H(V.join(`
 `)),W===2&&L(V.join(`
 `)),R.push(B);continue}V.push(G)}return M===null?H(V.join(`
