@@ -3,19 +3,12 @@ title: 【Vue3】使用axios串接api
 date: 2024-12-06
 tags: ["Vue3"]
 ---
-#
-## axios
-#
-<!--more-->
-#
+### axios
 * axios是promise的封裝套件
-#
 #### 使用前先在head引入
-#
 ```html
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 ```
-#
 ```js
 //官方寫法
 $.ajax({
@@ -35,6 +28,5 @@ axios.get("https://randomuser.me/api/")
     console.log(err.response)
   })
 ```
-#
 `.response是固定寫法`
-#
+

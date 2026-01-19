@@ -22,12 +22,10 @@
                                         class="text-neutral-800 group flex justify-between w-full hover:text-emerald-700 py-1">{{ tag.name }}
                                         <span class="group-hover:bg-emerald-700 group-hover:text-white flex justify-center   items-center text-sm text-emerald-600 bg-neutral-200 rounded px-2 transition-all">{{ tag.count }}</span>
                                     </Router-link>
-                                    
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    
                 </div>
             </div>
             <!-- 右側列表 -->
@@ -64,7 +62,6 @@
                                 #{{ tag }}
                             </Router-link>
                         </div>
-                        
                     </article>
                 </li>
             </ul>

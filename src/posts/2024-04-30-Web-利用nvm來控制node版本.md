@@ -3,15 +3,10 @@ title: 【Web】利用nvm來控制node版本
 date: 2024-04-30
 tags: ["web"]
 ---
-#
-## 安裝nvm
-#
-<!--more-->
-#
+### 安裝nvm
 ```
 $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 ```
-#
 |指令|一般|縮寫|
 |---|---|---|
 |安裝最新穩定版node|nvm install node|nvm i node|

@@ -3,23 +3,15 @@ title: 【Gulp】將javascript整合成穩定版本
 date: 2023-08-13
 tags: ["gulp"]
 ---
-#
-## gulp-babel
-#
-<!--more-->
-#
+### gulp-babel
 1. 在專案中打開終端機安裝`gulp-babel`、`@babel/core`、`@babel/preset-env`套件
-#
 ```html
 $ npm install gulp-babel @babel/core @babel/preset-env
 ```
-#
 `@開頭的套件，表示這是一個由特定組織或作者維護的套件`
-#
+
 -----------------------------------------------
-#
 2. 在gulpfile.js新增程式碼
-#
 ```js
 const gulp = require('gulp');
 const babel = require('gulp-babel');
@@ -35,19 +27,15 @@ gulp.task('babel', function(){
     .pipe(gulp.dest('dist/js')) //js編譯完成路徑
 });
 ```
-#
+
 -----------------------------------------------
-#
 3. 在終端機執行指令
-#
 ```html
 $ gulp babel
 ```
-#
+
 -----------------------------------------------
-#
 4. 執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯，生成到dist裡變成穩定的all.js
-#
 ```
 you project
 ├─── node_modules/        
@@ -66,22 +54,18 @@ you project
 ├─── package-lock.json    
 └─── package.json  
 ```
-#
+
 -----------------------------------------------
-#
 5. 回到index.html引入js
-#
 ```html
 <body>
     <script src="js/all.js"></script>
 </body>
 ```
-#
+
 -----------------------------------------------
-#
 6. 回到gulpfile.js設置屬性
     * `minified`: 布林值，是否要壓縮代碼
-#
 ```js
 const gulp = require('gulp');
 const babel = require('gulp-babel');
@@ -100,15 +84,12 @@ gulp.task('babel', function(){
 
 gulp.task('default', gulp.series('babel'));
 ```
-#
+
 -----------------------------------------------
-#
 7. 【補充】安裝`gulp-plumber`編譯發生錯誤時，將訊息傳到控制台
-#
 ```html
 $ npm install gulp-plumber
 ```
-#
 ```js
 const gulp = require('gulp');
 const babel = require('gulp-babel');
@@ -129,11 +110,8 @@ gulp.task('babel', function(){
 
 gulp.task('default', gulp.series('babel'));
 ```
-#
 -----------------------------------------------
-#
 8. 最後，在終端機執行`gulp`即可完成任務
-#
 ```html
 $ gulp
 ```

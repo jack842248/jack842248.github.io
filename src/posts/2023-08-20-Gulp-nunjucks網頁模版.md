@@ -3,21 +3,14 @@ title: 【Gulp】nunjucks網頁模版
 date: 2023-08-20
 tags: ["gulp"]
 ---
-#
-## gulp-nunjucks-render
-#
-<!--more-->
-#
+### gulp-nunjucks-render
 1. 在專案中打開終端機安裝`gulp-nunjucks-render`套件
-#
 ```html
 $ npm install gulp-nunjucks-render
 ```
-#
+
 -----------------------------------------------
-#
 2. 在gulpfile.js新增程式碼
-#
 ```js
 const gulp = require('gulp');
 const nunjucksRender = require('gulp-nunjucks-render');
@@ -32,19 +25,15 @@ gulp.task('layout',function(){
     .pipe(browserSync.stream());
 });
 ```
-#
+
 -----------------------------------------------
-#
 3. 在終端機執行指令
-#
 ```html
 $ gulp layout
 ```
-#
+
 -----------------------------------------------
-#
 4. 執行後會自動壓縮img裡的圖片，到dist裡的img資料夾裡
-#
 ```html
 you project
 ├─── node_modules/    
@@ -62,15 +51,11 @@ you project
 ├─── package-lock.json
 └─── package.json
 ```
-#
+
 -----------------------------------------------
-#
 ### nunjucks模板基礎用法1
-#
 #### 將重複標籤寫成模板
-#
 * layout.njk(父層)：
-#
 ```html
 <!DOCTYPE html>
 <html lang="zh-tw">
@@ -88,9 +73,7 @@ you project
 </body>
 </html>
 ```
-#
 * index.html(子層)：
-#
 ```html
 {% extends "layout.njk" %}
 
@@ -100,9 +83,7 @@ you project
 </div>
 {% endblock %}
 ```
-#
 * 渲染出的結果：
-#
 ```html
 <!DOCTYPE html>
 <html lang="zh-tw">
@@ -122,13 +103,10 @@ you project
 </body>
 </html>
 ```
-#
+
 -----------------------------------------------
-#
-#### 從模板寫回父層
-#
+### 從模板寫回父層
 * index.html(子層)
-#
 ```html
 {% extends "layout.njk" %}
 
@@ -142,68 +120,26 @@ you project
 
 {% endblock %}
 ```
-#
+
 -----------------------------------------------
-#
-#### 判斷式顯示
-#
+### 判斷式顯示
 * layout.njk(父層)：
-#
 ```html
   {% if variable %}
   <p>如果是true就換出現這段</p>
   {% endif %}
 ```
-#
 * index.html(子層)：
-#
 ```html
   {% set variable = true %}
 ```
-#
 * 渲染出的結果：
-#
 ```html
   <p>如果是true就換出現這段</p>
 ```
-#
------------------------------------------------
-#
-#### 進階判斷式顯示
-#
-* layout.njk(父層)：
-#
-```html
-    {% if hungry %}
-    <p>如果hungry成立就顯示</p>
-    {% elif tired %}
-    <p>如果tired成立就顯示</p>
-    {% else %}
-    <p>如果hungry、tired都不成立就顯示</p>
-    {% endif %}
-```
-#
-* index.html(子層)：
-#
-```html
-
-```
-#
-* 渲染出的結果：
-#
-```html
-  <p>如果hungry、tired都不成立就顯示</p>
-```
-
-
-
-
-
 
 -----------------------------------------------
-#
 * extends用於模板繼承
-#
 ```html
 <!-- layout.njk -->
 <!DOCTYPE html>
@@ -219,7 +155,6 @@ you project
 </body>
 </html>
 ```
-#
 ```html
 <!-- index.html -->
 {% extends "layout.njk" %}
@@ -227,11 +162,4 @@ you project
 {% block content %}
 撰寫的內容
 {% endblock %}
-```
-#
------------------------------------------------
-#
-* import用於導入macro，可以重複在模板使用
-#
-```
 ```

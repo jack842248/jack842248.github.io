@@ -3,11 +3,7 @@ title: 【Gulp】最終gulp完整final版
 date: 2023-08-21
 tags: ["gulp"]
 ---
-#
-## gulp-nunjucks-render
-#
-<!--more-->
-#
+### gulp-nunjucks-render
 ```js
 const gulp                 = require('gulp');
 const sass                 = require('gulp-sass')(require('sass'));

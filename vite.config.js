@@ -4,17 +4,15 @@ import tailwindcss from '@tailwindcss/vite'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
-    plugins: [
-        vue(),
-        tailwindcss()
-    ],
-    define:{
+    base: '/vuetest/',
+    plugins: [vue(), tailwindcss()],
+    define: {
         'process.env': {},
-        global: 'window'
+        global: 'window',
     },
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url)),
         },
     },
-})
+});

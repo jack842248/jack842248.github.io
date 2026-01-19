@@ -3,11 +3,7 @@ title: 【jQuery】用JS+CSS實作常用元件
 date: 2024-02-09
 tags: ["jquery"]
 ---
-#
-## 漢堡選單
-#
-<!--more-->
-#
+### 漢堡選單
 ```html
 <div class="header">
   <ul class="menu">
@@ -19,7 +15,6 @@ tags: ["jquery"]
   <a class="menuicon" href="#">選單按鈕</a>
 </div>
 ```
-#
 ```css
 .header{
   height: 80px;
@@ -58,22 +53,18 @@ tags: ["jquery"]
   }
 }
 ```
-#
 ```js
 $(".menuicon").click(function(){
   e.preventDefault();
   $(".menu").toggleClass("show");
 });
 ```
-#
+
 -----------------------------------------------
-#
-## 側邊選單(Offcanvas)
-#
+### 側邊選單(Offcanvas)
 1. 最外層容器max-width
 2. 右側內容width給%寬度
 3. 右側內容用margin-left向左推選單寬度
-#
 ```html
 <a class="menuicon" href="#">選單按鈕</a>
 <aside>
@@ -86,7 +77,6 @@ $(".menuicon").click(function(){
   </ul>
 </aside>
 ```
-#
 ```css
 aside{
   position: absolute;
@@ -100,7 +90,6 @@ aside{
   transform: translate(0px);
 }
 ```
-#
 ```js
 $(".menuicon").click(function(){
   event.preventDefault();
@@ -111,11 +100,9 @@ $(".close").click(function(){
   $("aside").removeClass("show");
 });
 ```
-#
+
 -----------------------------------------------
-#
-## 簡易QA選單效果
-#
+### 簡易QA選單效果
 ```html
 <ul class="menu">
   <li>項目一
@@ -129,44 +116,35 @@ $(".close").click(function(){
   </li>
 </ul>
 ```
-#
 ```css
 a{
   display: none;
 }
 ```
-#
 ```js
 $(".menu li").click(function(){
   $(this).find("a").slideToggle();
   $(this).siblings().find("a").slideUp();
 });
 ```
-#
 `只有點擊的a連結展開，再次點擊收闔，其他連結也收闔`
-#
+
 -----------------------------------------------
-#
-## 彈跳視窗(監聽事件)
-#
+### 彈跳視窗(監聽事件)
 ```html
 <a>連結一</a>
 <div class="box"></div>
 ```
-#
 ```js
 $("body").on("click","a",function(){//.on("觸發事件","選擇器")
   alert();
 });
 $(".box").html("<a>連結二</a>");
 ```
-#
 `.on()不論程式碼先後順序全部都可以監聽`
-#
+
 -----------------------------------------------
-#
-## 刪除選單
-#
+### 刪除選單
 ```html
 <ul class="menu">
   <li>項目一<span>X</span></li>
@@ -174,23 +152,18 @@ $(".box").html("<a>連結二</a>");
   <li>項目三<span>X</span></li>
 </ul>
 ```
-#
 ```js
 $(".menu li span").click(function(){
   $(this).parent().remove();
 });
 ```
-#
 `點擊X，刪除該項目`
-#
+
 -----------------------------------------------
-#
-## 回到頂端
-#
+### 回到頂端
 ```html
 <a href="#">UP</a>
 ```
-#
 ```css
 a{
   position: fixed;
@@ -198,7 +171,6 @@ a{
   bottom: 0;
 }
 ```
-#
 ```js
 $("a").click(function(){
   event.preventDefault();
@@ -207,11 +179,9 @@ $("a").click(function(){
   },800);//花0.8秒
 });
 ```
-#
+
 -----------------------------------------------
-#
-## 滾動至錨點
-#
+### 滾動至錨點
 ```html
 <ul class="menu">
   <li><a href="#one">連結一</a></li>
@@ -222,7 +192,6 @@ $("a").click(function(){
 <section id="two">第二部分</section>
 <section id="three">第三部分</section>
 ```
-#
 ```js
 $("a").click(function(e){
     e.preventDefault();
@@ -231,19 +200,15 @@ $("a").click(function(e){
     $("html,body").animate({scrollTop:targetPos},3000);
 });
 ```
-#
 `<a href="先對應到">，<section id="這裡">`
-#
+
 -----------------------------------------------
-#
-## 滾動視窗到章節處出現效果
-#
+### 滾動視窗到章節處出現效果
 ```html
 <section id="one" data-color="yellow">第一部分</section>
 <section id="two" data-color="green">第二部分</section>
 <section id="three" data-color="blue">第三部分</section>
 ```
-#
 ```css
 section{
   height: 1000px;
@@ -251,7 +216,6 @@ section{
   background-color: red;
 }
 ```
-#
 ```js
 $(window).scroll(function(){
   var twoPos = $("#two").position().top; //抓取第二部分的高度
@@ -265,11 +229,9 @@ $(window).scroll(function(){
   }
 });
 ```
-#
+
 -----------------------------------------------
-#
-## 滾動視窗到章節處出現淡入效果
-#
+### 滾動視窗到章節處出現淡入效果
 ```html
 <section id="one">第一部分</section>
 <section id="two">第二部分
@@ -277,7 +239,6 @@ $(window).scroll(function(){
 </section>
 <section id="three">第三部分</section>
 ```
-#
 ```css
 section{
   height: 1000px;
@@ -297,7 +258,6 @@ section{
   transform: translateY(0px);
 }
 ```
-#
 ```js
 $(window).scroll(function(){
   $(".animated").each(function(){
@@ -311,17 +271,14 @@ $(window).scroll(function(){
   })
 });
 ```
-#
+
 -----------------------------------------------
-#
-## 滾動背景錯動
-#
+### 滾動背景錯動
 ```html
 <section id="one">第一部分</section>
 <section id="two">第二部分</section>
 <section id="three">第三部分</section>
 ```
-#
 ```css
 #two{
   height: 1000px;
@@ -332,7 +289,6 @@ $(window).scroll(function(){
   background-image: url("https://picsum.photos/1000/1000.jpg")
 }
 ```
-#
 ```js
 $(window).scroll(function(){
   var scrollTop = $(window).scrollTop();
@@ -340,4 +296,3 @@ $(window).scroll(function(){
   $("#three").css('transform','translateY(' + (scrollTop / 2) + 'px)');
 });
 ```
-#

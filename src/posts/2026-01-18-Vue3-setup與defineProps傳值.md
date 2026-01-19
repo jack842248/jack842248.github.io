@@ -5,7 +5,7 @@ tags: ["Vue3"]
 ---
 ### 關於setup
 #### vue2：
-元件建立得時候在`setup()`宣告的資料，必須要return，才能讓`template`使用
+元件建立得時候在`setup()`宣告的資料，必須要`return`，才能讓`template`使用
 ```js
 <script>
 const { ref } = Vue;
@@ -39,14 +39,14 @@ const addCount = () => {
 -----------------------------------------------
 ### defineProps傳接資料
 1. `defineProps()`只在`<script setup>`能用
-2. props是唯讀的(read-only)只能用，不能改
+2. `props`是唯讀的(read-only)只能用，不能改
 #### 在父層：
 ```js
 <script setup>
 import AddTodo from 'components/AddTodo.vue';
 import { ref } from 'vue';
 const count = ref(0);
-const addCount = () =>{
+const addCount = () => {
     count.value += 1;
 }
 </script>

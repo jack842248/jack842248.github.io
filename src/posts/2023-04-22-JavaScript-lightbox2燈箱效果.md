@@ -3,71 +3,48 @@ title: 【JS】lightbox2燈箱效果
 date: 2023-04-22
 tags: ["javaScript"]
 ---
-#
-## lightbox2使用前準備
-#
-<!--more-->
-#
+### lightbox2使用前準備
 1. 下載[lightbox2](https://github.com/lokesh/lightbox2)
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-1.png)
-#
+
 -----------------------------------------------
-#
 2. 解壓縮後，將`/examples`內的檔案拉到自己的資料夾內
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-2.png)
-#
 `.js檔、.css檔、圖片檔都要拉`
-#
+
 -----------------------------------------------
-#
 3. 將.css和.js引入
     * 在`<head>`加入`<link href="css/lightbox.min.css" rel="stylesheet"/>`
     * 在`<body>`加入`<script src="js/lightbox-plus-jquery.min.js"></script>`
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-3.png)
-#
+
 -----------------------------------------------
-#
 4. 接著將圖片放入images資料夾
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-4.png)
-#
+
 -----------------------------------------------
-#
 5. 到index.html開始撰寫
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-5.png)
-#
+
 -----------------------------------------------
-#
 6. `data-title`圖片左下角標題
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-6.png)
-#
+
 -----------------------------------------------
-#
 7. 進階修改樣式到.js檔裡的最下方開始撰寫
-#
 ![圖片](/img/lightbox2燈箱效果/lightbox2燈箱效果-7.png)
-#
+
 -----------------------------------------------
-#
-## 將圖片群組化
-#
+### 將圖片群組化
+將`data-lightbox`名稱命名相同
 ```html
 <a href="images/image-1.jpg" data-lightbox="group1">Image1</a>
 <a href="images/image-2.jpg" data-lightbox="group1">Image2</a>
 <a href="images/image-3.jpg" data-lightbox="group1">Image3</a>
 ```
-#
-將`data-lightbox`名稱命名相同
-#
+
 -----------------------------------------------
-#
-## 其他參數設定
-#
+### 其他參數設定
 ```js
 lightbox.option({
     'alwaysShowNavOnTouchDevices': true,//在手機裝置上出現箭頭

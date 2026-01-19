@@ -3,13 +3,8 @@ title: 【Webpack】開發環境設置+SourceMap生成
 date: 2024-05-05
 tags: ["webpack"]
 ---
-#
-## 開發環境設置
-#
-<!--more-->
-#
+### 開發環境設置
 1. 在`webpack.config.js`新增：
-#
 ```js
 const path = require('path');
 
@@ -28,13 +23,10 @@ module.exports = {
     }
 }
 ```
-#
+
 -----------------------------------------------
-#
-## 自動生成map檔
-#
+### 自動生成map檔
 1. 在`webpack.config.js`新增：
-#
 ```js
 const path = require('path');
 
@@ -54,4 +46,3 @@ module.exports = {
     devtool: 'source-map' //自動生成sourceMap檔
 }
 ```
-#
