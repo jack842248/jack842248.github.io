@@ -1,1 +1,0 @@
-import{r as t,c as s,a,bI as l,F as n,o as c}from"./index-C-Jdnr10.js";const i={__name:"AboutViews",setup(r){const e=t(!1),o=()=>{e.value=!e.value,console.log("點擊按鈕")};return(u,p)=>(c(),s(n,null,[a("p",{onClick:o},"我是關於我"),a("p",null,l(e.value),1)],64))}};export{i as default};
