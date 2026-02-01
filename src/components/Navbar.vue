@@ -1,101 +1,61 @@
 <template>
-    <div class="sticky top-0 z-3">
-        <nav class="bg-neutral-800 shadow py-1">
-            <div class="container mx-auto">
-                <div class="flex justify-between items-center mx-4">
-					<!-- LOGO -->
-                    <router-link
-                        to="/"
-                        class="group hover:text-emerald-700 shrink-0">
-                        <h1 class="flex font-medium text-neutral-200">
-                            JACK HUANG BLOG
-                        </h1>
-                    </router-link>
-
-					<!-- 選單開關 -->
-                    <div class="sm:hidden">
-                        <button
-                            type="button"
-                            class="block relative py-4 z-10"
-                            @click="toggleMenu"
-                        >
-                            <Bars3BottomRightIcon class="size-5 text-neutral-200" />
-                        </button>
-                    </div>
-					<!-- 選單清單 -->
-                    <div class="absolute top-0 left-0 w-full h-full sm:relative mt-13 sm:mt-0">
-						<TransitionRoot
-                            :show="menu"
-                            enter="transition-transform duration-1000"
-                            enterFrom="translate-x-full"
-                            enterTo="translate-x-0"
-                            leave="transition-transform"
-                            leaveFrom="translate-x-0"
-                            leaveTo="translate-x-full"
-                            class="fixed top-0 bottom-0 right-0 w-64
-                                flex flex-col justify-center
-                                bg-neutral-800/90
-                                sm:static sm:w-auto sm:bg-neutral-800
-                                sm:translate-x-0 sm:transition-none z-10">
-                            <ul class="flex flex-col sm:flex-row sm:justify-end z-10"
-								@click="closeMenu">
-                                <li>
-									<router-link
-										to="/"
-										class="block text-sm text-neutral-200 hover:text-emerald-700 py-4 px-4">BLOG部落格
-									</router-link>
-                                </li>
-                                <li>
-									<router-link
-										to="/project"
-										class="block text-sm text-neutral-200 hover:text-emerald-700 py-4 px-4">PROJECT作品集
-									</router-link>
-                                </li>
-                                <li>
-									<router-link
-										to="/about"
-										class="block text-sm text-neutral-200 hover:text-emerald-700 py-4 px-4">ABOUT關於我
-									</router-link>
-                                </li>
-                            </ul>
-						</TransitionRoot>
-                    </div>
-                </div>
-            </div>
-        </nav>
+    <div class="fixed left-0 right-0 z-3">
+        <div class="@container flex justify-end">
+            <button
+                type="button"
+                :class="menu?'group navbar-toggler p-3 active m-2':'group navbar-toggler p-3 m-2'"
+                @click="toggleMenu">
+                <span class="navbar-toggler-line"></span>
+                <span class="navbar-toggler-line group-hover:w-5"></span>
+                <span class="navbar-toggler-line group-hover:w-6"></span>
+            </button>
+            <TransitionRoot
+                :show="menu"
+                enter="transition-transform duration-500"
+                enterFrom="translate-x-full"
+                enterTo="translate-x-0"
+                leave="transition-transform duration-500"
+                leaveFrom="translate-x-0"
+                leaveTo="translate-x-full"
+                class="fixed top-0 bottom-0 right-0 w-64">
+                <nav class="h-full">
+                    <ul class="h-full bg-neutral-800/95 px-10 py-30">
+                        <li>
+                            <router-link
+                                to="/"
+                                class="text-neutral-200 group hover:text-emerald-700 py-4 px-4">
+                                部落格 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">BLOG</span>
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link
+                                to="/project"
+                                class="text-neutral-200 group hover:text-emerald-700 py-4 px-4">
+                                作品集 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">PROJECT</span>
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link
+                                to="/about"
+                                class="text-neutral-200 group hover:text-emerald-700 py-4 px-4">
+                                關於我 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">ABOUT</span>
+                            </router-link>
+                        </li>
+                    </ul>
+                </nav>
+            </TransitionRoot>
+        </div>
     </div>
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
-import { Bars3BottomRightIcon } from "@heroicons/vue/24/solid";
-import { TransitionRoot } from '@headlessui/vue'
+import { ref } from 'vue';
+import { TransitionRoot } from '@headlessui/vue';
 
 const menu = ref(false);
 
 const toggleMenu = () => {
     menu.value = !menu.value;
-};
-
-const resizeMenu = () => {
-    if (window.innerWidth >= 640) {
-        menu.value = true;
-    } else {
-        menu.value = false;
-    }
-};
-
-const closeMenu = () => {
-	if(window.innerWidth <= 640){
-		menu.value = false;
-	}
-	console.log("關閉選單");
+    console.log("切換選單");
 }
-
-
-
-onMounted(() => {
-	resizeMenu();
-    window.addEventListener("resize", resizeMenu);
-});
 </script>

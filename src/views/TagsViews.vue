@@ -1,56 +1,54 @@
 <template>
-    <div class="relative z-2">
-        <div class="grid grid-cols-1 -mt-2">
-            <ul class="flex flex-col gap-1 min-w-0">
-                <li
-                    v-for="tag in tagsData"
-                    :key="tag.name"
-                    class="rounded-lg bg-white">
-                    <Disclosure
-                        as="div">
-                        <DisclosureButton
-                            class="flex w-full justify-between rounded-lg bg-white px-4 py-2 text-left text-sm font-medium text-neutral-900 hover:text-emerald-700"
-                            @click="toggleTag(tag.name)">
-                            <span>{{ tag.name }}</span>
-                            <ChevronUpIcon
-                                :class="activeTag === tag.name ? 'rotate-180 transform' : ''"
-                                class="h-5 w-5 text-emerald-700 transition-transform"/>
-                        </DisclosureButton>
-                        <Transition
-                            enter-active-class="transition-[grid-template-rows] duration-300 ease-out"
-                            enter-from-class="grid-rows-[0fr]"
-                            enter-to-class="grid-rows-[1fr]"
-                            leave-active-class="transition-[grid-template-rows] duration-200 ease-in"
-                            leave-from-class="grid-rows-[1fr]"
-                            leave-to-class="grid-rows-[0fr]">
-                            <div v-if="activeTag === tag.name" class="grid overflow-hidden">
-                                <div class="min-h-0">
-                                    <DisclosurePanel
-                                        static
-                                        class="p-3 text-sm text-neutral-500">
-                                        <ul class="flex flex-col gap-1">
-                                            <li
-                                                v-for="post in tag.posts"
-                                                :key="post">
-                                                <Router-link
-                                                    :to="{
-                                                        name: 'post',
-                                                        params: {
-                                                            id: post
-                                                        }
-                                                    }"
-                                                    class="bg-neutral-100 p-2 hover:text-emerald-700 hover:bg-neutral-200 rounded-lg">{{ post }}
-                                                </Router-link>
-                                            </li>
-                                        </ul>
-                                    </DisclosurePanel>
-                                </div>
+    <div class="grow px-3 py-5">
+        <ul class="flex flex-col gap-1 min-w-0">
+            <li
+                v-for="tag in tagsData"
+                :key="tag.name"
+                class="rounded-lg bg-white">
+                <Disclosure
+                    as="div">
+                    <DisclosureButton
+                        class="flex w-full justify-between rounded-lg bg-white px-4 py-2 text-left text-sm font-medium text-neutral-900 hover:text-emerald-700"
+                        @click="toggleTag(tag.name)">
+                        <span>{{ tag.name }}</span>
+                        <ChevronUpIcon
+                            :class="activeTag === tag.name ? 'rotate-180 transform' : ''"
+                            class="h-5 w-5 text-emerald-700 transition-transform"/>
+                    </DisclosureButton>
+                    <Transition
+                        enter-active-class="transition-[grid-template-rows] duration-300 ease-out"
+                        enter-from-class="grid-rows-[0fr]"
+                        enter-to-class="grid-rows-[1fr]"
+                        leave-active-class="transition-[grid-template-rows] duration-200 ease-in"
+                        leave-from-class="grid-rows-[1fr]"
+                        leave-to-class="grid-rows-[0fr]">
+                        <div v-if="activeTag === tag.name" class="grid overflow-hidden">
+                            <div class="min-h-0">
+                                <DisclosurePanel
+                                    static
+                                    class="p-3 text-sm text-neutral-500">
+                                    <ul class="flex flex-col gap-1">
+                                        <li
+                                            v-for="post in tag.posts"
+                                            :key="post">
+                                            <Router-link
+                                                :to="{
+                                                    name: 'post',
+                                                    params: {
+                                                        id: post
+                                                    }
+                                                }"
+                                                class="bg-neutral-100 p-2 hover:text-emerald-700 hover:bg-neutral-200 rounded-lg">{{ post }}
+                                            </Router-link>
+                                        </li>
+                                    </ul>
+                                </DisclosurePanel>
                             </div>
-                        </Transition>
-                    </Disclosure>
-                </li>
-            </ul>
-        </div>
+                        </div>
+                    </Transition>
+                </Disclosure>
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -119,12 +117,14 @@ onMounted(()=>{
 			}
 		}
 	);
+    
     const tagMap = new Map(
         tagList.map(tag => [
             tag.name,
             { ...tag, posts: [] }
         ])
     )
+    
     postData.forEach(post => {
         post.tags.forEach(tagName => {
             const target = tagMap.get(tagName)

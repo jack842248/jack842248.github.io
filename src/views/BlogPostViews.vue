@@ -1,49 +1,44 @@
 <template>
-    <div class="relative z-2">
-        <div class="-mt-2">
-            <div class="bg-white rounded-lg p-3 mb-3">
-                <div class="text-left">
-                    <VueMarkdown 
-                        v-if="postContent"
-                        :source="postContent" 
-                        :options="markdownOptions"
-                        class="markdown-body"
-                    />
+    <div class="grow border-l border-l-neutral-200 px-3 py-5">
+        <!-- 文章內容 -->
+        <VueMarkdown 
+            v-if="postContent"
+            :source="postContent" 
+            :options="markdownOptions"
+            class="markdown-body"/>
+        <!-- 底部頁籤   -->
+        <div class="flex justify-between items-center gap-3 py-3 mb-3">
+            <router-link
+                :to="{
+                    name: 'post',
+                    params: {
+                        id: prevPost?.id || null
+                    }
+                }"
+                class="group w-1/2 text-neutral-800 flex items-center py-2 rounded hover:text-emerald-700">
+                <div class="w-8 h-8 text-neutral-400 mr-2 group-hover:text-emerald-700"><ArrowLeftIcon></ArrowLeftIcon></div>
+                <div class="flex flex-col text-left">
+                    <span class="text-sm font-medium pl-1">PREV</span>
+                    <p class="text-sm break-words">{{ prevPost?.title }}</p>
                 </div>
-            </div>
-            <div class="flex justify-between items-center gap-3 py-3 mb-3">
-                <router-link
-                    :to="{
-                        name: 'post',
-                        params: {
-                            id: prevPost?.id || null
-                        }
-                    }"
-                    class="group w-1/2 text-neutral-800 flex items-center py-2 rounded hover:text-emerald-700">
-                    <div class="w-8 h-8 text-neutral-400 mr-2 group-hover:text-emerald-700"><ArrowLeftIcon></ArrowLeftIcon></div>
-                    <div class="flex flex-col text-left">
-                        <span class="text-sm font-medium pl-1">PREV</span>
-                        <p class="text-sm break-words">{{ prevPost?.title }}</p>
-                    </div>
-                </Router-link>
-                <div v-if="nextPost" class="w-1 h-10 bg-neutral-300"></div>
-                <router-link
-                    v-if="nextPost"
-                    :to="{
-                        name: 'post',
-                        params: {
-                            id: nextPost?.id || null
-                        }
-                    }"
-                    class="group w-1/2 text-neutral-800 flex justify-end items-center py-2 rounded hover:text-emerald-700">
-                    
-                    <div class="flex flex-col text-right">
-                        <span class="text-sm font-medium text-right pr-1">NEXT</span>
-                        <p class="text-sm break-words">{{ nextPost?.title }}</p>
-                    </div>
-                    <div class="w-8 h-8 text-neutral-400 ml-2 group-hover:text-emerald-700"><ArrowRightIcon></ArrowRightIcon></div>
-                </Router-link>
-            </div>
+            </Router-link>
+            <div v-if="nextPost" class="w-1 h-10 bg-neutral-300"></div>
+            <router-link
+                v-if="nextPost"
+                :to="{
+                    name: 'post',
+                    params: {
+                        id: nextPost?.id || null
+                    }
+                }"
+                class="group w-1/2 text-neutral-800 flex justify-end items-center py-2 rounded hover:text-emerald-700">
+                
+                <div class="flex flex-col text-right">
+                    <span class="text-sm font-medium text-right pr-1">NEXT</span>
+                    <p class="text-sm break-words">{{ nextPost?.title }}</p>
+                </div>
+                <div class="w-8 h-8 text-neutral-400 ml-2 group-hover:text-emerald-700"><ArrowRightIcon></ArrowRightIcon></div>
+            </Router-link>
         </div>
     </div>
 </template>

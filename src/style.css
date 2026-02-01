@@ -6,17 +6,10 @@
 	--font-work-sans: 'Work Sans', sans-serif;
 }
 
-
-
 @layer base {
 	* {
 		@apply font-work-sans;
 	}
-
-	body {
-		@apply bg-neutral-200 overflow-x-hidden;
-	}
-
 	a {
 		@apply block;
 	}
@@ -24,9 +17,14 @@
 	button {
 		@apply cursor-pointer;
 	}
+	aside{
+		@apply hidden -translate-x-full lg:relative lg:block lg:basis-lg lg:translate-x-0 md:transition-transform max-w-2xs basis-2xs shrink-0
+	}
 }
 
 @layer components {
+
+
 	.article-title{
 		@apply text-base font-medium text-neutral-900 group-hover:text-emerald-700 transition-all mb-2
 	}
@@ -36,6 +34,34 @@
 	.article-content{
 		@apply text-sm text-neutral-500 line-clamp-2 break-all mb-3
 	}
+
+
+	.navbar-toggler {
+		@apply relative flex flex-col justify-center items-center bg-emerald-700 aspect-square transition-all z-50;
+	}
+	.navbar-toggler-line {
+		@apply block bg-white w-6 h-0 pb-0.5 rounded-full mb-1.5 self-end hover:w-5 transition-all duration-500;
+	}
+	.navbar-toggler-line:last-child {
+		@apply mb-0 w-5;
+	}
+
+	.navbar-toggler.active > .navbar-toggler-line:first-child {
+		@apply rotate-45 translate-y-2 w-6
+	}
+	.navbar-toggler.active > .navbar-toggler-line:nth-child(2) {
+		@apply opacity-0 w-0
+	}
+	.navbar-toggler.active > .navbar-toggler-line:last-child {
+		@apply -rotate-45 -translate-y-2 w-6
+	}
+	.navbar-toggler.active:hover > .navbar-toggler-line:first-child {
+		@apply rotate-30
+	}
+	.navbar-toggler.active:hover > .navbar-toggler-line:last-child {
+		@apply -rotate-30
+	}
+
 	.markdown-body ul {
 		list-style: disc;
 		padding-left: 1.5em !important;
@@ -52,4 +78,5 @@
 		list-style: decimal;
 		padding-left: 1.5em;
 	}
+
 }

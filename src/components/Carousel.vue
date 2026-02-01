@@ -7,9 +7,9 @@
         class="relative">
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-1 w-full">
             <div class="text-center">
-                <h1 class="text-xl sm:text-3xl text-white text-shadow-md">{{ postInfo.title || '筆記' }}</h1>
+                <h1 class="text-xl sm:text-3xl text-white text-shadow-md">{{ postInfo.title || 'LESS is More' }}</h1>
                 <div class="mx-auto w-20 h-1 bg-emerald-700 rounded shadow-md my-1"></div>
-                <p class="text-sm sm:text-lg text-white text-shadow-md">{{ postInfo.date || 'code' }}</p>
+                <p class="text-sm sm:text-lg text-white text-shadow-md">{{ postInfo.date || 'BlueHorace' }}</p>
             </div>
         </div>
         <SwiperSlide>
