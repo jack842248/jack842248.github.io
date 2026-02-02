@@ -1,5 +1,5 @@
 ---
-title: 【JS】判斷式
+title: 判斷式if、else、switch
 date: 2021-02-02
 tags: ["javaScript"]
 ---

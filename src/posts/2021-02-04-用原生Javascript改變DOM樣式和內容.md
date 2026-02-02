@@ -1,9 +1,9 @@
 ---
-title: 【JS】改變DOM元素
+title: 用原生Javascript改變DOM樣式和內容
 date: 2021-02-04
 tags: ["javaScript"]
 ---
-### 點擊按鈕 + 改變標籤結構(innerHTML、prepend、append)
+### 替換標籤樣板
 ```html
 <button class="btn" type="button">按鈕</button>
 <ul class="list">
@@ -14,27 +14,39 @@ tags: ["javaScript"]
 let btn = document.querySelector(".btn");
 let list = document.querySelector(".list");
 
-//替換"蘋果"
 btn.onclick = function(){
   list.innerHTML = "<li>香蕉</li>";
 }
+```
+-----------------------------------------------
+### 加入標籤樣板
+```html
+<button class="btn" type="button">按鈕</button>
+<ul class="list">
+  <li>蘋果</li>
+</ul>
+```
+```js
+let btn = document.querySelector(".btn");
+let list = document.querySelector(".list");
 
-//加在"蘋果"前面
+//加在"<li>蘋果</li>"前面
 btn.onclick = function(){
-  let banana = document.createElement("li");
-  banana.textContent = "香蕉";
-  list.prepend(banana);
+  let bananaList = document.createElement("li");
+  bananaList.textContent = "香蕉";
+  list.prepend(bananaList);
 }
 
-//加在"蘋果"後面
+//加在"<li>蘋果</li>"後面
 btn.onclick = function(){
-  let banana = document.createElement("li");
-  banana.textContent = "香蕉";
-  list.append(banana);
+  let bananaList = document.createElement("li");
+  bananaList.textContent = "香蕉";
+  list.append(bananaList);
+}
 ```
 
 -----------------------------------------------
-### 點擊按鈕 + 改變文字(textContent)
+### 改變文字內容
 ```html
 <button class="btn" type="button">按鈕</button>
 <p class="apple">蘋果</p>
@@ -42,13 +54,14 @@ btn.onclick = function(){
 ```js
 let btn = document.querySelector(".btn");
 let apple = document.querySelector(".apple");
+
 btn.onclick = function(){
   apple.textContent = "香蕉";
 }
 ```
 
 -----------------------------------------------
-### 點擊按鈕 + 改變標籤屬性(setAttribute、getAttribute)
+### 改變標籤屬性
 ```html
 <button class="btn" type="button">按鈕</button>
 <a class="link" href="#">連結</a>
@@ -59,13 +72,13 @@ let link = document.querySelector(".link");
 
 btn.onclick = function(){
   link.setAttribute("href","https://www.google.com.tw/");
-  let href = document.getElementsByTagName("a")[0].getAttribute("href");
+  let href = link.getAttribute("href");
   console.log(href); //"https://www.google.com.tw/"
 }
 ```
 
 -----------------------------------------------
-### 點擊按鈕 + 改變元素樣式(style)
+### 改變元素樣式
 ```html
 <button class="btn" type="button">按鈕</button>
 <a class="link" href="#">連結</a>
@@ -89,7 +102,7 @@ btn.onclick = function(){
 ```
 
 -----------------------------------------------
-### 點擊按鈕 + 取得input裡的值(value)
+### 取得input裡的值
 ```html
 <button class="btn" type="button">按鈕</button>
 <input class="text" type="text">
@@ -104,7 +117,7 @@ btn.onclick = function(){
 ```
 
 -----------------------------------------------
-### 點擊按鈕 + 取得input的類型(type)
+### 取得input的類型
 ```html
 <button class="btn" type="button">按鈕</button>
 <input class="password" type="password">
@@ -123,6 +136,7 @@ btn.onclick = function(){
 * 跨網站指令碼攻擊。
 * 在 **input** 裡直接撰寫 **\<script>** 腳本來進行攻擊。
 * 盡量避免使用 **.onclick** + **.innerHTML** 方法。
+
 |名稱|innerHTML|createElement|
 |---|---|---|
 |使用方法|組完字串再帶入|以DOM節點來處理|

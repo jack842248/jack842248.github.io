@@ -1,5 +1,5 @@
 ---
-title: 【JS】抓取DOM元素
+title: 用原生Javascript抓取DOM元素方法
 date: 2021-02-03
 tags: ["javaScript"]
 ---
@@ -15,27 +15,31 @@ tags: ["javaScript"]
 -----------------------------------------------
 ### 抓取id元素
 ```html
-<div id="apple"></div>
+<div id="apple">蘋果</div>
 ```
 ```js
-let apple = document.getElementById("apple");
+//範例一
+let apple1 = document.getElementById("apple");
+console.log(apple1); //<div id="apple">蘋果</div>
 
-console.log(apple); //<div id="apple"></div>
-
-apple.textContent = "蘋果";
+//範例二
+let apple2 = document.querySelector('#apple');
+console.log(apple2); //<div id="apple">蘋果</div>
 ```
 
 -----------------------------------------------
 ### 抓取name元素
 ```html
-<div name="apple"></div>
+<div name="apple">蘋果</div>
 ```
 ```js
-let apple = document.getElementsByName("apple");
+//範例一
+let apple1 = document.getElementsByName("apple");
+console.log(typeof(apple1)); //NodeList(類陣列物件)
 
-console.log(typeof(apple)); //object
-
-apple[0].textContent = "蘋果";
+//範例二
+let apple2 = document.querySelector('[name="apple"]');
+console.log(apple2[0]); //<div id="apple">蘋果</div>
 ```
 
 -----------------------------------------------
@@ -44,11 +48,13 @@ apple[0].textContent = "蘋果";
 <button type="button">按鈕</button>
 ```
 ```js
-let btn = document.getElementsByTagName("button");
+//範例一
+let btn1 = document.getElementsByTagName("button");
+console.log(typeof(btn1)); //HTMLCollection(即時更新的類陣列)
 
-console.log(typeof(btn)); //object
-
-btn[0].textContent = "蘋果";
+//範例二
+let btn2 = document.querySelectorAll('button');
+btn2[0].textContent = "蘋果"; //<button type="button">蘋果</button>
 ```
 
 -----------------------------------------------
@@ -61,10 +67,10 @@ btn[0].textContent = "蘋果";
 </ul>
 ```
 ```js
-// 第一種寫法
+//範例一
 document.querySelector(".nav-link").textContent = "蓮霧";
 
-// 第二種寫法
+//範例二
 let list = document.querySelector(".list");
 list.querySelectorAll(".nav-link")[0].textContent = "蓮霧";
 ```
@@ -76,26 +82,24 @@ list.querySelectorAll(".nav-link")[0].textContent = "蓮霧";
   <li><a href="#" class="nav-link">鳳梨</a></li>
 </ul>
 ```
-`querySelector若有多個，只會抓取第一個元素`
+`querySelector若有多個，只會抓取第一個符合的元素`
 
 -----------------------------------------------
 ### 抓取input值
 ```html
-<input class="text" type="text" value="蘋果">
+<input class="apple" type="text" value="蘋果">
 ```
 ```js
-let text = document.querySelector(".text");
+//範例一
+let apple1 = document.querySelector(".apple");
+apple1.value = "香蕉";
 
-// 第一種寫法
-text.value = "香蕉";
-
-// 第二種寫法
-text.setAttribute("value","香蕉");
-
-//取得類型
-console.log(typeof(text.value)); //string
+//範例二
+let apple2 = document.querySelector(".apple");
+apple2.setAttribute("value","香蕉");
+console.log(typeof(apple.value)); //string
 ```
 #### 輸出結果：
 ```html
-<input class="text" type="text" value="香蕉">
+<input class="apple" type="text" value="香蕉">
 ```

@@ -1,5 +1,4 @@
 <template>
-    {{ currentRouteId }}
     <div class="flex px-3 py-5 mb-3">
         <div class="w-1 h-5 rounded bg-emerald-700 shrink-0 m-1 mr-2"></div>
         <div class="grow">
