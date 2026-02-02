@@ -1,10 +1,10 @@
 ---
-title: 【JS】event使用者事件
+title: Javascript監聽事件總整理
 date: 2021-02-06
 tags: ["javaScript"]
 ---
 ### 監聽點擊事件(事件氣泡)
-addEventListener(事件,一組動作,false) 若同時有多個監聽事件，先執行點擊目標在執行外層
+`addEventListener(事件,一組動作,false)` 若同時有多個監聽事件，先執行點擊目標在執行外層
 ```html
 <button class="btn" type="button">按鈕</button>
 ```
@@ -24,7 +24,7 @@ body.addEventListener("click",function(){
 
 -----------------------------------------------
 ### 監聽點擊事件(事件捕捉)
-addEventListener(事件,一組動作,true) 若同時有多個監聽事件，先執行外層在執行點擊目標
+`addEventListener(事件,一組動作,true)` 若同時有多個監聽事件，先執行外層在執行點擊目標
 ```html
 <button class="btn" type="button">按鈕</button>
 ```
@@ -43,10 +43,10 @@ body.addEventListener("click",function(){
 `結果："你點到body"，"你點到按鈕"`
 
 -----------------------------------------------
-### 監聽點擊事件 + 阻止事件冒泡
-1. addEventListener第三個參數預設是false，表示“事件從元素內開始往外發生”
+### 監聽點擊事件＋阻止事件冒泡
+1. `addEventListener`第三個參數預設是`false`，表示“事件從元素內開始往外發生”
 2. 當我點擊「按鈕」時會出現“蘋果”，後面body也會執行並出現“香蕉”
-3. 但如果加上stopPropagation之後，可以成功阻止事件冒泡，body不會執行
+3. 但如果加上`stopPropagation`之後，可以成功阻止事件冒泡，`body`不會執行
 ```html
 <button class="btn" type="button">按鈕</button>
 ```
@@ -66,7 +66,7 @@ body.addEventListener("click",function(){
 ```
 
 -----------------------------------------------
-### 監聽點擊事件 + 取消a連結跳至錨點
+### 監聽點擊事件＋取消a連結跳至錨點
 ```html
 <a class="link" href="#">連結</a>
 ```
@@ -74,14 +74,14 @@ body.addEventListener("click",function(){
 let link = document.querySelector(".link");
 
 link.addEventListener("click",function(event){
-    //取消a連結尋找錨點
+    //取消a連結尋找#錨點
     event.preventDefault();
     console.log("蘋果");
 });
 ```
 
 -----------------------------------------------
-### 監聽點擊事件 + 取消button寄送，先進行驗證
+### 監聽點擊事件＋取消button預設寄送，先進行驗證
 ```html
 <form class="form">
     <!-- required為必填，不能送出空值 -->
@@ -109,7 +109,7 @@ btn.addEventListener("click",function(event){
 ```
 
 -----------------------------------------------
-### 監聽點擊事件 + 取得滑鼠點擊的目標
+### 監聽點擊事件(取得滑鼠點擊的目標)
 ```html
 <button class="btn" type="button">按鈕</button>
 ```
@@ -129,7 +129,7 @@ document.addEventListener("click",function(event){
 ```
 
 -----------------------------------------------
-### 監聽鍵盤事件 + 取得按下的鍵盤值
+### 監聽鍵盤事件(取得按下的鍵盤值)
 ```js
 //按鍵盤"A"鍵
 document.addEventListener("keydown",function(event){
@@ -138,7 +138,7 @@ document.addEventListener("keydown",function(event){
 ```
 
 -----------------------------------------------
-### 監聽滑鼠移動事件
+### 監聽滑鼠事件
 ```html
 <button id="btn" type="button">按鈕</button>
 ```
@@ -157,7 +157,7 @@ btn.addEventListener("mouseleave",function(event){
 ```
 
 -----------------------------------------------
-### 監聽選單切換事件 + 比對資料顯示值
+### 監聽切換事件＋比對資料顯示值
 ```html
 <select class="select">
   <option value="蘋果">蘋果</option>
@@ -196,69 +196,4 @@ function showDataName(event){
   }
 }
 select.addEventListener("change",showDataName);
-```
-
------------------------------------------------
-### 點擊父層元素回傳正確值
-```html
-<ul class="list">
-  <li>蘋果</li>
-  <li>香蕉</li>
-  <li>鳳梨</li>
-</ul>
-```
-```js
-let list = document.querySelector(".list");
-list.addEventListener("click",function(e){
-    //確認點擊的是li而不是ul
-    if(e.target.nodeName !== "LI"){
-        return
-    }
-    console.log(e.target.textContent);
-})
-```
-
------------------------------------------------
-### 將input裡的值轉換成數字處理(parseInt)
-```html
-<label>蘋果數量：</label>
-<input class="apple" type="text" value="2">
-<br>
-<label>香蕉數量：</label>
-<input class="banana" type="text" value="2">
-<br>
-<button class="btn" type="button">按鈕</button>
-```
-```js
-let btn = document.querySelector(".btn");
-let apple = document.querySelector(".apple");
-let banana = document.querySelector(".banana");
-
-//第一種寫法
-btn.onclick = function(){
-  let applePrice = 20; //蘋果一顆20元
-  let bananaPrice = 15; //香蕉一根15元
-  let appleNum = parseInt(apple.value); //蘋果數量
-  let bananaNum = parseInt(banana.value); //香蕉數量
-  console.log(applePrice * appleNum + bananaPrice * bananaNum); //20 * 2 + 15 * 2 = 70
-}
-
-//第二種寫法return寫法
-function count(applePrice,bananaPrice){ 
-  let appleNum = parseInt(apple.value);
-  let bananaNum = parseInt(banana.value);
-  let total = applePrice * appleNum + bananaPrice * bananaNum;
-  return total
-}
-btn.onclick = function(){
-  console.log(count(20,15)); //將價錢以參數方式帶入
-}
-```
-`★★★從input裡取出來的值是"字串"，利用.parseInt()將字串轉為數字`
-```js
-console.log(parseInt("box")); //NaN
-console.log(parseInt("50")); //50
-console.log(parseInt("48.9")); //48 
-console.log(parseInt("50 60 70")); //50
-console.log(parseInt("50 days")); //50
 ```

@@ -1,5 +1,5 @@
 ---
-title: 【JS】localStorage
+title: 將資料暫存在瀏覽器的localStorage裡
 date: 2021-02-07
 tags: ["javaScript"]
 ---
