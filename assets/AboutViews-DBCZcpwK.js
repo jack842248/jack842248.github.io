@@ -1,0 +1,1 @@
+import{r as t,c as s,a,bH as l,F as n,o as c}from"./index-CDKMN7a-.js";const i={__name:"AboutViews",setup(r){const e=t(!1),o=()=>{e.value=!e.value,console.log("點擊按鈕")};return(u,p)=>(c(),s(n,null,[a("p",{onClick:o},"我是關於我"),a("p",null,l(e.value),1)],64))}};export{i as default};
