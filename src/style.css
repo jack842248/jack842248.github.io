@@ -13,7 +13,6 @@
 	a {
 		@apply block;
 	}
-
 	button {
 		@apply cursor-pointer;
 	}
