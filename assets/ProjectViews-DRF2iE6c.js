@@ -1,1 +1,0 @@
-import{d as s,r as t,c as l,a as o,bH as n,F as c,o as r}from"./index-CDKMN7a-.js";const i={__name:"ProjectViews",setup(u){s(()=>{console.log("我是案例")});const e=t(!1),a=()=>{e.value=!e.value,console.log("點擊按鈕")};return(p,_)=>(r(),l(c,null,[o("p",{onClick:a},"我是案例"),o("p",null,n(e.value),1)],64))}};export{i as default};
