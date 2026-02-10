@@ -1,0 +1,1 @@
+import{r as s,c as o,a,bK as l,F as n,o as r}from"./index-1md6xPDp.js";const i={__name:"AboutViews",setup(c){const e=s(!1),t=()=>{e.value=!e.value};return(u,p)=>(r(),o(n,null,[a("p",{onClick:t},"我是關於我"),a("p",null,l(e.value),1)],64))}};export{i as default};
