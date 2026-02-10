@@ -8,7 +8,7 @@
                     <li
                         v-for="tag in tagsData"
                         :key="tag.name"
-                        class="mb-2 ">
+                        class="mb-1">
                         <Disclosure
                             as="div">
                             <DisclosureButton

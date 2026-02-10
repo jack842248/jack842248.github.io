@@ -1,5 +1,5 @@
 <template>
-    <div class="grow border-l border-l-neutral-200 px-3 py-5">
+    <div class="w-full grow border-l border-l-neutral-200 px-3 py-5">
         <!-- 文章內容 -->
         <VueMarkdown 
             v-if="postContent"
