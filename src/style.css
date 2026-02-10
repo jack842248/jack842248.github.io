@@ -10,6 +10,15 @@
 	* {
 		@apply font-work-sans;
 	}
+	*::-webkit-scrollbar {
+		@apply w-2;
+	}
+	*::-webkit-scrollbar-thumb {
+		@apply bg-neutral-300 rounded-full border-2 border-transparent bg-clip-content transition-all;
+	}
+	*::-webkit-scrollbar-track {
+		@apply bg-transparent;
+	}
 	a {
 		@apply block;
 	}
@@ -22,8 +31,7 @@
 }
 
 @layer components {
-
-
+	/* 文章內容 */
 	.article-title{
 		@apply text-base font-medium text-neutral-900 group-hover:text-emerald-700 transition-all mb-2
 	}
@@ -33,10 +41,15 @@
 	.article-content{
 		@apply text-sm text-neutral-500 line-clamp-2 break-all mb-3
 	}
-
-
+	/* 切換選單按鈕 */
 	.navbar-toggler {
-		@apply relative flex flex-col justify-center items-center bg-emerald-700 aspect-square transition-all z-50;
+		@apply relative flex flex-col justify-center items-center aspect-square rounded-md transition-all duration-1000 z-50;
+	}
+	.navbar-toggler.scrolled {
+		@apply bg-emerald-700;
+	}
+	.navbar-toggler.active{
+		@apply bg-transparent
 	}
 	.navbar-toggler-line {
 		@apply block bg-white w-6 h-0 pb-0.5 rounded-full mb-1.5 self-end hover:w-5 transition-all duration-500;
@@ -44,7 +57,6 @@
 	.navbar-toggler-line:last-child {
 		@apply mb-0 w-5;
 	}
-
 	.navbar-toggler.active > .navbar-toggler-line:first-child {
 		@apply rotate-45 translate-y-2 w-6
 	}
@@ -61,24 +73,23 @@
 		@apply -rotate-30
 	}
 
+	/* 文章內容 */
 	.markdown-body ul {
-		list-style: disc;
-		padding-left: 1.5em !important;
+		@apply list-disc !pl-6
 	}
-	.markdown-body ol {
-		list-style: decimal;
-		padding-left: 1.5em !important;
+	/* .markdown-body ol {
+		@apply list-decimal !pl-6
 	}
 	.markdown-body ol li ul {
-		list-style: circle;
-		padding-left: 1.5em;
+		@apply list-[circle] !pl-6
 	}
 	.markdown-body ol li ol {
-		list-style: decimal;
-		padding-left: 1.5em;
+		@apply list-decimal !pl-6
 	}
 	.markdown-body table {
 		width: initial !important;
+	} */
+	.swiper-slide > img{
+		@apply w-full h-auto object-cover
 	}
-
 }

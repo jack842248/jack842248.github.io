@@ -1,8 +1,9 @@
 <template>
+    
     <div class="grow border-l border-l-neutral-200">
         <ul>
             <li
-                v-for="post in postList"
+                v-for="post in postsList"
                 :key="post.id">
                 <article class="flex p-3 py-5 border-b border-b-neutral-200">
                     <div class="w-1 h-5 rounded bg-emerald-700 shrink-0 m-1 mr-2"></div>
@@ -39,6 +40,7 @@
             <ul class="flex justify-center flex-wrap gap-1 py-5 text-neutral-500">
                 <li>
                     <Router-link
+                        v-if="currentRouteId > 1"
                         :to="{
                             name: 'list',
                             params: {
@@ -49,7 +51,7 @@
                         <ChevronLeftIcon class="w-5"></ChevronLeftIcon>
                     </Router-link>
                 </li>
-                <li v-for="page in pages" :key="page">
+                <li v-for="page in pagesList" :key="page">
                     <Router-link
                         :to="{
                             name: 'list',
@@ -65,6 +67,7 @@
                 </li>
                 <li>
                     <Router-link
+                        v-if="currentRouteId < totalPage"
                         :to="{
                             name: 'list',
                             params: {
@@ -78,59 +81,56 @@
             </ul>
         </nav>
     </div>
+    
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { useRoute, useRouter } from 'vue-router';
-import matter from 'gray-matter'
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/20/solid'
+import { useRoute } from 'vue-router';
+import matter from 'gray-matter';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/20/solid';
 
+//取得當前route的id參數
 const route = useRoute();
-const router = useRouter();
-
 const currentRouteId = computed(()=>{
     return Number(route.params.id)
 });
-console.log("現在頁謙",currentRouteId.value);
 
-//分類列表
-const tagsList = ref();
-
-//分頁總數量
-const totalPage = ref(null);
-//分頁顯示範圍
-const pages = computed(()=>{
-    return getNearbyRange(currentRouteId.value, 1, totalPage.value);
-})
-function getNearbyRange(current, min, max, size = 5) {
-    const half = Math.floor(size / 2);
-    let start = current - half;
-    let end = current + half;
-    if (start < min) {
-        start = min;
-        end = Math.min(min + size - 1, max);
-    }
-    if (end > max) {
-        end = max;
-        start = Math.max(max - size + 1, min);
-    }
-    const result = [];
-    for (let i = start; i <= end; i++) {
-        result.push(i);
-    }
-    return result;
-}
 //一頁文章顯示數量
 const pageSize = 5;
 //文章列表
 const postListData = ref([]);
-const postList = computed(()=>{
+const postsList = computed(()=>{
     const startNum = (currentRouteId.value - 1) * pageSize; 
     const endNum = currentRouteId.value * pageSize;
     return postListData.value.slice(startNum, endNum);
 });
 
+//頁碼總數量
+const totalPage = ref(null);
+//頁碼顯示範圍
+const pagesList = computed(()=>{
+    return getNearbyRange(currentRouteId.value, 1, totalPage.value);
+})
+//計算頁碼顯示範圍
+function getNearbyRange(current, min, max, size = 10) {
+    const half = Math.floor(size / 2)
+
+    let start = Math.max(current - half, min)
+    let end = Math.min(current + half, max)
+
+    // 保證範圍長度 = size（如果不足，往前或往後補）
+    const rangeLength = end - start + 1
+    if (rangeLength < size) {
+        if (start === min) {
+        end = Math.min(start + size - 1, max)
+        } else if (end === max) {
+        start = Math.max(end - size + 1, min)
+        }
+    }
+
+    return Array.from({ length: end - start + 1 }, (_, i) => start + i)
+}
 
 onMounted(()=>{
     //取得所有文章
@@ -163,24 +163,6 @@ onMounted(()=>{
         }
     })
     
-    const tagCounts = {};
-    postData.forEach((post) => {
-        post.tags.forEach((tag) => {
-            if (tagCounts[tag] === undefined) {
-                tagCounts[tag] = 1;
-            } else {
-                tagCounts[tag] = tagCounts[tag] + 1;
-            }
-        });
-    });
-    tagsList.value = Object.entries(tagCounts).map(([key, value]) => {
-			return{
-				name: key,
-				count: value
-			}
-		}
-	);
-
     //文章以日期最新排序
     postData.sort((a,b)=>{
         return new Date(b.date) - new Date(a.date);

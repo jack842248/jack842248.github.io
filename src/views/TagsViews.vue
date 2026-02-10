@@ -76,7 +76,6 @@ const toggleTag = (tag)=> {
                 name: 'tags'
             }
         )
-        console.log("作用了")
     }else{
         activeTag.value = tag
         router.replace({

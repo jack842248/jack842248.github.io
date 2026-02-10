@@ -8,6 +8,5 @@
     const a = ref(false);
     const toggleBtn = ()=> {
         a.value = !a.value;
-        console.log("點擊按鈕")
     }
 </script>

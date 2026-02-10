@@ -1,16 +1,20 @@
 <template>
     <div class="fixed left-0 right-0 z-3">
         <div class="@container flex justify-end">
+            <!-- :class="uiStore.menuShow?'active ':''" -->
             <button
                 type="button"
-                :class="menu?'group navbar-toggler p-3 active m-2':'group navbar-toggler p-3 m-2'"
-                @click="toggleMenu">
+                class="group navbar-toggler p-3 m-2"
+                :class="isScrolled?'scrolled':''"
+                
+                @click="uiStore.toggleMenu()"
+                ref="toggleButtonRef">
                 <span class="navbar-toggler-line"></span>
                 <span class="navbar-toggler-line group-hover:w-5"></span>
                 <span class="navbar-toggler-line group-hover:w-6"></span>
             </button>
             <TransitionRoot
-                :show="menu"
+                :show="uiStore.menuShow"
                 enter="transition-transform duration-500"
                 enterFrom="translate-x-full"
                 enterTo="translate-x-0"
@@ -18,7 +22,7 @@
                 leaveFrom="translate-x-0"
                 leaveTo="translate-x-full"
                 class="fixed top-0 bottom-0 right-0 w-64">
-                <nav class="h-full">
+                <nav class="h-full" ref="menuRef">
                     <ul class="h-full bg-neutral-800/95 px-10 py-30">
                         <li>
                             <router-link
@@ -49,13 +53,43 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { TransitionRoot } from '@headlessui/vue';
+import { useUIStore } from '@/stores/ui';
+import { useRoute } from 'vue-router';
 
-const menu = ref(false);
+const uiStore = useUIStore();
+const route = useRoute();
 
-const toggleMenu = () => {
-    menu.value = !menu.value;
-    console.log("切換選單");
+//監聽滾動事件以改變選單按鈕的樣式
+const isScrolled = ref(false);
+const onScroll = () => {
+    console.log("我滾動了isScrolled",isScrolled.value);
+    
+    isScrolled.value = window.scrollY > 100
 }
+
+//觀察路由如果變換就關閉menu
+watch(() => route.fullPath, () => {
+    uiStore.closeMenu()
+})
+
+//點擊選單以外的區域就關閉選單
+const menuRef = ref(null)
+const toggleButtonRef = ref(null)
+const onClickOutside = (event) => {
+    if (!uiStore.menuShow) return
+    if (menuRef.value && menuRef.value.contains(event.target)) return
+    if (toggleButtonRef.value && toggleButtonRef.value.contains(event.target)) return
+    uiStore.closeMenu()
+}
+onMounted(() => {
+    document.addEventListener('click', onClickOutside);
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+})
+onUnmounted(() => {
+    document.removeEventListener('click', onClickOutside);
+    window.removeEventListener('scroll', onScroll);
+})
 </script>

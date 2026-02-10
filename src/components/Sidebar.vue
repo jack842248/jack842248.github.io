@@ -60,21 +60,18 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { useRoute, useRouter } from 'vue-router';
+import { useRoute } from 'vue-router';
 import matter from 'gray-matter'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue';
 
-
-
+//分類列表
 const tagsData = ref([]);
 
-//自動偵測目前的路由id
+//當前的路由id
 const route = useRoute();
 const currentRouteId = computed(()=>{
     return Number(route.params.id)
 });
-console.log("目前陸游id",currentRouteId.value)
-
 
 //判斷點擊的是否已經展開，如果已經展開就收合
 const activeTag = ref(null)
@@ -135,12 +132,14 @@ onMounted(()=>{
 			}
 		}
 	);
+    tagList.sort((a, b) => a.name.localeCompare(b.name))
     const tagMap = new Map(
         tagList.map(tag => [
             tag.name,
             { ...tag, posts: [] }
         ])
     )
+    
     postData.forEach(post => {
         post.tags.forEach(tagName => {
             const target = tagMap.get(tagName)

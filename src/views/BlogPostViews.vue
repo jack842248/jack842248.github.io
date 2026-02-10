@@ -74,8 +74,6 @@ const nextPost = ref(null);
 //編譯目前文章
 const renderPost = () => {
     //找到當前的文章
-    console.log('currentPostId',currentPostId)
-    console.log('currentPostId.value',currentPostId.value)
     const currentFile = postListData.value.find((post)=>{
         return post.id === currentPostId.value;
     })
