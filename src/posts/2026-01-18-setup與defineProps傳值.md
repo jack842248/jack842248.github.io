@@ -1,10 +1,10 @@
 ---
-title: 【Vue3】setup與defineProps傳值
+title: setup與defineProps傳值
 date: 2026-01-18
 tags: ["Vue3"]
 ---
-### 關於setup
-#### vue2：
+## 關於setup
+### vue2：
 元件建立得時候在`setup()`宣告的資料，必須要`return`，才能讓`template`使用
 ```js
 <script>
@@ -24,7 +24,7 @@ Vue.createApp({
 }).mount('#app');
 </script>
 ```
-#### vue3：
+### vue3：
 `<script setup>`是簡化寫法，他會自動把`setup()`內的資料，return出來
 ```js
 <script setup>
@@ -37,10 +37,10 @@ const addCount = () => {
 </script>
 ```
 -----------------------------------------------
-### defineProps傳接資料
+## defineProps傳接資料
 1. `defineProps()`只在`<script setup>`能用
 2. `props`是唯讀的(read-only)只能用，不能改
-#### 在父層：
+### 在父層：
 ```js
 <script setup>
 import AddTodo from 'components/AddTodo.vue';
@@ -57,7 +57,7 @@ const addCount = () => {
 </template>
 ```
 `:count`表示動態綁定
-#### 在子層(AddTodo)：
+### 在子層(AddTodo)：
 `defineProps()`會自動宣告props的型別，`template`實際上是使用props.count
 但`<script setup>`會自動省略`props.`
 ```js

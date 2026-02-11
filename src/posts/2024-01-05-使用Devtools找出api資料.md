@@ -1,9 +1,9 @@
 ---
-title: 【Web】使用Devtools找出api資料
+title: 使用Devtools找出api資料
 date: 2024-01-05
 tags: ["web"]
 ---
-### 使用Devtools找出api資料
+## 使用Devtools找出api資料
 1. 打開 Chrome 到欲找資料頁面，右鍵“檢查”，快捷鍵(option ＋ command ＋ I)
 ![圖片](/img/使用Devtools找出api資料/使用Devtools找出api資料-1.png)
 

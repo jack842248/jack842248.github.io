@@ -1,9 +1,9 @@
 ---
-title: 【Vue】vue-table排序(Bootstrap版)
+title: vue-table排序(Bootstrap版)
 date: 2021-06-07
 tags: ["vue"]
 ---
-### methods版
+## methods版
 1. 在\<tr>使用 **v-for** 將[a]資料列印出來。
 2. 在\<th>"價格"上增加 **@click** 事件[sortPrice]，並在 **methods** 新增[sortPrice]方法。
 3. \[sortPrice]:判斷現在[b]的值是(true/false)，決定要排序大到小，還是小到大。
@@ -99,7 +99,7 @@ let app = new Vue({
 ```
 
 -----------------------------------------------
-### computed版
+## computed版
 1. 在\<tr>使用 **v-for** 將[a]資料列印出來。
 2. 在 **computed** 新增[sortArray]來監控[a]資料。
 3. \[sortArray]:先判斷[b]的值是(true/false)，來判斷點擊的是"日期"還是"到期日"。

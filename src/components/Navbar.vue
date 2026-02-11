@@ -1,12 +1,10 @@
 <template>
     <div class="fixed left-0 right-0 z-3">
         <div class="@container flex justify-end">
-            <!-- :class="uiStore.menuShow?'active ':''" -->
             <button
                 type="button"
                 class="group navbar-toggler p-3 m-2"
-                :class="isScrolled?'scrolled':''"
-                
+                :class="[isScrolled?'scrolled':'',uiStore.menuShow?'active ':'']"
                 @click="uiStore.toggleMenu()"
                 ref="toggleButtonRef">
                 <span class="navbar-toggler-line"></span>
@@ -27,21 +25,28 @@
                         <li>
                             <router-link
                                 to="/"
-                                class="text-neutral-200 group hover:text-emerald-700 py-4 px-4">
+                                class="block text-neutral-200 group hover:text-emerald-700 py-4 px-4">
                                 部落格 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">BLOG</span>
                             </router-link>
                         </li>
                         <li>
                             <router-link
+                                to="/tags"
+                                class="block text-neutral-200 group hover:text-emerald-700 py-4 px-4">
+                                分類 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">tags</span>
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link
                                 to="/project"
-                                class="text-neutral-200 group hover:text-emerald-700 py-4 px-4">
+                                class="block text-neutral-200 group hover:text-emerald-700 py-4 px-4">
                                 作品集 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">PROJECT</span>
                             </router-link>
                         </li>
                         <li>
                             <router-link
                                 to="/about"
-                                class="text-neutral-200 group hover:text-emerald-700 py-4 px-4">
+                                class="block text-neutral-200 group hover:text-emerald-700 py-4 px-4">
                                 關於我 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">ABOUT</span>
                             </router-link>
                         </li>

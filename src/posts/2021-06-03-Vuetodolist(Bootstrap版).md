@@ -1,9 +1,9 @@
 ---
-title: 【Vue】vue-todolist(Bootstrap版)
+title: vue-todolist(Bootstrap版)
 date: 2021-06-03
 tags: ["vue"]
 ---
-### 建立完成的Bootstrap4初始版型
+## 建立完成的Bootstrap4初始版型
 ```css
 #app.container.my-3
   .input-group.mb-3
@@ -36,7 +36,7 @@ tags: ["vue"]
 ```
 
 -----------------------------------------------
-### 撰寫Vue.js後的HTML程式碼
+## 撰寫Vue.js後的HTML程式碼
 ```js
 #app.container.my-3
   .input-group.mb-3
@@ -67,7 +67,7 @@ tags: ["vue"]
       span 還有{{doneNum.length}}筆任務未完成
       a(href='#' @click="clearTodo") 清除所有任務
 ```
-#### 撰寫Vue.js後的JS程式碼：
+### 撰寫Vue.js後的JS程式碼：
 ```js
 let app = new Vue({
   el:"#app",
@@ -161,5 +161,5 @@ let app = new Vue({
 ```
 
 -----------------------------------------------
-### 補充說明
+## 補充說明
 [CodePen範例連結](https://codepen.io/jack842248/pen/mdOJNBB)

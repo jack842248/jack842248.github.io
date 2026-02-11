@@ -10,22 +10,8 @@ export const usePostStore = defineStore('post',() => {
 
     const postInfo = ref({...defaultPostInfo});
 
-    function setPostInfo(data) {
-        postInfo.value = {
-            ...postInfo.value,
-            ...data,
-        };
-    }
-
-    function resetPostInfo() {
-        postInfo.value = {
-            ...defaultPostInfo,
-        };
-    }
 
     return {
         postInfo,
-        setPostInfo,
-        resetPostInfo,
     };
 });

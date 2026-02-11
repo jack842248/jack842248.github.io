@@ -1,9 +1,9 @@
 ---
-title: 【CSS】media screen
+title: media screen
 date: 2022-04-08
 tags: ["css"]
 ---
-### 好的響應式體驗
+## 好的響應式體驗
 * 從PC版轉到手機版時，標題長度以及部份不必要內容可以適度隱藏
 * PC版圖片高度可固定px，手機版height:auto
 * jpg、png放大會模糊，svg向量圖放大不會失真
@@ -24,8 +24,7 @@ tags: ["css"]
     * 圖片alt要描述
     * 文字和背景對比度要高
     * aria-label=""
-    * <input type="text" aria-describedby="123">
-        <small id="123">這是輸入框下的提示文字</small>
+
 |裝置|最小可觸碰元件|最小非觸碰元件|最小字體|狀態欄|導航欄|
 |---|---|---|---|---|---|
 |ios|48*48px|40*40px|11px|24px|56px|
@@ -33,7 +32,7 @@ tags: ["css"]
 `好的網頁設計?別低估習慣用法的價值，要為了掃描閱讀而設計`
 
 -----------------------------------------------
-### CSS Reset徹底清除標籤樣式
+## CSS Reset徹底清除標籤樣式
 * [CSS Reset](https://meyerweb.com/eric/tools/css/reset/)清除標籤樣式
 * [CSS Normalize](https://necolas.github.io/normalize.css/)是另一種保留部分樣式
 * [Pure.css](https://purecss.io/)是Yahoo開發的兼容性樣式
@@ -90,7 +89,7 @@ img{
 ```
 
 -----------------------------------------------
-### @media斷點設置
+## @media斷點設置
 ```css
 /*設定當螢幕寬度在400px以上時*/
 @media screen and(min-width:400px){
@@ -120,7 +119,7 @@ img{
 `and前後一定要空格`
 
 -----------------------------------------------
-### 計算寬度
+## 計算寬度
 ```css
 .box{
     width: calc(100% - 40px); /*佔100%再減少40px*/
@@ -129,7 +128,7 @@ img{
     width: calc(100% / 2); /*佔50%*/
 }
 ```
-#### 固定左右邊距不受視窗拉動影響
+### 固定左右邊距不受視窗拉動影響
 ```css
 .box{
     position: relative/absolute;
@@ -139,7 +138,7 @@ img{
 ```
 
 -----------------------------------------------
-### 流體式佈局
+## 流體式佈局
 1. 一欄100%
 2. 二欄50%
 3. 三欄33.33333%

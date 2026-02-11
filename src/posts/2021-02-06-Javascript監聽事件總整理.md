@@ -3,7 +3,7 @@ title: Javascript監聽事件總整理
 date: 2021-02-06
 tags: ["javaScript"]
 ---
-### 監聽點擊事件(事件氣泡)
+## 監聽點擊事件(事件氣泡)
 `addEventListener(事件,一組動作,false)` 若同時有多個監聽事件，先執行點擊目標在執行外層
 ```html
 <button class="btn" type="button">按鈕</button>
@@ -23,7 +23,7 @@ body.addEventListener("click",function(){
 `結果："你點到按鈕"，"你點到body"`
 
 -----------------------------------------------
-### 監聽點擊事件(事件捕捉)
+## 監聽點擊事件(事件捕捉)
 `addEventListener(事件,一組動作,true)` 若同時有多個監聽事件，先執行外層在執行點擊目標
 ```html
 <button class="btn" type="button">按鈕</button>
@@ -43,7 +43,7 @@ body.addEventListener("click",function(){
 `結果："你點到body"，"你點到按鈕"`
 
 -----------------------------------------------
-### 監聽點擊事件＋阻止事件冒泡
+## 監聽點擊事件＋阻止事件冒泡
 1. `addEventListener`第三個參數預設是`false`，表示“事件從元素內開始往外發生”
 2. 當我點擊「按鈕」時會出現“蘋果”，後面body也會執行並出現“香蕉”
 3. 但如果加上`stopPropagation`之後，可以成功阻止事件冒泡，`body`不會執行
@@ -66,7 +66,7 @@ body.addEventListener("click",function(){
 ```
 
 -----------------------------------------------
-### 監聽點擊事件＋取消a連結跳至錨點
+## 監聽點擊事件＋取消a連結跳至錨點
 ```html
 <a class="link" href="#">連結</a>
 ```
@@ -81,7 +81,7 @@ link.addEventListener("click",function(event){
 ```
 
 -----------------------------------------------
-### 監聽點擊事件＋取消button預設寄送，先進行驗證
+## 監聽點擊事件＋取消button預設寄送，先進行驗證
 ```html
 <form class="form">
     <!-- required為必填，不能送出空值 -->
@@ -109,7 +109,7 @@ btn.addEventListener("click",function(event){
 ```
 
 -----------------------------------------------
-### 監聽點擊事件(取得滑鼠點擊的目標)
+## 監聽點擊事件(取得滑鼠點擊的目標)
 ```html
 <button class="btn" type="button">按鈕</button>
 ```
@@ -129,7 +129,7 @@ document.addEventListener("click",function(event){
 ```
 
 -----------------------------------------------
-### 監聽鍵盤事件(取得按下的鍵盤值)
+## 監聽鍵盤事件(取得按下的鍵盤值)
 ```js
 //按鍵盤"A"鍵
 document.addEventListener("keydown",function(event){
@@ -138,7 +138,7 @@ document.addEventListener("keydown",function(event){
 ```
 
 -----------------------------------------------
-### 監聽滑鼠事件
+## 監聽滑鼠事件
 ```html
 <button id="btn" type="button">按鈕</button>
 ```
@@ -157,7 +157,7 @@ btn.addEventListener("mouseleave",function(event){
 ```
 
 -----------------------------------------------
-### 監聽切換事件＋比對資料顯示值
+## 監聽切換事件＋比對資料顯示值
 ```html
 <select class="select">
   <option value="蘋果">蘋果</option>

@@ -1,9 +1,9 @@
 ---
-title: 【JS】Google Maps API
+title: Google Maps API
 date: 2021-02-21
 tags: ["javaScript"]
 ---
-### 應用程式介面(Application Programming Interface)
+## 應用程式介面(Application Programming Interface)
 * 簡稱API。
 * 應用程式提供的服務，用來接收或傳送資料給應用程式。例如 :
   * [Heroku](https://www.heroku.com/)，主機服務。
@@ -11,7 +11,7 @@ tags: ["javaScript"]
   * [Firebase](https://firebase.google.com/)，資料庫服務
 
 -----------------------------------------------
-### Google Map API
+## Google Map API
 1. 在Google雲端平台創建一個帳戶(需綁定一張信用卡)。(不會自動收取費用，除非手動升級)
 2. 在雲端平台上建立一個專案。
 3. 點擊"地圖管理"→"CREATE NEW MAP ID"，新建一個ID。
@@ -20,7 +20,7 @@ tags: ["javaScript"]
 6. 貼到編輯器上，開始建置地圖。
 
 -----------------------------------------------
-### 初始化地圖
+## 初始化地圖
 * 以夢時代為顯示中心。
 ```js
 // <-----html----->
@@ -50,7 +50,7 @@ function initMap(){
 ```
 
 -----------------------------------------------
-### 建立一個Marker
+## 建立一個Marker
 * 建立夢時代marker。
 ```js
 // <-----js----->
@@ -72,7 +72,7 @@ function initMap(){
 ```
 
 -----------------------------------------------
-### 利用for迴圈建立多個Marker
+## 利用for迴圈建立多個Marker
 * 建立台鋁MLD以及夢時代marker。
 ```js
 // <-----js----->
@@ -100,7 +100,7 @@ function initMap(){
 ```
 
 -----------------------------------------------
-### 利用for迴圈建立多個Marker + ajax
+## 利用for迴圈建立多個Marker + ajax
 * 建立高雄所有輕軌站marker。
 ```js
 // <-----js----->
@@ -134,7 +134,7 @@ function initMap(){
 ```
 
 -----------------------------------------------
-### 自訂marker樣式
+## 自訂marker樣式
 ```js
 // <-----js----->
 function initMap(){
@@ -153,7 +153,7 @@ function initMap(){
 ```
 
 -----------------------------------------------
-### 套用styles樣式
+## 套用styles樣式
 * [SNAZZY MAPS](https://snazzymaps.com/)網站，有提供許多Google Maps的樣式，可以拿來套用。
 ```js
 // <-----js----->

@@ -6,7 +6,7 @@
                 v-for="post in postsList"
                 :key="post.id">
                 <article class="flex p-3 py-5 border-b border-b-neutral-200">
-                    <div class="w-1 h-5 rounded bg-emerald-700 shrink-0 m-1 mr-2"></div>
+                    <div class="w-1 h-4 rounded bg-emerald-700 shrink-0 m-1 mr-2"></div>
                     <div class="text-left">
                         <Router-link
                             :to="{
@@ -17,7 +17,9 @@
                             }"
                             class="group">
                             <h4 class="article-title">{{ post.title }}</h4>
-                            <p class="text-sm text-neutral-600">{{ post.date }}</p>
+                            <p class="flex items-center text-sm text-neutral-600">
+                                {{ post.date }}
+                            </p>
                             <p class="article-content">{{ post.content }}</p>
                         </Router-link>
                         <Router-link
@@ -88,7 +90,7 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router';
 import matter from 'gray-matter';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/20/solid';
+import { ChevronLeftIcon, ChevronRightIcon, CalendarDaysIcon } from '@heroicons/vue/20/solid';
 
 //取得當前route的id參數
 const route = useRoute();
@@ -113,7 +115,7 @@ const pagesList = computed(()=>{
     return getNearbyRange(currentRouteId.value, 1, totalPage.value);
 })
 //計算頁碼顯示範圍
-function getNearbyRange(current, min, max, size = 10) {
+function getNearbyRange(current, min, max, size = 6) {
     const half = Math.floor(size / 2)
 
     let start = Math.max(current - half, min)

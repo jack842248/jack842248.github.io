@@ -1,9 +1,9 @@
 ---
-title: 【Vue3】JavaScript縮寫
+title: Vue3JavaScript縮寫
 date: 2024-12-01
 tags: ["Vue3"]
 ---
-### 物件字面值(Object literals)
+## 物件字面值(Object literals)
 ```js
 const obj = {
   name: '蘋果',
@@ -14,7 +14,7 @@ const obj = {
 
 console.log(obj.fn()); //蘋果
 ```
-#### 縮寫後：
+### 縮寫後：
 ```js
 const obj = {
   name: '蘋果',
@@ -27,7 +27,7 @@ console.log(obj.fn()); //蘋果
 ```
 
 -----------------------------------------------
-### 物件內的變數
+## 物件內的變數
 ```js
 const person = {
   name: '小明'
@@ -39,7 +39,7 @@ const people = {
 
 console.log(people); //person:{ name: '小明' }
 ```
-#### 縮寫後：
+### 縮寫後：
 ```js
 const person = {
   name: '小明'
@@ -53,7 +53,7 @@ console.log(people); //person:{ name: '小明' }
 ```
 
 -----------------------------------------------
-### 合併兩個陣列
+## 合併兩個陣列
 ```js
 const groupA = ['蘋果', '香蕉', '鳳梨'];
 const groupB = ['蓮霧', '芭樂'];
@@ -61,7 +61,7 @@ const groupAll = groupA.concat(groupB);
 
 console.log(groupAll); //['蘋果', '香蕉', '鳳梨' , '蓮霧', '芭樂']
 ```
-#### 縮寫後：
+### 縮寫後：
 ```js
 const groupA = ['蘋果', '香蕉', '鳳梨'];
 const groupB = ['蓮霧', '芭樂'];
@@ -71,7 +71,7 @@ console.log(groupAll); //['蘋果', '香蕉', '鳳梨' , '蓮霧', '芭樂']
 ```
 
 -----------------------------------------------
-### 合併兩個物件
+## 合併兩個物件
 ```js
 const methods = {
   fn1() {
@@ -93,7 +93,7 @@ console.log(newMethods); //{fn: ƒ, fn1: ƒ, fn2: ƒ}
 ```
 
 -----------------------------------------------
-### 將dom元素陣列轉為純陣列
+## 將dom元素陣列轉為純陣列
 ```html
 <ul>
     <li>1</li>
@@ -111,7 +111,7 @@ console.log(newDoms); // [li, li, li]
 `純陣列比NodeList可使用的方法還多，例如：filter、map等`
 
 -----------------------------------------------
-### 參數預設值
+## 參數預設值
 ```js
 function sum(a, b) { 
     if(!b){
@@ -121,7 +121,7 @@ function sum(a, b) {
 }
 console.log(sum(1)); //4
 ```
-#### 縮寫後：
+### 縮寫後：
 ```js
 //設定b預設3，所以如果沒帶參數的話b自動會是3
 function sum(a, b = 3) { 

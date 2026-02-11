@@ -1,12 +1,12 @@
 ---
-title: 【Vue3】將網站部署到github pages
+title: 將網站部署到github pages
 date: 2026-01-19
 tags: ["Vue3"]
 ---
-### 在github建立新的repository
+## 在github建立新的repository
 1. 建立`repository`時，網址為`帳號`/`專案名稱`
 2. 若已在`vscode`已經，建立了`git`檔，可以選擇推送儲存庫
-#### 推送儲存庫指令：
+### 推送儲存庫指令：
 ```
 git remote add origin https://github.com/帳號/vuetest.git
 git branch -M main
@@ -16,7 +16,7 @@ git push -u origin main
 4. 回到github重整頁面，可以看到資料已上傳
 
 -----------------------------------------------
-### 將dist部署到github page上
+## 將dist部署到github page上
 1. 安裝`gh-pages`套件
 ```
 $ npm i gh-pages

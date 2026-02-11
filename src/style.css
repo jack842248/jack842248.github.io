@@ -3,6 +3,8 @@
 @import 'tailwindcss';
 
 @theme {
+	--color-primary: #1f2328;
+	--color-secondary: #d1d9e0;
 	--font-work-sans: 'Work Sans', sans-serif;
 }
 
@@ -14,13 +16,16 @@
 		@apply w-2;
 	}
 	*::-webkit-scrollbar-thumb {
-		@apply bg-neutral-300 rounded-full border-2 border-transparent bg-clip-content transition-all;
+		@apply bg-neutral-400 rounded-full border-2 border-transparent bg-clip-content transition-all;
 	}
 	*::-webkit-scrollbar-track {
 		@apply bg-transparent;
 	}
-	a {
-		@apply block;
+	h1,h2,h3,h4,h5,h6,p,span {
+		@apply text-primary;
+	}
+	hr{
+		@apply border-t-4  border-t-secondary
 	}
 	button {
 		@apply cursor-pointer;
@@ -36,7 +41,7 @@
 		@apply text-base font-medium text-neutral-900 group-hover:text-emerald-700 transition-all mb-2
 	}
 	.article-tag{
-		@apply inline text-xs text-emerald-700 bg-neutral-200 rounded p-1 px-2 mr-1 hover:text-neutral-100 hover:bg-emerald-700 transition-all
+		@apply text-xs text-emerald-700 bg-neutral-100 rounded p-1 px-2 mr-1 hover:text-neutral-100 hover:bg-emerald-700 transition-all
 	}
 	.article-content{
 		@apply text-sm text-neutral-500 line-clamp-2 break-all mb-3
@@ -74,9 +79,31 @@
 	}
 
 	/* 文章內容 */
+	.markdown-body h2{
+		@apply !text-xl
+	}
+	.markdown-body h3{
+		@apply !text-lg
+	}
+	.markdown-body h4{
+		@apply !text-base
+	}
+	.markdown-body h5{
+		@apply !text-sm
+	}	
+	.markdown-body h6{
+		@apply !text-xs
+	}			
 	.markdown-body ul {
 		@apply list-disc !pl-6
 	}
+	.markdown-body ol {
+		@apply list-decimal !pl-6
+	}
+	.markdown-body > table {
+		@apply !w-auto
+	}
+	
 	/* .markdown-body ol {
 		@apply list-decimal !pl-6
 	}
@@ -89,6 +116,9 @@
 	.markdown-body table {
 		width: initial !important;
 	} */
+	.markdown-body pre > code{
+		@apply !whitespace-break-spaces
+	}
 	.swiper-slide > img{
 		@apply w-full h-auto object-cover
 	}

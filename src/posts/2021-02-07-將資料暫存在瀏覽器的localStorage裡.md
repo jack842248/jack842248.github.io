@@ -3,7 +3,7 @@ title: 將資料暫存在瀏覽器的localStorage裡
 date: 2021-02-07
 tags: ["javaScript"]
 ---
-### 將input值存入localStorage，再取出
+## 將input值存入localStorage，再取出
 |Key|Value|
 |---|---|
 |myName|text.value(輸入框裡的值)|
@@ -36,7 +36,7 @@ call.addEventListener("click",function(){
 ```
 
 -----------------------------------------------
-### 將JSON資料存入localStorage，再取出
+## 將JSON資料存入localStorage，再取出
 |Key|Value|
 |---|---|
 |fruitName|{name: "蘋果",price: 15}|
@@ -61,7 +61,7 @@ console.log(fruitArr[0].name); //"蘋果"
 `從localStorage取出來的資料壹定都是字串`
 
 -----------------------------------------------
-### 實作todolist
+## 實作todolist
 |Key|Value|
 |---|---|
 |todoItem|text.value(輸入框裡的值)|

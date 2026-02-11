@@ -1,9 +1,9 @@
 ---
-title: 【Vue3】用watch監聽data資料
+title: 用watch監聽data資料
 date: 2024-12-23
 tags: ["Vue3"]
 ---
-### watch新舊值介紹
+## watch新舊值介紹
 ```html
 <div id="app">
   <input type="text" v-model="tempName">
@@ -29,7 +29,7 @@ Vue.createApp({
 `當輸入第一次值的時候，watch`
 
 -----------------------------------------------
-### watch監看，textarea字數
+## watch監看，textarea字數
 ```html
 <div id="app">
   <textarea v-model="tempName" cols="30" rows="5"></textarea>
@@ -53,7 +53,7 @@ Vue.createApp({
 ```
 
 -----------------------------------------------
-### computed監看data值有無更動
+## computed監看data值有無更動
 ```html
 <div id="app">
   <label>商品名稱</label>
@@ -81,7 +81,7 @@ Vue.createApp({
 ```
 
 -----------------------------------------------
-### watch監看data值有無更動
+## watch監看data值有無更動
 ```html
 <div id="app">
   <label>商品名稱</label>
@@ -113,7 +113,7 @@ Vue.createApp({
 ```
 
 -----------------------------------------------
-### watch監看data物件有無更動(深層監聽)
+## watch監看data物件有無更動(深層監聽)
 ```html
 <div id="app">
   <label>商品名稱</label>

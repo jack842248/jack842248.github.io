@@ -1,10 +1,10 @@
 ---
-title: 【CSS】keyframes關鍵影格
+title: keyframes關鍵影格
 date: 2022-04-05
 tags: ["css"]
 ---
-### 影格動畫(animation)
-#### 第一種寫法
+## 影格動畫(animation)
+### 第一種寫法
 ```css
 @keyframes changeColor{
     from{
@@ -15,7 +15,7 @@ tags: ["css"]
     }
 }
 ```
-#### 第二種寫法
+### 第二種寫法
 ```css
 @keyframes changeColor{
     0%{
@@ -32,7 +32,7 @@ tags: ["css"]
     }
 }
 ```
-#### 參數設定
+### 參數設定
 ```css
 .box{
     animation-name: changeColor; /*動畫名稱*/
@@ -70,7 +70,7 @@ tags: ["css"]
 ```
 
 -----------------------------------------------
-### 動畫轉換(transition)
+## 動畫轉換(transition)
 ```css
 .box{
     transition-property: all; /*無指定(預設值)*/

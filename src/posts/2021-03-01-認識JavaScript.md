@@ -1,22 +1,22 @@
 ---
-title: 【JS】認識JavaScript
+title: 認識JavaScript
 date: 2021-03-01
 tags: ["javaScript"]
 ---
-### 直譯式語言(Interpreted Language)
+## 直譯式語言(Interpreted Language)
 |例如|JavaScript、Python、PHP、Ruby、BASIC、LISP、Perl、R|
 |---|---|
 |流程|原始碼 → 直譯器 → 代碼生成 → 執行|
 |特性|程式碼由上到下執行，效能比較差、除錯比較慢、需要依賴執行環境。|
 
 -----------------------------------------------
-### 編譯式語言(Compiled Language)
+## 編譯式語言(Compiled Language)
 |例如|Java、C、C#、C++、Pascal|
 |---|---|
 |流程|原始碼 → 預處理器 → 代碼生成 → 執行|
 |特性|效能比較好、除錯比較快、程式碼可獨立執行。|
 -----------------------------------------------
-### 語法作用域(Lexical Scope)
+## 語法作用域(Lexical Scope)
 * 語法在解析時就決定作用域，且不再改變。
 ```js
 function fn1(){
@@ -29,7 +29,7 @@ console.log(a);   //a is not defined
 ```
 
 -----------------------------------------------
-### 單執行緒(Single Thread)
+## 單執行緒(Single Thread)
 * 同步事件會依序執行，而非同步事件會先移到 **事件佇列(Event Queue)** ，等待其他事件執行完才會執行。
     * setTimeout(範例一)
     * addEventListener(範例二)
@@ -61,7 +61,7 @@ a.addEventListener("click",function(){
 ```
 
 -----------------------------------------------
-### 執行環境(Execution Context)
+## 執行環境(Execution Context)
 * 全域環境
   * 瀏覽器開啟時產生的 **window** 。
   * **window**  ===  **this** 。
@@ -70,7 +70,7 @@ a.addEventListener("click",function(){
   * 可以重複被執行產生環境。
 
 -----------------------------------------------
-### 執行堆疊(Execution stack)
+## 執行堆疊(Execution stack)
 1. 全域環境最先堆疊，再來依序堆疊區域環境。
 2. 區域環境依序結束，最後留下全域執行環境。
 ```js
@@ -91,7 +91,7 @@ fn1();
 ```
 
 -----------------------------------------------
-### 範圍鍊(Scope Chain)
+## 範圍鍊(Scope Chain)
 * 當函式本身沒有變數時，會向外層找到 **全域變數** 。(範例一)
 * 當函式裡的函式本身沒有變數時，會向外層找到函式裡的變數。(範例二)
 ```js
@@ -122,7 +122,7 @@ fn1();
 ```
 
 -----------------------------------------------
-### 提升(Hoisting)
+## 提升(Hoisting)
 * 在創造階段時，宣告變數、函式表達式會先存放在 **記憶體** 裡，還取不到值 **(undefined)** 。(範例一)
 * 函式會優先於變數宣告。(範例二)
 * 執行順序 : function > 宣告(let、const) > fn()。(範例三)
@@ -163,7 +163,7 @@ apple = "蘋果";
 ```
 
 -----------------------------------------------
-### 回收機制(Garbage Collection)
+## 回收機制(Garbage Collection)
 * 當沒有任何物件參考時，物件的 **記憶體** 就會釋放掉。
 ```js
 function fn1(){

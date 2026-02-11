@@ -1,5 +1,31 @@
 <template>
     <div class="w-full grow border-l border-l-neutral-200 px-3 py-5">
+        <div class="flex flex-wrap items-center mb-2">
+            <div class="w-1 h-6 rounded bg-emerald-700 shrink-0 m-1 mr-2"></div>
+            <h1 class="text-xl font-bold sm:text-2xl">{{ postInfo.title }}</h1>
+            <button
+                type="button"
+                class="group flex items-center text-neutral-600 bg-neutral-100 hover:bg-emerald-700 rounded p-2 ml-auto"
+                @click="goBack()">
+                <ChevronDoubleLeftIcon class="size-4 group-hover:text-neutral-100"></ChevronDoubleLeftIcon>
+                <span class="text-xs group-hover:text-neutral-100">回上一頁</span>
+            </button>
+        </div>
+        <p class="text-sm pl-1 mb-1">{{ postInfo.date }}</p>
+        <Router-link
+            v-for="tag in postInfo.tags"
+            :key="tag"
+            :to="{
+                name: 'tags',
+                params: {
+                    tag: tag
+                }
+            }"
+            class="article-tag">#{{ tag }}
+        </Router-link>
+        <hr class="my-4">
+        
+
         <!-- 文章內容 -->
         <VueMarkdown 
             v-if="postContent"
@@ -16,13 +42,15 @@
                     }
                 }"
                 class="group w-1/2 text-neutral-800 flex items-center py-2 rounded hover:text-emerald-700">
-                <div class="w-8 h-8 text-neutral-400 mr-2 group-hover:text-emerald-700"><ArrowLeftIcon></ArrowLeftIcon></div>
+                <div class="shrink w-8 h-8 text-neutral-400 mr-2 group-hover:text-emerald-700">
+                    <ArrowLeftIcon></ArrowLeftIcon>
+                </div>
                 <div class="flex flex-col text-left">
                     <span class="text-sm font-medium pl-1">PREV</span>
-                    <p class="text-sm break-words">{{ prevPost?.title }}</p>
+                    <p class="text-sm wrap-break-word">{{ prevPost?.title }}</p>
                 </div>
             </Router-link>
-            <div v-if="nextPost" class="w-1 h-10 bg-neutral-300"></div>
+            <div v-if="nextPost" class="w-1 h-10 bg-secondary"></div>
             <router-link
                 v-if="nextPost"
                 :to="{
@@ -35,9 +63,11 @@
                 
                 <div class="flex flex-col text-right">
                     <span class="text-sm font-medium text-right pr-1">NEXT</span>
-                    <p class="text-sm break-words">{{ nextPost?.title }}</p>
+                    <p class="text-sm wrap-break-word">{{ nextPost?.title }}</p>
                 </div>
-                <div class="w-8 h-8 text-neutral-400 ml-2 group-hover:text-emerald-700"><ArrowRightIcon></ArrowRightIcon></div>
+                <div class="shrink w-8 h-8 text-neutral-400 ml-2 group-hover:text-emerald-700">
+                    <ArrowRightIcon></ArrowRightIcon>
+                </div>
             </Router-link>
         </div>
     </div>
@@ -46,19 +76,17 @@
 <script setup>
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { createHighlighter } from 'shiki'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import matter from 'gray-matter'
 import VueMarkdown from 'vue-markdown-render'
 import 'github-markdown-css/github-markdown-light.css'
-import { usePostStore } from '@/stores/post'
-import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/vue/20/solid'
+import { ArrowLeftIcon, ArrowRightIcon ,CalendarDaysIcon, ArrowUturnLeftIcon, ChevronDoubleLeftIcon } from '@heroicons/vue/20/solid'
 
 //文章格式選項
 const markdownOptions = ref({});
 //文章內容
 const postContent = ref('');
 //文章標題、日期等資訊
-const postStore = usePostStore();
 //所有文章資料
 const postListData = ref([])
 //當前路由顯示的文章id
@@ -71,21 +99,35 @@ const prevPost = ref(null);
 //當前文章的下一篇id
 const nextPost = ref(null);
 
+//回上一頁
+const router = useRouter();
+const goBack = () => {
+    if (window.history.state && window.history.state.back) {
+        router.back();
+    } else {
+        router.push('/list'); 
+    }
+}
+
+const postInfo = ref({});
+
 //編譯目前文章
 const renderPost = () => {
     //找到當前的文章
     const currentFile = postListData.value.find((post)=>{
         return post.id === currentPostId.value;
     })
+    
     if(currentFile){
         //把當前的文章內容顯示出來
         postContent.value = currentFile.content;
     }
     //把當前的標題資訊顯示出來
-    postStore.setPostInfo({
+    postInfo.value = {
         title: currentFile.title,
         date: currentFile.date,
-    })
+        tags: currentFile.tags
+    }
     //找到當前的文章id
     const currentIndex = postListData.value.findIndex((post)=>{
         return post.id === currentPostId.value;
@@ -105,7 +147,7 @@ watch(currentPostId,(newId)=>{
 onMounted( async() => {
 	const highlighter = await createHighlighter({
 		themes: ['one-dark-pro'],
-		langs: ['html','css','scss','sass','js','vue','json','toml','vue']
+		langs: ['html','css','scss','sass','js','vue','json','toml','vue','bash','markdown']
 	})
 	markdownOptions.value = {
 		html: true,
@@ -132,18 +174,11 @@ onMounted( async() => {
             id: path.split('/').pop().replace('.md',''),
             title: data.title,
             date: formattedDate,
-            content: content
+            content: content,
+            tags: data.tags
         }
     })
     postListData.value = postData;
     renderPost();
 })
-
-onUnmounted(()=>{
-    postStore.resetPostInfo();
-})
 </script>
-
-<style>
-
-</style>

@@ -1,9 +1,9 @@
 ---
-title: 【Webpack】編譯SCSS並優化+導入Bootstrap
+title: Webpack編譯SCSS並優化+導入Bootstrap
 date: 2024-05-02
 tags: ["webpack"]
 ---
-### 編譯css
+## 編譯css
 1. 安裝套件`style-loader`和`css-loader`套件
 ```
 $ npm i style-loader css-loader -D
@@ -114,7 +114,7 @@ you project
 ```
 
 -----------------------------------------------
-### 將css以獨立方式帶入html
+## 將css以獨立方式帶入html
 1. 安裝`mini-css-extract-plugin`套件
 ```
 $ npm i mini-css-extract-plugin -D
@@ -159,7 +159,7 @@ $ npm run start
 ```
 
 -----------------------------------------------
-### 編譯scss檔案並將樣式帶入html
+## 編譯scss檔案並將樣式帶入html
 1. 安裝`sass`、`sass-loader`、`postcss`、`postcss-loader`、`postcss-preset-env`、
 ```
 $ npm i sass sass-loader postcss postcss-loader postcss-preset-env -D
@@ -276,7 +276,7 @@ body {
 ```
 
 -----------------------------------------------
-### 若要使用bootstrap(5.3.3)
+## 若要使用bootstrap(5.3.3)
 1. 安裝`bootstrap`套件:
     * `bootstrap`是css樣板套件
     * `@popperjs/core`是bootstrap定位套件

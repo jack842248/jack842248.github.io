@@ -1,9 +1,9 @@
 ---
-title: 【CSS】Fontawesome
+title: Fontawesome
 date: 2022-04-09
 tags: ["css"]
 ---
-### Font Awesome 5
+## Font Awesome 5
 1. 將`<head>`加入`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">`
 2. 使用[font awesome 5](https://fontawesome.com/v5/icons/)搜尋icon
 ```html
@@ -14,7 +14,7 @@ tags: ["css"]
 ```
 
 -----------------------------------------------
-### Font Awesome 6
+## Font Awesome 6
 1. 將`<head>`加入`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">`
 2. 使用[font awesome 6](https://fontawesome.com/icons)搜尋icon
 ```html
@@ -27,7 +27,7 @@ tags: ["css"]
 ```
 
 -----------------------------------------------
-### 加入在偽元素中
+## 加入在偽元素中
 ```css
 .box::before{
     content: "\f0e0"; /*圖樣編號*/
@@ -55,7 +55,7 @@ tags: ["css"]
 ```
 
 -----------------------------------------------
-### 動態加入fontawesome
+## 動態加入fontawesome
 ```html
 <a href="image/pic.jpg">圖片檔</a>
 <a href="image/file.doc">文件檔</a>

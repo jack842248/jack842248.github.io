@@ -1,9 +1,9 @@
 ---
-title: 【Vue3】ref操作DOM元素
+title: ref操作DOM元素
 date: 2025-01-01
 tags: ["Vue3"]
 ---
-### 抓取DOM元素
+## 抓取DOM元素
 ```html
 <div id="app">
   <input type="text" ref="textInput">
@@ -22,7 +22,7 @@ const app = Vue.createApp({
 app.mount("#app");
 ```
 -----------------------------------------------
-### 抓取DOM＋父元件操控資料
+## 抓取DOM＋父元件操控資料
 ```
 <div id="app">
   <card-component ref="card"></card-component>
@@ -65,7 +65,7 @@ app.component('card-component',{
 app.mount("#app");
 ```
 -----------------------------------------------
-### 實作用ref抓取Bootstrap5的Modal元件
+## 實作用ref抓取Bootstrap5的Modal元件
 ```html
 <div id="app">
   <div class="modal" tabindex="-1" ref="modal">

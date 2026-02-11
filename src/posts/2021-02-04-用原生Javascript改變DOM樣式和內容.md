@@ -3,7 +3,7 @@ title: 用原生Javascript改變DOM樣式和內容
 date: 2021-02-04
 tags: ["javaScript"]
 ---
-### 替換標籤樣板
+## 替換標籤樣板
 ```html
 <button class="btn" type="button">按鈕</button>
 <ul class="list">
@@ -19,7 +19,7 @@ btn.onclick = function(){
 }
 ```
 -----------------------------------------------
-### 加入標籤樣板
+## 加入標籤樣板
 ```html
 <button class="btn" type="button">按鈕</button>
 <ul class="list">
@@ -46,7 +46,7 @@ btn.onclick = function(){
 ```
 
 -----------------------------------------------
-### 改變文字內容
+## 改變文字內容
 ```html
 <button class="btn" type="button">按鈕</button>
 <p class="apple">蘋果</p>
@@ -61,7 +61,7 @@ btn.onclick = function(){
 ```
 
 -----------------------------------------------
-### 改變標籤屬性
+## 改變標籤屬性
 ```html
 <button class="btn" type="button">按鈕</button>
 <a class="link" href="#">連結</a>
@@ -78,7 +78,7 @@ btn.onclick = function(){
 ```
 
 -----------------------------------------------
-### 改變元素樣式
+## 改變元素樣式
 ```html
 <button class="btn" type="button">按鈕</button>
 <a class="link" href="#">連結</a>
@@ -102,7 +102,7 @@ btn.onclick = function(){
 ```
 
 -----------------------------------------------
-### 取得input裡的值
+## 取得input裡的值
 ```html
 <button class="btn" type="button">按鈕</button>
 <input class="text" type="text">
@@ -117,7 +117,7 @@ btn.onclick = function(){
 ```
 
 -----------------------------------------------
-### 取得input的類型
+## 取得input的類型
 ```html
 <button class="btn" type="button">按鈕</button>
 <input class="password" type="password">
@@ -132,7 +132,7 @@ btn.onclick = function(){
 ```
 
 -----------------------------------------------
-### XSS(Cross Site Scripting)
+## XSS(Cross Site Scripting)
 * 跨網站指令碼攻擊。
 * 在 **input** 裡直接撰寫 **\<script>** 腳本來進行攻擊。
 * 盡量避免使用 **.onclick** + **.innerHTML** 方法。
