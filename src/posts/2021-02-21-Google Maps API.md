@@ -1,7 +1,7 @@
 ---
 title: Google Maps API
 date: 2021-02-21
-tags: ["javaScript"]
+tags: ["JavaScript"]
 ---
 ## 應用程式介面(Application Programming Interface)
 * 簡稱API。

@@ -1,7 +1,7 @@
 ---
 title: Webpack開發環境設置+SourceMap生成
 date: 2024-05-05
-tags: ["webpack"]
+tags: ["Webpack"]
 ---
 ## 開發環境設置
 1. 在`webpack.config.js`新增：

@@ -1,7 +1,7 @@
 ---
 title: vue-todolist(精簡版)
 date: 2021-06-02
-tags: ["vue"]
+tags: ["Vue"]
 ---
 ## 取得輸入框裡的值，點擊按鈕，新增到清單上。
 1. 在 **data** 新增[newTodo]="空字串"，用 **v-model** 與 ***輸入框*** 綁定。

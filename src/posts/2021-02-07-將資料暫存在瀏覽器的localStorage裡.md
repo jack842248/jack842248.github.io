@@ -1,7 +1,7 @@
 ---
 title: 將資料暫存在瀏覽器的localStorage裡
 date: 2021-02-07
-tags: ["javaScript"]
+tags: ["JavaScript"]
 ---
 ## 將input值存入localStorage，再取出
 |Key|Value|

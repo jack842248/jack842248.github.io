@@ -1,7 +1,7 @@
 ---
 title: Javascript監聽事件總整理
 date: 2021-02-06
-tags: ["javaScript"]
+tags: ["JavaScript"]
 ---
 ## 監聽點擊事件(事件氣泡)
 `addEventListener(事件,一組動作,false)` 若同時有多個監聽事件，先執行點擊目標在執行外層

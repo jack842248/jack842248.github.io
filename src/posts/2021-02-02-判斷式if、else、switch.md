@@ -1,7 +1,7 @@
 ---
 title: 判斷式if、else、switch
 date: 2021-02-02
-tags: ["javaScript"]
+tags: ["JavaScript"]
 ---
 ## 運算子
 |運算子|口語化說明|

@@ -1,7 +1,7 @@
 ---
 title: 用原生Javascript改變DOM樣式和內容
 date: 2021-02-04
-tags: ["javaScript"]
+tags: ["JavaScript"]
 ---
 ## 替換標籤樣板
 ```html

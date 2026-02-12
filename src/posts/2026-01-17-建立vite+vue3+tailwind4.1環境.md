@@ -4,37 +4,37 @@ date: 2026-01-17
 tags: ["Vue3"]
 ---
 ## 建立vite專案
-1. 建立資料夾
-### (補充)確認npm版本：
-```
+1. 建立專案資料夾
+### (補充步驟)確認npm版本：
+```bash
 $ npm -v
 ```
 `查看npm目前使用版本`
-```
+```bash
 $ nvm ls
 ```
 `查看已安裝的npm版本清單`
-```
+```bash
 $ nvm use 22
 ```
 `使用npm版本22`
-```
+```bash
 $ nvm alias default 22
 ```
 `將npm版本22作為預設`
 
 3. 安裝vite專案(最新版)
-```
+```bash
 $ npm create vite@latest
 ```
 4. 安裝node_modules
-```
+```bash
 $ npm i
 ```
 -----------------------------------------------
 ## 安裝tailwindcss
 1. 在vite安裝tailwindcss
-```
+```bash
 $ npm i tailwindcss @tailwindcss/vite
 ```
 2. 引入tailwindcss到vite，在專案根目錄建立vite.config.js
@@ -81,75 +81,14 @@ app.mount('#app')
 },
 ```
 ### 執行專案：
-```
+```bash
 $ npm run dev
 ```
 ### 建立編譯檔：
-```
+```bash
 $ npm run build
 ```
 ### 觀看專案：
-```
+```bash
 $ npm run preview
-```
------------------------------------------------
-## 關於setup
-### vue2：
-元件建立得時候在setup()宣告的資料，必須要return，才能讓template使用
-```js
-<script>
-const { ref } = Vue;
-
-Vue.createApp({
-  setup(){
-    const count = ref(1);
-    function addCount(){
-      count.value++
-    }
-    return{
-      count,
-      addCount
-    }
-  }
-}).mount('#app');
-</script>
-```
-### vue3：
-`<script setup>`是setup()的簡化寫法，他會自動把setup()內的資料，return出來
-```js
-<script setup>
-import { ref } from 'vue';
-
-const count = ref(1);
-const addCount = () => {
-  count.value++;
-};
-</script>
-```
------------------------------------------------
-## 透過setup傳接props
-### 傳統setup()：
-```js
-setup(props, context) {
-  console.log(props.count);
-}
-```
-`props：父元件傳來的資料`
-`context：emit、attrs、slots`
-### 新setup()：
-在子元件接收：
-```js
-<script setup>
-import { defineProps } from 'vue';
-
-defineProps({
-  count: {
-    type: Number
-  }
-});
-</script>
-
-<template>
-  {{ count }}
-</template>
 ```

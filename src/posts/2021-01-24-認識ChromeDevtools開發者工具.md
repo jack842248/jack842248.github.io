@@ -1,7 +1,7 @@
 ---
 title: 認識ChromeDevtools開發者工具
 date: 2021-01-24
-tags: ["web"]
+tags: ["Web"]
 ---
 ### 對著圖片→"右鍵"→"複製圖片位置"。可複製該圖片的路徑，貼到src上。
 ![圖片](/img/Chromedevtools除錯/Chromedevtools除錯-1.png)

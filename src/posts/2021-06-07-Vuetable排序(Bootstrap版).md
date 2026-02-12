@@ -1,7 +1,7 @@
 ---
 title: vue-table排序(Bootstrap版)
 date: 2021-06-07
-tags: ["vue"]
+tags: ["Vue"]
 ---
 ## methods版
 1. 在\<tr>使用 **v-for** 將[a]資料列印出來。

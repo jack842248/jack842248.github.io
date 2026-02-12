@@ -1,7 +1,7 @@
 ---
 title: Webpack編譯SCSS並優化+導入Bootstrap
 date: 2024-05-02
-tags: ["webpack"]
+tags: ["Webpack"]
 ---
 ## 編譯css
 1. 安裝套件`style-loader`和`css-loader`套件

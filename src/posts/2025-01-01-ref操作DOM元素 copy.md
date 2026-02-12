@@ -23,13 +23,13 @@ app.mount("#app");
 ```
 -----------------------------------------------
 ## 抓取DOM＋父元件操控資料
-```
+```html
 <div id="app">
   <card-component ref="card"></card-component>
   <button type="button" @click="changeCardValue">按鈕</button>
 </div>
 ```
-```
+```js
 const app = Vue.createApp({
   methods:{
     changeCardValue(){

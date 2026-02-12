@@ -1,7 +1,7 @@
 ---
 title: media screen
 date: 2022-04-08
-tags: ["css"]
+tags: ["CSS"]
 ---
 ## 好的響應式體驗
 * 從PC版轉到手機版時，標題長度以及部份不必要內容可以適度隱藏

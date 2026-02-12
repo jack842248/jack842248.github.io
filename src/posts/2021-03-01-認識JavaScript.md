@@ -1,7 +1,7 @@
 ---
 title: 認識JavaScript
 date: 2021-03-01
-tags: ["javaScript"]
+tags: ["JavaScript"]
 ---
 ## 直譯式語言(Interpreted Language)
 |例如|JavaScript、Python、PHP、Ruby、BASIC、LISP、Perl、R|

@@ -1,7 +1,7 @@
 ---
 title: Gulp將javascript整合成穩定版本
 date: 2023-08-13
-tags: ["gulp"]
+tags: ["Gulp"]
 ---
 ## gulp-babel
 1. 在專案中打開終端機安裝`gulp-babel`、`@babel/core`、`@babel/preset-env`套件

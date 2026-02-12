@@ -1,7 +1,7 @@
 ---
 title: Gulp最終gulp完整final版
 date: 2023-08-21
-tags: ["gulp"]
+tags: ["Gulp"]
 ---
 ## gulp-nunjucks-render
 ```js

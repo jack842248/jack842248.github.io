@@ -1,7 +1,7 @@
 ---
 title: keyframes關鍵影格
 date: 2022-04-05
-tags: ["css"]
+tags: ["CSS"]
 ---
 ## 影格動畫(animation)
 ### 第一種寫法

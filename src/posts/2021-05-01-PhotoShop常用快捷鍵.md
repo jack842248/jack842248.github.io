@@ -1,7 +1,7 @@
 ---
 title: 常用快捷鍵
 date: 2021-05-01
-tags: ["photoshop"]
+tags: ["Photoshop"]
 ---
 ## 常用快捷鍵
 ### `Ctrl` + `W` 關閉視窗

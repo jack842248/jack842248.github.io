@@ -1,7 +1,7 @@
 ---
 title: ES6
 date: 2021-03-07
-tags: ["javaScript"]
+tags: ["JavaScript"]
 ---
 ## var、let、const
 * 皆為宣告變數用。

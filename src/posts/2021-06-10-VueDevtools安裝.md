@@ -1,7 +1,7 @@
 ---
 title: vue.js Devtools安裝
 date: 2021-06-10
-tags: ["vue"]
+tags: ["Vue"]
 ---
 ## 安裝Vue.js devtools開發者工具
 1. Vue.js devtools是一個Chrome擴充工具，[點擊前往網址](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)。

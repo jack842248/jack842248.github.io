@@ -38,7 +38,7 @@
                                                         id: post
                                                     }
                                                 }"
-                                                class="bg-neutral-100 p-2 hover:text-emerald-700 hover:bg-neutral-200 rounded-lg">{{ post }}
+                                                class="block bg-neutral-100 p-2 hover:text-emerald-700 hover:bg-neutral-200 rounded-lg">{{ post }}
                                             </Router-link>
                                         </li>
                                     </ul>

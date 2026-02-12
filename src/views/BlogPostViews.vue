@@ -3,13 +3,12 @@
         <div class="flex flex-wrap items-center mb-2">
             <div class="w-1 h-6 rounded bg-emerald-700 shrink-0 m-1 mr-2"></div>
             <h1 class="text-xl font-bold sm:text-2xl">{{ postInfo.title }}</h1>
-            <button
-                type="button"
-                class="group flex items-center text-neutral-600 bg-neutral-100 hover:bg-emerald-700 rounded p-2 ml-auto"
-                @click="goBack()">
+            <Router-link
+                to="/"
+                class="block group flex items-center text-neutral-600 bg-neutral-100 hover:bg-emerald-700 rounded p-2 ml-auto">
                 <ChevronDoubleLeftIcon class="size-4 group-hover:text-neutral-100"></ChevronDoubleLeftIcon>
-                <span class="text-xs group-hover:text-neutral-100">回上一頁</span>
-            </button>
+                <span class="text-xs group-hover:text-neutral-100">回列表</span>
+            </Router-link>
         </div>
         <p class="text-sm pl-1 mb-1">{{ postInfo.date }}</p>
         <Router-link
@@ -98,16 +97,6 @@ const currentPostId = computed(()=>{
 const prevPost = ref(null);
 //當前文章的下一篇id
 const nextPost = ref(null);
-
-//回上一頁
-const router = useRouter();
-const goBack = () => {
-    if (window.history.state && window.history.state.back) {
-        router.back();
-    } else {
-        router.push('/list'); 
-    }
-}
 
 const postInfo = ref({});
 

@@ -1,7 +1,7 @@
 ---
 title: vue-todolist(Bootstrap版)
 date: 2021-06-03
-tags: ["vue"]
+tags: ["Vue"]
 ---
 ## 建立完成的Bootstrap4初始版型
 ```css

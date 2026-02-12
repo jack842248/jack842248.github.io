@@ -1,7 +1,7 @@
 ---
 title: 用原生Javascript抓取DOM元素方法
 date: 2021-02-03
-tags: ["javaScript"]
+tags: ["JavaScript"]
 ---
 ## 取得DOM元素方法
 |方法|取得目標|回傳結果|
