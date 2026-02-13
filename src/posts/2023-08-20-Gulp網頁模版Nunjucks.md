@@ -1,11 +1,11 @@
 ---
-title: Gulp Nunjucks網頁模版
+title: Gulp網頁模版Nunjucks
 date: 2023-08-20
 tags: ["Gulp"]
 ---
 ## gulp-nunjucks-render
 1. 在專案中打開終端機安裝`gulp-nunjucks-render`套件
-```html
+```bash
 $ npm install gulp-nunjucks-render
 ```
 
@@ -28,7 +28,7 @@ gulp.task('layout',function(){
 
 -----------------------------------------------
 3. 在終端機執行指令
-```html
+```bash
 $ gulp layout
 ```
 

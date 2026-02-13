@@ -1,5 +1,5 @@
 ---
-title: Vue3JavaScript縮寫
+title: JavaScript縮寫
 date: 2024-12-01
 tags: ["Vue3"]
 ---

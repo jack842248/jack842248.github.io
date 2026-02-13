@@ -103,19 +103,9 @@
 	.markdown-body > table {
 		@apply !w-auto
 	}
-	
-	/* .markdown-body ol {
-		@apply list-decimal !pl-6
+	.markdown-body > ol > li > ol > li{
+		@apply !list-decimal
 	}
-	.markdown-body ol li ul {
-		@apply list-[circle] !pl-6
-	}
-	.markdown-body ol li ol {
-		@apply list-decimal !pl-6
-	}
-	.markdown-body table {
-		width: initial !important;
-	} */
 	.markdown-body pre > code{
 		@apply !whitespace-break-spaces
 	}

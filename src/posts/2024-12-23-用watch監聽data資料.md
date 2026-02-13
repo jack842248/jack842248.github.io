@@ -18,10 +18,10 @@ Vue.createApp({
     }
   },
   watch:{
-    //n = 新輸入的值
-    //o = 上一次輸入的值
-    tempName(n,o){
-      console.log(n,o)
+    //new = 新輸入的值
+    //old = 上一次輸入的值
+    tempName(new,old){
+      console.log(new,old)
     }
   }
 }).mount("#app");
@@ -45,8 +45,8 @@ Vue.createApp({
     }
   },
   watch:{
-    tempName(n,o){
-      this.textLength = `${n.length}`
+    tempName(new,old){
+      this.textLength = `${new.length}`
     }
   }
 }).mount("#app");
@@ -137,7 +137,7 @@ Vue.createApp({
   },
   watch:{
     product:{
-      handler(n,o){
+      handler(new,old){
         this.resultText = `${this.product.name}目前${this.product.stock?"沒":""}有庫存`
       },
       deep: true
@@ -145,4 +145,4 @@ Vue.createApp({
   }
 }).mount("#app");
 ```
-`handler(n,o){},deep: true是固定寫法，n是新物件；o是舊物件`
+`handler(n,o){},deep: true是固定寫法`

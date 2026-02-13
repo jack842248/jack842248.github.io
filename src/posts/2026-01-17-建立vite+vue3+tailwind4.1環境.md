@@ -33,11 +33,11 @@ $ npm i
 ```
 -----------------------------------------------
 ## 安裝tailwindcss
-1. 在vite安裝tailwindcss
+1. 在vite安裝`tailwindcss`
 ```bash
 $ npm i tailwindcss @tailwindcss/vite
 ```
-2. 引入tailwindcss到vite，在專案根目錄建立vite.config.js
+2. 引入tailwindcss到vite，在專案根目錄建立`vite.config.js`
 ```js
 //vite.config.js
 
@@ -52,13 +52,13 @@ export default defineConfig({
   ],
 })
 ```
-3. 在style.css寫上tailwindcss語法
+3. 在`style.css`寫上tailwindcss語法
 ```css
 /* style.css */
 
 @import "tailwindcss";
 ```
-4. 在main.js進入點引入css檔
+4. 在`main.js`進入點引入css檔
 ```js
 // main.js
 
@@ -70,7 +70,7 @@ app.mount('#app')
 ```
 -----------------------------------------------
 ## 執行專案
-要運行專案的指令，存放在package.json
+要運行專案的指令，存放在`package.json`
 ```json
 // package.json
 

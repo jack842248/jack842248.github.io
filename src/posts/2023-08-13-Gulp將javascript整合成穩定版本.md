@@ -5,7 +5,7 @@ tags: ["Gulp"]
 ---
 ## gulp-babel
 1. 在專案中打開終端機安裝`gulp-babel`、`@babel/core`、`@babel/preset-env`套件
-```html
+```bash
 $ npm install gulp-babel @babel/core @babel/preset-env
 ```
 `@開頭的套件，表示這是一個由特定組織或作者維護的套件`
@@ -30,13 +30,13 @@ gulp.task('babel', function(){
 
 -----------------------------------------------
 3. 在終端機執行指令
-```html
+```bash
 $ gulp babel
 ```
 
 -----------------------------------------------
 4. 執行結果會將src裡的所有js檔(ES5、ES6、ES7)編譯，生成到dist裡變成穩定的all.js
-```
+```markdown
 you project
 ├─── node_modules/        
 ├─── dist/
@@ -112,6 +112,6 @@ gulp.task('default', gulp.series('babel'));
 ```
 -----------------------------------------------
 8. 最後，在終端機執行`gulp`即可完成任務
-```html
+```bash
 $ gulp
 ```

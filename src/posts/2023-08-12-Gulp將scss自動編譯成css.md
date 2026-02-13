@@ -5,7 +5,7 @@ tags: ["Gulp"]
 ---
 ## gulp-sass
 1. 在專案中打開終端機安裝`gulp-sass`和`sass`套件(版本@1.62.0)
-```html
+```bash
 $ npm install gulp-sass sass@1.62.0
 ```
 
@@ -27,13 +27,13 @@ gulp.task('sass', function(){
 
 -----------------------------------------------
 3. 在終端機執行指令
-```html
+```bash
 $ gulp sass
 ```
 
 -----------------------------------------------
 4. 執行結果會將src裡的scss編譯，生成到dist裡變成css
-```
+```markdown
 you project
 ├─── node_modules/        
 ├─── dist/
@@ -86,6 +86,6 @@ gulp.task('default', gulp.series('sass'));
 
 -----------------------------------------------
 7. 最後，在終端機執行`gulp`即可完成任務
-```html
+```bash
 $ gulp
 ```

@@ -24,44 +24,44 @@ tags: ["Gulp"]
     * LTS：長期維護版(較穩定)
     * Current：目前最新版(較為不穩定)
 * 檢查node版本:
-```html
+```bash
 $ node -v
 ```
 
 -----------------------------------------------
 2.安裝npm套件管理工具
 * 安裝npm:
-```html
+```bash
 $ npm insatll
 ```    
 * 檢查npm版本:
-```html
+```bash
 $ npm -v
 ```    
 
 -----------------------------------------------
 3.安裝gulp全域環境(每台電腦僅需執行一次)   
 * 安裝Gulp4:
-```html
+```bash
 $ npm install gulp-cli -g
 ```    
 * mac安裝Gulp4:
-```html
+```bash
 $ sudo npm install gulp-cli -g
 ```  
 
 -----------------------------------------------
 4.生成package.json
 * 生成自訂package.json:
-```html
+```bash
 $ npm init
 ```
 * 生成預設package.json:
-```html
+```bash
 $ npm init -y
 ```
 `專案資料夾會自動生成package.json檔`
-```
+```markdown
 you project
 └─── package.json  #記錄各種套件的版本，可以自行指定專案的名稱、版本等資訊
 ```
@@ -69,15 +69,15 @@ you project
 -----------------------------------------------
 5.在專案安裝gulp套件
 * 安裝gulp套件:
-```html
+```bash
 $ npm install gulp
 ```
 * 檢查gulp套件版本:
-```html
+```bash
 $ gulp -v
 ```
 `專案資料夾會自動生成node_modules/、package-lock.json`
-```
+```markdown
 you project
 ├─── node_modules/  #gulp零件包
 ├─── package-lock.json  #詳細記錄了每個依賴套件的版本，防止不同開發者發生版本變更的意外
@@ -86,7 +86,7 @@ you project
 
 -----------------------------------------------
 6.將index.html檔新增在src資料夾裡
-```
+```markdown
 you project
 ├─── node_modules/        
 ├─── src/
@@ -114,7 +114,7 @@ gulp.task('copyHTML', function(){ //創建'copyHTML'任務
     .pipe(gulp.dest('dist')) //編譯到'dist'資料夾
 });
 ```
-```
+```markdown
 you project
 ├─── node_modules/        
 ├─── src/
@@ -128,11 +128,11 @@ you project
 
 -----------------------------------------------
 8.在終端機執行指令
-```html
+```bash
 $ gulp copyHTML
 ```
 `執行後dist資料夾內會自動複製出一個index.html`
-```
+```markdown
 you project
 ├─── node_modules/        
 ├─── dist/
@@ -151,11 +151,11 @@ you project
 -----------------------------------------------
 9.安裝gulp-sass編譯套件和sass(版本1.62.0)
 * 安裝gulp-sass套件:
-```html
+```bash
 $ npm install gulp-sass
 ```
 * 安裝sass套件:
-```html
+```bash
 $ npm install sass@1.62.0
 ```
 ```js
@@ -180,14 +180,14 @@ gulp.task('sass', function(){
 
 -----------------------------------------------
 10.安裝bootstrap套件(版本4.6.2)
-```html
+```bash
 $ npm install bootstrap@4.6.2
 ```
 
 -----------------------------------------------
 11.建立all.scss
 * 在src資料夾裡新增css資料夾，然後建立all.scss
-```
+```markdown
 you project
 ├─── node_modules/        
 ├─── dist/
@@ -209,7 +209,7 @@ you project
 -----------------------------------------------
 12.將bootstrap的變數檔複製到本地
 * 將node_modules/bootstrap/scss/_variables.scss複製到src/scss/helpers
-```
+```markdown
 you project
 ├─── node_modules/        
 ├─── dist/
@@ -262,7 +262,7 @@ you project
 ```js
 gulp.task('default', gulp.series('copyHTML','sass'));
 ```
-```html
+```bash
 $ gulp
 ```
 `只要執行'gulp'會接續執行'copyHTML'、'sass'任務`
@@ -270,10 +270,10 @@ $ gulp
 -----------------------------------------------
 ## 若遇到cannot find module "nan"
 1. 清除npm緩存
-```html
+```bash
 $ npm cache clean --force
 ```
 2. 在根目錄下運行安裝nan模組
-```html
+```bash
 $ npm install nan --save
 ```
