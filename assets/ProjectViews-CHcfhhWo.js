@@ -1,0 +1,1 @@
+import{r as n,c as r,a as t,bK as l,F as p,o as c}from"./index-D4xN16n7.js";const i={__name:"ProjectViews",setup(u){const o=n(!1);return(e,a)=>(c(),r(p,null,[t("p",{onClick:a[0]||(a[0]=(...s)=>e.toggleBtn&&e.toggleBtn(...s))},"我是案例"),t("p",null,l(o.value),1)],64))}};export{i as default};
