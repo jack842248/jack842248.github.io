@@ -100,6 +100,9 @@
 	.markdown-body ol {
 		@apply list-decimal !pl-6
 	}
+	.markdown-body ul ol,.markdown-body ol ol {
+		@apply !list-decimal
+	}
 	.markdown-body > table {
 		@apply !w-auto
 	}

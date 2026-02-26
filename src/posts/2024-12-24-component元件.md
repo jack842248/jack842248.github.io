@@ -1,5 +1,5 @@
 ---
-title: component元件
+title: Component元件
 date: 2024-12-24
 tags: ["Vue3"]
 ---

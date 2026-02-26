@@ -4,10 +4,12 @@ date: 2024-05-02
 tags: ["Webpack"]
 ---
 ## 編譯css
+
 1. 安裝套件`style-loader`和`css-loader`套件
-```
+```bash
 $ npm i style-loader css-loader -D
 ```
+
 2. 在`src`資料夾底下手動建立`css/style.css`檔案，並在裡面寫一些樣式：
 ```css
 body{
@@ -20,7 +22,7 @@ body{
     transform: translateX(-30px);
 }
 ```
-```
+```markdown
 you project
 ├─── dist/
 │     │
@@ -46,6 +48,7 @@ you project
 ├─── package.json
 └─── webpack.config.js   
 ```
+
 3. 在`webpack.config.js`新增：
 ```js
 const path = require('path');
@@ -83,10 +86,10 @@ module.exports = {
 import '../css/style.css'
 ```
 5. 在終端機執行： 
-```
+```bash
 $ npm run start
 ```
-```
+```markdown
 you project
 ├─── dist/
 │     │
@@ -115,10 +118,12 @@ you project
 
 -----------------------------------------------
 ## 將css以獨立方式帶入html
+
 1. 安裝`mini-css-extract-plugin`套件
-```
+```bash
 $ npm i mini-css-extract-plugin -D
 ```
+
 2. 在`webpack.config.js`新增：
 ```js
 const path = require('path');
@@ -153,17 +158,20 @@ module.exports = {
     ]
 }
 ```
+
 3. 在終端機執行： 
-```
+```bash
 $ npm run start
 ```
 
 -----------------------------------------------
 ## 編譯scss檔案並將樣式帶入html
+
 1. 安裝`sass`、`sass-loader`、`postcss`、`postcss-loader`、`postcss-preset-env`、
-```
+```bash
 $ npm i sass sass-loader postcss postcss-loader postcss-preset-env -D
 ```
+
 2. 在`webpack.config.js`新增：
 ```js
 const path = require('path');
@@ -209,6 +217,7 @@ module.exports = {
     ]
 }
 ```
+
 3. 建立`scss`資料夾結構，並在裡面新增`style.scss`檔，簡單寫一些樣式：
 ```scss
 body{
@@ -221,15 +230,17 @@ body{
     transform: translateX(-30px);
 }
 ```
+
 4. 修改`main.js`裡的樣式路徑：
 ```js
 import '../scss/style.scss'
 ```
+
 5. 在終端機執行：
-```
+```bash
 $ npm run start
 ```
-```
+```markdown
 you project
 ├─── dist/
 │     │
@@ -255,6 +266,7 @@ you project
 ├─── package.json
 └─── webpack.config.js   
 ```
+
 6. 可以看到在`dist`裡的`style.css樣式自動增加前綴
 ```css
 body {
@@ -277,18 +289,21 @@ body {
 
 -----------------------------------------------
 ## 若要使用bootstrap(5.3.3)
+
 1. 安裝`bootstrap`套件:
     * `bootstrap`是css樣板套件
     * `@popperjs/core`是bootstrap定位套件
-```
+```bash
 $ npm i bootstrap @popperjs/core
 ```
+
 2. 快速取用`bootstrap`方法，是直接在`main.js`引入：
 ```js
 import '../../node_modules/bootstrap/scss/bootstrap.scss'; //bootstrap核心
 import '../scss/style.scss'; //自定義樣式
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'; //bootstrap定位套件
 ```
+
 3. 自訂`bootstrap`方法，在scss裡的`style.scss`引入：
 ```scss
 //bootstrap
@@ -340,11 +355,12 @@ import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'; //bootstr
 //自訂樣式
 @import "custom"
 ```
+
 4. 重要補充：如果`sass`出現，關於變數等等的警告錯誤，請將`sass`版本降低到`@1.77.6`：
 
 `More info: https://sass-lang.com/d/color-functions`
 
 `More info: https://sass-lang.com/d/mixed-decls`
-```
+```bash
 $ npm i sass@1.77.6
 ```
