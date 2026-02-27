@@ -1,5 +1,4 @@
 <template>
-    
     <div class="grow border-l border-l-neutral-200">
         <ul>
             <li
@@ -83,7 +82,6 @@
             </ul>
         </nav>
     </div>
-    
 </template>
 
 <script setup>

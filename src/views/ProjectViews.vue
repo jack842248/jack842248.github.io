@@ -1,10 +1,7 @@
 <template>
-    <p @click="toggleBtn">我是案例</p>
-    <p>{{ a }}</p>
+    <p>我是案例</p>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-const a = ref(false);
-
+import { ref } from 'vue'
 </script>

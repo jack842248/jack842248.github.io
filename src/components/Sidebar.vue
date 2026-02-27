@@ -149,6 +149,7 @@ onMounted(()=>{
         })
     })
     tagsData.value = [...tagMap.values()]
+    console.log("查看",tagsData.value[0])
     //文章以日期最新排序
     postData.sort((a,b)=>{
         return new Date(b.date) - new Date(a.date);

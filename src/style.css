@@ -36,6 +36,18 @@
 }
 
 @layer components {
+	.btn-fill-slide::before{
+		@apply content-[""] p-0 top-0 bottom-0 right-0 absolute w-0 h-full transition-all bg-emerald-700 -z-1
+	}
+	.group:hover.btn-fill-slide::before {
+		@apply w-full left-0
+	}
+	.overlay::before{
+		@apply content-["回首頁"] absolute flex justify-center items-center w-full h-full text-sm text-neutral-200 bg-neutral-900/0 z-10 top-0 left-0 origin-[-80%_80%] -rotate-45 duration-500 transition-all
+	}
+	.group:hover.overlay::before {
+		@apply bg-neutral-900 rotate-0
+	}
 	/* 文章內容 */
 	.article-title{
 		@apply text-base font-medium text-neutral-900 group-hover:text-emerald-700 transition-all mb-2
@@ -72,10 +84,10 @@
 		@apply -rotate-45 -translate-y-2 w-6
 	}
 	.navbar-toggler.active:hover > .navbar-toggler-line:first-child {
-		@apply rotate-30
+		@apply rotate-135
 	}
 	.navbar-toggler.active:hover > .navbar-toggler-line:last-child {
-		@apply -rotate-30
+		@apply rotate-225
 	}
 
 	/* 文章內容 */
