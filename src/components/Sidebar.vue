@@ -12,9 +12,9 @@
                         <Disclosure
                             as="div">
                             <DisclosureButton
-                                class=" text-neutral-800 group flex justify-between w-full hover:text-emerald-700 py-1"
+                                class="group flex justify-between w-full text-neutral-800 hover:text-emerald-700 py-1"
                                 @click="toggleTag(tag.name)">
-                                <span>{{ tag.name }}</span>
+                                <span class="group-hover:pl-2 transition-all">{{ tag.name }}</span>
                                 <span class="group-hover:bg-emerald-700 group-hover:text-white flex justify-center items-center text-sm text-neutral-500 bg-neutral-100 rounded px-2 transition-all">{{ tag.count }}</span>
                             </DisclosureButton>
                             <Transition
