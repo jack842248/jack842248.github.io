@@ -1,7 +1,7 @@
 ---
 title: Markdown語法與HTML的對照
 date: 2021-01-23
-tags: ["Markdown"]
+tags: ["Markdown","HTML"]
 ---
 ## 標題
 開頭用`#`撰寫，分別對應的是`<h1>`到`<h6>`標題

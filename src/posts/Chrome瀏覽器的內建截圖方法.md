@@ -1,5 +1,5 @@
 ---
-title: Chrome的截圖方法
+title: Chrome瀏覽器的內建截圖方法
 date: 2024-01-04
 tags: ["Web"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: Vue3+Font Awesome 7 使用方法
+title: Vue3 + Font Awesome 7 使用方法
 date: 2026-02-05
 tags: ["Web"]
 ---

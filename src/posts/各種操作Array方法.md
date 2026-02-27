@@ -1,5 +1,5 @@
 ---
-title: 操作Array方法
+title: 各種操作Array方法
 date: 2021-02-23
 tags: ["JavaScript"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: 認識ChromeDevtools開發者工具
+title: 認識Chrome開發者工具
 date: 2021-01-24
 tags: ["Web"]
 ---

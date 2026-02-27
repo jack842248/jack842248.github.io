@@ -1,5 +1,5 @@
 ---
-title: Mac靈活運用MAC快捷鍵
+title: 靈活運用MAC快捷鍵
 date: 2023-02-17
 tags: ["Mac"]
 ---

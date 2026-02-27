@@ -1,5 +1,5 @@
 ---
-title: media screen
+title: CSS Media Screen
 date: 2022-04-08
 tags: ["CSS"]
 ---

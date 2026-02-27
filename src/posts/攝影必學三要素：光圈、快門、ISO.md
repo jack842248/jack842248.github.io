@@ -1,5 +1,5 @@
 ---
-title: 了解相機的基本操作
+title: 攝影必學三要素：光圈、快門、ISO
 date: 2023-04-09
 tags: ["Design"]
 ---

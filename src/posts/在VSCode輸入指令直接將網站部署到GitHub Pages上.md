@@ -1,7 +1,7 @@
 ---
 title: 在VSCode輸入指令直接將網站部署到GitHub Pages上
 date: 2026-01-19
-tags: ["Vue3"]
+tags: ["Vue3","GitHub"]
 ---
 ## 在Github建立新的Repository
 1. 建立`repository`時，網址為`帳號`/`專案名稱`

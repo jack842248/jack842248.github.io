@@ -1,5 +1,5 @@
 ---
-title: 建立vite+vue3+tailwind4.1環境
+title: 建立vite+Vue3+tailwind4.1環境
 date: 2026-01-17
 tags: ["Vue3"]
 ---

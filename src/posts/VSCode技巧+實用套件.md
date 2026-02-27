@@ -1,5 +1,5 @@
 ---
-title: VScode技巧+實用套件
+title: VSCode技巧+實用套件
 date: 2024-01-02
 tags: ["CSS"]
 ---

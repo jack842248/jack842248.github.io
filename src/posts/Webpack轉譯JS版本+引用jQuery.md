@@ -1,7 +1,7 @@
 ---
 title: Webpack自動轉譯JS版本+全域引用jQuery
 date: 2024-05-03
-tags: ["Webpack"]
+tags: ["Webpack","jQuery"]
 ---
 ## 轉譯js
 

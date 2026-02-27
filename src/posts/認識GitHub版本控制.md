@@ -1,7 +1,7 @@
 ---
 title: 認識GitHub版本控制
 date: 2023-04-01
-tags: ["Hugo"]
+tags: ["Hugo","GitHub"]
 ---
 ## 什麼是GitHub
 * GitHub是管理Git版本控制系統的平台

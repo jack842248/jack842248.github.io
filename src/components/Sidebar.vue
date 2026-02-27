@@ -1,8 +1,8 @@
 <template>
     <div class="flex px-3 py-5 mb-3">
-        <div class="w-1 h-5 rounded bg-emerald-700 shrink-0 m-1 mr-2"></div>
+        <div class="w-1 h-4 rounded bg-emerald-700 shrink-0 m-1 mr-2"></div>
         <div class="grow">
-            <div class="text-lg text-neutral-900 font-medium mb-5">Categories</div>
+            <div class=" text-neutral-900 font-medium mb-5">Categories</div>
             <nav>
                 <ul class="flex flex-col gap-1 min-w-0">
                     <li
@@ -125,14 +125,10 @@ onMounted(()=>{
             }
         });
     });
-    const tagList = Object.entries(tagCounts).map(([key, value]) => {
-			return{
-				name: key,
-				count: value,
-			}
-		}
-	);
-    tagList.sort((a, b) => a.name.localeCompare(b.name))
+    const tagList = Object.entries(tagCounts)
+        .map(([name, count]) => ({ name, count }))
+        .sort((a, b) => a.name.localeCompare(b.name)
+    );
     const tagMap = new Map(
         tagList.map(tag => [
             tag.name,
@@ -144,15 +140,11 @@ onMounted(()=>{
         post.tags.forEach(tagName => {
             const target = tagMap.get(tagName)
             if (target) {
-                target.posts.push(post.id)
+                target.posts.push(post.id);
+                target.posts.sort((a, b) => new Date(b.date) - new Date(a.date));
             }
         })
     })
     tagsData.value = [...tagMap.values()]
-    console.log("查看",tagsData.value[0])
-    //文章以日期最新排序
-    postData.sort((a,b)=>{
-        return new Date(b.date) - new Date(a.date);
-    })
 })
 </script>

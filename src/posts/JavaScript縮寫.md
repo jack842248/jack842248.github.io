@@ -1,7 +1,7 @@
 ---
 title: JavaScript縮寫
 date: 2024-12-01
-tags: ["Vue3"]
+tags: ["JavaScript"]
 ---
 ## 物件字面值(Object literals)
 ```js

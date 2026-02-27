@@ -1,5 +1,5 @@
 ---
-title: Vue3+Swiper輪播程式碼範例
+title: Vue3 + Swiper輪播程式碼範例
 date: 2026-02-03
 tags: ["Vue"]
 ---

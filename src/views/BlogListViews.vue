@@ -5,6 +5,9 @@
                 v-for="post in postsList"
                 :key="post.id">
                 <article class="flex p-3 py-5 border-b border-b-neutral-200">
+                    <!-- <div class="mr-3 w-50 aspect-video overflow-hidden shrink-0 rounded-lg">
+                        <img src="/images/img-bootstrap-cover.png" alt="">
+                    </div> -->
                     <div class="w-1 h-4 rounded bg-emerald-700 shrink-0 m-1 mr-2"></div>
                     <div class="text-left">
                         <Router-link
@@ -34,6 +37,7 @@
                             #{{ tag }}
                         </Router-link>
                     </div>
+
                 </article>
             </li>
         </ul>

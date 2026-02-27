@@ -1,5 +1,5 @@
 ---
-title: Vue Devtools安裝
+title: Vue的Devtools安裝
 date: 2021-06-10
 tags: ["Vue"]
 ---
