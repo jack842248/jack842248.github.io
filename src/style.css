@@ -127,4 +127,13 @@
 	.swiper-slide > img{
 		@apply w-full h-auto object-cover
 	}
+	.project-swiper .swiper-slide {
+		@apply !w-[80%];
+	}
+	.thumbs-swiper .swiper-slide{
+		@apply opacity-40
+	}
+	.thumbs-swiper .swiper-slide-thumb-active {
+		@apply opacity-100
+	}
 }

@@ -1,7 +1,7 @@
 <template>
   <header>
     <Navbar></Navbar>
-    <Carousel></Carousel>
+    <Carousel v-if="route.meta.showCarousel"></Carousel>
   </header>
   <main class="flex">
     <aside v-if="route.meta.showSidebar">

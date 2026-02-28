@@ -450,6 +450,7 @@ function Zoom({
       }
     }
     if (!gesture.imageEl || !gesture.imageWrapEl) return;
+    gesture.maxRatio = getMaxRatio();
     if (swiper.params.cssMode) {
       swiper.wrapperEl.style.overflow = 'hidden';
       swiper.wrapperEl.style.touchAction = 'none';
@@ -561,6 +562,7 @@ function Zoom({
       }
     }
     if (!gesture.imageEl || !gesture.imageWrapEl) return;
+    gesture.maxRatio = getMaxRatio();
     if (swiper.params.cssMode) {
       swiper.wrapperEl.style.overflow = '';
       swiper.wrapperEl.style.touchAction = '';

@@ -4,7 +4,10 @@ import { Buffer } from 'buffer'
 
 window.Buffer = Buffer;
 
-
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import 'swiper/css/thumbs';
 import './style.css'
 
 import App from './App.vue'

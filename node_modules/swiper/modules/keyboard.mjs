@@ -17,7 +17,8 @@ function Keyboard({
     keyboard: {
       enabled: false,
       onlyInViewport: true,
-      pageUpDown: true
+      pageUpDown: true,
+      speed: undefined
     }
   });
   function handle(event) {
@@ -71,18 +72,19 @@ function Keyboard({
       }
       if (!inView) return undefined;
     }
+    const speed = swiper.params.keyboard.speed;
     if (swiper.isHorizontal()) {
       if (isPageUp || isPageDown || isArrowLeft || isArrowRight) {
         if (e.preventDefault) e.preventDefault();else e.returnValue = false;
       }
-      if ((isPageDown || isArrowRight) && !rtl || (isPageUp || isArrowLeft) && rtl) swiper.slideNext();
-      if ((isPageUp || isArrowLeft) && !rtl || (isPageDown || isArrowRight) && rtl) swiper.slidePrev();
+      if ((isPageDown || isArrowRight) && !rtl || (isPageUp || isArrowLeft) && rtl) swiper.slideNext(speed);
+      if ((isPageUp || isArrowLeft) && !rtl || (isPageDown || isArrowRight) && rtl) swiper.slidePrev(speed);
     } else {
       if (isPageUp || isPageDown || isArrowUp || isArrowDown) {
         if (e.preventDefault) e.preventDefault();else e.returnValue = false;
       }
-      if (isPageDown || isArrowDown) swiper.slideNext();
-      if (isPageUp || isArrowUp) swiper.slidePrev();
+      if (isPageDown || isArrowDown) swiper.slideNext(speed);
+      if (isPageUp || isArrowUp) swiper.slidePrev(speed);
     }
     emit('keyPress', kc);
     return undefined;

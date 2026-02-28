@@ -13,6 +13,7 @@ const router = createRouter({
             component: () => import('@/views/BlogListViews.vue'),
             meta: {
                 showSidebar: true,
+                showCarousel: true
             },
         },
         {
@@ -21,6 +22,7 @@ const router = createRouter({
             component: () => import('@/views/BlogPostViews.vue'),
             meta: {
                 showSidebar: true,
+                showCarousel: true
             },
         },
         {
@@ -29,6 +31,7 @@ const router = createRouter({
             component: () => import('@/views/TagsViews.vue'),
             meta: {
                 showSidebar: false,
+                showCarousel: true
             },
         },
         {
@@ -37,6 +40,7 @@ const router = createRouter({
             component: () => import('@/views/ProjectViews.vue'),
             meta: {
                 showSidebar: false,
+                showCarousel: false
             },
         },
         {
@@ -45,6 +49,7 @@ const router = createRouter({
             component: () => import('@/views/AboutViews.vue'),
             meta: {
                 showSidebar: false,
+                showCarousel: true
             },
         },
     ],
